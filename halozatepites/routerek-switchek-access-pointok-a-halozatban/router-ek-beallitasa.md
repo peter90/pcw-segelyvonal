@@ -466,3 +466,18 @@ Egy "valós" példa:
 </p>
 
 > Itt letiltottam bármilyen, "google" szót tartalmazó domain elérést az összes számítógépen minden nap minden órájában. Ugye, milyen életszerű?
+
+## Csatlakozás a létrehozott hálózatunkhoz
+
+> Először azt lássa mindenki, mit állított be a DHCP résznél. Ha van DHCP, akkor minden kártyát automatikus IP kérésre kell állítani, ha viszont letiltott a DHCP-t, akkor kézzel kell megadni a megfelelő IP-ket!
+
+### WiFi (Vista, 7)
+1. Start --> Vezérlőpult --> Hálózati és megosztási központ;
+2. Vezeték nélküli hálózatok kezelése;
+3. Hozzáadás;
+4. Hálózati profil kézi létrehozása;
+5. Töltsük ki a router beállításainak megfelelően a mezőket;
+6. Majd lépkedjünk tovább a beállításon, készen is vagyunk;
+
+### Vezetékes
+Ez egy kicsit egyszerűbb, mert csak egy patch kábelt kell kihúznunk a gépünk a router közé (**LAN**). Címkérésre itt is figyelni kell!
