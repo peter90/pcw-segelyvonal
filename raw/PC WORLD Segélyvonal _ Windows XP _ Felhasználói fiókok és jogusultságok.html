@@ -1,0 +1,2507 @@
+
+<!-- saved from url=(0075)http://www.pcworld.hu/forum/index.php?act=Print&client=printer&f=69&t=13759 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
+		<title>PC WORLD Segélyvonal [Powered by Invision Power Board]</title>
+		<style type="text/css">
+	/* 
+ * Cascading Style Sheet(CSS 467), for Invision Power Board 2.1.0
+ * Author: James A. Mathias, admin@leihu.com, http://www.1lotus.com 
+ * Copyright: 2005 Invision Power Services, all rights reserved 
+ *
+ * All style attributes in alpha-numeric order starting from 0
+ *
+ */
+
+/* 
+ * ========================================
+ * global element styles 
+ * ========================================
+ */
+
+html{
+	overflow-x: auto; /* fixes MSIE scrollbar bug DO NOT REMOVE, has no effect in Mozilla, or Opera */
+}
+
+body{ 
+	background: #FFF;
+	color: #222;
+	font-family: Verdana, Tahoma, Arial, Trebuchet MS, Sans-Serif, Georgia, Courier, Times New Roman, Serif;
+	font-size: 11px;
+	line-height: 135%;
+	margin: 0px;
+	padding: 0px; /* required for Opera to have 0 margin */
+	text-align: center; /* centers board in MSIE */
+}
+
+/* 
+ * ========================================
+ * Set up IPB table
+ * ========================================
+ */
+ 
+.ipbtable { width:100% }
+
+table.ipbtable,
+tr.ipbtable,
+td.ipbtable
+{ /* required for text in tables, because tables do not inherit from body */
+	background: transparent;
+	color: #222;
+	font-size: 11px;
+	line-height: 135%;
+}
+
+.ipbtable td,
+.divpad{ /* gives all tables faux cellpadding of 5px */
+	padding: 5px;
+}
+
+td.nopad{ /* allows some tables to have no padding on the td */
+	padding: 0;
+}
+
+
+
+form{
+	display: inline;
+	margin: 0; /* removes mystery form tag gapping */
+	padding: 0; /* removes mystery form tag gapping */
+}
+
+img{
+	border: 0; /* makes sure linked images do not have a border */
+	vertical-align: middle;
+}
+
+/* 
+ * ========================================
+ * global hyperlink styles 
+ * ========================================
+ */
+
+a:link,
+a:visited,
+a:active{
+	background: transparent;
+	color: #222;
+	text-decoration: underline;
+}
+
+a:hover{
+	background: transparent;
+	color: #34498B;
+}
+
+/* 
+ * ========================================
+ * Main wrapper, this controls the overall width of the board in you browser view window. 
+ * ========================================
+ */
+
+#ipbwrapper{ 
+	margin: 20px auto 20px auto; /* centers the box, no matter the overall width, also applies a 20px gap at the top and bottom of the board */
+	text-align: left; /* re_aligns text to left second part of two part MSIE centering workaround */
+	/* EDIT THIS TO CHANGE THE WIDTH OF THE BOARD -> 750px is a common fixed resolution size */
+	width: 98%;
+}
+
+/* 
+ * ========================================
+ * styles for pagination links 
+ * ========================================
+ */
+ 
+
+.pagelink,
+.pagelinklast,
+.pagecurrent,
+.minipagelink,
+.minipagelinklast{
+	background: #F0F5FA;
+	border: 1px solid #072A66;
+	padding: 1px 3px 1px 3px;
+}
+
+.pagelinklast,
+.minipagelinklast{
+	background: #DFE6EF;
+}
+
+
+.pagecurrent{
+	background: #FFC9A5;
+}
+
+.minipagelink,
+.minipagelinklast{
+	border: 1px solid #C2CFDF;
+	font-size: 10px;
+	margin: 0 1px 0 0;
+}
+
+.pagelink a:active,
+.pagelink a:visited,
+.pagelink a:link,
+.pagelinklast a:active,
+.pagelinklast a:visited,
+.pagelinklast a:link,
+.pagecurrent a:active,
+.pagecurrent a:visited,
+.pagecurrent a:link,
+.minipagelink a:active,
+.minipagelink a:visited,
+.minipagelink a:link,
+.minipagelinklast a:active,
+.minipagelinklast a:visited,
+.minipagelinklast a:link{
+	text-decoration: none;
+}
+
+/* fake button effect for some links */
+.fauxbutton{
+	background: #BFCDE0;
+	border: 1px solid #072A66;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 4px;
+}
+
+.fauxbutton a:link,
+.fauxbutton a:visited,
+.fauxbutton a:active{
+	color: #222 !important;
+	text-decoration: none;
+}
+
+.forumdesc,
+.forumdesc a:link,
+.forumdesc a:visited,
+.forumdesc a:active{ 
+	background: transparent;
+	font-size: 10px; 
+	color: #666;
+	line-height: 135%;
+	margin: 2px 0 0 0;
+	padding: 0;
+}
+
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+
+.searchlite {
+	background-color:yellow;
+	font-weight:bold;
+	color: red;
+}
+
+.activeusers{
+	background: #FFF;
+	border: 1px solid #072A66;
+	color: #000;
+	margin: 0px;
+	padding: 1px;
+}
+
+.activeuserposting a:link,
+.activeuserposting a:visited,
+.activeuserposting a:active,
+.activeuserposting
+{
+	font-style:italic;
+	text-decoration: none;
+	border-bottom:1px dotted black;
+}
+
+fieldset.search{ 
+	line-height: 150%;
+	padding: 6px; 
+}
+
+label{ 
+	cursor: pointer; 
+}
+
+img.attach{ 
+	background: #808080 url(style_images/1/click2enlarge.gif) no-repeat top right;
+	border: 1px solid #808080;
+	margin: 0 2px 0 0;
+	padding: 11px 2px 2px 2px;
+}
+
+.thumbwrap,
+.thumbwrapp,
+.fullimagewrap{
+	border: 1px solid #072A66;
+	margin: 2px;
+}
+
+.thumbwrapp{
+	border: 2px solid #660707;
+}
+
+.fullimagewrap{
+	background: #F5F9FD;
+	text-align: center;
+	margin: 5px 0 5px 0;
+	padding: 5px;
+}
+
+.thumbwrap h4,
+.thumbwrapp h4{	
+	background: #DDE6F2;
+	border: 0 !important;
+	border-bottom: 1px solid #5176B5 !important;
+	color: #5176B5; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.thumbwrap p,
+.thumbwrapp p{
+	background: #EEF2F7 !important;
+	border: 0 !important;
+	border-top: 1px solid #5176B5 !important;
+	margin: 0 !important;
+	padding: 5px !important;
+	text-align: left;
+}
+
+.thumbwrap p.alt,
+.thumbwrapp p.alt{
+	background: #DFE6EF !important;
+	margin: 0 !important;
+	padding: 5px !important;
+	text-align: left;
+}
+
+.thumbwrapp p.pin{
+	background: #EFDFDF !important;
+	text-align: center !important;
+}
+	
+.thumbwrap img.galattach,
+.thumbwrapp img.galattach{
+	background: #FFF url(style_images/1/img_larger.gif) no-repeat bottom right;
+	border: 1px solid #072A66;
+	margin: 5px;
+	padding: 2px 2px 10px 2px;
+}
+
+li.helprow{ 
+	margin: 0 0 10px 0;
+	padding: 0; 
+}
+
+ul#help{ 
+	padding: 0 0 0 15px; 
+}
+
+.warngood,
+.warnbad{ 
+	color: #0B9500;
+	font-weight: bold;
+}
+
+.warnbad{ 
+	color: #DD0000;
+}
+
+#padandcenter{ 
+	margin: 0 auto 0 auto;
+	padding: 14px 0 14px 0;
+	text-align: center;
+}
+
+#profilename{ 
+	font-size: 28px; 
+	font-weight: bold; 
+}
+
+#photowrap{ 
+	padding: 6px; 
+}
+
+#phototitle{ 
+	border-bottom: 1px solid #000; 
+	font-size: 24px; 
+}
+
+#photoimg{ 
+	margin: 15px 0 0 0;
+	text-align: center; 
+} 
+
+#ucpmenu,
+#ucpcontent{ 
+	background: #F5F9FD;
+	border: 1px solid #345487;
+	line-height: 150%;
+}
+
+#ucpmenu p{ 
+	margin: 0; 
+	padding: 2px 5px 6px 9px;
+}
+
+#ucpmenu a:link, 
+#ucpmenu a:active, 
+#ucpmenu a:visited{ 
+	text-decoration: none; 
+}
+
+#ucpcontent{ 
+	width: auto;
+}
+
+#ucpcontent p{ 
+	margin: 0;
+	padding: 10px;
+}
+
+.activeuserstrip{ 
+	background: #BCD0ED;
+	padding: 6px;
+}
+
+/* Topic View elements */
+.signature{  
+	background: transparent;
+	color: #339; 
+	font-size: 10px;
+	line-height: 150%;
+}
+
+.postdetails{ 
+	font-size: 10px;
+	line-height:140%;
+}
+
+.postcolor{ 
+	font-size: 12px; 
+	line-height: 160%;
+}
+
+.normalname{ 
+	color: #003;
+	font-size: 12px; 
+	font-weight: bold; 
+}
+
+.normalname a:link, 
+.normalname a:visited, 
+.normalname a:active{ 
+	font-size: 12px;
+}
+
+.post1,
+.bg1{ 
+	background: #F5F9FD;
+}
+
+.post2,
+.bg3{ 
+	background: #EEF2F7;
+}
+
+.row2shaded,
+.post1shaded { background-color: #DEDBE4 }
+.row4shaded,
+.post2shaded { background-color: #E3DFE7 }
+
+.row1{ 
+	background: #DFE6EF; 
+}
+
+.row2{ 
+	background: #E4EAF2; 
+}
+
+.darkrow1{ 
+	background: #BCD0ED;
+	color: #3A4F6C; 
+}
+
+.darkrow3{ 
+	background: #D1DCEB; 
+	color: #3A4F6C; 
+}
+
+/* tableborders gives the white column / row lines effect */
+.plainborder,
+.tablefill,
+.tablepad{ 
+	background: #F5F9FD;
+	border: 1px solid #345487;
+}
+
+.tablefill,
+.tablepad{ 
+	padding: 6px;  
+}
+
+.tablepad{ 
+	border: 0 !important;
+}
+
+.wrapmini{ 
+	float: left;
+	line-height: 1.5em;
+	width: 25%;
+}
+
+.pagelinks{
+	float: left;
+	line-height: 1.2em;
+	width: 35%;
+}
+
+.desc{ 
+	font-size: 11px; 
+	color: #434951;
+}
+
+.lastaction
+{
+	font-size: 10px; 
+	color: #434951;
+}
+
+.edit{ 
+	font-size: 9px;
+}
+
+.thin{ 
+	border: 1px solid #FFF;
+	border-left: 0;
+	border-right: 0;
+	line-height: 150%;
+	margin: 2px 0 2px 0;
+	padding: 6px 0 6px 0;
+}
+
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+
+/* 
+ * ========================================
+ * calendar styles 
+ * ========================================
+ */
+	
+.calmonths{ 
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	font-size: 18px; 
+	font-weight: bold; 
+	margin: 5px 0 5px 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.weekday{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.calmonths a{
+	text-decoration: none;
+}
+
+.calday,
+.calweekday{ 
+	background: #DFE6EF;
+	color: #666;
+	font-size: 11px;
+	font-weight: bold;
+	margin: 0;
+	padding: 4px;
+	text-align: right;
+}
+
+.calweekday{
+	border-right: 1px solid #AAA;
+	color: #222;
+	font-size: 14px;
+	padding: 6px;
+	text-align: center;
+}
+
+.celltodayshaded,
+.celldateshaded,
+.cellblank,
+.celldate,
+.celltoday,
+.mcellblank,
+.mcelldate,
+.mcelltoday{
+	background: #EEF2F7; 
+	height: 100px;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+
+.celltodayshaded,
+.celldateshaded
+{
+	background: #E3DFE7;
+}
+
+.mcellblank,
+.mcelldate,
+.mcelltoday{
+	height: auto;
+}
+
+.cellblank,
+.mcellblank{
+	background: #C2CFDF;
+}
+
+.celltoday,
+.celltodayshaded,
+.mcelltoday{
+	border: 2px solid #8B0000;
+}
+
+.calranged
+{
+	border: 2px outset #C2CFDF;
+	background: #C2CFDF;
+	padding:4px;
+}
+
+.calitem
+{
+	border-bottom: 1px dotted #C2CFDF;
+	padding:4px;
+}
+
+/* 
+ * ========================================
+ * form styles 
+ * ========================================
+ */
+
+.input-warn,
+.input-green,
+input,
+textarea,
+select{
+	background: #FFF;
+	border: 1px solid #4C77B6;
+	color: #000;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 11px;
+	margin: 5px;
+	padding: 2px;
+	vertical-align: middle;
+}
+
+.input-warn,
+.input-warn-content
+{
+	border: 1px solid #C00;
+}
+
+.input-ok,
+.input-ok-content
+{
+	border: 1px solid #0C0;
+}
+
+.input-warn-content
+{
+	padding: 4px;
+	margin: 4px;
+	background-color: #FCC;
+}
+
+.input-ok-content
+{
+	padding: 4px;
+	margin: 4px;
+	background-color: #CFC;
+}
+
+
+.input-text
+{
+	color: #900;
+}
+
+select{
+	border: 0;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+
+input.button{
+	margin: 0;
+	width: auto;
+}
+
+optgroup option{
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.codebuttons{ 
+	font-family: Verdana, Helvetica, Sans-Serif; 
+	font-size: 10px; 
+	vertical-align: middle;
+	margin:2px;
+}
+
+.textarea,
+.searchinput,
+.button,
+.gobutton{
+	background: #FFF;
+	border: 1px solid #4C77B6;
+	color: #000;
+	font-family: Verdana, Helvetica, Sans-Serif;
+	font-size: 11px;
+	padding: 2px;
+	vertical-align: middle;
+}
+	
+.button{
+	background: #DFE6EF;
+}
+
+.gobutton{
+	background: transparent;
+	border: 0;
+	color: #072A66;
+	margin: 0;
+	vertical-align: middle;
+}
+
+.radiobutton,
+.checkbox,
+.helpbox { 
+	border: 0;
+	vertical-align: middle;
+}
+
+/* 
+ * class.formtable 
+ *
+ * used for tabled forms 
+ * technically tables should not be used for form display 
+ * but, in the case of IPB a table is easier to work with
+ * for the average webmaster, who has little to no CSS knowledge.
+ *
+ */
+
+.formtable{
+	background: transparent;
+}
+
+.formtable td,
+.pformleft,
+.pformleftw,
+.pformright{
+	background:#F5F9FD;
+	border: 1px solid #C2CFDF;
+	border-bottom: 0;
+	border-left: 0;
+	font-weight: bold;
+	margin: 1px 0 0 0;
+	padding: 6px;
+	width: 25%;
+} 
+
+.formtable td.wider,
+.pformleftw,
+.pformright{
+	width: 40%;
+}
+
+.formtable td.formright,
+.pformright{
+	border-right: 0px;
+	font-weight: normal;
+	width: auto;
+} 
+
+.formtable td.formtitle,
+.formsubtitle{
+	background: #D1DCEB;
+	border: 1px solid #9FB9D4; 
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+	font-weight: normal;
+}
+
+.formsubtitle{ 
+	border: 0;
+	color: #3A4F6C;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.formtable td.formstrip{
+	background: #DDE8F2;
+	border: 1px solid #9FB9D4;
+	border-left: 0;
+	border-right: 0;
+	font-weight: normal;
+}
+
+/* 
+ * ========================================
+ * new style quote and code wrappers MATT's DESIGN 
+ * ========================================
+ */
+
+.quotetop{
+	background: #E4EAF2 url(style_images/1/css_img_quote.gif) no-repeat right;
+	border: 1px dotted #000;
+	border-bottom: 0;
+	border-left: 4px solid #8394B2;
+	color: #000;
+	font-weight: bold;
+	font-size: 10px;
+	margin: 8px auto 0 auto;
+	padding: 3px;
+}
+
+.quotemain{
+	background: #FAFCFE;
+	border: 1px dotted #000;
+	border-left: 4px solid #8394B2;
+	border-top: 0;
+	color: #465584;
+	padding: 4px;
+	margin: 0 auto 8px auto;
+}
+
+.codetop,
+.sqltop,
+.htmltop{
+	background: #FDDBCC url(style_images/1/css_img_code.gif) no-repeat right;
+	color: #000;
+	font-weight: bold;
+	margin: 0 auto 0 auto;
+	padding: 3px;
+	width: 98%;
+}
+
+.codemain,
+.sqlmain,
+.htmlmain{
+	background: #FAFCFE;
+	border: 1px dotted #000;
+	color: #465584;
+	font-family: Courier, Courier New, Verdana, Arial;
+	margin: 0 auto 0 auto;
+	padding: 2px;
+	width: 98%;
+}
+
+/* 
+ * ========================================
+ * old school quote and code styles - backwards compatibility 
+ * ========================================
+ */
+
+#QUOTE,
+#CODE{  
+	background: #FAFCFE; 
+	border: 1px solid #000; 
+	color: #465584; 
+	font-family: Verdana, Arial; 
+	font-size: 11px; 
+	padding: 2px; 
+	white-space: normal;
+}
+
+#CODE{ 
+	font-family: Courier, Courier New, Verdana, Arial;
+}
+
+/* 
+ * ========================================
+ * All New Styles 
+ * ========================================
+ */
+.cleared{
+	clear: both;
+}
+
+.borderwrap,
+.borderwrapm{ /* this will affect the outlining border of all the tables and boxes through-out the skin. */
+	background: #FFF; 
+	border: 1px solid #072A66;
+	padding: 0px; 
+	margin: 0px; 
+}
+
+.borderwrapm{
+	margin: 5px;
+}
+
+.borderwrap h3,
+.maintitle,
+.maintitlecollapse{
+	background: url(style_images/1/tile_cat.gif);
+	border: 1px solid #FFF;
+	border-bottom: 1px solid #5176B5;
+	color: #FFF; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0px;
+	padding: 8px;
+}
+
+.maintitle td {
+	color: #FFF; 
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+.maintitlecollapse{
+	border: 1px solid #FFF;
+}
+
+.maintitle p,
+.maintitlecollapse p,
+.formsubtitle p{
+	background: transparent !important;
+	border: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.maintitle p.expand,
+.maintitle p.goto,
+.maintitlecollapse p.expand,
+.formsubtitle p.members{
+	float: right;
+	width: auto !important;
+}
+
+.maintitle a:link, 
+.maintitle a:visited,
+.maintitlecollapse a:link, 
+.maintitlecollapse a:visited{ 
+	background: transparent;
+	color: #FFF;
+	text-decoration: none; 
+}
+
+.maintitle a:hover, 
+.maintitle a:active,
+.maintitlecollapse a:hover, 
+.maintitlecollapse a:active{ 
+	background: transparent;
+	color: #F1F1F1;
+}
+
+table th,
+.borderwrap table th,
+.subtitle,
+.subtitlediv,
+.postlinksbar{ 
+	background: transparent url(style_images/1/tile_sub.gif);
+	border-bottom: 1px solid #5176B5;
+	color: #3A4F6C; 
+	font-size: 10px;
+	font-weight: bold; 
+	letter-spacing: 1px;
+	margin: 0; 
+	padding: 5px; 
+}
+
+.subtitlediv{
+	border: 1px solid #FFF;
+	border-bottom: 1px solid #5176B5;
+	text-align: right;
+}
+
+.borderwrap table th a:link,
+.subtitle a:link,
+.subtitlediv a:link,
+.borderwrap table th a:visited,
+.subtitle a:visited, 
+.subtitlediv a:visited, 
+.borderwrap table th a:active,
+.subtitle a:active,
+.subtitlediv a:active,
+.borderwrap table th a:hover,
+.subtitle a:hover,
+.subtitlediv a:hover{ 
+	background: transparent;
+	color: #3A4F6C;
+	text-decoration: none; 
+}
+
+.borderwrap h4{
+	background: #DDE6F2;
+	border: 1px solid #FFF;
+	border-bottom: 1px solid #5176B5;
+	border-top: 1px solid #5176B5;
+	color: #5176B5; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.borderwrap p{
+	background: #F9F9F9;
+	border: 1px solid #CCC;
+	margin: 5px;
+	padding: 10px;
+	text-align: left;
+}
+
+td.formbuttonrow,
+.borderwrap p.formbuttonrow,
+.borderwrap p.formbuttonrow1{
+	background: #D1DCEB !important; 
+	border: 1px solid #FFF;
+	border-top: 1px solid #5176B5;
+	margin: 0px !important;
+	padding: 5px !important;
+	text-align: center;
+}
+
+td.formbuttonrow{
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+}
+
+.borderwrap p.formbuttonrow1{
+	background: #F9F9F9 !important;
+	border: 0;
+	border-top: 1px solid #CCC;
+}
+
+.bar,
+.barb,
+.barc{
+	background: #DFE6EF;
+	border: 1px solid #FFF;
+}
+
+.barc{
+	border-bottom: 0;
+}
+
+.bar p,
+.barb p,
+.barc p{
+	background: transparent;
+	border: 0;
+	color: #222;
+	font-size: 11px;
+	margin: 0;
+	padding: 5px;
+	text-align: left;
+}
+
+.barb p{
+	text-align: right;
+}
+
+.bar p.over,
+.bar p.overs,
+.barc p.over,
+.barc p.overs{
+	float: right;
+}
+
+.barb p.over,
+.barb p.overs{
+	float: left;
+}
+
+.bar p.overs,
+.barb p.overs,
+.barc p.overs{
+	position: relative;
+	top: 5px;
+}
+
+.catend{
+	background: #8394B2;
+	color: #000;
+	font-size: 1px;
+	height: 5px;
+}
+
+.newslink{
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	margin: 0;
+	width: 100%;
+}
+
+.newslink td{
+	color: #222;
+	font-size: 10px;
+	padding: 5px 5px 5px 10px;
+}
+
+.newslink span{
+	background: transparent;
+	color: #072A66;
+	font-style: italic;
+	font-weight: normal;
+}
+
+.newslink input{
+	background: #FFF;
+	border: 1px solid #999;
+	color: #072A66;
+	font-size: 10px;
+	padding: 3px;
+	vertical-align: middle;
+	width: auto;
+}
+
+.newslink input.button{
+	background: transparent;
+	border: 0;
+	color: #072A66;
+	vertical-align: middle;
+}
+
+.fieldwrap{
+	background: #F9F9F9;
+	border: 1px solid #CCC;
+	border-top: 0;
+	margin: 5px;
+	padding: 0;
+	text-align: left;
+}
+
+.fieldwrap h4{
+	background: #EEE;
+	border: 1px solid #CCC;
+	border-left: 0;
+	border-right: 0;
+	color: #444; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.errorwrap {
+	background: #F2DDDD;
+	border: 1px solid #992A2A;
+	border-top: 0;
+	margin: 5px;
+	padding: 0;
+}
+
+
+.errorwrap h4 {
+	background: #E3C0C0;
+	border: 1px solid #992A2A;
+	border-left: 0;
+	border-right: 0;
+	color: #992A2A; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.errorwrap p {
+	background: transparent;
+	border: 0;
+	color: #992A2A;
+	margin: 0;
+	padding: 8px;
+}
+
+
+.ruleswrap{
+	background: #F2DDDD;
+	border: 1px solid #992A2A;
+	color: #992A2A; 
+	margin: 5px 0 5px 0;
+	padding: 5px;
+}
+
+#redirectwrap{
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	margin: 200px auto 0 auto;
+	text-align: left;
+	width: 500px;
+}
+
+#redirectwrap h4{
+	background: #D0DDEA;
+	border-bottom: 1px solid #C2CFDF;
+	color: #3A4F6C;
+	font-size: 14px;
+	margin: 0;
+	padding: 5px;
+}
+
+#redirectwrap p{
+	margin: 0;
+	padding: 5px;
+}
+
+#redirectwrap p.redirectfoot{
+	background: #E3EBF4;
+	border-top: 1px solid #C2CFDF;
+	text-align: center;
+}
+
+
+#gfooter{
+	background: #8394B2;
+	margin: 5px 0 5px 0;
+	padding: 0;
+	width: 100%;
+}
+
+#gfooter td{
+	color: #FFF;
+	font-size: 10px;
+	padding: 4px;
+}
+
+#gfooter a:link,
+#gfooter a:visited{
+	color: #FFF;
+}
+
+#logostrip{ 
+	background: #3860BB url(style_images/1/tile_back.gif);
+	border: 1px solid #FFF;
+	height: 68px;
+	margin: 0;
+	padding: 0;
+}
+
+#logographic{
+	background: transparent url(style_images/1/logo4.gif) no-repeat left;
+	height: 68px;
+	margin: 0;
+	padding: 0;
+}
+
+#submenu{ 
+	background: transparent url(style_images/1/tile_sub.gif);
+	border: 1px solid #FFF;
+	border-top: 0;
+	color: #3A4F6C; 
+	margin: 0; 
+}
+
+#userlinks,
+#userlinksguest{ 
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	margin: 5px 0 5px 0;
+	padding: 0 5px 0 5px;
+}
+
+#userlinksguest{ 
+	background: #F4E7EA;
+	border: 1px solid #986265;
+}
+
+#submenu p,
+#userlinks p,
+#userlinksguest p{
+	background: transparent !important;
+	border: 0 !important;
+	font-size: 10px;
+	font-weight: bold; 
+	letter-spacing: 1px;
+	margin: 0 !important;
+	padding: 7px 0 7px 0; 
+	text-align: right;
+}
+
+#userlinks p,
+#userlinksguest p{
+	font-weight: normal;
+	letter-spacing: 0;
+}
+
+#submenu p.home,
+#userlinks p.home,
+#userlinksguest p.home{
+	float: left;
+}
+
+#userlinksguest p.pcen{
+	text-align: center;
+}
+
+#submenu a:link, 
+#submenu  a:visited{ 
+	background: transparent; 
+	color: #3A4F6C; 
+	padding: 0 6px 0 6px;
+	text-decoration: none;
+}
+
+#submenu a:hover, 
+#submenu a:active{
+	background: transparent; 
+	color: #5176B5; 
+}
+
+#navstrip{ 
+	background: transparent;
+	color: #999;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+	padding: 14px 0px 8px 0px; 
+}
+
+#navstrip a:link, 
+#navstrip  a:visited{ 
+	background: transparent; 
+	color: #222; 
+	text-decoration: none;
+}
+
+#navstrip a:hover, 
+#navstrip a:active{
+	background: transparent; 
+	color: #5176B5; 
+}
+
+.toplinks{
+	background: transparent;
+	color: #000;
+	margin: 0;
+	padding: 0 0 5px 0;
+	text-align: right;
+}
+
+.toplinks span{
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	border-bottom: 0;
+	color: #000;
+	font-size: 10px;
+	font-weight: bold;
+	margin: 0 10px 0 0;
+	padding: 5px;
+}
+
+.copyright{ 
+	background: #EEE;
+	font-size: 11px; 
+	margin: 0 0 5px 0;
+	padding: 8px;
+}
+
+/* 
+ * ========================================
+ * print page styles 
+ * ========================================
+ */
+
+#print{
+	margin: 20px auto 20px auto;
+	padding: 0;
+	text-align: left;
+	width: 85%;
+}
+
+#print h1,
+#print h2,
+#print h3,
+#print h4,
+#print p{
+	color: #036;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+	padding: 8px;
+}
+
+#print h2,
+#print h3,
+#print p{
+	border-bottom: 1px solid #999;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+#print h3{
+	background: #F5F5F5;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0 0 10px 0;
+}
+
+#print h4{
+	background: #F9F9F9;
+	font-size: 11px;
+}
+
+#print p{
+	margin: 0 0 5px 0;
+	padding: 10px;
+}
+
+#print p.printcopy{
+	border: 0;
+	color: #000;
+	text-align: center;
+}
+
+/* ============================================================== */
+/* RTE STYLES
+/* ============================================================== */
+
+.rteimage {
+	/*background: #D3D3D3;*/
+	/*border: 1px outset transparent*/;
+	cursor: pointer;
+	cursor: hand;
+	padding:1px;
+}
+
+.rteImageRaised {
+	/*background: #D3D3D3;*/
+	border: 1px outset;
+	cursor: pointer;
+	cursor: hand;
+	padding:0px;
+}
+
+.rteImageLowered {
+	/*background: #D3D3D3;*/
+	border: 1px inset;
+	cursor: pointer;
+	cursor: hand;
+	padding:0px;
+}
+
+.rteimage:hover {
+	background: #EBEBEB;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.rteVertSep {
+	margin: 0 4px 0 4px;
+}
+
+.rteBack {
+	background: #D3D3D3;
+	border: 1px outset;
+	letter-spacing: 0;
+	padding: 2px;
+}
+
+/* used in ips_rte.js - do not remove */
+.rtebottombutton
+{
+	font-size:10px;
+	border:1px solid #777;
+	border-top:0px;
+	padding:3px;
+	margin:0px;
+	background-color: #EBEBEB;
+}
+
+/* used in ips_rte.js - do not remove */
+.rtebottombuttonon
+{
+	font-size:10px;
+	border:1px solid #777;
+	border-top:0px;
+	padding:3px;
+	margin:0px;
+	background-color: #D3D3D3;
+}
+
+.rtebuttonbar1 {
+	/*background: #D3D3D3;*/
+	background-image: url(style_images/1/folder_rte_images/rte_tile.gif);
+	border: 1px solid gray;
+	border-bottom:0px;
+	letter-spacing: 0;
+	padding: 2px;
+	height:26px;
+}
+
+.rtebuttonbar2 {
+	/*background: #D3D3D3;*/
+	background-image: url(style_images/1/folder_rte_images/rte_tile.gif);
+	border: 1px solid gray;
+	border-top:1px solid gray;
+	letter-spacing: 0;
+	padding: 2px;
+	height:26px;
+}
+
+.rtebuttonbar1 tbody tr td,
+.rtebuttonbar1 tr td,
+.rtebuttonbar2 tbody tr td,
+.rtebuttonbar2 tr td,
+.rteBack tbody tr td,
+.rteBack tr td
+{
+	/*background: #D3D3D3;*/
+	padding: 0;
+}
+
+.rteDiv {
+	display: block;
+	position: relative;
+	padding:0px;
+	margin:0px;
+}
+
+.rteiframe
+{
+	border:1px solid #777;
+	background-color:#FFF;
+}
+
+.rteselectbox
+{
+	font-size:11px;
+}
+
+
+.dny-edit-title
+{
+	border:0px;
+	padding:3px;
+	margin:0px;
+	background: #D1DCEB; 
+	color: #3A4F6C; 
+}
+
+
+/* ======================================== */
+/* TABS
+/* ======================================== */
+
+.tabon
+{
+	border-top:1px solid #999;
+	border-left:1px solid #999;
+	border-right:1px solid #999;
+	background-color:#FFF;
+	padding:8px;
+	padding-bottom:9px;
+	font-size:10px;
+	float:left;
+	width:auto;
+	margin-top:3px;
+}
+
+.taboff
+{
+	border-top: 1px solid #777;
+	border-left: 1px solid #777;
+	border-right: 1px solid #777;
+	background-color: #B5C3D9;
+	color: #333;
+	padding: 8px;
+	font-size:10px;
+	float: left;
+	width: auto;
+	margin-top:3px;
+}
+
+.tabon a:link, 
+.tabon a:visited, 
+.tabon a:active
+{
+	text-decoration:none;
+	color: #000;
+}
+
+.taboff a:link, 
+.taboff a:visited, 
+.taboff a:active
+{
+	text-decoration:none;
+	color: #333;
+}
+
+.mya-back
+{
+	background: #072A66;
+	margin:1px;
+}
+
+.mya-content
+{
+	background: #FFF;
+	padding:8px;
+	margin:1px;
+	border: 1px solid #777;
+}
+
+/* -------------------------------- */
+/* Create PM box defaults           */
+/* -------------------------------- */
+
+.iframeshim
+{
+	position:absolute;
+	display:none;
+	background: #FFF;
+	filter:alpha(opacity=0);
+	border:0px;
+	width:auto;
+	height:auto;
+}
+
+
+
+/* -------------------------------- */
+/* Experimental                     */
+/* -------------------------------- */
+
+.popupmenu
+{
+   background: #F0F5FA;
+   border: 1px solid #3A4F6C;
+   text-align:left;
+   font-size:10px;
+   white-space:nowrap;
+   /*padding:3px 5px 3px 3px;*/
+   /*width:300px;*/
+}
+
+.popupmenu-item
+{
+	padding: 5px;
+	/*margin-top:4px;*/
+	white-space: nowrap;
+	border-bottom: 1px solid #C2CFDF;
+}
+
+.popupmenu-item-last
+{
+	padding: 5px;
+	/*margin-top:4px;*/
+	white-space: nowrap;
+}
+
+.popmenubutton
+{
+	width:120px;
+	white-space:nowrap;
+	background-color: #C2CFDF;
+	border:1px solid #3A4F6C;
+	color: #3A4F6C;
+	font-weight:bold;
+	float:right;
+	height:18px;
+	text-align:center;
+	margin:0px;
+	font-size:11px;
+	padding:3px;
+}
+
+
+.popmenubutton a:link, 
+.popmenubutton a:visited,
+.popupmenu-item a:link, 
+.popupmenu-item a:visited,
+.popupmenu-item-last a:link, 
+.popupmenu-item-last a:visited
+{ 
+	color: #3A4F6C; 
+	text-decoration: none;
+}
+
+.popmenubutton a:hover, 
+.popupmenu-item a:hover, 
+.popupmenu-item-last a:hover
+{ 
+	color: #5176B5; 
+	text-decoration: none;
+}
+
+.popupmenu-category
+{ 
+	background: transparent url(style_images/1/tile_sub.gif);
+	border-top: 1px solid #5176B5;
+	border-bottom: 1px solid #5176B5;
+	color: #3A4F6C; 
+	font-size: 10px;
+	font-weight: bold; 
+	letter-spacing: 1px;
+	margin: 0; 
+	padding: 5px; 
+}
+</style>
+	</head>
+	<body>
+	<div id="print">
+		<h1>A téma nyomtatható változata</h1>
+		<h2><a href="http://www.pcworld.hu/forum/index.php?act=ST&f=69&t=13759" title="Téma megtekintése">Kattints ide az eredeti formátum megtekintéséhez!</a></h2>
+		<h3>PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok</h3><div class="printpost">
+			<h4>Szerző:: Spányik Balázs  2005. május 30. 15:08</h4>
+			<p><b>Saját használatúvá tettem a Dokumentumokban a Képek mappát, melyet elfelejtettem feloldani XP-újratelepítés előtt. Most pedig nincs hozzáférésem a mappához. Mit tegyek?</b><br></p><blockquote>Ha rendszergazda vagy a gépen, akkor simán vissza tudod szerezni XP alól is. Csak ki kell kapcsolni az egyszerű fájlmegosztást a mappa beállításainál, majd az adott mappa jobb gombos menüjében megjelenő <i>Biztonság</i> fülön kell beállítanod hozzáférést.<br><blockquote><b>Windows XP Home</b><ul><li><span> <a class="linkclass" href="http://winportal.net/?id=16">http://winportal.net/?id=16</a></span></li><li> Csökkentett mód</li></ul></blockquote></blockquote><br><b>Rendszergazdai fiók jelszavának megadása</b><br><blockquote>Jobb klatty <i>Sajátgép</i> --&gt; <i>Kezelés </i>--&gt; <i>Helyi felhasználók és csoportok</i> --&gt; <i>Felhasználók</i> --&gt; jobb klatty <i>Rendszergazda</i> --&gt; <i>Jelszó megadása </i>--&gt; <i>Folytatás</i> --&gt; Öröm és boldogság.</blockquote><br><b>Van egy eléggé zavaró jelenség az XP-ben: ha bekapcsol a képernyőkímélő, a Windows kijelentkezik. Lehet ez ellen tenni valamit?</b><br><blockquote>Igen. Nyisd meg a képernyőbeállítási ablakot (jobb klikk az asztalon és tulajdonságok), menj rá a képernyőkímélő fülre, és vedd ki a pipát az üdvözlőképernyő elől.</blockquote><br><b>Az lenne a kérdésem, el tudom-e rejteni úgy a felhasználói fiókomat, hogy a Logon képernyőn ne jelenjen meg (lásd rendszergazdai), csak ha "pötyögős" bejelentkezést szeretnék?</b><br><blockquote>TweakUI</blockquote><br><b>Elolvasatlan levelek kijelzése a felhasználónévhez az üdvözlőképernyőn</b><br><blockquote>TweakUI</blockquote><br><b>A Windows induláskor nem jelentkezik be automatikusan, hanem rá kell kattintani a felhasználóra (pedig csak 1 user van)</b><br><blockquote>Valószínüleg van egy .NET felhasználó is, azt törölni kell.</blockquote><br><b>Hol kell beállítanom, hogy a gép rendszergazdája helyett egy üdvözlőképernyőn az adott felhasználó legyen? Mert most nem tudom miért, automatikusan a rendszergazda jelentkezik be.</b><br><blockquote>Tweak UI</blockquote><br><span><a class="linkclass" href="http://support.microsoft.com/kb/315347/hu">http://support.microsoft.com/kb/315347/hu</a></span><br><br><b>Klasszikus bejelentkezés visszaállítása</b><br><blockquote>Mentsd el *.reg fájlként, aztán duplázz rá, OK!<br><blockquote><!--c1--><div class="codetop">KÓD</div><div class="codemain"><!--ec1-->Windows Registry Editor Version 5.00<br><br>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon]<br><br>"LogonType"=dword:00000001<!--c2--></div><!--ec2--></blockquote></blockquote><br><b>Jelszó feltörése</b><ul><li><span> <a class="linkclass" href="http://ophcrack.sourceforge.net/download.php?type=livecd">http://ophcrack.sourceforge.net/download.php?type=livecd</a></span></li><li><span> <a class="linkclass" href="http://www.prime-expert.com/ebcd/">http://www.prime-expert.com/ebcd/</a></span></li><li><span> <a class="linkclass" href="http://download2.lsoft.net/boot-cd-iso.zip">http://download2.lsoft.net/boot-cd-iso.zip</a></span></li></ul><b>Letiltott Regedit és Feladatkezelő</b><br><blockquote>Parancssorból próbáld meg a következőt:<br><!--c1--><div class="codetop">KÓD</div><div class="codemain"><!--ec1-->reg delete HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /f /v DisableTaskmgr<!--c2--></div><!--ec2--><br><!--c1--><div class="codetop">KÓD</div><div class="codemain"><!--ec1-->reg delete HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /f /v DisableRegistryTools<!--c2--></div><!--ec2--><br>Ha ez megtörtént, akkor kezdhetjük keresni a telepítőkészletünket, mert -- bizony -- nyertünk egy újratelepítést, hiszen valami ocsmányság munkálkodik a gépünkön.</blockquote><br><b>Ha nem működik a Vezérlőpult --&gt; Felhasználói fiókok</b><br><blockquote>Jobb katt Sajátgépen --&gt; Kezelés --&gt; Rendszereszközök --&gt; Helyi felhasználók és csoportok --&gt; Felhasználók<br>Ha bekövetkezett, hogy nem működik valami a Vezérlőpultban, akkor készüljünk fel, lesz egy újratelepítésünk a közeljövőben.</blockquote>
+			<br>
+			<!--IBF.ATTACHMENT_8766-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: SSSANYA  2006. január 20. 13:01</h4>
+			<p>Üdv!<br><br>Segítsetek légyszíves.<br><br>Azt szeretném megtudni, hogy hogyan lehetne a felhasználói fiókokat egyedire beállítani. Én szeretném meghatározni a felhasználók jogait nem pedig választani a "mindent szabad" és a "ne törölj és ne telepíts" lehetőségek közül.<br><br>Köszönöm!<br>S.
+			<br>
+			<!--IBF.ATTACHMENT_81392-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pötyi23  2006. január 20. 13:32</h4>
+			<p>Vezérlőpult - Felügyeleti eszközök - Helyi biztonsági beállítások. De azért csak óvatosan, nehogy magadat is kizárd!
+			<br>
+			<!--IBF.ATTACHMENT_81411-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: jonyfilpo  2006. május 24. 21:06</h4>
+			<p>Sziasztok!<br><br>Egy kis segítségre lenne szükségem.<br><br>Egy vállalatnál dolgozom, de elegem lett a titkárnők és más számítástechnikai analfabéták miatt egyre csak szaporodó munkámból. Hiába a korlátozott jogosultságú felhasználói jog, egy-egy ikon mindig eltűnik és mehet ki visszaállítani, mert arra sem képesek.<br><br>Van itt egy külsős cég által behozott számítógép, amiken hivatalos okmányokat nyomtatnak és ezzel kapcsolatosan végzik a munkájukat. A gépen XP van, és jól meg van komponálva. Nem lehet semmit, még egy ikont sem eltüntetni az asztalról, a vezérlőpult egy az egyben el van tüntetve mindenhonnan, hogy még véletlen se lehessen rákattinatani stb. Tényleg nagyon bolondbiztos.<br><br>Csináltam egy butított Windowst az újságotokban bemutatott nLlite progival, és tényleg tök jó, hogy ki lehet gyökölni, de sajnos a jogosultságok és az "eltünő ikonok" ugyebár nem ennek a kérdése. Próbáltam már a jogosultságokkal mahinálni, de csak egy szintig lehet...<br><br>Hogyan csinálták meg azt az XP-s gépet, hogy olyan bolond biztos lett? Hogyan tudnám ilyen szinten felállítani egyes gépeken a jogosultságokat?<br><br>Nagyon sokat tudnátok segíteni ezzel. Előre is köszi mindenkinek..<br><br>Üdv: <br>J
+			<br>
+			<!--IBF.ATTACHMENT_115595-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: nagygabor  2006. május 24. 21:23</h4>
+			<p>Először is tudni kell, hogy milyen hierarchiában vannak a gépek. Van serveretek, vagy csak routerrel osztjátok egymás között az adatot? Ha van, akkor milyen operációs rendszer fut a servereteken.<br>Domainbe vannak rendezve a kliens gépek? Ha igen, akkor van arra lehetőség, hogy felhasználóra és számítógépre is beállíts elég drasztikus korlátozásokat. A felhasználó korlátozása annyiban jobb, hogy ő bárhol (bármyelyik gépen a forestben) jelentkezik be a tartományba, mindig a rá vonatkozó korlátozások lépnek épetbe. Pl. el van tüntetve a vezérlőpult. Szóval, ha egy kicsivel bővebb infót szolgáltatsz a rendszertekről, akkor talán tudok segíteni. <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/ani_wink.gif" style="vertical-align:middle" emoid=";)" border="0" alt="ani_wink.gif">
+			<br>
+			<!--IBF.ATTACHMENT_115597-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: aty  2006. május 24. 22:12</h4>
+			<p>gpedit.mscben elég érdekes dolgokat találhatsz. Itt elég részletesen beállíthatod hogy mit csinálhatnak a felhasználók.<br>Ha domainbe lépteted őket, ezeket az opciókat központilag is állíthatod.
+			<br>
+			<!--IBF.ATTACHMENT_115602-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: TheSaurus  2006. május 25. 7:12</h4>
+			<p>Ha egy gépen megcsinálod a korlátozásokat, utána a \Windows\system32\GroupPolicy mappát át lehet másolni (rendszergazda jogokkal) a többi gépre (1-2 MB az egész, akár PenDrive-on is lehet), ha esetleg a hálózat felépítése miatt nem lehet központilag intézni. Lehet, hogy szükséged lesz a \Windows\system32\gpupdate.exe-re is, ha ez esetleg a kliensgépeken nincs meg. <br>Én egy iskolában ezzel oldottam meg bizonyos problémákat, és egész jól működött.
+			<br>
+			<!--IBF.ATTACHMENT_115627-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: jonyfilpo  2006. május 25. 7:58</h4>
+			<p>Sziasztok!<br><br>Idáig is köszi a tippeket! Igen van központ szerver. Egy Windows 2003 szerver, és csináltam saját tartományt tehát tartományvezérlő is. A gépeket domainba vannak rendezve... úgy kell nekik feljelentkezni.<br><br>Hogyan működik ez a domainos korlátozás? Meg tudom teljesen korlátozni őket a köponti szerverrről is?
+			<br>
+			<!--IBF.ATTACHMENT_115636-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: TheSaurus  2006. május 25. 8:09</h4>
+			<p>Ez meg elég részletesen szerepel a Windows 2003 szerverrő szóló könyvben (Holczer-Benkovics), ami ugyan nekem is megvan otthon, de még sose dolgoztam ilyen rendszeren, így ebben nem tudok segíteni. De az a tapasztalatom, hogy ahol szerver van, ott könyv is van, sőt. Nálunk az iskolában három példány is van a könyvből, a szerver viszont Novell.
+			<br>
+			<!--IBF.ATTACHMENT_115641-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: jonyfilpo  2006. május 25. 8:15</h4>
+			<p>Van valami könyvem, amit még a kiskaputól rendeletem, de nem nagyon találtam benne meg ezt a részt... lehet, hogy tüzetesebben át kéne futnom??
+			<br>
+			<!--IBF.ATTACHMENT_115643-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: TheSaurus  2006. május 25. 8:17</h4>
+			<p>Lehet.
+			<br>
+			<!--IBF.ATTACHMENT_115645-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: nagygabor  2006. május 25. 8:50</h4>
+			<p>Nos.<br>A felügyeleti eszközök alól megnyitod az "Active directory felhasználók és számítógépek" modult.<br>Ott megjelenik fastruktúrában bal oldalon a domained. Azin belül megkeresed a szervezeti egységet, amibe a korlátozandó egyének vannak. (Ha nem hoztál létre ilyent, akkor a My Business-t keresd) Azon belül az USERS mappa. Abban vannak a felhaszálók. Ha mindenkinek egyforma korlátozást akarsz bevezetni, akkor a USERS mappára jobb gombbal kattintva előhozod a tulajdonságait, és itt a Group Policy fület választod, majd klikkelsz az Open gombra.<br><br>Megnyílik egy másik ablak, az úgynevezett csoportházirend szerkesztő. (Group Policy Management) Itt kiválasztod a szervezeti egységedet, amire a házirendet akarod létrehozni, és jobb klikkel a legfelső menüpontot választod. "Create and link a GPO here" Ezután megadsz egy nevet a házirendnek. Ez jobb oldalon megjelenik a listában. Erre ismét jobb klikkel kattintasz és nyomod neki az EDIT gombot. Ezután megjelenik egy új ablak. Ez már ismerős lezs az XP-ből, csak itt egy kicsit részletesebben testre lehe szabni a dolgokat. Itt ki lehet választani, hogy számítógépre vagy felhasználóra milyen jogosultásgok fognak vonatkozni. Ha a felhasználónevekhez a tartományban nincsenek számítógépek rendelve, akkor a "számítógép konfigurációja" részt ne is piszkáld.<br><br>Remélem érthetően leírtem mindent. Ha valamit nem értesz, akkor inkább kérdezz, mert elég szépen el lehet keveredni az egészben. <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/ani_wink.gif" style="vertical-align:middle" emoid=";)" border="0" alt="ani_wink.gif">
+			<br>
+			<!--IBF.ATTACHMENT_115654-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: jonyfilpo  2006. május 25. 9:51</h4>
+			<p>Húúú... kösz! Elkezdem műteni... ha valami nem stájsz, akkor úgyis sírok itt egy sort!<br><br>Hát figyi. Megnéztem a dolgokat, de nem vannak ott, ahol te írod. Tehát megnyitottam a "Active directory felhasználók és számítógépek" fület ugyebár és megjelent oldalt a fa szerkezet. Ott meg is találtam egyből a USER fület, hisz itt szoktam felhasználókat létre hozni, de olyan hogy my bussines meg ilyesmi nincs...<br><br>Rákattintottam a USER tulajdonságaira, de ott egy külön ablakban csak 3 fület tartalmazó ablakocska jelent meg, és egyiknek sincs köze az eredő házirendhez (magyar nyelvű a windows). Próbáltam a felhasználóknál bogarászni... és ott a jobbklikre előugró menüsorban van csak olyan hogy házirend tervező... el is indítottam, és megjelent a házirend fa szerkezete, de nem sok mindent lehet ott bellítani...<br><br>Rossz helyen keresgélek?
+			<br>
+			<!--IBF.ATTACHMENT_115665-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: aty  2006. május 25. 10:19</h4>
+			<p>Mint mondtam beírod: gpedit.msc futtatásba és láss csodát.
+			<br>
+			<!--IBF.ATTACHMENT_115672-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: jonyfilpo  2006. május 25. 10:30</h4>
+			<p>Tényleg csodát láttam! Köszi szépen! Akkor gondolom ezt csak 1-1 userre külön is meg tudom határozni, ugyi? Azt pedig az USEREN kell szerkesszem, ugyi?
+			<br>
+			<!--IBF.ATTACHMENT_115675-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: nagygabor  2006. május 25. 10:36</h4>
+			<p>@Aty: nem éppen. És ott hol szabod meg a felhasználóknak a jogokat? Nem egyszerűbb, ha egy csoportra hozol létre házirendet? Ha segíteni akarsz neki, akkor szólj, én nem írok közbe semmit, de akkor ne egysoros válaszokban akard megmutatni, hogyan kell házirendet definiálni. <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/annoyed.gif" style="vertical-align:middle" emoid=":S" border="0" alt="annoyed.gif"> <br><br>A házirend-szerkesztőben csak akkor tudsz jogosultságokat beállítani, ha egy létező házirendet szerkesztesz át, vagy létrehozol egy újat. (Utóbbit ajánlom) A felügyeleti egyközök menüben keressed meg a Group Policy Managementet (eredő házirend szerkesztő, azt hiszem). Itt van a felhasználó könyvtár. Lehet neked nincsen, mert Server 2003-at használtok, mi meg SBS Servert. Akkor azt a könyvtárat keresd meg, ahol a felhasználók vannak.<br><br><img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/272642859sbs_gpo_www.kepfeltoltes.hu_.jpg" border="0" alt="IPB kép"><br><br>Itt létrehozod a házirendet. Utána megjelenik a jobb oldali üres részben. Ekkor jobb klikkel rákattansz, és EDIT. Utána tudod definiálni a jogokat.<br><br>Tudomásom szerint, ha a Serveren futtatod a gpedit.msc-t, akkor azzal nem a Serverre vonatkozó házirendet állítod be? Ott nem tudod megadni, hogy kikre vonatkozzon.
+			<br>
+			<!--IBF.ATTACHMENT_115677-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: jonyfilpo  2006. május 25. 10:53</h4>
+			<p>Kezd zűrössé válni....<br><br>Az első és legfontosabb nekem az, hogy nehogy olyan házirendet rongáljak, ami nem kimondottan USERekhez tartozik. Nem szeretném a szerver házirendjét szétzilálni. Olyat is szeretnék, hogy 1-1 usert külön korlátozni és olyat, hogy csinálok egy csoportot és bevonok alá USEREKET, hisz felesleges lenne egyenként beállítani ha ugyan azt akarom rajtuk érvényesíteni.<br><br>Hogyan tudod képet ide beilleszteni a fórumba? muatnám, hogy nekem milyen a "fám".
+			<br>
+			<!--IBF.ATTACHMENT_115683-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: nagygabor  2006. május 25. 10:56</h4>
+			<p><span>Kimented &lt;print screen&gt;-nel és beilleszted valamilyen képszerkesztő progiba. Feltöltöd a <a class="linkclass" href="http://www.kepfeltoltes.hu-ra/">www.kepfeltoltes.hu-ra</a> és ott a direkt linket megadod a kép forrásaként. </span><img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/ani_wink.gif" style="vertical-align:middle" emoid=";)" border="0" alt="ani_wink.gif">
+			<br>
+			<!--IBF.ATTACHMENT_115684-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Spányik Balázs  2006. május 25. 11:00</h4>
+			<p>Kicsit kevesebb három pontért cserébe megmondom (nem győzöm kitörölni őket). ;-) Ez Gábor képének a kódja:<br><br><!--c1--></p><div class="codetop">KÓD</div><div class="codemain"><!--ec1--><span>[img]<a class="linkclass" href="http://www.kepfeltoltes.hu/060525/272642859sbs_gpo_www.kepfeltoltes.hu_.jpg[/img]">http://www.kepfeltoltes.hu/060525/272642859sbs_gpo_www.kepfeltoltes.hu_.jpg[/img]</a></span><!--c2--></div><!--ec2--><br><br>
+			<br>
+			<!--IBF.ATTACHMENT_115686-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: jonyfilpo  2006. május 25. 11:44</h4>
+			<p><span>Nos, amint látod nekem egy kicsit más a fám! --&gt; <a class="linkclass" href="http://www.kepfeltoltes.hu/view/060525/4505685051_www.kepfeltoltes.hu_.jpg">http://www.kepfeltoltes.hu/view/060525/4505685051_www.kepfeltoltes.hu_.jpg</a></span><br><br><span>De semmi gond, mert nyomok egy jobb klikket a USER-en, és nincs ott az eredő házirenddel kapcsolatban semmi, még az almenüben sem... --&gt; <a class="linkclass" href="http://www.kepfeltoltes.hu/view/060525/6550478442_www.kepfeltoltes.hu_.jpg">http://www.kepfeltoltes.hu/view/060525/6550478442_www.kepfeltoltes.hu_.jpg</a></span><br><br><span>De utána, ha rámegyek a próbaképp léterhozott USER-ra, a neve ugye probauser, akkor ott van valami ilyesmi --&gt; <a class="linkclass" href="http://www.kepfeltoltes.hu/view/060525/1854333653_www.kepfeltoltes.hu_.jpg">http://www.kepfeltoltes.hu/view/060525/1854333653_www.kepfeltoltes.hu_.jpg</a></span><br><br>Ez lenne az szeritetek?<br>
+			<br>
+			<!--IBF.ATTACHMENT_115698-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: nagygabor  2006. május 25. 11:48</h4>
+			<p>Az user mappa tulajdonságát kell megnyitni, és ott kell lennie az GPO-nak. Ahogy nézem, neked egy kicsit más a felhasználók elrendezése. Én OU-kat (organization unit=szervezeti egység) hoztam létre a tartományban. Minden OU-nak külön házirendje van. Így nem fordul elő az, hogy a raktárban bejelentkező userek internetezni tudnak. Az csak az irodások privilégiuma. Ha javasolhatok valamit, akkor te is szervezd őket OU-kba. PL.: Titkarsag, porta, igazgatósag, tantermek, vagy valami hasonló. Így jobban kezedben tudod tartani a felhasználók jogait.
+			<br>
+			<!--IBF.ATTACHMENT_115700-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Laali  2006. május 25. 11:53</h4>
+			<p>Az ikonokról és a menüről: ha a felhasználó csökkentett jogú és a fájlrendszer NTFS, akkor ha az ikonokat és a menüket az All Users mappában telepítjük akkor sem lehet a felhasználóból törölni. Persze a 60 napos desktop karbantartást ki kell kapcsolni.
+			<br>
+			<!--IBF.ATTACHMENT_115702-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: nagygabor  2006. május 25. 11:55</h4>
+			<p>Ez is igaz. <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/doh.gif" style="vertical-align:middle" emoid=":hátpersze:" border="0" alt="doh.gif">
+			<br>
+			<!--IBF.ATTACHMENT_115703-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: jonyfilpo  2006. május 25. 11:57</h4>
+			<p>Aham... pl akkor én itt majd azt is tudom 1-1 felhasználónak, vagy csoportnak engedélyezni hogy netezhetnek vagy nem. De azt is, hogy ha neteznek, akkor csak milyen lapokat nyithat meg? Vagy ahoz már feltétlen kell proxy?<br>
+			<br>
+			<!--IBF.ATTACHMENT_115705-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: nagygabor  2006. május 25. 12:01</h4>
+			<p>Nem kell hozzá semmi extra, csak a házirendben az Internet Explorernél meg kell adni a tiltott vagy engedélyezrtt oldalakat. Netet meg úgy tiltom, hogy nem engedek az ie-ben a belső webhelyen kívől megnyitni más oldalt, de csak azért így, mert nekem a netet nem a server osztja, hanem egy wireless router.<br><br><span>szerk.: Tudom ajánlani <a class="linkclass" href="http://www.szak.hu/konyvek_htm/windows_server_2003.html">http://www.szak.hu/konyvek_htm/windows_server_2003.html</a> a könyvet. Én ezt használom, ha elakadok valahol. Nagyon korrekten le van írva minden.
+			</span><br>
+			<!--IBF.ATTACHMENT_115707-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: TheSaurus  2006. május 25. 12:04</h4>
+			<p>Ha mindenkinek meg van tiltva a telepítés, és a netezésre csak az IE marad nekik, akkor talán elég ennek a beállításait megpiszkálni, meg a hosts fájlt. Nem mintha a proxynak nem lenne amúgy szekérderéknyi haszna. Én anno egy szerver nélküli iskolában minden gépre felraktam az avast!-ot, abban gyönyörűen be lehet állítani a tartalomszűrést, és az adatbázisát is simán át lehetett másolni egyik gépről a másikra.
+			<br>
+			<!--IBF.ATTACHMENT_115708-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: jonyfilpo  2006. május 25. 12:15</h4>
+			<p>Nos a USER tulajdonságaira a következőt ablakok jelennek meg...<br><br><span>[url=<a class="linkclass" href="http://www.kepfeltoltes.hu/view/060525/4505685051_www.kepfeltoltes.hu_.jpg][img]">http://www.kepfeltoltes.hu/view/060525/4505685051_www.kepfeltoltes.hu_.jpg][img]</a></span><br><br><span>[url=<a class="linkclass" href="http://www.kepfeltoltes.hu/view/060525/6550478442_www.kepfeltoltes.hu_.jpg][img]">http://www.kepfeltoltes.hu/view/060525/6550478442_www.kepfeltoltes.hu_.jpg][img]</a></span><br><br><span>[url=<a class="linkclass" href="http://www.kepfeltoltes.hu/view/060525/1854333653_www.kepfeltoltes.hu_.jpg][img]">http://www.kepfeltoltes.hu/view/060525/1854333653_www.kepfeltoltes.hu_.jpg][img]</a></span><br><br>látod itt nem negyon van eredő házirend cuccos... <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/sad.gif" style="vertical-align:middle" emoid=":(" border="0" alt="sad.gif"><br><br><span><a class="linkclass" href="http://www.kepfeltoltes.hu/view/060525/usertul1_www.kepfeltoltes.hu_.jpg">http://www.kepfeltoltes.hu/view/060525/usertul1_www.kepfeltoltes.hu_.jpg</a></span><br><span><a class="linkclass" href="http://www.kepfeltoltes.hu/view/060525/usertul2_www.kepfeltoltes.hu_.jpg">http://www.kepfeltoltes.hu/view/060525/usertul2_www.kepfeltoltes.hu_.jpg</a></span><br><span><a class="linkclass" href="http://www.kepfeltoltes.hu/view/060525/usertul3_www.kepfeltoltes.hu_.jpg">http://www.kepfeltoltes.hu/view/060525/usertul3_www.kepfeltoltes.hu_.jpg</a></span><br><br>szerintem beszerzem én ezt a könyvet, és megpróbálok azzal boldogulni..
+			<br>
+			<!--IBF.ATTACHMENT_115709-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: nagygabor  2006. május 25. 12:20</h4>
+			<p>Ezek szerint ennyiben különbözik az SBS és a Standard kiadás.<br>Felügyelet eszközök <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/arrow.gif" style="vertical-align:middle" emoid=":nyíl:" border="0" alt="arrow.gif"> Group policy management. Ilyennek szerepelnie kell  <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/ani_wink.gif" style="vertical-align:middle" emoid=";)" border="0" alt="ani_wink.gif">
+			<br>
+			<!--IBF.ATTACHMENT_115713-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: jonyfilpo  2006. május 25. 12:24</h4>
+			<p>igen, elég másnak tűnik... tudod az az érzésem, hogy sok megválaszolatlan kérdésem van még ezzel kapcsolatba, de elmegyek megveszem a könyvet... de ha ott elakadok azért még fordulok hozzátok!<br><br> <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/roll.gif" style="vertical-align:middle" emoid=":hááát:" border="0" alt="roll.gif"> <br><br><br>Köszi szépen mindenkinek a segítséget... sokat tettetek...<br><br> <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif">  <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/cool.gif" style="vertical-align:middle" emoid="8)" border="0" alt="cool.gif">
+			<br>
+			<!--IBF.ATTACHMENT_115715-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: nagygabor  2006. május 25. 12:32</h4>
+			<p>Nincs mit. <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/ani_wink.gif" style="vertical-align:middle" emoid=";)" border="0" alt="ani_wink.gif">
+			<br>
+			<!--IBF.ATTACHMENT_115717-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: djadji  2006. május 29. 12:42</h4>
+			<p>Hello!<br><br>Szeretném megtudni, hogyan tudnám megcsinálni legegyszerűbben azt, hogy egy iskolában a szmítógépeken a gyerekek ne tudjan szébombázni semmi fontosat. Pl a Diak felhasználóval ne lehessen törölni a C:-ről, ne lehessen rendszerbeállításokon változtatni (esetleg ha mégis, akkor restart után állítsa vissza) meg ilyesmik. Win XP-k vannak mindenhol, a gépek hálózatban vannak. Ha tudnátok adni nekem egy olyan oldalt ahol ez le van írva akkor nem itt zavaroskodnék. "Bolondbiztos PC". NA ilyesmi kellene nekem...  <br><br>Azt olvastam hogy valaki már csinált ilyesmit. Nem tudom, hogy ezt tartományi bejelentkezés nélkül meg lehetne-e oldani? Ilyet nem csináltam még az elejétől, és kellene nemi info, hogyan is kezdjek hozzá. Főleg XP alatt...<br><br>HA lenne egy oldal esetleg ami ad némi segítséget. (Én nem találtam.)
+			<br>
+			<!--IBF.ATTACHMENT_116796-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: nagygabor  2006. május 29. 12:51</h4>
+			<p>Tehát ha jól értem, akkor nincsen szerveretek. Úgy is meg lehet oldani. El kell dönteni, hogy mi a cél. Meg lehet azt is oldani, hogy minden rendszer betöltödésnél egy tiszta XP bootoljon be. Tehát ha valaki elgányolja a rendszert, akkor is elég egy restart, és már is ott a tiszta XP.
+			<br>
+			<!--IBF.ATTACHMENT_116799-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Spányik Balázs  2006. május 29. 13:22</h4>
+			<p>Hogyan?
+			<br>
+			<!--IBF.ATTACHMENT_116810-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: nagygabor  2006. május 29. 13:28</h4>
+			<p>Van erre egy LPT portra csatlakozó kis kütyü, ami a bootolásnál egy adott ghost file-t állít vissza. Ha jól emlélszem, akkor még ti is foglakoztatok vele. Kb 1-2 éve lehetett. Pontosan mi is a neve, azt nem tudom, utána kell néznem, csak most dolgozom, nincsen rá időm, ha érdekel, akkor holnapra kiderítem.
+			<br>
+			<!--IBF.ATTACHMENT_116812-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Laali  2006. május 29. 14:28</h4>
+			<p><span>Valószínűen <a class="linkclass" href="http://www.pcworld.hu/forum/index.php?showtopic=2008">http://www.pcworld.hu/forum/index.php?showtopic=2008</a>
+			</span><br>
+			<!--IBF.ATTACHMENT_116825-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: nagygabor  2006. május 29. 14:38</h4>
+			<p>Igen, erre gondoltam.<br>Köszi, hogy előkerested nekem.
+			<br>
+			<!--IBF.ATTACHMENT_116831-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: djadji  2006. június 6. 10:35</h4>
+			<p>Hát egen.. ez jónak tűnik és hallottam is róla. Csakhát ez egy suli... itt még a krétáért is könyörögni kell :-(<br>Szóval inkább valami olyan megoldást szeretnék, ami nem engedi szétbarmolni a Wint. Van egy MS Shared Computer Kit, ami egészen jónak tűnik (nincs futattás menü, nincs jobb klikk, nincs beállítások, nincs semmi csak a programok menü.. még az asztalra se lehet se lkitenni  ikont, se levenni ikont) csakhát az a P3-asokon nem megy. Illetve megy, csak 90 perc amig belép a korlátozott fiókba. :-(<br><br>Szóval valmi ilyesmi kellene nekem: levenni a beállítások menüt, megtiltani a C:\ről a  törlést, kitiltani a kápernyőbeállítások piszkálását a Users fiókban, és csak a rendszergazda fiókkal lehetne telepíteni, törölni stb. Egyszer láttam egy ilyen gépet, egymaga volt (szóval nem hálózat) és semmi, de semmit nem lehetett vele elállítani, de kivállóan lehetett használni. Internet, world, játék (amik fel voltak telepítve). Van erre ötlet hogy lehetne megcsinálni?
+			<br>
+			<!--IBF.ATTACHMENT_119048-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: nagygabor  2006. június 6. 10:48</h4>
+			<p><!--quoteo--></p><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->megtiltani a C:\ről a törlést, <!--QuoteEnd--></div><!--QuoteEEnd--><br>Ezt megoldhatod az engedélyek megadásával. PL csak olvasható az adott felhaználónak.<br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Egyszer láttam egy ilyen gépet.. egymaga volt (szval nem hálózat) és semmi, de semmit nem lehetett vele elállítani, de kivállóan lehetett használni.. internet, world, játék (amik fel voltak telepítve)<!--QuoteEnd--></div><!--QuoteEEnd--><br>Az lehet, hogy akkor éppen nem volt hálózaton, de a korlátozásokat egy serveren állították be, és importálták rá a kliensgépre. Akkor megy magától is. Tudomásom szerint egymagában az XP-ben nem lehet ilyen drasztikus korlátozásokat létrehozni segédprogram nélkül. Ha igen, akor engem is érdekelne, hogy hol.<br><br>u.i.: Olvasd végig a hozzászólásodat és javítsd ki a hibákat benne. <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/ani_wink.gif" style="vertical-align:middle" emoid=";)" border="0" alt="ani_wink.gif"><br>
+			<br>
+			<!--IBF.ATTACHMENT_119051-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: djadji  2006. június 7. 9:31</h4>
+			<p>Hát, lehet hogy hálóban volt valamikor, de ha beállítom egyszer és utána megy magától, akkor azt nem lehet simán ugyanarról a gépről beállítani? Az a helyzet hogy szerver nincs  a suliban, tehát azt nem lehet megoldani. De a beállításhoz akár lehetne csinálni egyet ideiglenesen. <br><br>UI: bocs a helyesírási hibákért, majd igyekszem vigyázni.
+			<br>
+			<!--IBF.ATTACHMENT_119394-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: nagygabor  2006. június 7. 9:40</h4>
+			<p>Serveren definiálsz egy olyan házirendet, ami neked megfelel. Azt kiexportálod és a gépen meg beimportálod a házirendekhez. Elvileg működi kell ilyen módon.<br><br><!--quoteo--></p><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->valamikor<b>..</b> | <b>u.</b>arról | majd <b>igyexem</b> vigyázni...<!--QuoteEnd--></div><!--QuoteEEnd--><br>És a fórum nyelve a magyar. <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/ani_wink.gif" style="vertical-align:middle" emoid=";)" border="0" alt="ani_wink.gif"><br><br><!--coloro:red--><span style="color:red"><!--/coloro--><!--sizeo:1--><span style="font-size:8pt;line-height:100%"><!--/sizeo-->Kicsit kiegészítettem. - SB<!--sizec--></span><!--/sizec--><!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_119398-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: djadji  2006. június 16. 10:35</h4>
+			<p>Lenne még egy kérdésem.<br>A gpedit.msc-vel tudok csoportházirendet szerkeszteni, ahol a legtöbb dolgot be tudom állítani, amire szükségem lenne. A gondom az hogy ezek a beállítások az összes fiókra érvényesek, pedig én azt szeretném hogy csak az XY mezei felhasználóra vonatkozzanak a beállítások a XX és a YYra és a rendszergazdákra ne. Ezt hogyan tudom megoldani?
+			<br>
+			<!--IBF.ATTACHMENT_121478-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: szpetya  2006. október 16. 17:53</h4>
+			<p>Hali!<br><br>Hasonló cipőben járok mint az előttem szóló... Mondjuk a mi sulinkban van szerver de az csak net szerver és az is linux os. Nekem mondjuk nem kell ilyen drasztikus korlátozásokat csinálni csak annyit hogy ne tudják megváltoztatni a képernyőkímélőt és a hátteret a tanulók. És a kérdésem ugyan az mint az előttem szólónak. Nem tudja valaki hogy hogy tudom beállítani ezt gpedit.msc ben? Vagy esetleg valahol máshol? <br><br>A válaszokat előre is köszi!<br><br>Üdv<br>
+			<br>
+			<!--IBF.ATTACHMENT_149368-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: szpetya  2006. október 17. 13:47</h4>
+			<p>Senkinek nincsen valami ötlete?  <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/sad.gif" style="vertical-align:middle" emoid=":(" border="0" alt="sad.gif"> <br>Nincsen esetleg valami más program amivel lehetne állítani a userek jogosúltásgát?  <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/blink.gif" style="vertical-align:middle" emoid=":pislog:" border="0" alt="blink.gif">
+			<br>
+			<!--IBF.ATTACHMENT_149576-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Halasi Miklós  2006. október 17. 16:12</h4>
+			<p>Hogy a policyben hol, azt nem tudom így fejből, de tuti meg lehet adni neki, rosszabb esetben, hogy kilépéskor ne mentődjenek a beállítások. <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/ani_wink.gif" style="vertical-align:middle" emoid=";)" border="0" alt="ani_wink.gif">
+			<br>
+			<!--IBF.ATTACHMENT_149604-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: szpetya  2006. október 17. 19:05</h4>
+			<p>Ezt a policy nem csak Windows 2003 Server -ben van?  Mert feljebb ezt olvastam de akkor lehet hogy valamit félreértelmeztem... Vagy ha sima xp ben is el lehet érni akkor hogyan?<br><br>Üdv
+			<br>
+			<!--IBF.ATTACHMENT_149660-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Halasi Miklós  2006. október 18. 7:44</h4>
+			<p>Az XP Professionalban benne van, a Home-ban nincs. És pont úgy érhető el, ahogy beírtad. <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/ani_wink.gif" style="vertical-align:middle" emoid=";)" border="0" alt="ani_wink.gif">
+			<br>
+			<!--IBF.ATTACHMENT_149735-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: szpetya  2006. október 18. 11:05</h4>
+			<p>De ott hogy tudom azt beállítani hogy kinek a jogosultságát allítom? Tehát az én esetemben a tanuló jogosultságait kéne korlátoznom... Ezt hol/hogy tudom megani?
+			<br>
+			<!--IBF.ATTACHMENT_149773-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2006. október 18. 14:29</h4>
+			<p>Elég valószínű, hogy csak csoportra tudsz korlátozást beállítani. Végül is group policy...  <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/ani_wink.gif" style="vertical-align:middle" emoid=";)" border="0" alt="ani_wink.gif"> <br>Tehát létrehozol egy csoportot, megcsinálod rá a korlátozást, és az összes usert berakod ide, akire érvényesíteni akarod.<br>Ha másfajta korlátozás is kell, akkor egy másik csoportot is.
+			<br>
+			<!--IBF.ATTACHMENT_149795-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: szpetya  2006. október 19. 10:13</h4>
+			<p>Most létrehoztam egy új csoportot aminek a neve Tanuló és betettem abba a csoportba a tanulókat, de ezt a csoportot én hogy tudom korlátozni...? Futtatásba beírom hogy gpedit.msc és ott hogy tudom kiválasztani ezt a csoportot? Mert ha csak úgy simán szerkesztem akkor az kihat a rendszergazdára is tehát a rendszergazda jogosultságai is korlátozza... pl ha letiltom a hátteret akkor a rendszergazda sem tudja állítani...
+			<br>
+			<!--IBF.ATTACHMENT_149946-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: csupa  2007. január 4. 12:50</h4>
+			<p>Sziasztok!<br><br>Egy rövid kérdésem lenne:<br>Hálózati környezetben hogyan lehet felvenni az xp prof (sp2) op. rendszerű gép felhasználói közé a többi, szintén xp-vel üzemelő gép különböző felhasználóit és jogosultságokat beállítani nekik?<br><br>Előre is köszönöm a segítséget!
+			<br>
+			<!--IBF.ATTACHMENT_165636-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Vérpatkány  2007. január 4. 20:38</h4>
+			<p>Azt szeretnéd hogy a másik gépen lévő XP- ről hozzáférhesenek az XP -dhez?<br><br>Starmenü -&gt; minden program -&gt; Kellékek -&gt; Kommunikáció -&gt; távoli asztal kapcsolat. Ehhez engedélyezni kell a távoli elérést a gépeken. Ehhez: Sajátgép ikon jobb klikk -&gt;Tulajdonságok -&gt; Távoli használat fül és az alsó boxban a pipát bejelölni.
+			<br>
+			<!--IBF.ATTACHMENT_165770-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: csupa  2007. január 4. 20:52</h4>
+			<p>Hmmm... Ilyen bonyolult? Esetleg érthetetlenül fogalmaztam? Szóval azt szeretném, hogy az adott mappa/fájl - tulajdonságok - biztonság - hozzáadás - felhasználók vagy csoportok ablakban ki tudjam választani a hálózathoz csatlakozó többi gépet, illetve azok felhasználóit. Ez a helyek gomb használatával sem vezetett eredményre, mert itt csak azt a gépet ajánlja fel, amelyen a beállításokat szeretném elvégezni. Hogyan lehetne a "helyek"-ben megjeleníteni a csatlakozó gépeket?<br><br><!--quoteo(post=165770:date=2007. január 4. 20&#58;38:name=Vérpatkány)--></p><div class="quotetop">IDÉZET(Vérpatkány @ 2007. január 4. 20:38) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=165770"><img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Azt szeretnéd hogy a másik gépen lévő XP- ről hozzáférhesenek az XP -dhez?<br><br>Starmenü -&gt; minden program -&gt; Kellékek -&gt; Kommunikáció -&gt; távoli asztal kapcsolat. Ehhez engedélyezni kell a távoli elérést a gépeken. Ehhez: Sajátgép ikon jobb klikk -&gt;Tulajdonságok -&gt; Távoli használat fül és az alsó boxban a pipát bejelölni.<!--QuoteEnd--></div><!--QuoteEEnd--><br><br>Az előző hozzászólásom nem neked szól, nézem ezt a megoldást!
+			<br>
+			<!--IBF.ATTACHMENT_165775-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: csupa  2007. január 4. 21:05</h4>
+			<p>A hálózatban működik a hozzáférés. Látják a gépemet. Azt szeretném, ha a helyi hálózatomban megosztott mappák tulajdonságaiban a biztonság fülön a hálózathoz csatlakozó gépek felhasználóinak külön-külön jogosultságokat tudjak meghatározni a mappa/fájl hozzáféréshez. Az általad vázolt sajátgép - tulajdonságok - távoli használat  fülön a távoli felhasználók kijelölése - hozzáadás - helyek-ben nem tudom felvenni a csatlakozó gépek felhasználóit. Ezt szeretném megoldani!
+			<br>
+			<!--IBF.ATTACHMENT_165781-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: nagyjani  2007. január 5. 9:57</h4>
+			<p>Ne a "helyeknél" próbálj felvenni felhasználókat, hanem a speciális gombot választva kattints a keresésre. Itt minden elérhető felhasználó megjelenik.
+			<br>
+			<!--IBF.ATTACHMENT_165849-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: csupa  2007. január 5. 12:36</h4>
+			<p>Igen, minden felhasználó, aki azon a gépen szerepel. Azt szeretném, hogy a hálózat többi gépének felhasználóit is ki tudjam választani a jogosultságok egyénre szabott beállítása végett. Ha ez vakvágány, úgy más célravezető megoldás is érdekel!
+			<br>
+			<!--IBF.ATTACHMENT_165876-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: TMc82  2007. január 9. 18:36</h4>
+			<p>Sziasztok!<br><br>Olyan problémám lenne, hogy újra telepítettem a gépet. Sajnos a több patrícióm is van és egyes patríciókon vannak olyan adatok amelyek titkosítva lettek régebben. Csak most az újra rakott gépen nem tudok hozzáférni ezekhez a dokumentumokhoz. Hogyan lehetne ismét jogosultságot szerezni?? Ha valakinek van valami ötlete ossza meg velem!
+			<br>
+			<!--IBF.ATTACHMENT_166805-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: nagyjani  2007. január 9. 20:14</h4>
+			<p><span><a class="linkclass" href="http://www.pcworld.hu/forum/index.php?act=Search&CODE=show&searchid=807990cfe5db598026b5d6dee354f4a3&search_in=posts&result_type=topics&highlite=titkos%EDtott+f%E1jlok">http://www.pcworld.hu/forum/index.php?act=Search&amp;CODE=show&amp;searchid=807990cfe5db598026b5d6dee354f4a3&amp;search_in=posts&amp;result_type=topics&amp;highlite=titkos%EDtott+f%E1jlok</a> nézz körül
+			</span><br>
+			<!--IBF.ATTACHMENT_166818-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: TMc82  2007. január 11. 20:37</h4>
+			<p>Köszi, hogy megmutattad a linket!
+			<br>
+			<!--IBF.ATTACHMENT_167146-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pica  2007. január 12. 13:51</h4>
+			<p><!--quoteo--></p><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Igen, minden felhasználó, aki azon a gépen szerepel. Azt szeretném, hogy a hálózat többi gépének felhasználóit is ki tudjam választani a jogosultságok egyénre szabott beállítása végett. Ha ez vakvágány, úgy más célravezető megoldás is érdekel!<!--QuoteEnd--></div><!--QuoteEEnd--><br><br>Így van! Pont ez a problémám nekem is. Ötlet? Javaslat? vagy milyen programot használjak, hogy a hálózat egy másik gépéről egy bizonyos könyvtárat csak jelszóval lehessen elérni?????
+			<br>
+			<!--IBF.ATTACHMENT_167228-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Sysqa  2007. február 15. 12:00</h4>
+			<p>Hi!<br><br>Jogosultságokkal kapcsolatban lenne egy kérdésem.<br>Tehát a korlátozott fiók esetén hol lehet beállítani pl.: hogy tudja állítani a képernyőkimélőt.
+			<br>
+			<!--IBF.ATTACHMENT_173322-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Arkangyal  2007. február 15. 17:51</h4>
+			<p>Távoli usert nem tudsz szimpla gépnél hozzáadni. Egy - nem mappa szintű - próbálkozáshoz:<br>1. Futtatásnál gpedit.msc<br>2. Számítógép konfigurációja | Windows beállításai | Biztonsági beállítások | Helyi házirend | Felhasználói jogok<br>Talán itt bűvészkedhetsz a vendégekkel, stb.<br><br>Helyek... -nél csak szerver esetén tudsz garázdálkodni egy központi listából, szimpla esetben csak a saját géped látható.<br><br><!--quoteo(post=173322:date=2007. február 15. 12&#58;00:name=Sysqa)--></p><div class="quotetop">IDÉZET(Sysqa @ 2007. február 15. 12:00) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=173322"><img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->korlátozott fiók esetén hol lehet beállítani pl.: hogy tudja állítani a képernyőkimélőt.<!--QuoteEnd--></div><!--QuoteEEnd--><br><br>Start&gt;Futtatás...&gt;gpedit.msc és/vagy regedit a megfelelő kulcsoknál pedig jobb-klikk és Engedélyek...
+			<br>
+			<!--IBF.ATTACHMENT_173411-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: gombosf  2007. február 16. 11:24</h4>
+			<p>Sziasztok, nekem lenne egy olyan gondom, hogy van a gépemben 2 db winchester, a C: a rendszer, ennek telepítésekor csak ez a winchester volt a gépben. Később beletettem egy másikat, D: ez az adat, ezen van egy régi WINDOWS és PROGRAM FILES könyvtár, ezeket szeretném törölni, de nem sok sikerrel ment.<br>Mindíg a hozzáférés letiltva üzenet jelenik meg, pedig a WINDOWS könyvtárat simán át tudtam nevezni, de a törlés nem megy. Ehez kérnék segítséget, vagy valami ötlete?<br>
+			<br>
+			<!--IBF.ATTACHMENT_173542-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: jonipeti  2007. március 3. 21:33</h4>
+			<p><!--quoteo(post=166805:date=2007. január 9. 18&#58;36:name=TMc82)--></p><div class="quotetop">IDÉZET(TMc82 @ 2007. január 9. 18:36) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=166805"><img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Sziasztok!<br><br>Olyan problémám lenne, hogy újra telepítettem a gépet. Sajnos a több patrícióm is van és egyes patríciókon vannak olyan adatok amelyek titkosítva lettek régebben. Csak most az újra rakott gépen nem tudok hozzáférni ezekhez a dokumentumokhoz. Hogyan lehetne ismét jogosultságot szerezni?? Ha valakinek van valami ötlete ossza meg velem!<!--QuoteEnd--></div><!--QuoteEEnd--><br><br><br>Hasonló problémával küzdök! A dokumentumok mappámnak megadtam a d partíciómat és személyessé tettem. Egy újratelepítés után nem férek hozzá a d partícióban lévő dokomentumokhoz. "A hozzáférés megtagadva!" üzenetet kapom. Már mindenféle módszert kipróbáltam, de hiába. Hogyan tudnák újra hozzáférni saját dolgaimhoz?
+			<br>
+			<!--IBF.ATTACHMENT_176182-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Shia-ko  2007. március 4. 8:44</h4>
+			<p>Saját használatba kell venni. <br>Jobb katt --&gt; tulajdonságok --&gt; biztonság --&gt; speciális --&gt; tulajdonos<br>Emlékeim szerint itt tudod megejteni.
+			<br>
+			<!--IBF.ATTACHMENT_176224-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: ktbazsi  2007. március 22. 18:22</h4>
+			<p>Mi van olyankor amikor a biztonság fül nem jelenik meg, mert nálam ez ahelyzet! így nem tudom saját hasznalatba venni!
+			<br>
+			<!--IBF.ATTACHMENT_179485-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2007. március 22. 18:59</h4>
+			<p><span><a class="linkclass" href="http://www.pcworld.hu/forum/index.php?s=&showtopic=7283&view=findpost&p=179496">http://www.pcworld.hu/forum/index.php?s=&amp;showtopic=7283&amp;view=findpost&amp;p=179496</a>
+			</span><br>
+			<!--IBF.ATTACHMENT_179498-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2007. március 23. 15:01</h4>
+			<p>Ha ez sem megy, akkor Home verziód van. Abban meg nincs ilyen.
+			<br>
+			<!--IBF.ATTACHMENT_179618-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: jonipeti  2007. április 2. 19:20</h4>
+			<p>Segítsetek! Befordultam!<br>Egy hálózatot hoztam létre két Windows XP Prof. rendszert használó gép között! A nagyobbik gépemben 2 hálókártya van, a kisebbikben csak egy. A nagyobbik gépemen meg van osztva a net és elérhető róla a kisebbik gép minden megosztott mappája. A kisebbik gépről viszont nem lehet elérni a nagyobbik gépet! A tűzfalak ki vannak kapcsolva. Különféle beállításokkal próbálkoztam már. A nagygép felhasználói fiókok/hálózati jelszavak kezelése lapon beállítottam a kisgép felhasználóját hogy elérje a hálózatot. A Felügyeleti ezközök/helyi biztonsági házirend/felhasználói jogok kiosztása/számítógép elérése a hálózatról/felhasználó vagy csoport hozzáadása lapon kiválasztom az OTTHON hálózatot és hozzáadom a kisgépet, majd beírom a felhasználót és a jelszavat. A válasz pedig: A név nem található. Már úgy is próbáltam, hogy a nagygépen hozzáadtam ugyan azt a felhasználót és megpróbáltam azzal bejelentkezni, de úgy sem. Teljesen kész vagyok. 2 hete próbálkozom. Segítség!
+			<br>
+			<!--IBF.ATTACHMENT_181388-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: vmiki  2007. június 21. 19:07</h4>
+			<p><span><a class="linkclass" href="http://www.microsoft.com/downloads/details.aspx?familyid=d077a52d-93e9-4b02-bd95-9d770ccdb431&displaylang=en">http://www.microsoft.com/downloads/details.aspx?familyid=d077a52d-93e9-4b02-bd95-9d770ccdb431&amp;displaylang=en</a> </span><br><br>Ez a jó kis program arra jó hogy különböző felhasználói fiókok jogait állítgassuk, vagy pedig arra, hogy tisztán tartsa a fiókot. Így bármit átállít, egy újraindítás után megint tiszta lappal indul, a változtatásokat "elfelejti". <br><br>Nyílt terepen ez kifejezetten hasznos (netkávézó, könyvtár...)<br>
+			<br>
+			<!--IBF.ATTACHMENT_193186-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: polika  2007. augusztus 21. 18:15</h4>
+			<p>Üdv mindenkinek! <br><br>Egy olyan kérdésem lenne, hogy szeretném lekorlátozni a gépet.<br>Új felhasználó korlátozott  fiókkal, de ne tudjon semmit se csinálni a géppel. Csak az asztalon lévő ikonokat (programokat) érhesse el.<br>Ezt hogyan tudnám elérni?<br>XP SP2 van a gépen. <br>A válaszokat előre is köszönöm!<br><br>polika
+			<br>
+			<!--IBF.ATTACHMENT_202387-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: szg  2007. augusztus 21. 19:05</h4>
+			<p>Vezérlőpult =&gt; Felhasználói fiókok. Ott kiválasztod, hogy új fiók létrehozása, majd kiválasztod, hogy ne rendszergazda, hanem korlátozott felhasználó legyen az új felhasználó. Igaz, módosíthatsz rendszergazdai fiókot is oly módon, hogy korlátozott felhasználói fiókká változtatod át, de inkább hozz létre egy új felhasználót. A korlátozott felhasználó nem tud programokat telepíteni és törölni, nem tekintheti meg más felhasználók személyes adatait, jóformán csak a saját mappájába tud írni, stb. Szerintem ez, ami neked kell. Ezzel kb. 95%-kal tudod megnövelni a rendszer biztonságát.<br>Ha parancssorból akarsz felhasználói fiókot létrehozni, akkor a <i>net user /?</i> add bővel felvilágosítást arról, hogy hogyan.<br>Ha netán még ennél is korlátozottabb kell, szólj és megbeszéljük azt is.
+			<br>
+			<!--IBF.ATTACHMENT_202391-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: polika  2007. augusztus 22. 17:32</h4>
+			<p>Köszi az infót, eddig OK.<br>Igazából azt szeretném, hogy az asztalon lévő ikonokkal tudjon csak dolgozni, mint pl. egy nyilvános PC-n.<br>Start menüt meg ilyeneket ne tudjon kezelni, megnyitni.<br>Ezt hogy lehetne elérni?<br>Előre is köszi az infót!
+			<br>
+			<!--IBF.ATTACHMENT_202475-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: szg  2007. augusztus 22. 18:50</h4>
+			<p><span>Hát, egyrészt használhatod ehhez a <a class="linkclass" href="http://www.microsoft.com/windowsxp/downloads/powertoys/xppowertoys.mspx">http://www.microsoft.com/windowsxp/downloads/powertoys/xppowertoys.mspx</a> alkalmazást, amellyel el lehet rejteni például a Vezérlőpult elemeit. Másrészt ahhoz, hogy például meghatározd azon alkalmazások körét, amelyeket az adott elhasználó elindíthat, használhatod a <a class="linkclass" href="http://www.microsoft.com/technet/prodtechnol/windows2000serv/reskit/regentry/93497.mspx?mfr=true">http://www.microsoft.com/technet/prodtechnol/windows2000serv/reskit/regentry/93497.mspx?mfr=true</a> registry kulcsot, ha az a cél, hogy a felhasználó csak az általad engedélyezett alkalmazásokat tudja megnyitni. Ha esetleg az a cél, hogy a felhasználó csupán csak bizonyos alkalmazásokat ne tudjon megnyitni, akkor használhatod a <a class="linkclass" href="http://www.microsoft.com/technet/prodtechnol/windows2000serv/reskit/regentry/93501.mspx?mfr=true">http://www.microsoft.com/technet/prodtechnol/windows2000serv/reskit/regentry/93501.mspx?mfr=true</a> registry kulcs adta lehetőségeket. Esetleg használhatsz különféle külsős kisalkalmazásokat, például a start menü eleminek elrejtésére, stb., mint mondjuk az <a class="linkclass" href="http://www.swinformatics.com/products/xpappwiz/">http://www.swinformatics.com/products/xpappwiz/</a> vagy a <a class="linkclass" href="http://www.dougknox.com/">http://www.dougknox.com/</a> (én, mondjuk, nem szoktam ilyeneket használni, ezért ezt a kettőt csak úgy találomra írtam). Ha XP Pro-d van, a fenti célokra használhatod a gpedit.msc alkalmazást.</span><br>Azt viszont figyelembe kell venni, hogy a fent felsorolt módszerek bizonyos részét egy hozzáértő felhasználó könnyen ki tudja játszani, de ahhoz, hogy megakadályozzuk azt, hogy egy ún. "mezei júzer" valami olyasmit csináljon a gépen, amit nem szeretnénk, tökéletesen megfelelnek. <br><span>Ezen kívül éppenséggel használhatsz különböző <a class="linkclass" href="http://technet.microsoft.com/en-us/library/bb457006.aspx">http://technet.microsoft.com/en-us/library/bb457006.aspx</a> , vagy szükség esetén módosíthatod az ACL-t bizonyos könyvtárakhoz.
+			</span><br>
+			<!--IBF.ATTACHMENT_202488-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Arkangyal  2007. augusztus 22. 21:09</h4>
+			<p>gpedit.msc lesz a te barátod <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"><br><br>Ha NTFS fájl-rendszered van, akkor simán jobb-klikk az intézőben a mappákon és a tulajdonságoknál szerkeszted a hozzáférést kedvedre (eszközök-nél tudod mellőzni az egyszerű mappa nézetet és hasonlókat). A RECYCLER mappához nyílván fog kelleni írási engedély, különben nem tud majd törölni: ezen felül átmeneti mappába is kellene írnia - gondolom kellhet.<br><br>Tanács: először lépj be vele, mint rendszergazda. Mozgasd át a documents and settings mappáját (jobb-klikk az asztalon levő dokumentomok mappán) egy szerinted megfelelő helyre (esetleg böngésző tárolójával is csináld meg ezt). Utána sysdm.cpl futtatás és személyes TEMP mappa áthelyezés. Mivel már meg volt az első bejelentkezés, sok dologhoz nem kell majd írási engedély, ezért most már visszaminősítheted vendégnek.<br><br>Ha végletekig akarod finomítgatni, akkor a technet oldalán tuti jó tippeket találsz házirend bővítéshez.
+			<br>
+			<!--IBF.ATTACHMENT_202503-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: polika  2007. augusztus 31. 18:34</h4>
+			<p>Huhh ...<br><br>Mindenkinek nagyon köszönöm a hozzászólást illetve a SEGÍTSÉGET!!!!<br>Sikerült megoldani a közremüködésetekkel a problémámat.<br>Mégegyszer nagyon KÖSZÖNÖM MINDENKINEK!!!!!!<br><br>polika
+			<br>
+			<!--IBF.ATTACHMENT_204084-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: MOSAIC  2008. február 29. 10:55</h4>
+			<p>Hogyan lehet egy felhasználó fiókját úgy beállítani, hogy ha más felhasználóval lépek be, akkor a másik felhasználó dokumantumaihoz ne férjen hozzá! Valahogy lehet zárolni a fiókokat, de nem hozza elő az XP!
+			<br>
+			<!--IBF.ATTACHMENT_234524-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: puschkin  2008. február 29. 11:59</h4>
+			<p>Szerintem ha korlátozott fiókokat használsz, akkor azok alapból nem tudják a másik dokumentumait megnyitni. Egyébként meg ugyanúgy lehet ezt is menedzselni, mint az összes többi mappa jogosultságait (mármint ha XP Prof-ról beszélünk) a tulajdonságoknál, a biztonság fülön.
+			<br>
+			<!--IBF.ATTACHMENT_234531-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: MOSAIC  2008. február 29. 12:04</h4>
+			<p>Közben megtaláltam a beállítási lehetőséget!<br><br>Az volt a problémám, hogy az egyik gépen több felhasználó is dolgozik! Azt akartam, hogy a dokumentum könyvtárat csak az a felhasználó lássa aki létrehozta. Azaz ha volz egy Pistike dokumentumai könyvtár, akkor ahoz Piroska ne férjen hozzá, csak a Piroska dokumentumaihoz... ezt eddig az XP felajánlotta akkor amikor a felhasználó fiókot létrehoztam.... mindig szólt, hogy akarom-e saját használatuvá tenni a fájljaimat... vagy ilyesmi! Visztont most ilyet nem adott! Rájöttem, hogy az egyszerű fájlmegosztást ki kell iktatni és ekkor a mappánál a biztonsági fülnél kiveszem a jogokat az adott felhasználónál!
+			<br>
+			<!--IBF.ATTACHMENT_234532-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: paradise  2008. március 1. 14:10</h4>
+			<p>Egy rejtéjes hibával küzdök a munkahelyemen (egy iskolában), ahol xp-k vannak telpítve az egyik osztályterembe, és hiába állítom korlátozott felhasználóra a tanulók gépét, az csak addig érvényes, amíg nincs újraindítás. Utána megint rendszergazdai joggal rendelkezik az a felhasználói fiók. Mindegyik gép így csinál a teremben.<br>Kutattam utána a neten, de nem találtam megoldást. Csak egy hasonló problémával küzdő hozzászólását találtam egy másik fórumon, de nem érkezett arra válasz.<br>Az a kérés így szól: <!--quoteo--></p><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Adott egy háló, amin 6db xpsp2-es gép fut. A netet ezeknek egy debian osztja. A gondok:<br>- 2 db xp, ha rendszergazdaként lépek be, akkor ''a rendszer súlyos hiba után állt helyre'' hibaüzenettel indít, akárhányszor indítom újra, míg ha ugyanezekre a gépekre userként lépek be, ezek a hibaüzenetek nem jönnek (szerintem valami hardverhiba, talán RAM, de akinek van ötlete, az szóljon)<br>- a legnagyobb gond az, hogy akármelyik xp-n ha rendszergazdaként lépek be, és bármit csinálok (telepítés, egyebek) az csak a következő restartig marad úgy, utána visszaáll az ''eredeti'' állapot.....<br><br>amiket ma néztem, próbáltam:<br>-a jogok teljesen jól vannak kiosztva, a rendszergazda az xp alapértelmezése<br>-a szokásos dolgokon kívül semmi nem fut!!!<br>- vírusnak nincs nyoma<br><br>próbáltam létrehozni egy új rendszergazdai jogokkal bíró usert....sikerült is, csináltam is ezt-azt, de amíg csak szimplán kijelentkeztem mint rendszergazda, és beléptem mint másik rendszergazda....<br>de amint megvolt a restart, abban a pillanatban az előzőleg kreált rendszergazdai fiók és a változások is eltűntek, és jött a szokásos semmi, azaz a ''kezdeti'' állapot...<br>olyan, mintha menne valahogy egy system restore, ami egy előre beállított állapotra tenné vissza a gépet, bármit csinálok vele.... <!--QuoteEnd--></div><!--QuoteEEnd--><br>Ha van valakinek ötlete, azt megköszönöm, ha megosztja velem.
+			<br>
+			<!--IBF.ATTACHMENT_234729-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: TheSaurus  2008. március 1. 20:53</h4>
+			<p>Totális újratelepítés? (Formázással?) Tudom, hogy macerás, de hátha segít.
+			<br>
+			<!--IBF.ATTACHMENT_234790-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KeLa  2008. március 2. 9:04</h4>
+			<p>Például ilyen program a deep freeze. Amikor feltelepítik úgymondd, lefagyasztja az akkori állapotot. Bárki bár mit is csinál, az a rendszer ujraindításával megszünik. Előszeretettel használják iskolák, netkávézók, olyan helyek ahol a gépeket sokan használják és bármit is csinálnak, egy restart utánn minden a régi.<br><br>Ez a program eléggé elrejti megát és kilőhetetlen. Ugyanakkor van kiolvasztási funkciója, amikor a változtatások megmeradnak és visszakapcsolásakor friss fagyasztási képet hoz létre.<br><br><!--quoteo--></p><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Accessing the Deep Freeze Control Dialog<br>1. To gain access to the Deep Freeze control dialog, use either of the following two methods to log on:<br> Press SHIFT and double-click the Deep Freeze icon in the System Tray<br> Use the keyboard shortcut CTRL+SHIFT+ALT+F6<br>2. The Deep Freeze password dialog appears. Enter your Deep Freeze password.<br>3. If you have not set up a password yet, leave the password field blank and click OK. The Deep Freeze control dialog appear with the following three tabs:<br> Boot Control - used to set the state of Deep Freeze<br> Password - used to set a new password or change a previous one<br> Clone - used to prepare a master image for use with an imaging solution<!--QuoteEnd--></div><!--QuoteEEnd-->
+			<br>
+			<!--IBF.ATTACHMENT_234824-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: paradise  2008. március 3. 20:22</h4>
+			<p>Köszi KeLa, igazad volt. A Deep Freeze van telepítve a gépekre, csak engem nem tájékoztattak erről.<br><br>Köszi mégegyszer!  <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/clap_01.gif" style="vertical-align:middle" emoid=":bravó:" border="0" alt="clap_01.gif">
+			<br>
+			<!--IBF.ATTACHMENT_235134-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Bederszkd  2008. március 8. 17:45</h4>
+			<p>Hali! Nekem az a gondom,hogy nem tudom a felhasználó nevet módosítani.<br>Tudnátok segíteni?  <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/mad.gif" style="vertical-align:middle" emoid=":mérges:" border="0" alt="mad.gif"> A rendszergazda én vagyok. Nem tudom, ez segít-e? <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/blink.gif" style="vertical-align:middle" emoid=":pislog:" border="0" alt="blink.gif">
+			<br>
+			<!--IBF.ATTACHMENT_235932-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: puschkin  2008. március 9. 11:22</h4>
+			<p>Sajátgép -&gt; jobb klikk -&gt; kezelés -&gt; helyi felhasználók és csoportok -&gt; felhasználók -&gt; jobb klikk a kívánt felhasználón, átnevezés
+			<br>
+			<!--IBF.ATTACHMENT_236093-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Bederszkd  2008. március 9. 12:39</h4>
+			<p>Köszi! Sikerült! Most meg az a baj, hogy gép indításakor, nem kéri a felhasználót hanem átugorja. <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/mad.gif" style="vertical-align:middle" emoid=":mérges:" border="0" alt="mad.gif">
+			<br>
+			<!--IBF.ATTACHMENT_236131-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: puschkin  2008. március 9. 15:52</h4>
+			<p>vezérlőpult -&gt; felhasználói fiókok -&gt; felhasználók be- és kijelentkezési módjának megváltoztatása -&gt; üdvözlőképernyő használata elől kivenni a pipát
+			<br>
+			<!--IBF.ATTACHMENT_236178-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Spányik Balázs  2008. március 9. 18:22</h4>
+			<p>???
+			<br>
+			<!--IBF.ATTACHMENT_236204-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Alex99  2008. március 9. 19:38</h4>
+			<p><!--quoteo(post=236131:date=2008. március 9. 12&#58;39:name=Bederszkd)--></p><div class="quotetop">IDÉZET(Bederszkd @ 2008. március 9. 12:39) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=236131"><img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Köszi! Sikerült! Most meg az a baj, hogy gép indításakor, nem kéri a felhasználót hanem átugorja. <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/mad.gif" style="vertical-align:middle" emoid=":mérges:" border="0" alt="mad.gif"><!--QuoteEnd--></div><!--QuoteEEnd--><br>A Felhasználói fiókokban van beállítva a felhasználónak jelszó? Mert ha nincsen, akkor csak annyit ír, hogy Üdvözöljük, de a felhasználó ott nem jelenik meg. <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/laughing.gif" style="vertical-align:middle" emoid=":lol:" border="0" alt="laughing.gif"><br><br>Ez akkor, ha egy felhasználó van.
+			<br>
+			<!--IBF.ATTACHMENT_236225-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Spányik Balázs  2008. március 9. 20:48</h4>
+			<p>Vagy ha az adott felhasználó, akinek jelszava van, le van tiltva az üdvözlőképernyőről.
+			<br>
+			<!--IBF.ATTACHMENT_236244-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: BlueGold  2008. március 10. 18:29</h4>
+			<p>@Balázs Ezt a "manővert" mivel lehet megoldani? Pont ebbe a problémába szaladtam bele a múlt héten. Le kellene vennem egy "jelszavas Rendszergazda felhasználót" az Üdvözlőképernyőről.
+			<br>
+			<!--IBF.ATTACHMENT_236406-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Omega32  2008. március 10. 18:33</h4>
+			<p>TweakUI? Logon résznél...
+			<br>
+			<!--IBF.ATTACHMENT_236409-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: BlueGold  2008. március 11. 22:40</h4>
+			<p>Köszönöm a segítséget! így sikerült megoldani a problémát.
+			<br>
+			<!--IBF.ATTACHMENT_236680-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: zauber  2008. április 3. 8:33</h4>
+			<p>Én is hasonló szeretnék elérni mint a téma indítója!<br>Csak nekem annyiban más a szitu, hogy mindezt egy FAT-32-es gépre kellene megoldanom.<br><br>Próbáltam új felhasználói fiókot nyitni, korlátozott "jogkörrel", de nem volt valamilyen hatékony a megoldás mert ugyanúgy tudtam törölni mind a program file, mind egyéb helyekről!<br>Persze lehet, hogy csak rosszul csináltam valamit!<br><br>Ha van valakinek ötlete megoldásra, ill. hogy esetleg hol szúrtam el a dolgot légyszi írjatok!
+			<br>
+			<!--IBF.ATTACHMENT_240653-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: szg  2008. április 3. 8:54</h4>
+			<p>Az NT alapú Windows-ok számára a FAT idegen (nem natív) fájlrendszer, függetlenül attól, hogy tudják kezelni. Ugyanis az NT számos előnyét (beleértve a fájlengedélyeket) a FAT fájlrendszer esetében nem tudod hasznosítani, mivel azok csak NTFS-en működnek. És éppen ezért NT alapú Windows-t FAT fájlrendszerre telepíteni ==&gt; hülyeség. Ebből a szempontból nagyon jó, hogy a Vistát már csak NTFS-re lehet telepíteni. A helyzetet úgy tudod orvosolni, ha konvertálod a FAT fájlrendszereket, majd szükség esetén beállítod az alapértelmezett fájlengedélyeket. Más lehetőség nincs. FAT fájlrendszeren nem fog működni az ACL, és így gyakorlatilag a korlátozott felhasználói fiók létrehozása is értelmét veszti.
+			<br>
+			<!--IBF.ATTACHMENT_240654-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: zauber  2008. április 3. 9:31</h4>
+			<p><!--quoteo--></p><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Próbáltam új felhasználói fiókot nyitni, korlátozott "jogkörrel",<!--QuoteEnd--></div><!--QuoteEEnd--><br>Így már érthető a sikertelenség!<br>Köszi a választ!
+			<br>
+			<!--IBF.ATTACHMENT_240659-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: jagdtigger  2008. április 3. 15:51</h4>
+			<p>A tesómnak korlátozott felhasználó, bejelentkezik, elindítaná az intézőt, erre lefagy az explore.exe, de ha vár pár percet miután bejelentkezett akkor nem. Ez miért van?
+			<br>
+			<!--IBF.ATTACHMENT_240712-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: elektromech  2008. április 9. 8:24</h4>
+			<p>Sziasztok!<br>Talán itt kapok választ.<br>A problémám az, hogy van egy gépem és azon egy program. Két felhasználónak kell használni ugyanazt a programot, de az egyiknek csak olvasási (nyomtatás) jogokat kellene adni. Hogy lehetne ezt megoldani?<br>Ja az oprendszer XP Home.<br>Előre is köszi a válaszokat!
+			<br>
+			<!--IBF.ATTACHMENT_241507-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Spányik Balázs  2008. április 10. 5:30</h4>
+			<p>XP Home-on nem fog menni, alapból nincs lehetőség hozzáférési jogok állítására.
+			<br>
+			<!--IBF.ATTACHMENT_241674-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2008. április 10. 7:43</h4>
+			<p>Grafikus feleületen, normál üzemmódban valóban nem, és csoportházirend sincs.<br>De egy kis macerával azért lehet. Egyrészt csökkentett módban már grafikus felületről is lehet jogokat állítani, másrészt még a Home verzióban sem tudták "kinyírni" a <b>cacls</b> parancsot.<br>Utóbbi még macerásabb.  <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/laughing.gif" style="vertical-align:middle" emoid=":lol:" border="0" alt="laughing.gif">
+			<br>
+			<!--IBF.ATTACHMENT_241684-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: elektromech  2008. április 10. 8:34</h4>
+			<p>Minden macerás  megoldás érdekel!!<br>Ha kérhetem a megoldás leírását, vagy egy telefonszámot és akkor felhívnálak!<br>Köszi
+			<br>
+			<!--IBF.ATTACHMENT_241689-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: kistamas  2009. január 6. 16:06</h4>
+			<p>Sziasztok!<br><br>Én is a felhasználói fiókokat szeretném testre szabni, sőt láttam a 2. hozzászólást csakhogy a Felügyeleti eszközökig eljutva nem <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/no.gif" style="vertical-align:middle" emoid=":nem:" border="0" alt="no.gif">  találom azt a menüpontot ami kéne.<br><br>Esetleg tudtok más elérési utat, vagy hasonló eredményt hozó megoldást? <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/bulb.gif" style="vertical-align:middle" emoid=":ötlet:" border="0" alt="bulb.gif"> <br>Üdv: kistamas
+			<br>
+			<!--IBF.ATTACHMENT_373121-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. január 6. 16:38</h4>
+			<p>Ez gondolom egy Home Edition. Azon sehogy. A csoportházirendszerkesztő a Professional kiváltsága.
+			<br>
+			<!--IBF.ATTACHMENT_373131-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: kistamas  2009. január 7. 19:46</h4>
+			<p><img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/sad.gif" style="vertical-align:middle" emoid=":(" border="0" alt="sad.gif"> Az bizony egy Home Edition...<br>Esetleg más ötlet, amivel ugyanezt az eredményt érhetném el?(program, parancssoros vmilyen kód,...) <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/roll.gif" style="vertical-align:middle" emoid=":hááát:" border="0" alt="roll.gif">
+			<br>
+			<!--IBF.ATTACHMENT_373345-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. január 7. 19:50</h4>
+			<p>Nem hiszem, hogy meg lehet oldani. Egyszerűen hiányzik az oprendszernek ez a része. Esetleg van olyan program, amelyik fut a háttérben és ezt megoldja, de én nem ismerek ilyet.
+			<br>
+			<!--IBF.ATTACHMENT_373346-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2009. január 7. 20:41</h4>
+			<p>Éppen az ehavi PC World-ben hivatkozik főkolomposunk egy Microsoft féle Excel fájlra, amiben a csoportházirend szerkesztő által módosított registry bejegyzések találhatók. Ezeket kézzel is be lehet állítani, persze kicsit macerásabb a dolog és jobban oda is kell figyelni, nehogy elgépeljen az ember valamit. Persze link az nincs. De mindjárt.<br><span>Már meg is van: <a class="linkclass" href="http://www.microsoft.com/downloads/details.aspx?FamilyID=7821c32f-da15-438d-8e48-45915cd2bc14&displaylang=en">http://www.microsoft.com/downloads/details.aspx?FamilyID=7821c32f-da15-438d-8e48-45915cd2bc14&amp;displaylang=en</a>
+			</span><br>
+			<!--IBF.ATTACHMENT_373357-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. január 7. 21:00</h4>
+			<p>Ez nem Server 2003-as?<br><br><!--coloro:#999999--><span style="color:#999999"><!--/coloro-->Amúgy ez januári szám?<!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_373362-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: kistamas  2009. január 8. 7:15</h4>
+			<p><img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"> OK<br>Akkor megpróbálom ezt az Excel fájlt... <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/blink.gif" style="vertical-align:middle" emoid=":pislog:" border="0" alt="blink.gif"> <br>Esetleg valami jó tanács/segítség mielőtt még mindent elállítok?  <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif">
+			<br>
+			<!--IBF.ATTACHMENT_373403-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2009. január 8. 8:00</h4>
+			<p>Igen a januári szám, nem, nem csak 2003-hoz jó. A linkelt oldalon ez áll: Win 2000, Server 2003 és Win XP.
+			<br>
+			<!--IBF.ATTACHMENT_373407-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. január 8. 11:04</h4>
+			<p>Jogos, én csak a fejlécet néztem meg.<br><br><!--coloro:#999999--><span style="color:#999999"><!--/coloro-->Akkor azért, nekem a PCWorld szokás szerint még sehol sincs.<!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_373420-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: kistamas  2009. január 8. 15:41</h4>
+			<p>Kérnék valamilyen segítséget, mivel ahogy így elsőre elnéztem azt a táblázatot <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/huh.gif" style="vertical-align:middle" emoid=":huh:" border="0" alt="huh.gif"> ... hát <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/huh.gif" style="vertical-align:middle" emoid=":huh:" border="0" alt="huh.gif"> ... nem sok jött le, szóval légyszíves valami használati utasítást ha tudnátok mellékelni, vagy leírni... akkor megköszönném! <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif">
+			<br>
+			<!--IBF.ATTACHMENT_373447-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Cimiii  2009. január 31. 15:53</h4>
+			<p>Hello!<br>Szeretném azt megcsinálni, hogy egy WinXp Prof.-on mindegyik felhasználónak más házirendje legyen. Meg lehet ezt csinálni vagy ez csak WinServer2003-al lehetséges?
+			<br>
+			<!--IBF.ATTACHMENT_377482-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. január 31. 15:55</h4>
+			<p>Amennyire én tudom, csak ha minden felhasználónak csinálsz külön csoportot.
+			<br>
+			<!--IBF.ATTACHMENT_377486-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Cimiii  2009. január 31. 22:11</h4>
+			<p>Hogyan lehet ráerőszakolni egy csoportra egy házirendet vagy szerkeszteni a csoport tulajdonságát?<br>Létrehoztam csoportot de nem tudom szerkeszteni.<br>Vélemény?
+			<br>
+			<!--IBF.ATTACHMENT_377540-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. január 31. 22:29</h4>
+			<p>Nálam Vista alatt így kell:<br><br><span><a class="linkclass" href="http://kepfeltoltes.hu/090131/gpedit_www.kepfeltoltes.hu_.jpg">http://kepfeltoltes.hu/090131/gpedit_www.kepfeltoltes.hu_.jpg</a>
+			</span><br>
+			<!--IBF.ATTACHMENT_377547-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Cimiii  2009. február 1. 8:47</h4>
+			<p>XP-ben is ilyesmit szeretnék összehozni.
+			<br>
+			<!--IBF.ATTACHMENT_377568-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2009. február 1. 10:22</h4>
+			<p>gpedit.msc
+			<br>
+			<!--IBF.ATTACHMENT_377577-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: njozsef40  2009. október 11. 15:08</h4>
+			<p>Sziasztok.<br>A következő a problémám. Létrehoztam egy másik felhasználói fiókot,amiben be szerettem volna kapcsolni a gyorsindítás eszköztárat, de sem a tálca tulajdonságainál sem az eszköztáraknál sem lehet bekapcsolni. A hibaüzenet a következő"az eszköztár nem kapcsolható be" <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/no.gif" style="vertical-align:middle" emoid=":nem:" border="0" alt="no.gif"> <br>Segítségeteket előre is köszi.
+			<br>
+			<!--IBF.ATTACHMENT_403236-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Adani  2009. november 13. 9:39</h4>
+			<p>Üdv!<br><br>Arra tudtok valami megoldást, hogy megakadályozzam, hogy a háttérképet megváltoztassák? A Csoportházirendben már beállítottam az Active Desktop hátteret, le van tiltva a megjelenítés panel az asztal háttér megváltoztatása letiltva ( ilyen opció is van), el van tüntetve a megjelenítés, sőt a képernyőkímélő, beállítások, asztal fül is, ezt nem is látja egy mezei felhasználó. Mégis sikerül egyes diákoknak átállítani. Ha a böngészőben megnyitnak egy képet akkor jobb klikkes menüből be tudják állítani háttérként. Internet Explorernél pl. észrevettem ,hogy egy internet explorer wallpaper.bmp fájlt csinál. azt már megcsinálta, hogy létrehoztam egy ilyen nevű mappát akkor nem tudja a fájlt megcsinálni, így ez a lehetőség kilőve, de mégis sikerült valahogy hátteret módosítani. Nem lehet valahogy bebetonozni egy hátteret, hogy azt utána sehogy semmiképp se tudja átállítani?
+			<br>
+			<!--IBF.ATTACHMENT_406161-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2009. november 13. 9:57</h4>
+			<p>Nagyon más nincs, mint a jobb klikkes menüből kiirtani valahogy ezt a lehetőséget a registryben. Nem tudom lehet-e, és hol és hogyan.<br>Vagy központi profil használata, ami minden indításkor letöltődik a szerverről. Így ha esetleg módosít is valamit, csak ideiglenes lesz.
+			<br>
+			<!--IBF.ATTACHMENT_406162-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Adani  2009. november 13. 13:28</h4>
+			<p>Erre én is gondoltam, de nincs tartományszerver meg tartománykezelés, egyszerű munkacsoportok vannak, ez egy könyvtár alig 10-20 számítógép van, amit így kell védeni.
+			<br>
+			<!--IBF.ATTACHMENT_406181-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: puschkin  2009. november 19. 13:40</h4>
+			<p>ezzel már én is szembesültem, és  nem igazán találtam használható megoldást a registry-ben.<br>ha a könyvtár bevállal egy kis beruházást, akkor én a deep freeze szoftvert ajánlom azt hiszem 25-30 euro/licenc az ára, és direkt erre lett kifejlesztve. befagyasztja a rendszert és minden változtatást elfelejt újraindításkor, így még a vírusokat is megfogja.
+			<br>
+			<!--IBF.ATTACHMENT_406629-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: @Berecz Dénes@  2009. december 25. 0:32</h4>
+			<p>Van a gépemben beépített DVD író. A hozzá adott Roxio Creator nevű programmal tudok normálisan DVD-t írni. De ennek az a baja, hogy nem tud ISO-t létrehozni. Kipróbáltam az IMGBurn-t, és az InfraRecorder-t. De mindkettő csak rendszergazda fiók alatt működik normálisan. Ha korlátozott felhasználó alatt indítom őket, akkor nem ismerik fel a DVD írómat.<br>Hogy tudnám ezt megoldani?<br>Nincs kedvem csak azért átlépni a rendszergazda fiókra, hogy beolvassak egy fájlt isoba.
+			<br>
+			<!--IBF.ATTACHMENT_409220-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Hekk_Elek  2010. március 17. 17:05</h4>
+			<p>Hogy kell beállítani hogy NE a klasszikus bejelentkező képernyő legyen VAGY autómatikussan bejelentkezzen?<br>Meg van egy "Administrator" felhasználó a gépemen amit nem tudok "lelőni".<br>Esetleg hogy lehet engedélyezni azokat a dolgokat amiket a randszergazdák tiltottak (pl.: felhasználói kép)?<br>(administrator = angol rendszergazda?)
+			<br>
+			<!--IBF.ATTACHMENT_415560-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: jagdtigger  2010. március 17. 20:58</h4>
+			<p>A klasszikust sehogy se mert tartományba jelentkezek be ha jól sejtem, az administrator pedig valószínűleg az alap rendszergazda fiók, a letiltásokat pedig nem hiszem hogy fel tudnád oldani(lévén nem rendszergazda fiókod van)).
+			<br>
+			<!--IBF.ATTACHMENT_415567-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Hekk_Elek  2010. március 17. 21:07</h4>
+			<p>Éppenséggel én is rendszergazda vagyok (szerinte).<br>Bemegyek a fiókokhoz és kiírja hogy 2 fiók van.<br>Mindkettő adminisztrótori jogkörrel de az egyik nem én vagyok.<br>Eredetileg céges gép de meg lett véve (már nincs kapcsolat a céggel).
+			<br>
+			<!--IBF.ATTACHMENT_415568-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. március 17. 22:09</h4>
+			<p>Akkor ments, formázz, és telepíts. És máris tiéd lesz a teljhatalom...
+			<br>
+			<!--IBF.ATTACHMENT_415570-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2010. március 17. 22:14</h4>
+			<p><span><a class="linkclass" href="http://support.microsoft.com/kb/315231">http://support.microsoft.com/kb/315231</a></span><br>Azt a rendszergarázdát meg ne bántsd.
+			<br>
+			<!--IBF.ATTACHMENT_415571-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Hekk_Elek  2010. március 18. 21:06</h4>
+			<p>Köszi a tippet!
+			<br>
+			<!--IBF.ATTACHMENT_415602-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: szokekaroly  2010. március 25. 19:41</h4>
+			<p>Sziasztok!<br><br>Nekem egy olyan problémám lenne, hogy szeretném a windows asztalt áthelyezni egy másik partícióra. A dokumentumokat már sikerült áttenni, de mivel az asztalra is előszeretettel mentenek a felhasználók, ezért a rendszernek használt C: partíció könnyen betelhet. Van rá lehetőség, hogy az asztalt is áthelyezzem? Köszi.
+			<br>
+			<!--IBF.ATTACHMENT_415990-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2010. március 25. 19:51</h4>
+			<p>TweakUI?
+			<br>
+			<!--IBF.ATTACHMENT_415992-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: szokekaroly  2010. március 26. 18:01</h4>
+			<p>Ez volt a megoldás. Nagyon szépen köszi.
+			<br>
+			<!--IBF.ATTACHMENT_416020-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Lacosz  2011. január 15. 16:11</h4>
+			<p>Sziasztok!<br><br>Több problémám van az XP fájlkezelésével kapcsolatban. Az egyik mappában lévő Word dokumentumot nem tudom megnyitni, mert azt írja ki, hogy a felhasználónak nincs hozzáférési joga, pedig rendszergazda jogosultságom van. Másolni sem lehet a fájlt.<br><br>A másik problémám, szintén ebben a mappában azt írja ki az InfranView, a megnyitandó képhez (.jpg):<br><br>A fájl header nem olvasható!<br>Ismeretlen képformátum vagy a fájl nem létezik.<br><br>Válaszotokat mihamarabb várom!
+			<br>
+			<!--IBF.ATTACHMENT_430068-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2011. január 15. 17:21</h4>
+			<p>Vedd saját tulajdonba a mappát!
+			<br>
+			<!--IBF.ATTACHMENT_430074-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Batka0306  2011. február 11. 14:12</h4>
+			<p>Sziasztok!<br><br>Nekem egy olyan kérdésem lenne, hogy az xp alatt létrehozott korlátozott jogosultságú felhasználó, legyen a neve X, ne tudjon egyáltalán telepítést indítani, semmifélét. Keresgéltem az XP csoportházirendjében, de nem találtam meg, és a google se adta meg nekem erre a kérdésre a választ.<br>Tudtok nekem ebben segíteni? Ha igen előre is köszönöm!
+			<br>
+			<!--IBF.ATTACHMENT_431521-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2011. február 11. 15:16</h4>
+			<p>A mezei felhasználók egyébként sem nagyon tudnak telepíteni. Mivel van probléma?
+			<br>
+			<!--IBF.ATTACHMENT_431527-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: TheSaurida  2011. február 11. 16:36</h4>
+			<p>A saját meghajtójukra (ha van) elvileg tudnak, amíg a telepítés nem piszkál bele a rendszerbe.
+			<br>
+			<!--IBF.ATTACHMENT_431528-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2011. február 11. 17:24</h4>
+			<p>De hány olyan telepítő van, ami nem nyúl bele a registrybe? <img src="./PC WORLD Segélyvonal _ Windows XP _ Felhasználói fiókok és jogusultságok_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif">
+			<br>
+			<!--IBF.ATTACHMENT_431533-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: TheSaurida  2011. február 11. 19:32</h4>
+			<p>Szerintem elég sok. Pont a korlátozások miatt.
+			<br>
+			<!--IBF.ATTACHMENT_431538-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2011. február 11. 19:52</h4>
+			<p>Én eddig csak hordozható alkalmazásoknál találkoztam ilyennel. Azok pedig mindenképpen futnak, hacsak nem adják meg azokat az alkalmazásokat, amiket az illető futtathat.
+			<br>
+			<!--IBF.ATTACHMENT_431539-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Batka0306  2011. február 12. 9:55</h4>
+			<p>Konkrétan játékról van szó. Esetemben Counter Strike, de miután jobban belenéztem, ez nem is felinstallált, hanem netről letöltött és már futásra alkalmas progi. Csak a munkahelyemen nem kultiválják az illegális játékprogik használatát.
+			<br>
+			<!--IBF.ATTACHMENT_431555-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2011. február 12. 11:06</h4>
+			<p>Ezek ellen egy módszer van, amit írtam is. Pontosan meg kell adni, hogy a felhasználók mely programokat indíthatják el.
+			<br>
+			<!--IBF.ATTACHMENT_431563-->
+			</p>
+		</div><!--Copyright-->	</div></body><style type="text/css">/*This block of style rules is inserted by AdBlock*/#RadAd_Skyscraper,#bbccom_leaderboard,#center_banner,#footer_adcode,#hbBHeaderSpon,#hiddenHeaderSpon,#navbar_adcode,#rightAds,#rightcolumn_adcode,#top-advertising,#topMPU,#tracker_advertorial,.ad-now,.dfpad,.prWrap,[id^="ad_block"],[id^="adbrite"],[id^="dclkAds"],[id^="ew"][id$="_bannerDiv"],[id^="konaLayer"],a.kLink span[id^="preLoadWrap"].preLoadWrap,a[href^="http://ad."][href*=".doubleclick.net/"],a[href^="http://adserver.adpredictive.com"],div#adxLeaderboard,div#dir_ads_site,div#FFN_Banner_Holder,div#FFN_imBox_Container,div#p360-format-box,div#rhs div#rhs_block table#mbEnd,div#rm_container,div#tads table[align="center"][width="100%"],div#tooltipbox[class^="itxt"],div[class^="dms_ad_IDS"],div[id^="adKontekst_"],div[id^="google_ads_div"],div[id^="kona_"][id$="_wrapper"],div[id^="sponsorads"],div[id^="y5_direct"],iframe.chitikaAdBlock,iframe[id^="dapIfM"],iframe[id^="etarget"][id$="banner"],iframe[name^="AdBrite"],iframe[name^="google_ads_"],img[src^="http://cdn.adnxs.com"],ispan#ab_pointer,object#flashad,object#ve_threesixty_swf[name="ve_threesixty_swf"],table[cellpadding="0"][width="100%"] > * > * > * > div[id^="tpa"],#A9AdsMiddleBoxTop,#A9AdsOutOfStockWidgetTop,#A9AdsServicesWidgetTop,#ADSLOT_1,#ADSLOT_2,#ADSLOT_3,#ADSLOT_4,#AD_CONTROL_22,#ADsmallWrapper,#Ad160x600,#Ad2,#Ad300x250,#Ad3Left,#Ad3Right,#Ad3TextAd,#AdArea,#AdBanner_F1,#AdBar,#AdBar1,#AdContainer,#AdContainerTop,#AdContentModule_F,#AdDetails_GoogleLinksBottom,#AdDetails_InsureWith,#AdFrame4,#AdLeaderboardBottom,#AdLeaderboardTop,#AdMiddle,#AdMobileLink,#AdRectangle,#AdSenseDiv,#AdServer,#AdShowcase_F1,#AdSky23,#AdSkyscraper,#AdSponsor_SF,#AdSubsectionShowcase_F1,#AdTargetControl1_iframe,#AdText,#AdTop,#AdTopLeader,#Ad_Block,#Ad_Center1,#Ad_Right1,#Ad_Top,#Adrectangle,#Ads,#AdsContent,#AdsRight,#AdsWrap,#Ads_BA_CAD,#Ads_BA_CAD2,#Ads_BA_CAD_box,#Ads_BA_SKY,#Ads_CAD,#Ads_Special,#AdvertMPU23b,#AdvertPanel,#Advertorial,#Advertorials,#BannerAdvert,#BigBoxAd,#BodyAd,#BotAd,#Bottom468x60AD,#ButtonAd,#CompanyDetailsNarrowGoogleAdsPresentationControl,#CompanyDetailsWideGoogleAdsPresentationControl,#ContentAd,#ContentAd1,#ContentAd2,#ContentAdPlaceHolder1,#ContentAdPlaceHolder2,#ContentAdXXL,#ContentPolepositionAds_Result,#DivAdEggHeadCafeTopBanner,#FooterAd,#FooterAdContainer,#GoogleAd1,#GoogleAd2,#GoogleAd3,#GoogleAdsPresentationControl,#GoogleAdsense,#Google_Adsense_Main,#HEADERAD,#HOME_TOP_RIGHT_BOXAD,#HeaderAD,#HeaderAdsBlock,#HeaderAdsBlockFront,#HeaderBannerAdSpacer,#HeaderTextAd,#HeroAd,#HomeAd1,#HouseAd,#ID_Ad_Sky,#JobsearchResultsAds,#Journal_Ad_125,#Journal_Ad_300,#KH-contentAd,#LargeRectangleAd,#LeftAd,#LeftAdF1,#LeftAdF2,#LftAd,#LoungeAdsDiv,#LowerContentAd,#MainSponsoredLinks,#Nightly_adContainer,#OverrideAdArea,#PREFOOTER_LEFT_BOXAD,#PREFOOTER_RIGHT_BOXAD,#PageLeaderAd,#RelevantAds,#RgtAd1,#RightAd,#RightBottom300x250AD,#RightNavTopAdSpot,#RightSponsoredAd,#SectionAd300-250,#SectionSponsorAd,#SidebarAdContainer,#SkyAd,#SpecialAds,#SponsoredAd,#SponsoredLinks,#TOP_ADROW,#TOP_RIGHT_BOXAD,#Top468x60AD,#TopAdBox,#TopAdContainer,#TopAdDiv,#TopAdPos,#VM-MPU-adspace,#VM-footer-adspace,#VM-header-adspace,#VM-header-adwrap,#XEadLeaderboard,#XEadSkyscraper,#YahooAdParentContainer,#_ads,#about_adsbottom,#ad-120x600-sidebar,#ad-120x60Div,#ad-160x600,#ad-160x600-sidebar,#ad-250,#ad-250x300,#ad-300,#ad-300x250,#ad-300x250-sidebar,#ad-300x250Div,#ad-300x60-1,#ad-728,#ad-728x90-leaderboard-top,#ad-article,#ad-banner,#ad-banner-1,#ad-block-125,#ad-bottom,#ad-bottom-wrapper,#ad-box-first,#ad-box-second,#ad-boxes,#ad-bs,#ad-buttons,#ad-colB-1,#ad-column,#ad-content,#ad-contentad,#ad-flex-first,#ad-footer,#ad-footprint-160x600,#ad-frame,#ad-front-footer,#ad-front-sponsoredlinks,#ad-halfpage,#ad-horizontal-header,#ad-img,#ad-inner,#ad-label,#ad-leaderboard,#ad-leaderboard-bottom,#ad-leaderboard-container,#ad-leaderboard-spot,#ad-leaderboard-top,#ad-left,#ad-links-content,#ad-list-row,#ad-lrec,#ad-medium,#ad-medium-rectangle,#ad-medrec,#ad-middlethree,#ad-middletwo,#ad-module,#ad-mpu,#ad-mpu1-spot,#ad-mpu2,#ad-mpu2-spot,#ad-north,#ad-one,#ad-placard,#ad-placeholder,#ad-rectangle,#ad-right,#ad-righttop,#ad-row,#ad-side-text,#ad-sidebar,#ad-sky,#ad-skyscraper,#ad-slug-wrapper,#ad-small-banner,#ad-space,#ad-special,#ad-splash,#ad-sponsors,#ad-spot,#ad-squares,#ad-target,#ad-target-Leaderbord,#ad-teaser,#ad-text,#ad-top-banner,#ad-top-text-low,#ad-top-wrap,#ad-tower,#ad-trailerboard-spot,#ad-two,#ad-typ1,#ad-unit,#ad-west,#ad-wrap,#ad-wrap-right,#ad-wrapper1,#ad-yahoo-simple,#ad1006,#ad11,#ad125BL,#ad125BR,#ad125TL,#ad125TR,#ad125x125,#ad160x600,#ad160x600right,#ad1Sp,#ad2,#ad2Sp,#ad300,#ad300-250,#ad300X250,#ad300_x_250,#ad300x100Middle,#ad300x150,#ad300x250,#ad300x250Module,#ad300x60,#ad300x600,#ad300x600_callout,#ad336,#ad336x280,#ad375x85,#ad4,#ad468,#ad468x60,#ad468x60_top,#ad526x250,#ad600,#ad7,#ad728,#ad728Mid,#ad728Top,#ad728Wrapper,#ad728top,#ad728x90_1,#adBadges,#adBanner120x600,#adBanner160x600,#adBanner336x280,#adBanner728,#adBannerTable,#adBannerTop,#adBar,#adBelt,#adBlock125,#adBlocks,#adBox,#adBox350,#adBox390,#adCirc300X200,#adCirc_620_100,#adColumn,#adContainer_1,#adContainer_2,#adContainer_3,#adDiv300,#adDiv728,#adFiller,#adFps,#adFtofrs,#adGallery,#adGroup1,#adHeaderTop,#adIsland,#adL,#adLB,#adLabel,#adLayer,#adLeader,#adLeaderTop,#adLeaderboard,#adMPU,#adMediumRectangle,#adMiddle0Frontpage,#adMiniPremiere,#adP,#adPlaceHolderRight,#adPlacer,#adRight,#adSenseModule,#adSenseWrapper,#adServer_marginal,#adSidebar,#adSidebarSq,#adSky,#adSkyscraper,#adSlider,#adSpace,#adSpace3,#adSpace300_ifrMain,#adSpace4,#adSpace5,#adSpace6,#adSpace7,#adSpace_footer,#adSpace_right,#adSpace_top,#adSpacer,#adSpecial,#adSplotlightEm,#adSpot-Leader,#adSpot-banner,#adSpot-island,#adSpot-mrec1,#adSpot-sponsoredlinks,#adSpot-textbox1,#adSpot-widestrip,#adSpotAdvertorial,#adSpotIsland,#adSpotSponsoredLinks,#adSquare,#adStaticA,#adStrip,#adSuperAd,#adSuperPremiere,#adSuperSkyscraper,#adSuperbanner,#adTableCell,#adTag1,#adTag2,#adText,#adTextLink,#adText_container,#adTile,#adTopContent,#adTopboxright,#adTower,#adUnit,#adZoneTop,#ad_1,#ad_160x160,#ad_160x600,#ad_190x90,#ad_2,#ad_3,#ad_300,#ad_300_250,#ad_300_250_1,#ad_300x250,#ad_300x250_content_column,#ad_300x90,#ad_4,#ad_468_60,#ad_5,#ad_728_foot,#ad_728x90,#ad_728x90_container,#ad_940,#ad_984,#ad_A,#ad_B,#ad_Banner,#ad_C,#ad_C2,#ad_D,#ad_E,#ad_F,#ad_G,#ad_H,#ad_I,#ad_J,#ad_K,#ad_L,#ad_M,#ad_N,#ad_O,#ad_P,#ad_YieldManager-300x250,#ad_anchor,#ad_banner,#ad_banner_top,#ad_bar,#ad_bellow_post,#ad_block_1,#ad_block_2,#ad_bottom,#ad_box,#ad_box_colspan,#ad_box_top,#ad_branding,#ad_bs_area,#ad_buttons,#ad_center_monster,#ad_cont,#ad_container_marginal,#ad_container_side,#ad_container_top,#ad_content_top,#ad_content_wrap,#ad_feature,#ad_firstpost,#ad_footer,#ad_front_three,#ad_fullbanner,#ad_global_header,#ad_haha_1,#ad_haha_4,#ad_halfpage,#ad_head,#ad_header,#ad_holder,#ad_horizontal,#ad_horseshoe_left,#ad_horseshoe_right,#ad_horseshoe_spacer,#ad_horseshoe_top,#ad_hotpots,#ad_in_arti,#ad_island,#ad_label,#ad_large_rectangular,#ad_lastpost,#ad_layer2,#ad_leaderBoard,#ad_leaderboard,#ad_leaderboard728x90,#ad_leaderboard_top,#ad_left,#ad_lrec,#ad_lwr_square,#ad_main,#ad_medium_rectangle,#ad_medium_rectangular,#ad_mediumrectangle,#ad_menu_header,#ad_middle,#ad_most_pop_234x60_req_wrapper,#ad_mpu,#ad_mpu300x250,#ad_mpuav,#ad_mrcontent,#ad_overlay,#ad_play_300,#ad_rect,#ad_rect_body,#ad_rect_bottom,#ad_rectangle,#ad_rectangle_medium,#ad_related_links_div,#ad_related_links_div_program,#ad_replace_div_0,#ad_replace_div_1,#ad_report_leaderboard,#ad_report_rectangle,#ad_right,#ad_right_main,#ad_ros_tower,#ad_rr_1,#ad_sec,#ad_sec_div,#ad_sgd,#ad_sidebar,#ad_sidebar1,#ad_sidebar2,#ad_sidebar3,#ad_skyscraper,#ad_skyscraper160x600,#ad_skyscraper_text,#ad_slot_leaderboard,#ad_slot_livesky,#ad_slot_sky_top,#ad_ss,#ad_term_bottom_place,#ad_text,#ad_thread_first_post_content,#ad_top,#ad_top_holder,#ad_tp_banner_1,#ad_tp_banner_2,#ad_unit,#ad_vertical,#ad_wide,#ad_wide_box,#ad_widget,#ad_window,#ad_wrap,#adbForum,#adbanner,#adbig,#adbnr,#adboard,#adbottom,#adbox1,#adbox2,#adclear,#adcode,#adcode1,#adcode2,#adcode3,#adcode4,#adcolumnwrapper,#adcontainer,#adcontainerRight,#adcontainsm,#adcontent,#adcontent1,#adcontrolPushSite,#add_ciao2,#addbottomleft,#addiv-bottom,#addiv-top,#adfooter,#adfooter_728x90,#adframe:not(frameset),#adhead,#adhead_g,#adheader,#adhome,#adiframe1_iframe,#adiframe2_iframe,#adiframe3_iframe,#adimg,#adition_content_ad,#adlabel,#adlabelFooter,#adlayerad,#adleaderboard,#adleft,#adlinks,#adlinkws,#adlrec,#admid,#admiddle3center,#admiddle3left,#adposition,#adposition-C,#adposition-FPMM,#adposition1,#adposition2,#adposition4,#adrectangle,#adrectanglea,#adrectangleb,#adrig,#adright,#adright2,#adrighthome,#ads-468,#ads-area,#ads-block,#ads-bot,#ads-bottom,#ads-col,#ads-dell,#ads-horizontal,#ads-indextext,#ads-leaderboard1,#ads-lrec,#ads-menu,#ads-middle,#ads-prices,#ads-rhs,#ads-right,#ads-sponsored-boxes,#ads-top,#ads-vers7,#ads-wrapper,#ads160left,#ads2,#ads300,#ads300-250,#ads300Bottom,#ads300Top,#ads336x280,#ads7,#ads728bottom,#ads728top,#ads790,#adsDisplay,#adsID,#ads_160,#ads_300,#ads_728,#ads_banner,#ads_belowforumlist,#ads_belownav,#ads_bottom_inner,#ads_bottom_outer,#ads_box,#ads_button,#ads_catDiv,#ads_footer,#ads_html1,#ads_html2,#ads_medrect,#ads_notice,#ads_right,#ads_right_sidebar,#ads_sidebar_roadblock,#ads_space,#ads_top,#ads_watch_top_square,#ads_zone27,#adsbottom,#adsbox,#adscolumn,#adsd_contentad_r1,#adsd_contentad_r2,#adsd_contentad_r3,#adsd_topbanner,#adsd_txt_sky,#adsdiv,#adsense-2,#adsense-header,#adsense-tag,#adsense-text,#adsenseOne,#adsenseWrap,#adsense_article_left,#adsense_box,#adsense_leaderboard,#adsense_overlay,#adsense_placeholder_2,#adsenseheader,#adsensetopplay,#adsensewidget-3,#adserv,#adsimage,#adsky,#adskyscraper,#adslot,#adsonar,#adspace-300x250,#adspace300x250,#adspaceBox,#adspaceBox300,#adspace_header,#adspot,#adspot-1,#adspot-149x170,#adspot-1x4,#adspot-2,#adspot-295x60,#adspot-2a,#adspot-2b,#adspot-300x250-pos-1,#adspot-300x250-pos-2,#adspot-468x60-pos-2,#adspot-a,#adspot300x250,#adspot_220x90,#adspot_300x250,#adspot_468x60,#adspot_728x90,#adsright,#adst,#adstop,#adt,#adtab,#adtag_right_side,#adtaily-widget-light,#adtech_googleslot_03c,#adtech_takeover,#adtop,#adtophp,#adtxt,#adv-masthead,#adv_google_300,#adv_google_728,#adv_top_banner_wrapper,#adver1,#adver2,#adver3,#adver4,#adver5,#adver6,#adver7,#advert-1,#advert-120,#advert-boomer,#advert-display,#advert-header,#advert-leaderboard,#advert-links-bottom,#advert-skyscraper,#advert-top,#advert1,#advertBanner,#advertContainer,#advertDB,#advertRight,#advert_125x125,#advert_250x250,#advert_box,#advert_home01,#advert_leaderboard,#advert_lrec_format,#advert_mid,#advert_mpu,#advert_right_skyscraper,#advertbox,#advertbox2,#advertbox3,#advertbox4,#adverthome,#advertise-here-sidebar,#advertise-now,#advertise1,#advertiseHere,#advertisement160x600,#advertisement728x90,#advertisementLigatus,#advertisementPrio2,#advertisementsarticle,#advertiser-container,#advertiserLinks,#advertisers,#advertising-banner,#advertising-caption,#advertising-container,#advertising-control,#advertising-skyscraper,#advertising2,#advertisingModule160x600,#advertisingModule728x90,#advertisment,#advertismentElementInUniversalbox,#advertorial,#adverts-top-container,#adverts-top-left,#adverts-top-middle,#adverts-top-right,#advertsingle,#advt,#adwhitepaperwidget,#adwin_rec,#adwith,#adwords-4-container,#adxBigAd,#adxMiddle5,#adxSponLink,#adxSponLinkA,#adxtop,#adz,#adzbanner,#adzerk,#adzerk1,#adzoneBANNER,#affinityBannerAd,#agi-ad300x250,#agi-ad300x250overlay,#agi-sponsored,#alert_ads,#anchorAd,#annoying_ad,#ap_adframe,#apiBackgroundAd,#apiTopAdWrap,#apmNADiv,#araHealthSponsorAd,#article-ad-container,#article-box-ad,#articleAdReplacement,#articleLeftAdColumn,#articleSideAd,#article_ad,#article_ad_container,#article_box_ad,#asinglead,#atlasAdDivGame,#awds-nt1-ad,#banner-300x250,#banner-ad,#banner-ad-container,#banner-ads,#banner250x250,#banner468x60,#banner728x90,#bannerAd,#bannerAdTop,#bannerAd_ctr,#banner_ad,#banner_ad_footer,#banner_ad_module,#banner_admicro,#banner_ads,#banner_content_ad,#banner_topad,#bannerad2,#baseAdvertising,#bbccom_mpu,#bbccom_storyprintsponsorship,#bbo_ad1,#bg-footer-ads,#bg-footer-ads2,#bg_YieldManager-300x250,#bigAd,#bigBoxAd,#bigad300outer,#bigadbox,#bigadframe,#bigadspot,#billboard_ad,#block-ad_cube-1,#block-openads-1,#block-openads-3,#block-openads-4,#block-openads-5,#block-thewrap_ads_250x300-0,#blog-ad,#blog_ad_content,#blog_ad_opa,#blox-big-ad,#blox-big-ad-bottom,#blox-big-ad-top,#blox-halfpage-ad,#blox-tile-ad,#blox-tower-ad,#body_728_ad,#book-ad,#botad,#bott_ad2,#bott_ad2_300,#bottom-ad,#bottom-ad-container,#bottom-ads,#bottomAd,#bottomAdCCBucket,#bottomAdContainer,#bottomAdSense,#bottomAdSenseDiv,#bottomAds,#bottomRightAd,#bottomRightAdSpace,#bottom_ad,#bottom_ad_area,#bottom_ads,#bottom_banner_ad,#bottom_overture,#bottom_sponsor_ads,#bottom_sponsored_links,#bottom_text_ad,#bottomad,#bottomads,#bottomadsense,#bottomadwrapper,#bottomleaderboardad,#box-content-ad,#box-googleadsense-1,#box-googleadsense-r,#box1ad,#boxAd300,#boxAdContainer,#box_ad,#box_advertisment,#box_mod_googleadsense,#boxad1,#boxad2,#boxad3,#boxad4,#boxad5,#bpAd,#bps-header-ad-container,#btr_horiz_ad,#burn_header_ad,#button-ads-horizontal,#button-ads-vertical,#buttonAdWrapper1,#buttonAdWrapper2,#buttonAds,#buttonAdsContainer,#button_ad_container,#button_ad_wrap,#buttonad,#buy-sell-ads,#c4ad-Middle1,#c_ad_sb,#c_ad_sky,#caAdLarger,#catad,#category-ad,#cellAd,#channel_ad,#channel_ads,#ciHomeRHSAdslot,#circ_ad,#cnnRR336ad,#cnnTopAd,#cnnVPAd,#col3_advertising,#colAd,#colRightAd,#collapseobj_adsection,#column4-google-ads,#comments-ad-container,#commercial_ads,#common_right_ad_wrapper,#common_right_lower_ad_wrapper,#common_right_lower_adspace,#common_right_lower_player_ad_wrapper,#common_right_lower_player_adspace,#common_right_player_ad_wrapper,#common_right_player_adspace,#common_right_right_adspace,#common_top_adspace,#companion-ad,#companionAdDiv,#containerLocalAds,#containerLocalAdsInner,#containerMrecAd,#containerSqAd,#content-ad-header,#content-header-ad,#contentBoxad,#contentTopAds2,#content_ad_square,#content_ad_top,#content_ads_content,#content_box_300body_sponsoredoffers,#content_box_adright300_google,#content_mpu,#contentad { visibility:hidden !important; display:none !important; } #contentad_imtext,#contentad_right,#contentads,#contentinlineAd,#contextad,#contextual-ads,#contextual-ads-block,#contextualad,#coverads,#ctl00_Adspace_Top_Height,#ctl00_BottomAd,#ctl00_ContentMain_BanManAd468_BanManAd,#ctl00_ContentRightColumn_RightColumn_Ad1_BanManAd,#ctl00_ContentRightColumn_RightColumn_Ad2_BanManAd,#ctl00_ContentRightColumn_RightColumn_PremiumAd1_ucBanMan_BanManAd,#ctl00_LHTowerAd,#ctl00_LeftHandAd,#ctl00_MasterHolder_IBanner_adHolder,#ctl00_TopAd,#ctl00_TowerAd,#ctl00_VBanner_adHolder,#ctl00__Content__RepeaterReplies_ctl03__AdReply,#ctl00_abot_bb,#ctl00_adFooter,#ctl00_advert_LargeMPU_div_AdPlaceHolder,#ctl00_atop_bt,#ctl00_cphMain_hlAd1,#ctl00_cphMain_hlAd2,#ctl00_cphMain_hlAd3,#ctl00_ctl00_MainPlaceHolder_itvAdSkyscraper,#ctl00_ctl00_ctl00_Main_Main_PlaceHolderGoogleTopBanner_MPTopBannerAd,#ctl00_ctl00_ctl00_Main_Main_SideBar_MPSideAd,#ctl00_dlTilesAds,#ctl00_m_skinTracker_m_adLBL,#ctl00_phCrackerMain_ucAffiliateAdvertDisplayMiddle_pnlAffiliateAdvert,#ctl00_phCrackerMain_ucAffiliateAdvertDisplayRight_pnlAffiliateAdvert,#ctrlsponsored,#cubeAd,#cube_ads,#cube_ads_inner,#cubead,#cubead-2,#dItemBox_ads,#dart_160x600,#dc-display-right-ad-1,#dcol-sponsored,#defer-adright,#detail_page_vid_topads,#div-gpt-ad-1,#div-gpt-ad-2,#div-gpt-ad-3,#div-gpt-ad-4,#divAdBox,#divAdWrapper,#divDoubleAd,#divLeftAd12,#divLeftRecAd,#divMenuAds,#divWNAdHeader,#divWrapper_Ad,#div_ad_leaderboard,#div_video_ads,#dlads,#dni-header-ad,#dnn_ad_banner,#download_ads,#ds-mpu,#editorsmpu,#embedded-ad,#evotopTen_advert,#ex-ligatus,#exads,#featured-advertisements,#featuredAdContainer2,#featuredAds,#feed_links_ad_container,#first-300-ad,#first-adlayer,#first_ad_unit,#firstad,#fl_hdrAd,#flash_ads_1,#flexiad,#footad,#footer-ad,#footer-advert,#footer-adverts,#footer-sponsored,#footerAd,#footerAdDiv,#footerAds,#footerAdvertisement,#footerAdverts,#footer_ad_01,#footer_ad_block,#footer_ad_container,#footer_ad_modules,#footer_adspace,#footer_text_ad,#footerad,#footerads,#footeradsbox,#forum_top_ad,#fpv_companionad,#fr_ad_center,#frame_admain,#frnAdSky,#frnBannerAd,#frnContentAd,#from_our_sponsors,#front_advert,#front_mpu,#ft-ad,#ft-ad-1,#ft-ad-container,#ft_mpu,#fusionad,#fw-advertisement,#g_ad,#g_adsense,#ga_300x250,#gad,#gad2,#gad3,#gad5,#galleries-tower-ad,#gallery-ad-m0,#gallery_ads,#game-info-ad,#gasense,#gglads,#global_header_ad_area,#gmi-ResourcePageAd,#gmi-ResourcePageLowerAd,#goads,#gooadtop,#google-ad,#google-ad-art,#google-ad-table-right,#google-ad-tower,#google-ads,#google-ads-bottom,#google-ads-header,#google-ads-left-side,#google-adsense-mpusize,#googleAd,#googleAds,#googleAdsSml,#googleAdsense,#googleAdsenseBanner,#googleAdsenseBannerBlog,#googleAdwordsModule,#googleAfcContainer,#googleSearchAds,#googleShoppingAdsRight,#googleShoppingAdsTop,#googleSubAds,#google_ad,#google_ad_container,#google_ad_inline,#google_ad_test,#google_ads,#google_ads_aCol,#google_ads_frame1,#google_ads_frame1_anchor,#google_ads_frame2,#google_ads_frame2_anchor,#google_ads_frame3,#google_ads_frame3_anchor,#google_ads_test,#google_ads_top,#google_adsense_home_468x60_1,#googlead2,#googleadbox,#googleads,#googleadsense,#googlesponsor,#gpt-ad-halfpage,#gpt-ad-rectangle1,#gpt-ad-rectangle2,#gpt-ad-skyscraper,#gpt-ad-story_rectangle3,#grid_ad,#gsyadrectangleload,#gsyadrightload,#gsyadtop,#gsyadtopload,#gtopadvts,#half-page-ad,#halfPageAd,#halfe-page-ad-box,#hd-ads,#hd-banner-ad,#hdtv_ad_ss,#headAd,#head_advert,#headad,#header-ad,#header-ad-rectangle-container,#header-ads,#header-adspace,#header-advert,#header-advertisement,#header-advertising,#header-adverts,#headerAd,#headerAdBackground,#headerAdContainer,#headerAdWrap,#headerAds,#headerAdsWrapper,#headerTopAd,#header_ad_728_90,#header_ad_container,#header_adcode,#header_ads,#header_advertisement_top,#header_leaderboard_ad_container,#header_publicidad,#headerad,#headeradbox,#headerads,#headeradsbox,#headeradwrap,#headline_ad,#headlinesAdBlock,#hiddenadAC,#hideads,#hl-sponsored-results,#hly_ad_side_bar_tower_left,#home-rectangle-ad,#homeTopRightAd,#home_ad,#home_bottom_ad,#home_contentad,#home_feature_ad,#home_mpu,#home_spensoredlinks,#homepage-ad,#homepageAdsTop,#homepageFooterAd,#homepage_right_ad,#homepage_right_ad_container,#homepage_top_ads,#hometop_234x60ad,#hor_ad,#horizontal-banner-ad,#horizontal_ad,#horizontal_ad_top,#horizontalads,#houseAd,#hp-header-ad,#hp-right-ad,#hp-store-ad,#hpV2_300x250Ad,#hpV2_googAds,#icePage_SearchLinks_AdRightDiv,#icePage_SearchLinks_DownloadToolbarAdRightDiv,#icePage_SearchResults_ads0_SponsoredLink,#icePage_SearchResults_ads1_SponsoredLink,#icePage_SearchResults_ads2_SponsoredLink,#icePage_SearchResults_ads3_SponsoredLink,#icePage_SearchResults_ads4_SponsoredLink,#imu_ad_module,#in_serp_ad,#inadspace,#indexad,#inline-story-ad,#inlinead,#inlinegoogleads,#inlist-ad-block,#inner-advert-row,#innerpage-ad,#inside-page-ad,#insider_ad_wrapper,#instoryad,#instoryadtext,#instoryadwrap,#int-ad,#interstitial_ad_wrapper,#islandAd,#j_ad,#ji_medShowAdBox,#jmp-ad-buttons,#joead,#joead2,#ka_adRightSkyscraperWide,#kdz_ad1,#kdz_ad2,#landing-adserver,#largead,#lateAd,#layerAds_layerDiv,#layerTLDADSERV,#lb-sponsor-left,#lb-sponsor-right,#leader-board-ad,#leader-sponsor,#leaderAd,#leaderAdContainer,#leader_board_ad,#leaderad,#leaderad_section,#leaderboard-ad,#leaderboard-bottom-ad,#leaderboard_ad,#left-ad-skin,#left-lower-adverts,#left-lower-adverts-container,#leftAdContainer,#leftAd_rdr,#leftAdvert,#leftSectionAd300-100,#left_ad,#left_adspace,#leftad,#leftads,#leftcolAd,#lg-banner-ad,#ligatus,#linkAds,#linkads,#live-ad,#logoAd,#longAdSpace,#lowerAdvertisementImg,#lowerads,#lowerthirdad,#lowertop-adverts,#lowertop-adverts-container,#lpAdPanel,#lrecad,#lsadvert-left_menu_1,#lsadvert-left_menu_2,#lsadvert-top,#mBannerAd,#main-ad,#main-ad160x600,#main-ad160x600-img,#main-ad728x90,#main-bottom-ad,#mainAdUnit,#mainAdvert,#main_ad,#main_rec_ad,#main_top_ad_container,#marketing-promo,#mastAd,#mastAdvert,#mastad,#mastercardAd,#masthead_ad,#masthead_topad,#medRecAd,#media_ad,#mediaplayer_adburner,#mediumAdvertisement,#medrectad,#menuAds,#mi_story_assets_ad,#mid-ad300x250,#mid-table-ad,#midRightTextAds,#mid_ad_div,#mid_ad_title,#mid_mpu,#midadd,#midadspace,#middle-ad,#middlead,#middleads,#midrect_ad,#midstrip_ad,#mini-ad,#mochila-column-right-ad-300x250,#mochila-column-right-ad-300x250-1,#module-google_ads,#module_ad,#module_box_ad,#module_sky_scraper,#monsterAd,#moogleAd,#most_popular_ad,#motionAd,#mpu,#mpu-advert,#mpu300250,#mpuAd,#mpuDiv,#mpuSlot,#mpuWrapper,#mpuWrapperAd,#mpu_banner,#mpu_holder,#mpu_text_ad,#mpuad,#mr_banner_topad,#mrecAdContainer,#msAds,#ms_ad,#msad,#multiLinkAdContainer,#multi_ad,#myads_HeaderButton,#n_sponsor_ads,#namecom_ad_hosting_main,#narrow_ad_unit,#natadad300x250,#national_microlink_ads,#nationalad,#navi_banner_ad_780,#nba160PromoAd,#nba300Ad,#nbaHouseAnd600Ad,#nbaLeft600Ad,#nbaMidAds,#nbaVid300Ad,#new_topad,#newads,#ng_rtcol_ad,#noresults_ad_container,#noresultsads,#northad,#ns_ad3,#oanda_ads,#onespot-ads,#online_ad,#p-googleadsense,#page-header-ad,#page-top-ad,#pageAds,#pageAdsDiv,#page_content_top_ad,#pagelet_adbox,#pagelet_netego_ads,#pagelet_search_ads2,#panelAd,#pb_report_ad,#pcworldAdBottom,#pcworldAdTop,#pinball_ad,#player-below-advert,#player_ad,#player_ads,#pod-ad-video-page,#populate_ad_bottom,#populate_ad_left,#portlet-advertisement-left,#portlet-advertisement-right,#post-promo-ad,#post5_adbox,#post_ad,#premium_ad,#priceGrabberAd,#prime-ad-space,#print_ads,#product-adsense,#promoAds,#ps-vertical-ads,#pub468x60,#publicidad,#pushdown_ad,#qm-ad-big-box,#qm-ad-sky,#qm-dvdad,#r1SoftAd,#rail_ad1,#rail_ad2,#realEstateAds,#rectAd,#rect_ad,#rectangle-ad,#rectangle_ad,#refine-300-ad,#region-node-advert,#region-top-ad,#rh-ad-container,#rh_tower_ad,#rhapsodyAd,#rhs_ads,#rhsadvert,#right-ad,#right-ad-skin,#right-ad-title,#right-ads-3,#right-box-ad,#right-featured-ad,#right-mpu-1-ad-container,#right-uppder-adverts,#right-uppder-adverts-container,#rightAd,#rightAd300x250,#rightAdBar,#rightAdColumn,#rightAd_rdr,#rightAdsDiv,#rightColAd,#rightColumnMpuAd,#rightColumnSkyAd,#rightTopSponsor,#right_ad_wrapper,#right_ads,#right_advertisement,#right_advertising,#right_column_ad_container,#right_column_ads,#right_column_internal_ad_container,#right_column_top_ad_unit,#rightad,#rightadContainer,#rightadvertbar-doubleclickads,#rightbar-ad,#rightcolumn_300x250ad,#rightside-ads,#rightside_ad,#righttop-adverts,#righttop-adverts-container,#rm_ad_text,#ros_ad,#rotatingads,#row2AdContainer,#rr_MSads,#rt-ad,#rt-ad-top,#rt-ad468,#rtMod_ad,#rtmod_ad,#sAdsBox,#sb-ad-sq,#sb_advert,#sb_sponsors,#search-google-ads,#search-sponsored-links,#search-sponsored-links-top,#searchAdSenseBox,#searchAdSenseBoxAd,#searchAdSkyscraperBox,#search_ads,#search_result_ad,#second-adlayer,#secondBoxAdContainer,#secondrowads,#section-ad-1-728,#section-ad-300-250,#section-ad-4-160,#section-blog-ad,#section-container-ddc_ads,#section-sponsors,#section_advertorial_feature,#servfail-ads,#sew-ad1,#shoppingads,#show-ad,#showAd,#showad,#side-ad,#side-ad-container,#sideAd,#sideAdSub,#sideBarAd,#side_ad,#side_ad_wrapper,#side_ads_by_google,#side_sky_ad,#sidead,#sideads,#sidebar-125x125-ads,#sidebar-125x125-ads-below-index,#sidebar-ad,#sidebar-ad-boxes,#sidebar-ad-space,#sidebar-ad-wrap,#sidebar-ad3,#sidebar2ads,#sidebar_ad,#sidebar_ad_widget,#sidebar_ads_180,#sidebar_sponsoredresult_body,#sidebarad,#sidebaradver_advertistxt,#sideline-ad,#single-mpu,#singlead,#site-leaderboard-ads,#site_top_ad,#sitead,#sky-ad,#skyAd,#skyAdContainer,#skyScrapperAd,#skyWrapperAds,#sky_ad,#sky_advert,#skyads,#skyadwrap,#skyline_ad,#skyscraper-ad,#skyscraperAd,#skyscraperAdContainer,#skyscraper_ad,#skyscraper_advert,#skyscraperad,#slide_ad,#sliderAdHolder,#slideshow_ad_300x250,#sm-banner-ad,#small_ad,#smallerAd,#some-ads,#some-more-ads,#specialadvertisingreport_container,#specials_ads,#speeds_ads,#speeds_ads_fstitem,#speedtest_mrec_ad,#sphereAd,#sponLinkDiv_1,#sponlink,#sponlinks,#sponsAds,#sponsLinks,#spons_left,#sponseredlinks,#sponsor-search,#sponsorAd1,#sponsorAd2,#sponsorAdDiv,#sponsorLinks,#sponsorTextLink,#sponsor_banderole,#sponsor_box,#sponsor_deals,#sponsor_panSponsor,#sponsor_recommendations,#sponsorbar,#sponsorbox,#sponsored-ads,#sponsored-features,#sponsored-links,#sponsored-resources,#sponsored1,#sponsoredBox1,#sponsoredBox2,#sponsoredLinks,#sponsoredList,#sponsoredResults,#sponsoredResultsWide,#sponsoredSiteMainline,#sponsoredSiteSidebar,#sponsored_ads_v4,#sponsored_content,#sponsored_game_row_listing,#sponsored_links,#sponsored_v12,#sponsoredads,#sponsoredlinks,#sponsoredlinks_cntr,#sponsoredlinkslabel,#sponsoredresults_top,#sponsoredwellcontainerbottom,#sponsoredwellcontainertop,#sponsoring_bar,#sponsorlink,#sponsors,#sponsors_top_container,#sponsorshipBadge,#spotlightAds,#spotlightad,#sqAd,#square-sponsors,#squareAd,#squareAdSpace,#squareAds,#square_ad,#start_middle_container_advertisment,#sticky-ad,#stickyBottomAd,#story-90-728-area,#story-ad-a,#story-ad-b,#story-leaderboard-ad,#story-sponsoredlinks,#storyAd,#storyAdWrap,#storyad2,#subpage-ad-right,#subpage-ad-top,#swads,#synch-ad,#systemad_background,#tabAdvertising,#takeoverad,#tblAd,#tbl_googlead,#tcwAd,#td-GblHdrAds,#template_ad_leaderboard,#tertiary_advertising,#text-ad,#text-ads,#text-link-ads,#textAd,#textAds,#text_ad,#text_ads,#text_advert,#textad,#textad3,#the-last-ad-standing,#thefooterad,#themis-ads,#tile-ad,#tmglBannerAd,#toolbarSlideUpAd,#top-ad,#top-ad-container,#top-ad-menu,#top-ads,#top-ads-tabs,#top-advertisement,#top-banner-ad,#top-search-ad-wrapper,#topAd728x90,#topAdBanner,#topAdBox,#topAdContainer,#topAdSenseDiv,#topAdcontainer,#topAds,#topAdsContainer,#topAdvert,#topBannerAdContainer,#topNavLeaderboardAdHolder,#topRightBlockAdSense,#top_ad_area,#top_ad_banner,#top_ad_game,#top_ad_wrapper,#top_ad_zone,#top_ads,#top_advertise,#top_advertising,#top_rectangle_ad,#top_right_ad,#top_wide_ad,#topad_left,#topad_right,#topadbar,#topadblock,#topaddwide,#topadsense,#topadspace,#topadzone,#topbanner_ad,#topbar-ad,#topcustomad,#topleaderboardad,#toprightAdvert,#toprightad,#topsponsored,#toptextad,#tour300Ad,#tourSponsoredLinksContainer,#towerad,#ts-ad_module,#ttp_ad_slot1,#ttp_ad_slot2,#twogamesAd,#txt_link_ads,#undergameAd,#upperAdvertisementImg,#upperMpu,#upperad,#urban_contentad_1,#urban_contentad_2,#urban_contentad_article,#v_ad,#vert_ad,#vert_ad_placeholder,#vertical_ad,#vertical_ads,#videoAd,#video_cnv_ad,#video_overlay_ad,#videoadlogo,#viewportAds,#viewvid_ad300x250,#walltopad,#weblink_ads_container,#welcomeAdsContainer,#welcome_ad_mrec,#welcome_advertisement,#wf_ContentAd,#wf_FrontSingleAd,#wf_SingleAd,#wf_bottomContentAd,#wgtAd,#whatsnews_top_ad,#whitepaper-ad,#whoisRightAdContainer,#wide_ad_unit_top,#widget_advertisement,#wrapAdRight,#wrapAdTop,#wrapperAdsTopLeft,#wrapperAdsTopRight,#y-ad-units,#y708-ad-expedia,#y708-ad-lrec,#y708-ad-partners,#y708-ad-ysm,#y708-advertorial-marketplace,#yahoo-ads,#yahoo-sponsors,#yahooSponsored,#yahoo_ads,#yahoo_ads_2010,#yahoo_text_ad,#yahooad-tbl,#yan-sponsored,#yatadsky,#ybf-ads,#yfi_fp_ad_mort,#yfi_fp_ad_nns,#yfi_pf_ad_mort,#ygrp-sponsored-links,#ymap_adbanner,#yn-gmy-ad-lrec,#yreSponsoredLinks,#ysm_ad_iframe,#zoneAdserverMrec,#zoneAdserverSuper,.ADBAR,.ADPod,.AD_ALBUM_ITEMLIST,.AD_MOVIE_ITEM,.AD_MOVIE_ITEMLIST,.AD_MOVIE_ITEMROW,.Ad-MPU,.Ad1,.Ad120x600,.Ad160x600,.Ad160x600left,.Ad160x600right,.Ad2,.Ad247x90,.Ad300x,.Ad300x250,.Ad300x250L,.Ad728x90,.AdBorder,.AdBox7,.AdContainerBox308,.AdHeader,.AdHere,.AdMedium,.AdPlaceHolder,.AdRingtone,.AdSenseLeft,.AdSlot,.AdSpace,.AdTextSmallFont,.AdUnit,.AdUnit300,.Ad_C,.Ad_D_Wrapper,.Ad_E_Wrapper,.Ad_Right,.AdsBoxBottom,.AdsBoxSection,.AdsBoxTop,.AdsLinks1,.AdsLinks2,.AdsRec,.AdvertMidPage,.AdvertiseWithUs,.AdvertisementTextTag,.ArticleAd,.ArticleInlineAd,.BannerAd,.BigBoxAd,.BlockAd,.BottomAdContainer,.BottomAffiliate,.BoxAd,.CG_adkit_leaderboard,.CG_details_ad_dropzone,.CWReviewsProdInfoAd,.ComAread,.CommentAd,.ContentAd,.ContentAds,.DAWRadvertisement,.DeptAd,.DisplayAd,.FT_Ad,.FlatAds,.GOOGLE_AD,.GoogleAd,.GoogleAdSenseBottomModule,.GoogleAdSenseRightModule,.HPG_Ad_B,.HPNewAdsBannerDiv,.HPRoundedAd,.HomeContentAd,.IABAdSpace,.IndexRightAd,.LazyLoadAd,.LeftAd,.LeftButtonAdSlot,.LeftTowerAd,.M2Advertisement,.MD_adZone,.MOS-ad-hack,.MPU,.MPUHolder,.MPUTitleWrapperClass,.MREC_ads,.MiddleAd,.MiddleAdContainer,.NewsAds,.OAS,.OpaqueAdBanner,.OpenXad,.PU_DoubleClickAdsContent,.Post5ad,.Post9ad,.RBboxAd,.RectangleAd,.RelatedAds,.Right300x250AD,.RightAd1,.RightAdvertiseArea,.RightGoogleAFC,.RightRailTop300x250Ad,.RightSponsoredAdTitle,.RightTowerAd,.STR_AdBlock,.SideAdCol,.SidebarAd,.SidebarAdvert,.SitesGoogleAdsModule,.SkyAdContainer,.SponsorCFrame,.SponsoredAdTitle,.SponsoredContent,.SponsoredLinkItemTD,.SponsoredLinks,.SponsoredLinksGrayBox,.SponsoredLinksModule,.SponsoredLinksPadding,.SponsorshipText,.SquareAd,.StandardAdLeft,.StandardAdRight,.TRU-onsite-ads-leaderboard,.TextAd,.TheEagleGoogleAdSense300x250,.TopAd,.TopAdContainer,.TopAdL,.TopAdR,.TopBannerAd,.UIWashFrame_SidebarAds,.UnderAd,.VerticalAd,.Video-Ad,.VideoAd,.WidgetAdvertiser,.a160x600,.a728x90,.ad-120x600,.ad-160,.ad-160x600,.ad-250,.ad-300,.ad-300-block,.ad-300-blog,.ad-300x100,.ad-300x250,.ad-300x250-right0,.ad-350,.ad-355x75,.ad-600,.ad-635x40,.ad-728,.ad-728x90,.ad-728x90-1,.ad-728x90_forum,.ad-90x600,.ad-above-header,.ad-adlink-bottom,.ad-adlink-side,.ad-area,.ad-background,.ad-banner,.ad-bigsize,.ad-block,.ad-blog2biz,.ad-body { visibility:hidden !important; display:none !important; } .ad-bottom,.ad-break,.ad-btn,.ad-btn-heading,.ad-cell,.ad-container-300x250,.ad-container-728x90,.ad-context,.ad-disclaimer,.ad-div,.ad-enabled,.ad-feedback,.ad-filler,.ad-flex,.ad-footer,.ad-footer-leaderboard,.ad-google,.ad-graphic-large,.ad-gray,.ad-hdr,.ad-head,.ad-header,.ad-heading,.ad-homeleaderboard,.ad-img,.ad-in-post,.ad-index-main,.ad-island,.ad-label,.ad-leaderboard,.ad-links,.ad-lrec,.ad-medium,.ad-medium-two,.ad-mpu,.ad-msn,.ad-note,.ad-notice,.ad-other,.ad-permalink,.ad-placeholder,.ad-postText,.ad-poster,.ad-priority,.ad-rect,.ad-rectangle,.ad-rectangle-text,.ad-related,.ad-rh,.ad-ri,.ad-right,.ad-right-header,.ad-right-txt,.ad-row,.ad-section,.ad-show-label,.ad-side,.ad-sidebar-outer,.ad-sidebar300,.ad-sky,.ad-slot,.ad-slot-234-60,.ad-slot-300-250,.ad-slot-728-90,.ad-space,.ad-space-mpu-box,.ad-spot,.ad-square300,.ad-squares,.ad-statement,.ad-story-inject,.ad-tabs,.ad-text-links,.ad-tile,.ad-title,.ad-top,.ad-top-left,.ad-unit,.ad-unit-300,.ad-unit-300-wrapper,.ad-unit-anchor,.ad-vert,.ad-vtu,.ad-wrap,.ad-wrapper,.ad-zone-s-q-l,.ad.super,.ad0,.ad10,.ad120,.ad120x240backgroundGray,.ad120x600,.ad125,.ad140,.ad160,.ad160x600,.ad160x600GrayBorder,.ad18,.ad19,.ad21,.ad230,.ad250,.ad250c,.ad3,.ad300,.ad300250,.ad300_250,.ad300x100,.ad300x250,.ad300x250-hp-features,.ad300x250Top,.ad300x250_container,.ad300x250box,.ad300x50-right,.ad300x600,.ad310,.ad336x280,.ad343x290,.ad4,.ad400right,.ad450,.ad468_60,.ad468x60,.ad6,.ad620x70,.ad626X35,.ad7,.ad728,.ad728_90,.ad728x90,.ad728x90_container,.ad8,.ad90x780,.adAgate,.adArea674x60,.adBanner,.adBanner300x250,.adBanner728x90,.adBannerTyp1,.adBannerTypSortableList,.adBannerTypW300,.adBar,.adBgBottom,.adBgMId,.adBgTop,.adBlock,.adBottomboxright,.adBoxBody,.adBoxBorder,.adBoxContainer,.adBoxContent,.adBoxInBignews,.adBoxSidebar,.adBoxSingle,.adBwrap,.adCMRight,.adCell,.adColumn,.adCont,.adContTop,.adContour,.adCreative,.adCube,.adFender3,.adFrame,.adFtr,.adFullWidthMiddle,.adGoogle,.adHeader,.adHeadline,.adHome300x250,.adHorisontal,.adInNews,.adLabel,.adLeader,.adLeaderForum,.adLeaderboard,.adLeft,.adLoaded,.adLocal,.adMarker,.adMastheadLeft,.adMastheadRight,.adMegaBoard,.adMkt2Colw,.adModuleAd,.adMpu,.adNewsChannel,.adNoOutline,.adNotice,.adNoticeOut,.adObj,.adPageBorderL,.adPageBorderR,.adPanel,.adRect,.adRight,.adSelfServiceAdvertiseLink,.adServer,.adSkyscraperHolder,.adSlot,.adSpBelow,.adSpacer,.adSplash,.adSponsor,.adSpot,.adSpot-searchAd,.adSpot-textBox,.adSpot-twin,.adSpotIsland,.adSquare,.adSubColPod,.adSuperboard,.adSupertower,.adTD,.adTab,.adTag,.adTileWrap,.adTiler,.adTopboxright,.adTout,.adTxt,.adUnit,.adUnitHorz,.adUnitVert,.adUnitVert_noImage,.adWebBoard,.adWidget,.adWithTab,.adWrap,.adWrapper,.ad_0,.ad_1,.ad_120x90,.ad_125,.ad_130x90,.ad_160,.ad_160x600,.ad_2,.ad_200,.ad_200x200,.ad_250x250,.ad_250x250_w,.ad_3,.ad_300,.ad_300_250,.ad_300x250,.ad_300x250_box_right,.ad_336,.ad_336x280,.ad_350x100,.ad_350x250,.ad_400x200,.ad_468,.ad_468x60,.ad_600,.ad_728,.ad_728x90,.ad_Left,.ad_amazon,.ad_banner,.ad_banner_border,.ad_bar,.ad_bg,.ad_bigbox,.ad_biz,.ad_block,.ad_block_338,.ad_body,.ad_border,.ad_botbanner,.ad_bottom_leaderboard,.ad_bottom_left,.ad_box,.ad_box2,.ad_box_ad,.ad_box_div,.ad_callout,.ad_caption,.ad_column,.ad_column_box,.ad_column_hl,.ad_contain,.ad_container,.ad_content,.ad_content_wide,.ad_contents,.ad_descriptor,.ad_disclaimer,.ad_eyebrow,.ad_footer,.ad_frame,.ad_framed,.ad_front_promo,.ad_head,.ad_headline,.ad_hpm,.ad_info_block,.ad_inline,.ad_island,.ad_label,.ad_launchpad,.ad_leader,.ad_leaderboard,.ad_left,.ad_line,.ad_link,.ad_linkunit,.ad_loc,.ad_lrec,.ad_main,.ad_medrec,.ad_medrect,.ad_middle,.ad_mpu,.ad_mr,.ad_mrec,.ad_mrec_title_article,.ad_mrect,.ad_news,.ad_notice,.ad_one,.ad_p360,.ad_partner,.ad_partners,.ad_plus,.ad_post,.ad_power,.ad_rectangle,.ad_right_col,.ad_row,.ad_sidebar,.ad_skyscraper,.ad_slug,.ad_slug_table,.ad_space_300_250,.ad_sponsor,.ad_sponsoredsection,.ad_spot_b,.ad_spot_c,.ad_square_r,.ad_square_top,.ad_text_w,.ad_title,.ad_top,.ad_top_leaderboard,.ad_top_left,.ad_topright,.ad_tower,.ad_unit,.ad_unit_rail,.ad_url,.ad_warning,.ad_wid300,.ad_wide,.ad_wrap,.ad_wrapper,.ad_wrapper_fixed,.ad_wrapper_top,.ad_zone,.adarea,.adarea-long,.adbanner,.adbannerbox,.adbannerright,.adbar,.adboard,.adborder,.adbot,.adbottom,.adbottomright,.adbox-outer,.adbox-wrapper,.adbox_300x600,.adbox_366x280,.adbox_468X60,.adbox_bottom,.adboxclass,.adbreak,.adbug,.adbuttons,.adcode,.adcolumn,.adcolumn_wrapper,.adcopy,.add_300x250,.adfieldbg,.adfoot,.adfootbox,.adhead,.adhead_h,.adhead_h_wide,.adheader,.adheader100,.adhere,.adhered,.adhi,.adhint,.adhoriz,.adi,.adiframe,.adinside,.adintro,.adjlink,.adkicker,.adkit,.adkit-advert,.adkit-lb-footer,.adlabel-horz,.adlabel-vert,.adleader,.adleaderboard,.adleft1,.adline,.adlinks,.adlnklst,.admarker,.admedrec,.admessage,.admodule,.admpu,.admpu-small,.adnation-banner,.adnotice,.adops,.adp-AdPrefix,.adpadding,.adpane,.adprice,.adproxy,.adroot,.adrotate_widget,.adrow,.adrow-post,.adrule,.ads-125,.ads-728x90-wrap,.ads-banner,.ads-below-content,.ads-categories-bsa,.ads-favicon,.ads-links-general,.ads-mpu,.ads-outer,.ads-profile,.ads-right,.ads-sidebar,.ads-sky,.ads-stripe,.ads-text,.ads-widget,.ads-widget-partner-gallery,.ads160,.ads1_250,.ads2,.ads3,.ads300,.ads460,.ads460_home,.ads468,.ads728,.ads728x90,.adsArea,.adsBelowHeadingNormal,.adsBlock,.adsBox,.adsCell,.adsCont,.adsDiv,.adsFull,.adsImages,.adsMPU,.adsRight,.adsTextHouse,.adsTop,.adsTower2,.adsTowerWrap,.adsWithUs,.ads_125_square,.ads_180,.ads_300,.ads_300x250,.ads_337x280,.ads_728x90,.ads_big,.ads_big-half,.ads_box,.ads_brace,.ads_catDiv,.ads_container,.ads_disc_anchor,.ads_disc_leader,.ads_disc_lwr_square,.ads_disc_skyscraper,.ads_disc_square,.ads_div,.ads_header,.ads_leaderboard,.ads_medrect,.ads_mpu,.ads_outer,.ads_rectangle,.ads_right,.ads_sc_bl_i,.ads_sc_tl_i,.ads_show_if,.ads_side,.ads_sidebar,.ads_singlepost,.ads_spacer,.ads_takeover,.ads_title,.ads_top,.ads_top_promo,.ads_tr,.ads_verticalSpace,.ads_vtlLink,.ads_widesky,.ads_wrapperads_top,.adsbg300,.adsblockvert,.adsborder,.adsbottom,.adsbox,.adsboxitem,.adsbyyahoo,.adsc,.adscaleAdvert,.adsclick,.adscontainer,.adscreen,.adsd_shift100,.adsection_a2,.adsection_c2,.adsense-ad,.adsense-category,.adsense-category-bottom,.adsense-heading,.adsense-post,.adsense-right,.adsense-title,.adsense3,.adsense300,.adsenseAds,.adsenseBlock,.adsenseContainer,.adsenseGreenBox,.adsense_bdc_v2,.adsense_mpu,.adsensebig,.adsenseblock,.adsenseblock_bottom,.adsenseblock_top,.adsenselr,.adsensem_widget,.adsensesq,.adsenvelope,.adset,.adsforums,.adsghori,.adsgvert,.adside,.adsidebox,.adsider,.adsingle,.adsleft,.adslink,.adslogan,.adsmalltext,.adsmessage,.adsnippet_widget,.adspace,.adspace-MR,.adspace-widget,.adspace180,.adspace_bottom,.adspace_buysell,.adspace_rotate,.adspace_skyscraper,.adspacer,.adspot,.adspot728x90,.adstextpad,.adstitle,.adstop,.adstory,.adstrip,.adtag,.adtech,.adtext_gray,.adtext_horizontal,.adtext_onwhite,.adtext_vertical,.adtile,.adtips,.adtips1,.adtop,.adtravel,.adtxt,.adtxtlinks,.adunit,.adv-mpu,.adver,.adverTag,.adver_cont_below,.advert-728x90,.advert-article-bottom,.advert-bannerad,.advert-box,.advert-head,.advert-iab-300-250,.advert-iab-468-60,.advert-mpu,.advert-skyscraper,.advert-text,.advert-txt,.advert300,.advert4,.advert5,.advert8,.advertColumn,.advertCont,.advertContainer,.advertHeadline,.advertRight,.advertText,.advertTitleSky,.advert_468x60,.advert_box,.advert_cont,.advert_djad,.advert_label,.advert_leaderboard,.advert_note,.advert_surr,.advert_top,.advertheader-red,.advertise-here,.advertise-homestrip,.advertise-horz,.advertise-leaderboard,.advertise-top,.advertise-vert,.advertiseContainer,.advertiseText,.advertise_ads,.advertise_here,.advertise_link,.advertise_link_sidebar,.advertisement-728x90,.advertisement-block,.advertisement-sidebar,.advertisement-space,.advertisement-sponsor,.advertisement-text,.advertisement-top,.advertisement468,.advertisementBox,.advertisementColumnGroup,.advertisementContainer,.advertisementHeader,.advertisementLabel,.advertisementPanel,.advertisement_btm,.advertisement_caption,.advertisement_g,.advertisement_header,.advertisement_horizontal,.advertisement_top,.advertiser-links,.advertisespace_div,.advertising-banner,.advertising-header,.advertising-local-links,.advertising2,.advertisingTable,.advertising_images,.advertisment_two,.advertize,.advertorial,.advertorial-2,.advertorial-promo-box,.advertorialtitle,.advt,.advt-banner-3,.advt-block,.advt-sec,.advt300,.advt720,.adwordListings,.adwords,.adwordsHeader,.adwrap,.adwrapper-lrec,.adwrapper948,.adzone-footer,.adzone-sidebar,.affiliate-link,.affiliate-sidebar,.affiliateAdvertText,.affinityAdHeader,.afsAdvertising,.after_ad,.agi-adsaleslinks,.alb-content-ad,.alignads,.alt_ad,.anchorAd,.another_text_ad,.answer_ad_content,.aolSponsoredLinks,.aopsadvert,.apiAdMarkerAbove,.apiAds,.archive-ads,.art_ads,.article-ads,.articleAd,.articleAds,.articleAdsL,.articleEmbeddedAdBox,.article_ad,.article_adbox,.article_mpu_box,.articleads,.aseadn,.aux-ad-widget-1,.aux-ad-widget-2,.b-astro-sponsored-links_horizontal,.b-astro-sponsored-links_vertical,.banner-ad,.banner-ads,.banner-adverts,.banner300x100,.banner300x250,.banner468,.bannerAd,.bannerAdWrapper300x250,.bannerAdWrapper730x86,.bannerRightAd,.banner_300x250,.banner_ad,.banner_ad_footer,.banner_ad_leaderboard,.bannerad,.barkerAd,.base-ad-mpu,.base_ad,.base_printer_widgets_AdBreak,.bg-ad-link,.bgnavad,.big-ads,.bigAd,.big_ad,.big_ads,.bigad,.bigad2,.bigbox_ad,.bigboxad,.billboard_ad,.blk_advert,.block-ad,.block-ad300,.block-admanager,.block-ads-bottom,.block-ads-top,.block-adsense,.block-openadstream,.block-openx,.block-thirdage-ads,.block-wtg_adtech,.blockAd,.blockAds,.block_ad_sb_text,.block_ad_sponsored_links,.block_ad_sponsored_links-wrapper,.blockad,.blocked-ads,.blocsponsor,.blog-ad-leader-inner,.blog-ads-container,.blogAd,.blogAdvertisement,.blogArtAd,.blogBigAd,.blog_ad,.blogads,.blox3featuredAd,.body_ad,.body_sponsoredresults_bottom,.body_sponsoredresults_middle,.body_sponsoredresults_top,.bookseller-header-advt,.bottomAd,.bottomAds,.bottom_ad,.bottom_adsense,.bottom_sponsor,.bottomad,.bottomadvert,.bottomrightrailAd,.bottomvidad,.box-ad,.box-ad-grey,.box-ads,.box-adsense,.boxAd,.boxAds,.box_ad,.box_ad_container,.box_ad_content,.box_ad_spacer,.box_ads,.box_advertising,.box_advertisment_62_border,.box_content_ad,.box_content_ads,.boxad,.boxyads,.bps-ad-wrapper,.bps-advertisement,.bps-advertisement-inline-ads,.br-ad,.breakad_container,.brokerad,.bsa_ads,.btm_ad,.btn-ad,.bullet-sponsored-links,.bullet-sponsored-links-gray,.burstContentAdIndex,.busrep_poll_and_ad_container,.buttonAd,.buttonAds,.buttonadbox,.bx_ad,.bx_ad_right,.cA-adStrap,.cColumn-TextAdsBox,.care2_adspace,.catalog_ads,.category-ad,.category__big_game_container_body_games_advertising,.cb-ad-container,.cb_ads,.cb_footer_sponsor,.cb_navigation_ad,.cbstv_ad_label,.cbzadvert,.cbzadvert_block,.cdAdTitle,.cdmainlineSearchAdParent,.cdsidebarSearchAdParent,.centerAd,.center_ad,.centerad,.centered-ad,.cinemabotad,.classifiedAdThree,.clearerad,.cm_ads,.cms-Advert,.cnbc_badge_banner_ad_area,.cnbc_banner_ad_area,.cnn160AdFooter,.cnnAd,.cnnMosaic160Container,.cnnSearchSponsorBox,.cnnStoreAd,.cnnStoryElementBoxAd,.cnnWCAdBox,.cnnWireAdLtgBox,.cnn_728adbin,.cnn_adcntr300x100,.cnn_adcntr728x90,.cnn_adspc336cntr,.cnn_adtitle,.column2-ad,.columnRightAdvert,.com-ad-server,.comment-advertisement,.comment_ad_box,.common_advertisement_title,.communityAd,.conTSponsored,.conductor_ad,.confirm_ad_left,.confirm_ad_right,.confirm_leader_ad,.consoleAd,.container-adwords,.containerSqAd,.container_serendipity_plugin_google_adsense,.content-ad,.contentAdFoot,.contentAdsWrapper,.content_ad,.content_ad_728,.content_adsq,.contentad,.contentad300x250,.contentad_right_col,.contentadcontainer,.contentadleft,.contentads,.contenttextad,.contest_ad,.cp_ad,.cpmstarHeadline,.cpmstarText,.create_ad,.cs-mpu,.cscTextAd,.cse_ads,.cspAd,.ct_ad,.cube-ad,.cubeAd,.cube_ads,.currency_ad,.custom_ads,.cwAdvert,.darla_ad,.dartAdImage,.dart_ad,.dart_tag,.dartadvert,.dartiframe,.dc-ad,.dcAdvertHeader,.deckAd,.deckads,.detailMpu,.detail_ad,.detail_top_advert,.divAd,.divAdright,.divad1,.divad2,.divad3,.divads,.divider_ad,.dmco_advert_iabrighttitle,.downloadAds,.download_ad,.downloadad,.dualAds,.dynamic-ads,.dynamic_ad,.e-ad,.ec-ads,.ec-ads-remove-if-empty,.em-ad,.embed-ad,.entry-body-ad,.entry_sidebar_ads,.entryad,.ez-clientAd,.f_Ads,.feature_ad,.featuredAds,.featuredadvertising,.firstpost_advert_container,.flagads,.flash-advertisement,.flash_ad,.flash_advert,.flashad,.flexiad,.flipbook_v2_sponsor_ad,.floatad,.floated_right_ad,.floatingAds,.fm-badge-ad,.footad,.footer-ad,.footerAd,.footerAdModule,.footerAdslot,.footerTextAd,.footer_ad,.footer_ads,.footer_block_ad,.footer_bottomad,.footer_line_ad,.footer_text_ad,.footerad,.forumtopad,.frn_adbox,.frn_cont_adbox,.frontads,.ft-ad,.ftdAdBar,.ftdContentAd,.full_ad_box,.fullbannerad,.g3rtn-ad-site,.gAdRows,.gAdSky,.gAdvertising { visibility:hidden !important; display:none !important; } .g_ggl_ad,.ga-ads,.ga-textads-bottom,.ga-textads-top,.gaTeaserAdsBox,.gads,.gads_cb,.gads_container,.gallery_ad,.gam_ad_slot,.gameAd,.gamesPage_ad_content,.gbl_advertisement,.gen_side_ad,.gglAds,.global_banner_ad,.googad,.googads,.google-ad,.google-ad-container,.google-ads,.google-ads-boxout,.google-ads-slim,.google-right-ad,.google-sponsored-ads,.google-sponsored-link,.google468_60,.googleAd,.googleAd-content,.googleAd-list,.googleAd300x250_wrapper,.googleAdBox,.googleAdSense,.googleAdSenseModule,.googleAd_body,.googleAds,.googleAds_article_page_above_comments,.googleAdsense,.googleContentAds,.googleProfileAd,.googleSearchAd_content,.googleSearchAd_sidebar,.google_ad,.google_ad_wide,.google_add_container,.google_ads,.google_ads_bom_title,.google_ads_content,.googlead,.googleaddiv,.googleaddiv2,.googleads,.googleads_300x250,.googleads_title,.googleafc,.googley_ads,.gpAdBox,.gpAds,.gradientAd,.grey-ad-line,.group_ad,.gsAd,.gsfAd,.gt_ad,.gt_ad_300x250,.gt_ad_728x90,.gt_adlabel,.gutter-ad-left,.gutter-ad-right,.h-ad-728x90-bottom,.h_Ads,.h_ad,.half-ad,.half_ad_box,.hcf-ad-rectangle,.hcf-cms-ad,.hd_advert,.hdr-ads,.header-advert,.headerAds,.headerAdvert,.headerTextAd,.header_ad,.header_ad_div,.header_advertisment,.headerad,.headerad-720,.hi5-ad,.highlightsAd,.hm_advertisment,.home-ad-links,.homeAd,.homeAd1,.homeAd2,.homeAdBoxA,.homeAdBoxBetweenBlocks,.homeAdBoxInBignews,.homeAdSection,.homeMediumAdGroup,.home_ad_bottom,.home_advertisement,.home_mrec_ad,.homead,.homepage-ad,.homepage300ad,.homepageFlexAdOuter,.homepageMPU,.homepage_middle_right_ad,.hor_ad,.horiz_adspace,.horizontalAd,.horizontal_ads,.horizontaltextadbox,.horizsponsoredlinks,.hortad,.houseAd1,.houseAdsStyle,.housead,.hp-col4-ads,.hp2-adtag,.hp_ad_cont,.hp_ad_text,.hp_t_ad,.hp_w_ad,.hpa-ad1,.html-advertisement,.ic-ads,.ico-adv,.idMultiAd,.image-advertisement,.imageads,.imgad,.in-page-ad,.in-story-ads,.in-story-text-ad,.indEntrySquareAd,.indie-sidead,.indy_googleads,.inhousead,.inline-ad,.inline-mpu,.inline-mpu-left,.inlineSideAd,.inline_ad,.inline_ad_title,.inlinead,.inlineadsense,.inlineadtitle,.inlist-ad,.inlistAd,.inner-advt-banner-3,.innerAds,.innerad,.inpostad,.insert_advertisement,.insertad,.insideStoryAd,.inteliusAd_image,.interest-based-ad,.internalAdsContainer,.is24-adplace,.isAd,.islandAd,.islandAdvert,.islandad,.jimdoAdDisclaimer,.jp-advertisment-promotional,.js-advert,.kw_advert,.kw_advert_pair,.l_ad_sub,.l_banner.ads_show_if,.labelads,.largeRectangleAd,.largeUnitAd,.lastRowAd,.lcontentbox_ad,.leaderAdTop,.leaderAdvert,.leader_ad,.leaderboardAd,.leaderboardad,.leaderboardadtop,.left-ad,.leftAd,.leftAdColumn,.leftAds,.left_ad,.left_ad_box,.left_adlink,.left_ads,.left_adsense,.leftad,.leftadtag,.leftbar_ad_160_600,.leftbarads,.leftbottomads,.leftnavad,.lgRecAd,.lg_ad,.ligatus,.linead,.link_adslider,.link_advertise,.live-search-list-ad-container,.ljad,.local-ads,.log_ads,.logoAds,.logoad,.logoutAd,.longAd,.lowerAds,.m-ad-tvguide-box,.m4-adsbygoogle,.m_banner_ads,.macAd,.macad,.main-ad,.main-advert,.main-tabs-ad-block,.main_ad,.main_ad_bg_div,.main_adbox,.main_intro_ad,.map_media_banner_ad,.marginadsthin,.marketing-ad,.masthead_topad,.matador_sidebar_ad_600,.mdl-ad,.media-advert,.mediaAd,.mediaAdContainer,.mediaResult_sponsoredSearch,.medium-rectangle-ad,.mediumRectangleAdvert,.medrect_ad,.menuItemBannerAd,.menueadimg,.messageBoardAd,.mf-ad300-container,.micro_ad,.mid_ad,.midad,.middleAds,.middleads,.min_navi_ad,.mini-ad,.miniad,.mmcAd_Iframe,.mobile-sponsoring,.mod-ad-lrec,.mod-ad-n,.mod-adopenx,.mod-vertical-ad,.mod_admodule,.module-ad-small,.module-ads,.moduleAdvertContent,.module_ad,.module_box_ad,.modulegad,.moduletable-advert,.moduletable-googleads,.moduletablesquaread,.mpu-ad,.mpu-advert,.mpu-footer,.mpu-fp,.mpu-title,.mpu-top-left,.mpu-top-left-banner,.mpu-top-right,.mpuAd,.mpuAdSlot,.mpuAdvert,.mpuArea,.mpuBox,.mpuContainer,.mpuHolder,.mpuTextAd,.mpu_ad,.mpu_advert,.mpu_container,.mpu_gold,.mpu_holder,.mpu_platinum,.mpu_text_ad,.mpuad,.mpuholderportalpage,.mrec_advert,.ms-ads-link,.msfg-shopping-mpu,.mwaads,.my-ad250x300,.nSponsoredLcContent,.nSponsoredLcTopic,.nadvt300,.narrow_ad_unit,.narrow_ads,.navAdsBanner,.navadbox,.navi_ad300,.naviad,.nba300Ad,.nbaT3Ad160,.nbaTVPodAd,.nbaTwo130Ads,.nbc_ad_carousel_wrp,.newTopAdContainer,.newad,.news_article_ad_google,.newsviewAdBoxInNews,.nf-adbox,.nn-mpu,.noAdForLead,.normalAds,.nrAds,.nsAdRow,.oas-ad,.oas-bottom-ads,.offer_sponsoredlinks,.oio-banner-zone,.oio-link-sidebar,.oio-zone-position,.on_single_ad_box,.onethirdadholder,.openads,.openadstext_after,.openx,.openx-ad,.osan-ads,.other_adv2,.outermainadtd1,.ovAdPromo,.ovAdSky,.ovAdartikel,.ov_spns,.pageGoogleAd,.pageGoogleAdFlat,.pageLeaderAd,.page_content_right_ad,.pagead,.pagenavindexcontentad,.paneladvert,.partner-ads-container,.partnersTextLinks,.pencil_ad,.player_ad_box,.player_hover_ad,.player_page_ad_box,.plista_inimg_box,.pnp_ad,.pod-ad-300,.podRelatedAdLinksWidget,.podSponsoredLink,.portalCenterContentAdBottom,.portalCenterContentAdMiddle,.portalCenterContentAdTop,.portalcontentad,.postAd,.post_ad,.post_ads,.post_sponsor_unit,.postbit_adbit_register,.postbit_adcode,.postgroup-ads,.postgroup-ads-middle,.prebodyads,.premium_ad_container,.promoAd,.promoAds,.promo_ad,.ps-ligatus_placeholder,.publication-ad,.publicidad,.puff-advertorials,.qa_ad_left,.qm-ad-content,.qm-ad-content-news,.quigo-ad,.qzvAdDiv,.r_ad_1,.r_ad_box,.r_ads,.rad_container,.rect_ad_module,.rectad,.rectangle-ad,.rectangleAd,.rectanglead,.redads_cont,.regular_728_ad,.regularad,.relatedAds,.related_post_google_ad,.remads,.resourceImagetAd,.result_ad,.results_sponsor,.results_sponsor_right,.reviewMidAdvertAlign,.rght300x250,.rhads,.rhs-ad,.rhs-ads-panel,.right-ad,.right-ad-holder,.right-ad2,.right-ads,.right-ads2,.right-sidebar-box-ad,.rightAdBox,.rightColAd,.rightColumnRectAd,.rightRailAd,.right_ad,.right_ad_160,.right_ad_box,.right_ad_text,.right_ad_top,.right_ads,.right_col_ad,.right_hand_advert_column,.right_side-partyad,.rightad_1,.rightad_2,.rightadbox1,.rightads,.rightadunit,.rightcol_boxad,.rightcoladvert,.rightcoltowerad,.rnav_ad,.rngtAd,.roundedCornersAd,.roundingrayboxads,.rt_ad1_300x90,.rt_ad_300x250,.rt_ad_call,.s2k_ad,.savvyad_unit,.sb-ad-sq-bg,.sbAd,.sbAdUnitContainer,.sb_adsN,.sb_adsNv2,.sb_adsW,.sb_adsWv2,.scanAd,.scc_advert,.sci-ad-main,.sci-ad-sub,.search-ad,.search-results-ad,.search-sponsor,.search-sponsored,.searchAd,.searchAds,.searchSponsoredResultsBox,.searchSponsoredResultsList,.search_column_results_sponsored,.search_results_sponsored_top,.section-ad2,.section-sponsor,.section_mpu_wrapper,.section_mpu_wrapper_wrapper,.selfServeAds,.sepContentAd,.serp_sponsored,.servsponserLinks,.shoppingGoogleAdSense,.showcaseAd,.sidbaread,.side-ad,.side-ads,.sideAd,.sideBoxAd,.side_ad,.side_ad2,.side_ad_1,.side_ad_2,.side_ad_3,.sidead,.sideads,.sideadsbox,.sideadvert,.sidebar-ad,.sidebar-ads,.sidebar-text-ad,.sidebarAd,.sidebarAdUnit,.sidebarAdvert,.sidebar_ad,.sidebar_ad_300_250,.sidebar_ads,.sidebar_ads_336,.sidebar_adsense,.sidebar_box_ad,.sidebarad,.sidebarad_bottom,.sidebaradbox,.sidebarboxad,.sideheadnarrowad,.sideheadsponsorsad,.singleAd,.singleAdsContainer,.singlead,.sitesponsor,.skinAd,.skin_ad_638,.sky-ad,.skyAd,.skyAdd,.skyAdvert,.sky_ad,.sky_scraper_ad,.skyad,.skyjobsadtext,.skyscraper-ad,.skyscraper_ad,.skyscraper_bannerAdHome,.sleekadbubble,.slideshow-ad,.slpBigSlimAdUnit,.slpSquareAdUnit,.sm_ad,.smallSkyAd1,.smallSkyAd2,.small_ad,.small_ads,.smallad-left,.smallads,.smallsponsorad,.smart_ads_bom_title,.specialAd175x90,.speedyads,.sphereAdContainer,.spl-ads,.spl_ad,.spl_ad2,.spl_ad_plus,.splitAd,.sponlinkbox,.spons-link,.spons_links,.sponslink,.sponsor-ad,.sponsor-bottom,.sponsor-link,.sponsor-links,.sponsor-right,.sponsor-services,.sponsor-top,.sponsorArea,.sponsorBox,.sponsorPanel,.sponsorPost,.sponsorPostWrap,.sponsorStrip,.sponsorTop,.sponsor_ad_area,.sponsor_footer,.sponsor_horizontal,.sponsor_line,.sponsor_links,.sponsor_logo,.sponsor_top,.sponsor_units,.sponsoradtitle,.sponsorbox,.sponsored-ads,.sponsored-chunk,.sponsored-editorial,.sponsored-features,.sponsored-links,.sponsored-links-alt-b,.sponsored-links-holder,.sponsored-links-right,.sponsored-post,.sponsored-post_ad,.sponsored-results,.sponsored-right-border,.sponsored-text,.sponsoredBox,.sponsoredInfo,.sponsoredInner,.sponsoredLabel,.sponsoredLinks,.sponsoredLinks2,.sponsoredLinksHeader,.sponsoredProduct,.sponsoredResults,.sponsoredSideInner,.sponsored_ads,.sponsored_box,.sponsored_box_search,.sponsored_by,.sponsored_links,.sponsored_links_title_container,.sponsored_links_title_container_top,.sponsored_links_top,.sponsored_results,.sponsored_well,.sponsoredibbox,.sponsoredlink,.sponsoredlinks,.sponsoredlinkscontainer,.sponsoredresults,.sponsoredtextlink_container_ovt,.sponsorlink,.sponsorlink2,.sponsormsg,.sponsors,.sponsors-box,.sponsors_bar,.sponsorshipbox,.sponsortable,.sponsortext,.spotlightAd,.squareAd,.square_ad,.square_banner_ad,.squared_ad,.ss-ad-mpu,.standard-ad,.start__newest__big_game_container_body_games_advertising,.staticAd,.stock-ticker-ad-tag,.stocks-ad-tag,.store-ads,.story_AD,.story_ad_div,.story_right_adv,.storyad,.storysponsorimage,.subad,.subcontent-ad,.subtitle-ad-container,.sugarad,.super-ad,.supercommentad_left,.supercommentad_right,.supp-ads,.supportAdItem,.surveyad,.t10ad,.tab_ad,.tab_ad_area,.tablebordersponsor,.tadsanzeige,.tadsbanner,.tadselement,.tallad,.tblTopAds,.tbl_ad,.tbox_ad,.td-Adholder,.teaser-sponsor,.teaserAdContainer,.teaser_adtiles,.text-ad-links,.text-advertisement,.text-g-advertisement,.text-g-group-short-rec-ad,.text-g-net-grp-google-ads-article-page,.textAd,.textAdBox,.textAds,.text_ad,.text_ads,.textad,.textadContainer,.textad_headline,.textadbox,.textadheadline,.textadlink,.textadsds,.textadsfoot,.textadtext,.textlink-ads,.tf_page_ad_search,.thisIsAd,.thisIsAnAd,.ticket-ad,.tileAds,.tips_advertisement,.title-ad,.title_adbig,.tncms-region-ads,.toolad,.toolbar-ad,.top-ad,.top-ad-space,.top-ads,.top-banner-ad,.top-menu-ads,.top-sponsors,.topAdWrap,.topAdvertisement,.topBannerAd,.topLeaderboardAd,.top_Ad,.top_ad,.top_ad_728,.top_ad_728_90,.top_ad_disclaimer,.top_ad_div,.top_ad_post,.top_ad_wrapper,.top_advert,.top_advertising_lb,.top_container_ad,.top_sponsor,.topad-bar,.topadbox,.topadspot,.topadvertisementsegment,.topcontentadvertisement,.topic_inad,.topstoriesad,.toptenAdBoxA,.tourFeatureAd,.towerAd,.towerAdLeft,.towerAds,.tower_ad,.tower_ad_disclaimer,.towerad,.tribal-ad,.ts-ad_unit_bigbox,.ts-banner_ad,.ttlAdsensel,.tto-sponsored-element,.tucadtext,.tvs-mpu,.twoColumnAd,.twoadcoll,.twoadcolr,.tx_smartadserver_pi1,.txt-ads,.txtAd,.txtAds,.txt_ads,.txtadvertise,.type_adscontainer,.type_miniad,.type_promoads,.ukAds,.undertimyads,.unit-ad,.universalboxADVBOX01,.universalboxADVBOX03,.universalboxADVBOX04a,.usenext,.vertad,.vertical-adsense,.videoAd,.videoBoxAd,.video_ad,.view-promo-mpu-right,.view_rig_ad,.virgin-mpu,.wa_adsbottom,.wantads,.wide-ad,.wide-skyscraper-ad,.wideAd,.wideAdTable,.wide_ad,.wide_ad_unit_top,.wide_ads,.wide_google_ads,.widget-ad,.widget-ad300x250,.widget-entry-ads-160,.widgetYahooAds,.widget_ad,.widget_ad_rotator,.widget_island_ad,.widget_sdac_bottom_ad_widget,.widget_sdac_footer_ads_widget,.widget_sdac_skyscraper_ad_widget,.widget_sponsor,.wikia-ad,.wikia_ad_placeholder,.wingadblock,.withAds,.wl-ad,.wnMultiAd,.wp125ad,.wp125ad_2,.wpn_ad_content,.wrap-ads,.wsSponsoredLinksRight,.wsTopSposoredLinks,.x03-adunit,.x04-adunit,.xads-blk2,.xads-ojedn,.y-ads,.y-ads-wide,.y7-advertisement,.yahoo-sponsored,.yahoo-sponsored-links,.yahooAds,.yahoo_ads,.yan-sponsored,.ygrp-ad,.yrail_ad_wrap,.yrail_ads,.ysmsponsor,.ysponsor,.yw-ad,a[href^="http://ad.doubleclick.net/"],a[href^="http://adserving.liveuniversenetwork.com/"],a[href^="http://galleries.pinballpublishernetwork.com/"],a[href^="http://galleries.securewebsiteaccess.com/"],a[href^="http://install.securewebsiteaccess.com/"],a[href^="http://latestdownloads.net/download.php?"],a[href^="http://secure.signup-page.com/"],a[href^="http://secure.signup-way.com/"],a[href^="http://www.FriendlyDuck.com/AF_"],a[href^="http://www.adbrite.com/mb/commerce/purchase_form.php?"],a[href^="http://www.friendlyduck.com/AF_"],a[href^="http://www.google.com/aclk?"],a[href^="http://www.liutilities.com/aff"],a[href^="http://www.liutilities.com/products/campaigns/adv/"],a[href^="http://www.my-dirty-hobby.com/?sub="],a[href^="http://www.ringtonematcher.com/"],div#mclip_container:first-child:last-child,div#tads.c,table.ra[align="left"][width="30%"],table.ra[align="right"][width="30%"],[src*="sixsigmatraffic.com"],embed[flashvars*="AdID"],#Ad1,#AdHeader,#Adbanner,#AdvertiseFrame,#Advertisement,#Advertisements,#Tadspacehead,#TopAd,#ad-container,#ad-header,#ad-top,#ad-wrapper,#ad1,#ad3,#ad728x90,#adBanner,#adComponentWrapper,#adContainer,#adDiv,#adHeader,#adTop,#adWrapper,#ad_area,#ad_container,#ad_leader,#ad_space,#ad_square,#ad_table,#ad_wrapper,#adbody,#adbox,#adposition3,#adsense,#adsense_inline,#adspace,#advert,#advertise,#advertising,#adverts,#adwrapper,#bannerad,#block_advert,#contentAd,#content_ad,#divAd,#featuread,#footer_ad,#footer_ads,#googlead,#head-ad,#header_ad,#mainAd,#printads,#promo-ad,#right_ad,#sidebar-ads,#sidebar_ads,#sponsored,#topAd,#topBannerAd,#top_ad,#topad,#topads,.AdBox,.AdInfo,.AdSense,.AdTitle,.Ads,.Advert,.ad-box,.ad-button,.ad-container,.ad-content,.ad-display,.ad-holder,.ad-sidebar,.ad-text,.ad1,.ad2,.ad468,.adBox,.adContainer,.adDiv,.adElement,.adHolder,.adModule,.adSpace,.adSummary,.adText,.adTitle,.ad_Right,.ad_header,.ad_links,.ad_right,.ad_space,.ad_text,.adbox,.adcol1,.adcol2,.adcont,.addiv,.adframe,.adholder,.adinfo,.adlink,.adlist,.adpic,.adright,.ads-section,.adsense,.adtable,.adtext,.advert-horizontal,.advert_list,.advertise,.advertisement,.advertiser,.advertising,.advertising_block,.advertisment,.adverts,.adwrapper,.affiliate,.banner_728x90,.block_ad,.bottom_ad_block,.contentAd,.detail-ads,.header-ad,.headerAd,.header_ad_center,.horizontal_ad,.module-ad,.mpu,.post-ad,.rightAd,.right_ads_column,.rightad,.sponsored,.sponsoredtextlink_container,.textads,.topAd,.topAds,.top_ads,.topad,.topads,a[href^="http://ad-emea.doubleclick.net/"] { visibility:hidden !important; display:none !important; }</style></html>

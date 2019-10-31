@@ -1,0 +1,2501 @@
+
+<!-- saved from url=(0074)http://www.pcworld.hu/forum/index.php?act=Print&client=printer&f=117&t=975 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
+		<title>PC WORLD Segélyvonal [Powered by Invision Power Board]</title>
+		<style type="text/css">
+	/* 
+ * Cascading Style Sheet(CSS 467), for Invision Power Board 2.1.0
+ * Author: James A. Mathias, admin@leihu.com, http://www.1lotus.com 
+ * Copyright: 2005 Invision Power Services, all rights reserved 
+ *
+ * All style attributes in alpha-numeric order starting from 0
+ *
+ */
+
+/* 
+ * ========================================
+ * global element styles 
+ * ========================================
+ */
+
+html{
+	overflow-x: auto; /* fixes MSIE scrollbar bug DO NOT REMOVE, has no effect in Mozilla, or Opera */
+}
+
+body{ 
+	background: #FFF;
+	color: #222;
+	font-family: Verdana, Tahoma, Arial, Trebuchet MS, Sans-Serif, Georgia, Courier, Times New Roman, Serif;
+	font-size: 11px;
+	line-height: 135%;
+	margin: 0px;
+	padding: 0px; /* required for Opera to have 0 margin */
+	text-align: center; /* centers board in MSIE */
+}
+
+/* 
+ * ========================================
+ * Set up IPB table
+ * ========================================
+ */
+ 
+.ipbtable { width:100% }
+
+table.ipbtable,
+tr.ipbtable,
+td.ipbtable
+{ /* required for text in tables, because tables do not inherit from body */
+	background: transparent;
+	color: #222;
+	font-size: 11px;
+	line-height: 135%;
+}
+
+.ipbtable td,
+.divpad{ /* gives all tables faux cellpadding of 5px */
+	padding: 5px;
+}
+
+td.nopad{ /* allows some tables to have no padding on the td */
+	padding: 0;
+}
+
+
+
+form{
+	display: inline;
+	margin: 0; /* removes mystery form tag gapping */
+	padding: 0; /* removes mystery form tag gapping */
+}
+
+img{
+	border: 0; /* makes sure linked images do not have a border */
+	vertical-align: middle;
+}
+
+/* 
+ * ========================================
+ * global hyperlink styles 
+ * ========================================
+ */
+
+a:link,
+a:visited,
+a:active{
+	background: transparent;
+	color: #222;
+	text-decoration: underline;
+}
+
+a:hover{
+	background: transparent;
+	color: #34498B;
+}
+
+/* 
+ * ========================================
+ * Main wrapper, this controls the overall width of the board in you browser view window. 
+ * ========================================
+ */
+
+#ipbwrapper{ 
+	margin: 20px auto 20px auto; /* centers the box, no matter the overall width, also applies a 20px gap at the top and bottom of the board */
+	text-align: left; /* re_aligns text to left second part of two part MSIE centering workaround */
+	/* EDIT THIS TO CHANGE THE WIDTH OF THE BOARD -> 750px is a common fixed resolution size */
+	width: 98%;
+}
+
+/* 
+ * ========================================
+ * styles for pagination links 
+ * ========================================
+ */
+ 
+
+.pagelink,
+.pagelinklast,
+.pagecurrent,
+.minipagelink,
+.minipagelinklast{
+	background: #F0F5FA;
+	border: 1px solid #072A66;
+	padding: 1px 3px 1px 3px;
+}
+
+.pagelinklast,
+.minipagelinklast{
+	background: #DFE6EF;
+}
+
+
+.pagecurrent{
+	background: #FFC9A5;
+}
+
+.minipagelink,
+.minipagelinklast{
+	border: 1px solid #C2CFDF;
+	font-size: 10px;
+	margin: 0 1px 0 0;
+}
+
+.pagelink a:active,
+.pagelink a:visited,
+.pagelink a:link,
+.pagelinklast a:active,
+.pagelinklast a:visited,
+.pagelinklast a:link,
+.pagecurrent a:active,
+.pagecurrent a:visited,
+.pagecurrent a:link,
+.minipagelink a:active,
+.minipagelink a:visited,
+.minipagelink a:link,
+.minipagelinklast a:active,
+.minipagelinklast a:visited,
+.minipagelinklast a:link{
+	text-decoration: none;
+}
+
+/* fake button effect for some links */
+.fauxbutton{
+	background: #BFCDE0;
+	border: 1px solid #072A66;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 4px;
+}
+
+.fauxbutton a:link,
+.fauxbutton a:visited,
+.fauxbutton a:active{
+	color: #222 !important;
+	text-decoration: none;
+}
+
+.forumdesc,
+.forumdesc a:link,
+.forumdesc a:visited,
+.forumdesc a:active{ 
+	background: transparent;
+	font-size: 10px; 
+	color: #666;
+	line-height: 135%;
+	margin: 2px 0 0 0;
+	padding: 0;
+}
+
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+
+.searchlite {
+	background-color:yellow;
+	font-weight:bold;
+	color: red;
+}
+
+.activeusers{
+	background: #FFF;
+	border: 1px solid #072A66;
+	color: #000;
+	margin: 0px;
+	padding: 1px;
+}
+
+.activeuserposting a:link,
+.activeuserposting a:visited,
+.activeuserposting a:active,
+.activeuserposting
+{
+	font-style:italic;
+	text-decoration: none;
+	border-bottom:1px dotted black;
+}
+
+fieldset.search{ 
+	line-height: 150%;
+	padding: 6px; 
+}
+
+label{ 
+	cursor: pointer; 
+}
+
+img.attach{ 
+	background: #808080 url(style_images/1/click2enlarge.gif) no-repeat top right;
+	border: 1px solid #808080;
+	margin: 0 2px 0 0;
+	padding: 11px 2px 2px 2px;
+}
+
+.thumbwrap,
+.thumbwrapp,
+.fullimagewrap{
+	border: 1px solid #072A66;
+	margin: 2px;
+}
+
+.thumbwrapp{
+	border: 2px solid #660707;
+}
+
+.fullimagewrap{
+	background: #F5F9FD;
+	text-align: center;
+	margin: 5px 0 5px 0;
+	padding: 5px;
+}
+
+.thumbwrap h4,
+.thumbwrapp h4{	
+	background: #DDE6F2;
+	border: 0 !important;
+	border-bottom: 1px solid #5176B5 !important;
+	color: #5176B5; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.thumbwrap p,
+.thumbwrapp p{
+	background: #EEF2F7 !important;
+	border: 0 !important;
+	border-top: 1px solid #5176B5 !important;
+	margin: 0 !important;
+	padding: 5px !important;
+	text-align: left;
+}
+
+.thumbwrap p.alt,
+.thumbwrapp p.alt{
+	background: #DFE6EF !important;
+	margin: 0 !important;
+	padding: 5px !important;
+	text-align: left;
+}
+
+.thumbwrapp p.pin{
+	background: #EFDFDF !important;
+	text-align: center !important;
+}
+	
+.thumbwrap img.galattach,
+.thumbwrapp img.galattach{
+	background: #FFF url(style_images/1/img_larger.gif) no-repeat bottom right;
+	border: 1px solid #072A66;
+	margin: 5px;
+	padding: 2px 2px 10px 2px;
+}
+
+li.helprow{ 
+	margin: 0 0 10px 0;
+	padding: 0; 
+}
+
+ul#help{ 
+	padding: 0 0 0 15px; 
+}
+
+.warngood,
+.warnbad{ 
+	color: #0B9500;
+	font-weight: bold;
+}
+
+.warnbad{ 
+	color: #DD0000;
+}
+
+#padandcenter{ 
+	margin: 0 auto 0 auto;
+	padding: 14px 0 14px 0;
+	text-align: center;
+}
+
+#profilename{ 
+	font-size: 28px; 
+	font-weight: bold; 
+}
+
+#photowrap{ 
+	padding: 6px; 
+}
+
+#phototitle{ 
+	border-bottom: 1px solid #000; 
+	font-size: 24px; 
+}
+
+#photoimg{ 
+	margin: 15px 0 0 0;
+	text-align: center; 
+} 
+
+#ucpmenu,
+#ucpcontent{ 
+	background: #F5F9FD;
+	border: 1px solid #345487;
+	line-height: 150%;
+}
+
+#ucpmenu p{ 
+	margin: 0; 
+	padding: 2px 5px 6px 9px;
+}
+
+#ucpmenu a:link, 
+#ucpmenu a:active, 
+#ucpmenu a:visited{ 
+	text-decoration: none; 
+}
+
+#ucpcontent{ 
+	width: auto;
+}
+
+#ucpcontent p{ 
+	margin: 0;
+	padding: 10px;
+}
+
+.activeuserstrip{ 
+	background: #BCD0ED;
+	padding: 6px;
+}
+
+/* Topic View elements */
+.signature{  
+	background: transparent;
+	color: #339; 
+	font-size: 10px;
+	line-height: 150%;
+}
+
+.postdetails{ 
+	font-size: 10px;
+	line-height:140%;
+}
+
+.postcolor{ 
+	font-size: 12px; 
+	line-height: 160%;
+}
+
+.normalname{ 
+	color: #003;
+	font-size: 12px; 
+	font-weight: bold; 
+}
+
+.normalname a:link, 
+.normalname a:visited, 
+.normalname a:active{ 
+	font-size: 12px;
+}
+
+.post1,
+.bg1{ 
+	background: #F5F9FD;
+}
+
+.post2,
+.bg3{ 
+	background: #EEF2F7;
+}
+
+.row2shaded,
+.post1shaded { background-color: #DEDBE4 }
+.row4shaded,
+.post2shaded { background-color: #E3DFE7 }
+
+.row1{ 
+	background: #DFE6EF; 
+}
+
+.row2{ 
+	background: #E4EAF2; 
+}
+
+.darkrow1{ 
+	background: #BCD0ED;
+	color: #3A4F6C; 
+}
+
+.darkrow3{ 
+	background: #D1DCEB; 
+	color: #3A4F6C; 
+}
+
+/* tableborders gives the white column / row lines effect */
+.plainborder,
+.tablefill,
+.tablepad{ 
+	background: #F5F9FD;
+	border: 1px solid #345487;
+}
+
+.tablefill,
+.tablepad{ 
+	padding: 6px;  
+}
+
+.tablepad{ 
+	border: 0 !important;
+}
+
+.wrapmini{ 
+	float: left;
+	line-height: 1.5em;
+	width: 25%;
+}
+
+.pagelinks{
+	float: left;
+	line-height: 1.2em;
+	width: 35%;
+}
+
+.desc{ 
+	font-size: 11px; 
+	color: #434951;
+}
+
+.lastaction
+{
+	font-size: 10px; 
+	color: #434951;
+}
+
+.edit{ 
+	font-size: 9px;
+}
+
+.thin{ 
+	border: 1px solid #FFF;
+	border-left: 0;
+	border-right: 0;
+	line-height: 150%;
+	margin: 2px 0 2px 0;
+	padding: 6px 0 6px 0;
+}
+
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+
+/* 
+ * ========================================
+ * calendar styles 
+ * ========================================
+ */
+	
+.calmonths{ 
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	font-size: 18px; 
+	font-weight: bold; 
+	margin: 5px 0 5px 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.weekday{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.calmonths a{
+	text-decoration: none;
+}
+
+.calday,
+.calweekday{ 
+	background: #DFE6EF;
+	color: #666;
+	font-size: 11px;
+	font-weight: bold;
+	margin: 0;
+	padding: 4px;
+	text-align: right;
+}
+
+.calweekday{
+	border-right: 1px solid #AAA;
+	color: #222;
+	font-size: 14px;
+	padding: 6px;
+	text-align: center;
+}
+
+.celltodayshaded,
+.celldateshaded,
+.cellblank,
+.celldate,
+.celltoday,
+.mcellblank,
+.mcelldate,
+.mcelltoday{
+	background: #EEF2F7; 
+	height: 100px;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+
+.celltodayshaded,
+.celldateshaded
+{
+	background: #E3DFE7;
+}
+
+.mcellblank,
+.mcelldate,
+.mcelltoday{
+	height: auto;
+}
+
+.cellblank,
+.mcellblank{
+	background: #C2CFDF;
+}
+
+.celltoday,
+.celltodayshaded,
+.mcelltoday{
+	border: 2px solid #8B0000;
+}
+
+.calranged
+{
+	border: 2px outset #C2CFDF;
+	background: #C2CFDF;
+	padding:4px;
+}
+
+.calitem
+{
+	border-bottom: 1px dotted #C2CFDF;
+	padding:4px;
+}
+
+/* 
+ * ========================================
+ * form styles 
+ * ========================================
+ */
+
+.input-warn,
+.input-green,
+input,
+textarea,
+select{
+	background: #FFF;
+	border: 1px solid #4C77B6;
+	color: #000;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 11px;
+	margin: 5px;
+	padding: 2px;
+	vertical-align: middle;
+}
+
+.input-warn,
+.input-warn-content
+{
+	border: 1px solid #C00;
+}
+
+.input-ok,
+.input-ok-content
+{
+	border: 1px solid #0C0;
+}
+
+.input-warn-content
+{
+	padding: 4px;
+	margin: 4px;
+	background-color: #FCC;
+}
+
+.input-ok-content
+{
+	padding: 4px;
+	margin: 4px;
+	background-color: #CFC;
+}
+
+
+.input-text
+{
+	color: #900;
+}
+
+select{
+	border: 0;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+
+input.button{
+	margin: 0;
+	width: auto;
+}
+
+optgroup option{
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.codebuttons{ 
+	font-family: Verdana, Helvetica, Sans-Serif; 
+	font-size: 10px; 
+	vertical-align: middle;
+	margin:2px;
+}
+
+.textarea,
+.searchinput,
+.button,
+.gobutton{
+	background: #FFF;
+	border: 1px solid #4C77B6;
+	color: #000;
+	font-family: Verdana, Helvetica, Sans-Serif;
+	font-size: 11px;
+	padding: 2px;
+	vertical-align: middle;
+}
+	
+.button{
+	background: #DFE6EF;
+}
+
+.gobutton{
+	background: transparent;
+	border: 0;
+	color: #072A66;
+	margin: 0;
+	vertical-align: middle;
+}
+
+.radiobutton,
+.checkbox,
+.helpbox { 
+	border: 0;
+	vertical-align: middle;
+}
+
+/* 
+ * class.formtable 
+ *
+ * used for tabled forms 
+ * technically tables should not be used for form display 
+ * but, in the case of IPB a table is easier to work with
+ * for the average webmaster, who has little to no CSS knowledge.
+ *
+ */
+
+.formtable{
+	background: transparent;
+}
+
+.formtable td,
+.pformleft,
+.pformleftw,
+.pformright{
+	background:#F5F9FD;
+	border: 1px solid #C2CFDF;
+	border-bottom: 0;
+	border-left: 0;
+	font-weight: bold;
+	margin: 1px 0 0 0;
+	padding: 6px;
+	width: 25%;
+} 
+
+.formtable td.wider,
+.pformleftw,
+.pformright{
+	width: 40%;
+}
+
+.formtable td.formright,
+.pformright{
+	border-right: 0px;
+	font-weight: normal;
+	width: auto;
+} 
+
+.formtable td.formtitle,
+.formsubtitle{
+	background: #D1DCEB;
+	border: 1px solid #9FB9D4; 
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+	font-weight: normal;
+}
+
+.formsubtitle{ 
+	border: 0;
+	color: #3A4F6C;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.formtable td.formstrip{
+	background: #DDE8F2;
+	border: 1px solid #9FB9D4;
+	border-left: 0;
+	border-right: 0;
+	font-weight: normal;
+}
+
+/* 
+ * ========================================
+ * new style quote and code wrappers MATT's DESIGN 
+ * ========================================
+ */
+
+.quotetop{
+	background: #E4EAF2 url(style_images/1/css_img_quote.gif) no-repeat right;
+	border: 1px dotted #000;
+	border-bottom: 0;
+	border-left: 4px solid #8394B2;
+	color: #000;
+	font-weight: bold;
+	font-size: 10px;
+	margin: 8px auto 0 auto;
+	padding: 3px;
+}
+
+.quotemain{
+	background: #FAFCFE;
+	border: 1px dotted #000;
+	border-left: 4px solid #8394B2;
+	border-top: 0;
+	color: #465584;
+	padding: 4px;
+	margin: 0 auto 8px auto;
+}
+
+.codetop,
+.sqltop,
+.htmltop{
+	background: #FDDBCC url(style_images/1/css_img_code.gif) no-repeat right;
+	color: #000;
+	font-weight: bold;
+	margin: 0 auto 0 auto;
+	padding: 3px;
+	width: 98%;
+}
+
+.codemain,
+.sqlmain,
+.htmlmain{
+	background: #FAFCFE;
+	border: 1px dotted #000;
+	color: #465584;
+	font-family: Courier, Courier New, Verdana, Arial;
+	margin: 0 auto 0 auto;
+	padding: 2px;
+	width: 98%;
+}
+
+/* 
+ * ========================================
+ * old school quote and code styles - backwards compatibility 
+ * ========================================
+ */
+
+#QUOTE,
+#CODE{  
+	background: #FAFCFE; 
+	border: 1px solid #000; 
+	color: #465584; 
+	font-family: Verdana, Arial; 
+	font-size: 11px; 
+	padding: 2px; 
+	white-space: normal;
+}
+
+#CODE{ 
+	font-family: Courier, Courier New, Verdana, Arial;
+}
+
+/* 
+ * ========================================
+ * All New Styles 
+ * ========================================
+ */
+.cleared{
+	clear: both;
+}
+
+.borderwrap,
+.borderwrapm{ /* this will affect the outlining border of all the tables and boxes through-out the skin. */
+	background: #FFF; 
+	border: 1px solid #072A66;
+	padding: 0px; 
+	margin: 0px; 
+}
+
+.borderwrapm{
+	margin: 5px;
+}
+
+.borderwrap h3,
+.maintitle,
+.maintitlecollapse{
+	background: url(style_images/1/tile_cat.gif);
+	border: 1px solid #FFF;
+	border-bottom: 1px solid #5176B5;
+	color: #FFF; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0px;
+	padding: 8px;
+}
+
+.maintitle td {
+	color: #FFF; 
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+.maintitlecollapse{
+	border: 1px solid #FFF;
+}
+
+.maintitle p,
+.maintitlecollapse p,
+.formsubtitle p{
+	background: transparent !important;
+	border: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.maintitle p.expand,
+.maintitle p.goto,
+.maintitlecollapse p.expand,
+.formsubtitle p.members{
+	float: right;
+	width: auto !important;
+}
+
+.maintitle a:link, 
+.maintitle a:visited,
+.maintitlecollapse a:link, 
+.maintitlecollapse a:visited{ 
+	background: transparent;
+	color: #FFF;
+	text-decoration: none; 
+}
+
+.maintitle a:hover, 
+.maintitle a:active,
+.maintitlecollapse a:hover, 
+.maintitlecollapse a:active{ 
+	background: transparent;
+	color: #F1F1F1;
+}
+
+table th,
+.borderwrap table th,
+.subtitle,
+.subtitlediv,
+.postlinksbar{ 
+	background: transparent url(style_images/1/tile_sub.gif);
+	border-bottom: 1px solid #5176B5;
+	color: #3A4F6C; 
+	font-size: 10px;
+	font-weight: bold; 
+	letter-spacing: 1px;
+	margin: 0; 
+	padding: 5px; 
+}
+
+.subtitlediv{
+	border: 1px solid #FFF;
+	border-bottom: 1px solid #5176B5;
+	text-align: right;
+}
+
+.borderwrap table th a:link,
+.subtitle a:link,
+.subtitlediv a:link,
+.borderwrap table th a:visited,
+.subtitle a:visited, 
+.subtitlediv a:visited, 
+.borderwrap table th a:active,
+.subtitle a:active,
+.subtitlediv a:active,
+.borderwrap table th a:hover,
+.subtitle a:hover,
+.subtitlediv a:hover{ 
+	background: transparent;
+	color: #3A4F6C;
+	text-decoration: none; 
+}
+
+.borderwrap h4{
+	background: #DDE6F2;
+	border: 1px solid #FFF;
+	border-bottom: 1px solid #5176B5;
+	border-top: 1px solid #5176B5;
+	color: #5176B5; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.borderwrap p{
+	background: #F9F9F9;
+	border: 1px solid #CCC;
+	margin: 5px;
+	padding: 10px;
+	text-align: left;
+}
+
+td.formbuttonrow,
+.borderwrap p.formbuttonrow,
+.borderwrap p.formbuttonrow1{
+	background: #D1DCEB !important; 
+	border: 1px solid #FFF;
+	border-top: 1px solid #5176B5;
+	margin: 0px !important;
+	padding: 5px !important;
+	text-align: center;
+}
+
+td.formbuttonrow{
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+}
+
+.borderwrap p.formbuttonrow1{
+	background: #F9F9F9 !important;
+	border: 0;
+	border-top: 1px solid #CCC;
+}
+
+.bar,
+.barb,
+.barc{
+	background: #DFE6EF;
+	border: 1px solid #FFF;
+}
+
+.barc{
+	border-bottom: 0;
+}
+
+.bar p,
+.barb p,
+.barc p{
+	background: transparent;
+	border: 0;
+	color: #222;
+	font-size: 11px;
+	margin: 0;
+	padding: 5px;
+	text-align: left;
+}
+
+.barb p{
+	text-align: right;
+}
+
+.bar p.over,
+.bar p.overs,
+.barc p.over,
+.barc p.overs{
+	float: right;
+}
+
+.barb p.over,
+.barb p.overs{
+	float: left;
+}
+
+.bar p.overs,
+.barb p.overs,
+.barc p.overs{
+	position: relative;
+	top: 5px;
+}
+
+.catend{
+	background: #8394B2;
+	color: #000;
+	font-size: 1px;
+	height: 5px;
+}
+
+.newslink{
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	margin: 0;
+	width: 100%;
+}
+
+.newslink td{
+	color: #222;
+	font-size: 10px;
+	padding: 5px 5px 5px 10px;
+}
+
+.newslink span{
+	background: transparent;
+	color: #072A66;
+	font-style: italic;
+	font-weight: normal;
+}
+
+.newslink input{
+	background: #FFF;
+	border: 1px solid #999;
+	color: #072A66;
+	font-size: 10px;
+	padding: 3px;
+	vertical-align: middle;
+	width: auto;
+}
+
+.newslink input.button{
+	background: transparent;
+	border: 0;
+	color: #072A66;
+	vertical-align: middle;
+}
+
+.fieldwrap{
+	background: #F9F9F9;
+	border: 1px solid #CCC;
+	border-top: 0;
+	margin: 5px;
+	padding: 0;
+	text-align: left;
+}
+
+.fieldwrap h4{
+	background: #EEE;
+	border: 1px solid #CCC;
+	border-left: 0;
+	border-right: 0;
+	color: #444; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.errorwrap {
+	background: #F2DDDD;
+	border: 1px solid #992A2A;
+	border-top: 0;
+	margin: 5px;
+	padding: 0;
+}
+
+
+.errorwrap h4 {
+	background: #E3C0C0;
+	border: 1px solid #992A2A;
+	border-left: 0;
+	border-right: 0;
+	color: #992A2A; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.errorwrap p {
+	background: transparent;
+	border: 0;
+	color: #992A2A;
+	margin: 0;
+	padding: 8px;
+}
+
+
+.ruleswrap{
+	background: #F2DDDD;
+	border: 1px solid #992A2A;
+	color: #992A2A; 
+	margin: 5px 0 5px 0;
+	padding: 5px;
+}
+
+#redirectwrap{
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	margin: 200px auto 0 auto;
+	text-align: left;
+	width: 500px;
+}
+
+#redirectwrap h4{
+	background: #D0DDEA;
+	border-bottom: 1px solid #C2CFDF;
+	color: #3A4F6C;
+	font-size: 14px;
+	margin: 0;
+	padding: 5px;
+}
+
+#redirectwrap p{
+	margin: 0;
+	padding: 5px;
+}
+
+#redirectwrap p.redirectfoot{
+	background: #E3EBF4;
+	border-top: 1px solid #C2CFDF;
+	text-align: center;
+}
+
+
+#gfooter{
+	background: #8394B2;
+	margin: 5px 0 5px 0;
+	padding: 0;
+	width: 100%;
+}
+
+#gfooter td{
+	color: #FFF;
+	font-size: 10px;
+	padding: 4px;
+}
+
+#gfooter a:link,
+#gfooter a:visited{
+	color: #FFF;
+}
+
+#logostrip{ 
+	background: #3860BB url(style_images/1/tile_back.gif);
+	border: 1px solid #FFF;
+	height: 68px;
+	margin: 0;
+	padding: 0;
+}
+
+#logographic{
+	background: transparent url(style_images/1/logo4.gif) no-repeat left;
+	height: 68px;
+	margin: 0;
+	padding: 0;
+}
+
+#submenu{ 
+	background: transparent url(style_images/1/tile_sub.gif);
+	border: 1px solid #FFF;
+	border-top: 0;
+	color: #3A4F6C; 
+	margin: 0; 
+}
+
+#userlinks,
+#userlinksguest{ 
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	margin: 5px 0 5px 0;
+	padding: 0 5px 0 5px;
+}
+
+#userlinksguest{ 
+	background: #F4E7EA;
+	border: 1px solid #986265;
+}
+
+#submenu p,
+#userlinks p,
+#userlinksguest p{
+	background: transparent !important;
+	border: 0 !important;
+	font-size: 10px;
+	font-weight: bold; 
+	letter-spacing: 1px;
+	margin: 0 !important;
+	padding: 7px 0 7px 0; 
+	text-align: right;
+}
+
+#userlinks p,
+#userlinksguest p{
+	font-weight: normal;
+	letter-spacing: 0;
+}
+
+#submenu p.home,
+#userlinks p.home,
+#userlinksguest p.home{
+	float: left;
+}
+
+#userlinksguest p.pcen{
+	text-align: center;
+}
+
+#submenu a:link, 
+#submenu  a:visited{ 
+	background: transparent; 
+	color: #3A4F6C; 
+	padding: 0 6px 0 6px;
+	text-decoration: none;
+}
+
+#submenu a:hover, 
+#submenu a:active{
+	background: transparent; 
+	color: #5176B5; 
+}
+
+#navstrip{ 
+	background: transparent;
+	color: #999;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+	padding: 14px 0px 8px 0px; 
+}
+
+#navstrip a:link, 
+#navstrip  a:visited{ 
+	background: transparent; 
+	color: #222; 
+	text-decoration: none;
+}
+
+#navstrip a:hover, 
+#navstrip a:active{
+	background: transparent; 
+	color: #5176B5; 
+}
+
+.toplinks{
+	background: transparent;
+	color: #000;
+	margin: 0;
+	padding: 0 0 5px 0;
+	text-align: right;
+}
+
+.toplinks span{
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	border-bottom: 0;
+	color: #000;
+	font-size: 10px;
+	font-weight: bold;
+	margin: 0 10px 0 0;
+	padding: 5px;
+}
+
+.copyright{ 
+	background: #EEE;
+	font-size: 11px; 
+	margin: 0 0 5px 0;
+	padding: 8px;
+}
+
+/* 
+ * ========================================
+ * print page styles 
+ * ========================================
+ */
+
+#print{
+	margin: 20px auto 20px auto;
+	padding: 0;
+	text-align: left;
+	width: 85%;
+}
+
+#print h1,
+#print h2,
+#print h3,
+#print h4,
+#print p{
+	color: #036;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+	padding: 8px;
+}
+
+#print h2,
+#print h3,
+#print p{
+	border-bottom: 1px solid #999;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+#print h3{
+	background: #F5F5F5;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0 0 10px 0;
+}
+
+#print h4{
+	background: #F9F9F9;
+	font-size: 11px;
+}
+
+#print p{
+	margin: 0 0 5px 0;
+	padding: 10px;
+}
+
+#print p.printcopy{
+	border: 0;
+	color: #000;
+	text-align: center;
+}
+
+/* ============================================================== */
+/* RTE STYLES
+/* ============================================================== */
+
+.rteimage {
+	/*background: #D3D3D3;*/
+	/*border: 1px outset transparent*/;
+	cursor: pointer;
+	cursor: hand;
+	padding:1px;
+}
+
+.rteImageRaised {
+	/*background: #D3D3D3;*/
+	border: 1px outset;
+	cursor: pointer;
+	cursor: hand;
+	padding:0px;
+}
+
+.rteImageLowered {
+	/*background: #D3D3D3;*/
+	border: 1px inset;
+	cursor: pointer;
+	cursor: hand;
+	padding:0px;
+}
+
+.rteimage:hover {
+	background: #EBEBEB;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.rteVertSep {
+	margin: 0 4px 0 4px;
+}
+
+.rteBack {
+	background: #D3D3D3;
+	border: 1px outset;
+	letter-spacing: 0;
+	padding: 2px;
+}
+
+/* used in ips_rte.js - do not remove */
+.rtebottombutton
+{
+	font-size:10px;
+	border:1px solid #777;
+	border-top:0px;
+	padding:3px;
+	margin:0px;
+	background-color: #EBEBEB;
+}
+
+/* used in ips_rte.js - do not remove */
+.rtebottombuttonon
+{
+	font-size:10px;
+	border:1px solid #777;
+	border-top:0px;
+	padding:3px;
+	margin:0px;
+	background-color: #D3D3D3;
+}
+
+.rtebuttonbar1 {
+	/*background: #D3D3D3;*/
+	background-image: url(style_images/1/folder_rte_images/rte_tile.gif);
+	border: 1px solid gray;
+	border-bottom:0px;
+	letter-spacing: 0;
+	padding: 2px;
+	height:26px;
+}
+
+.rtebuttonbar2 {
+	/*background: #D3D3D3;*/
+	background-image: url(style_images/1/folder_rte_images/rte_tile.gif);
+	border: 1px solid gray;
+	border-top:1px solid gray;
+	letter-spacing: 0;
+	padding: 2px;
+	height:26px;
+}
+
+.rtebuttonbar1 tbody tr td,
+.rtebuttonbar1 tr td,
+.rtebuttonbar2 tbody tr td,
+.rtebuttonbar2 tr td,
+.rteBack tbody tr td,
+.rteBack tr td
+{
+	/*background: #D3D3D3;*/
+	padding: 0;
+}
+
+.rteDiv {
+	display: block;
+	position: relative;
+	padding:0px;
+	margin:0px;
+}
+
+.rteiframe
+{
+	border:1px solid #777;
+	background-color:#FFF;
+}
+
+.rteselectbox
+{
+	font-size:11px;
+}
+
+
+.dny-edit-title
+{
+	border:0px;
+	padding:3px;
+	margin:0px;
+	background: #D1DCEB; 
+	color: #3A4F6C; 
+}
+
+
+/* ======================================== */
+/* TABS
+/* ======================================== */
+
+.tabon
+{
+	border-top:1px solid #999;
+	border-left:1px solid #999;
+	border-right:1px solid #999;
+	background-color:#FFF;
+	padding:8px;
+	padding-bottom:9px;
+	font-size:10px;
+	float:left;
+	width:auto;
+	margin-top:3px;
+}
+
+.taboff
+{
+	border-top: 1px solid #777;
+	border-left: 1px solid #777;
+	border-right: 1px solid #777;
+	background-color: #B5C3D9;
+	color: #333;
+	padding: 8px;
+	font-size:10px;
+	float: left;
+	width: auto;
+	margin-top:3px;
+}
+
+.tabon a:link, 
+.tabon a:visited, 
+.tabon a:active
+{
+	text-decoration:none;
+	color: #000;
+}
+
+.taboff a:link, 
+.taboff a:visited, 
+.taboff a:active
+{
+	text-decoration:none;
+	color: #333;
+}
+
+.mya-back
+{
+	background: #072A66;
+	margin:1px;
+}
+
+.mya-content
+{
+	background: #FFF;
+	padding:8px;
+	margin:1px;
+	border: 1px solid #777;
+}
+
+/* -------------------------------- */
+/* Create PM box defaults           */
+/* -------------------------------- */
+
+.iframeshim
+{
+	position:absolute;
+	display:none;
+	background: #FFF;
+	filter:alpha(opacity=0);
+	border:0px;
+	width:auto;
+	height:auto;
+}
+
+
+
+/* -------------------------------- */
+/* Experimental                     */
+/* -------------------------------- */
+
+.popupmenu
+{
+   background: #F0F5FA;
+   border: 1px solid #3A4F6C;
+   text-align:left;
+   font-size:10px;
+   white-space:nowrap;
+   /*padding:3px 5px 3px 3px;*/
+   /*width:300px;*/
+}
+
+.popupmenu-item
+{
+	padding: 5px;
+	/*margin-top:4px;*/
+	white-space: nowrap;
+	border-bottom: 1px solid #C2CFDF;
+}
+
+.popupmenu-item-last
+{
+	padding: 5px;
+	/*margin-top:4px;*/
+	white-space: nowrap;
+}
+
+.popmenubutton
+{
+	width:120px;
+	white-space:nowrap;
+	background-color: #C2CFDF;
+	border:1px solid #3A4F6C;
+	color: #3A4F6C;
+	font-weight:bold;
+	float:right;
+	height:18px;
+	text-align:center;
+	margin:0px;
+	font-size:11px;
+	padding:3px;
+}
+
+
+.popmenubutton a:link, 
+.popmenubutton a:visited,
+.popupmenu-item a:link, 
+.popupmenu-item a:visited,
+.popupmenu-item-last a:link, 
+.popupmenu-item-last a:visited
+{ 
+	color: #3A4F6C; 
+	text-decoration: none;
+}
+
+.popmenubutton a:hover, 
+.popupmenu-item a:hover, 
+.popupmenu-item-last a:hover
+{ 
+	color: #5176B5; 
+	text-decoration: none;
+}
+
+.popupmenu-category
+{ 
+	background: transparent url(style_images/1/tile_sub.gif);
+	border-top: 1px solid #5176B5;
+	border-bottom: 1px solid #5176B5;
+	color: #3A4F6C; 
+	font-size: 10px;
+	font-weight: bold; 
+	letter-spacing: 1px;
+	margin: 0; 
+	padding: 5px; 
+}
+</style>
+	</head>
+	<body>
+	<div id="print">
+		<h1>A téma nyomtatható változata</h1>
+		<h2><a href="http://www.pcworld.hu/forum/index.php?act=ST&f=117&t=975" title="Téma megtekintése">Kattints ide az eredeti formátum megtekintéséhez!</a></h2>
+		<h3>PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár</h3><div class="printpost">
+			<h4>Szerző:: arpsoft  2005. június 29. 12:37</h4>
+			<p></p><blockquote><b><!--coloro:#006600--><span style="color:#006600"><!--/coloro--><!--fonto:Verdana--><span style="font-family:Verdana"><!--/fonto--><!--sizeo:5--><span style="font-size:18pt;line-height:100%"><!--/sizeo-->Értelmező szótár<!--sizec--></span><!--/sizec--><!--fontc--></span><!--/fontc--><!--colorc--></span><!--/colorc--><br>avagy mi micsoda a hálózatban</b></blockquote><br>Mivel elég sok ilyen jellegű probléma van a szélessávú internetnek hála, ezért értelmét láttam egy olyan topikot nyitni, ahol töviről hegyire leírjuk, hogy miből és hogyan épül fel egy hálózat, különös tekintettel az otthoni net megosztásra.<br><br>Először definiáljuk, mi is a hálózat: <b>A hálózat informatikai eszközök sokasága, ahol az eszközök egymással előre meghatározott módon információt tudnak cserélni.</b><br><br><b><!--sizeo:3--><span style="font-size:12pt;line-height:100%"><!--/sizeo--><!--coloro:blue--><span style="color:blue"><!--/coloro-->Eszközök<!--colorc--></span><!--/colorc--><!--sizec--></span><!--/sizec--></b><ul><li><!--coloro:#ff6000--><span style="color:#ff6000"><!--/coloro--><b>Hálózati kártya</b><!--colorc--></span><!--/colorc--><br>Minden hálózatban megtalálható eszköz, ami a gépeket a hálózati kábelekhez illeszti. Minden kártyához tartozik egy úgynevezett MAC cím, ami a hálózatban a használt protokolltól függetlenül egyértelműen azonosítja a kártyát.<br><br></li><li><!--coloro:#ff6000--><span style="color:#ff6000"><!--/coloro--><b>Hálózati kábel</b><!--colorc--></span><!--/colorc--><br>Ez biztosítja az eszközök összekötését. Több változata ismert. Ma legtöbbször a csavart érpáros változattal találkozunk, de létezik koaxiális kábel változat is.<br>A csavart érpárnak is több változata van, amiket még csoportosítani is lehet, mint például FTP, STP, UTP, Cat5, Cat5e, Cat6 illetve Cat7, full duplex és half-duplex átvitelhez, stb. Otthon általában UTP Cat5 kábeleket alkalmazunk.<br>Egyre gyakrabban találkozunk otthon is <b>Wi-Fi</b>, azaz vezeték nélküli összekötéssel. Ebben semmi ördöngös nincs, pusztán a kábel cserélődik ki rádióhullámokra, egyébként <b>pontosan úgy működik, mintha be lenne kábelezve a kapcsolat</b>.<br><br></li><li><!--coloro:#ff6000--><span style="color:#ff6000"><!--/coloro--><b>Csomóponti eszközök</b><!--colorc--></span><!--/colorc--><br>Ha két eszköznél többet szeretnénk összekötni csavart érpárral, akkor szükségünk lesz valamilyen csomóponti eszközre. A csavartérpáros hálózat csillagpontos elrendezésű, ezek az eszközök a közösítők.<br>Többféle létezik, más-más felhasználási célra. A legfontosabbak a HUB, és a switch. A különbség a működési elvben van. A HUB "buta", mert ami az egyik portján bemegy, az az összesen kijön, azaz úgy működik, mint egy erősítő.<br>A switch már okosabb, mert megjegyzi, hogy melyik porton milyen MAC cím van, és ez alapján irányítja a csomagokat a hálózatban, azaz jobban elosztja a terhelést a hálózaton.<br><br></li><li><!--coloro:#ff6000--><span style="color:#ff6000"><!--/coloro--><b>Forgalom irányítók / routerek</b><!--colorc--></span><!--/colorc--><br>Direkt vettem külön ezt az eszközt, mert a közhiedelemmel ellentétben, ennek csak két portja van. Amiket otthoni felhasználásra veszünk, azok voltaképpen egy switch és egy router házasságából született eszközök. Nem véletlen, hogy azonos gyártótól mindig létezik olyan switch, ami pont úgy néz ki, mint a router, csak egyel több portja van.<br>Ennek az eszköznek egyetlen feladata van, összekötni két hálózatot. Felmerülhet a kérdés, hogy minek ilyen eszköz, amikor egy kábellel is össze lehetne kötni a hálózatokat. Ez mindaddig igaz is, ameddig nincs annyi gépünk, hogy ne legyen elég a címtartomány. De például az interneten, de már egy nagyobb vállalati hálózatban is előfordulhatnak olyan esetek, amikor nem elég a rendelkezésre álló címtér, és valamit tenni kell.<br>Amikor otthon routert rakunk a hálózatba, akkor lényegében egy titkárnőt iktatunk a rendszerbe, aki a csomagokat el tudja küldeni az idegen hálózatbeli címzetteknek (vagy egy olyan eszköznek, aki szerinte ismerheti a címzettet), illetve az onnan érkező csomagokat a helyi hálózat megfelelő tagjához irányítja.</li></ul><b><!--sizeo:3--><span style="font-size:12pt;line-height:100%"><!--/sizeo--><!--coloro:blue--><span style="color:blue"><!--/coloro-->Hálózat lelki világa<!--colorc--></span><!--/colorc--><!--sizec--></span><!--/sizec--></b><ul><li><!--coloro:#ff6000--><span style="color:#ff6000"><!--/coloro--><b>A protokoll</b><!--colorc--></span><!--/colorc--><br>A hálózaton használt nyelv, amellyel az eszközök társalognak egymással. Többféle létezik, illetve egy hálózaton többfélét is lehet használni egyszerre. A ma legelterjedtebb az <b>TCP/IP</b> protokoll, egyes helyeken még használják az IPX/SPX protokollokat is. A továbbiakban csak a TCP-vel fogunk foglalkozni.<br><br></li><li><!--coloro:#ff6000--><span style="color:#ff6000"><!--/coloro--><b>Cím és alhálózati maszk</b><!--colorc--></span><!--/colorc--><br>Minden eszköznek van címe a hálózatban. Már volt szó a MAC címről, de ezt csak akkor lehet alkalmazni címzésre, ha konkrétan tudjuk, hogy az adott MAC hol van, illetve ismerjük a hozzá vezető utat is. Belátható, hogy ez nagy hálózatoknál, mint pl. az internet, ez nem járható út.<br><b>Éppen ezért, a (jelenlegi: IPv4) IP protokoll a teljes nagy hálózatot alhálózatokra bontja, és ezekben helyezi el az egyes eszközöket, melyekhez egy 32 bites számot rendel. Ez lesz az eszköz címe.</b><br>Könnyű azt is belátni, hogy ez a 32 bit igencsak kevés lenne az interneten lévő összes gép számozására. Ezért, egyes tartományok le vannak foglalva privát, nem publikus hálózatokban való használatra. Pl. az otthoni gépeknek általában ilyen címe van, ha router és/vagy switch van a rendszerben. Ilyen címtartomány például a 192.168.0.1 - 192.168.255.255.<br>Most már világosan látszik, hogy miért van szükség routerekre. Ezek a belső címek nem kerülhetnek ki az internetre, mert nem lenne biztosított az egyértelműség a hálózaton, hiszen a szomszédnak is lehet ebből a tartományból címe. Márpedig <b>a hálózaton egy cím csak egyszer kerülhet kiosztásra</b>. (Érdemes megnézni, mit mond a gépünk, ha talál egy azonos című gépet az otthoni hálózatban.)<br><b>Az alhálózati maszk mondja meg, hogy az általunk használt IP címből mekkora rész definiálja az alhálózatot, és honnan kezdődik a hálózaton belüli gép címe. Otthoni hálózatoknál nincs sok szerepe, arra kell ügyelni, hogy minden gépünkön ugyan az legyen, különben nem fogják egymást látni.</b><br><br></li><li><!--coloro:#ff6000--><span style="color:#ff6000"><!--/coloro--><b>Alapértelmezett átjáró / Default gateway</b><!--colorc--></span><!--/colorc--><br>Már ejtettünk szót a routerekről. Ezek feladata, hogy a csomagokat a megfelelő irányba továbbítsák.<br><b>De mi történjen abban az esetben, ha a gépünk megállapította, hogy a hálókártyájának IP-je és alhálózati maszkja alapján, a címzett egy másik hálózat tagja?</b> Hova forduljon? Kinek küldheti el az üzenetet?<br><b>Pont erre a célra találták ki az átjárót. Itt meg kell adni a másik hálózathoz is csatlakozó eszköznek a mi hálózatunkban lévő címét.</b><br><i>Ez így egy kicsit bonyolult, de nézzünk egy egyszerű példát.<br>Három ember ül egy asztalnál. A középső mindegyiktől karnyújtásnyira van mindkét szélsőtől, a szélsők nem érik el egymást. A bal oldali szeretné odaadni a sótartót a jobboldalinak, mert elkérte tőle.<br>Baloldali barátunk megfogja a sótartót, odaadja a középső kezébe, ami elér hozzá.<br>A középső megnézi, ez egy sótartó, amit jobbra kell küldenem, átrakja a másik kezébe, és odaadja a jobboldalinak.</i><br>Mi is történt hálózatra lefordítva?<br>Volt egy csomagunk, amit hálózaton kívülre akartunk küldeni. Erre megcímeztük az átjárót, és odaadtuk neki a csomagot, azzal, hogy ugyan már nézzen körül, keresse meg a címzettet. Az átjáróval nyilván azon a címen tudunk csak kommunikálni, amelyik a mi hálózatunkban van, amelyiket elérjük.<br><b>Az átjáró megvizsgálta a csomagot, rájött, hogy ismeri a címzettet, és elküldte neki.</b><br><br></li><li><!--coloro:#ff6000--><span style="color:#ff6000"><!--/coloro--><b>DNS szerver</b><!--colorc--></span><!--/colorc--><br>Az eddigiek alapján már tudjuk, hogyan címzünk meg egy másik eszközt, hogyan jut el hozzá a csomag, stb.<br>De ki a fene fog fejben tartani IP címeket? Ráadásul ennyit?!<br><span>Mert pl. elérhető egy oldal a &lt;a href="<a class="linkclass" href="http://a.b.c.d/">http://a.b.c.d</a>" target="_blank"&gt;<a class="linkclass" href="http://a.b.c.d/">http://a.b.c.d</a>&lt;/a&gt; metódussal is, de ugye nem kényelmes.</span><br>Sokkal egyszerűbb lenne, ha neveket rendelhetnénk a gépekhez és az oldalakhoz, ezeket könnyebb lenne megjegyezni.<br>Ez szép és jó, de hogyan lesz IP cím a névből?<br>Nos, ez a DNS szerver feladata. Amikor el akarunk érni egy oldalt, akkor megkérdezi a gépünk a DNS szervert, hogy ki is ez, ismerjük? <b>A szerver pedig vagy megmondja, hogy mi az IP cím, vagy megkérdez más DNS szervereket. Előbb vagy utóbb kiderül, hogy van-e a névhez IP rendelve. Ha van, akkor már mehet is a csomag az adott címre, ha nincs, akkor hibajelzést kapunk.</b><br>Gondolom érezhető, hogy ez az egész hálózat egyik legérzékenyebb pontja. Nem véletlenül van két lehetőségünk DNS szerver megadására.<br>Ha az első szerver valamiért nem válaszolna, akkor még ott a második, ami talán működik.<br><br></li><li><!--coloro:#ff6000--><span style="color:#ff6000"><!--/coloro--><b>DHCP szerver</b><!--colorc--></span><!--/colorc--><br>Ahhoz, hogy rajta legyünk a hálón, IP cím kell. Ezt már tudjuk. Azt is tudjuk, hogy kézzel be lehet állítani. De mi van, ha egy nagy hálózatunk van, sok géppel?<br>Mindegyikhez oda kell menni és beállítani? Ez nagyon macerás lenne.<br><b>Erre találták ki a DHCP szervert. Ennek a feladata a kártyákat IP címmel ellátni, amennyiben azok automatikusra vannak állítva. Ilyenkor a DHCP szerver az összes többi beállítást is elküldi a kártyának (DNS, átjáró, stb.).</b><br><br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->A DHCP (Dynamic Host Configuration Protocol) feladata a csatlakozó számítógépek automatikus konfigurálása a hálózathoz.<br>A hálózati konfigurációra két lehetőség van általában:<br>- fix konfiguráció<br>- DHCP-vel segített konfiguráció<br><br>A DHCP egy szerver szolgáltatás, aminek vannak beállításai. A leggyakrabban használt és legismertebb az ip tartomány, amiből a szerver címeket oszthat. De vannak egyéb, fontos beállítások, amilyen például a "lease time", azaz a bérleti idő, a másik pedig a MAC-IP összerendelési táblázat, és ez a kettő még össze is függ egy kicsit.<br><br>A DHCP szerver az ip címeket bérbe adja, a bérlők az egyes fizikai eszközök, azonosításuk a MAC alapján történik. A bérlet lejáratát legtöbbször napokban lehet megadni, de létezik az örökre opció is.<br><br>A MAC-IP táblázat értelem szerűen az egyes MAC címekhez fixen hozzárendeli az ip címeket. Ez főleg olyan eszközöknél lehet fontos, amik a hálózat több szegmensében is megfordulnak és az adott szegmensekben fix ip-re van szükségük. Pl, minden alhálózatban az x.x.x.2 végű címet kell kapnia. Ilyenkor az összes alhálózat DHCP szerverébe bevéssük a MAC-IP táblába, hogy ez az eszköz kapja x.x.y.2 címet.<br><br>Talán már látszik a bérleti idő és a MAC-IP tábla kapcsolódási pontja is. A bérlet lényegében egy automatikus bejegyzés a MAC-IP táblába, ami a bérlet lejárta után törlődik.<br><br>Tehát a DHCP a kliens felől mindig dinamikus, azonban a szerver oldalon lehet statikus is! <!--QuoteEnd--></div><!--QuoteEEnd--><br><br></li><li><!--coloro:#ff6000--><span style="color:#ff6000"><!--/coloro--><b>Proxy szerver</b><!--colorc--></span><!--/colorc--><br>A proxy szerverek fő feladata az interneten fellelhető tartalmak átmeneti tárolása. Ha egy hálózat proxy-n keresztül csatlakozik az internetre, akkor a hálózatból érkező kérésekre érkező válaszokat először a proxy szerver kapja meg, és az adatokat el is tárolja. Mondhatjuk azt is, hogy tükrözi a kért weboldalt, de ez így nem teljesen igaz. Ha még valaki a hálózatból ugyan azt a kérést intézi az internet felé, akkor a proxy megvizsgálja, hogy változott-e az oldal az utolsó és már eltárolt kérés óta. Ha nem, akkor a tárolt változatot adja vissza, ha nem, akkor újratölti az oldalt. Ebből is látható, hogy ez a funkció szinte kizárólagosan a statikus oldalak letöltését gyorsítja, azoknál az oldalaknál szinte nincs is jelentősége, ahol a tartalmat dinamikusan állítják elő.<br>Másodsorban a proxy címfordítást is végez. Ez viszont nem jelenti feltétlenül azt, hogy nem látszik a gépünk az internet felől, mint egy NAT router - tűzfal esetében. A proxy működhet transparent üzemmódban, amikor olyan, mintha ott sem lenne.<br>Mivel címfordítás is történik, ezért naplózni kell, hogy melyik kérést ki indította, és a válasz kihez érkezik. Ez a napló MINDEN hivatalos proxy szerveren rendelkezésre áll, azaz visszafejthető, hogy ki mikor honnan hova ment. Egy magára valamit is adó hacker ezért nem ilyen proxykat használ, hanem telepít magának egy trójaival fertőzött gépre egy olyan proxy-t, ami nem naplózza ezeket a dolgokat. Ilyenkor már rejtve tud maradni, főleg, ha több ilyet egymás után fűz sorba.<br><br></li><li><!--coloro:#ff6000--><span style="color:#ff6000"><!--/coloro--><b>QoS (Quality of Service, azaz a szolgáltatás minősége)</b><!--colorc--></span><!--/colorc--><br>Egyes programok által igényelt és a rendszer által kiosztott sávszélesség szabályozásáról van nagyjából szó. A rendszer, amelyik képes ezekkel az adatokkal dolgozni (programból még elég kevés van ilyen, eszközből már több) igyekszik minden hálózati résztvevőnek a hálózatból elegendő erőforrást biztosítani. Lényegében egy minimum szintet közölnek a programok a forgalomirányító eszközökkel, amit azok igyekeznek betartani.<br>Ez pl. nagyon fontos szolgáltatás a VoIP hálózati megoldásoknál, mert ott komoly gondokat okozhat, ha a rendelkezésre álló sávszélesség egy kritikus szint alá csökken.<br><br></li><li><!--coloro:#ff6000--><span style="color:#ff6000"><!--/coloro--><b>DMZ (DeMilitarizált Zóna)</b><!--colorc--></span><!--/colorc--><br>A DMZ egy olyan beállítás, amikor a router nem rejti el a tűzfala mögé a gépet. Használata nem javasolt. Inkább használjunk port forward-ot. Adjunk meg egy tartományt, ahol a szerverünk fogadja a kéréseket, majd ezt a tartományt irányítsuk a gépünk belső IP-je felé.</li><li><!--coloro:#ff6000--><span style="color:#ff6000"><!--/coloro--><b>ARP-gyorsítótár</b><!--colorc--></span><!--/colorc--><br>IP címeket és MAC címeket kapcsol össze. (CMD ablakban az arp -a paranccsal meg tudjuk nézni a tábláját.)<br><br>Ha gondunk akadna az ürítésével:<br><blockquote>Számítógép kezelés --&gt; Szolgáltatások és kiszolgálói alkalmazások --&gt; Szolgáltatások<br><blockquote>Útválasztás és távelérés (Routing and Remote Services)<ul><li> Az indítás típusa legyen letiltva</li><li> A szolgáltatás pedig legyen leállítva.</li></ul></blockquote></blockquote></li></ul><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec--><ul><li> DLC (Data Link Control) </li><li> NetBEUI (NetBIOS Extended User Interface) </li><li> IPX (Intemet Packet Exchange) </li><li> SPX (Sequenced Packet Exchange) </li><li> NAT (Network Address Translation) </li><li> VPN (Virtual Private Network) </li><li> PPTP (Point-to-Point Tunneling Protocol) </li><li> MPPE (Microsoft Point-to-Point Ecryption) </li><li> L2TP (Layer Two Tunneling Protocol) </li><li> IPSec (IP Security) </li><li> SOAP (Simple Object Access Protocol) </li><li> NetBT (NetBIOS over TCP/IP) </li><li> Kerberos </li><li> VoIP (Voice over IP) </li><li> IPCP (Internet Protocol Control Protocol) </li><li> IPXCP (Intemetwork Packet Exchange Control Protocol) </li><li> IGMP (Internet Group Management Protocol) </li><li> SLP (Service Location Protocol) </li><li> BOOTP (Bootstrap Protocol) </li><li> SNMP (Simple Network Management Protocol) </li><li> POP3 (Post Office Protocol v3) </li><li> SMTP (Simple MaiI Transfer Protocol)</li></ul><b>Szempontok:</b><ul><li> Mire való?</li><li> Hol használják?</li><li> Felépítése?</li><li> Működése?</li></ul><!--quoteo(post=109659:date=2006. május 2. 10&#58;14:name=arpsoft)--><div class="quotetop">IDÉZET(arpsoft @ 2006. május 2. 10:14) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=109659"><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->A TCP/IP alapú protokollokhoz tartoznak úgynevezett RFC-k. Ezeket kellen elolvasni.<br><span><a class="linkclass" href="http://www.rfc-editor.org/rfcxx00.html">http://www.rfc-editor.org/rfcxx00.html</a></span><!--QuoteEnd--></div><!--QuoteEEnd--><!--QuoteEnd--></div><!--QuoteEEnd-->
+			<br>
+			<!--IBF.ATTACHMENT_17900-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Levmaster  2005. október 2. 10:01</h4>
+			<p>Ez egy nagyon jó kis gyűjtemény, gratulálok! <br>A proxy szerver lényegét nem tudnád kivesézni egy kicsit?<br>Nekünk az egyetemen van 2 db proxy szerver is, de én nagyon nem értek ehhez a témához. Csak annyit sejtek hogy <br>1. a belső egyetemi háló a proxy szervereken keresztül kapcsolódik az internetre... ez idáig jó?<br>2. a proxyk egyben a tűzfal szerepét is ellátják, hogy "védjék" a belső hálót az internet felől? <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/blink.gif" style="vertical-align:middle" emoid=":pislog:" border="0" alt="blink.gif"> <br>3. "Figyelem! Ezek a proxy nem rejt el bennünket a hálózaton, hackerkedésre teljesen alkalmatlanok."<br> A proxy után még van 2 router (2db kollégium sorba kötve). Ezért van az hogy ha végrehajtom a winigwam tűzfaltesztet, akkor csak a proxit látja, az én gépemet nem?<br>4. A proxy naplóz(hatja) a hálózati aktivitást?
+			<br>
+			<!--IBF.ATTACHMENT_47048-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2005. október 2. 16:16</h4>
+			<p>A proxy szerverek fő feladata az interneten fellelhető tartalmak átmeneti tárolása. Ha egy hálózat proxy-n keresztül csatlakozik a netre, akkor a hálózatból érkező kérésekre érkező válaszokat először a proxy szerver kapja meg, és az adatokat el is tárolja. Mondhatjuk azt is, hogy tükrözi a kért weboldalt, de ez így nem teljesen igaz. Ha még valaki a hálózatból ugyan azt a kérést intézi a net felé, akkor a proxy megvizsgálja, hogy változott-e az oldal az utolsó és már eltárolt kérés óta. Ha nem, akkor a tárolt változatot adja vissza, ha nem, akkor újratölti az oldalt. Ebből is látható, hogy ez a funkció szinte kizárólagosan a statikus oldalak letöltését gyorsítja, azoknál az oldalaknál szinte nincs is jelentősége, ahol a tartalmat dinamikusan állítják elő.<br>Másodsorban a proxy címfordítást is végez. Ez viszont nem jelenti feltétlenül azt, hogy nem látszik a gépünk a net felől, mint egy NAT router - tűzfal esetében. A proxy működhet transparent üzemmódban, amikor olyan, mintha ott sem lenne. <br>Mivel címfordítás is történik, ezért naplózni kell, hogy melyik kérést ki indította, és a válasz kihez érkezik. Ez a napló MINDEN hivatalos proxy szerveren rendelkezésre áll, azaz visszafejthető, hogy ki mikor honnan hova ment. Egy magára valamit is adó hacker ezért nem ilyen proxykat használ, hanem telepít magának egy trójaival fertőzött gépre egy olyan proxy-t, ami nem naplózza ezeket a dolgokat. Ilyenkor már rejtve tud maradni, főleg, ha több ilyet egymás után fűz sorba.<br><br>A kérdéseidre a válaszok:<br>1. Lehetséges, bár lehet, hogy csak tűzfal funkciója van.<br>2. Lehetséges, de nem feltétlenül. Egy transparent proxy teljesen védtelen, ha nincs kiegészítve egy tűzfallal és vagy vírusirtóval.<br>3. Így van. Ez a proxy nem rejt el. A Wigwam teszt pedig a címfordítás miatt lát csak a proxy kártyájáig. (A teszt a beérkező csomagok feladóját kezdi tesztelni, ami mindig az utolsó címfordítás utáni első kártya ip címe, azaz azé a kártyáé, ami már közvetlenül lóg a neten.<br>4. Ez a dolga.
+			<br>
+			<!--IBF.ATTACHMENT_47221-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: zeusz  2006. május 5. 10:56</h4>
+			<p>Arpsoft, köszönjük ezt a szájbarágós, érthető leírást a hálózatokról. <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"> Átolvasva, szinte minden hálózatos fórumot egy kérdésem maradt. A portok, pontosabban melyik port micsoda. Pl. 21-es az FTP portja, stb.<br>Egyik fórumban írtad, hogy "blokkolni kell a férgek által leginkább használt portokat". Ha lesz egy kis időt kérlek írd le, melyik port mit takar. Köszönettel Zeusz
+			<br>
+			<!--IBF.ATTACHMENT_110261-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: zico  2006. május 5. 11:23</h4>
+			<p>@<u>zeusz</u><br><span><a class="linkclass" href="http://www.iss.net/security_center/advice/Exploits/Ports/">http://www.iss.net/security_center/advice/Exploits/Ports/</a> <a class="linkclass" href="http://www.iana.org/assignments/port-numbers">http://www.iana.org/assignments/port-numbers</a>
+			</span><br>
+			<!--IBF.ATTACHMENT_110263-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Larus  2006. augusztus 28. 12:32</h4>
+			<p>Nekem annyi kérdésem lenne, hogy ha 3gépről szeretnék netezni egyszerre akkor feltétlen o<b>ly</b>an adsl-t kell rendelnem ami engedélyezi ezt? Vagy meg lehet kerülni?
+			<br>
+			<!--IBF.ATTACHMENT_138714-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: ProFiler  2006. augusztus 28. 13:51</h4>
+			<p>Nem kell olyan ADSL, a szolgáltatónak nem is kell tudnia róla. Elég, ha veszel egy routert és már kész is.<br><br>Ciao.
+			<br>
+			<!--IBF.ATTACHMENT_138737-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: nagygabor  2006. augusztus 31. 11:21</h4>
+			<p>Hali. Az imént találkoztam ZyXEL ES-4024A switchünkben egy ilyen párossal: IP Address / Address Prefix <br>A filtering résznél van, és a prefix nélkül nem engedi a filtert beállítani.<br>Kérdésem az lenne, hogy mi az az Address Prefix? Mire szolgál, és milyen értéket kell állítani neki?<br>Ha jól sejtem, akkor az IPv6-hoz lehet köze.. <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/blush.gif" style="vertical-align:middle" emoid=":upsz:" border="0" alt="blush.gif">
+			<br>
+			<!--IBF.ATTACHMENT_139612-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Larus  2006. augusztus 31. 12:35</h4>
+			<p>Szóval rendelhetek akármilyen alap adsl csomagot 4ezer ft-os havidíjért és arrol 3géppel tudunk egyszerre netezni? Tudnátok segíteni abban, hogy mi kell a gépekbe -egyik egy uj laptop- és milyen márkát ajánlotok?
+			<br>
+			<!--IBF.ATTACHMENT_139632-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: nagygabor  2006. augusztus 31. 12:51</h4>
+			<p>Igen elég.<br><span>Az, hogy milyen termékeket vegyél, kéedezd meg <a class="linkclass" href="http://www.pcworld.hu/forum/index.php?showtopic=288&st=120">http://www.pcworld.hu/forum/index.php?showtopic=288&amp;st=120</a>
+			</span><br>
+			<!--IBF.ATTACHMENT_139636-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: dobygee  2006. szeptember 1. 8:40</h4>
+			<p>Tényleg király a leírás, tegnap ennek segítségével raktam össze a hálózatot, köszi!!<br>Viszont van egy részlet amit nem találok sehol leírva:<br><br>Íme a jelenlegi felállás:<br>Internet -&gt; szervergép -&gt; router -&gt; 2 másik gép<br><br>Az internet tökéletesen működik, de hiába mindenki tagja az ugyanolyan nevű munkacsoportnak, mégis csak a 2 gép látja egymást, a szervergép meg sehol. A 2 gépről nem látszik a szerver és fordítva, a szerverről sem látszik semmi más.<br>A routeren és a szervergépen ki van kapcsolva a tűzfal.<br><br>Hát ezt fejtsétek meg  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/blink.gif" style="vertical-align:middle" emoid=":pislog:" border="0" alt="blink.gif">
+			<br>
+			<!--IBF.ATTACHMENT_139807-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: nagygabor  2006. szeptember 2. 12:29</h4>
+			<p>Ez itt nagyon off, de egy IP tartományban vannak a géppek és a server?
+			<br>
+			<!--IBF.ATTACHMENT_140133-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Vattatyúk  2006. szeptember 20. 10:24</h4>
+			<p>Migráltam .... elnézést...<br>
+			<br>
+			<!--IBF.ATTACHMENT_143975-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: gvamos  2006. október 25. 20:24</h4>
+			<p>Sziasztok!<br>Tudna valaki segíteni?Kapcsolatot szeretnék létesíteni egy Pc és egy notebook között,a Pc-n levő két vinyó adatainak hozzáférése miatt.A lényeg,vav egy utp kábelem(cross),de a két gép közötti beállításokkal gondjaim vannak.A lényeg az lenne ,hogy a két gép adatait oda-vissza tudjam rakosgatni.A segítséget előre is köszi.
+			<br>
+			<!--IBF.ATTACHMENT_151323-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2006. október 26. 6:27</h4>
+			<p>Azonos munkacsoport, azonos ip tartomány, lehetőleg kézzel beállítva, bár az XP maga is be tudja állítani. Megfelelő engedélyek a megosztásokon, aztán mennie kell.<br><br><!--quoteo--></p><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Internet -&gt; szervergép -&gt; router -&gt; 2 másik gép<!--QuoteEnd--></div><!--QuoteEEnd--><br>Elég régi, de hátha: ennek így semmi értelme. Miért rakod a szerver gépet az internetre a router elé?
+			<br>
+			<!--IBF.ATTACHMENT_151363-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Larus  2006. október 29. 22:04</h4>
+			<p>Sziasztok!<br><br>Végigolvasgattam sok hozzászólást a témában, mégsem tudom, nálam mi lehet a baj..<br>Adott két <u>laptop</u>, <u>chello light</u>, és egy <u>SMC router</u>..<br>Egyik laptop Wlan-nal kapcsolódik, jó rajta a net. <br>Másikat kábellel kötöttem a géphez de valami miatt nem működik a net. érdekesség, hogy ha visszadugom csak a modemet akkor sem biztos hogy jo lesz. Nem tudom hogy a chello-e a hibás vagy a router.<br>Légyszi írjátok le mit kell állítani ahhoz, hogy router+kábel+laptop jo legyen! Köszi
+			<br>
+			<!--IBF.ATTACHMENT_152290-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: kekfog  2006. november 7. 0:16</h4>
+			<p>Először is, köszönöm a leírást Mester! <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/laughing.gif" style="vertical-align:middle" emoid=":lol:" border="0" alt="laughing.gif"> <br><br>Másodszor:<br>Csak egy tipp: valahol olvastam, hogy a Chello-nál odafigyelnek, és az első sikeres csatlakozásnál használt MAC-címet fogják csak elfogadni mindíg. Tehát, ha a router-edbe betudod másolni a géped (amiről sikeresen csatlakoz-ol/tál) MAC címét, akkor azt fogja használni a router-ed és csak is kizárólag a router-eden keresztűl fogsz tudni csatlakozni a Netre.
+			<br>
+			<!--IBF.ATTACHMENT_154500-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Soma01  2006. november 14. 9:44</h4>
+			<p>Nekem is lenne egy kérdésem, amiben kicsit összekavarodtam!<br><br>Ha DHCP-vel oszt IP-t egy router, akkor egy gép mindíg ugyan azt az IP-t kapja ha a "Lease Time" "forever"-re van állítva?? Mert valaki azt írta egy másik fórumon, hogy az első kiosztáskor a router ekkor (forever-nél) megjegyzi a MAC címet is és legközelebb (gép bekapcsolásakor) is ugyan azt az IP-t fogja adni minden gépnek, amit legelőször adott. Azaz "Forever"nél hozzárendel 1 MAC-hez, 1 IP-t és mindig ezt osztja.<br>Tudom, hogy van olyan router, amin eleve hozzá lehet rendelni statikus Dhcp-vel egy-egy MAC-hez egy-egy IP-t. De amelyik routernél nincs ilyen menü, az hogy csinálja? Én úgy tudom, bekapcsolási sorrendben kapnak ip-t a gépek, nem jegyez meg semmi MAC-et, még "Forever"-nél sem!  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/roll.gif" style="vertical-align:middle" emoid=":hááát:" border="0" alt="roll.gif">
+			<br>
+			<!--IBF.ATTACHMENT_156159-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: sosó  2006. november 14. 21:37</h4>
+			<p>Üdv.<br><br>Lehet a dologban valami, mióta az SMC routeremben forevert állítottam be dhcp-nél, minden gép ugyanazt a címet kapja meg, még akkor is, ha áramszünet volt, és nem címsorrendben volt a bekapcsolás. / Nincs ipcím hozzárendelés mac címhez. / Persze lehet hogy más fajtájúnál máshogy van.
+			<br>
+			<!--IBF.ATTACHMENT_156336-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Soma01  2006. november 14. 22:08</h4>
+			<p>Tényleg? Nálad így van? Jó tudni. Szóval a router is volt már áramtalanítva és mégis maradtak az IP-k?<br>Másnál vajon hogy van ez?
+			<br>
+			<!--IBF.ATTACHMENT_156342-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Soma01  2006. november 25. 10:57</h4>
+			<p>A ping-gel kapcsolatban kérdeznék!<br><br>Egyes játékokban van olyan is a ping mellett, hogy <b>chunk</b>. Az mi? A lost-os értem...
+			<br>
+			<!--IBF.ATTACHMENT_158335-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2006. december 5. 19:20</h4>
+			<p>Fordításban nagy darab-ot jelent. Ebből következtetek arra, hogy túl nagy válaszidőt jelent, de még nem tekinti elveszettnek.
+			<br>
+			<!--IBF.ATTACHMENT_160220-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Soma01  2006. december 10. 14:55</h4>
+			<p>Én arra jutottam némi olvasgatás után, hogy nagy darabot jelent, amit a sebesség érdekében több darabban küld el. De ez sem 100%.
+			<br>
+			<!--IBF.ATTACHMENT_161020-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: gyongyosim  2007. január 4. 19:36</h4>
+			<p>Hi<br><br>meg tudnátok mondani, hogyan tudom egyértelműen kideríteni, hogy routerem, access pointom, switchem vagy repeaterem van? a kütyü hátulján csupán 1 db WAN (vagy LAN (kinézetre ugyanaz)) port van, semmi semmi más. Nagybátyám hozta Sanyolországból, az van ráírva, h. La Fonera Movimiento
+			<br>
+			<!--IBF.ATTACHMENT_165744-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Crono  2007. január 6. 19:00</h4>
+			<p><!--quoteo(post=18007:date=2005. június 29. 17&#58;39:name=arpsoft)--></p><div class="quotetop">IDÉZET(arpsoft @ 2005. június 29. 17:39) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=18007"><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec--><b>Összekötöttük a gépeket, mégsem megy a háló</b><br><br>1. a megosztó gépen van net, a gépek nem látják egymást, máshol nincs net.<br>2. minden gépen van net, a gépek nem látják egymást<br>3. mindenki lát mindenkit, de a megosztásokhoz nincs jogosultságunk a gép szerint<br><br><!--QuoteEnd--></div><!--QuoteEEnd--><br>Hali! A 2es pont érdekelne igazán, ki tudná valaki fejteni hogyan is van ez?
+			<br>
+			<!--IBF.ATTACHMENT_166223-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Chr!s  2007. január 6. 19:11</h4>
+			<p>Sziasztok!<br><br>Én azt szeretném kérdezni, hogy hálózaton hogyan lehet hardvereket megosztani?<br>A nyomtatómegosztás meg a fájlmegosztás be van kapcsolva, és jól működik. Hogyan tudnám megosztani mondjuk az USB szkennert vagy az egyik gép DVD-íróját?<br>Lehetséges ez?<br><br>Válaszotokat előre is köszi!<br><br>Ja, egyébként Crono szerintem úgy lehetséges, hogy nincs megfelelően konfigurálva a hálózat, vagy nem egyezik a munkacsoport vagy hálózatnév vagy valami... Nekem pl volt olyan, hogy más hálózatnév volt, és azért nem ment.<br>Remélem segítettem:) (De lehet más is...)
+			<br>
+			<!--IBF.ATTACHMENT_166226-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: szunyog25  2007. január 11. 10:08</h4>
+			<p>Sziasztok!<br><br>Meg lehet azt oldani, hogy a hálókártyám MAC címét átmásoljam a routerbe? Mert most szeretnék itthon hálózatot kiépíteni, de a szolgáltatónál jelezni kellene az új eszközt, és ők regisztrálnák, majd azután lenne újra netem. Szóval elkerülhető ez a hercehurca? Előre is köszönöm.<br><br>Jah, és ha olyat kér, hogy "IP adress assigned by your ISP". Ez mi? :$
+			<br>
+			<!--IBF.ATTACHMENT_167036-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Greene  2007. január 11. 10:36</h4>
+			<p>1.: Lehet, a funkció neve: Clone MAC<br><br>2.: A szolgáltató adja az IP-t. Ez így szokott lenni.
+			<br>
+			<!--IBF.ATTACHMENT_167041-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: szunyog25  2007. január 11. 10:38</h4>
+			<p>Tehát akkor a mostani IP-m kell oda ugye? Köszi szépen.
+			<br>
+			<!--IBF.ATTACHMENT_167042-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Soma01  2007. január 11. 10:49</h4>
+			<p><!--quoteo(post=167036:date=2007. január 11. 10&#58;08:name=szunyog25)--></p><div class="quotetop">IDÉZET(szunyog25 @ 2007. január 11. 10:08) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=167036"><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec--><br>Meg lehet azt oldani, hogy a hálókártyám MAC címét átmásoljam a routerbe?<!--QuoteEnd--></div><!--QuoteEEnd--><br><br><!--quoteo(post=167041:date=2007. január 11. 10&#58;36:name=Greene)--><div class="quotetop">IDÉZET(Greene @ 2007. január 11. 10:36) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=167041"><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->1.: Lehet, a funkció neve: Clone MAC<!--QuoteEnd--></div><!--QuoteEEnd--><br><br>A routerben keress ilyen funkciót (WAN/Dynamic IP-nél). IP-vel te ne foglalkozz!
+			<br>
+			<!--IBF.ATTACHMENT_167044-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: canya  2007. január 13. 19:14</h4>
+			<p>Sziasztok!<br><br>Kérdésem lene, hogy egy rooteren osztom meg az internetet 2 gép között. Nem fix ip címek vannak, ua. a munkacsoport a 2 gépen, pingelni lehet, net van mindenhol, de az egyik gép nem látja magát és a másikat sem a hálózatban. A másik látja saját magát. Tűzfal kikapcsolva. Előre is köszi a válaszokat.
+			<br>
+			<!--IBF.ATTACHMENT_167459-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: teki60  2007. január 26. 9:36</h4>
+			<p>Sziasztok!<br>És kell valamilyen program ha csak sima hálózatot szeretnék építeni net nélkül? 3 laptop és egy számítógép közt routherrel.
+			<br>
+			<!--IBF.ATTACHMENT_169788-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: TheSaurus  2007. január 26. 13:03</h4>
+			<p>Ha Windows XP van a gépeken, akkor csak a Hálózat Varázslót (Otthoni vagy kisebb munkahelyi hálózat beállítása) kell végigklikkelgetned. <br>
+			<br>
+			<!--IBF.ATTACHMENT_169811-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: wizard  2007. február 21. 14:39</h4>
+			<p>Sziasztok!<br><br>A fórumon nem sok infót találtam az IPv6-ról. Pedig egyre aktuálisabb lesz. Főleg a Vista bevezetésével, aminél elvileg nem kell külön telepíteni, mint az XP-nél. Ugyhogy ideje kicsit beszélni róla. <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"><br><br>Installálni így kell (parancssorból): <b>ipv6 install</b> <br>Már az ipconfig /all kiadásával is sok érdekességet fogtok tapasztalni ezután.  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/exclamat.gif" style="vertical-align:middle" emoid=":!:" border="0" alt="exclamat.gif"> <br><br>Néhány napja olvastam 1 érdekességet:<br>A 6to4 technológia (RFC 3056, protokollbújtatás) ha jól tudom biztonságos titkosított kapcsolatot tesz lehetővé két gép között IPv4-en keresztül. Ez az interfész automatikusan konfigurálódik erre az átvitel típusra, csak alaphelyzetben nincs bekapcsolva. <br><br>A titkosított kapcsolat létrehozása: <b>ipv6 ifcr v6v4 forrásIP célIP nd</b><br>Ennek hatására keletkezik egy új interfész. <br><br><i>forrásIP, célIP:</i> az összeköttetés két végén lévő gép IPv4-es IP címe (pl.: 192.168.0.1). <br><br><i>nd (Neighbor Discovery):</i> a két gép hálózati szintű üzenetküldését valósítja meg, helyettesítve az ARP és ICMP protokollokat. <br><br>Ezzel kapcsolatban néhány kérdés felmerült bennem: Ezt a kapcsolatot minden egyes csatlakozás alkalmával létre kell hozni, vagy eltárolódik valahol a rendszerben? Nem lehet valahogy beállítani egy "fehér listát", hogy bizonyos oldalakat már alapból így jelenítsen meg? Ez a titkosítás mennyivel erősebb egy Gmail-es vagy OTP-s belépésnél?
+			<br>
+			<!--IBF.ATTACHMENT_174472-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: alfonz  2007. február 22. 15:54</h4>
+			<p>Két gépet cross link kábelel ősszekötötem müködik (nálam AVG-t tűzfal és vírusírtó csomagot használok) hogy rendesen kikapcsoltad azt az AVG vezérlőközpont inditásánál a tűzfalnál jobb clikk és tűzfal kikapcsolása ezt egy piros felkiáltó jelel jelzi és a gép újrainditása, ha vissza akarja valaki kapcsolni katints az aktiválásra. <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/exclamat.gif" style="vertical-align:middle" emoid=":!:" border="0" alt="exclamat.gif"><br><br>Két gépem cross link kábelel van összekötve ez müködik, 1 gép-be 1GB lan,3000+amd 512 mb mem van, 2 gép 10/100 lan 1,2 GHz cerka 512 sd ram .Az internet elérése 1024 Kbit/s és egy gépre adták az elérést, Fix IP cím,PPPoe felhasználonév, jelszó a netre az 1 géppel léptem fel előszőr. és a 2 gépbe ha átdugom a netet nem megy. Ha az 1 gépen letiltom biosban a 1GBLan-t és a másik gépből áteszem az 1 gépbe 10/100 lan-t akkor ezen keresztűl tudok netezni.Így probáltam: új kapcsolat létrehozása/kapcsolódás az internetre/kézzel állítom be/ és a kapcsolódás felhasználónevet és jelszót igénylő szélessávú kapcsolat segitségével ez a rész nem választható (inaktív) ha a 10/100 lan a 2 gépben van. Tvnetwork.hu Lannet netX csomag. Kérdés rooter nélkül is megoldhatom????  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/question.gif" style="vertical-align:middle" emoid=":?:" border="0" alt="question.gif">  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/question.gif" style="vertical-align:middle" emoid=":?:" border="0" alt="question.gif">  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/question.gif" style="vertical-align:middle" emoid=":?:" border="0" alt="question.gif"><br><br><!--coloro:red--><span style="color:red"><!--/coloro-->Egy kérdést csak egy helyen tegyél fel! Köszi!  - arpsoft <!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_174683-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Soma01  2007. március 17. 11:04</h4>
+			<p>Azt szeretném kérdezni, hogy TCP/IP protokollnál elméletileg hány Mbps sebességű feltöltéssel jár, mondjuk egy 1 Mbps-os letöltés?
+			<br>
+			<!--IBF.ATTACHMENT_178496-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Greene  2007. március 17. 18:10</h4>
+			<p>TCP csomagoknál küld ACK-t, ami pár tíz byte csomagonként. Tehát ezt a kérdést így elég nehéz megválaszolni.
+			<br>
+			<!--IBF.ATTACHMENT_178555-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Strar  2007. április 23. 18:55</h4>
+			<p>A netmegosztást a következőképpen tervezem: Gép 1-be megy a net, a kábelmodem USB-vel kommunikálna a géppel - felszabadul a LAN, így nem kell 2 db a gépbe, így a Gép 2 LAN-on keresztül éri el a másikat. Az USB-s net nem fog gondokat okozni?
+			<br>
+			<!--IBF.ATTACHMENT_184415-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2007. április 25. 6:14</h4>
+			<p>Elvileg nem.
+			<br>
+			<!--IBF.ATTACHMENT_184628-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: digitalstore  2007. május 14. 23:53</h4>
+			<p>Szeretnék egy szakmai tanácsot kérni. Barátom szeretne nyitni egy kisebb játék clubot. Nincs jelentősége. Lenne 8-10 gép, utolsó generációs, 120 cm átmérőjü képernyők, volán, joystick, meg hasonló kütyük. Az lenne a kérdésem, hogy hogyan lehetne ezt okosan megvalósitani. Itt a hálózatba kötést (mi kell, hub vs switch), internet kapcsolatot (gondolom kell net multiplayeres játékoknál, ha nem belső lan) értem. Pénz nem nagyon számit, de csak mértékkel:)<br>Összeállitana valaki nekem egy listát, hogy mi kellene, és hogy meglehet e ezt valósitani? Az internetet DSL-en  lehetne összekötni. Kell szerver gép is legyen? Elég láma kérdés tudom, de nagyon fontos lenne egy válasz...<br>Előre is köszönöm. <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/question.gif" style="vertical-align:middle" emoid=":?:" border="0" alt="question.gif">
+			<br>
+			<!--IBF.ATTACHMENT_187480-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: eremit  2007. május 15. 2:47</h4>
+			<p>DDE Server Window<br><br>Ez egy hibaüzenetben volt, ill. szokott lenni néha az XP leállításakor. Nem tudja bezárni.
+			<br>
+			<!--IBF.ATTACHMENT_187483-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: catchke2ro  2007. augusztus 12. 13:50</h4>
+			<p>Hali!<br>Nagyon tetszik a topic elején lévő anyag, sok mindent tanultam belőle. <br>Azért kezdtem el olvasgatni, mert a helyi Teleház felépítésén dolgozunk, nem vagyunk profik, de mivel régen már egyszer ment a rendszer, ezért nem félünk.<br>Van egy doboz, amiben egy router, és egy 24-es switch van, eddig csak egyszer láttam, és úgy láttam, hogy a router egyik kimenetéről megy a switchbe egy kábel, és onnan elvileg a gépekbe. Állítólag a korábbi rendszerrel az volt a gond, hogy bár volt net mindegyik gépen, de hálózatot nem sikerült megcsinálniuk, ami azért egy ilyen helyen elég nagy hiányosság többekközt a nyomtatómegosztás miatt. Azt mondták, hogy nem is lehet így megcsinálni a belső hálót, csak netmegosztás lehetséges... <br>Kérdésem, hogy ez így igaz-é... vagy nagyon nem. Vagy esetleg a switchet nem a router egyik sima kimenetébe kell dugni, hanem valami másba? valami profibb routernek nézett ki, sok be meg kimenete volt....<br>Köszi a segítséget előre is...<br>üdw
+			<br>
+			<!--IBF.ATTACHMENT_201045-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Shia-ko  2007. augusztus 12. 15:22</h4>
+			<p>A router egyik LAN portjába megy a switch, az teljesen jól van. És mennie kell a sharingnek is így.
+			<br>
+			<!--IBF.ATTACHMENT_201051-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: alfonz  2007. augusztus 12. 16:55</h4>
+			<p>@catchke2ro ''csak netmegosztás lehetséges... '' hát szerintem ha a netet sikerült megosztani akkor egymást is látniuk kell a gépeknek(hálóban). De mivel a routert is használtatok biztos müködnie kell.
+			<br>
+			<!--IBF.ATTACHMENT_201060-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: catchke2ro  2007. augusztus 12. 16:57</h4>
+			<p>Simán beállítok fix IP-ket a gépeknek, és a routerben beállítom a szükséges dolgokat, oszt kész?<br>Királyság <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif"><br>köszi
+			<br>
+			<!--IBF.ATTACHMENT_201061-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: alfonz  2007. augusztus 12. 17:02</h4>
+			<p>Hát ez ennyi,nincs mit.<br><br>-meg gmegosztod a nyomtatokat,mapákat,meghajtókat amit akarsz hogy használjanak.
+			<br>
+			<!--IBF.ATTACHMENT_201062-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: catchke2ro  2007. augusztus 12. 21:10</h4>
+			<p>Nagyon kösziiiiiii <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif">
+			<br>
+			<!--IBF.ATTACHMENT_201113-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: LBANDI  2007. szeptember 8. 9:32</h4>
+			<p>Kettő gépet kapcsoltam össze, a gondom az, hogy a látják egymást, de a a megosztott  könyvtárakat egyik gépen sem tudom megnyitni. Mindkettő gépen a vista van telepitve. UTP kábelen csatlakoznak össze.
+			<br>
+			<!--IBF.ATTACHMENT_205288-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Arkangyal  2007. szeptember 11. 12:54</h4>
+			<p>Ha szimpla háló kábel van közöttük, az nem jó (legyen fordítós kábel /erre nem jut eszembe más kifejezés/ kábel).
+			<br>
+			<!--IBF.ATTACHMENT_205613-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: intelsüni  2007. november 22. 13:42</h4>
+			<p>Sziasztok!<br><br>Először felvázolnám az esetet. Nos van egy laptop és egy asztali gép, mind a kettőn van LAN-csatlakozás. A kérdésem az lenne, hogy a két gépet össze lehetne e kötni valamilyen kábellel (pl.: crossfire ?) úgy, hogy adatokat tudja megosztani. Szükséges-e ehhez internetkapcsolat ?<br><br>Előre is köszönök mindent.  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/unsure.gif" style="vertical-align:middle" emoid=":bizonytalan:" border="0" alt="unsure.gif">
+			<br>
+			<!--IBF.ATTACHMENT_217356-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: alfonz  2007. november 22. 15:30</h4>
+			<p>@intelsüni Két gépet cross link kábelel ősszekötöd, akkor müködni-e kell,megosztod a nyomtatokat,mapákat,meghajtókat,flopyt,dvd-írót stb vagy amit akarsz használni.A LAN-csatlakozás és a crossfire az két külön dolog. Gondolom a crossfire-n a FireWire(IEEE1394b) a FireWire az egy nagysebességű port amit audió/video (A/V) 800Mb/s továbbitására találták ki pl:videó kamera stb. de ezen is össze lehet kötni a két gépet ha jól tudom valahol ebben a forumban már írtak róla ezért ezt nem részletezem. De ha a lankártyád bírja akkor 1000Mb/s,(1GB lan) van benne szerintem az se lassú.<br><br><br>Egyéb:<br>Én pl: ott szívtam meg hogy vettem 2db 10/100 lan kártyát használtan és valahogy nem akartak egymással komunikálni háloba valahogy nem mindig látták egymást(szerintem vannak régi kártyák amik nem birják valahogy egymást) a problémát 1 rooterel megoldotam azota megy minden de ha valaki nem akkar netezni akkor jó a swich-is.
+			<br>
+			<!--IBF.ATTACHMENT_217374-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: DarkBlade  2007. december 2. 12:53</h4>
+			<p>Üdv.<br><br>Mivel a topic címe ez, "Értelmező szótár, avagy mi micsoda a hálózatban", vettem a bátorságot hogy itt tegyem fel a következö kérdést.<br><br>Adva van egy TP-Link TL-R460 -as router, annak a beálitásai közt egy ilyen "DMZ host feature".<br>A kérdés az lenne hogy mire is jó és mit is csinál ez a "DMZ host feature"!<br><br>A választ előre is köszönöm.
+			<br>
+			<!--IBF.ATTACHMENT_218928-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: probalkozom  2007. december 17. 22:47</h4>
+			<p>Nagyon megköszönném, ha valaki segítene abban miként tudom egymás számára láthatóvá tennem az itthoni gépeimet, ha jelenleg 1 SMC routerrel osztom a netet. Két gépen xp van, egy laptopon Vista. 1 gép és a laptop rádiós hálókártyával kapcsolódik, egy pedig kábellel a routerre. Mit kell tennem, hogy ne csak a netmegosztás működjön?
+			<br>
+			<!--IBF.ATTACHMENT_221319-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: warynski  2007. december 18. 8:55</h4>
+			<p>Helyi hálózatot kell létrehozni.<br><span>Próbáld meg így: <a class="linkclass" href="http://www.pcworld.hu/forum/index.php?showtopic=1086&st=140#">http://www.pcworld.hu/forum/index.php?showtopic=1086&amp;st=140#</a></span><br>Értelemszerűen a laptopnál és a nem kábeles gépnél nem az ethernet kártyán, hanem a wifi kártyán kell a beállításokat elvégezni.<br>
+			<br>
+			<!--IBF.ATTACHMENT_221338-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: joepapa24  2008. január 25. 13:12</h4>
+			<p>Sziasztok!<br>Elolvastam: tömör, velős, jó.<br>Egy kérdés: a ruternek 2 csatija van? Milyen két csatija? 1 wan (be) és 1 lan (ki)?. Erre van kötve egy switch és egyben lehet csak kapni kereskedelmi forgalomban?
+			<br>
+			<!--IBF.ATTACHMENT_227890-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: fapuma  2008. január 25. 22:32</h4>
+			<p>A legtöbb routernek öt vezetékes csatlakozója van: 1 WAN és 4 LAN; és képes switchként működni.
+			<br>
+			<!--IBF.ATTACHMENT_228010-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: domel  2008. március 23. 17:12</h4>
+			<p>Sziasztok!<br><br>Végigolvastam a topicot, főleg az elejét, mindent értek, mindent úgy csináltam, mégse sikerül  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/sad.gif" style="vertical-align:middle" emoid=":(" border="0" alt="sad.gif"> <br>Gép1 lóg az interneten, minden működik, gép2 lóg gép1-en, látják egymást, fájlmegosztás működik, NET NEM.<br><br><br>A következő a szitu:<br><br>Internet: chello (ők azt hiszem maguk osztják az IP címet kapcsolódáskor, ezért ez a kapcsolat automatikus IP-kérésen van, egyébként a varázsló is így állította be.)<br><br>A kábelmodem USB-n keresztül csatlakozik gép1-hez: Internet szépen szól.<br><br>A helyi kapcsolat PCI kártyán keresztül megy, a varázsló erre osztotta a 192.168.0.1 címet.<br><br>E kártyából cross-kábel megy gép2-be, ennek IP-címét a varázsló automatikusra állította. A gépek látják egymást, fájlmegosztás megy.<br><br>EZEK UTÁN MIÉRT NEM MEGY A NET GÉP2-N?<br>(A böngésző Firefox, nem tudom fontos-e.)<br><br>Tud valaki okosat mondani?<br>Előre is köszi!
+			<br>
+			<!--IBF.ATTACHMENT_238894-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: zole123  2008. szeptember 16. 17:03</h4>
+			<p>Helló azt szeretném kérdezni hogyha a netes modemem rákötöm a rotura és a rotur lan portyából húzok egy kábelt a gépbe akkor nekem lesz netem?<br>Vagy a másik lehetőség hogy a modemen van 2 csatlakozó az egyiket a géphez huzom a másikat pedig a roturhoz akor lenie kel netnek?
+			<br>
+			<!--IBF.ATTACHMENT_360435-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: kori  2008. szeptember 16. 17:40</h4>
+			<p>A routert be kell állítani (konfigurálni), ha máskép nem megy a gépkönyve szerint. Ezután már  valószínű. <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/cool.gif" style="vertical-align:middle" emoid="8)" border="0" alt="cool.gif">
+			<br>
+			<!--IBF.ATTACHMENT_360439-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: zole123  2008. szeptember 18. 13:05</h4>
+			<p>Na akor mégegy kérdés!<br>Mit tegyek akor ha a net rávan kötve a rotur wan csatlakozójára a roturból lanon húztam egy vezetéket a gépbe megcsináltam mindent amit a könyv írt de net az sehol sincs!<br>Valyon mi a baly? Aki tudja az segítsen!
+			<br>
+			<!--IBF.ATTACHMENT_360583-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: kori  2008. szeptember 18. 16:01</h4>
+			<p>Addig jól csináltad, hogy a kábelmodemet összekötötted a routerrel. (Router WAN bemenete UTP kábellel). Ezután a router valamelyik kimenetét szintén UTP kábellel összekötöd a PC hálókártyájával. Majd ezután csinálod a konfigurálást. <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/cool.gif" style="vertical-align:middle" emoid="8)" border="0" alt="cool.gif">
+			<br>
+			<!--IBF.ATTACHMENT_360587-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: zole123  2008. szeptember 20. 9:12</h4>
+			<p>Így csináltam ahogy irtad konfiguráltam de net még most sincs!<br>Mikor konfigurálom van egy olyan rész hogy: wan és alatta adatok de ott nincs semmi!ez nem baj?<br>Ja és még valami az baj ha alaplapi a hálókártyám?
+			<br>
+			<!--IBF.ATTACHMENT_360688-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2008. szeptember 20. 10:54</h4>
+			<p>Hogy kap a géped IP címet? Automatikusan a router DHCP-től vagy fixen beállítva?<br>Ha fix, a router IP címét állítsd be átjárónak és DNS szervernek. No persze egy hálózatra kell essen a router a gépeddel.<br>A parancssorban add ki az ipconfig /all parancsot, és nézd meg, mik az IP címek.<br>Ezen túl a tűzfal is tilthatná, de azt hiszem, már alapból nem szokták.
+			<br>
+			<!--IBF.ATTACHMENT_360697-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2008. szeptember 20. 11:01</h4>
+			<p>Hmm, én a gépeken is a T-Online DNS szervereit adtam meg...<br><br>Amúgy PPPoE kell Neked, ott kell megadni az azonosítót és a hozzá tartozó jelszót, ha nem vagy kábeltévés, azt sajnos nem tudom, hogyan működik.
+			<br>
+			<!--IBF.ATTACHMENT_360700-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: kori  2008. szeptember 20. 11:07</h4>
+			<p>Nézd meg a BIOS-ban, hogy nincs-e letiltva az alaplapi hálókártya! Még nem mondtad, milyen tipusú a routered. Minden routerhez adnak egy Quick installation guide segédanyagot esetleg CD-t is. Nekem a TP-Link routeremhez adtak. Ezek segítségével mennie kell. IP cím, jelszó megadása szükséges a telepítéskor. <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/cool.gif" style="vertical-align:middle" emoid="8)" border="0" alt="cool.gif">
+			<br>
+			<!--IBF.ATTACHMENT_360702-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: zole123  2008. október 2. 12:50</h4>
+			<p>Bocs hogy ílyen ritkán írok csak elromlot a gépem most vetem újat!<br>Nade a routerom MSI RG60SE Wireless Router!<br><br>Nem nagyon értek hozá úgyhogy ha segítséget nyujtatok akor légyszi részletesen írjátok le mit csináljak hogyan!<br>Kaptam egy CD-t azon vannak DRIVEREk a vezeték nélküli kapcsolathoz meg még egy jópár Dríver!<br><br>Vaki mongya meg lépésről lépésre mit is csináljak!<br><br>
+			<br>
+			<!--IBF.ATTACHMENT_361793-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba86  2008. október 5. 9:11</h4>
+			<p>Hello!<br><br><span>Gigabites kábelt szeretnék csinálni. <a class="linkclass" href="http://wiki.hup.hu/index.php/1000Base-T">http://wiki.hup.hu/index.php/1000Base-T</a></span><br><br>Elég neki egy Cat5-ös kábel is?
+			<br>
+			<!--IBF.ATTACHMENT_362075-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2008. október 19. 10:42</h4>
+			<p>Írja a linkelt wiki is, hogy Cat5.<br>Nekem is azzal meg gond nélkül.
+			<br>
+			<!--IBF.ATTACHMENT_363161-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2008. november 5. 14:30</h4>
+			<p>Rövidebb távolságokon elég a Cat5, illetve Cat5e (sok különbség nincs, otthonra meg egyáltalán nem számít).<br>Ha nagyobb távolságot szeretnél áthidalni, akkor már jól jöhet egy Cat6 vagy még inkább egy Cat7-es kapcsolat. AMi otthon ritkán fordul elő, az pedig az optikai kábel, de annál jobb szerintem egyelőre nincs, ráadásul vannak benne tartalékok is bőven.<br>
+			<br>
+			<!--IBF.ATTACHMENT_364728-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KeLa  2008. november 5. 19:15</h4>
+			<p>Szevasztok!<br><br>Elakadtam a T-Home DISCUS DGR A225G Digitális elosztó beállításánál.<br>Nem működik nála a portforward. A szerver csak akkor érhető el a netről, ha DMZ-be teszem.<br><br>A NAT/Virtual Server alatt az alábbi képen látható lehetőségek vannak.<br><br><span><a class="linkclass" href="http://kepfeltoltes.hu/081105/Virtual_Server_1_www.kepfeltoltes.hu_.jpg">http://kepfeltoltes.hu/081105/Virtual_Server_1_www.kepfeltoltes.hu_.jpg</a></span><br><br>Itt nem tudom értelmezni a Public IP Adres-t. Dinamikus IP-m van, így nemtudom mit kellene ide írni.<br><br>Szintén a NAT menűben van Address Mapping almenű.<br><br><span><a class="linkclass" href="http://kepfeltoltes.hu/081105/Virtual_Server_2_www.kepfeltoltes.hu_.jpg">http://kepfeltoltes.hu/081105/Virtual_Server_2_www.kepfeltoltes.hu_.jpg</a></span><br><br>Ezt a funkciót sem igazán értem.<br><br>Sajna a kütyü leírása kimerül a net alap beállítása és a wifi alapbeállítása résszel. A többi funkció megsincs említve. De még a neten sem találni semmit róla.
+			<br>
+			<!--IBF.ATTACHMENT_364769-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2008. november 5. 19:24</h4>
+			<p>Szerintem a Public IP Address-t hagyd üresen, a többit töltsd ki annak rendje és módja szerint.
+			<br>
+			<!--IBF.ATTACHMENT_364771-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KeLa  2008. november 6. 8:42</h4>
+			<p>Nem lehet üresen hagyni. Vagy külső IP, vagy belső IP amit elfogad. Időközben kipróbáltam az aktuális külső IP-vel és a szokásos 24 órás bontásig szépen működött. Viszont nem frissítette az IP-t változás után és behalt a dolog. Furcsa, hogy csak egy külső IP-hez lehet gépet DMZ-be tenni, vagyis csak egy gépet lehet. Második, harmadik, stb gépnek eltérő külső IP-t kellene megadni, amit megint nemértek.<br>Időközben sikerült levadászni az eredeti teljes manuálját. Ahhoz képest rendesen levan butítva, sokminden kivéve, mások átalakítva. Kellet nekem olcsó telefon.
+			<br>
+			<!--IBF.ATTACHMENT_364830-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2008. november 6. 9:13</h4>
+			<p>Mármint amit kaptál készüléket lebutították? Mert ha így van, keresd meg az alapot, aztán tedd fel annak a firmware-jét. Elég kockázatos, de...
+			<br>
+			<!--IBF.ATTACHMENT_364833-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KeLa  2008. november 6. 10:49</h4>
+			<p>Úgy néz ki, ezt a tipust kisajátitotta a T-.. group. A gyártó oldalán sem szerepel már. Anyira lebutították, hogy a firmware frissítési opció is kivan véve a menűből (több mindennel együtt). Ha nem változtattad meg a jelszót akkor a T-.. frissíti központilag ha szükségesnek látja (állítólag?).<br>Eredetileg 2 VOIP szolgáltatót lehetne beállítani, 2 telefoncsatlakozója is van. De egyik letiltva, és a T-.. bredótozva. Semmi állíthatóság nincs. Ami részben jó, de a másik csatornát szabadon hagyhatták volna például a SKYPE részére, de az nekik nem biznisz. Külföldi fórumokat nézve, a portforvard problémás mindenkinek. Egyellőre marad a DMZ.
+			<br>
+			<!--IBF.ATTACHMENT_364846-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: laszlou  2008. december 14. 0:21</h4>
+			<p>Segítséget kérek, nem találtam ilyen példát a neten:<br><br>Internet(kábelnet) -&gt; Modem -&gt; Belkin wireless router(#1), innen kétfelé lan-on:<br>1-ik ág: PC(k)<br>2-ik ág: Belkin N wireless router(#2), 1-1 lan-on PC, wifivel PDA, PDA telefon.<br>Milyen beállításokat kell használnom (#1) és (#2) routeren?<br>Ha valamelyiket switch-ként használom, akkor egyszerűbb, de nem lesz rajta wifi net?<br>Köszönöm a gyors válaszokat!
+			<br>
+			<!--IBF.ATTACHMENT_369209-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2008. december 14. 10:21</h4>
+			<p>Szia!<br>Még ugyan sosem próbáltam, de szerintem switch üzemmódban nem használható a wifi.<br>Az első router LAN-ját kösd össze a második WAN-jával. Az első routeren legyen engedélyezve a DHCP szerver. A második router WAN része legyen dinamic IP-re állítva! Természetesen a két routernek nem lehet azonos IP címe! (Ezt LAN beállításoknál változtasd meg! Az alhálózati maszkot állítsd azonosra.)<br><br>szubjektív: Szerintem az nDraft -os routert használd a kábelmodemmel, és a régi routert kösd valamelyik LAN-jára. így nem lesz szűk keresztmetszet a Wired és a Wireless eszközök között.  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/ani_wink.gif" style="vertical-align:middle" emoid=";)" border="0" alt="ani_wink.gif">
+			<br>
+			<!--IBF.ATTACHMENT_369223-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: laszlou  2008. december 14. 12:19</h4>
+			<p><!--quoteo(post=369223:date=2008. december 14. 11&#58;21:name=Csaba_#)--></p><div class="quotetop">IDÉZET(Csaba_# @ 2008. december 14. 11:21) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=369223"><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Szia!<br>Még ugyan sosem próbáltam, de szerintem switch üzemmódban nem használható a wifi... <!--QuoteEnd--></div><!--QuoteEEnd--><br>Valóban nem akar összejönni a wifi (switch módban), nem csak, hogy netet nem érem el rajta, de ha egy eszközzel próbálok csatlakozni, akkor sikerül, de rögtön el is dobja. Gondolom majd ez is helyrejön.<br>A leírásod első fele passzol a beállításaimmal, de annyira nem vágom a dolgot, hogy nem tudom mit kell írni a Host Name mezőbe...<br>Igen a két routernek nem azonos az ip címe,<br>a #1router ip. = 192.168.2.1(gyári),<br>a #2router ip. = 192.168.2.101 (én állítottam erre)<br><br>Az alhálózati maszkot még annyira sem értem, mint az "egyszerűsített Kínai" szöveget <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif"><br>Gondolom a Subnet Mask-ról van szó, ami így néz ki: 255.255.255.0 az első három számjegye fix 255, a többit át lehet írni. Melyik routerben kell állítani, mennyire?<br><br>Nem tudom mennyire fontos #1-helyére rakni az új routert, de jobban szeretném ha ott a régi maradna (az a szomszédé)<br><br>Ha van rá mód, vegyél fel msn-re kérlek, úgy gyorsabban menne a dolog.
+			<br>
+			<!--IBF.ATTACHMENT_369247-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2008. december 14. 12:40</h4>
+			<p>Be vallom őszintén, hogy ami az Alhálózati maszkot illeti, az számomra is sötét homályba burkolózik.  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif"> <br>Szerintem csak nagy kiterjedésű céges hálózatoknál van értelme, ami a kicsi otthoni hálózatokat illeti, mindenhol azonosnak kell lenni, és akkor nincs balhé. Ebből kiindulva állítsd, be mind a két routernál ugyan azt a 255.255.255.0-t! A host name-nél nem kötelező semmit sem megadni.<br><!--quoteo(post=369247:date=2008. december 14. 12&#58;19:name=laszlou)--></p><div class="quotetop">IDÉZET(laszlou @ 2008. december 14. 12:19) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=369247"><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->.. de jobban szeretném ha ott a régi maradna (az a szomszédé)<!--QuoteEnd--></div><!--QuoteEEnd--><br>Ja így már értem  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/cool.gif" style="vertical-align:middle" emoid="8)" border="0" alt="cool.gif">  , akkor az utolsó mondatomat tekintsd tárgytalannak.
+			<br>
+			<!--IBF.ATTACHMENT_369254-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2008. december 14. 12:54</h4>
+			<p>A legtöbb router egyben switch is. Az első router (amin a net bejön) legyen gateway, a második, ami erre van kötve, az legyen router. Az alhálózati maszk legyen azonos, az IP cím legyen különböző. Ha nincs net, esetleg a második routeren állítsd be DNS szervernek az első router IP címét.<br><br>Melyik gépeken nincs net?<br><br>Nem kell semmit switchre állítani, maradhat mindkettő wireless router. Azt viszont meg nem mondom, hogy a második routert az elsővel az internet- vagy a helyi porton kösd össze. Próbáld ki mindkettőt.
+			<br>
+			<!--IBF.ATTACHMENT_369258-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: laszlou  2008. december 14. 13:46</h4>
+			<p><!--quoteo(post=369258:date=2008. december 14. 13&#58;54:name=KGigi)--></p><div class="quotetop">IDÉZET(KGigi @ 2008. december 14. 13:54) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=369258"><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->A legtöbb router egyben switch is... <!--QuoteEnd--></div><!--QuoteEEnd--><br><br>Legyen gateway? (Ezt nem érteni, talán switch mod?)<br>A második router után nincs net. Kénytelen vagyok olyan megoldást keresni, hogy a második router WAN portjába kapcsolódjón az első router LAN kábele, különben a második routeren nem lesz wifi net.<br> Csaba! Neked is köszönöm a privit is, ha fontos lesz, megkereslek.<br><br>Nincs valaki aki konkrétan két router után még wifit is tud fakasztani?<br>Kipróbálom amiket írtatok...
+			<br>
+			<!--IBF.ATTACHMENT_369268-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2008. december 14. 16:08</h4>
+			<p>Nekem Linksys routerem van, ott a halódó beállítások között van egy ilyen, a magyarázatát másolom be:<br><br><!--quoteo--></p><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Operating Mode: If the router is hosting your Internet connection, select Gateway mode. If another router exists on your network, select Router mode.<!--QuoteEnd--></div><!--QuoteEEnd--><br><br>Ahol az alapbeállítások, MAC-klónozás stb. van.
+			<br>
+			<!--IBF.ATTACHMENT_369272-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2008. december 14. 20:41</h4>
+			<p>A helyes beállítás a következő:<br>Router 1: állítsad be úgy, mintha egyedül ez lenne a hálózatban. Ha van rajta keresztül interneted, mind lan-on , mind WiFi-n, akkor rendben vagyunk.<br>Most menjünk be a router1 DHCP felügyeleti részébe. Itt állítsad be, hogy ne a teljes tartomány tudja kiosztani, hanem mondjuk csak a 10-200-ig terjedő tartományt.<br><br>Router 2: csatlakoztassad a pc-t a router egyik kimenetéhez. Állítsál be fix ip-s kapcsolatot, ahol az ip cím az első router által osztott tartomány-ból a 2-es (ezt zártuk ki az előbb a DHCP-ből). Alapértelmezett átjáró az első router ip címe. Továbbá állítsad be, hogy ez a router ne azonos tartományból oszt ip-t.<br>Pl , ha az első router a 192.168.2.x-et osztja, akkor ez oszthat bármint csak a 2-t nem: 192.168.3.x.<br>A wifi-t állítsad be, de más csatornára és más ssid-re, mint az elsőt.<br><br>Ha ez megvan, akkor a router1 egyik kimenetét összekötöd a router2 wan portjával.<br>Innentől kezdeve van két ip tartományod és két drótnélküli neted, de mindegyik a router1-en megy ki a netre.
+			<br>
+			<!--IBF.ATTACHMENT_369317-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2008. december 14. 21:09</h4>
+			<p>Szépen leírtad!  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/clap_01.gif" style="vertical-align:middle" emoid=":bravó:" border="0" alt="clap_01.gif"><br>Nem gondoltam volna hogy a második routert WAN-ját statikussá kell tenni.<br>Csak kíváncsiságból van pár kérdésem:<br>Ha minden hálózati adaptert statikusra állítok, akkor ugye már nem kell így variálni a DHCP szerverekkel?<br>Sok router DHCP-jén nem lehet -tól -ig IP tartományt megadni csak -tól, az nem baj?<br>Ha a 2-es router WAN-ja statikus, illetve minden más adapter is statikus, akkor is kell a DHCP?<br><br><i>Ilyen szinten már én is lámi vagyok.</i>  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/blush.gif" style="vertical-align:middle" emoid=":upsz:" border="0" alt="blush.gif">
+			<br>
+			<!--IBF.ATTACHMENT_369323-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: laszlou  2008. december 15. 7:03</h4>
+			<p><!--quoteo(post=369317:date=2008. december 14. 21&#58;41:name=arpsoft)--></p><div class="quotetop">IDÉZET(arpsoft @ 2008. december 14. 21:41) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=369317"><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->A helyes beállítás a következő...<!--QuoteEnd--></div><!--QuoteEEnd--><br>Köszönöm a segítséget! Érezni a válaszodon, hogy menni fog a segítségeddel! Bocsánat, hogy nem írtam egy ideig, de nem volt net (szolgáltató hibájából).<br>Következőket tettem:<br>Router 1 a szomszédban van 70-80 méterre, de ugye böngészőből elérem a beállításait.<br>Tehát router 1 fix ip-s netünk ellenére dinamikus-ra van állítva, de működik. (gond, nem gond?)<br>IP címe: 192.168.2.1<br>Submask: 255.255.255.0<br>DHCP engedve: 192.168.2.50-től, 100-ig (mindez a LAN settings alatt)<br>Router 1-ezt osztja nekem: 192.168.2.3<br>***<br>Router 2<br>LAN IP-jét átállítottam a már korábban is átállított 192.168.2.101-ről a következőre:<br>IP címe: 192.168.1.1<br>Submask: 255.255.255.0<br>DHCP engedve: 192.168.1.2-től, 100-ig (mindez a LAN settings alatt)<br>Connection Type-nél Static-ot választom, majd ott beállítottam a következőket:<br>IP Address: 192.168.2.2 (ezt később próbáltam a 192.168.2.3-al is)<br>Subnet Mask: 255.255.255.0 (minden mező nullás volt, én állítottam ilyenre)<br>ISP Gateway Address: 192.168.2.1 (router 1 IP címe)<br>Mindezeket friss reset után is próbáltam.<br>Mi lehet a gond?<br><br>UI.: ezután még a router 1-nél DMZ-be raktam "magam" (192.168.2.3)<br>Tűzfalakat nem kellene kikapcsolnom a routereken?<br>DNS alatt semmit nem kell állítani router 2-nél:<br>DNS Address:?<br>Secondary DNS Address:?<br>UI.2.: Pár óráig sokmindent kipróbáltam, mire ezt el tudom küldeni, de sajnos nem jött össze.
+			<br>
+			<!--IBF.ATTACHMENT_369355-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2008. december 15. 8:03</h4>
+			<p>A tűzfalak nyugodtan mehetnek.<br>A DNS a router2 esetében a router1 ip címe, ami az átjáró is.<br><br>A rendszer lényegében úgy van most beállítva, mintha a második router egy fix ip-s internet szolgáltatóhoz kapcsolódna, ami a router1.<br><br>Csaba_#:<br>ha minden ip statikus, akkor nem kell a DHCP kizárással bajlódni, mivel semmi szerepe nincsen. Ilyenkor arra kell ügyelni, hogy a kliensek, amikor felcsatlakoznak a statikus ip-vel, akkor a megfelelő átjáró és DNS legyen beállítva (router1 vagy router2)<br>Statikus ip-nél még azzal is el lehet jkátszani, hogy azonos tartományból osztjuk az ip címeket, csak az alhálózati maszkot állítjuk be másként.<br>Pl, ha az első routerre csatlakoznak a 192.168.2.1-127, míg a másodikra a 192.168.2.128-255 címek, akkor az alhálózati maszk nem 255.255.255.0, hanem 255.255.255.128 lesz. Ez azt mondja meg a protokollnak, hogy az ip cím bináris ábrázolásából mennyi bit határozza meg a hálózatot és mennyi az azon belüli gépeket.<br>Lényegében az ip cím és a z alhálózati maszk bináris között bináris "és" műveletet végez a protokoll.<br>Jelen esetben az utolsó tag legmagasabb bitje még a hálózatot azonosítja, az utolsó 7 pedig a gépeket. Tehát a routerek és a hálózat egyéb tagjai külön tudják választani, hogy a 192.168.2.x melyik hálózatot célozza.<br>Fontos, hogy az alhálózati maszk bináris felírásában balról jobbra először csupa egyes áll, majd csupa nulla. Nulla után egyes már nem következhet.
+			<br>
+			<!--IBF.ATTACHMENT_369364-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Crazy.Coyote  2009. január 3. 13:32</h4>
+			<p>Üdvözlet!<br><br>Olvasgatok és olvasgatok,csak éppen a problémámra nincs írva gyógyír.<img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/sad.gif" style="vertical-align:middle" emoid=":(" border="0" alt="sad.gif"><br>Volt aki hasonlót írt,csak nem kapott választ.<br>Úgy vagyok a hálózat készítéssel,h anno régebben már sikerült,de most nem akar menni.<br>A szitu röviden:<br>2 gépet kellene összekötni-gép1 asztali,gép2 laptop.<br>-kábelmodem eredeti kábellel bekötve a gép1-be.Alaplap:Gigabyte X58-Extreme, 2db gigabytes alaplapi lan csatlakozóval.<br>-gép 2:msi EX-600<br>-kábel,mellyel össze van kötve:patch kábel-hossza 5m.<br>Varázsló által próbáltuk a hálózatot,majd manuálisan is.<br>A 2 gép látja egymást,viszont net nincs a gép2-őn.A gép1-en van teljesen rendben.<br>Ez a kábel már anno volt használva ilyesmi hálózathoz.<br>Engedélyezve van gép1-en az internet megosztás,és mindkét gépen NOD32 smart security van,és megosztásos védelem van engedélyezve.<br>Mi lehet a bibi?Miért nem hajlandó megosztani a netet?<br><br>Előre is köszönöm az építő jellegű segítségeket.<br>BUÉK,így utólagosan.<img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif">
+			<br>
+			<!--IBF.ATTACHMENT_372558-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. január 3. 13:40</h4>
+			<p><span><a class="linkclass" href="http://www.pcworld.hu/forum/index.php?s=&showtopic=975&view=findpost&p=17925">http://www.pcworld.hu/forum/index.php?s=&amp;showtopic=975&amp;view=findpost&amp;p=17925</a>
+			</span><br>
+			<!--IBF.ATTACHMENT_372560-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Crazy.Coyote  2009. január 3. 16:37</h4>
+			<p>Igen olvastam,de semmi hatása.<br>A gép2-őn be lettek állítva az átjárók,a dns szerver.Mint említettem a 2 gép látja egymást,net viszont nincs.<br>Megpróbáltuk a gép2-őn a NOD kikapcsolását,de nem hozott eredményt.<br>Mit kéne még beállítanom?<br>Emlékeim szerint nem volt ez ennyire bonyolult.Bár akkor az akkori tűzfalam (kerio) zavart be kicsit.
+			<br>
+			<!--IBF.ATTACHMENT_372589-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2009. január 3. 18:34</h4>
+			<p>A gép1-en be van állítva az internet-megosztás?
+			<br>
+			<!--IBF.ATTACHMENT_372603-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba100-as  2009. január 3. 18:41</h4>
+			<p>friss windows mert én akkor jártam így sp2-nél
+			<br>
+			<!--IBF.ATTACHMENT_372606-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KOCSI IMRE  2009. január 20. 19:10</h4>
+			<p>Hi !<br>Mivel itt ilyen hálózatos témák vannak ezért ide írom le a gondomat.<br>Jelenleg van a lakásban két normál asztali pc ami egy D-Link Wireless routerrel (DI-524) van összekötve . A net pedig egy 4megás normál. <br>Ezt szeretném kiváltani mobilinternettel.<br>Még pedig úgy, hogy vennék egy Acer Aspire One kis gépet amihez nem kell usb stick mert van beépített hsdpa modeme.Tehát csak a sim kártyát kell bedugni.<br>Ezt a netet hogy tudnám a két asztali gépre is elosztani. <br>Akár úgy , hogy a sim kártyát az Acer-ból kivéve valahogy.Tehát Valami olyat amibe beleteszem a sim-et Valami hsdpa vevő és routerral szétküldöm.<br>Vagy csak úgy lehetne, hogy az acer be van kapcsolva és routerral összekötve megkapja a nete a másik két pc is.<br>Köszönöm.
+			<br>
+			<!--IBF.ATTACHMENT_375896-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. január 20. 19:13</h4>
+			<p>Hogy mit ne mondjak, ez egy elég perverz ötlet. Miért is akarod lecserélni a drótos netet?<br><br>Mennie kell az Acer-nek, hogy osztani tudja a netet. A routert sima switchként kellene használni ezek után.
+			<br>
+			<!--IBF.ATTACHMENT_375897-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. január 20. 20:09</h4>
+			<p>Plusz a notesz gépen engedélyezni kell az internet hidat. De Pjotr-nak igaza van, nem túl bölcs dolog egy mobil számítógépet, csak ezért bekapcsolva hagyni, hogy a többi PC-n is legyen internet. <br><span>Létezik viszont direkt erre a célra készülő, külső <a class="linkclass" href="http://www.netgear.com/Products/RoutersandGateways/WiredRouters/MBM621.aspx">http://www.netgear.com/Products/RoutersandGateways/WiredRouters/MBM621.aspx</a> amibe behelyezheted a SIM kártyát, ez után már csak a router-re kell rádugni.</span><br>Azt viszont nem tudom, hogy ez kompatibilis-e az általad választott mobil szolgáltatóval, de azért nagy rá az esély.  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/ani_wink.gif" style="vertical-align:middle" emoid=";)" border="0" alt="ani_wink.gif"><br><br><span>UI: Létezik 3G-s USB kulcs modemet fogadó vezeték nélküli router is: <a class="linkclass" href="http://www.netgear.com/Products/RoutersandGateways/3GMobileBroadband/MBR624GU.aspx">http://www.netgear.com/Products/RoutersandGateways/3GMobileBroadband/MBR624GU.aspx</a> , <a class="linkclass" href="http://www.netgear.com/Products/RoutersandGateways/3GMobileBroadband/MBR624GUSP.aspx">http://www.netgear.com/Products/RoutersandGateways/3GMobileBroadband/MBR624GUSP.aspx</a>  </span><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/bulb.gif" style="vertical-align:middle" emoid=":ötlet:" border="0" alt="bulb.gif">
+			<br>
+			<!--IBF.ATTACHMENT_375910-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KOCSI IMRE  2009. január 23. 18:16</h4>
+			<p>Sziasztok !<br>Köszönöm a tanácsokat !<br>Hogy miért lenne csere mobilnetre ? Hát pont azért mert mobil <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif">  Ha megyek valahová hát vihetem.<br>Ez a netgear 3G HSDPA Ethernet Modem  MBM621 tényleg jó dolognak látszik.Találtam is mindenféle árat rá 420 $ meg 260Ł ,ami jó sok aztán találtam egy érdekes honlapot ahol mindössze 89 EURO.Ami az előző árakhoz képest jóval olcsóbb.<br><span><a class="linkclass" href="http://www.expansys.hu/p.aspx?i=168845">http://www.expansys.hu/p.aspx?i=168845</a>      </span><br>Hát jó lenne tudni működik-e T-Mobil hálózaton.<br>De így már tudom , hogy van egy ilyen készülék ami erre pont jó. <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif">
+			<br>
+			<!--IBF.ATTACHMENT_376369-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. január 23. 18:42</h4>
+			<p><span><a class="linkclass" href="http://www.pcworld.hu/forum/index.php?s=&showtopic=1422&view=findpost&p=374749">http://www.pcworld.hu/forum/index.php?s=&amp;showtopic=1422&amp;view=findpost&amp;p=374749</a>
+			</span><br>
+			<!--IBF.ATTACHMENT_376373-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. január 23. 23:15</h4>
+			<p>Igen, az tény hogy mindenhová magaddal viheted. De ha elviszed, akkor a többiek akik ezidáig a router-eden keresztül neteztek, nem tudnak majd. Az ilyen kis kiruccanásokra érdemesebb inkább Valami feltöltőkártyás netet használni.  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/bulb.gif" style="vertical-align:middle" emoid=":ötlet:" border="0" alt="bulb.gif">  (pl.: Pjotr linkelte feljebb.)<br><br>UI.: Azt kicsit furcsának találom, hogy a magyar kereskedelmi forgalomba az ilyen 3G HSDPA Ethernet Modemek, ritkák mint a fehér holló. Ezzel persze nem károgni akarok, ettől még működhet a magyarországi T-Mobile hálózattal.  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/roll.gif" style="vertical-align:middle" emoid=":hááát:" border="0" alt="roll.gif">
+			<br>
+			<!--IBF.ATTACHMENT_376408-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. január 24. 12:27</h4>
+			<p>Azóta én találtam jobb csomagot is. Szintén Vodafone, nem utólag, hanem előre kell fizetni, viszont olcsóbb.
+			<br>
+			<!--IBF.ATTACHMENT_376449-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Cimiii  2009. március 4. 18:50</h4>
+			<p>Üdv!<br>Szeretném megkérdezni, hogy mi a különbség a Wireless Router és az Access Point között. A routerrel tisztában vagyok, az AP-ről ha jól tudom csak vezeték nélküli elérést biztosít. Nem jobb, ha pl. nagyobb Wifi hálózatnál csak routereket kötünk össze? Ha jól tájékozódtam, akkor az AP többe kerül.<br>Nézzétek el tudatlanságomat, de nem jövök rá.  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/blush.gif" style="vertical-align:middle" emoid=":upsz:" border="0" alt="blush.gif">
+			<br>
+			<!--IBF.ATTACHMENT_381740-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2009. március 5. 8:25</h4>
+			<p>A router feladata két vagy több különálló, egymástól fizikailag elválasztott hálózat közötti forgalom biztosítása. A SOHO-ban alkalmazott wireless routerek ezt megfejelik azzal, hogy akár vezeték nélkül is lehet csatlakozni hozzájuk.<br>Ezzel szemben az AP egy vezetékes hálózati csatlakozást 'alakít át' vezeték nélkülivé.<br><br>Ha most jó alaposan átgondoljuk a fentieket, akkor kiderül, hogy az, amit wireless router-ként árulnak a boltban, az egy sima router + AP házasítás.
+			<br>
+			<!--IBF.ATTACHMENT_381789-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Cimiii  2009. március 5. 12:05</h4>
+			<p>Köszönöm segítséged!
+			<br>
+			<!--IBF.ATTACHMENT_381799-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. március 5. 15:20</h4>
+			<p><!--quoteo(post=381789:date=2009. március 5. 8&#58;25:name=arpsoft)--></p><div class="quotetop">IDÉZET(arpsoft @ 2009. március 5. 8:25) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=381789"><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->...amit wireless router-ként árulnak a boltban, az egy sima router + AP házasítás.<!--QuoteEnd--></div><!--QuoteEEnd-->Ha 100%-ig így lenne, akkor nagyon szép lenne, de sajnos lebutítják őket azzal, hogy elveszik az AP kliens képességüket.  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/sad.gif" style="vertical-align:middle" emoid=":(" border="0" alt="sad.gif">  Pedig szerintem nem nagy <i>"was is das"</i> lenne azt a képességet is beleintegrálni a gyártóknak.  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/annoyed.gif" style="vertical-align:middle" emoid=":S" border="0" alt="annoyed.gif">
+			<br>
+			<!--IBF.ATTACHMENT_381820-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. március 11. 20:39</h4>
+			<p>Mire való a router- ek Uplink portja?
+			<br>
+			<!--IBF.ATTACHMENT_382667-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. március 11. 20:49</h4>
+			<p>Ha jól értelmezem, így hívják az a portot, amin keresztül a routert vagy a switchet egy másik routerre vagy switchre kötöd rá.
+			<br>
+			<!--IBF.ATTACHMENT_382668-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2009. március 12. 9:58</h4>
+			<p>Így van. Ma már nem nagyon különböztetik meg egymástól a portokat, mivel szinte mindegyik felismeri a fordított kábeleket illetve az egyenes kábellel megvalósított uplinket. Az uplink port eleve fordítva van bekötve, így egyenes kábellel is össze lehet kötni két egységet, ami nem ismeri fel a fordított kábelezést.
+			<br>
+			<!--IBF.ATTACHMENT_382694-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. március 12. 13:03</h4>
+			<p>Köszönöm a felvilágosítást!  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/cool.gif" style="vertical-align:middle" emoid="8)" border="0" alt="cool.gif"> <br><br>Csak azért kérdeztem, mert ingyen hozzájutottam egy KTI KB-100/E vezetékes router-hez, azon van ilyen port. Igazi veterán darab lehet, mert terméktámogatás a fasorba sincs hozzá, LPT nyomtatószerver is van rajta.  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"> <br>Sajnos az eredeti tápegysége nincs meg, most egy DC 5V/2A -es adapterrel üzemeltetem. Pedig a kiíráson 5V/2.4A szerepel, ebből nem lehet baj?
+			<br>
+			<!--IBF.ATTACHMENT_382709-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. március 12. 13:35</h4>
+			<p><!--coloro:#999999--><span style="color:#999999"><!--/coloro--><b>OFF</b><br>Tönkre nem fogja tenni, legfeljebb hibásan fog működni.<!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_382712-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Cimiii  2009. március 13. 19:49</h4>
+			<p>Üdv!<br>Olvasgatva a témákat pár dolog még nem világosodott meg bennem rendesen. Kérni szeretném, hogy valaki igazítson helyre a wifi-fel kapcsolatban.<br>Alap felállás, hogy szeretnék több routert összekötni wifin keresztül (internet megosztás céljából). Nem vagyok benne biztos, hogy milyen lehetőségeket lehet használni.<br>Fogalmak, amelyeket nem értek a wifi terén (vezetékessel nincs gondom):<br> - bridge (összeköt két hálót wifin  de közben csak vezetéken használható a router a kliens számára)<br> - repeater (felerősíti a jelet és tovább osztja, használható közben wifi a usernek (pl. laptop))<br> - WISP ?<br> - WDS ?<br> - AP (vezetéken jön, wifin megy a klienhez)<br> - AP kliens ?<br><br>Remélem, jól sikerült feltenni a kérdést <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/blush.gif" style="vertical-align:middle" emoid=":upsz:" border="0" alt="blush.gif"> .<br>Előre köszönöm a segítséget!
+			<br>
+			<!--IBF.ATTACHMENT_382855-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. április 21. 18:14</h4>
+			<p>Üdv!<br><br>Ezt írta ki az arp -a. Mi a fene ez? Statikus IP-vel (192.168.1.104) csatlakozom a routerre, amin ki van kapcsolva a DHCP.<br><br><!--c1--></p><div class="codetop">KÓD</div><div class="codemain"><!--ec1-->Kapcsolat: 192.168.1.104 --- 0x9<br>&nbsp;&nbsp;Internetcím&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fizikai cím&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Típus<br>&nbsp;&nbsp;192.168.1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00-1d-0f-f9-ac-02&nbsp;&nbsp;&nbsp;&nbsp; dinamikus<br>&nbsp;&nbsp;192.168.1.255&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ff-ff-ff-ff-ff-ff&nbsp;&nbsp;&nbsp;&nbsp; statikus<br>&nbsp;&nbsp;224.0.0.22&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;01-00-5e-00-00-16&nbsp;&nbsp;&nbsp;&nbsp; statikus<br>&nbsp;&nbsp;224.0.0.252&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 01-00-5e-00-00-fc&nbsp;&nbsp;&nbsp;&nbsp; statikus<br>&nbsp;&nbsp;239.255.255.250&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 01-00-5e-7f-ff-fa&nbsp;&nbsp;&nbsp;&nbsp; statikus<!--c2--></div><!--ec2--><br><br>Azért ide írtam, mert azt szeretném tudni, hogy mihez tartozhatnak ezek az IP és MAC-címek. A legfelső a router, de nem értem, miért dinamikus.
+			<br>
+			<!--IBF.ATTACHMENT_386646-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2009. április 22. 7:56</h4>
+			<p>Mert a DHCP-től mindig az 1-et kapja. A DHCP-t csak kifelé tudod kikapcsolni szerintem, a router mindig azon keresztül kapja.
+			<br>
+			<!--IBF.ATTACHMENT_386674-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. április 22. 15:05</h4>
+			<p>Ez újdonság, köszi. <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"> És mi lehet az alsó három cím? 192.168.1.100 és 192.168.1.104 között vannak beállítva címek. Én nincsenek ilyen MAC-című eszközök sem a hálózaton.
+			<br>
+			<!--IBF.ATTACHMENT_386715-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2009. április 22. 16:00</h4>
+			<p><span>Kis olvasnivaló: <a class="linkclass" href="http://www.iana.org/assignments/multicast-addresses/">http://www.iana.org/assignments/multicast-addresses/</a></span><br><span>Meg még egy kicsi: <a class="linkclass" href="http://en.wikipedia.org/wiki/Internet_Group_Management_Protocol">http://en.wikipedia.org/wiki/Internet_Group_Management_Protocol</a></span><br><br>A második talán rámutat arra is, honnan jönnek ezek a címek.
+			<br>
+			<!--IBF.ATTACHMENT_386721-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. április 22. 16:05</h4>
+			<p>Király, értem. <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"> Akkor már csak a 255 végű maradt a maga lehetetlen ff-ff-ff-ff-ff-ff címével. Azt észre sem vettem, mikor kimásoltam.
+			<br>
+			<!--IBF.ATTACHMENT_386724-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2009. április 22. 16:14</h4>
+			<p>A csupa FF MAC az Ethernet réteg broadcast címe. De hogy hogyan került mellé egy olyan ip, ami a Te hálózatodban van, nem tudom.
+			<br>
+			<!--IBF.ATTACHMENT_386726-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: LBANDI  2009. június 15. 18:28</h4>
+			<p>Lehet, hogy nem jó helyen teszem fel a kérdésemet. Van kettő switch, ezeket szeretném összekötni, a dilemmám az, hogy egyenes vagy X UTP kell&#8211;e hozzá.
+			<br>
+			<!--IBF.ATTACHMENT_392405-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. június 15. 18:40</h4>
+			<p>Ha támogatják az auto MDI/MDI-X funkciót, akkor mindegy. Egyéb esetben crossover.
+			<br>
+			<!--IBF.ATTACHMENT_392406-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: LBANDI  2009. június 15. 18:44</h4>
+			<p>Kösz a gyors választ.
+			<br>
+			<!--IBF.ATTACHMENT_392407-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Zsoc@m  2009. június 25. 12:05</h4>
+			<p>Sziasztok!<br>Lehet lényeges teljesítménybeli különbség cat5e és cat6 kábelek között?<br>(Gigabites switcheken és gépeken.)
+			<br>
+			<!--IBF.ATTACHMENT_393668-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2009. június 25. 12:08</h4>
+			<p>Az a kábel hosszától függ. Rövid távon (10-20m) nem nagyon, felette már igen.
+			<br>
+			<!--IBF.ATTACHMENT_393669-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Zsoc@m  2009. június 25. 12:13</h4>
+			<p><i>OK, köszi szépen.</i><br><br>Mégegy kérdés...<br><br>MTU?<br><br>Mire való és miért jó ha 1500-ről 1492-re állítom (NAS miatt)?
+			<br>
+			<!--IBF.ATTACHMENT_393670-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. június 25. 12:34</h4>
+			<p>Az MTU a legnagyobb méretű csomag, ami egyszerre mozoghat a hálózaton. Nem fogsz észrevenni különbséget.
+			<br>
+			<!--IBF.ATTACHMENT_393678-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. június 25. 15:43</h4>
+			<p>1500 gyakorlatilag megegyezik az 1492-vel. A különbség a hibatűrésre megy el.
+			<br>
+			<!--IBF.ATTACHMENT_393712-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Doc  2009. július 14. 8:59</h4>
+			<p>Hali!<br><br>A minap egy "bizonytalan" forrásból származó program a 255.255.255.255 IP-vel akart kommunikálni, amit megfogott a comodo. Ez veszélyes lehet? Tudtommal ez a cím annyit tesz, hogy a hálózat összes címére elküldi a csomagokat (broadcast).
+			<br>
+			<!--IBF.ATTACHMENT_395732-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: ml85ml  2009. július 15. 8:02</h4>
+			<p>Remélem jó helyre írok <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/blush.gif" style="vertical-align:middle" emoid=":upsz:" border="0" alt="blush.gif"> <br><br>A futár mehozta a routerem egy tp link wr 941nd tipusú (egy laptop, telefon e51, asztali pc közt osztom szét a netet). De mivel van benne Qos ezért azt szeretném beállítani.<br>Ugye létre kell hoznom egy új qos rules list-et.<br>ip range,  port range, protocoll (tcp udp) ,engres, indgres bandiwth &lt;&lt; ezek mit jelentenek?<br>Speedtesten  megmértem a sebességet a laptopon meg az asztali pc-m közt. Mindkettő kábellel csatlakozik a routerhez. nah most az ip cím ugyanaz volt. ez normális jelenség? invitel adsl-em van. <br>Wifi-n keresztül csatlakozok hozzá egy  nokia e 51 telefonnal. Le tudom korlátozni a wifi-t hogy csak evvel az  1 telefonnal tudjak wifizni? Ugy gondolom hogy mac cím szűrés alapján menne.<br>Továbbá létezik olyan beállítás hogy a wifit egy időben csak egy eszköz jelen esetben az e51 használja? ha nem használja az e51 akkor ki kapcsolodjon a wifi?<br>honnan tudhatom meg e 51 telom mac címét?<br>Ugye van a routerbe tűzfal. Ez milyen hatásfokú? telepítsék mellé szoftvereset is külön külön a gépkre vagy elég a router is? (szoktam netbankolni).
+			<br>
+			<!--IBF.ATTACHMENT_395834-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Zsoc@m  2009. július 15. 8:10</h4>
+			<p>Akkor sorba:<br>QoS-al várjunk meg másokat,. abban nem tudok segíteni.<br>Speedtestnél a külső IPd mutatja, ami ugyanaz, minden routerre kötött gépnél. Csak a belső IP különbözik.<br>Le lehet korlátozni, MAC alapján, én is úgy használom, de azt nemtudom, hogy kilehetne-e kapcsolni a wifit - akkor hogy fog kapcsolódni a mobilod?<br>Google első találat: MAC Address Wi-Fi: *#62209526#<br>Jó a routeres tűzfal, de a gépbe mindenképp kell!
+			<br>
+			<!--IBF.ATTACHMENT_395835-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: ml85ml  2009. július 15. 11:27</h4>
+			<p>A wifi-t csak akkor akarom használni mikor otthon vagyok (reggel és este). Napközben akarnám kikapcsolni fő a biztonság elven. e 51 mac címét megtaláltam. Köszi!<br>Belső ipcímet hol lelem? Parancssorba futtatás beírom az ifconfig-ot?
+			<br>
+			<!--IBF.ATTACHMENT_395885-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Zsoc@m  2009. július 15. 11:29</h4>
+			<p>Igen, pl úgy megtudod.<br><br>Ez a kikapcsolás megoldható, legalábbis az én routeremben (Linksys WRT54GL)<br>Nézd meg a routered kézikönyvében, hátha be lehet állítani.<br>
+			<br>
+			<!--IBF.ATTACHMENT_395886-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. július 15. 11:30</h4>
+			<p><!--quoteo(post=395885:date=2009. július 15. 12&#58;27:name=ml85ml)--></p><div class="quotetop">IDÉZET(ml85ml @ 2009. július 15. 12:27) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=395885"><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Belső ipcímet hol lelem? Parancssorba futtatás beírom az ifconfig-ot?<!--QuoteEnd--></div><!--QuoteEEnd-->Igen, vagy a router webes felületén a DHCP client list-nél.
+			<br>
+			<!--IBF.ATTACHMENT_395887-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: ml85ml  2009. július 23. 9:30</h4>
+			<p>A routerem tud ip cím alapján sávszélességet korlátozni. Azt honnan tudhatom meg hogy előreláthatólag melyik kliensnek milyen ip címet ad? Függ attól hogy wlan-on vagy melyik WAN port-ba dugtam utp kábelt?Invitel adsl-em van.
+			<br>
+			<!--IBF.ATTACHMENT_396644-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. július 23. 9:46</h4>
+			<p>Erre két lehetőséged is van:<br>1. Fix ip címeket adsz meg a hálókártyád TCP/IP beállításainál. Pl.:<br>IP cím: 192.168.1.<b>2-255</b><br>Alhálózati maszk: 255.255.255.0<br>Alapértelmezett átjáró: 192.168.1.1<br><br>2. A router beállításain belül IP címet foglalsz a hálóhártyák MAC címe alapján.<br>A router webes felülete  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/arrow.gif" style="vertical-align:middle" emoid=":nyíl:" border="0" alt="arrow.gif"> DHCP  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/arrow.gif" style="vertical-align:middle" emoid=":nyíl:" border="0" alt="arrow.gif"> Address Reservation<br><br>A hálókártyák MAC címének kiderítésére használható parancsok: <b>ipcinfig /all</b>, <b>getmac /v</b><br><br><!--quoteo--></p><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Függ attól hogy wlan-on vagy melyik WAN port-ba dugtam utp kábelt?<!--QuoteEnd--></div><!--QuoteEEnd-->Nem.
+			<br>
+			<!--IBF.ATTACHMENT_396647-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: ml85ml  2009. július 23. 10:25</h4>
+			<p>Köszi, hétvégén megnézem!
+			<br>
+			<!--IBF.ATTACHMENT_396650-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. július 23. 11:33</h4>
+			<p><!--quoteo(post=396644:date=2009. július 23. 10&#58;30:name=ml85ml)--></p><div class="quotetop">IDÉZET(ml85ml @ 2009. július 23. 10:30) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=396644"><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Függ attól hogy wlan-on vagy melyik WAN port-ba dugtam utp kábelt?<!--QuoteEnd--></div><!--QuoteEEnd--><br>A WAN-t tartsd meg az ADSL-nek. <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/roll.gif" style="vertical-align:middle" emoid=":hááát:" border="0" alt="roll.gif">
+			<br>
+			<!--IBF.ATTACHMENT_396655-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: sonykor  2009. október 25. 21:11</h4>
+			<p><span>Nagyon egyszerűen valaki meg tudná fogalmazni mit jelent a PPPoE? Leírásokat próbáltam olvasni (<a class="linkclass" href="http://technet.microsoft.com/hu-hu/library/cc776845%28WS.10%29.aspx">http://technet.microsoft.com/hu-hu/library/cc776845%28WS.10%29.aspx</a>) de nem értem. Nincs szükségem rá, csak kíváncsiságból kérdezem.</span><br><br>Köszi a választ.
+			<br>
+			<!--IBF.ATTACHMENT_404438-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. október 25. 22:32</h4>
+			<p>A PPP (Point-to-Point protocol) közvetlen hozzáférést biztosít két hálózati pont között. Csomag alapú, de nem kell bajlódni semmivel, virtuálisan közvetlen a kapcsolat a szolgáltatóval. Nem helyhez, hanem felhasználóhoz kötött. Az oE (over ethernet) a hálózat típusára utal.
+			<br>
+			<!--IBF.ATTACHMENT_404446-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: sonykor  2009. október 25. 23:56</h4>
+			<p><!--quoteo(post=404446:date=2009. október 25. 22&#58;32:name=KGigi)--></p><div class="quotetop">IDÉZET(KGigi @ 2009. október 25. 22:32) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=404446"><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Csomag alapú<!--QuoteEnd--></div><!--QuoteEEnd--><br>Létezik nem csomag alapú internet protokoll is? (Lehet, hogy nagyon hülye kérdés)  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/blush.gif" style="vertical-align:middle" emoid=":upsz:" border="0" alt="blush.gif">
+			<br>
+			<!--IBF.ATTACHMENT_404455-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. október 26. 0:08</h4>
+			<p>Én nem tudok róla, de ez nem jelent semmit. <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif">
+			<br>
+			<!--IBF.ATTACHMENT_404456-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: sonykor  2009. november 3. 11:12</h4>
+			<p><!--quoteo(post=404446:date=2009. október 25. 22&#58;32:name=KGigi)--></p><div class="quotetop">IDÉZET(KGigi @ 2009. október 25. 22:32) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=404446"><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Értelmező szótár_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Az oE (over ethernet) a hálózat típusára utal.<!--QuoteEnd--></div><!--QuoteEEnd--><br>Az ethernet milyen típusú hálózatot jelent?
+			<br>
+			<!--IBF.ATTACHMENT_405263-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2009. november 3. 16:18</h4>
+			<p><span><a class="linkclass" href="http://hu.wikipedia.org/wiki/Ethernet">http://hu.wikipedia.org/wiki/Ethernet</a> jobb nincs.
+			</span><br>
+			<!--IBF.ATTACHMENT_405276-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: tomosvary  2010. július 30. 8:35</h4>
+			<p>Sziasztok!<br><br>UPC Fibertnet 120-as  netem van. Azt szeretném megosztani, viszont már van olyan routerem, ami viszont nem rendelkezik gigabites LAN porttal. (Nem szeretném kicserélni). Van egy PC-m és egy laptopom. A laptopot az asszony használja. Arra gondoltam, hogy egy gigabites switch-csel meg lehetne osztani a router előtt a netet, és a routert rádugva használható lenne a laptop a lakásban. A gépben van gigabites port, így a switch-csel használható lenne az is.<br><br>Szerintetek ez így megoldható?
+			<br>
+			<!--IBF.ATTACHMENT_422644-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. július 30. 9:20</h4>
+			<p>Nem.
+			<br>
+			<!--IBF.ATTACHMENT_422645-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. július 30. 10:33</h4>
+			<p>Nem megoldható. Kell egy router közvetlenül a modemre kötve.
+			<br>
+			<!--IBF.ATTACHMENT_422647-->
+			</p>
+		</div><!--Copyright-->	</div></body><style type="text/css">/*This block of style rules is inserted by AdBlock*/#RadAd_Skyscraper,#bbccom_leaderboard,#center_banner,#footer_adcode,#hbBHeaderSpon,#hiddenHeaderSpon,#navbar_adcode,#rightAds,#rightcolumn_adcode,#top-advertising,#topMPU,#tracker_advertorial,.ad-now,.dfpad,.prWrap,[id^="ad_block"],[id^="adbrite"],[id^="dclkAds"],[id^="ew"][id$="_bannerDiv"],[id^="konaLayer"],a.kLink span[id^="preLoadWrap"].preLoadWrap,a[href^="http://ad."][href*=".doubleclick.net/"],a[href^="http://adserver.adpredictive.com"],div#adxLeaderboard,div#dir_ads_site,div#FFN_Banner_Holder,div#FFN_imBox_Container,div#p360-format-box,div#rhs div#rhs_block table#mbEnd,div#rm_container,div#tads table[align="center"][width="100%"],div#tooltipbox[class^="itxt"],div[class^="dms_ad_IDS"],div[id^="adKontekst_"],div[id^="google_ads_div"],div[id^="kona_"][id$="_wrapper"],div[id^="sponsorads"],div[id^="y5_direct"],iframe.chitikaAdBlock,iframe[id^="dapIfM"],iframe[id^="etarget"][id$="banner"],iframe[name^="AdBrite"],iframe[name^="google_ads_"],img[src^="http://cdn.adnxs.com"],ispan#ab_pointer,object#flashad,object#ve_threesixty_swf[name="ve_threesixty_swf"],table[cellpadding="0"][width="100%"] > * > * > * > div[id^="tpa"],#A9AdsMiddleBoxTop,#A9AdsOutOfStockWidgetTop,#A9AdsServicesWidgetTop,#ADSLOT_1,#ADSLOT_2,#ADSLOT_3,#ADSLOT_4,#AD_CONTROL_22,#ADsmallWrapper,#Ad160x600,#Ad2,#Ad300x250,#Ad3Left,#Ad3Right,#Ad3TextAd,#AdArea,#AdBanner_F1,#AdBar,#AdBar1,#AdContainer,#AdContainerTop,#AdContentModule_F,#AdDetails_GoogleLinksBottom,#AdDetails_InsureWith,#AdFrame4,#AdLeaderboardBottom,#AdLeaderboardTop,#AdMiddle,#AdMobileLink,#AdRectangle,#AdSenseDiv,#AdServer,#AdShowcase_F1,#AdSky23,#AdSkyscraper,#AdSponsor_SF,#AdSubsectionShowcase_F1,#AdTargetControl1_iframe,#AdText,#AdTop,#AdTopLeader,#Ad_Block,#Ad_Center1,#Ad_Right1,#Ad_Top,#Adrectangle,#Ads,#AdsContent,#AdsRight,#AdsWrap,#Ads_BA_CAD,#Ads_BA_CAD2,#Ads_BA_CAD_box,#Ads_BA_SKY,#Ads_CAD,#Ads_Special,#AdvertMPU23b,#AdvertPanel,#Advertorial,#Advertorials,#BannerAdvert,#BigBoxAd,#BodyAd,#BotAd,#Bottom468x60AD,#ButtonAd,#CompanyDetailsNarrowGoogleAdsPresentationControl,#CompanyDetailsWideGoogleAdsPresentationControl,#ContentAd,#ContentAd1,#ContentAd2,#ContentAdPlaceHolder1,#ContentAdPlaceHolder2,#ContentAdXXL,#ContentPolepositionAds_Result,#DivAdEggHeadCafeTopBanner,#FooterAd,#FooterAdContainer,#GoogleAd1,#GoogleAd2,#GoogleAd3,#GoogleAdsPresentationControl,#GoogleAdsense,#Google_Adsense_Main,#HEADERAD,#HOME_TOP_RIGHT_BOXAD,#HeaderAD,#HeaderAdsBlock,#HeaderAdsBlockFront,#HeaderBannerAdSpacer,#HeaderTextAd,#HeroAd,#HomeAd1,#HouseAd,#ID_Ad_Sky,#JobsearchResultsAds,#Journal_Ad_125,#Journal_Ad_300,#KH-contentAd,#LargeRectangleAd,#LeftAd,#LeftAdF1,#LeftAdF2,#LftAd,#LoungeAdsDiv,#LowerContentAd,#MainSponsoredLinks,#Nightly_adContainer,#OverrideAdArea,#PREFOOTER_LEFT_BOXAD,#PREFOOTER_RIGHT_BOXAD,#PageLeaderAd,#RelevantAds,#RgtAd1,#RightAd,#RightBottom300x250AD,#RightNavTopAdSpot,#RightSponsoredAd,#SectionAd300-250,#SectionSponsorAd,#SidebarAdContainer,#SkyAd,#SpecialAds,#SponsoredAd,#SponsoredLinks,#TOP_ADROW,#TOP_RIGHT_BOXAD,#Top468x60AD,#TopAdBox,#TopAdContainer,#TopAdDiv,#TopAdPos,#VM-MPU-adspace,#VM-footer-adspace,#VM-header-adspace,#VM-header-adwrap,#XEadLeaderboard,#XEadSkyscraper,#YahooAdParentContainer,#_ads,#about_adsbottom,#ad-120x600-sidebar,#ad-120x60Div,#ad-160x600,#ad-160x600-sidebar,#ad-250,#ad-250x300,#ad-300,#ad-300x250,#ad-300x250-sidebar,#ad-300x250Div,#ad-300x60-1,#ad-728,#ad-728x90-leaderboard-top,#ad-article,#ad-banner,#ad-banner-1,#ad-block-125,#ad-bottom,#ad-bottom-wrapper,#ad-box-first,#ad-box-second,#ad-boxes,#ad-bs,#ad-buttons,#ad-colB-1,#ad-column,#ad-content,#ad-contentad,#ad-flex-first,#ad-footer,#ad-footprint-160x600,#ad-frame,#ad-front-footer,#ad-front-sponsoredlinks,#ad-halfpage,#ad-horizontal-header,#ad-img,#ad-inner,#ad-label,#ad-leaderboard,#ad-leaderboard-bottom,#ad-leaderboard-container,#ad-leaderboard-spot,#ad-leaderboard-top,#ad-left,#ad-links-content,#ad-list-row,#ad-lrec,#ad-medium,#ad-medium-rectangle,#ad-medrec,#ad-middlethree,#ad-middletwo,#ad-module,#ad-mpu,#ad-mpu1-spot,#ad-mpu2,#ad-mpu2-spot,#ad-north,#ad-one,#ad-placard,#ad-placeholder,#ad-rectangle,#ad-right,#ad-righttop,#ad-row,#ad-side-text,#ad-sidebar,#ad-sky,#ad-skyscraper,#ad-slug-wrapper,#ad-small-banner,#ad-space,#ad-special,#ad-splash,#ad-sponsors,#ad-spot,#ad-squares,#ad-target,#ad-target-Leaderbord,#ad-teaser,#ad-text,#ad-top-banner,#ad-top-text-low,#ad-top-wrap,#ad-tower,#ad-trailerboard-spot,#ad-two,#ad-typ1,#ad-unit,#ad-west,#ad-wrap,#ad-wrap-right,#ad-wrapper1,#ad-yahoo-simple,#ad1006,#ad11,#ad125BL,#ad125BR,#ad125TL,#ad125TR,#ad125x125,#ad160x600,#ad160x600right,#ad1Sp,#ad2,#ad2Sp,#ad300,#ad300-250,#ad300X250,#ad300_x_250,#ad300x100Middle,#ad300x150,#ad300x250,#ad300x250Module,#ad300x60,#ad300x600,#ad300x600_callout,#ad336,#ad336x280,#ad375x85,#ad4,#ad468,#ad468x60,#ad468x60_top,#ad526x250,#ad600,#ad7,#ad728,#ad728Mid,#ad728Top,#ad728Wrapper,#ad728top,#ad728x90_1,#adBadges,#adBanner120x600,#adBanner160x600,#adBanner336x280,#adBanner728,#adBannerTable,#adBannerTop,#adBar,#adBelt,#adBlock125,#adBlocks,#adBox,#adBox350,#adBox390,#adCirc300X200,#adCirc_620_100,#adColumn,#adContainer_1,#adContainer_2,#adContainer_3,#adDiv300,#adDiv728,#adFiller,#adFps,#adFtofrs,#adGallery,#adGroup1,#adHeaderTop,#adIsland,#adL,#adLB,#adLabel,#adLayer,#adLeader,#adLeaderTop,#adLeaderboard,#adMPU,#adMediumRectangle,#adMiddle0Frontpage,#adMiniPremiere,#adP,#adPlaceHolderRight,#adPlacer,#adRight,#adSenseModule,#adSenseWrapper,#adServer_marginal,#adSidebar,#adSidebarSq,#adSky,#adSkyscraper,#adSlider,#adSpace,#adSpace3,#adSpace300_ifrMain,#adSpace4,#adSpace5,#adSpace6,#adSpace7,#adSpace_footer,#adSpace_right,#adSpace_top,#adSpacer,#adSpecial,#adSplotlightEm,#adSpot-Leader,#adSpot-banner,#adSpot-island,#adSpot-mrec1,#adSpot-sponsoredlinks,#adSpot-textbox1,#adSpot-widestrip,#adSpotAdvertorial,#adSpotIsland,#adSpotSponsoredLinks,#adSquare,#adStaticA,#adStrip,#adSuperAd,#adSuperPremiere,#adSuperSkyscraper,#adSuperbanner,#adTableCell,#adTag1,#adTag2,#adText,#adTextLink,#adText_container,#adTile,#adTopContent,#adTopboxright,#adTower,#adUnit,#adZoneTop,#ad_1,#ad_160x160,#ad_160x600,#ad_190x90,#ad_2,#ad_3,#ad_300,#ad_300_250,#ad_300_250_1,#ad_300x250,#ad_300x250_content_column,#ad_300x90,#ad_4,#ad_468_60,#ad_5,#ad_728_foot,#ad_728x90,#ad_728x90_container,#ad_940,#ad_984,#ad_A,#ad_B,#ad_Banner,#ad_C,#ad_C2,#ad_D,#ad_E,#ad_F,#ad_G,#ad_H,#ad_I,#ad_J,#ad_K,#ad_L,#ad_M,#ad_N,#ad_O,#ad_P,#ad_YieldManager-300x250,#ad_anchor,#ad_banner,#ad_banner_top,#ad_bar,#ad_bellow_post,#ad_block_1,#ad_block_2,#ad_bottom,#ad_box,#ad_box_colspan,#ad_box_top,#ad_branding,#ad_bs_area,#ad_buttons,#ad_center_monster,#ad_cont,#ad_container_marginal,#ad_container_side,#ad_container_top,#ad_content_top,#ad_content_wrap,#ad_feature,#ad_firstpost,#ad_footer,#ad_front_three,#ad_fullbanner,#ad_global_header,#ad_haha_1,#ad_haha_4,#ad_halfpage,#ad_head,#ad_header,#ad_holder,#ad_horizontal,#ad_horseshoe_left,#ad_horseshoe_right,#ad_horseshoe_spacer,#ad_horseshoe_top,#ad_hotpots,#ad_in_arti,#ad_island,#ad_label,#ad_large_rectangular,#ad_lastpost,#ad_layer2,#ad_leaderBoard,#ad_leaderboard,#ad_leaderboard728x90,#ad_leaderboard_top,#ad_left,#ad_lrec,#ad_lwr_square,#ad_main,#ad_medium_rectangle,#ad_medium_rectangular,#ad_mediumrectangle,#ad_menu_header,#ad_middle,#ad_most_pop_234x60_req_wrapper,#ad_mpu,#ad_mpu300x250,#ad_mpuav,#ad_mrcontent,#ad_overlay,#ad_play_300,#ad_rect,#ad_rect_body,#ad_rect_bottom,#ad_rectangle,#ad_rectangle_medium,#ad_related_links_div,#ad_related_links_div_program,#ad_replace_div_0,#ad_replace_div_1,#ad_report_leaderboard,#ad_report_rectangle,#ad_right,#ad_right_main,#ad_ros_tower,#ad_rr_1,#ad_sec,#ad_sec_div,#ad_sgd,#ad_sidebar,#ad_sidebar1,#ad_sidebar2,#ad_sidebar3,#ad_skyscraper,#ad_skyscraper160x600,#ad_skyscraper_text,#ad_slot_leaderboard,#ad_slot_livesky,#ad_slot_sky_top,#ad_ss,#ad_term_bottom_place,#ad_text,#ad_thread_first_post_content,#ad_top,#ad_top_holder,#ad_tp_banner_1,#ad_tp_banner_2,#ad_unit,#ad_vertical,#ad_wide,#ad_wide_box,#ad_widget,#ad_window,#ad_wrap,#adbForum,#adbanner,#adbig,#adbnr,#adboard,#adbottom,#adbox1,#adbox2,#adclear,#adcode,#adcode1,#adcode2,#adcode3,#adcode4,#adcolumnwrapper,#adcontainer,#adcontainerRight,#adcontainsm,#adcontent,#adcontent1,#adcontrolPushSite,#add_ciao2,#addbottomleft,#addiv-bottom,#addiv-top,#adfooter,#adfooter_728x90,#adframe:not(frameset),#adhead,#adhead_g,#adheader,#adhome,#adiframe1_iframe,#adiframe2_iframe,#adiframe3_iframe,#adimg,#adition_content_ad,#adlabel,#adlabelFooter,#adlayerad,#adleaderboard,#adleft,#adlinks,#adlinkws,#adlrec,#admid,#admiddle3center,#admiddle3left,#adposition,#adposition-C,#adposition-FPMM,#adposition1,#adposition2,#adposition4,#adrectangle,#adrectanglea,#adrectangleb,#adrig,#adright,#adright2,#adrighthome,#ads-468,#ads-area,#ads-block,#ads-bot,#ads-bottom,#ads-col,#ads-dell,#ads-horizontal,#ads-indextext,#ads-leaderboard1,#ads-lrec,#ads-menu,#ads-middle,#ads-prices,#ads-rhs,#ads-right,#ads-sponsored-boxes,#ads-top,#ads-vers7,#ads-wrapper,#ads160left,#ads2,#ads300,#ads300-250,#ads300Bottom,#ads300Top,#ads336x280,#ads7,#ads728bottom,#ads728top,#ads790,#adsDisplay,#adsID,#ads_160,#ads_300,#ads_728,#ads_banner,#ads_belowforumlist,#ads_belownav,#ads_bottom_inner,#ads_bottom_outer,#ads_box,#ads_button,#ads_catDiv,#ads_footer,#ads_html1,#ads_html2,#ads_medrect,#ads_notice,#ads_right,#ads_right_sidebar,#ads_sidebar_roadblock,#ads_space,#ads_top,#ads_watch_top_square,#ads_zone27,#adsbottom,#adsbox,#adscolumn,#adsd_contentad_r1,#adsd_contentad_r2,#adsd_contentad_r3,#adsd_topbanner,#adsd_txt_sky,#adsdiv,#adsense-2,#adsense-header,#adsense-tag,#adsense-text,#adsenseOne,#adsenseWrap,#adsense_article_left,#adsense_box,#adsense_leaderboard,#adsense_overlay,#adsense_placeholder_2,#adsenseheader,#adsensetopplay,#adsensewidget-3,#adserv,#adsimage,#adsky,#adskyscraper,#adslot,#adsonar,#adspace-300x250,#adspace300x250,#adspaceBox,#adspaceBox300,#adspace_header,#adspot,#adspot-1,#adspot-149x170,#adspot-1x4,#adspot-2,#adspot-295x60,#adspot-2a,#adspot-2b,#adspot-300x250-pos-1,#adspot-300x250-pos-2,#adspot-468x60-pos-2,#adspot-a,#adspot300x250,#adspot_220x90,#adspot_300x250,#adspot_468x60,#adspot_728x90,#adsright,#adst,#adstop,#adt,#adtab,#adtag_right_side,#adtaily-widget-light,#adtech_googleslot_03c,#adtech_takeover,#adtop,#adtophp,#adtxt,#adv-masthead,#adv_google_300,#adv_google_728,#adv_top_banner_wrapper,#adver1,#adver2,#adver3,#adver4,#adver5,#adver6,#adver7,#advert-1,#advert-120,#advert-boomer,#advert-display,#advert-header,#advert-leaderboard,#advert-links-bottom,#advert-skyscraper,#advert-top,#advert1,#advertBanner,#advertContainer,#advertDB,#advertRight,#advert_125x125,#advert_250x250,#advert_box,#advert_home01,#advert_leaderboard,#advert_lrec_format,#advert_mid,#advert_mpu,#advert_right_skyscraper,#advertbox,#advertbox2,#advertbox3,#advertbox4,#adverthome,#advertise-here-sidebar,#advertise-now,#advertise1,#advertiseHere,#advertisement160x600,#advertisement728x90,#advertisementLigatus,#advertisementPrio2,#advertisementsarticle,#advertiser-container,#advertiserLinks,#advertisers,#advertising-banner,#advertising-caption,#advertising-container,#advertising-control,#advertising-skyscraper,#advertising2,#advertisingModule160x600,#advertisingModule728x90,#advertisment,#advertismentElementInUniversalbox,#advertorial,#adverts-top-container,#adverts-top-left,#adverts-top-middle,#adverts-top-right,#advertsingle,#advt,#adwhitepaperwidget,#adwin_rec,#adwith,#adwords-4-container,#adxBigAd,#adxMiddle5,#adxSponLink,#adxSponLinkA,#adxtop,#adz,#adzbanner,#adzerk,#adzerk1,#adzoneBANNER,#affinityBannerAd,#agi-ad300x250,#agi-ad300x250overlay,#agi-sponsored,#alert_ads,#anchorAd,#annoying_ad,#ap_adframe,#apiBackgroundAd,#apiTopAdWrap,#apmNADiv,#araHealthSponsorAd,#article-ad-container,#article-box-ad,#articleAdReplacement,#articleLeftAdColumn,#articleSideAd,#article_ad,#article_ad_container,#article_box_ad,#asinglead,#atlasAdDivGame,#awds-nt1-ad,#banner-300x250,#banner-ad,#banner-ad-container,#banner-ads,#banner250x250,#banner468x60,#banner728x90,#bannerAd,#bannerAdTop,#bannerAd_ctr,#banner_ad,#banner_ad_footer,#banner_ad_module,#banner_admicro,#banner_ads,#banner_content_ad,#banner_topad,#bannerad2,#baseAdvertising,#bbccom_mpu,#bbccom_storyprintsponsorship,#bbo_ad1,#bg-footer-ads,#bg-footer-ads2,#bg_YieldManager-300x250,#bigAd,#bigBoxAd,#bigad300outer,#bigadbox,#bigadframe,#bigadspot,#billboard_ad,#block-ad_cube-1,#block-openads-1,#block-openads-3,#block-openads-4,#block-openads-5,#block-thewrap_ads_250x300-0,#blog-ad,#blog_ad_content,#blog_ad_opa,#blox-big-ad,#blox-big-ad-bottom,#blox-big-ad-top,#blox-halfpage-ad,#blox-tile-ad,#blox-tower-ad,#body_728_ad,#book-ad,#botad,#bott_ad2,#bott_ad2_300,#bottom-ad,#bottom-ad-container,#bottom-ads,#bottomAd,#bottomAdCCBucket,#bottomAdContainer,#bottomAdSense,#bottomAdSenseDiv,#bottomAds,#bottomRightAd,#bottomRightAdSpace,#bottom_ad,#bottom_ad_area,#bottom_ads,#bottom_banner_ad,#bottom_overture,#bottom_sponsor_ads,#bottom_sponsored_links,#bottom_text_ad,#bottomad,#bottomads,#bottomadsense,#bottomadwrapper,#bottomleaderboardad,#box-content-ad,#box-googleadsense-1,#box-googleadsense-r,#box1ad,#boxAd300,#boxAdContainer,#box_ad,#box_advertisment,#box_mod_googleadsense,#boxad1,#boxad2,#boxad3,#boxad4,#boxad5,#bpAd,#bps-header-ad-container,#btr_horiz_ad,#burn_header_ad,#button-ads-horizontal,#button-ads-vertical,#buttonAdWrapper1,#buttonAdWrapper2,#buttonAds,#buttonAdsContainer,#button_ad_container,#button_ad_wrap,#buttonad,#buy-sell-ads,#c4ad-Middle1,#c_ad_sb,#c_ad_sky,#caAdLarger,#catad,#category-ad,#cellAd,#channel_ad,#channel_ads,#ciHomeRHSAdslot,#circ_ad,#cnnRR336ad,#cnnTopAd,#cnnVPAd,#col3_advertising,#colAd,#colRightAd,#collapseobj_adsection,#column4-google-ads,#comments-ad-container,#commercial_ads,#common_right_ad_wrapper,#common_right_lower_ad_wrapper,#common_right_lower_adspace,#common_right_lower_player_ad_wrapper,#common_right_lower_player_adspace,#common_right_player_ad_wrapper,#common_right_player_adspace,#common_right_right_adspace,#common_top_adspace,#companion-ad,#companionAdDiv,#containerLocalAds,#containerLocalAdsInner,#containerMrecAd,#containerSqAd,#content-ad-header,#content-header-ad,#contentBoxad,#contentTopAds2,#content_ad_square,#content_ad_top,#content_ads_content,#content_box_300body_sponsoredoffers,#content_box_adright300_google,#content_mpu,#contentad { visibility:hidden !important; display:none !important; } #contentad_imtext,#contentad_right,#contentads,#contentinlineAd,#contextad,#contextual-ads,#contextual-ads-block,#contextualad,#coverads,#ctl00_Adspace_Top_Height,#ctl00_BottomAd,#ctl00_ContentMain_BanManAd468_BanManAd,#ctl00_ContentRightColumn_RightColumn_Ad1_BanManAd,#ctl00_ContentRightColumn_RightColumn_Ad2_BanManAd,#ctl00_ContentRightColumn_RightColumn_PremiumAd1_ucBanMan_BanManAd,#ctl00_LHTowerAd,#ctl00_LeftHandAd,#ctl00_MasterHolder_IBanner_adHolder,#ctl00_TopAd,#ctl00_TowerAd,#ctl00_VBanner_adHolder,#ctl00__Content__RepeaterReplies_ctl03__AdReply,#ctl00_abot_bb,#ctl00_adFooter,#ctl00_advert_LargeMPU_div_AdPlaceHolder,#ctl00_atop_bt,#ctl00_cphMain_hlAd1,#ctl00_cphMain_hlAd2,#ctl00_cphMain_hlAd3,#ctl00_ctl00_MainPlaceHolder_itvAdSkyscraper,#ctl00_ctl00_ctl00_Main_Main_PlaceHolderGoogleTopBanner_MPTopBannerAd,#ctl00_ctl00_ctl00_Main_Main_SideBar_MPSideAd,#ctl00_dlTilesAds,#ctl00_m_skinTracker_m_adLBL,#ctl00_phCrackerMain_ucAffiliateAdvertDisplayMiddle_pnlAffiliateAdvert,#ctl00_phCrackerMain_ucAffiliateAdvertDisplayRight_pnlAffiliateAdvert,#ctrlsponsored,#cubeAd,#cube_ads,#cube_ads_inner,#cubead,#cubead-2,#dItemBox_ads,#dart_160x600,#dc-display-right-ad-1,#dcol-sponsored,#defer-adright,#detail_page_vid_topads,#div-gpt-ad-1,#div-gpt-ad-2,#div-gpt-ad-3,#div-gpt-ad-4,#divAdBox,#divAdWrapper,#divDoubleAd,#divLeftAd12,#divLeftRecAd,#divMenuAds,#divWNAdHeader,#divWrapper_Ad,#div_ad_leaderboard,#div_video_ads,#dlads,#dni-header-ad,#dnn_ad_banner,#download_ads,#ds-mpu,#editorsmpu,#embedded-ad,#evotopTen_advert,#ex-ligatus,#exads,#featured-advertisements,#featuredAdContainer2,#featuredAds,#feed_links_ad_container,#first-300-ad,#first-adlayer,#first_ad_unit,#firstad,#fl_hdrAd,#flash_ads_1,#flexiad,#footad,#footer-ad,#footer-advert,#footer-adverts,#footer-sponsored,#footerAd,#footerAdDiv,#footerAds,#footerAdvertisement,#footerAdverts,#footer_ad_01,#footer_ad_block,#footer_ad_container,#footer_ad_modules,#footer_adspace,#footer_text_ad,#footerad,#footerads,#footeradsbox,#forum_top_ad,#fpv_companionad,#fr_ad_center,#frame_admain,#frnAdSky,#frnBannerAd,#frnContentAd,#from_our_sponsors,#front_advert,#front_mpu,#ft-ad,#ft-ad-1,#ft-ad-container,#ft_mpu,#fusionad,#fw-advertisement,#g_ad,#g_adsense,#ga_300x250,#gad,#gad2,#gad3,#gad5,#galleries-tower-ad,#gallery-ad-m0,#gallery_ads,#game-info-ad,#gasense,#gglads,#global_header_ad_area,#gmi-ResourcePageAd,#gmi-ResourcePageLowerAd,#goads,#gooadtop,#google-ad,#google-ad-art,#google-ad-table-right,#google-ad-tower,#google-ads,#google-ads-bottom,#google-ads-header,#google-ads-left-side,#google-adsense-mpusize,#googleAd,#googleAds,#googleAdsSml,#googleAdsense,#googleAdsenseBanner,#googleAdsenseBannerBlog,#googleAdwordsModule,#googleAfcContainer,#googleSearchAds,#googleShoppingAdsRight,#googleShoppingAdsTop,#googleSubAds,#google_ad,#google_ad_container,#google_ad_inline,#google_ad_test,#google_ads,#google_ads_aCol,#google_ads_frame1,#google_ads_frame1_anchor,#google_ads_frame2,#google_ads_frame2_anchor,#google_ads_frame3,#google_ads_frame3_anchor,#google_ads_test,#google_ads_top,#google_adsense_home_468x60_1,#googlead2,#googleadbox,#googleads,#googleadsense,#googlesponsor,#gpt-ad-halfpage,#gpt-ad-rectangle1,#gpt-ad-rectangle2,#gpt-ad-skyscraper,#gpt-ad-story_rectangle3,#grid_ad,#gsyadrectangleload,#gsyadrightload,#gsyadtop,#gsyadtopload,#gtopadvts,#half-page-ad,#halfPageAd,#halfe-page-ad-box,#hd-ads,#hd-banner-ad,#hdtv_ad_ss,#headAd,#head_advert,#headad,#header-ad,#header-ad-rectangle-container,#header-ads,#header-adspace,#header-advert,#header-advertisement,#header-advertising,#header-adverts,#headerAd,#headerAdBackground,#headerAdContainer,#headerAdWrap,#headerAds,#headerAdsWrapper,#headerTopAd,#header_ad_728_90,#header_ad_container,#header_adcode,#header_ads,#header_advertisement_top,#header_leaderboard_ad_container,#header_publicidad,#headerad,#headeradbox,#headerads,#headeradsbox,#headeradwrap,#headline_ad,#headlinesAdBlock,#hiddenadAC,#hideads,#hl-sponsored-results,#hly_ad_side_bar_tower_left,#home-rectangle-ad,#homeTopRightAd,#home_ad,#home_bottom_ad,#home_contentad,#home_feature_ad,#home_mpu,#home_spensoredlinks,#homepage-ad,#homepageAdsTop,#homepageFooterAd,#homepage_right_ad,#homepage_right_ad_container,#homepage_top_ads,#hometop_234x60ad,#hor_ad,#horizontal-banner-ad,#horizontal_ad,#horizontal_ad_top,#horizontalads,#houseAd,#hp-header-ad,#hp-right-ad,#hp-store-ad,#hpV2_300x250Ad,#hpV2_googAds,#icePage_SearchLinks_AdRightDiv,#icePage_SearchLinks_DownloadToolbarAdRightDiv,#icePage_SearchResults_ads0_SponsoredLink,#icePage_SearchResults_ads1_SponsoredLink,#icePage_SearchResults_ads2_SponsoredLink,#icePage_SearchResults_ads3_SponsoredLink,#icePage_SearchResults_ads4_SponsoredLink,#imu_ad_module,#in_serp_ad,#inadspace,#indexad,#inline-story-ad,#inlinead,#inlinegoogleads,#inlist-ad-block,#inner-advert-row,#innerpage-ad,#inside-page-ad,#insider_ad_wrapper,#instoryad,#instoryadtext,#instoryadwrap,#int-ad,#interstitial_ad_wrapper,#islandAd,#j_ad,#ji_medShowAdBox,#jmp-ad-buttons,#joead,#joead2,#ka_adRightSkyscraperWide,#kdz_ad1,#kdz_ad2,#landing-adserver,#largead,#lateAd,#layerAds_layerDiv,#layerTLDADSERV,#lb-sponsor-left,#lb-sponsor-right,#leader-board-ad,#leader-sponsor,#leaderAd,#leaderAdContainer,#leader_board_ad,#leaderad,#leaderad_section,#leaderboard-ad,#leaderboard-bottom-ad,#leaderboard_ad,#left-ad-skin,#left-lower-adverts,#left-lower-adverts-container,#leftAdContainer,#leftAd_rdr,#leftAdvert,#leftSectionAd300-100,#left_ad,#left_adspace,#leftad,#leftads,#leftcolAd,#lg-banner-ad,#ligatus,#linkAds,#linkads,#live-ad,#logoAd,#longAdSpace,#lowerAdvertisementImg,#lowerads,#lowerthirdad,#lowertop-adverts,#lowertop-adverts-container,#lpAdPanel,#lrecad,#lsadvert-left_menu_1,#lsadvert-left_menu_2,#lsadvert-top,#mBannerAd,#main-ad,#main-ad160x600,#main-ad160x600-img,#main-ad728x90,#main-bottom-ad,#mainAdUnit,#mainAdvert,#main_ad,#main_rec_ad,#main_top_ad_container,#marketing-promo,#mastAd,#mastAdvert,#mastad,#mastercardAd,#masthead_ad,#masthead_topad,#medRecAd,#media_ad,#mediaplayer_adburner,#mediumAdvertisement,#medrectad,#menuAds,#mi_story_assets_ad,#mid-ad300x250,#mid-table-ad,#midRightTextAds,#mid_ad_div,#mid_ad_title,#mid_mpu,#midadd,#midadspace,#middle-ad,#middlead,#middleads,#midrect_ad,#midstrip_ad,#mini-ad,#mochila-column-right-ad-300x250,#mochila-column-right-ad-300x250-1,#module-google_ads,#module_ad,#module_box_ad,#module_sky_scraper,#monsterAd,#moogleAd,#most_popular_ad,#motionAd,#mpu,#mpu-advert,#mpu300250,#mpuAd,#mpuDiv,#mpuSlot,#mpuWrapper,#mpuWrapperAd,#mpu_banner,#mpu_holder,#mpu_text_ad,#mpuad,#mr_banner_topad,#mrecAdContainer,#msAds,#ms_ad,#msad,#multiLinkAdContainer,#multi_ad,#myads_HeaderButton,#n_sponsor_ads,#namecom_ad_hosting_main,#narrow_ad_unit,#natadad300x250,#national_microlink_ads,#nationalad,#navi_banner_ad_780,#nba160PromoAd,#nba300Ad,#nbaHouseAnd600Ad,#nbaLeft600Ad,#nbaMidAds,#nbaVid300Ad,#new_topad,#newads,#ng_rtcol_ad,#noresults_ad_container,#noresultsads,#northad,#ns_ad3,#oanda_ads,#onespot-ads,#online_ad,#p-googleadsense,#page-header-ad,#page-top-ad,#pageAds,#pageAdsDiv,#page_content_top_ad,#pagelet_adbox,#pagelet_netego_ads,#pagelet_search_ads2,#panelAd,#pb_report_ad,#pcworldAdBottom,#pcworldAdTop,#pinball_ad,#player-below-advert,#player_ad,#player_ads,#pod-ad-video-page,#populate_ad_bottom,#populate_ad_left,#portlet-advertisement-left,#portlet-advertisement-right,#post-promo-ad,#post5_adbox,#post_ad,#premium_ad,#priceGrabberAd,#prime-ad-space,#print_ads,#product-adsense,#promoAds,#ps-vertical-ads,#pub468x60,#publicidad,#pushdown_ad,#qm-ad-big-box,#qm-ad-sky,#qm-dvdad,#r1SoftAd,#rail_ad1,#rail_ad2,#realEstateAds,#rectAd,#rect_ad,#rectangle-ad,#rectangle_ad,#refine-300-ad,#region-node-advert,#region-top-ad,#rh-ad-container,#rh_tower_ad,#rhapsodyAd,#rhs_ads,#rhsadvert,#right-ad,#right-ad-skin,#right-ad-title,#right-ads-3,#right-box-ad,#right-featured-ad,#right-mpu-1-ad-container,#right-uppder-adverts,#right-uppder-adverts-container,#rightAd,#rightAd300x250,#rightAdBar,#rightAdColumn,#rightAd_rdr,#rightAdsDiv,#rightColAd,#rightColumnMpuAd,#rightColumnSkyAd,#rightTopSponsor,#right_ad_wrapper,#right_ads,#right_advertisement,#right_advertising,#right_column_ad_container,#right_column_ads,#right_column_internal_ad_container,#right_column_top_ad_unit,#rightad,#rightadContainer,#rightadvertbar-doubleclickads,#rightbar-ad,#rightcolumn_300x250ad,#rightside-ads,#rightside_ad,#righttop-adverts,#righttop-adverts-container,#rm_ad_text,#ros_ad,#rotatingads,#row2AdContainer,#rr_MSads,#rt-ad,#rt-ad-top,#rt-ad468,#rtMod_ad,#rtmod_ad,#sAdsBox,#sb-ad-sq,#sb_advert,#sb_sponsors,#search-google-ads,#search-sponsored-links,#search-sponsored-links-top,#searchAdSenseBox,#searchAdSenseBoxAd,#searchAdSkyscraperBox,#search_ads,#search_result_ad,#second-adlayer,#secondBoxAdContainer,#secondrowads,#section-ad-1-728,#section-ad-300-250,#section-ad-4-160,#section-blog-ad,#section-container-ddc_ads,#section-sponsors,#section_advertorial_feature,#servfail-ads,#sew-ad1,#shoppingads,#show-ad,#showAd,#showad,#side-ad,#side-ad-container,#sideAd,#sideAdSub,#sideBarAd,#side_ad,#side_ad_wrapper,#side_ads_by_google,#side_sky_ad,#sidead,#sideads,#sidebar-125x125-ads,#sidebar-125x125-ads-below-index,#sidebar-ad,#sidebar-ad-boxes,#sidebar-ad-space,#sidebar-ad-wrap,#sidebar-ad3,#sidebar2ads,#sidebar_ad,#sidebar_ad_widget,#sidebar_ads_180,#sidebar_sponsoredresult_body,#sidebarad,#sidebaradver_advertistxt,#sideline-ad,#single-mpu,#singlead,#site-leaderboard-ads,#site_top_ad,#sitead,#sky-ad,#skyAd,#skyAdContainer,#skyScrapperAd,#skyWrapperAds,#sky_ad,#sky_advert,#skyads,#skyadwrap,#skyline_ad,#skyscraper-ad,#skyscraperAd,#skyscraperAdContainer,#skyscraper_ad,#skyscraper_advert,#skyscraperad,#slide_ad,#sliderAdHolder,#slideshow_ad_300x250,#sm-banner-ad,#small_ad,#smallerAd,#some-ads,#some-more-ads,#specialadvertisingreport_container,#specials_ads,#speeds_ads,#speeds_ads_fstitem,#speedtest_mrec_ad,#sphereAd,#sponLinkDiv_1,#sponlink,#sponlinks,#sponsAds,#sponsLinks,#spons_left,#sponseredlinks,#sponsor-search,#sponsorAd1,#sponsorAd2,#sponsorAdDiv,#sponsorLinks,#sponsorTextLink,#sponsor_banderole,#sponsor_box,#sponsor_deals,#sponsor_panSponsor,#sponsor_recommendations,#sponsorbar,#sponsorbox,#sponsored-ads,#sponsored-features,#sponsored-links,#sponsored-resources,#sponsored1,#sponsoredBox1,#sponsoredBox2,#sponsoredLinks,#sponsoredList,#sponsoredResults,#sponsoredResultsWide,#sponsoredSiteMainline,#sponsoredSiteSidebar,#sponsored_ads_v4,#sponsored_content,#sponsored_game_row_listing,#sponsored_links,#sponsored_v12,#sponsoredads,#sponsoredlinks,#sponsoredlinks_cntr,#sponsoredlinkslabel,#sponsoredresults_top,#sponsoredwellcontainerbottom,#sponsoredwellcontainertop,#sponsoring_bar,#sponsorlink,#sponsors,#sponsors_top_container,#sponsorshipBadge,#spotlightAds,#spotlightad,#sqAd,#square-sponsors,#squareAd,#squareAdSpace,#squareAds,#square_ad,#start_middle_container_advertisment,#sticky-ad,#stickyBottomAd,#story-90-728-area,#story-ad-a,#story-ad-b,#story-leaderboard-ad,#story-sponsoredlinks,#storyAd,#storyAdWrap,#storyad2,#subpage-ad-right,#subpage-ad-top,#swads,#synch-ad,#systemad_background,#tabAdvertising,#takeoverad,#tblAd,#tbl_googlead,#tcwAd,#td-GblHdrAds,#template_ad_leaderboard,#tertiary_advertising,#text-ad,#text-ads,#text-link-ads,#textAd,#textAds,#text_ad,#text_ads,#text_advert,#textad,#textad3,#the-last-ad-standing,#thefooterad,#themis-ads,#tile-ad,#tmglBannerAd,#toolbarSlideUpAd,#top-ad,#top-ad-container,#top-ad-menu,#top-ads,#top-ads-tabs,#top-advertisement,#top-banner-ad,#top-search-ad-wrapper,#topAd728x90,#topAdBanner,#topAdBox,#topAdContainer,#topAdSenseDiv,#topAdcontainer,#topAds,#topAdsContainer,#topAdvert,#topBannerAdContainer,#topNavLeaderboardAdHolder,#topRightBlockAdSense,#top_ad_area,#top_ad_banner,#top_ad_game,#top_ad_wrapper,#top_ad_zone,#top_ads,#top_advertise,#top_advertising,#top_rectangle_ad,#top_right_ad,#top_wide_ad,#topad_left,#topad_right,#topadbar,#topadblock,#topaddwide,#topadsense,#topadspace,#topadzone,#topbanner_ad,#topbar-ad,#topcustomad,#topleaderboardad,#toprightAdvert,#toprightad,#topsponsored,#toptextad,#tour300Ad,#tourSponsoredLinksContainer,#towerad,#ts-ad_module,#ttp_ad_slot1,#ttp_ad_slot2,#twogamesAd,#txt_link_ads,#undergameAd,#upperAdvertisementImg,#upperMpu,#upperad,#urban_contentad_1,#urban_contentad_2,#urban_contentad_article,#v_ad,#vert_ad,#vert_ad_placeholder,#vertical_ad,#vertical_ads,#videoAd,#video_cnv_ad,#video_overlay_ad,#videoadlogo,#viewportAds,#viewvid_ad300x250,#walltopad,#weblink_ads_container,#welcomeAdsContainer,#welcome_ad_mrec,#welcome_advertisement,#wf_ContentAd,#wf_FrontSingleAd,#wf_SingleAd,#wf_bottomContentAd,#wgtAd,#whatsnews_top_ad,#whitepaper-ad,#whoisRightAdContainer,#wide_ad_unit_top,#widget_advertisement,#wrapAdRight,#wrapAdTop,#wrapperAdsTopLeft,#wrapperAdsTopRight,#y-ad-units,#y708-ad-expedia,#y708-ad-lrec,#y708-ad-partners,#y708-ad-ysm,#y708-advertorial-marketplace,#yahoo-ads,#yahoo-sponsors,#yahooSponsored,#yahoo_ads,#yahoo_ads_2010,#yahoo_text_ad,#yahooad-tbl,#yan-sponsored,#yatadsky,#ybf-ads,#yfi_fp_ad_mort,#yfi_fp_ad_nns,#yfi_pf_ad_mort,#ygrp-sponsored-links,#ymap_adbanner,#yn-gmy-ad-lrec,#yreSponsoredLinks,#ysm_ad_iframe,#zoneAdserverMrec,#zoneAdserverSuper,.ADBAR,.ADPod,.AD_ALBUM_ITEMLIST,.AD_MOVIE_ITEM,.AD_MOVIE_ITEMLIST,.AD_MOVIE_ITEMROW,.Ad-MPU,.Ad1,.Ad120x600,.Ad160x600,.Ad160x600left,.Ad160x600right,.Ad2,.Ad247x90,.Ad300x,.Ad300x250,.Ad300x250L,.Ad728x90,.AdBorder,.AdBox7,.AdContainerBox308,.AdHeader,.AdHere,.AdMedium,.AdPlaceHolder,.AdRingtone,.AdSenseLeft,.AdSlot,.AdSpace,.AdTextSmallFont,.AdUnit,.AdUnit300,.Ad_C,.Ad_D_Wrapper,.Ad_E_Wrapper,.Ad_Right,.AdsBoxBottom,.AdsBoxSection,.AdsBoxTop,.AdsLinks1,.AdsLinks2,.AdsRec,.AdvertMidPage,.AdvertiseWithUs,.AdvertisementTextTag,.ArticleAd,.ArticleInlineAd,.BannerAd,.BigBoxAd,.BlockAd,.BottomAdContainer,.BottomAffiliate,.BoxAd,.CG_adkit_leaderboard,.CG_details_ad_dropzone,.CWReviewsProdInfoAd,.ComAread,.CommentAd,.ContentAd,.ContentAds,.DAWRadvertisement,.DeptAd,.DisplayAd,.FT_Ad,.FlatAds,.GOOGLE_AD,.GoogleAd,.GoogleAdSenseBottomModule,.GoogleAdSenseRightModule,.HPG_Ad_B,.HPNewAdsBannerDiv,.HPRoundedAd,.HomeContentAd,.IABAdSpace,.IndexRightAd,.LazyLoadAd,.LeftAd,.LeftButtonAdSlot,.LeftTowerAd,.M2Advertisement,.MD_adZone,.MOS-ad-hack,.MPU,.MPUHolder,.MPUTitleWrapperClass,.MREC_ads,.MiddleAd,.MiddleAdContainer,.NewsAds,.OAS,.OpaqueAdBanner,.OpenXad,.PU_DoubleClickAdsContent,.Post5ad,.Post9ad,.RBboxAd,.RectangleAd,.RelatedAds,.Right300x250AD,.RightAd1,.RightAdvertiseArea,.RightGoogleAFC,.RightRailTop300x250Ad,.RightSponsoredAdTitle,.RightTowerAd,.STR_AdBlock,.SideAdCol,.SidebarAd,.SidebarAdvert,.SitesGoogleAdsModule,.SkyAdContainer,.SponsorCFrame,.SponsoredAdTitle,.SponsoredContent,.SponsoredLinkItemTD,.SponsoredLinks,.SponsoredLinksGrayBox,.SponsoredLinksModule,.SponsoredLinksPadding,.SponsorshipText,.SquareAd,.StandardAdLeft,.StandardAdRight,.TRU-onsite-ads-leaderboard,.TextAd,.TheEagleGoogleAdSense300x250,.TopAd,.TopAdContainer,.TopAdL,.TopAdR,.TopBannerAd,.UIWashFrame_SidebarAds,.UnderAd,.VerticalAd,.Video-Ad,.VideoAd,.WidgetAdvertiser,.a160x600,.a728x90,.ad-120x600,.ad-160,.ad-160x600,.ad-250,.ad-300,.ad-300-block,.ad-300-blog,.ad-300x100,.ad-300x250,.ad-300x250-right0,.ad-350,.ad-355x75,.ad-600,.ad-635x40,.ad-728,.ad-728x90,.ad-728x90-1,.ad-728x90_forum,.ad-90x600,.ad-above-header,.ad-adlink-bottom,.ad-adlink-side,.ad-area,.ad-background,.ad-banner,.ad-bigsize,.ad-block,.ad-blog2biz,.ad-body { visibility:hidden !important; display:none !important; } .ad-bottom,.ad-break,.ad-btn,.ad-btn-heading,.ad-cell,.ad-container-300x250,.ad-container-728x90,.ad-context,.ad-disclaimer,.ad-div,.ad-enabled,.ad-feedback,.ad-filler,.ad-flex,.ad-footer,.ad-footer-leaderboard,.ad-google,.ad-graphic-large,.ad-gray,.ad-hdr,.ad-head,.ad-header,.ad-heading,.ad-homeleaderboard,.ad-img,.ad-in-post,.ad-index-main,.ad-island,.ad-label,.ad-leaderboard,.ad-links,.ad-lrec,.ad-medium,.ad-medium-two,.ad-mpu,.ad-msn,.ad-note,.ad-notice,.ad-other,.ad-permalink,.ad-placeholder,.ad-postText,.ad-poster,.ad-priority,.ad-rect,.ad-rectangle,.ad-rectangle-text,.ad-related,.ad-rh,.ad-ri,.ad-right,.ad-right-header,.ad-right-txt,.ad-row,.ad-section,.ad-show-label,.ad-side,.ad-sidebar-outer,.ad-sidebar300,.ad-sky,.ad-slot,.ad-slot-234-60,.ad-slot-300-250,.ad-slot-728-90,.ad-space,.ad-space-mpu-box,.ad-spot,.ad-square300,.ad-squares,.ad-statement,.ad-story-inject,.ad-tabs,.ad-text-links,.ad-tile,.ad-title,.ad-top,.ad-top-left,.ad-unit,.ad-unit-300,.ad-unit-300-wrapper,.ad-unit-anchor,.ad-vert,.ad-vtu,.ad-wrap,.ad-wrapper,.ad-zone-s-q-l,.ad.super,.ad0,.ad10,.ad120,.ad120x240backgroundGray,.ad120x600,.ad125,.ad140,.ad160,.ad160x600,.ad160x600GrayBorder,.ad18,.ad19,.ad21,.ad230,.ad250,.ad250c,.ad3,.ad300,.ad300250,.ad300_250,.ad300x100,.ad300x250,.ad300x250-hp-features,.ad300x250Top,.ad300x250_container,.ad300x250box,.ad300x50-right,.ad300x600,.ad310,.ad336x280,.ad343x290,.ad4,.ad400right,.ad450,.ad468_60,.ad468x60,.ad6,.ad620x70,.ad626X35,.ad7,.ad728,.ad728_90,.ad728x90,.ad728x90_container,.ad8,.ad90x780,.adAgate,.adArea674x60,.adBanner,.adBanner300x250,.adBanner728x90,.adBannerTyp1,.adBannerTypSortableList,.adBannerTypW300,.adBar,.adBgBottom,.adBgMId,.adBgTop,.adBlock,.adBottomboxright,.adBoxBody,.adBoxBorder,.adBoxContainer,.adBoxContent,.adBoxInBignews,.adBoxSidebar,.adBoxSingle,.adBwrap,.adCMRight,.adCell,.adColumn,.adCont,.adContTop,.adContour,.adCreative,.adCube,.adFender3,.adFrame,.adFtr,.adFullWidthMiddle,.adGoogle,.adHeader,.adHeadline,.adHome300x250,.adHorisontal,.adInNews,.adLabel,.adLeader,.adLeaderForum,.adLeaderboard,.adLeft,.adLoaded,.adLocal,.adMarker,.adMastheadLeft,.adMastheadRight,.adMegaBoard,.adMkt2Colw,.adModuleAd,.adMpu,.adNewsChannel,.adNoOutline,.adNotice,.adNoticeOut,.adObj,.adPageBorderL,.adPageBorderR,.adPanel,.adRect,.adRight,.adSelfServiceAdvertiseLink,.adServer,.adSkyscraperHolder,.adSlot,.adSpBelow,.adSpacer,.adSplash,.adSponsor,.adSpot,.adSpot-searchAd,.adSpot-textBox,.adSpot-twin,.adSpotIsland,.adSquare,.adSubColPod,.adSuperboard,.adSupertower,.adTD,.adTab,.adTag,.adTileWrap,.adTiler,.adTopboxright,.adTout,.adTxt,.adUnit,.adUnitHorz,.adUnitVert,.adUnitVert_noImage,.adWebBoard,.adWidget,.adWithTab,.adWrap,.adWrapper,.ad_0,.ad_1,.ad_120x90,.ad_125,.ad_130x90,.ad_160,.ad_160x600,.ad_2,.ad_200,.ad_200x200,.ad_250x250,.ad_250x250_w,.ad_3,.ad_300,.ad_300_250,.ad_300x250,.ad_300x250_box_right,.ad_336,.ad_336x280,.ad_350x100,.ad_350x250,.ad_400x200,.ad_468,.ad_468x60,.ad_600,.ad_728,.ad_728x90,.ad_Left,.ad_amazon,.ad_banner,.ad_banner_border,.ad_bar,.ad_bg,.ad_bigbox,.ad_biz,.ad_block,.ad_block_338,.ad_body,.ad_border,.ad_botbanner,.ad_bottom_leaderboard,.ad_bottom_left,.ad_box,.ad_box2,.ad_box_ad,.ad_box_div,.ad_callout,.ad_caption,.ad_column,.ad_column_box,.ad_column_hl,.ad_contain,.ad_container,.ad_content,.ad_content_wide,.ad_contents,.ad_descriptor,.ad_disclaimer,.ad_eyebrow,.ad_footer,.ad_frame,.ad_framed,.ad_front_promo,.ad_head,.ad_headline,.ad_hpm,.ad_info_block,.ad_inline,.ad_island,.ad_label,.ad_launchpad,.ad_leader,.ad_leaderboard,.ad_left,.ad_line,.ad_link,.ad_linkunit,.ad_loc,.ad_lrec,.ad_main,.ad_medrec,.ad_medrect,.ad_middle,.ad_mpu,.ad_mr,.ad_mrec,.ad_mrec_title_article,.ad_mrect,.ad_news,.ad_notice,.ad_one,.ad_p360,.ad_partner,.ad_partners,.ad_plus,.ad_post,.ad_power,.ad_rectangle,.ad_right_col,.ad_row,.ad_sidebar,.ad_skyscraper,.ad_slug,.ad_slug_table,.ad_space_300_250,.ad_sponsor,.ad_sponsoredsection,.ad_spot_b,.ad_spot_c,.ad_square_r,.ad_square_top,.ad_text_w,.ad_title,.ad_top,.ad_top_leaderboard,.ad_top_left,.ad_topright,.ad_tower,.ad_unit,.ad_unit_rail,.ad_url,.ad_warning,.ad_wid300,.ad_wide,.ad_wrap,.ad_wrapper,.ad_wrapper_fixed,.ad_wrapper_top,.ad_zone,.adarea,.adarea-long,.adbanner,.adbannerbox,.adbannerright,.adbar,.adboard,.adborder,.adbot,.adbottom,.adbottomright,.adbox-outer,.adbox-wrapper,.adbox_300x600,.adbox_366x280,.adbox_468X60,.adbox_bottom,.adboxclass,.adbreak,.adbug,.adbuttons,.adcode,.adcolumn,.adcolumn_wrapper,.adcopy,.add_300x250,.adfieldbg,.adfoot,.adfootbox,.adhead,.adhead_h,.adhead_h_wide,.adheader,.adheader100,.adhere,.adhered,.adhi,.adhint,.adhoriz,.adi,.adiframe,.adinside,.adintro,.adjlink,.adkicker,.adkit,.adkit-advert,.adkit-lb-footer,.adlabel-horz,.adlabel-vert,.adleader,.adleaderboard,.adleft1,.adline,.adlinks,.adlnklst,.admarker,.admedrec,.admessage,.admodule,.admpu,.admpu-small,.adnation-banner,.adnotice,.adops,.adp-AdPrefix,.adpadding,.adpane,.adprice,.adproxy,.adroot,.adrotate_widget,.adrow,.adrow-post,.adrule,.ads-125,.ads-728x90-wrap,.ads-banner,.ads-below-content,.ads-categories-bsa,.ads-favicon,.ads-links-general,.ads-mpu,.ads-outer,.ads-profile,.ads-right,.ads-sidebar,.ads-sky,.ads-stripe,.ads-text,.ads-widget,.ads-widget-partner-gallery,.ads160,.ads1_250,.ads2,.ads3,.ads300,.ads460,.ads460_home,.ads468,.ads728,.ads728x90,.adsArea,.adsBelowHeadingNormal,.adsBlock,.adsBox,.adsCell,.adsCont,.adsDiv,.adsFull,.adsImages,.adsMPU,.adsRight,.adsTextHouse,.adsTop,.adsTower2,.adsTowerWrap,.adsWithUs,.ads_125_square,.ads_180,.ads_300,.ads_300x250,.ads_337x280,.ads_728x90,.ads_big,.ads_big-half,.ads_box,.ads_brace,.ads_catDiv,.ads_container,.ads_disc_anchor,.ads_disc_leader,.ads_disc_lwr_square,.ads_disc_skyscraper,.ads_disc_square,.ads_div,.ads_header,.ads_leaderboard,.ads_medrect,.ads_mpu,.ads_outer,.ads_rectangle,.ads_right,.ads_sc_bl_i,.ads_sc_tl_i,.ads_show_if,.ads_side,.ads_sidebar,.ads_singlepost,.ads_spacer,.ads_takeover,.ads_title,.ads_top,.ads_top_promo,.ads_tr,.ads_verticalSpace,.ads_vtlLink,.ads_widesky,.ads_wrapperads_top,.adsbg300,.adsblockvert,.adsborder,.adsbottom,.adsbox,.adsboxitem,.adsbyyahoo,.adsc,.adscaleAdvert,.adsclick,.adscontainer,.adscreen,.adsd_shift100,.adsection_a2,.adsection_c2,.adsense-ad,.adsense-category,.adsense-category-bottom,.adsense-heading,.adsense-post,.adsense-right,.adsense-title,.adsense3,.adsense300,.adsenseAds,.adsenseBlock,.adsenseContainer,.adsenseGreenBox,.adsense_bdc_v2,.adsense_mpu,.adsensebig,.adsenseblock,.adsenseblock_bottom,.adsenseblock_top,.adsenselr,.adsensem_widget,.adsensesq,.adsenvelope,.adset,.adsforums,.adsghori,.adsgvert,.adside,.adsidebox,.adsider,.adsingle,.adsleft,.adslink,.adslogan,.adsmalltext,.adsmessage,.adsnippet_widget,.adspace,.adspace-MR,.adspace-widget,.adspace180,.adspace_bottom,.adspace_buysell,.adspace_rotate,.adspace_skyscraper,.adspacer,.adspot,.adspot728x90,.adstextpad,.adstitle,.adstop,.adstory,.adstrip,.adtag,.adtech,.adtext_gray,.adtext_horizontal,.adtext_onwhite,.adtext_vertical,.adtile,.adtips,.adtips1,.adtop,.adtravel,.adtxt,.adtxtlinks,.adunit,.adv-mpu,.adver,.adverTag,.adver_cont_below,.advert-728x90,.advert-article-bottom,.advert-bannerad,.advert-box,.advert-head,.advert-iab-300-250,.advert-iab-468-60,.advert-mpu,.advert-skyscraper,.advert-text,.advert-txt,.advert300,.advert4,.advert5,.advert8,.advertColumn,.advertCont,.advertContainer,.advertHeadline,.advertRight,.advertText,.advertTitleSky,.advert_468x60,.advert_box,.advert_cont,.advert_djad,.advert_label,.advert_leaderboard,.advert_note,.advert_surr,.advert_top,.advertheader-red,.advertise-here,.advertise-homestrip,.advertise-horz,.advertise-leaderboard,.advertise-top,.advertise-vert,.advertiseContainer,.advertiseText,.advertise_ads,.advertise_here,.advertise_link,.advertise_link_sidebar,.advertisement-728x90,.advertisement-block,.advertisement-sidebar,.advertisement-space,.advertisement-sponsor,.advertisement-text,.advertisement-top,.advertisement468,.advertisementBox,.advertisementColumnGroup,.advertisementContainer,.advertisementHeader,.advertisementLabel,.advertisementPanel,.advertisement_btm,.advertisement_caption,.advertisement_g,.advertisement_header,.advertisement_horizontal,.advertisement_top,.advertiser-links,.advertisespace_div,.advertising-banner,.advertising-header,.advertising-local-links,.advertising2,.advertisingTable,.advertising_images,.advertisment_two,.advertize,.advertorial,.advertorial-2,.advertorial-promo-box,.advertorialtitle,.advt,.advt-banner-3,.advt-block,.advt-sec,.advt300,.advt720,.adwordListings,.adwords,.adwordsHeader,.adwrap,.adwrapper-lrec,.adwrapper948,.adzone-footer,.adzone-sidebar,.affiliate-link,.affiliate-sidebar,.affiliateAdvertText,.affinityAdHeader,.afsAdvertising,.after_ad,.agi-adsaleslinks,.alb-content-ad,.alignads,.alt_ad,.anchorAd,.another_text_ad,.answer_ad_content,.aolSponsoredLinks,.aopsadvert,.apiAdMarkerAbove,.apiAds,.archive-ads,.art_ads,.article-ads,.articleAd,.articleAds,.articleAdsL,.articleEmbeddedAdBox,.article_ad,.article_adbox,.article_mpu_box,.articleads,.aseadn,.aux-ad-widget-1,.aux-ad-widget-2,.b-astro-sponsored-links_horizontal,.b-astro-sponsored-links_vertical,.banner-ad,.banner-ads,.banner-adverts,.banner300x100,.banner300x250,.banner468,.bannerAd,.bannerAdWrapper300x250,.bannerAdWrapper730x86,.bannerRightAd,.banner_300x250,.banner_ad,.banner_ad_footer,.banner_ad_leaderboard,.bannerad,.barkerAd,.base-ad-mpu,.base_ad,.base_printer_widgets_AdBreak,.bg-ad-link,.bgnavad,.big-ads,.bigAd,.big_ad,.big_ads,.bigad,.bigad2,.bigbox_ad,.bigboxad,.billboard_ad,.blk_advert,.block-ad,.block-ad300,.block-admanager,.block-ads-bottom,.block-ads-top,.block-adsense,.block-openadstream,.block-openx,.block-thirdage-ads,.block-wtg_adtech,.blockAd,.blockAds,.block_ad_sb_text,.block_ad_sponsored_links,.block_ad_sponsored_links-wrapper,.blockad,.blocked-ads,.blocsponsor,.blog-ad-leader-inner,.blog-ads-container,.blogAd,.blogAdvertisement,.blogArtAd,.blogBigAd,.blog_ad,.blogads,.blox3featuredAd,.body_ad,.body_sponsoredresults_bottom,.body_sponsoredresults_middle,.body_sponsoredresults_top,.bookseller-header-advt,.bottomAd,.bottomAds,.bottom_ad,.bottom_adsense,.bottom_sponsor,.bottomad,.bottomadvert,.bottomrightrailAd,.bottomvidad,.box-ad,.box-ad-grey,.box-ads,.box-adsense,.boxAd,.boxAds,.box_ad,.box_ad_container,.box_ad_content,.box_ad_spacer,.box_ads,.box_advertising,.box_advertisment_62_border,.box_content_ad,.box_content_ads,.boxad,.boxyads,.bps-ad-wrapper,.bps-advertisement,.bps-advertisement-inline-ads,.br-ad,.breakad_container,.brokerad,.bsa_ads,.btm_ad,.btn-ad,.bullet-sponsored-links,.bullet-sponsored-links-gray,.burstContentAdIndex,.busrep_poll_and_ad_container,.buttonAd,.buttonAds,.buttonadbox,.bx_ad,.bx_ad_right,.cA-adStrap,.cColumn-TextAdsBox,.care2_adspace,.catalog_ads,.category-ad,.category__big_game_container_body_games_advertising,.cb-ad-container,.cb_ads,.cb_footer_sponsor,.cb_navigation_ad,.cbstv_ad_label,.cbzadvert,.cbzadvert_block,.cdAdTitle,.cdmainlineSearchAdParent,.cdsidebarSearchAdParent,.centerAd,.center_ad,.centerad,.centered-ad,.cinemabotad,.classifiedAdThree,.clearerad,.cm_ads,.cms-Advert,.cnbc_badge_banner_ad_area,.cnbc_banner_ad_area,.cnn160AdFooter,.cnnAd,.cnnMosaic160Container,.cnnSearchSponsorBox,.cnnStoreAd,.cnnStoryElementBoxAd,.cnnWCAdBox,.cnnWireAdLtgBox,.cnn_728adbin,.cnn_adcntr300x100,.cnn_adcntr728x90,.cnn_adspc336cntr,.cnn_adtitle,.column2-ad,.columnRightAdvert,.com-ad-server,.comment-advertisement,.comment_ad_box,.common_advertisement_title,.communityAd,.conTSponsored,.conductor_ad,.confirm_ad_left,.confirm_ad_right,.confirm_leader_ad,.consoleAd,.container-adwords,.containerSqAd,.container_serendipity_plugin_google_adsense,.content-ad,.contentAdFoot,.contentAdsWrapper,.content_ad,.content_ad_728,.content_adsq,.contentad,.contentad300x250,.contentad_right_col,.contentadcontainer,.contentadleft,.contentads,.contenttextad,.contest_ad,.cp_ad,.cpmstarHeadline,.cpmstarText,.create_ad,.cs-mpu,.cscTextAd,.cse_ads,.cspAd,.ct_ad,.cube-ad,.cubeAd,.cube_ads,.currency_ad,.custom_ads,.cwAdvert,.darla_ad,.dartAdImage,.dart_ad,.dart_tag,.dartadvert,.dartiframe,.dc-ad,.dcAdvertHeader,.deckAd,.deckads,.detailMpu,.detail_ad,.detail_top_advert,.divAd,.divAdright,.divad1,.divad2,.divad3,.divads,.divider_ad,.dmco_advert_iabrighttitle,.downloadAds,.download_ad,.downloadad,.dualAds,.dynamic-ads,.dynamic_ad,.e-ad,.ec-ads,.ec-ads-remove-if-empty,.em-ad,.embed-ad,.entry-body-ad,.entry_sidebar_ads,.entryad,.ez-clientAd,.f_Ads,.feature_ad,.featuredAds,.featuredadvertising,.firstpost_advert_container,.flagads,.flash-advertisement,.flash_ad,.flash_advert,.flashad,.flexiad,.flipbook_v2_sponsor_ad,.floatad,.floated_right_ad,.floatingAds,.fm-badge-ad,.footad,.footer-ad,.footerAd,.footerAdModule,.footerAdslot,.footerTextAd,.footer_ad,.footer_ads,.footer_block_ad,.footer_bottomad,.footer_line_ad,.footer_text_ad,.footerad,.forumtopad,.frn_adbox,.frn_cont_adbox,.frontads,.ft-ad,.ftdAdBar,.ftdContentAd,.full_ad_box,.fullbannerad,.g3rtn-ad-site,.gAdRows,.gAdSky,.gAdvertising { visibility:hidden !important; display:none !important; } .g_ggl_ad,.ga-ads,.ga-textads-bottom,.ga-textads-top,.gaTeaserAdsBox,.gads,.gads_cb,.gads_container,.gallery_ad,.gam_ad_slot,.gameAd,.gamesPage_ad_content,.gbl_advertisement,.gen_side_ad,.gglAds,.global_banner_ad,.googad,.googads,.google-ad,.google-ad-container,.google-ads,.google-ads-boxout,.google-ads-slim,.google-right-ad,.google-sponsored-ads,.google-sponsored-link,.google468_60,.googleAd,.googleAd-content,.googleAd-list,.googleAd300x250_wrapper,.googleAdBox,.googleAdSense,.googleAdSenseModule,.googleAd_body,.googleAds,.googleAds_article_page_above_comments,.googleAdsense,.googleContentAds,.googleProfileAd,.googleSearchAd_content,.googleSearchAd_sidebar,.google_ad,.google_ad_wide,.google_add_container,.google_ads,.google_ads_bom_title,.google_ads_content,.googlead,.googleaddiv,.googleaddiv2,.googleads,.googleads_300x250,.googleads_title,.googleafc,.googley_ads,.gpAdBox,.gpAds,.gradientAd,.grey-ad-line,.group_ad,.gsAd,.gsfAd,.gt_ad,.gt_ad_300x250,.gt_ad_728x90,.gt_adlabel,.gutter-ad-left,.gutter-ad-right,.h-ad-728x90-bottom,.h_Ads,.h_ad,.half-ad,.half_ad_box,.hcf-ad-rectangle,.hcf-cms-ad,.hd_advert,.hdr-ads,.header-advert,.headerAds,.headerAdvert,.headerTextAd,.header_ad,.header_ad_div,.header_advertisment,.headerad,.headerad-720,.hi5-ad,.highlightsAd,.hm_advertisment,.home-ad-links,.homeAd,.homeAd1,.homeAd2,.homeAdBoxA,.homeAdBoxBetweenBlocks,.homeAdBoxInBignews,.homeAdSection,.homeMediumAdGroup,.home_ad_bottom,.home_advertisement,.home_mrec_ad,.homead,.homepage-ad,.homepage300ad,.homepageFlexAdOuter,.homepageMPU,.homepage_middle_right_ad,.hor_ad,.horiz_adspace,.horizontalAd,.horizontal_ads,.horizontaltextadbox,.horizsponsoredlinks,.hortad,.houseAd1,.houseAdsStyle,.housead,.hp-col4-ads,.hp2-adtag,.hp_ad_cont,.hp_ad_text,.hp_t_ad,.hp_w_ad,.hpa-ad1,.html-advertisement,.ic-ads,.ico-adv,.idMultiAd,.image-advertisement,.imageads,.imgad,.in-page-ad,.in-story-ads,.in-story-text-ad,.indEntrySquareAd,.indie-sidead,.indy_googleads,.inhousead,.inline-ad,.inline-mpu,.inline-mpu-left,.inlineSideAd,.inline_ad,.inline_ad_title,.inlinead,.inlineadsense,.inlineadtitle,.inlist-ad,.inlistAd,.inner-advt-banner-3,.innerAds,.innerad,.inpostad,.insert_advertisement,.insertad,.insideStoryAd,.inteliusAd_image,.interest-based-ad,.internalAdsContainer,.is24-adplace,.isAd,.islandAd,.islandAdvert,.islandad,.jimdoAdDisclaimer,.jp-advertisment-promotional,.js-advert,.kw_advert,.kw_advert_pair,.l_ad_sub,.l_banner.ads_show_if,.labelads,.largeRectangleAd,.largeUnitAd,.lastRowAd,.lcontentbox_ad,.leaderAdTop,.leaderAdvert,.leader_ad,.leaderboardAd,.leaderboardad,.leaderboardadtop,.left-ad,.leftAd,.leftAdColumn,.leftAds,.left_ad,.left_ad_box,.left_adlink,.left_ads,.left_adsense,.leftad,.leftadtag,.leftbar_ad_160_600,.leftbarads,.leftbottomads,.leftnavad,.lgRecAd,.lg_ad,.ligatus,.linead,.link_adslider,.link_advertise,.live-search-list-ad-container,.ljad,.local-ads,.log_ads,.logoAds,.logoad,.logoutAd,.longAd,.lowerAds,.m-ad-tvguide-box,.m4-adsbygoogle,.m_banner_ads,.macAd,.macad,.main-ad,.main-advert,.main-tabs-ad-block,.main_ad,.main_ad_bg_div,.main_adbox,.main_intro_ad,.map_media_banner_ad,.marginadsthin,.marketing-ad,.masthead_topad,.matador_sidebar_ad_600,.mdl-ad,.media-advert,.mediaAd,.mediaAdContainer,.mediaResult_sponsoredSearch,.medium-rectangle-ad,.mediumRectangleAdvert,.medrect_ad,.menuItemBannerAd,.menueadimg,.messageBoardAd,.mf-ad300-container,.micro_ad,.mid_ad,.midad,.middleAds,.middleads,.min_navi_ad,.mini-ad,.miniad,.mmcAd_Iframe,.mobile-sponsoring,.mod-ad-lrec,.mod-ad-n,.mod-adopenx,.mod-vertical-ad,.mod_admodule,.module-ad-small,.module-ads,.moduleAdvertContent,.module_ad,.module_box_ad,.modulegad,.moduletable-advert,.moduletable-googleads,.moduletablesquaread,.mpu-ad,.mpu-advert,.mpu-footer,.mpu-fp,.mpu-title,.mpu-top-left,.mpu-top-left-banner,.mpu-top-right,.mpuAd,.mpuAdSlot,.mpuAdvert,.mpuArea,.mpuBox,.mpuContainer,.mpuHolder,.mpuTextAd,.mpu_ad,.mpu_advert,.mpu_container,.mpu_gold,.mpu_holder,.mpu_platinum,.mpu_text_ad,.mpuad,.mpuholderportalpage,.mrec_advert,.ms-ads-link,.msfg-shopping-mpu,.mwaads,.my-ad250x300,.nSponsoredLcContent,.nSponsoredLcTopic,.nadvt300,.narrow_ad_unit,.narrow_ads,.navAdsBanner,.navadbox,.navi_ad300,.naviad,.nba300Ad,.nbaT3Ad160,.nbaTVPodAd,.nbaTwo130Ads,.nbc_ad_carousel_wrp,.newTopAdContainer,.newad,.news_article_ad_google,.newsviewAdBoxInNews,.nf-adbox,.nn-mpu,.noAdForLead,.normalAds,.nrAds,.nsAdRow,.oas-ad,.oas-bottom-ads,.offer_sponsoredlinks,.oio-banner-zone,.oio-link-sidebar,.oio-zone-position,.on_single_ad_box,.onethirdadholder,.openads,.openadstext_after,.openx,.openx-ad,.osan-ads,.other_adv2,.outermainadtd1,.ovAdPromo,.ovAdSky,.ovAdartikel,.ov_spns,.pageGoogleAd,.pageGoogleAdFlat,.pageLeaderAd,.page_content_right_ad,.pagead,.pagenavindexcontentad,.paneladvert,.partner-ads-container,.partnersTextLinks,.pencil_ad,.player_ad_box,.player_hover_ad,.player_page_ad_box,.plista_inimg_box,.pnp_ad,.pod-ad-300,.podRelatedAdLinksWidget,.podSponsoredLink,.portalCenterContentAdBottom,.portalCenterContentAdMiddle,.portalCenterContentAdTop,.portalcontentad,.postAd,.post_ad,.post_ads,.post_sponsor_unit,.postbit_adbit_register,.postbit_adcode,.postgroup-ads,.postgroup-ads-middle,.prebodyads,.premium_ad_container,.promoAd,.promoAds,.promo_ad,.ps-ligatus_placeholder,.publication-ad,.publicidad,.puff-advertorials,.qa_ad_left,.qm-ad-content,.qm-ad-content-news,.quigo-ad,.qzvAdDiv,.r_ad_1,.r_ad_box,.r_ads,.rad_container,.rect_ad_module,.rectad,.rectangle-ad,.rectangleAd,.rectanglead,.redads_cont,.regular_728_ad,.regularad,.relatedAds,.related_post_google_ad,.remads,.resourceImagetAd,.result_ad,.results_sponsor,.results_sponsor_right,.reviewMidAdvertAlign,.rght300x250,.rhads,.rhs-ad,.rhs-ads-panel,.right-ad,.right-ad-holder,.right-ad2,.right-ads,.right-ads2,.right-sidebar-box-ad,.rightAdBox,.rightColAd,.rightColumnRectAd,.rightRailAd,.right_ad,.right_ad_160,.right_ad_box,.right_ad_text,.right_ad_top,.right_ads,.right_col_ad,.right_hand_advert_column,.right_side-partyad,.rightad_1,.rightad_2,.rightadbox1,.rightads,.rightadunit,.rightcol_boxad,.rightcoladvert,.rightcoltowerad,.rnav_ad,.rngtAd,.roundedCornersAd,.roundingrayboxads,.rt_ad1_300x90,.rt_ad_300x250,.rt_ad_call,.s2k_ad,.savvyad_unit,.sb-ad-sq-bg,.sbAd,.sbAdUnitContainer,.sb_adsN,.sb_adsNv2,.sb_adsW,.sb_adsWv2,.scanAd,.scc_advert,.sci-ad-main,.sci-ad-sub,.search-ad,.search-results-ad,.search-sponsor,.search-sponsored,.searchAd,.searchAds,.searchSponsoredResultsBox,.searchSponsoredResultsList,.search_column_results_sponsored,.search_results_sponsored_top,.section-ad2,.section-sponsor,.section_mpu_wrapper,.section_mpu_wrapper_wrapper,.selfServeAds,.sepContentAd,.serp_sponsored,.servsponserLinks,.shoppingGoogleAdSense,.showcaseAd,.sidbaread,.side-ad,.side-ads,.sideAd,.sideBoxAd,.side_ad,.side_ad2,.side_ad_1,.side_ad_2,.side_ad_3,.sidead,.sideads,.sideadsbox,.sideadvert,.sidebar-ad,.sidebar-ads,.sidebar-text-ad,.sidebarAd,.sidebarAdUnit,.sidebarAdvert,.sidebar_ad,.sidebar_ad_300_250,.sidebar_ads,.sidebar_ads_336,.sidebar_adsense,.sidebar_box_ad,.sidebarad,.sidebarad_bottom,.sidebaradbox,.sidebarboxad,.sideheadnarrowad,.sideheadsponsorsad,.singleAd,.singleAdsContainer,.singlead,.sitesponsor,.skinAd,.skin_ad_638,.sky-ad,.skyAd,.skyAdd,.skyAdvert,.sky_ad,.sky_scraper_ad,.skyad,.skyjobsadtext,.skyscraper-ad,.skyscraper_ad,.skyscraper_bannerAdHome,.sleekadbubble,.slideshow-ad,.slpBigSlimAdUnit,.slpSquareAdUnit,.sm_ad,.smallSkyAd1,.smallSkyAd2,.small_ad,.small_ads,.smallad-left,.smallads,.smallsponsorad,.smart_ads_bom_title,.specialAd175x90,.speedyads,.sphereAdContainer,.spl-ads,.spl_ad,.spl_ad2,.spl_ad_plus,.splitAd,.sponlinkbox,.spons-link,.spons_links,.sponslink,.sponsor-ad,.sponsor-bottom,.sponsor-link,.sponsor-links,.sponsor-right,.sponsor-services,.sponsor-top,.sponsorArea,.sponsorBox,.sponsorPanel,.sponsorPost,.sponsorPostWrap,.sponsorStrip,.sponsorTop,.sponsor_ad_area,.sponsor_footer,.sponsor_horizontal,.sponsor_line,.sponsor_links,.sponsor_logo,.sponsor_top,.sponsor_units,.sponsoradtitle,.sponsorbox,.sponsored-ads,.sponsored-chunk,.sponsored-editorial,.sponsored-features,.sponsored-links,.sponsored-links-alt-b,.sponsored-links-holder,.sponsored-links-right,.sponsored-post,.sponsored-post_ad,.sponsored-results,.sponsored-right-border,.sponsored-text,.sponsoredBox,.sponsoredInfo,.sponsoredInner,.sponsoredLabel,.sponsoredLinks,.sponsoredLinks2,.sponsoredLinksHeader,.sponsoredProduct,.sponsoredResults,.sponsoredSideInner,.sponsored_ads,.sponsored_box,.sponsored_box_search,.sponsored_by,.sponsored_links,.sponsored_links_title_container,.sponsored_links_title_container_top,.sponsored_links_top,.sponsored_results,.sponsored_well,.sponsoredibbox,.sponsoredlink,.sponsoredlinks,.sponsoredlinkscontainer,.sponsoredresults,.sponsoredtextlink_container_ovt,.sponsorlink,.sponsorlink2,.sponsormsg,.sponsors,.sponsors-box,.sponsors_bar,.sponsorshipbox,.sponsortable,.sponsortext,.spotlightAd,.squareAd,.square_ad,.square_banner_ad,.squared_ad,.ss-ad-mpu,.standard-ad,.start__newest__big_game_container_body_games_advertising,.staticAd,.stock-ticker-ad-tag,.stocks-ad-tag,.store-ads,.story_AD,.story_ad_div,.story_right_adv,.storyad,.storysponsorimage,.subad,.subcontent-ad,.subtitle-ad-container,.sugarad,.super-ad,.supercommentad_left,.supercommentad_right,.supp-ads,.supportAdItem,.surveyad,.t10ad,.tab_ad,.tab_ad_area,.tablebordersponsor,.tadsanzeige,.tadsbanner,.tadselement,.tallad,.tblTopAds,.tbl_ad,.tbox_ad,.td-Adholder,.teaser-sponsor,.teaserAdContainer,.teaser_adtiles,.text-ad-links,.text-advertisement,.text-g-advertisement,.text-g-group-short-rec-ad,.text-g-net-grp-google-ads-article-page,.textAd,.textAdBox,.textAds,.text_ad,.text_ads,.textad,.textadContainer,.textad_headline,.textadbox,.textadheadline,.textadlink,.textadsds,.textadsfoot,.textadtext,.textlink-ads,.tf_page_ad_search,.thisIsAd,.thisIsAnAd,.ticket-ad,.tileAds,.tips_advertisement,.title-ad,.title_adbig,.tncms-region-ads,.toolad,.toolbar-ad,.top-ad,.top-ad-space,.top-ads,.top-banner-ad,.top-menu-ads,.top-sponsors,.topAdWrap,.topAdvertisement,.topBannerAd,.topLeaderboardAd,.top_Ad,.top_ad,.top_ad_728,.top_ad_728_90,.top_ad_disclaimer,.top_ad_div,.top_ad_post,.top_ad_wrapper,.top_advert,.top_advertising_lb,.top_container_ad,.top_sponsor,.topad-bar,.topadbox,.topadspot,.topadvertisementsegment,.topcontentadvertisement,.topic_inad,.topstoriesad,.toptenAdBoxA,.tourFeatureAd,.towerAd,.towerAdLeft,.towerAds,.tower_ad,.tower_ad_disclaimer,.towerad,.tribal-ad,.ts-ad_unit_bigbox,.ts-banner_ad,.ttlAdsensel,.tto-sponsored-element,.tucadtext,.tvs-mpu,.twoColumnAd,.twoadcoll,.twoadcolr,.tx_smartadserver_pi1,.txt-ads,.txtAd,.txtAds,.txt_ads,.txtadvertise,.type_adscontainer,.type_miniad,.type_promoads,.ukAds,.undertimyads,.unit-ad,.universalboxADVBOX01,.universalboxADVBOX03,.universalboxADVBOX04a,.usenext,.vertad,.vertical-adsense,.videoAd,.videoBoxAd,.video_ad,.view-promo-mpu-right,.view_rig_ad,.virgin-mpu,.wa_adsbottom,.wantads,.wide-ad,.wide-skyscraper-ad,.wideAd,.wideAdTable,.wide_ad,.wide_ad_unit_top,.wide_ads,.wide_google_ads,.widget-ad,.widget-ad300x250,.widget-entry-ads-160,.widgetYahooAds,.widget_ad,.widget_ad_rotator,.widget_island_ad,.widget_sdac_bottom_ad_widget,.widget_sdac_footer_ads_widget,.widget_sdac_skyscraper_ad_widget,.widget_sponsor,.wikia-ad,.wikia_ad_placeholder,.wingadblock,.withAds,.wl-ad,.wnMultiAd,.wp125ad,.wp125ad_2,.wpn_ad_content,.wrap-ads,.wsSponsoredLinksRight,.wsTopSposoredLinks,.x03-adunit,.x04-adunit,.xads-blk2,.xads-ojedn,.y-ads,.y-ads-wide,.y7-advertisement,.yahoo-sponsored,.yahoo-sponsored-links,.yahooAds,.yahoo_ads,.yan-sponsored,.ygrp-ad,.yrail_ad_wrap,.yrail_ads,.ysmsponsor,.ysponsor,.yw-ad,a[href^="http://ad.doubleclick.net/"],a[href^="http://adserving.liveuniversenetwork.com/"],a[href^="http://galleries.pinballpublishernetwork.com/"],a[href^="http://galleries.securewebsiteaccess.com/"],a[href^="http://install.securewebsiteaccess.com/"],a[href^="http://latestdownloads.net/download.php?"],a[href^="http://secure.signup-page.com/"],a[href^="http://secure.signup-way.com/"],a[href^="http://www.FriendlyDuck.com/AF_"],a[href^="http://www.adbrite.com/mb/commerce/purchase_form.php?"],a[href^="http://www.friendlyduck.com/AF_"],a[href^="http://www.google.com/aclk?"],a[href^="http://www.liutilities.com/aff"],a[href^="http://www.liutilities.com/products/campaigns/adv/"],a[href^="http://www.my-dirty-hobby.com/?sub="],a[href^="http://www.ringtonematcher.com/"],div#mclip_container:first-child:last-child,div#tads.c,table.ra[align="left"][width="30%"],table.ra[align="right"][width="30%"],[src*="sixsigmatraffic.com"],embed[flashvars*="AdID"],#Ad1,#AdHeader,#Adbanner,#AdvertiseFrame,#Advertisement,#Advertisements,#Tadspacehead,#TopAd,#ad-container,#ad-header,#ad-top,#ad-wrapper,#ad1,#ad3,#ad728x90,#adBanner,#adComponentWrapper,#adContainer,#adDiv,#adHeader,#adTop,#adWrapper,#ad_area,#ad_container,#ad_leader,#ad_space,#ad_square,#ad_table,#ad_wrapper,#adbody,#adbox,#adposition3,#adsense,#adsense_inline,#adspace,#advert,#advertise,#advertising,#adverts,#adwrapper,#bannerad,#block_advert,#contentAd,#content_ad,#divAd,#featuread,#footer_ad,#footer_ads,#googlead,#head-ad,#header_ad,#mainAd,#printads,#promo-ad,#right_ad,#sidebar-ads,#sidebar_ads,#sponsored,#topAd,#topBannerAd,#top_ad,#topad,#topads,.AdBox,.AdInfo,.AdSense,.AdTitle,.Ads,.Advert,.ad-box,.ad-button,.ad-container,.ad-content,.ad-display,.ad-holder,.ad-sidebar,.ad-text,.ad1,.ad2,.ad468,.adBox,.adContainer,.adDiv,.adElement,.adHolder,.adModule,.adSpace,.adSummary,.adText,.adTitle,.ad_Right,.ad_header,.ad_links,.ad_right,.ad_space,.ad_text,.adbox,.adcol1,.adcol2,.adcont,.addiv,.adframe,.adholder,.adinfo,.adlink,.adlist,.adpic,.adright,.ads-section,.adsense,.adtable,.adtext,.advert-horizontal,.advert_list,.advertise,.advertisement,.advertiser,.advertising,.advertising_block,.advertisment,.adverts,.adwrapper,.affiliate,.banner_728x90,.block_ad,.bottom_ad_block,.contentAd,.detail-ads,.header-ad,.headerAd,.header_ad_center,.horizontal_ad,.module-ad,.mpu,.post-ad,.rightAd,.right_ads_column,.rightad,.sponsored,.sponsoredtextlink_container,.textads,.topAd,.topAds,.top_ads,.topad,.topads,a[href^="http://ad-emea.doubleclick.net/"] { visibility:hidden !important; display:none !important; }</style></html>

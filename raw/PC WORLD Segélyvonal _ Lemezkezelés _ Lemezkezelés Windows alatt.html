@@ -1,0 +1,2261 @@
+
+<!-- saved from url=(0075)http://www.pcworld.hu/forum/index.php?act=Print&client=printer&f=84&t=13291 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
+		<title>PC WORLD Segélyvonal [Powered by Invision Power Board]</title>
+		<style type="text/css">
+	/* 
+ * Cascading Style Sheet(CSS 467), for Invision Power Board 2.1.0
+ * Author: James A. Mathias, admin@leihu.com, http://www.1lotus.com 
+ * Copyright: 2005 Invision Power Services, all rights reserved 
+ *
+ * All style attributes in alpha-numeric order starting from 0
+ *
+ */
+
+/* 
+ * ========================================
+ * global element styles 
+ * ========================================
+ */
+
+html{
+	overflow-x: auto; /* fixes MSIE scrollbar bug DO NOT REMOVE, has no effect in Mozilla, or Opera */
+}
+
+body{ 
+	background: #FFF;
+	color: #222;
+	font-family: Verdana, Tahoma, Arial, Trebuchet MS, Sans-Serif, Georgia, Courier, Times New Roman, Serif;
+	font-size: 11px;
+	line-height: 135%;
+	margin: 0px;
+	padding: 0px; /* required for Opera to have 0 margin */
+	text-align: center; /* centers board in MSIE */
+}
+
+/* 
+ * ========================================
+ * Set up IPB table
+ * ========================================
+ */
+ 
+.ipbtable { width:100% }
+
+table.ipbtable,
+tr.ipbtable,
+td.ipbtable
+{ /* required for text in tables, because tables do not inherit from body */
+	background: transparent;
+	color: #222;
+	font-size: 11px;
+	line-height: 135%;
+}
+
+.ipbtable td,
+.divpad{ /* gives all tables faux cellpadding of 5px */
+	padding: 5px;
+}
+
+td.nopad{ /* allows some tables to have no padding on the td */
+	padding: 0;
+}
+
+
+
+form{
+	display: inline;
+	margin: 0; /* removes mystery form tag gapping */
+	padding: 0; /* removes mystery form tag gapping */
+}
+
+img{
+	border: 0; /* makes sure linked images do not have a border */
+	vertical-align: middle;
+}
+
+/* 
+ * ========================================
+ * global hyperlink styles 
+ * ========================================
+ */
+
+a:link,
+a:visited,
+a:active{
+	background: transparent;
+	color: #222;
+	text-decoration: underline;
+}
+
+a:hover{
+	background: transparent;
+	color: #34498B;
+}
+
+/* 
+ * ========================================
+ * Main wrapper, this controls the overall width of the board in you browser view window. 
+ * ========================================
+ */
+
+#ipbwrapper{ 
+	margin: 20px auto 20px auto; /* centers the box, no matter the overall width, also applies a 20px gap at the top and bottom of the board */
+	text-align: left; /* re_aligns text to left second part of two part MSIE centering workaround */
+	/* EDIT THIS TO CHANGE THE WIDTH OF THE BOARD -> 750px is a common fixed resolution size */
+	width: 98%;
+}
+
+/* 
+ * ========================================
+ * styles for pagination links 
+ * ========================================
+ */
+ 
+
+.pagelink,
+.pagelinklast,
+.pagecurrent,
+.minipagelink,
+.minipagelinklast{
+	background: #F0F5FA;
+	border: 1px solid #072A66;
+	padding: 1px 3px 1px 3px;
+}
+
+.pagelinklast,
+.minipagelinklast{
+	background: #DFE6EF;
+}
+
+
+.pagecurrent{
+	background: #FFC9A5;
+}
+
+.minipagelink,
+.minipagelinklast{
+	border: 1px solid #C2CFDF;
+	font-size: 10px;
+	margin: 0 1px 0 0;
+}
+
+.pagelink a:active,
+.pagelink a:visited,
+.pagelink a:link,
+.pagelinklast a:active,
+.pagelinklast a:visited,
+.pagelinklast a:link,
+.pagecurrent a:active,
+.pagecurrent a:visited,
+.pagecurrent a:link,
+.minipagelink a:active,
+.minipagelink a:visited,
+.minipagelink a:link,
+.minipagelinklast a:active,
+.minipagelinklast a:visited,
+.minipagelinklast a:link{
+	text-decoration: none;
+}
+
+/* fake button effect for some links */
+.fauxbutton{
+	background: #BFCDE0;
+	border: 1px solid #072A66;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 4px;
+}
+
+.fauxbutton a:link,
+.fauxbutton a:visited,
+.fauxbutton a:active{
+	color: #222 !important;
+	text-decoration: none;
+}
+
+.forumdesc,
+.forumdesc a:link,
+.forumdesc a:visited,
+.forumdesc a:active{ 
+	background: transparent;
+	font-size: 10px; 
+	color: #666;
+	line-height: 135%;
+	margin: 2px 0 0 0;
+	padding: 0;
+}
+
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+
+.searchlite {
+	background-color:yellow;
+	font-weight:bold;
+	color: red;
+}
+
+.activeusers{
+	background: #FFF;
+	border: 1px solid #072A66;
+	color: #000;
+	margin: 0px;
+	padding: 1px;
+}
+
+.activeuserposting a:link,
+.activeuserposting a:visited,
+.activeuserposting a:active,
+.activeuserposting
+{
+	font-style:italic;
+	text-decoration: none;
+	border-bottom:1px dotted black;
+}
+
+fieldset.search{ 
+	line-height: 150%;
+	padding: 6px; 
+}
+
+label{ 
+	cursor: pointer; 
+}
+
+img.attach{ 
+	background: #808080 url(style_images/1/click2enlarge.gif) no-repeat top right;
+	border: 1px solid #808080;
+	margin: 0 2px 0 0;
+	padding: 11px 2px 2px 2px;
+}
+
+.thumbwrap,
+.thumbwrapp,
+.fullimagewrap{
+	border: 1px solid #072A66;
+	margin: 2px;
+}
+
+.thumbwrapp{
+	border: 2px solid #660707;
+}
+
+.fullimagewrap{
+	background: #F5F9FD;
+	text-align: center;
+	margin: 5px 0 5px 0;
+	padding: 5px;
+}
+
+.thumbwrap h4,
+.thumbwrapp h4{	
+	background: #DDE6F2;
+	border: 0 !important;
+	border-bottom: 1px solid #5176B5 !important;
+	color: #5176B5; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.thumbwrap p,
+.thumbwrapp p{
+	background: #EEF2F7 !important;
+	border: 0 !important;
+	border-top: 1px solid #5176B5 !important;
+	margin: 0 !important;
+	padding: 5px !important;
+	text-align: left;
+}
+
+.thumbwrap p.alt,
+.thumbwrapp p.alt{
+	background: #DFE6EF !important;
+	margin: 0 !important;
+	padding: 5px !important;
+	text-align: left;
+}
+
+.thumbwrapp p.pin{
+	background: #EFDFDF !important;
+	text-align: center !important;
+}
+	
+.thumbwrap img.galattach,
+.thumbwrapp img.galattach{
+	background: #FFF url(style_images/1/img_larger.gif) no-repeat bottom right;
+	border: 1px solid #072A66;
+	margin: 5px;
+	padding: 2px 2px 10px 2px;
+}
+
+li.helprow{ 
+	margin: 0 0 10px 0;
+	padding: 0; 
+}
+
+ul#help{ 
+	padding: 0 0 0 15px; 
+}
+
+.warngood,
+.warnbad{ 
+	color: #0B9500;
+	font-weight: bold;
+}
+
+.warnbad{ 
+	color: #DD0000;
+}
+
+#padandcenter{ 
+	margin: 0 auto 0 auto;
+	padding: 14px 0 14px 0;
+	text-align: center;
+}
+
+#profilename{ 
+	font-size: 28px; 
+	font-weight: bold; 
+}
+
+#photowrap{ 
+	padding: 6px; 
+}
+
+#phototitle{ 
+	border-bottom: 1px solid #000; 
+	font-size: 24px; 
+}
+
+#photoimg{ 
+	margin: 15px 0 0 0;
+	text-align: center; 
+} 
+
+#ucpmenu,
+#ucpcontent{ 
+	background: #F5F9FD;
+	border: 1px solid #345487;
+	line-height: 150%;
+}
+
+#ucpmenu p{ 
+	margin: 0; 
+	padding: 2px 5px 6px 9px;
+}
+
+#ucpmenu a:link, 
+#ucpmenu a:active, 
+#ucpmenu a:visited{ 
+	text-decoration: none; 
+}
+
+#ucpcontent{ 
+	width: auto;
+}
+
+#ucpcontent p{ 
+	margin: 0;
+	padding: 10px;
+}
+
+.activeuserstrip{ 
+	background: #BCD0ED;
+	padding: 6px;
+}
+
+/* Topic View elements */
+.signature{  
+	background: transparent;
+	color: #339; 
+	font-size: 10px;
+	line-height: 150%;
+}
+
+.postdetails{ 
+	font-size: 10px;
+	line-height:140%;
+}
+
+.postcolor{ 
+	font-size: 12px; 
+	line-height: 160%;
+}
+
+.normalname{ 
+	color: #003;
+	font-size: 12px; 
+	font-weight: bold; 
+}
+
+.normalname a:link, 
+.normalname a:visited, 
+.normalname a:active{ 
+	font-size: 12px;
+}
+
+.post1,
+.bg1{ 
+	background: #F5F9FD;
+}
+
+.post2,
+.bg3{ 
+	background: #EEF2F7;
+}
+
+.row2shaded,
+.post1shaded { background-color: #DEDBE4 }
+.row4shaded,
+.post2shaded { background-color: #E3DFE7 }
+
+.row1{ 
+	background: #DFE6EF; 
+}
+
+.row2{ 
+	background: #E4EAF2; 
+}
+
+.darkrow1{ 
+	background: #BCD0ED;
+	color: #3A4F6C; 
+}
+
+.darkrow3{ 
+	background: #D1DCEB; 
+	color: #3A4F6C; 
+}
+
+/* tableborders gives the white column / row lines effect */
+.plainborder,
+.tablefill,
+.tablepad{ 
+	background: #F5F9FD;
+	border: 1px solid #345487;
+}
+
+.tablefill,
+.tablepad{ 
+	padding: 6px;  
+}
+
+.tablepad{ 
+	border: 0 !important;
+}
+
+.wrapmini{ 
+	float: left;
+	line-height: 1.5em;
+	width: 25%;
+}
+
+.pagelinks{
+	float: left;
+	line-height: 1.2em;
+	width: 35%;
+}
+
+.desc{ 
+	font-size: 11px; 
+	color: #434951;
+}
+
+.lastaction
+{
+	font-size: 10px; 
+	color: #434951;
+}
+
+.edit{ 
+	font-size: 9px;
+}
+
+.thin{ 
+	border: 1px solid #FFF;
+	border-left: 0;
+	border-right: 0;
+	line-height: 150%;
+	margin: 2px 0 2px 0;
+	padding: 6px 0 6px 0;
+}
+
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+
+/* 
+ * ========================================
+ * calendar styles 
+ * ========================================
+ */
+	
+.calmonths{ 
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	font-size: 18px; 
+	font-weight: bold; 
+	margin: 5px 0 5px 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.weekday{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.calmonths a{
+	text-decoration: none;
+}
+
+.calday,
+.calweekday{ 
+	background: #DFE6EF;
+	color: #666;
+	font-size: 11px;
+	font-weight: bold;
+	margin: 0;
+	padding: 4px;
+	text-align: right;
+}
+
+.calweekday{
+	border-right: 1px solid #AAA;
+	color: #222;
+	font-size: 14px;
+	padding: 6px;
+	text-align: center;
+}
+
+.celltodayshaded,
+.celldateshaded,
+.cellblank,
+.celldate,
+.celltoday,
+.mcellblank,
+.mcelldate,
+.mcelltoday{
+	background: #EEF2F7; 
+	height: 100px;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+
+.celltodayshaded,
+.celldateshaded
+{
+	background: #E3DFE7;
+}
+
+.mcellblank,
+.mcelldate,
+.mcelltoday{
+	height: auto;
+}
+
+.cellblank,
+.mcellblank{
+	background: #C2CFDF;
+}
+
+.celltoday,
+.celltodayshaded,
+.mcelltoday{
+	border: 2px solid #8B0000;
+}
+
+.calranged
+{
+	border: 2px outset #C2CFDF;
+	background: #C2CFDF;
+	padding:4px;
+}
+
+.calitem
+{
+	border-bottom: 1px dotted #C2CFDF;
+	padding:4px;
+}
+
+/* 
+ * ========================================
+ * form styles 
+ * ========================================
+ */
+
+.input-warn,
+.input-green,
+input,
+textarea,
+select{
+	background: #FFF;
+	border: 1px solid #4C77B6;
+	color: #000;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 11px;
+	margin: 5px;
+	padding: 2px;
+	vertical-align: middle;
+}
+
+.input-warn,
+.input-warn-content
+{
+	border: 1px solid #C00;
+}
+
+.input-ok,
+.input-ok-content
+{
+	border: 1px solid #0C0;
+}
+
+.input-warn-content
+{
+	padding: 4px;
+	margin: 4px;
+	background-color: #FCC;
+}
+
+.input-ok-content
+{
+	padding: 4px;
+	margin: 4px;
+	background-color: #CFC;
+}
+
+
+.input-text
+{
+	color: #900;
+}
+
+select{
+	border: 0;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+
+input.button{
+	margin: 0;
+	width: auto;
+}
+
+optgroup option{
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.codebuttons{ 
+	font-family: Verdana, Helvetica, Sans-Serif; 
+	font-size: 10px; 
+	vertical-align: middle;
+	margin:2px;
+}
+
+.textarea,
+.searchinput,
+.button,
+.gobutton{
+	background: #FFF;
+	border: 1px solid #4C77B6;
+	color: #000;
+	font-family: Verdana, Helvetica, Sans-Serif;
+	font-size: 11px;
+	padding: 2px;
+	vertical-align: middle;
+}
+	
+.button{
+	background: #DFE6EF;
+}
+
+.gobutton{
+	background: transparent;
+	border: 0;
+	color: #072A66;
+	margin: 0;
+	vertical-align: middle;
+}
+
+.radiobutton,
+.checkbox,
+.helpbox { 
+	border: 0;
+	vertical-align: middle;
+}
+
+/* 
+ * class.formtable 
+ *
+ * used for tabled forms 
+ * technically tables should not be used for form display 
+ * but, in the case of IPB a table is easier to work with
+ * for the average webmaster, who has little to no CSS knowledge.
+ *
+ */
+
+.formtable{
+	background: transparent;
+}
+
+.formtable td,
+.pformleft,
+.pformleftw,
+.pformright{
+	background:#F5F9FD;
+	border: 1px solid #C2CFDF;
+	border-bottom: 0;
+	border-left: 0;
+	font-weight: bold;
+	margin: 1px 0 0 0;
+	padding: 6px;
+	width: 25%;
+} 
+
+.formtable td.wider,
+.pformleftw,
+.pformright{
+	width: 40%;
+}
+
+.formtable td.formright,
+.pformright{
+	border-right: 0px;
+	font-weight: normal;
+	width: auto;
+} 
+
+.formtable td.formtitle,
+.formsubtitle{
+	background: #D1DCEB;
+	border: 1px solid #9FB9D4; 
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+	font-weight: normal;
+}
+
+.formsubtitle{ 
+	border: 0;
+	color: #3A4F6C;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.formtable td.formstrip{
+	background: #DDE8F2;
+	border: 1px solid #9FB9D4;
+	border-left: 0;
+	border-right: 0;
+	font-weight: normal;
+}
+
+/* 
+ * ========================================
+ * new style quote and code wrappers MATT's DESIGN 
+ * ========================================
+ */
+
+.quotetop{
+	background: #E4EAF2 url(style_images/1/css_img_quote.gif) no-repeat right;
+	border: 1px dotted #000;
+	border-bottom: 0;
+	border-left: 4px solid #8394B2;
+	color: #000;
+	font-weight: bold;
+	font-size: 10px;
+	margin: 8px auto 0 auto;
+	padding: 3px;
+}
+
+.quotemain{
+	background: #FAFCFE;
+	border: 1px dotted #000;
+	border-left: 4px solid #8394B2;
+	border-top: 0;
+	color: #465584;
+	padding: 4px;
+	margin: 0 auto 8px auto;
+}
+
+.codetop,
+.sqltop,
+.htmltop{
+	background: #FDDBCC url(style_images/1/css_img_code.gif) no-repeat right;
+	color: #000;
+	font-weight: bold;
+	margin: 0 auto 0 auto;
+	padding: 3px;
+	width: 98%;
+}
+
+.codemain,
+.sqlmain,
+.htmlmain{
+	background: #FAFCFE;
+	border: 1px dotted #000;
+	color: #465584;
+	font-family: Courier, Courier New, Verdana, Arial;
+	margin: 0 auto 0 auto;
+	padding: 2px;
+	width: 98%;
+}
+
+/* 
+ * ========================================
+ * old school quote and code styles - backwards compatibility 
+ * ========================================
+ */
+
+#QUOTE,
+#CODE{  
+	background: #FAFCFE; 
+	border: 1px solid #000; 
+	color: #465584; 
+	font-family: Verdana, Arial; 
+	font-size: 11px; 
+	padding: 2px; 
+	white-space: normal;
+}
+
+#CODE{ 
+	font-family: Courier, Courier New, Verdana, Arial;
+}
+
+/* 
+ * ========================================
+ * All New Styles 
+ * ========================================
+ */
+.cleared{
+	clear: both;
+}
+
+.borderwrap,
+.borderwrapm{ /* this will affect the outlining border of all the tables and boxes through-out the skin. */
+	background: #FFF; 
+	border: 1px solid #072A66;
+	padding: 0px; 
+	margin: 0px; 
+}
+
+.borderwrapm{
+	margin: 5px;
+}
+
+.borderwrap h3,
+.maintitle,
+.maintitlecollapse{
+	background: url(style_images/1/tile_cat.gif);
+	border: 1px solid #FFF;
+	border-bottom: 1px solid #5176B5;
+	color: #FFF; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0px;
+	padding: 8px;
+}
+
+.maintitle td {
+	color: #FFF; 
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+.maintitlecollapse{
+	border: 1px solid #FFF;
+}
+
+.maintitle p,
+.maintitlecollapse p,
+.formsubtitle p{
+	background: transparent !important;
+	border: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.maintitle p.expand,
+.maintitle p.goto,
+.maintitlecollapse p.expand,
+.formsubtitle p.members{
+	float: right;
+	width: auto !important;
+}
+
+.maintitle a:link, 
+.maintitle a:visited,
+.maintitlecollapse a:link, 
+.maintitlecollapse a:visited{ 
+	background: transparent;
+	color: #FFF;
+	text-decoration: none; 
+}
+
+.maintitle a:hover, 
+.maintitle a:active,
+.maintitlecollapse a:hover, 
+.maintitlecollapse a:active{ 
+	background: transparent;
+	color: #F1F1F1;
+}
+
+table th,
+.borderwrap table th,
+.subtitle,
+.subtitlediv,
+.postlinksbar{ 
+	background: transparent url(style_images/1/tile_sub.gif);
+	border-bottom: 1px solid #5176B5;
+	color: #3A4F6C; 
+	font-size: 10px;
+	font-weight: bold; 
+	letter-spacing: 1px;
+	margin: 0; 
+	padding: 5px; 
+}
+
+.subtitlediv{
+	border: 1px solid #FFF;
+	border-bottom: 1px solid #5176B5;
+	text-align: right;
+}
+
+.borderwrap table th a:link,
+.subtitle a:link,
+.subtitlediv a:link,
+.borderwrap table th a:visited,
+.subtitle a:visited, 
+.subtitlediv a:visited, 
+.borderwrap table th a:active,
+.subtitle a:active,
+.subtitlediv a:active,
+.borderwrap table th a:hover,
+.subtitle a:hover,
+.subtitlediv a:hover{ 
+	background: transparent;
+	color: #3A4F6C;
+	text-decoration: none; 
+}
+
+.borderwrap h4{
+	background: #DDE6F2;
+	border: 1px solid #FFF;
+	border-bottom: 1px solid #5176B5;
+	border-top: 1px solid #5176B5;
+	color: #5176B5; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.borderwrap p{
+	background: #F9F9F9;
+	border: 1px solid #CCC;
+	margin: 5px;
+	padding: 10px;
+	text-align: left;
+}
+
+td.formbuttonrow,
+.borderwrap p.formbuttonrow,
+.borderwrap p.formbuttonrow1{
+	background: #D1DCEB !important; 
+	border: 1px solid #FFF;
+	border-top: 1px solid #5176B5;
+	margin: 0px !important;
+	padding: 5px !important;
+	text-align: center;
+}
+
+td.formbuttonrow{
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+}
+
+.borderwrap p.formbuttonrow1{
+	background: #F9F9F9 !important;
+	border: 0;
+	border-top: 1px solid #CCC;
+}
+
+.bar,
+.barb,
+.barc{
+	background: #DFE6EF;
+	border: 1px solid #FFF;
+}
+
+.barc{
+	border-bottom: 0;
+}
+
+.bar p,
+.barb p,
+.barc p{
+	background: transparent;
+	border: 0;
+	color: #222;
+	font-size: 11px;
+	margin: 0;
+	padding: 5px;
+	text-align: left;
+}
+
+.barb p{
+	text-align: right;
+}
+
+.bar p.over,
+.bar p.overs,
+.barc p.over,
+.barc p.overs{
+	float: right;
+}
+
+.barb p.over,
+.barb p.overs{
+	float: left;
+}
+
+.bar p.overs,
+.barb p.overs,
+.barc p.overs{
+	position: relative;
+	top: 5px;
+}
+
+.catend{
+	background: #8394B2;
+	color: #000;
+	font-size: 1px;
+	height: 5px;
+}
+
+.newslink{
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	margin: 0;
+	width: 100%;
+}
+
+.newslink td{
+	color: #222;
+	font-size: 10px;
+	padding: 5px 5px 5px 10px;
+}
+
+.newslink span{
+	background: transparent;
+	color: #072A66;
+	font-style: italic;
+	font-weight: normal;
+}
+
+.newslink input{
+	background: #FFF;
+	border: 1px solid #999;
+	color: #072A66;
+	font-size: 10px;
+	padding: 3px;
+	vertical-align: middle;
+	width: auto;
+}
+
+.newslink input.button{
+	background: transparent;
+	border: 0;
+	color: #072A66;
+	vertical-align: middle;
+}
+
+.fieldwrap{
+	background: #F9F9F9;
+	border: 1px solid #CCC;
+	border-top: 0;
+	margin: 5px;
+	padding: 0;
+	text-align: left;
+}
+
+.fieldwrap h4{
+	background: #EEE;
+	border: 1px solid #CCC;
+	border-left: 0;
+	border-right: 0;
+	color: #444; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.errorwrap {
+	background: #F2DDDD;
+	border: 1px solid #992A2A;
+	border-top: 0;
+	margin: 5px;
+	padding: 0;
+}
+
+
+.errorwrap h4 {
+	background: #E3C0C0;
+	border: 1px solid #992A2A;
+	border-left: 0;
+	border-right: 0;
+	color: #992A2A; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.errorwrap p {
+	background: transparent;
+	border: 0;
+	color: #992A2A;
+	margin: 0;
+	padding: 8px;
+}
+
+
+.ruleswrap{
+	background: #F2DDDD;
+	border: 1px solid #992A2A;
+	color: #992A2A; 
+	margin: 5px 0 5px 0;
+	padding: 5px;
+}
+
+#redirectwrap{
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	margin: 200px auto 0 auto;
+	text-align: left;
+	width: 500px;
+}
+
+#redirectwrap h4{
+	background: #D0DDEA;
+	border-bottom: 1px solid #C2CFDF;
+	color: #3A4F6C;
+	font-size: 14px;
+	margin: 0;
+	padding: 5px;
+}
+
+#redirectwrap p{
+	margin: 0;
+	padding: 5px;
+}
+
+#redirectwrap p.redirectfoot{
+	background: #E3EBF4;
+	border-top: 1px solid #C2CFDF;
+	text-align: center;
+}
+
+
+#gfooter{
+	background: #8394B2;
+	margin: 5px 0 5px 0;
+	padding: 0;
+	width: 100%;
+}
+
+#gfooter td{
+	color: #FFF;
+	font-size: 10px;
+	padding: 4px;
+}
+
+#gfooter a:link,
+#gfooter a:visited{
+	color: #FFF;
+}
+
+#logostrip{ 
+	background: #3860BB url(style_images/1/tile_back.gif);
+	border: 1px solid #FFF;
+	height: 68px;
+	margin: 0;
+	padding: 0;
+}
+
+#logographic{
+	background: transparent url(style_images/1/logo4.gif) no-repeat left;
+	height: 68px;
+	margin: 0;
+	padding: 0;
+}
+
+#submenu{ 
+	background: transparent url(style_images/1/tile_sub.gif);
+	border: 1px solid #FFF;
+	border-top: 0;
+	color: #3A4F6C; 
+	margin: 0; 
+}
+
+#userlinks,
+#userlinksguest{ 
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	margin: 5px 0 5px 0;
+	padding: 0 5px 0 5px;
+}
+
+#userlinksguest{ 
+	background: #F4E7EA;
+	border: 1px solid #986265;
+}
+
+#submenu p,
+#userlinks p,
+#userlinksguest p{
+	background: transparent !important;
+	border: 0 !important;
+	font-size: 10px;
+	font-weight: bold; 
+	letter-spacing: 1px;
+	margin: 0 !important;
+	padding: 7px 0 7px 0; 
+	text-align: right;
+}
+
+#userlinks p,
+#userlinksguest p{
+	font-weight: normal;
+	letter-spacing: 0;
+}
+
+#submenu p.home,
+#userlinks p.home,
+#userlinksguest p.home{
+	float: left;
+}
+
+#userlinksguest p.pcen{
+	text-align: center;
+}
+
+#submenu a:link, 
+#submenu  a:visited{ 
+	background: transparent; 
+	color: #3A4F6C; 
+	padding: 0 6px 0 6px;
+	text-decoration: none;
+}
+
+#submenu a:hover, 
+#submenu a:active{
+	background: transparent; 
+	color: #5176B5; 
+}
+
+#navstrip{ 
+	background: transparent;
+	color: #999;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+	padding: 14px 0px 8px 0px; 
+}
+
+#navstrip a:link, 
+#navstrip  a:visited{ 
+	background: transparent; 
+	color: #222; 
+	text-decoration: none;
+}
+
+#navstrip a:hover, 
+#navstrip a:active{
+	background: transparent; 
+	color: #5176B5; 
+}
+
+.toplinks{
+	background: transparent;
+	color: #000;
+	margin: 0;
+	padding: 0 0 5px 0;
+	text-align: right;
+}
+
+.toplinks span{
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	border-bottom: 0;
+	color: #000;
+	font-size: 10px;
+	font-weight: bold;
+	margin: 0 10px 0 0;
+	padding: 5px;
+}
+
+.copyright{ 
+	background: #EEE;
+	font-size: 11px; 
+	margin: 0 0 5px 0;
+	padding: 8px;
+}
+
+/* 
+ * ========================================
+ * print page styles 
+ * ========================================
+ */
+
+#print{
+	margin: 20px auto 20px auto;
+	padding: 0;
+	text-align: left;
+	width: 85%;
+}
+
+#print h1,
+#print h2,
+#print h3,
+#print h4,
+#print p{
+	color: #036;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+	padding: 8px;
+}
+
+#print h2,
+#print h3,
+#print p{
+	border-bottom: 1px solid #999;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+#print h3{
+	background: #F5F5F5;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0 0 10px 0;
+}
+
+#print h4{
+	background: #F9F9F9;
+	font-size: 11px;
+}
+
+#print p{
+	margin: 0 0 5px 0;
+	padding: 10px;
+}
+
+#print p.printcopy{
+	border: 0;
+	color: #000;
+	text-align: center;
+}
+
+/* ============================================================== */
+/* RTE STYLES
+/* ============================================================== */
+
+.rteimage {
+	/*background: #D3D3D3;*/
+	/*border: 1px outset transparent*/;
+	cursor: pointer;
+	cursor: hand;
+	padding:1px;
+}
+
+.rteImageRaised {
+	/*background: #D3D3D3;*/
+	border: 1px outset;
+	cursor: pointer;
+	cursor: hand;
+	padding:0px;
+}
+
+.rteImageLowered {
+	/*background: #D3D3D3;*/
+	border: 1px inset;
+	cursor: pointer;
+	cursor: hand;
+	padding:0px;
+}
+
+.rteimage:hover {
+	background: #EBEBEB;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.rteVertSep {
+	margin: 0 4px 0 4px;
+}
+
+.rteBack {
+	background: #D3D3D3;
+	border: 1px outset;
+	letter-spacing: 0;
+	padding: 2px;
+}
+
+/* used in ips_rte.js - do not remove */
+.rtebottombutton
+{
+	font-size:10px;
+	border:1px solid #777;
+	border-top:0px;
+	padding:3px;
+	margin:0px;
+	background-color: #EBEBEB;
+}
+
+/* used in ips_rte.js - do not remove */
+.rtebottombuttonon
+{
+	font-size:10px;
+	border:1px solid #777;
+	border-top:0px;
+	padding:3px;
+	margin:0px;
+	background-color: #D3D3D3;
+}
+
+.rtebuttonbar1 {
+	/*background: #D3D3D3;*/
+	background-image: url(style_images/1/folder_rte_images/rte_tile.gif);
+	border: 1px solid gray;
+	border-bottom:0px;
+	letter-spacing: 0;
+	padding: 2px;
+	height:26px;
+}
+
+.rtebuttonbar2 {
+	/*background: #D3D3D3;*/
+	background-image: url(style_images/1/folder_rte_images/rte_tile.gif);
+	border: 1px solid gray;
+	border-top:1px solid gray;
+	letter-spacing: 0;
+	padding: 2px;
+	height:26px;
+}
+
+.rtebuttonbar1 tbody tr td,
+.rtebuttonbar1 tr td,
+.rtebuttonbar2 tbody tr td,
+.rtebuttonbar2 tr td,
+.rteBack tbody tr td,
+.rteBack tr td
+{
+	/*background: #D3D3D3;*/
+	padding: 0;
+}
+
+.rteDiv {
+	display: block;
+	position: relative;
+	padding:0px;
+	margin:0px;
+}
+
+.rteiframe
+{
+	border:1px solid #777;
+	background-color:#FFF;
+}
+
+.rteselectbox
+{
+	font-size:11px;
+}
+
+
+.dny-edit-title
+{
+	border:0px;
+	padding:3px;
+	margin:0px;
+	background: #D1DCEB; 
+	color: #3A4F6C; 
+}
+
+
+/* ======================================== */
+/* TABS
+/* ======================================== */
+
+.tabon
+{
+	border-top:1px solid #999;
+	border-left:1px solid #999;
+	border-right:1px solid #999;
+	background-color:#FFF;
+	padding:8px;
+	padding-bottom:9px;
+	font-size:10px;
+	float:left;
+	width:auto;
+	margin-top:3px;
+}
+
+.taboff
+{
+	border-top: 1px solid #777;
+	border-left: 1px solid #777;
+	border-right: 1px solid #777;
+	background-color: #B5C3D9;
+	color: #333;
+	padding: 8px;
+	font-size:10px;
+	float: left;
+	width: auto;
+	margin-top:3px;
+}
+
+.tabon a:link, 
+.tabon a:visited, 
+.tabon a:active
+{
+	text-decoration:none;
+	color: #000;
+}
+
+.taboff a:link, 
+.taboff a:visited, 
+.taboff a:active
+{
+	text-decoration:none;
+	color: #333;
+}
+
+.mya-back
+{
+	background: #072A66;
+	margin:1px;
+}
+
+.mya-content
+{
+	background: #FFF;
+	padding:8px;
+	margin:1px;
+	border: 1px solid #777;
+}
+
+/* -------------------------------- */
+/* Create PM box defaults           */
+/* -------------------------------- */
+
+.iframeshim
+{
+	position:absolute;
+	display:none;
+	background: #FFF;
+	filter:alpha(opacity=0);
+	border:0px;
+	width:auto;
+	height:auto;
+}
+
+
+
+/* -------------------------------- */
+/* Experimental                     */
+/* -------------------------------- */
+
+.popupmenu
+{
+   background: #F0F5FA;
+   border: 1px solid #3A4F6C;
+   text-align:left;
+   font-size:10px;
+   white-space:nowrap;
+   /*padding:3px 5px 3px 3px;*/
+   /*width:300px;*/
+}
+
+.popupmenu-item
+{
+	padding: 5px;
+	/*margin-top:4px;*/
+	white-space: nowrap;
+	border-bottom: 1px solid #C2CFDF;
+}
+
+.popupmenu-item-last
+{
+	padding: 5px;
+	/*margin-top:4px;*/
+	white-space: nowrap;
+}
+
+.popmenubutton
+{
+	width:120px;
+	white-space:nowrap;
+	background-color: #C2CFDF;
+	border:1px solid #3A4F6C;
+	color: #3A4F6C;
+	font-weight:bold;
+	float:right;
+	height:18px;
+	text-align:center;
+	margin:0px;
+	font-size:11px;
+	padding:3px;
+}
+
+
+.popmenubutton a:link, 
+.popmenubutton a:visited,
+.popupmenu-item a:link, 
+.popupmenu-item a:visited,
+.popupmenu-item-last a:link, 
+.popupmenu-item-last a:visited
+{ 
+	color: #3A4F6C; 
+	text-decoration: none;
+}
+
+.popmenubutton a:hover, 
+.popupmenu-item a:hover, 
+.popupmenu-item-last a:hover
+{ 
+	color: #5176B5; 
+	text-decoration: none;
+}
+
+.popupmenu-category
+{ 
+	background: transparent url(style_images/1/tile_sub.gif);
+	border-top: 1px solid #5176B5;
+	border-bottom: 1px solid #5176B5;
+	color: #3A4F6C; 
+	font-size: 10px;
+	font-weight: bold; 
+	letter-spacing: 1px;
+	margin: 0; 
+	padding: 5px; 
+}
+</style>
+	</head>
+	<body>
+	<div id="print">
+		<h1>A téma nyomtatható változata</h1>
+		<h2><a href="http://www.pcworld.hu/forum/index.php?act=ST&f=84&t=13291" title="Téma megtekintése">Kattints ide az eredeti formátum megtekintéséhez!</a></h2>
+		<h3>PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt</h3><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. június 14. 15:58</h4>
+			<p></p><blockquote><b><!--coloro:#006600--><span style="color:#006600"><!--/coloro--><!--fonto:Verdana--><span style="font-family:Verdana"><!--/fonto--><!--sizeo:5--><span style="font-size:18pt;line-height:100%"><!--/sizeo-->Lemezkezelés Windows alatt<!--sizec--></span><!--/sizec--><!--fontc--></span><!--/fontc--><!--colorc--></span><!--/colorc--><br>2000 / XP / 2003 / Vista / 7</b></blockquote><br><b><!--sizeo:3--><span style="font-size:12pt;line-height:100%"><!--/sizeo--><!--coloro:blue--><span style="color:blue"><!--/coloro-->Partíció létrehozása<!--colorc--></span><!--/colorc--><!--sizec--></span><!--/sizec--><br>Windows telepítéskor nem particionáltuk teljesen a merevlemezt, vagy új adattárolóval gazdagodtunk</b><br><br><div align="center"><span><a class="linkclass" href="http://videosmart.hu/video/hogyan-telepitsunk-windows-xp-ala-uj-particiot">http://videosmart.hu/video/hogyan-telepitsunk-windows-xp-ala-uj-particiot</a></span></div><br><br><b><!--sizeo:3--><span style="font-size:12pt;line-height:100%"><!--/sizeo--><!--coloro:blue--><span style="color:blue"><!--/coloro-->Meghajtóbetűjel módosítása<!--colorc--></span><!--/colorc--><!--sizec--></span><!--/sizec--><br>Néhány program nagyon nem szereti az utólagos állítást!</b><ol type="1"><li> Lépjünk be a Számítógép-kezelésbe (Jobb klikk a Sajátgépen/Számítógépen &gt; Kezelés)<br><br></li><li> Tárolás &gt; Lemezkezelés<br><blockquote><img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/masodik.jpg" border="0" alt="IPB kép"></blockquote><br><br></li><li> Jobb klikk arra a partícióra/meghajtóra, amelynek módosítani szeretnénk a betűjelét, a menüből válasszuk a Meghajtóbetűjel és elérési út módosítása pontot! Rendszerpartíciót nem lehet átnevezni!<br><br></li><li> Az előbukkanó ablakban válasszuk a Módosítás lehetőséget! Változtassuk meg arra a betűjelét, amelyre szeretnénk, nyilván nem enged kettő egyformát, így ha foglalt a kiszemelt betűjel, akkor először azt kell felszabadítanunk!<br><blockquote><img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/modosit.jpg" border="0" alt="IPB kép"></blockquote><br><br></li><li> Ha megvan a kiszemelt betűjel, akkor kattintsunk az OK, majd nyugtázzuk/zárjuk be az ablakokat!</li></ol><b><!--sizeo:3--><span style="font-size:12pt;line-height:100%"><!--/sizeo--><!--coloro:blue--><span style="color:blue"><!--/coloro-->Meghajtó formázása<!--colorc--></span><!--/colorc--><!--sizec--></span><!--/sizec--><br>Bizony, minden adatot töröl az adott partícióról</b><ol type="1"><li> Lépjünk be a Sajátgépbe (Számítógépbe)!<br><br></li><li> Jobb klikk a kiszemelt partíción, majd Formázás! Rendszerpartíciót természetesen nem enged formázni.<br><blockquote><img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/elso.jpg" border="0" alt="IPB kép"></blockquote><br><br></li><li> Válasszuk az NTFS fájlrendszert, pipáljunk a Gyorsformázás mellett (mást hagyjunk alapbeállításon), majd indíthatjuk!<br><blockquote><img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/formate.jpg" border="0" alt="IPB kép"></blockquote></li></ol>
+			<br>
+			<!--IBF.ATTACHMENT_392242-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. szeptember 3. 7:56</h4>
+			<p><b><!--sizeo:3--><span style="font-size:12pt;line-height:100%"><!--/sizeo--><!--coloro:blue--><span style="color:blue"><!--/coloro-->Hova lett a partícióm?<!--colorc--></span><!--/colorc--><!--sizec--></span><!--/sizec--><br>Most komolyan!</b><br><br>Ha nem találjuk az egyik partíciónkat (és tudjuk, hogy van), akkor elsőnek vessünk egy pillantást az Eszközkezelőre, hogy egyáltalán megjelent-e a merevlemez a Windows színe előtt. Ha nem, nyomjunk rá a a Hardverváltozások keresésére, hátha előjön. Ha nem, akkor lehet ellenőrizni a kábeleket és persze magát a merevlemezt.<br>Abban az esetben, ha az Eszközkezelőben minden rendben van, akkor a Lemezkezelőt kell faggatnunk, hova dugta a partíciónkat. Itt is két eset lehetséges:</p><ul><li> Az egyik az, hogy megvan a partíciónk, csak betűjelet nem kapott. Ekkor -- értelem szerűen -- betűjelet kell neki adnunk, aztán már lehet is bebarangolni a lemezt.</li><li> Ám ha nem látjuk, akkor kezdhetünk keresni valami adatvisszaállító-programot. Nagyon fontos, hogy ebben az esetben NE nyúljunk a merevlemezhez, nehogy felülírjuk meglévő adatainkat pl. egy újraparticionálással.</li></ul>
+			<br>
+			<!--IBF.ATTACHMENT_400548-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Lalo  2009. október 23. 15:05</h4>
+			<p>Vettem egy új vinyót, ezzel nincs semmi gond. Van a régi, két partícióval (C: és D:), az egyiken a Vista és a programok (de már alig van helyem), a másikon a dokumentumok. A dokumentumokat átmásoltam az új vinyóra, így a D: alapjában véve üres. Most azt szeretném, hogy a meglévő két partíciómból egy legyen (C:). <br><br>Meg lehet oldani ezt a Vistával?
+			<br>
+			<!--IBF.ATTACHMENT_404225-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. október 23. 22:09</h4>
+			<p>Meg, a lemezkezelőben törlöd a partíciót, aztán a rendszerét kiterjeszted.
+			<br>
+			<!--IBF.ATTACHMENT_404273-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Lalo  2009. október 24. 8:26</h4>
+			<p>Köszönöm!
+			<br>
+			<!--IBF.ATTACHMENT_404287-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: solties  2009. december 18. 14:51</h4>
+			<p>Tudna valaki segíteni abban, hogy két lemez van a gépemben, az egyiken windows 7, a másikon 2 partíció adatokkal.<br>A windows 7 "rendszer számára fenntartott partíciója" ugye aktív. Ez eddig oké. De most vettem észre, hogy a másik lemezemen is aktív az egyik partíció, ami nem is zavarna (valószínűleg egy régi xp tette aktívvá), de így nem tudom kiterjeszteni, mert akkor dinamikus lemezzé akarja konvertálni a windows. Sajnos nincs annyi helyem, hogy az összes adatot elmentsem róla, ezért is akarom kiterjeszteni 25 Gb-tal.<br>Meg lehet oldani, hogy inaktív legyen a partíció? Akkor alaplemezként ki tudnám terjeszteni.<br>A baj az, hogy ha így terjesztem ki aktívként, akkor csak a partíció törlésével lehet újra alaplemezzé konvertálni tudomásom szerint. <br>Ötlet?
+			<br>
+			<!--IBF.ATTACHMENT_408720-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. december 18. 15:02</h4>
+			<p>Szerinted GParted-del simán át tudod írni a címkét.
+			<br>
+			<!--IBF.ATTACHMENT_408722-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2009. december 18. 15:48</h4>
+			<p>Ez nekem elég zavarosnak tűnik. Mi köze annak, hogy aktív-e a partíció vagy nem, hogy átméretezd? Nyugodtan lehet aktív.<br>Korábban a Windows saját eszközével egyáltalán nem lehetett átméretezni, a Vistánál jött be a zsugorítás/shrink. Tehátt ott se lehetett növelni a méretet  <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/roll.gif" style="vertical-align:middle" emoid=":hááát:" border="0" alt="roll.gif"> , csak csökkenteni.<br>Hogy a Windows 7-nél azóta hogyan van, őszintén mondom fogalmam sincs, mert nem használom erre a saját lemezkezelőjét.<br>Mindig is külső partíciókezelőket célszerű erre, mint ahogy látható a Windows elég korlátozott volt ebben a tekintetben.<br>Külső partíciókezelő program meg gyakorlatilag mind tudja az átméretezést, kezdve a a KGigi által ajánlottal, ami Linux folytán ingyenes, meg a windowsosok is, amelyek közt lehet szintén ingyenes is.
+			<br>
+			<!--IBF.ATTACHMENT_408733-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: solties  2009. december 18. 16:34</h4>
+			<p>Nem tudom mi köze hozzá az aktív partíciónak, mindenesetre kipróbáltam a gparted-es tippet, és bejött!<br>Ezzel megcsinálta az "inaktivvá tételt" és átméretezte.<br>Köszi.<br>A vistánál is lehetett növelni a partíciót, abban az esetben, ha volt a lemezen nem lefoglalt terület a növelendő partíció mellett.<br>(közben gondolkoztam, és lehet, hogy ezért nem engedte nekem növelni, mert a nem lefoglalt terület valószínűleg nem közvetlen mellette volt. Ezért akart belőle dinamikus lemezt csinálni, mert akkor más a helyzet. Gondolom én.....)<br>Mindegy megoldódott! Jó cucc az a linux.....
+			<br>
+			<!--IBF.ATTACHMENT_408739-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: hamster  2009. december 18. 23:20</h4>
+			<p>Win7-el használt winchesteremet WinXP-s rendszerre csatlakoztattam, a rendszer érzékeli az új hardvert, de azt írja "dinamikus" meg "idegen" (a lemezkezelő vélekedik e képpen) és nem tudom semmilyen fájlböngészővel böngészni a win7es winchesterem partícióit, igazából a rendszer látni se látja hogy egyáltalán azon vannak-e partíciók!<br><br>Mit lehet tenni?<br><br>Kaptam 3 féle tanácsot:<br>1. Prioritási gondok vannak, az egyikre tegyek jumpert. (én úgy gondolom, ha ilyen baj lenne el sem indulna... habár még nem próbáltam a másik változatot)<br>2. Mivel az XP ntfs5.1 a 7 pedig 6.0 így ntfs 5.1-es nem kezeli 6.0-t és ez a baj... valami partícionálóval essek neki (ezzel annyi bajom van, hogyha a rendszer nem látja hoyg az eszköznek vannak partíciói akkor egy partícionáló hogyan fogja? )<br>3. Csináljak virtuális pc-t xp alatt amin win7 van és dobáljam át a fájlokat amire szükségem van (ezt a lehetőséget szeretném mindenképpen elkerülni... nagyon hosszadalmas és pepecs munka, kell hogy legyen egyszerűbb megoldás is - ne kelljen már erőmű néhány fájlátviteléhez...)<br><br>Kérek még tanácsokat vagy javaslatot arra, hogy a 3 közül melyik a leginkább értelmes tanács!<br><br>Előre is köszönet a válaszokért!
+			<br>
+			<!--IBF.ATTACHMENT_408784-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2009. december 19. 10:10</h4>
+			<p>Ilyet még nem tapasztaltam, és most nem is nagyon tudok utánakeresni.<br>Valamiért RAID-esnek, dinamikus kötetnek látja, de hogy az NTFS verzió különbség miatt-e, a jó ég tudja.<br><br>1./ A jumper megoldás eleve csak IDE vinyóknál volna a master/slave beállításra, de ez nem orvosolná a problémát. Mindegy is, hogy master-e vagy slave, ettől még olvasni és bootolni is lehet róla.<br><br>2./ A particionálók kicsit többre képesek, mint a beépített XP lemezkezelő, de én nem matatnám össze ezekkel a Win7 partíciókat, ha ott jó. Azért megnézni megnézném particionáló programokkal is, meg a Win7 lemezkezelőjével is, hogy pontosan hogyan néz ki az ábra.<br><br>3./ Ha van 2 gép, akkor hálózatként összekötve simán átmásolhatod ami kell, ha csak erről volna szó.<br>De talán még jobb lenne, ha nem az XP-s rendszerre dugnád a Win7 vinyót, hanem a Win7-re az XP-s vinyót, és úgy másolnád át a fájlokat.
+			<br>
+			<!--IBF.ATTACHMENT_408800-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: hamster  2009. december 19. 11:13</h4>
+			<p>Az a baj hogy a win7-es gép 100km+ távolságban van és csak a winchester van kéznél meg az xp-s rendszer!
+			<br>
+			<!--IBF.ATTACHMENT_408802-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. december 19. 11:16</h4>
+			<p>Live linux.<br>Esélyt látok arra is, hogy az alaplap BIOS-a rosszul van beállítva.
+			<br>
+			<!--IBF.ATTACHMENT_408803-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: hamster  2009. december 19. 12:58</h4>
+			<p>Ha rosszul van beállítva akkor konkrétan mi lehet az ami nem jó? <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif"><br><br>Live linux... linuxal tudom ntfs 5.1 és 6.0-t is böngészni? Én úgy tudom írni már nem tudom... (vagy azóta már okosabb a linux és képes játszani a bitekkel ntfs rendszereken is? <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif">)
+			<br>
+			<!--IBF.ATTACHMENT_408814-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Aftershock  2009. december 23. 11:08</h4>
+			<p>Adott egy 500GB-s merevlemez, 4 partícióval, az egyik a Win7-et hordozza a hátán, a másikon minden egyéb olyan dolog foglal helyet, amire szükségem van/vagy esetleg lehet, a 3-on a lapozófájl található, 4-en pedig bármi, amiről még nem dőlt el, hogy kell-e vagy sem. A partíciók 250GB (C:rendszer) és 200GB (F:kell), valamint 10GB (D:esetleg), 5GB (E:lapozó). Na most a rendszer partícióból lecsíptem 100GB-ot, ami szeretnék hozzáadni a 200GB-oshoz, de ezt nem engedi a Windowsos lemezkezelő. <br>Erre kéne megoldás, úgy, hogy az F-en ne legyen adatvesztés. Megoldható ez valahogy?<br><span><a class="linkclass" href="http://kephost.com/view.php?filename=99lemez.png">http://kephost.com/view.php?filename=99lemez.png</a>
+			</span><br>
+			<!--IBF.ATTACHMENT_409086-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2009. december 23. 11:22</h4>
+			<p>A képeden már a rendszer 150 GB és van 100 GB particionálatlan terület.<br>Eddig jó. Meg tudod oldani, csak nem a Windows saját eszközével.<br>Kell külső particionáló program, pl.  Acronis Disk Director vagy Paragon. A Partition Magic-et ne használd Win7-nél <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/exclamat.gif" style="vertical-align:middle" emoid=":!:" border="0" alt="exclamat.gif"><br>Ezzel a C: betűjelű rendszerpartíciót átmozgatod vinyó végére, így az üres rész az F: mellé kerül. Ezután az F: méretét kiterjeszted az összes üres területre. (Resize) Ez mehet egy ütemben, de így sorban.<br>Csak az egész nem szerencsés így. A vinyó végére száműzted a rendszerpartíciót, ahol a leglassabb.  <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/roll.gif" style="vertical-align:middle" emoid=":hááát:" border="0" alt="roll.gif">
+			<br>
+			<!--IBF.ATTACHMENT_409087-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. december 23. 11:49</h4>
+			<p><!--quoteo(post=409087:date=2009. december 23. 11&#58;22:name=SkyBird)--></p><div class="quotetop">IDÉZET(SkyBird @ 2009. december 23. 11:22) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=409087"><img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Csak az egész nem szerencsés így. A vinyó végére száműzted a rendszerpartíciót, ahol a leglassabb.  <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/roll.gif" style="vertical-align:middle" emoid=":hááát:" border="0" alt="roll.gif"><!--QuoteEnd--></div><!--QuoteEEnd-->Ezt most nem értem, épp hogy ott kéne lenni a leggyorsabbnak. A lemezek forgási sebessége állandó, a külső sávok ármérője nagyobb és több adatot is tárolnak mint a belsők, tehát időegység alatt több adatot kéne, hogy beolvassanak a fejek. Vagy épp hogy kívülről befelé halad az írás/olvasás?
+			<br>
+			<!--IBF.ATTACHMENT_409089-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. december 23. 11:53</h4>
+			<p>Ha futtatsz egy merevlemeztesztet pl. HDTune-nal, akkor először gyors, aztán lassú. A teszt iránya megegyezik a partíciók irányával, kívülről befelé halad.
+			<br>
+			<!--IBF.ATTACHMENT_409091-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Aftershock  2009. december 23. 12:03</h4>
+			<p>Kipróbáltam az Acronis, illetve a Paragon szoftverét is, egyik sem támogatja a 64bites operációs rendszert...mit tehetek még?<br><br>A megoldásban lehetőleg ne szerepeljen az, hogy "rakj fel 32bites operációs rendszert".<br><br>Szerk.: Lehet találtam x64-hez Paragont.<br><br>Ezzel sem megy. Elindítom a hozzácsatolást, kb félúton kéri a gép újraindítását, valamiféle jobb hozzáférhetőség érdekében, aztán indítás után fekete képernyő, kiír pár sort, végére azt, hogy booting...aztán semmi sem történik. Ilyenkor kikapcsolom, elindítom a gépet, és választhatok Win7 és Linux(??????) között. Win7 megy úgy mint eddig, de a partíciót nem akarja kibővíteni.<br><br>Úgy végződött az eset, hogy felraktam gyorsba egy 32bites XP SP-2est, ami alatt már normálisan működött a Paragon Partition Managere, így a partíciót ki tudtam bővíteni. Viszont valahogy kerültek rá rendszerindításhoz szükséges fájlok, mlyeket nem tudok törölni...adatvesztést nem szeretnék...ötlet?
+			<br>
+			<!--IBF.ATTACHMENT_409094-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: [OP]Destroy-man  2010. január 2. 19:35</h4>
+			<p>NTFS partíciót mivel tudok átkonvertálni EXT2-esre? Természetessen adatvesztés nélkül kéne. 320 Gb-t sajnos nem tudok ideglenessen sem átmenteni máshova.
+			<br>
+			<!--IBF.ATTACHMENT_409942-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Lalo  2010. január 4. 10:36</h4>
+			<p>Sziasztok!<br>Van egy külső, USB vinyó, amit FAT32-re formáztak. Idővel rájöttek, hogy mivel 4GB-nál nagyobb állományokat (filmek) a FAT32 nem kezel, ezért át kéne formázni NTFS-re, de a vinyón már van egy halom adat. Én ezt a sorrendet ajánlottam, de azt nem tudom, hogy az ilyen külső USB vinyókat (ha még ideiglenesen is) meg lehet-e osztani több partícióra? Mert én ezt a sorrendet javasoltam:<br><br>1. A vinyót megosztani két partícióra, az újat megformázni NTFS-re.<br>2. A FAT32-es partíción lévő adatokat átmásolni az NTFS partícióra.<br>3. Törölni a FAT32 particiót, és megformázni NTFS-re.<br>4. Egyesíteni a két partíciót.<br><br>Ehhez a témához nem nagyon értek, ezért kérdezem: megvalósítható és ha igen, akkor milyen programot ajánlotok (XP SP3 fut a gépen).<br><br>Köszi!<br>
+			<br>
+			<!--IBF.ATTACHMENT_410072-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: solties  2010. január 4. 12:12</h4>
+			<p>Meg lehet osztani, (tapasztalat fujitsu siemens 1 TB) és gpartedet ajánlom.
+			<br>
+			<!--IBF.ATTACHMENT_410077-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2010. január 4. 12:42</h4>
+			<p>@Lalo:<br>miért nem jó a Windows beépített konvertálója? Adatvesztés nélkül FAT32-&gt;NTFS, mindenféle megosztás és egyéb hókusz-pókusz nélkül.
+			<br>
+			<!--IBF.ATTACHMENT_410083-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: [OP]Destroy-man  2010. január 4. 13:02</h4>
+			<p>És az én kérdésemre nem tudja vételenlül valaki a választ?<br>NTFS -&gt; EXT2 adatvesztés nélkül? FAT32 nekem is a 4GB miatt nem jöhet szóba, NTFS meg iszonyat lassú Linux alatt.<br>Egyáltalán kivitelezhető?
+			<br>
+			<!--IBF.ATTACHMENT_410088-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. január 4. 13:42</h4>
+			<p>Szerintem a particionáló programok zömének tudnia kéne.
+			<br>
+			<!--IBF.ATTACHMENT_410093-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Lalo  2010. január 4. 15:10</h4>
+			<p>@arpsoft: ezek szerint az XP úgy át tudja konvertálni FAT32-ről NTFS-re, hogy a vinyón lévő adatok nem fognak elveszni? <br>Segítenél abban, hogy ezt hogyan is kell megcsinálni? Köszi!
+			<br>
+			<!--IBF.ATTACHMENT_410100-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Dávid Csaba  2010. január 4. 15:42</h4>
+			<p><span><a class="linkclass" href="http://techline.hu/tudastar/20080413_fat32_2_ntfs.aspx">http://techline.hu/tudastar/20080413_fat32_2_ntfs.aspx</a>
+			</span><br>
+			<!--IBF.ATTACHMENT_410101-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Lalo  2010. január 4. 19:35</h4>
+			<p>Csaba, igazad van! Ráadásul éppen azon az oldalon van a megoldás amit általában naponta szoktam olvasni!  <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"> <br><br>Köszönöm a segítséget.
+			<br>
+			<!--IBF.ATTACHMENT_410121-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: [OP]Destroy-man  2010. január 4. 20:53</h4>
+			<p>NTFS-ről csak FAT32-re tudtam átkonvertálni, EXT2-re egy program sem hajlandó. Így kénytelen leszek lemondani a 4 GB-nél nagyobb fájlokról. <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/sad.gif" style="vertical-align:middle" emoid=":(" border="0" alt="sad.gif">
+			<br>
+			<!--IBF.ATTACHMENT_410138-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2010. január 4. 21:37</h4>
+			<p><img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/hmm.gif" style="vertical-align:middle" emoid=":hmm:" border="0" alt="hmm.gif"> Az ember tényleg azt gondolná, hogy egy komolyabb partíciókezelő program ezt megcsinálja, ha egyébként ismeri a FAT, NTFS, ext2/ext3, ReiserFS fájlrendszereket.<br>Kapásból mondtam volna a Paragont, de az is csak az op. rendszeren belüli partíciókat kezeli. FAT32 &lt;&gt; NTFS oda-vissza megy, ahogy az ext2 &lt;&gt; ext3 is, de a windowsost linuxosra már nem. <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/no.gif" style="vertical-align:middle" emoid=":nem:" border="0" alt="no.gif"><br>Még az lenne, hogy előbb legyen FAT és azt konvertálni ext2-re, és még dobott is a Google valami ilyet egy linuxos fórumban, csak nem tudom, hogy az FAT16 vagy FAT32 volt. Gyanús hogy FAT16, mert csak FAT-nek írták.<br>Nyilván adatokról, filmekről vagy hasonlókról lenne szó. Még a kerülőút lenne a legegyszerűbb, ha van plusz tárolókapacitás.<br>Elmenteni máshová az NTFS partíció tartalmát, ha annyira az adott helyen kell, majd törölni a partíciót, létrehozni ext2 partíciót ugyanott egy Live Linux rendszerről GParted, majd rámásolni az adatokat.<br><span>A Linux tudja olvasni az NTFS partíciót, de fordítva is lehetséges driverrel. A Total Commanderhez is van ilyen plugin, vagy pl. itt van ez. <a class="linkclass" href="http://www.fs-driver.org/">http://www.fs-driver.org/</a>
+			</span><br>
+			<!--IBF.ATTACHMENT_410142-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: [OP]Destroy-man  2010. január 4. 22:39</h4>
+			<p>A driver már fent van, bár vannak vele gondok, de ettől függetlenül (elvileg) működik.<br>250 GB Lossless van a winyon, amit nem szeretnék elveszteni (egy része beszerezhetetlen, megvenni sem lehet), de még ideglenessen sem tudom átmásolni máshova őket (nincs hova).<br>A winyo windowsos gépeken lenne használva, viszont linuxos routerre van kötve, és az szolgálja ki a többi gépnek, mint NAS server. Ugyan a router kezeli a NTFS-t de marha lassan, ezért is kelet cserélnem fájlrendszert. Az ext2 jött szóba, mint lehetséges, esetleg még a HFS, de ezt csak OSX tud készíteni, más particionáló program nem. Még frissen formázott winyora sem.
+			<br>
+			<!--IBF.ATTACHMENT_410147-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KeLa  2010. január 5. 8:54</h4>
+			<p>Nézz szét az Acronis házatá<!--coloro:#FF0000--><span style="color:#FF0000"><!--/coloro--><!--sizeo:5--><span style="font-size:18pt;line-height:100%"><!--/sizeo-->j<!--sizec--></span><!--/sizec--><!--colorc--></span><!--/colorc-->án. Az Acronis Média nagyon sokat tud, bár fizetős! De legyen időd is hozzá.
+			<br>
+			<!--IBF.ATTACHMENT_410154-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Lalo  2010. január 5. 10:34</h4>
+			<p>Még egy kis segítség kéne. Utólag kiderült, hogy a külső vinyót PSP3 géphez is használják, az meg a FAT32-t  látja, de a NTFS-t már nem. Itt meg bezárult a kör, hiszen a 4 GB-ot meg a FAT32 nem kezeli. <br><br>Gondolom itt a konkurenciaharc állhat a háttérbe, és a felhasználó meg nagy ívben....<br><br>Abban kérnék segítséget, hogy van-e megoldás arra, hogy a külső vinyót (akár megosztott particióban) úgy formázni, hogy a Windows és PSP3 is lássa a 4GB-nál nagyobb állományokat.
+			<br>
+			<!--IBF.ATTACHMENT_410159-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2010. január 5. 11:47</h4>
+			<p>Ha a konzol nem kezeli az NTFS-t, akkor nincs.
+			<br>
+			<!--IBF.ATTACHMENT_410168-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Lalo  2010. január 5. 13:04</h4>
+			<p>Köszi, akkor beleestünk a 22-es csapdájába. Plusz tanultunk valamit az üzleti világ című tantárgyból is.  <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/blush.gif" style="vertical-align:middle" emoid=":upsz:" border="0" alt="blush.gif">
+			<br>
+			<!--IBF.ATTACHMENT_410172-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2010. január 5. 14:03</h4>
+			<p><!--quoteo(post=410154:date=2010. január 5. 8&#58;54:name=KeLa)--></p><div class="quotetop">IDÉZET(KeLa @ 2010. január 5. 8:54) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=410154"><img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Nézz szét az Acronis házatáján.<!--QuoteEnd--></div><!--QuoteEEnd--><br><img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/hmm.gif" style="vertical-align:middle" emoid=":hmm:" border="0" alt="hmm.gif"> Én a programot néztem csak elsőként, Disk Director 10 Suite és Server, de egyáltalán nem ajánlott fel ilyen lehetőséget a konvertálásra. A Helpben se nagyon említ ilyet, csak FAT16-ról FAT32-re. Nekem FAT16 nem is akadt éppen.<br>A partíció típusát persze át lehetne írnaaz NTFS hexa 07-ről a Linux natív 83-ra, de az csak ez a két bájt, amivel semmit nem oldottunk meg.<br><span>Azután ahogy az oldalukon is rákerestem ajánlásod szerint, ott nekem egy találatom akadt, miszerint FAT16-ról megcsinálja ext2-re is. Állítólag. <a class="linkclass" href="http://kb.acronis.com/content/1598">http://kb.acronis.com/content/1598</a></span><br>Ezzel meg ott vagyunk adott esetben, ahol a part szakad, mert ha előbb FAT16-nak kell lennie, akkor már régen lőttek a meglévő 4 GB-nál nagyobb fájloknak.<br>Még a Partition Magic is elég jól tudott konvertálni emlékeim szerint, meg lehetne próbálni, de a neten olyat írtak, hogy NTFS-ről ext2-re az se tud.<br><br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->250 GB Lossless van a winyon, amit nem szeretnék elveszteni (egy része beszerezhetetlen, megvenni sem lehet), de még ideglenessen sem tudom átmásolni máshova őket (nincs hova).<!--QuoteEnd--></div><!--QuoteEEnd--><br>Hát ez így elég gáz, mert ezek szerint most is egy példányban van egy vinyón. Mi lesz, ha azzal történik valami? <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/roll.gif" style="vertical-align:middle" emoid=":hááát:" border="0" alt="roll.gif"><br>Egy biztonsági másolat nem ártana, ha annyira beszerezhetetlen.
+			<br>
+			<!--IBF.ATTACHMENT_410178-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: [OP]Destroy-man  2010. január 5. 15:50</h4>
+			<p>FAT16-ra egyik program sem ajánl fel konvertálást FAT32-ről. A 4 GB-nál nagyobb fájlokat leszdetem róla és ugy konvertáltam át. (ennyi hely még pont akadt apám gépén.)<br>FAT16-nál egyébként nem 32GB / partició a határ? Én így emlékszem rá...
+			<br>
+			<!--IBF.ATTACHMENT_410184-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2010. január 5. 18:46</h4>
+			<p><img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/arrow.gif" style="vertical-align:middle" emoid=":nyíl:" border="0" alt="arrow.gif"><span>&nbsp;&nbsp;<a class="linkclass" href="http://www.ntfs.com/ntfs_vs_fat.htm">http://www.ntfs.com/ntfs_vs_fat.htm</a>
+			</span><br>
+			<!--IBF.ATTACHMENT_410197-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Spányik Balázs  2010. január 6. 2:40</h4>
+			<p><!--quoteo(post=410154:date=2010. január 5. 8&#58;54:name=KeLa)--></p><div class="quotetop">IDÉZET(KeLa @ 2010. január 5. 8:54) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=410154"><img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Nézz szét az Acronis házatályán.<!--QuoteEnd--></div><!--QuoteEEnd--><br><br><!--sizeo:5--><span style="font-size:18pt;line-height:100%"><!--/sizeo--><!--coloro:#cc0000--><span style="color:#cc0000"><!--/coloro-->H O L  ?<!--colorc--></span><!--/colorc--><!--sizec--></span><!--/sizec--><br>Ó, édes istenkém... <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/no.gif" style="vertical-align:middle" emoid=":nem:" border="0" alt="no.gif"> <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/weep.gif" style="vertical-align:middle" emoid=":sír:" border="0" alt="weep.gif">
+			<br>
+			<!--IBF.ATTACHMENT_410229-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: KeLa  2010. január 6. 8:24</h4>
+			<p>Erre lehet mondani, hogy google a barátod.<br><br><span><a class="linkclass" href="http://www.google.com/search?client=opera&rls=hu&q=acronis&sourceid=opera&ie=utf-8&oe=utf-8">http://www.google.com/search?client=opera&amp;rls=hu&amp;q=acronis&amp;sourceid=opera&amp;ie=utf-8&amp;oe=utf-8</a></span><br><br>Valamikor volt nálam kölcsönbe egy Acronis MediaType nevű bootolós CD. Azthiszem valamelyik szerver termékükkel készült és azt tudta mint a telepített. Az sok fajta konvertálást tudott. Mivel van már legalább három éve a dolognak, így konkrétumokra nem emlékszem. <b>Csak egy javaslat volt, hátha ott talál megoldást a problémá<!--coloro:#FF0000--><span style="color:#FF0000"><!--/coloro--><!--sizeo:5--><span style="font-size:18pt;line-height:100%"><!--/sizeo-->j<!--sizec--></span><!--/sizec--><!--colorc--></span><!--/colorc-->ára.</b><br>SkyBird kollega megtudta nézni konkrétan és leírta, hogy nem tudja amit kellene!<br><br><!--coloro:#FF0000--><span style="color:#FF0000"><!--/coloro-->Könyörgöm, toldalékban csak <!--sizeo:5--><span style="font-size:18pt;line-height:100%"><!--/sizeo-->j<!--sizec--></span><!--/sizec--> lehet! &lt;KGigi&gt;<!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_410236-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: ProFiler  2010. január 6. 8:57</h4>
+			<p><!--quoteo(post=410236:date=2010. január 6. 8&#58;24:name=KeLa)--></p><div class="quotetop">IDÉZET(KeLa @ 2010. január 6. 8:24) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=410236"><img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Erre lehet mondani, hogy google a barátod.<!--QuoteEnd--></div><!--QuoteEEnd--><br> <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/roll.gif" style="vertical-align:middle" emoid=":hááát:" border="0" alt="roll.gif"> Mégsem vagy annyira jó barátságban vele... <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/no.gif" style="vertical-align:middle" emoid=":nem:" border="0" alt="no.gif"> <br><br>Ciao.
+			<br>
+			<!--IBF.ATTACHMENT_410237-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Dongo_22  2010. január 31. 15:51</h4>
+			<p>Hello!<br><br>Egy 500 GB-os merevlemezem van, és ezt én 2 partícióra bontottam, az egyiken a Windows XP volt, a másikon pedig az összes anyagom, ami létezett, és sajnos pótolhatatlan, nagyon nagy szükségem van rá. Mikor meghalt a gép, csak boot-olni tudtam, Windows 7-et raktam fel. Az az érdekes, hogy mikor formáztam a gépet, én csak a XP-s partíciót töröltem, és most csak azt a partíciót ismeri fel a gép, amit formáztam. Kb. 130 GB-ot, és a többit, amin az adataim voltak azt nem. Sikerült odáig eljutnom, hogy látom azt a partíciót, de nem tudom használni, mert kéri a Windows, hogy előtte formázzam. De nem akarom formázni, mert kell nekem azaz adat.<br><br>Kérlek, segítsetek!
+			<br>
+			<!--IBF.ATTACHMENT_412252-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2010. január 31. 15:54</h4>
+			<p>Nem tudom, mit csinálhattál már a telepítés óta, de valószínűleg csak betűjelet kellett volna adnod a nem-látszó partíciódnak. Most, hogy formázást kér, már más a helyzet.
+			<br>
+			<!--IBF.ATTACHMENT_412253-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Dongo_22  2010. január 31. 15:59</h4>
+			<p>Csak betűjelet adtam neki ezután megjelenítette a sajátgépben, de ha rákatintok azt írja formáznom kell.
+			<br>
+			<!--IBF.ATTACHMENT_412254-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2010. január 31. 17:59</h4>
+			<p>Egy TestDisk-et ráengednék.<br>Ha az sem, akkor GetDataBack, csak kell egy tárolóhely, ahová azzal menteni tudsz.<br><span>Van itt egy ilyen leírás. <a class="linkclass" href="http://www.pcworld.hu/forum/index.php?showtopic=13662">http://www.pcworld.hu/forum/index.php?showtopic=13662</a>
+			</span><br>
+			<!--IBF.ATTACHMENT_412273-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: die nadel  2010. február 9. 19:22</h4>
+			<p>Sziasztok!<br><br>A segítségeteket szeretném kérni.<br>Adott egy 250 GB-os merevlemez a következő képen particionálva:<br><img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/1035899017K_pkiv_g_s_www.kepfeltoltes.hu_.jpg" border="0" alt="IPB kép"><br>Szeretném a rendszerpartíciót (Windows 7 Ultimate 64 bit) 10BG-tal bővíteni amit a "D"-ből vagy az "E"-ből vennék el. <br>Meg lehet ezt oldani a Windows lemezkezelőjével? Vagy aktív (rendszer) partícióval nem lehet ezt megcsinálni.<br>Ha nem lehet, akkor mivel lehet? Talán GParteddel? (Soha nem használtam Linux-ot <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/blush.gif" style="vertical-align:middle" emoid=":upsz:" border="0" alt="blush.gif"> )<br><br>Segítségeteket előre is köszönöm!
+			<br>
+			<!--IBF.ATTACHMENT_413092-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2010. február 9. 21:57</h4>
+			<p>Egy lépésben csak a szomszédos partíciókkal tudsz így átrendezni. Több lépcsőben persze minden megoldható.<br>Én nem tennék ilyet a Windows lemezkezelőjével, akár tudja már, akár nem. Csak külső partíciókezelő programmal.
+			<br>
+			<!--IBF.ATTACHMENT_413099-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. február 9. 23:58</h4>
+			<p>A rendszerpartíciót csak csökkenteni nem tudod Windows alól, a növeléssel semmi gond nem lesz. Én nyugodt szívvel használtam a Lemezkezelőt már Vista alatt is.
+			<br>
+			<!--IBF.ATTACHMENT_413107-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2010. február 10. 9:41</h4>
+			<p>Ha jól emlékszem a Vistánál csak a shrink/zsugorítás volt a partícióra a saját lemezkezelőjével. Úgyhogy ott saját eszközzel növelni nem tudtál. <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/disbelief.gif" style="vertical-align:middle" emoid=":nemnem:" border="0" alt="disbelief.gif"><br>Lehet, hogy a Win7 már növelni is tud, sose néztem annyira. Az én szívem ettől nem nagyon nyugodna meg.  <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/ani_wink.gif" style="vertical-align:middle" emoid=";)" border="0" alt="ani_wink.gif"> <br>Külső partíciókezelővel meg mindent gond nélkül megoldok.   <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif">
+			<br>
+			<!--IBF.ATTACHMENT_413118-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: die nadel  2010. február 10. 19:41</h4>
+			<p>Köszönöm a segítséget.<br>Utánaolvastam néhány helyen ennek és legtöbb esetben a Linux GParted particionálója jött szóba mint megbízható megoldás. Még alszom rá néhányat, mert mostanában úgy sincs lelkierőm hozzá.<br>Aztán majd kiderül. <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/roll.gif" style="vertical-align:middle" emoid=":hááát:" border="0" alt="roll.gif"> Maximum lesz egy format "C". <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/laughing.gif" style="vertical-align:middle" emoid=":lol:" border="0" alt="laughing.gif">
+			<br>
+			<!--IBF.ATTACHMENT_413158-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. február 10. 20:30</h4>
+			<p>Kizárt. Én a Vistával növeltem partíciót, ebben biztos vagyok.<br><br>A GParted egy nagyon jó program, egyébként itt a fórumon is van róla leírás.
+			<br>
+			<!--IBF.ATTACHMENT_413165-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: die nadel  2010. február 11. 12:01</h4>
+			<p>Vistával már én is csináltam partíciót úgy, hogy levettem az egyik meglevőből és újat hoztam létre. Nem attól tartok, hogy nem tudom levenni a megfelelő méretű területet hanem attól, hogy azt nem tudom hozzáadni az aktív rendszerpartícióhoz (félek, hogy kihúzom a Windows alól a "talajt").
+			<br>
+			<!--IBF.ATTACHMENT_413219-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2010. február 11. 12:06</h4>
+			<p>Ezért mondom, hogy ne a sajátjával csináld. Érdemes "szakcéggel" dolgoztatni. <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/ani_wink.gif" style="vertical-align:middle" emoid=";)" border="0" alt="ani_wink.gif"><br>Acronis Disk Director, Paragon vagy akár az említett Gparted, ami Linux folytán ingyenes.<br><br>Sőt, ha annyira tartasz a dologtól, érdemes csinálni egy partíciómentést előtte. Ez egyébként is javallott, ilyen beavatkozáskor meg elővigyázatosságból fel is hívják rá a figyelmet.<br>Egyébként nemigen szokott probléma lenni, de az ördög...
+			<br>
+			<!--IBF.ATTACHMENT_413221-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: aadaam  2010. február 19. 19:49</h4>
+			<p><!--quoteo(post=413092:date=2010. február 9. 19&#58;22:name=die nadel)--></p><div class="quotetop">IDÉZET(die nadel @ 2010. február 9. 19:22) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=413092"><img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Sziasztok!<br><br>A segítségeteket szeretném kérni.<br>Adott egy 250 GB-os merevlemez a következő képen particionálva:<br><img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/1035899017K_pkiv_g_s_www.kepfeltoltes.hu_.jpg" border="0" alt="IPB kép"><br>Szeretném a rendszerpartíciót (Windows 7 Ultimate 64 bit) 10BG-tal bővíteni amit a "D"-ből vagy az "E"-ből vennék el. <br>Meg lehet ezt oldani a Windows lemezkezelőjével? Vagy aktív (rendszer) partícióval nem lehet ezt megcsinálni.<br>Ha nem lehet, akkor mivel lehet? Talán GParteddel? (Soha nem használtam Linux-ot <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/blush.gif" style="vertical-align:middle" emoid=":upsz:" border="0" alt="blush.gif"> )<br><br>Segítségeteket előre is köszönöm!<!--QuoteEnd--></div><!--QuoteEEnd--><br>Sziasztok!<br><br>Nekem hasonló problémám lenne WinVistaBusiness 32 alatt. Csak a következő felállásban néz ki az összesen 320 GB Winyóm:<br><br>C (Windows) 963 MB szabad már csak a 40 GB-ból<br>D                  100 GB szabad a 250 GB-ból<br>P                  2,9 GB szabad a 10 GB-ból<br><br>Szeretnék esetleg olyan felállást kialakítani valahogy legyen egy 100 GB-os C meghajtóm és és egy 220 GB -os D.<br>De nem tudom hogy hogyan tudnám a jelenlegi C-t megnöveli, ahhoz helyet hozzáadni, esetleg összevonni a partíciókat.<br>EASUS Partition Magic Home programom van, de ebben sem találtam ilyen menüpontot.<br>Valaki ebben tudna részletesebben segíteni hogy hogy kell ezt a növelést véghezvinni ?<br><br>Csak nem szeretném emiatt újratelepíteni a Windowst meg a programokat.<br>Biztonsági mentést az adatokról tudok csinálni. Ha a cél érdekében kell a D és a P meghajtó formatálható is.<br><br>Köszönöm előre is!
+			<br>
+			<!--IBF.ATTACHMENT_413783-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: jagdtigger  2010. február 19. 20:54</h4>
+			<p>Hát talán a Linux live CD-n lévő GParted képes erre de már régen használtam Linux-ot.
+			<br>
+			<!--IBF.ATTACHMENT_413790-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: aadaam  2010. február 19. 21:13</h4>
+			<p>Sajnos és még úgy sem értek a Linuxhoz - És ez a tipp sajnos kicsit kevés nekem. De azért köszi.
+			<br>
+			<!--IBF.ATTACHMENT_413793-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: solties  2010. február 19. 21:16</h4>
+			<p>Csak olyan partícióból tudsz leválasztani a másik javára, ami mellette van.<br>Én a GParteddel csináltam ezt.<br>Linux live bebootolsz, és az eszközökben megkeresed a terminált, olyan mint a win-ben a parancssor, beírod "sudo gparted" és előjön. Tök egyszerű!<br>Tölts le valahonnan egy ubuntut (ingyenes) kiírod, egy cd-re ráfér! Választható benne a nyelv! Ezzel a CD-vel bootolj be, és válaszd az ubuntu kipróbálása a számítógép módosítása nélkül-t<br>A Te esetedben valószínüleg csak az fog működni, hogy átméretezed a partíciókat, tehát ha a C-hez hozzá akarsz adni, akkor azt egy csúszkával állítod. A D "rovására"<br>Vagy, ha el tudnád menteni a D adatait, akkor Windows alól is megy. Törlöd az egész partíciót, és utána kiterjeszted a C-t.<br>De úgy néz ki, csak a "D"-ből tudsz lecsípni, mert az van mellette.<br>Elég sok adat van rajtuk amint látom, ha tudsz, előtte ments!
+			<br>
+			<!--IBF.ATTACHMENT_413795-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: aadaam  2010. február 19. 21:27</h4>
+			<p>Szia!<br><br>Köszi, az utóbbi lehetőség tűnik nekem egyszerűbbnek, mivel hiába van a "D"-n sok adat, letudom menteni egy külső winchesterre.<br>És akkor ezt hogyan csináljam. Lementem a D-t, majd formázással teljesen letörlöm a partíciót ... Utána akár a Windows lemezkezelő eszköze is fel fog olyat ajánlani olyan lehetőséget / menüt hogy bővítsem a C részt a fennamradó szabad részből ?<br><br>Azt pl. nem lehet megcsinálni hogy a jelenlegi D partíciómból amin van 100 GB szabad hely pl. 60-at levlasztok, külön partícióként és utána azt törlöm, majd ezzel a törölt területtel bővítem a C-t ?<br><br>Köszi: ADAM<br><br><!--coloro:#ff0000--><span style="color:#ff0000"><!--/coloro-->Van néhány apróság, amit nem kellene elkövetni:</span></p><ul><li> Nem idézünk előttünk íródott hozzászólást;</li><li> Nem rakja a komplett üzenetet [b] tagbe;</li><li> Nem használunk piros színt, azzal a moderátorok írhatnak;</li></ul> &lt;Pjotr&gt;<!--colorc--><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_413799-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: solties  2010. február 19. 21:54</h4>
+			<p>Ha a D particióból akarsz leválasztani 60-at, akkor az valószínűleg, csak az "E" (vagy ahogy nálad látszik "P") tudod hozzácsatolni, mivel az lesz közvetlen a lecsatolt rész mellett.<br>Tudom mert pontosan így jártam én is, nekem is 3 partícióra van osztva az egyik vinyóm!<br>Nos ha le tudod menteni a "D" ről az adatokat, akkor csináld ezt:<br>1, mentés, aztán számítogép/kezelés/ lemezkezelés<br>2, kiválasztod a "D" partíciót, jobbgomb, formázás, ha kész, ugyanígy jobbgomb kötet törlése.<br>3, Aztán jobklikk a "C"-re kötet kiterjesztése, és a megjelenő ablakban megadod neki, hogy mekkorával "nőjön" (Tehát pl 10 Gb=10000)<br>És oké...<br>Aztán ha megvan, újra létrehozhatod a "D" partíciót, mármint ami megmaradt belőle. Jobbgomb, új kötet, és így tovább. Gondolom innen menni fog.<br>Kb ennyi röviden.
+			<br>
+			<!--IBF.ATTACHMENT_413802-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: aadaam  2010. február 19. 22:05</h4>
+			<p>OK - ezt megpróbálom , remélem sikerül. Ha nem ,akkor úgyis írok <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"> HALI ADAM
+			<br>
+			<!--IBF.ATTACHMENT_413805-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: aadaam  2010. február 20. 0:05</h4>
+			<p>Sikerült - Köszöntem. Most már csak vissza kell másolnom az adataimat. ADAM
+			<br>
+			<!--IBF.ATTACHMENT_413817-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Dreaman  2010. március 28. 14:31</h4>
+			<p>Sziasztok!<br><br>A következőben kérném a segítségeteket! Adott egy HDD, mely 3 részre van darabolva: egy elsődleges, és két logikai partícióra. Az elsődlegesen működött sokáig az XP, a másik kettő adattárolásra volt használva. Aztán az egyik logikai partícióra felkerült a Windows 7. Így aztán boot menüvel tökéletesen futott egymás mellett a két operációs rendszer. Mára azonban az XP feleslegessé vált, és szeretnék megválni tőle. Win7 alatt a lemezkezelővel gyakorlatilag semmit sem tudtam kezdeni, ezért előkerestem az EASEUS Partition Master-t. Azonban ő sem jutott semmire: elsődleges partíciót nem tud formázni. Ilyenkor mit kellene tennem? Szeretném, ha a jelenleg XP-s elsődleges partíciót le tudnám formázni úgy, hogy a Win7 tovább működjön és a másik logikai meghajtó tartalma se vesszen el (tárhiány miatt nem tudom lementeni).<br>Előre is köszönök minden tippet!
+			<br>
+			<!--IBF.ATTACHMENT_416089-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2010. március 28. 14:47</h4>
+			<p><img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/disbelief.gif" style="vertical-align:middle" emoid=":nemnem:" border="0" alt="disbelief.gif"> Ez így nem lesz frankó, mert akár az XP, akár csak maga a Win7 boot fájljai mindenképpen az elsődleges partíción kell hogy legyenek.<br>Ha formáznád az XP partícióját, a Win7 nem indulna, bár ez helyrehozható, de csak az aktív partíción.<br>Jobb lenne előbb az XP partícióról a Boot mappát és a bootmgr fájlt átmásolni a Win7 partíciójára.<br>Utána vagy XP alól, vagy CD-ről, USB-ről bootolva egy külső partíciókezelő programot a Win7 partícióját elsődlegessé, majd aktívvá tenni.<br>Ezután már csak a Win7 bootját kell helyreállítani a telepítő repair funkciójával.<br>Ha eddig eljutottál, és nem kell az XP partíció, bármit tehetsz vele.
+			<br>
+			<!--IBF.ATTACHMENT_416090-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Dreaman  2010. március 28. 15:36</h4>
+			<p>Köszi a tippet, de nem bírtam ki(<img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/tongue.gif" style="vertical-align:middle" emoid=":P" border="0" alt="tongue.gif">) és bebootoltam Win7 lemezzel, és onnan formáztam simán az XP-s partíciót. Utána pedig, ahogy leírtad, többé nem indult el a Win7. Bebootoltam ismét, kértem egy startup recovery-t, és a naplót elolvasva a hiányzó "bootmanager"-t, pótolta az XP-s partícióra. Az a pár kB már nem zavar, probléma megoldva. <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/tongue.gif" style="vertical-align:middle" emoid=":P" border="0" alt="tongue.gif"> (Habár, hogy utána miért kellett újraaktiválnom, azt nem értem, de szerencsére nem volt gond vele..) De így is köszönöm a segítséged, legközelebb majd lehet úgy járok el, ahogy te írtad!
+			<br>
+			<!--IBF.ATTACHMENT_416098-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Vazgeraa  2010. június 12. 16:15</h4>
+			<p>Nekem az a próblémám van hogy 320GB os laptopon csak a második particíó látszik ami az egész fele. Mit tudnék tenni hogy az első partíció is látszódjon?
+			<br>
+			<!--IBF.ATTACHMENT_420130-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. június 12. 16:47</h4>
+			<p><span>A lemezkezelőben adsz neki egy betűjelet: <a class="linkclass" href="http://www.pcworld.hu/forum/index.php?showtopic=13291">http://www.pcworld.hu/forum/index.php?showtopic=13291</a>
+			</span><br>
+			<!--IBF.ATTACHMENT_420131-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: oldtaurus  2010. július 11. 16:12</h4>
+			<p>Sziasztok!<br><br>A Windows 7 a "C" elsődleges  NTFS partición van, mely méretét szeretném növelni. Van bőven szabad hely "D"-n (logikai NTFS) ezért szeretnék lecsípni belőle 15 GB helyet, mellyel megnövelném a "C" particiót. Nem a Windows alatt csinálnám. Ezért megpróbáltam a Hiren´s Boot CD 10.0 lemezén az Acronis Disc Director és a Partition Magic Pro programokkal megcsinálni, de nem kínálja fel közvetlenül ezt a lehetőséget. Gyanítom, hogy több részletben talán elvégezhető, ebben kérném a segítségeteket.
+			<br>
+			<!--IBF.ATTACHMENT_421739-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2010. július 11. 16:24</h4>
+			<p>Persze. Előbb csökkenteni kell a D: logikaid méretét, hogy a kezdetét feljebb tolod.<br>Utána már megnövelheted az elsődlegest az üres helyre.<br>Ezt a Disk Directorral megteheted ebben a sorrendben akár egyszerre, egy leokézással.
+			<br>
+			<!--IBF.ATTACHMENT_421741-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: oldtaurus  2010. július 11. 17:27</h4>
+			<p>Köszönöm a segítségedet, sikerült az átméretezés!
+			<br>
+			<!--IBF.ATTACHMENT_421747-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Jay  2010. augusztus 10. 11:52</h4>
+			<p><!--quoteo--></p><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Destroy-man' = NTFS-ről csak FAT32-re tudtam átkonvertálni...<!--QuoteEnd--></div><!--QuoteEEnd--><br>Melyik programmal oldottad meg?
+			<br>
+			<!--IBF.ATTACHMENT_423242-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: elbest  2010. szeptember 2. 19:33</h4>
+			<p>Sziasztok!<br>Bocs, Egy kicsit hosszú lesz...<br><br>Adott egy új laptop, rajta 2 db 500 Gb-os Winchesterrel.<br><br>Disc1<br>   <br>* SYSTEM       NTFS   199 MB.............nem tudom, mi<br>C:OS              NTFS   448,85 GB<br>E: RECOVERY  NTFS    16,1 GB...........ez ugye a helyreállító (OP rendszer)<br>F: HP TOOLS    FAT32    103,02 MB.....nem tudom mi<br>Mind Pimary.<br><br>Korábbi gépeimen volt egy C az op rendszerrel, programokkal és egy D adatokkal. Igaz, az nem is Win 7 (64 bit) volt, hanem elődei. Érdekelne, hogy mi lehet az F-en és a *-on....de biztos kell.<br><br>Amit meg szerettem volna oldani. A közel 450 Gb-os C-t kettéosztani.<br>C max 100 GB a maradék pedig a másik partíció.<br>De gondolom a C-nek 100Gb sem kellene.(Most 32 Gb  foglalt) Mennyit kell, hogy hagyjak a Win 7-nek és a programoknak és egyéb feladatoknak?<br><br>A Minitool Partition Wizard-dal próbálkoztam. Le is csökkentettem a C-t. Lett mellette egy üres hely (unallocated)<br>Ebből kreáltam volna egy particiót, de nem lehet. Hiányoja az MBR-t.<br>Most  ott tartok, hogy visszaállítottam az eredeti C méretet.<br>Közben észrevettem, hogy egy menetben is lehet mindent csinálni ezzel a programmal.<br>Megnéztem egy videót itt:<br><span><a class="linkclass" href="http://www.partitionwizard.com/faq.html">http://www.partitionwizard.com/faq.html</a></span><br>Simán lecsökkenti a C méretét és létrehoz azonnal 3 partíciót a felszabadult helyre. Ha jól látom Win 7 op rendszerrel és nem nyafog MBR-ért. <br><br><br>Mit tudnék tenni?<br>A másik Winchesterrel is vannak problémáim, de azt egy másik kérdésben inkább...
+			<br>
+			<!--IBF.ATTACHMENT_424112-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: elbest  2010. szeptember 2. 20:15</h4>
+			<p>A problémám a másik Disc-en:<br><br>Ez is mint említettem 500 GB.<br>Volt rajta:<br>D:DATA   NTFS    48 GB Primary<br>a többi része UNALLOCATED<br><br>Ezt az említett programmal megváltoztattam.<br>Így néz ki most:<br>D: DATA  NTFS  232,87 GB   Primary<br>H : ADAT  NTFS  232,88 GB  Logical <br><br>Nem én akartam, hogy Logical legyen, ilyen lett a H.<br>Lehet, hogy e miatt vannak a következő gondjaim?<br><br>Ha a H-ra akarok másolni máshonnan, azt az üzenetet kapom, hogy "hozzáférés le van tiltva"....de a RENDSZERGAZDAKÉNT gombra kattintva engedi.<br>A H-ról törölni sem enged, azt az üzenetet kapom, hogy "írásvédett"...de Rendszergazda gombra kattintva engedi.<br>Ha a H-n megnyitok pl egy doc, vagy exe fájlt, módosítok rajta és szeretném menteni, akkor nem engedi.<br>A- mentés másként - ablak jön elő. Persze, ha nem változtatom meg a fájl nevét, akkor kapom az "írásvédett" üzenetet.<br>Ha megváltoztatom a fájl nevét, akkor azt az üzenetet kapom, hogy "Erre a helyre nem mentheti. A szükséges engedélyt a rendszergazdától szerezheti be".  Majd fölkínálja, hogy mentsem a DOKUMENTUMOK mappába (a C-re).<br>Ugyanez a helyzet, ha egy új fájlt akarok menteni ide (pl egy új doc, vagy exe fájlt).<br><br>Könyvtárat enged a H-ra átmásolni és törölni is.<br><br>Hogy tudom megoldani,hogy teljesen normális és használható partíció legyen a H?
+			<br>
+			<!--IBF.ATTACHMENT_424113-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2010. szeptember 2. 21:15</h4>
+			<p><!--quoteo(post=424112:date=2010. szeptember 2. 19&#58;33:name=elbest)--></p><div class="quotetop">IDÉZET(elbest @ 2010. szeptember 2. 19:33) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=424112"><img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec--><br>Disc1<br>   <br>* SYSTEM       NTFS   199 MB.............nem tudom, mi<!--QuoteEnd--></div><!--QuoteEEnd--><br>Ez a Windows 7 boot partíciója.<br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->C:OS              NTFS   448,85 GB<!--QuoteEnd--></div><!--QuoteEEnd--><br>Ez maga a Win7 partíció.<br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->E: RECOVERY  NTFS    16,1 GB...........ez ugye a helyreállító (OP rendszer)<!--QuoteEnd--></div><!--QuoteEEnd--><br><img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/yes.gif" style="vertical-align:middle" emoid=":igen:" border="0" alt="yes.gif"><br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->F: HP TOOLS    FAT32    103,02 MB.....nem tudom mi<!--QuoteEnd--></div><!--QuoteEEnd--><br>Ezek a HP notebook speciális HP eszközei. Nálam ez 2 GB-on csücsül.<br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Mind Pimary.<!--QuoteEnd--></div><!--QuoteEEnd--><br>Na ez az én bajom is, pont egy ilyenbe futottam bele.<br>Csókoltatom a Microsoftot a Win7-en a boot partícióra elpazarolni egy elsődleges partíciót, meg ugyancsak a HP-t, aki szintén lefoglalt kettőt.  <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/roll.gif" style="vertical-align:middle" emoid=":hááát:" border="0" alt="roll.gif"><br>Nehogy már logikaira konvertáljam az op. rendszert, bár éppen lehetne.<br>PC-n még elment a boot partíció, de így a notebooknál gázos.<br>Egy elsődleges partíciót meg kellene szüntetni, csak azon gondolkodom egyelőre, nem ismervén a HP recovery csínjabínját, hogyha elmentés után törlöm a HP TOOLS partíciót, és feltolom ide a recoveryt, de éppen egyelőre maradhatna unallocated is, akkor fog-e működni az f11 billentyűre a recovery. Ha egyszer kell.<br>Nem tudom még, menet közben használja-e ezt az F: tools partíciót valamire, vagy csak ha telepítek valamit.<br>És persze 50-60 GB-ot meghagyok a Win 7-nek, a többi meg lehetne 1 vagy 2 DATA logikai partíció.<br>Ennek még utána kell nézni fórumokon, HP supportnál.<br>De elsőként érdemes USB külső vinyóra partíciómentést csinálni USB-ről bebootolt True Image programmal.<br><br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Ebből kreáltam volna egy particiót, de nem lehet. Hiányoja az MBR-t.<!--QuoteEnd--></div><!--QuoteEEnd--><br>Azt még meg lehet oldani, aktívvá tenni a C: op. rendszer partíciót, és itt helyreállítani a Win7 bootját.<br>... és még kérdés, hogy érdemes-e ezekkel így veszkődni, vagy mennyire kell ez a külön boot partíció, mert EFI BIOS gyanú van, lévén ilyen mappa. Ha ez jelent ebben egyáltalán valamit.<br><br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Közben észrevettem, hogy egy menetben is lehet mindent csinálni ezzel a programmal.<!--QuoteEnd--></div><!--QuoteEEnd--><br>Inkább legújabb Paragon vagy esetleg Acronis Disk Director kellene, bár utóbbi kicsit hadilábon áll a Win7-tel, illetve összeakad az újabb True Image verzióval.
+			<br>
+			<!--IBF.ATTACHMENT_424118-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2010. szeptember 2. 21:19</h4>
+			<p>Újra kell tenni a Windows-t úgy, hogy telepítéskor törölni kell mindent majd csak 1 partíciót létrehozni, ami elsődleges, a többit pedig majd a működő Windows Lemezkezelőjével megcsinálni kiterjesztett-logikaira.
+			<br>
+			<!--IBF.ATTACHMENT_424119-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2010. szeptember 2. 21:27</h4>
+			<p>Hja, úgy nem kunszt.  <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/ani_wink.gif" style="vertical-align:middle" emoid=";)" border="0" alt="ani_wink.gif"> Csak odalesz az összes karácsonyfadísz.<br>Igaz akkor már esetleg inkább 64 bites lenne rátolva. A cubehőrök meg letölthetők.<br><br><!--quoteo(post=424113:date=2010. szeptember 2. 20&#58;15:name=elbest)--></p><div class="quotetop">IDÉZET(elbest @ 2010. szeptember 2. 20:15) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=424113"><img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Hogy tudom megoldani,hogy teljesen normális és használható partíció legyen a H?<!--QuoteEnd--></div><!--QuoteEEnd--><br>Ezek a jelenségek a Vista óta a jogosultságkezelési anomáliák közé tartoznak.<br>Ha ilyen van, külön hozzá kell adni a meghajtóhoz vagy mappához a rendszergazda jogú usered teljes hozzáférési joggal.
+			<br>
+			<!--IBF.ATTACHMENT_424120-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: elbest  2010. szeptember 3. 6:53</h4>
+			<p>Köszi a válaszokat........hát csak lepkézek:) nem vagyok ám guru..<img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"><br>Az nem is zavar, hogy ott a boot partició, meg a Recovery és a HP által lefoglalt F.<br>Csak éppen nem értem. Ahhoz voltam szokva, hogy ezek a dolgok korábban együtt voltak a C-n. Minek ezeknek külön partíció?<br>És emellett volt egy D-m, meg egy E-m, ami Data volt és passsz.<br><br>Egyébként helyreállító lemezt készítettem. (4 db DVD)!! Lehet, hogy akkor már nem is kellene a RECOVERY. De egye fene, legyen ott, van hely.<br><br>Igen bizony akkor a "karácsonyfadíszek" elvesznek, ha újra kezdem elölről. Napokon keresztül aggattam fel Őket.<br><b>Pjotr</b>  ha újra kezdem, akkor másképp lesz? Mikor először bekapcsoltam a gépet, akkor elkezdte telepíteni a Win 7-et és mindent, de nem kérdezett, hogy milyen partíciókat akarok és hol... Újrakezdeni most már csak a helyreállítással lehet nem? ...de ezt nem nagyon szeretném.<br>Vagy, lenyúzok mindent és fölteszek egy megvásárolt <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/ani_wink.gif" style="vertical-align:middle" emoid=";)" border="0" alt="ani_wink.gif"> Win7-et, vagy ha bemérgelem magam, akkor inkább egy XP-t (Csak akkor miért kellett a 4 GB Ram?)<br>Egyébként a föntlévő Win 7 64 bites. Ami probléma is, mert használok egy Dos-os programot a munkámhoz és a készítője szerint nem fut 64 bites op rendszeren. Azt mondta tegyek föl egy 32 bitest, vagy XP-t.Na bumm. Legyen két op rendszer...csak előbb kell telepíteni a régebbit, ill. a 32 bitest. Volt aki pedig azt mondta nekem, hogy ez nem igaz, simán telepíthetek bármilyent akkor is, ha fönt van már a win7 (64 bit)<br><br>Szóval, hogy ne kanyarodjak el. Nekem most az lenne fontos, hogy a C-t lenyomjam pl 80 GB-ra. Gondolom az bőven elég, vagy még kevesebb is, 50-60 (ahogy SkyBird)<br>Ezzel nincs is probléma,meg tudom tenni.<br><u>Csak a felszabaduló helyre szeretnék egy másik particiót.</u> No ez nem megy.<br><br><!--quoteo--></p><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->SkyBird mondta:<br>"Azt még meg lehet oldani, aktívvá tenni a C: op. rendszer partíciót, és itt helyreállítani a Win7 bootját."<br><!--QuoteEnd--></div><!--QuoteEEnd--><br>Ha én ezt érteném!:)<br><br>Hogy az elsődleges, vagy logikai, az nekem mindegy. (vagy még sem? nem tudom) A lényeg, hogy tudjam használni is. Lehessen oda menteni, másolni, törölni és ne nyavalyogjon, mint most a H.<br><br>SkyBird meg van a Paragon is. Az szerinted megcsinálja? Ott nem kiabál az MBR-ért?<br><br><u>A másik amit meg kell oldanom, hogy a H se nyavalyogjon.</u><br><br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Skybird mondta:<br>"Ezek a jelenségek a Vista óta a jogosultságkezelési anomáliák közé tartoznak.<br>Ha ilyen van, külön hozzá kell adni a meghajtóhoz vagy mappához a rendszergazda jogú usered teljes hozzáférési joggal."<!--QuoteEnd--></div><!--QuoteEEnd--><br><br>Ezt hogy kell csinálni?<br><br>Ami még szíven ütött.<br>1000 éve használom a Ghost-ot. Mikor minden program fönt volt, gondoltam csinálok a Ghost-al egy mentést .No már csak ezért sem lehet 400 gigás a C! (és mit érdekel ezek után a RECOVERY, meg a helyreállító lemez készlet)<br>....hát nem megy!!!<br>Nem indul el a Ghost. Ez is a 64 bit átka?
+			<br>
+			<!--IBF.ATTACHMENT_424124-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2010. szeptember 3. 7:54</h4>
+			<p>Minden másképp lesz. A legkellemetlenebb pontja a driverek telepítése lesz, de vállalható a dolog. Legalább újabbak kerülnek fel, és a komplett rendszer is tisztább lesz.<br>Ha a DOS-os programod nem fog menni 64 biten, akkor majd telepítesz egy virtuális gépet, és örülsz.
+			<br>
+			<!--IBF.ATTACHMENT_424126-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: elbest  2010. szeptember 3. 8:44</h4>
+			<p>Kösz Pjotr!<br><br>Értem...., ha másképp nem megy, de azért még várakozom, hátha.<br>Annyi időt belefecceltem, hogy minden fönt legyen és menjen. (programok, nyomtatók, hálózat stb.)<br>Huh...félek. Nem vagyok benne biztos, hogy utána mindenbe életet tudok lehelni. Lightscribe, dvb-t, távirányítás, meg a bánatom tudja, mi minden kacat.<br><br>Ha tudtam volna előre, hogy ilyen hülén particionál tuti nem a gépen levő Win 7-et teszem föl.<br><br>
+			<br>
+			<!--IBF.ATTACHMENT_424130-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2010. szeptember 3. 8:50</h4>
+			<p>Notebook-oknál íratlan szabály, hogy mindent le kell dúrni róluk, mert kretének telepítették. <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"> Szerintem mindenképp megérné elölről kezdeni az egészet, más most is sok gondot okozott, és ez elképzelhető, hogy a későbbiekben sem fog változni.
+			<br>
+			<!--IBF.ATTACHMENT_424131-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2010. szeptember 3. 8:56</h4>
+			<p><!--quoteo(post=424124:date=2010. szeptember 3. 6&#58;53:name=elbest)--></p><div class="quotetop">IDÉZET(elbest @ 2010. szeptember 3. 6:53) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=424124"><img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Köszi a válaszokat........hát csak lepkézek:) nem vagyok ám guru..<img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"><!--QuoteEnd--></div><!--QuoteEEnd--><br>Ahhoz képest jól belecsaptál a lecsóba, hogy elkezdted módosítgatni a partíciókat.  <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/ani_wink.gif" style="vertical-align:middle" emoid=";)" border="0" alt="ani_wink.gif"> Igaz később írod, hogy csináltál partíciómentést is előtte.<br>Én a DVD-ben nem bízom direktben, első körben vinyóra mentek, de ebben az esetben valóban kiteszem majd DVD-re is az alapot archiválni.<br><br>Közben én is átgondoltam a dolgot, és ha nem is olyan drasztikusan, vagy csak első körben nem, mint <b>Pjotr</b>, de hasonló véleményen vagyok a 22-es csapdája gordiuszi csomójának átvágásában.<br>Sokkal fontosabb az, hogy legyen külön adat partíció, és a későbbi op. rendszer állapotokról is lehessen partíciómentéseket készíteni akár ugyanarra a vinyóra, mint hogy az f11 gombra visszaálljon egy totál kezdeti állapot.<br>Ha annyira ez az F gombos megoldás kellene, a True Image-ben is van ilyen lehetőség az F12 gombra, de ez sem annyira lényeg, ha be lehet bootolni másról. (USB vagy dual boot)<br><img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/disbelief.gif" style="vertical-align:middle" emoid=":nemnem:" border="0" alt="disbelief.gif"> Szóval nem is kell az a recovery partíció, ha van mentés a kezdeti beállítások után, program telepítések előtt, McAfee és próba Office leirtása után.<br>Még jobb is ez, mint egy teljesen elölről kezdett szűz állapot az f11 gombra.  <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"> <br><br>Azért mellékesen gratulálok a Microsoftnak, hogy csak 2 elsődleges partíció elfoglalásával lehet telepíteni az op. rendszerét.<br>Hasonlóképpen, vagy talán mégjobban a HP-nak, akinek sikerült elérni, ráadásul az előbbiek tudatában, hogy egy nyüves recovery elfoglalja a másik 2 lehetséges elsődleges partíciót.  <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/mad.gif" style="vertical-align:middle" emoid=":mérges:" border="0" alt="mad.gif"><br>De még ezt is úgy, hogy a HP_TOOLS az utolsó, így még ha ezt törölném is, hogy létrehozzak egy kiterjesztett partíciót a logikainak, az se a Win7 mellett van.<br><img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/hmm.gif" style="vertical-align:middle" emoid=":hmm:" border="0" alt="hmm.gif">  <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/bulb.gif" style="vertical-align:middle" emoid=":ötlet:" border="0" alt="bulb.gif"> Habár ha az egész méreteket átvariálom, Win7-nek az az 50-60 GB, az üres helyre meg letolom a recoveryt, akkor a felszabaduló üres területen annyi logikait csinálok, amennyit akarok.<br>Még talán jobb is így, és még a recovery is esetleg működne partíció számozás szerint, ha nem törlöm. Legfeljebb a HP_TOOLS-t hiányolhatja.<br>Egyébként a HP mérnökei dizájn, stb. nem dolgoztak rosszul, csak a szoftvermérnökeit illeti kritika, hogy csak az amerikai háziasszonyok tudás és igényszintjére alapozza a dolgot egy üzletinek mondott típusnál is. Nyomj egy gombot, oszt jónapot.  <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/tongue.gif" style="vertical-align:middle" emoid=":P" border="0" alt="tongue.gif"> <br>Azok meg úgysem fognak külön adat partícióért könyörögni, pláne partíciót menteni.<br>Szóval ezen lehet, hogy Pjotr már régebben átesett. De első körben maradok ennél a megoldásnál, a karácsonyfadíszek kipróbálásáig, meg hogy ne kelljen feltétlenül és azonnal leszedni az összes drivert a netről a működéshez.<br>Legfeljebb egy dual bootnak csinálok majd egy 64 biteset is valamikor.<br><br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Egyébként a föntlévő Win 7 64 bites. Ami probléma is, mert használok egy Dos-os programot a munkámhoz és a készítője szerint nem fut 64 bites op rendszeren.<!--QuoteEnd--></div><!--QuoteEEnd--><br>4 GB RAM mellett már nyugodtan tehetsz fel virtuális gépet, pl. VirtualBoxot, és arra telepíthetsz XP-t a DOS-os programodnak.<br><br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec--> Azt mondta tegyek föl egy 32 bitest, vagy XP-t.Na bumm. Legyen két op rendszer...csak előbb kell telepíteni a régebbit, ill. a 32 bitest. Volt aki pedig azt mondta nekem, hogy ez nem igaz, simán telepíthetek bármilyent akkor is, ha fönt van már a win7 (64 bit)<!--QuoteEnd--></div><!--QuoteEEnd--><br>Ez így valami keveredés lesz. Az tökmindegy, hogy a 32 vagy a 64 bites van fenn hamarabb, az nem mindegy, hogy a régebbi vagy az újabb (XP vagy Win7), de az se azért, mert különben megoldhatatlan, csak macerás.<br>Ha régebbit pakolsz az új mellé, akkor tönkrevágja az új bootját, de ez helyrehozható.<br><br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Szóval, hogy ne kanyarodjak el. Nekem most az lenne fontos, hogy a C-t lenyomjam pl 80 GB-ra. Gondolom az bőven elég, vagy még kevesebb is, 50-60 (ahogy SkyBird)<br>Ezzel nincs is probléma,meg tudom tenni.<br><u>Csak a felszabaduló helyre szeretnék egy másik particiót.</u> No ez nem megy.<!--QuoteEnd--></div><!--QuoteEEnd--><br>Létrehozáshoz mindenképpen törölnöd kell egy elsődleges partíciót előbb. Alapesetben 4 lehet trükközés nélkül. (4 elsődleges vagy pl. 3 elsődleges és 1 kiterjesztett, ami már tovább osztható)<br><br>Valamilyen MBR problémát írtál a ténykedés során. Ez a boot problémára utal, és ezért említettem, hogy végül is a boot helyreállítható akár a jelenlegi C: partíción is a 200 MB boot partíció megszüntetése mellett is.<br>Erre vannak leírások talán itt a Win7 fórumokban is, mert írtam hasonlókat, de a neten biztosan.<br><br>Inkább a Paragont használd partíciókezelőnek.<br><br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Ezt hogy kell csinálni?<!--QuoteEnd--></div><!--QuoteEEnd--><br>Jobb klikk a mappán, meghajtón, a biztonság alatt hozzáadod a felhasználóneved, és bepipálod a teljes hozzáférést.<br>Valamiért a Vista óta helyenként nem elég, ha csak csoporttagként van meg minden jogod. Még akkor se, ha effektív jogként a teljhatalom látszik.<br>Én így vettem észre, de még sose kerestem rá vagy találtam meg, hol van korlátozva.<br><br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->minden program fönt volt, gondoltam csinálok a Ghost-al egy mentést .No már csak ezért sem lehet 400 gigás a C!<!--QuoteEnd--></div><!--QuoteEEnd--><br>Ez még nem lenne baj, úgyis tömörítve ment a tényleges tartalomra. Hacsak nem a sector-by-sector kapcsoló is be volna állítva. De szerintem az üres helyeket akkor is megoldja tömören.<br><br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->(és mit érdekel ezek után a RECOVERY, meg a helyreállító lemez készlet)<!--QuoteEnd--></div><!--QuoteEEnd--><br>Ez így van, így lehet. <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/yes.gif" style="vertical-align:middle" emoid=":igen:" border="0" alt="yes.gif"> Nálam annyiban különbözik, hogy azért egy nagyon kezdeti elsődleges állapotot is meg akarok tartani, amikor még semmit sem telepítettem, nem dugtam rá más hardvert, még pendrive-ot sem.<br><br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Nem indul el a Ghost. Ez is a 64 bit átka?<!--QuoteEnd--></div><!--QuoteEEnd--><br>A Ghostnak az az átka, hogy a 2003-as verzió óta nem lehet vele bootolható recovery eszközt készíttetni. Ha jól tudom.<br>Vagy Win alól fut, vagy az eredeti CD-d van meg, amivel bootol. Hogy az esetleges .iso kalózmásolatról ne beszéljünk, de én nem is kerestem ilyet.<br>Az Acronistól letölthető ilyen boot .iso fájl a True Image-ből Isolinux betöltővel, ha nem volna valamiért megelégedésre való a saját maga által készített. Ez még free is talán.<br>A Ghost kicsit más filozófia lett, mint korábban, és sokkal kevésbé jön be nekem, mint a True Image mindenkori verziója.<br>Javasolnám erre átállni. Ezzel tudsz bootolható eszközt készíteni közvetlen pendrive-ra vagy .iso-ba, amiről CD-re is csinálhatsz betöltőt, de Grub4DOS programmal betölt USB merevlemezről is.<br>Szerintem inkább ezt használd, de ez így talán egy kicsit sok egyszerre.<br><br>Mire a regényemet befejeztem, Pjort néhány gondolatban megelőzött. <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/cool.gif" style="vertical-align:middle" emoid="8)" border="0" alt="cool.gif"><br><br>Szerk.: Ehhh, mondom én EFI vagy nem EFI, nem kap mást. Közben nézelődtem kicsit. A HP_TOOLS az a FAT32 EFI partíció.<br><span><a class="linkclass" href="http://h20000.www2.hp.com/bc/docs/support/SupportManual/c01564727/c01564727.pdf?jumpid=reg_R1002_USEN">http://h20000.www2.hp.com/bc/docs/support/SupportManual/c01564727/c01564727.pdf?jumpid=reg_R1002_USEN</a></span><br>Enélkül voltak bizonyos problémák egyeseknél, ahogy futtában láttam. Most az a kérdés, hogy akkor kell ez nekünk, vagy sem.<br>Vagy az van amit Pjotr mond, ledúrni az egészet. vagy legalább részben.
+			<br>
+			<!--IBF.ATTACHMENT_424132-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: elbest  2010. szeptember 3. 10:53</h4>
+			<p>Köszönöm az eddigieket.<img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"> Tanulok.<br>Igen, valóban belecsaptam.<img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"> Addig nem szoktam nyugodni, amíg meg nem oldom a problémámat.<br><br>Amit közben sikeresen megoldottam:<br><br>A Paragonra átnyargaltam. Elkezdtem böngészni és rákattintottam a partíció létrehozására.<br>Bevallom őszintén nem gondoltam, hogy csinál valamit, hisz nem volt hely új particiónak.<br>De Ő nem így gondolta.<img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"><br>Létrehozott egy I partíciót. Mégpedig a H-ból vette el. Csinált egy 204 Gb-os I-t.<br>Kipróbáltam, mindent enged oda. Másolni, törölni...szóval mindent, amit a H nem engedett.<br><br>Fölbátorodtam és töröltem a már kicsire zsugorodott H-t és Megnagyobbítottam az I-t.<br><br>Szóval ezt mind meg tudtam tenni a Paragonnal.<br>Érdekes, hogy a Mini Tool Partition nem ezt látja. nem látja az I-t, hanem helyette unallocated-et lát....no de ez nem izgat. <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"><br>Az I van és tökéletesen működik.<u> Tehát az egyik problémám megoldva.<img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"></u><br><br>Mi lenne, ha a Paragonnal lecsökkenteném a C méretét, ugye ezt  csak úgy lehet, ha a mellette levő Recovery-t növelem? Mert nem hoz létre unallocadet helyet, mint a másik program.<br>Mert ha ezt tenné, akkor még megpróbálnék vele létrehozni particiót, hátha nem nyafogna az MBR-ért, mint a másik.<br>Ha csak úgy megy, hogy a mellette levő RECOVERY-t növelem....az sem baj.  Akkor a Recovery-t használom data partícióként és kész. Lemezre meg van a mentésem a rendszerről.<br>Mi erről a véleményetek? Dilettáns gondolat?<br><br><br><br>Pjotr: Még küszködök egy kicsit és élvezem az új gépet a teljes gyalulás előtt.:)Ha meg sikerülne megoldani, hogy ne kelljen most az jobb lenne. Lehet, hogy addig próbálkozom a dolgokkal, hogy muszáj lesz:) De teljesen egyetértek, hogy laptopról mindent le!<br>Egyébként legyalultam a kezdet kezdetén én is mindent amit tudtam. 60 napos office, norton security, gyerekes asztalvarázsló vagy mi, HP játékok.....stb.<br><br>A virtuális gép biztos jó megoldás lesz. Majd kutakodom a létrehozásában, ha odajutok. Egyenlőre a munkám a régi laptopon, de természetesen szeretném, ha erre kerülne előbb-utóbb.<br>Még átnézem amit írtatok tüzetesebben, de most muszáj elmennem.
+			<br>
+			<!--IBF.ATTACHMENT_424139-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2010. szeptember 3. 12:03</h4>
+			<p>Ha lecsökkented az egyik partíció méretét, attól a mellette levő nem ugrik a helyébe, hanem unallocated lesz.<br>Illetve lehet növelni a másikat is, de arról is neked kell intézkedni. Gondolom már kiderült azóta.<br>De ha már nem hozható létre több elsődleges partíció, vagy azok mellett a kiterjesztett partíció, akkor a particionálatlan terület megmarad, potyán foglalja a helyet.<br>Több folyamatot egymás után el lehet végeztetni a megfelelő logikai sorrendben egy jóváhagyás mellett.<br>Most így nem értem, hogy a másik program miért nem csinálta meg, amit a Paragon igen. A Paragon se tudott volna létrehozni új partíciót, ha 4 elsődleges van, és ezekből még nem töröltél volna.<br>Vagy ez az EFI ennyire más világ?<br><br>Ezzel a HP_TOOLS partícióval jól melléfogtam ezek szerint. Ránézésre azt mondtam, hogy nem lehet más, mint valamiféle HP eszközök, programok.<br>Azért azon filóztam kicsit, hogy miért van külön, miért FAT32, és miért 2 GB.<br>Ennyiből változott a koncepcióm is, ha ez az EFI BIOS adat része, vagy mi lenne. Még nem kutakodtam tovább.<br>Így ezt meghagyom, elfér, és csak a recoveryt kell kinyírni, mentés után.<br>Én se gyalulok le mindent kapásból, majd szortírozok.<br>Az biztos, hogy tele van a program eltávolító több oldalnyi programbejegyzéssel, hasonlóképpen az msconfig alatt az automatikus indítás is.  <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/roll.gif" style="vertical-align:middle" emoid=":hááát:" border="0" alt="roll.gif">
+			<br>
+			<!--IBF.ATTACHMENT_424145-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: elbest  2010. szeptember 3. 20:36</h4>
+			<p><!--quoteo--></p><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->SkyBird<br>Ha lecsökkented az egyik partíció méretét, attól a mellette levő nem ugrik a helyébe, hanem unallocated lesz.<br>Illetve lehet növelni a másikat is, de arról is neked kell intézkedni. Gondolom már kiderült azóta.<!--QuoteEnd--></div><!--QuoteEEnd--><br><br>Igen, kiderült:)<br>Úgy csökkentettem le a méretet, hogy egyúttal a mellette levőt növelte, de ezt egyszerre kellett megadnom neki csúszkával.<br><br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->SkyBird:<br>A Paragon se tudott volna létrehozni új partíciót, ha 4 elsődleges van, és ezekből még nem töröltél volna.<br><!--QuoteEnd--></div><!--QuoteEEnd--><br><br>Nem a DISC 1-en hozta létre (ott van 4 elsődleges), hanem a DISC 2-őn. Ott egy elsődleges és egy logikai volt.<br><br><br>Túl vagyok a dolgon és minden olyan, amilyennek szerettem volna.<img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"><br><br><b>Összefoglalom, hogy mit csináltam.<br></b><br>1.    A DISC 2-őn a Mini Tools Partition Wizard 5-el az UNALLOCATED helyén létrehoztam egy H:ADAT particiót.<br>       Így ezen a DISC-en lett.<br>       - D:DATA  232 GB elsődleges<br>       - H: ADAT 232 GB logikai<br>2.    A H:ADAT partició nem volt jó, mert minden műveletnél rendszergazdáért nyafogott.<br><br>SkyBird:Tanácsodra elővettem a Paragon Partition Manager 10-et<br><br>3.     Elindítottam vele egy partició létrehozást.<br>        Nem tudtam, hogy ezt fogja tenni, de létrehozott a DISC 2-őn egy I:ADAT particiót. Kapásból<br>        204 GB mérettel mégpedig úgy, hogy a H:DATA-ból vette el.<br>4.     Miután kipróbáltam, hogy ezen minden művelet elvégezhető és nem kiállt rendszergazdáért,<br>        már egyszrű volt. A H:DATA particiót töröltem és az I:DATA partíció méretét megnöveltem a<br>        lehetséges legnagyobbra, azaz az eredeti H méretére.<br><br>5.     DISC 1<br>        Itt szintén a PARAGON-nal a C:OS particiót lecsökkentettem úgy, hogy a mellette levő E:Recovery<br>        ugyanannyival megnövekedett.<br>        Így lett:<br>       -  C:OS 68,5 GB<br>       -  E: Recovery 396 GB<br>továbbá megmaradt itt<br>       - *: SYSTEM 199 MB<br>       - F: HP TOOLS 103,2 MB<br>Ezek mind elsődleges particiók.<br><br>A célom itt az volt, hogy a C ne legyen olyan hatalmas, helyette legyen adat partició.<br>Innentől nekem a RECOVERY adat partició lesz és punktum:) Akár át is nevezhetném, de legalább így tudom, hogy ott csücsül rajta az, aminek ott kell lennie 16 Gb méretben. Amúgy is rejtett fájlok,<br>ezért nem fog a látványa zavarni. Talán ha kellene, még használni is tudnám, már ha lehet így, de nem hiszem, hogy fogom. <u>Akár le is törölhetném ezeket a fájlokat.</u> (Mivel DVD lemezre készítettem mentést)<br><br>Az már csak hab lenne a tortán, ha a DISC 2-őn át tudnám nevezni az I partició betüjelét H-ra.<br>De ez még nem sikerült.<br>A Mini Tools Partition Wizard-dal menne ez simán - Change Letter- csak az a baj, hogy ez a program nem látja az I:ADAT particiót. No ezt nem értem. A DISC 1-en mindent helyesen lát a változtatások után is.<br>De a DISC 2-őn az I:ADAT helyett Unallocated-et lát.<br><br>A Paragonban meg nem találok olyat, ahol a partició betűjele át lenne nevezhető.<br><br>No most a Particionálás nevű leckében csupán ez a bajom:)<br>A következő gond a Ghost...de azt majd abban a fórumban. Illetve megnézem azt a programot, amit ajánlottál  SkyBird.<br>Köszönöm a segítségeteket.<br>Pjotr: Ha egyszer gyalulnom kell, akkor már alapból másképp csinálom.
+			<br>
+			<!--IBF.ATTACHMENT_424170-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2010. szeptember 3. 21:28</h4>
+			<p><!--quoteo(post=424170:date=2010. szeptember 3. 20&#58;36:name=elbest)--></p><div class="quotetop">IDÉZET(elbest @ 2010. szeptember 3. 20:36) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=424170"><img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Úgy csökkentettem le a méretet, hogy egyúttal a mellette levőt növelte, de ezt egyszerre kellett megadnom neki csúszkával.<!--QuoteEnd--></div><!--QuoteEEnd--><br>Persze, lehet csúszkával is, meg szokott lenni a resize funkciónál az is, hogy szám szerint állíthatod a méretet a nyilakkal, vagy direkt beírod. Melyik program, hogy.<br><br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Nem a DISC 1-en hozta létre (ott van 4 elsődleges), hanem a DISC 2-őn. Ott egy elsődleges és egy logikai volt.<!--QuoteEnd--></div><!--QuoteEEnd--><br>Ja, most már értem. Annyiban szerencsés vagy, hogy két vinyód van. Így rugalmasabbak a lehetőségek.<br>Viszont ez jelentkezik a súlyban is, és nyilván eleve nem egy hurcibálósabb típus, hanem asztali gép kiváltása.<br><br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->A célom itt az volt, hogy a C ne legyen olyan hatalmas, helyette legyen adat partició.<br>Innentől nekem a RECOVERY adat partició lesz és punktum:) Akár át is nevezhetném, de legalább így tudom, hogy ott csücsül rajta az, aminek ott kell lennie 16 Gb méretben. Amúgy is rejtett fájlok,<br>ezért nem fog a látványa zavarni.<!--QuoteEnd--></div><!--QuoteEEnd--><br>Ez lesz a jó megoldás.  <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/cool.gif" style="vertical-align:middle" emoid="8)" border="0" alt="cool.gif"> Én is erre hajlok, pofonegyszerű, nem kell partíciókat törölni, logikait létrehozni. Adni kell meghajtó betűjelet a recoverynek, és meglátjuk.<br>A másik lett volna még, hogy megszüntetem a Windows 7 boot partícióját, és a C:-t teszem aktívvá, és ezen helyreállítom a bootolhatóságot.<br>Én még nem csináltam semmi módosítást, csak kicsit nézegettem a dolgokat a neten.<br>Nem annyira egyszerű ez az EFI BIOS, hogy bármit meg lehessen csinálni, kapásból törölni partíciókat. Mert persze ez EFI BIOS, csak tegnap még csak sejtettem és a kevés idő alatt nem nyomtam meg az ESC-et sem akkor a bootnál, csak most.<br>Van benne memteszt, diskteszt is, de mindjárt kilőttem, mert egy órát akart dolgozni.<br><br>A régi mechanikus beidegződés itt nem megy. <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/disbelief.gif" style="vertical-align:middle" emoid=":nemnem:" border="0" alt="disbelief.gif"><br>Először is kell a HF_TOOLS mappa és tartalma. Akik törölték azok BIOS application error 501 hibával szembesülhettek.<br>Van leírás, hogy hogyan kell visszaállítani, de jobb megelőzni a problémákat.<br>A HP nem javasolja a recovery partíció törlését sem. Legfeljebb akkor, ha már készítettünk DVD-re mentést a HP Recovery Managerrel, amivel vissza lehet állítani az eredeti állapotot.<br>Jó akár a DVD-R vagy a DVD+R, de RW-sre nem ír. <br>Lehet éppen USB-re is menteni ezt, ha nem volna a notebookban optikai egység, de mindenképpen <b>csak egyszer</b> <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/exclamat.gif" style="vertical-align:middle" emoid=":!:" border="0" alt="exclamat.gif"> lehet ilyen mentést készítnei. Ha meghiúsulna a DVD-re írás, akkor a cégtől kell megrendelni.  <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/roll.gif" style="vertical-align:middle" emoid=":hááát:" border="0" alt="roll.gif"> <br>Meg van ez bonyolítva. Érdemes ezt a mentést ezután eltárolni merevlemezen is .iso-ban.<br>Az EFI cuccok vannak a Win7 partíción is a C:\swsetup mappában.<br>A másik része a HF_TOOLS mappában a Hewlett-Packard\programnév\programnév.efi fájlban. Frankó.  <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/laughing.gif" style="vertical-align:middle" emoid=":lol:" border="0" alt="laughing.gif"> <br><br>Namégaztán a vinyó is 4 kB/sectoros, mert 2048-on kezdődött ahogy néztem. Szóval jól beválasztottunk.  <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/laughing.gif" style="vertical-align:middle" emoid=":lol:" border="0" alt="laughing.gif"> Vagy nem?  <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/ani_wink.gif" style="vertical-align:middle" emoid=";)" border="0" alt="ani_wink.gif">
+			<br>
+			<!--IBF.ATTACHMENT_424171-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: elbest  2010. szeptember 4. 11:08</h4>
+			<p><!--quoteo--></p><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Viszont ez jelentkezik a súlyban is, és nyilván eleve nem egy hurcibálósabb típus, hanem asztali gép kiváltása.<!--QuoteEnd--></div><!--QuoteEEnd--><br>Igen, ez így van. Pavilion 3160  17,3 coll és 3,5 kg.<br><br>De nem bántam nem. Még egy Toshiba Satellite A500-1E5 volt a pakliban, de végül a HP-t választottam.<br><br>Ennyire nem kutakodtam mélységében, mikor döntöttem, de valóban nagyon furcsa számomra is ez a  4 elsődleges partició. Miért nem lehetett ezt mind a C-re tenni nem tudom.....és egy ekkora méretű C-t hagyni!?<br>Ilyen esetekben fordul elő, hogy láthatsz olyan gépet, ahol minden, de minden a C-n van.<br>625.789 db exe. és doc. fájl a DOKUMENTUMOK mappában stb.<br><br>Az szerinted miért lehet, hogy a MINI TOOLS PARTITION WIZARD az I (ADAT) partíciót unallocatednek látja?<br>Sőt engendé particionálni. No ezt nem teszem, mert akkor megint egy nyafogós particiót hozna létre.<br>Ha látná, akkor viszont meg tudnám változtatni a betűjelét.<br><strike>Nem tudod, van lehetőség erre a PARAGONban is, mert én nem láttam.<br>Vagy hol tudnám máshol ezt megcsinálni?</strike><br><br>Hupsz! Közben meglett. A saját lemezkezelővel:) Az is látja az I-t (ami most már H) <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"><br><br>Igen, a RECOVERY lemezeket csak egyszer lehet elkészíteni.<br><br><br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Jobb klikk a mappán, meghajtón, a biztonság alatt hozzáadod a felhasználóneved, és bepipálod a teljes hozzáférést.<!--QuoteEnd--></div><!--QuoteEEnd--><br><br>Ezt is megtaláltam, köszi!<br>
+			<br>
+			<!--IBF.ATTACHMENT_424185-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: elbest  2010. szeptember 4. 11:49</h4>
+			<p>SkyBird!<br><br><span>Megnéznéd <a class="linkclass" href="http://www.pcworld.hu/forum/index.php?showtopic=13086&st=180">http://www.pcworld.hu/forum/index.php?showtopic=13086&amp;st=180</a> a 197-es bejegyzést?</span><br>Hátha nálad is voltak ilyen gondok.
+			<br>
+			<!--IBF.ATTACHMENT_424187-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2010. szeptember 4. 14:57</h4>
+			<p>Erre az IE-s dologra nem most nem tudnék többet, mint Balázs. Valmikor láttam már én is ezt az m.origót megjelenni valahol.<br>Ha a proxy ellenőrzés nem vált be, admin jogú parancssorból lehetne egy DNS cache törlést indítani.<br><b>ipconfig /flushdns</b><br><br>Visszatérve a HP az EFI lelkivilágára, közben többször 180°-ban, vagy ki tudja mennyiben változott a véleményem.<br>No persze előbb sok mindennek utána kellett volna nézni, mint csípőből és megszokásból reflexesen nyilatkozni. De ki a fene gondolná, hogy nem egy "hagyományos" notebookról van szó. Nincs is erről említés külön az adatlapon.<br>Elsőként inkább a HP-t okoltam a 4 elsődleges partíció összehozásáért, de sokat nem tehettek mégsem, ha EFI BIOS van. Ennek FAT32 partíción kell lennie.<br>A másik, a recovery meg úgy ahogy rendben. Legfeljebb esetleg tehették volna logikaira. Vagy nem alkalmazták volna mégsem az MS külön boot partícióját, ami a BitLockerhez kellhet, de ki tudja mennyire.<br><br>A megoldásom mégsem az lesz, mint nálad, a meglévő Win7 partíció méretének csökkentése, és a Recovery partíció növelése.<br>A Recovery partíción a Win7 telepítőkészlet van, több mappa és fájl. Ez igen keveredne, ha felhasználnám egyéb adattárolásra is meghajtóbetűjel hozzárendelésével és nagyobbra hízlalásával. Még úgy is, ha nem törölnék bele, nem elegáns.<br>Ezt a meghajtót vagy meghagyom, vagy később törlöm.<br>Apropó, nálad most így van? Vagy maradt betűjel nélkül? Nem sok értelme van különben, ha csak a C: Win7 partíciót csökkented, és nem használod a recoveryt semmi egyébre.<br>True Image partíciómentéskor megnéztem a lemezképeket, a 15 GB-os recoveryről normál tömörítéssel 7,9 GB simán, míg sector-by-sector kapcsolóval 7,95 GB a méret. Az elfoglalt terület se volt sokkal több, ezeket már nemigen lehet tovább tömöríteni.<br>Hasonló minimális különbség a HP-TOOLS-nál is.<br><br>Én most visszatértem a közbenső gondolathoz és a jelenlegi C:-n állítom helyre a Win7 bootolását, és ha minden rendben, akkor a Win7 system boot partíciót fogom törölni. Átméretezek, átmozgatok és létrehozok majd új kiterjesztettet.<br>Nemcsak az említett ok miatt, hogy nem szép, de ha mégis  dual boot rendszer lenne egyszer, akkor így lehet megoldani legjobban. Az is és az adat partíció is logikain lesz. Valamikor.<br>Addig újabb falba ütköztem, mert a Win7 megjelenésekor annyira a 64 bites rendszerre tettem, hogy nincs is 32 bites telepítőkészletem. 64 bitessel pedig nem lehet a 32 bites bootját helyreállítani.<br>Egy RC verziót próbáltam, de nem igazán tetszett a bejelentkezése. Majd keresgélek még.<br><br>Közben látom megtaláltad a Paragonban is, amit kerestél. Windows alatt először egy easylight jellegű kezelőfelület jön be, ott tényleg nem lehet meghajtóbetűjelet állítani.<br>Alul ha a Full scale launcher hivatkozásra kattintasz, akkor elindul a normális program, ahogyan kell.<br>Nekem további probléma, hogy nem Windows alól akartam piszkálni a partíciókat, hanem USB-ről bootolva Paragon vagy Acronis programokkal.<br>A Paragon 10 .iso-ja az totál befuccsolt, grafikusan megjelenítette a külső és a belső merevlemezt, de a partíciókat csak a külsőre, és nem lehetett semmit sem váltani.<br>Safe módban meg el sem indult, de úgy kifagyott, hogy a bekapcsológomb sem segített, csak a tápfesz kikapcsolása. Még jó, hogy nem volt benne akksi.  <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/ani_wink.gif" style="vertical-align:middle" emoid=";)" border="0" alt="ani_wink.gif"> <br>Az Acronis Disk Director 10-ről tudom, hogy a SATA vinyókat ilyenkor csak safe módban kezeli. Így is lett, kezeli is rendben. Viszont szektorhibákat jelzett az első betöltődéskor, ha jól láttam az USB-re. <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/roll.gif" style="vertical-align:middle" emoid=":hááát:" border="0" alt="roll.gif"> Ignore all után ment rendben.<br>A másik a Disk Director 11 Home az infókban fapadosabb, de újabb verzióként inkább gondolom jól kezelni a 4 kB-os szektorokat, ha arra kerül sor. Ez nem is sikított semmi szektorhibára.<br>Lehet, hogy jobban járok a Win7 diskpart parancsával, ha lesz majd 32 bites telepítőkészletem.  <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/laughing.gif" style="vertical-align:middle" emoid=":lol:" border="0" alt="laughing.gif"><br><br>És még egy. Nálam sehol nincs ez a HP Recovery Manager dolog a Win7 alól, ahogy a neten is láttam. Egyszerűen nincs, nem tudom így az egészet DVD-kre menteni, még egyszer sem.<br>Van itt mindenféle egyéb support assistant, biztonsági hókuszpókusz, de mentés csak a Win7 sajátja.<br>Azt írták, pötyögjük a Start menü keresésbe, hogy recovery, és az jó lesz. Igaz nem ennél a típusnál láttam. Itt csak a Win7 saját biztonsági mentése van.<br>Recovery Manager a BIOS-ban van, de az ahogy betöltődik, a recovery partícióról akar egyből helyreállítani a merevlemeztartalom felülírásával. DVD-re mentés az nincs.<br>Na mindegy, a True Image elintézte helyette.
+			<br>
+			<!--IBF.ATTACHMENT_424189-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: elbest  2010. szeptember 4. 19:35</h4>
+			<p><!--quoteo--></p><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->ipconfig /flushdns<!--QuoteEnd--></div><!--QuoteEEnd--><br>Megcsináltam. Sajna semmi. Azaz, annyi, hogy most már a hiányos kezdőoldalon kívül semmi nem jön be az origón:)<br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Apropó, nálad most így van? Vagy maradt betűjel nélkül? Nem sok értelme van különben, ha csak a C: Win7 partíciót csökkented, és nem használod a recoveryt semmi egyébre.<!--QuoteEnd--></div><!--QuoteEEnd--><br>Megmaradt a betüjele és a neve is egyenlőre.<br>Azzal a módszerrel csökkentettem a C-t, hogy mindjárt egy menetben megnövelte a mellette levő E-t (Recovery)<br>Teljesen normális működő partíció az E. Tudok rá menteni, másolni, törölni. A 15-16 GB eredeti fájlokat még egyenlőre ott hagytam. (Rejtett fájlok) Ha telerakom mindenfélével a particiót, akkor lehet, hogy ezek már nem is működnek? Nem tudom. Erre mondtam, hogy talán ki is törlöm, mert amúgy is meg van a lemezre mentésem.<br>Azon kívül a tanácsodra föltettem a True Image-t. Már el is készült a mentés. Azt hittem, hogy először majd beállítom, hogy hova mentsen...stb, hogyne.....semmit nem kérdezett, kapásból elindult és a H particiora oda is tette a mentést.<img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"><br><br>Jól értem, a system partícióról, a c partícióról és az E:Recovery-ről csinálja a mentést?<br>Ez azért gáz nekem most, mert ha az E-t normális adatparticionak használom és rápakolok 400 GB akármit, akkor arról is elkészíti a mentést!? Az E-t nem kellene, hogy mentse nekem. De majd utána olvasok, hogy hogyan lehet beállítani.<br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Közben látom megtaláltad a Paragonban is, amit kerestél. <!--QuoteEnd--></div><!--QuoteEEnd--><br>Nem, nem találtam. A normális ablak meg volt, de ott ha rákattintok a particiora jobb gombbal, akkor ott nincs betüjel átnevezés.<br>A win 7 saját lemezkezelőjét használtam erre a célra. Így sikerült megoldani.<br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->És még egy. Nálam sehol nincs ez a HP Recovery Manager dolog a Win7 alól,.....<!--QuoteEnd--></div><!--QuoteEEnd--><br>Ez érdekes. Nekem meg van. Igazából Neked most nem is az kell, hanem a Recovery Disc Creation azaz a CD Creator.<br>A START menü keresésbe beírtam: Recovery és itt találta mindkettőt:<br><br>"C:\Program Files (x86)\Hewlett-Packard\Recovery\CDCreator.exe"<br>"C:\Program Files (x86)\Hewlett-Packard\Recovery\RecoveryMgr.exe"<br>Tehát nem a Recovery Managerrel tudsz mentést készíteni, hanem a Creatorral. 1*<br><br>Az EFI-hez azért nem szólok hozzá, mert azt sem tudom, hogy azt EFI-k, vagy IFFák:)<br><br>A True Image szuper! Ghost elfelejtve.<br>Á:) Most láttam meg. Én a ONE -Click Backup-ra kattintottam:) Belenézegettem a programba (beállításokba), nem is tudom, akkor most miről csinált mentést.
+			<br>
+			<!--IBF.ATTACHMENT_424198-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2010. szeptember 4. 21:18</h4>
+			<p><!--quoteo(post=424198:date=2010. szeptember 4. 19&#58;35:name=elbest)--></p><div class="quotetop">IDÉZET(elbest @ 2010. szeptember 4. 19:35) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=424198"><img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Teljesen normális működő partíció az E. Tudok rá menteni, másolni, törölni. A 15-16 GB eredeti fájlokat még egyenlőre ott hagytam. (Rejtett fájlok)<!--QuoteEnd--></div><!--QuoteEEnd--><br>Úgy még elmegy. Nálam a kezdeti beállítások része, hogy bekapcsolom az op. rendszer, rejtett fájlok és a fájlkiterjesztés megjelenítését.<br>Így már zavaró lenne.<br><br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Ha telerakom mindenfélével a particiót, akkor lehet, hogy ezek már nem is működnek?<!--QuoteEnd--></div><!--QuoteEEnd--><br>Működik gond nélkül. Amíg csak esetleg bele nem törölsz véletlenül.<br><br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Azon kívül a tanácsodra föltettem a True Image-t. Már el is készült a mentés. Azt hittem, hogy először majd beállítom, hogy hova mentsen...stb, hogyne.....semmit nem kérdezett, kapásból elindult és a H particiora oda is tette a mentést.<img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"><!--QuoteEnd--></div><!--QuoteEEnd--><br>Az újabb verziókban nem feltétlen kell kihagyhatatlanul végigklikkelned a varázslót, ilyenkor ez van.<br>De a bal oldali panelen a különböző hivatkozásokra kattintva beállíthatsz mindent. Csak figyelni kell rá.  <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/ani_wink.gif" style="vertical-align:middle" emoid=";)" border="0" alt="ani_wink.gif"> <br>Így megadhatod a mentés helyét, és nem kell elfogadni a generált fájlnevet.<br><br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Jól értem, a system partícióról, a c partícióról és az E:Recovery-ről csinálja a mentést?<!--QuoteEnd--></div><!--QuoteEEnd--><br>Nem kell az egészet egyben menteni. Azt a partíciót mented, amelyiket kijelölöd.<br>Én egyenként mentettem végig a 300 MB-ostól a végéig.<br>Ha op. rendszer alól indítod a mentést, akkor a saját partícióját kijelöli alapértelmezetten, de ezt sem vagy köteles elfogadni.<br><br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Ez érdekes. Nekem meg van.<!--QuoteEnd--></div><!--QuoteEEnd--><br>Nekem semmi a recoveryre. De nem az a típus, valószínű ehhez nem jár.<br>A Recovery Manager az EFI BIOS-ban van csak eredeti állapot helyreállításra.<br>Az összes adatlap említi, de hogy ebben konkrétan mi lenne, az nem derül ki. Végül is van mentés az egészről.<br>A HP Protectet is módszeresen leirtottam. Még egy klikkelést vont a bejelentkezésre picike ikonokkal. A fényképes bejelentkezésre meg azt modta, hogy túl sötét van, nem tud megfelelő képet rögzíteni. Ez igaz, nem világítottam, de megleszek nélküle.<br><br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Én a ONE -Click Backup-ra kattintottam:)<!--QuoteEnd--></div><!--QuoteEEnd--><br>Még az asztali ikonját is ki szoktam törölni.  <img src="./PC WORLD Segélyvonal _ Lemezkezelés _ Lemezkezelés Windows alatt_files/laughing.gif" style="vertical-align:middle" emoid=":lol:" border="0" alt="laughing.gif"> Az egész hóbelevancot másolja.
+			<br>
+			<!--IBF.ATTACHMENT_424199-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: elbest  2010. szeptember 5. 7:48</h4>
+			<p><!--quoteo--></p><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Ha a proxy ellenőrzés nem vált be, admin jogú parancssorból lehetne egy DNS cache törlést indítani.<br>ipconfig /flushdns<!--QuoteEnd--></div><!--QuoteEEnd--><br><br>Mit is csináltam ezzel? Mert azóta az explorerben az origo.hu oldalon (aktiv.origo.hu) hiába kattintok bármire, nem megy tovább. - (Web lap nem található HTTP404)
+			<br>
+			<!--IBF.ATTACHMENT_424203-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. szeptember 6. 12:26</h4>
+			<p>A domain név nem azonosítja a weboldalkat, az csak arra van, hogy könnyebben meg lehessen jegyezni. Valójában az adott oldalt működtettető szervernek ugyanúgy egy IP-címe van, mint minden más számítógépnek. Az origo.hu-hoz például a 195.228.240.145-es IP-cím tartozik. Amikor a böngészőbe beírod, hogy origo.hu, akkor a géped küld egy kérést a beállított DNS szervernek (a T-Home-nál például 84.2.46.1-es az alapértelmezett, ezt a csatlakozáskor megkapja a géped), ami saját erőből vagy más DNS szerverek segítségével feloldja a domain nevet, és megmondja a gépednek, hogy milyen címen éri el az origo.hu-t. Hogy ezt ne kelljen minden alkalommal eljátszani, a gyakran látogatott oldalak IP-címeit a Windows egy gyorsítótárban eltárolja, így a következő látogatáskor egyből az oldalt működtető szerver felé indíthatja a kérést.<br><br>Hogy nálad az említett oldal miért nem jó, arról sajnos fogalmam sincs. De a gyorsítótár törlése ezt nem okozhatta. Visszaolvasva annyit tudok mondani, hogy valami csúnyán megkergült abban a böngészőben.
+			<br>
+			<!--IBF.ATTACHMENT_424249-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: elbest  2010. szeptember 6. 19:55</h4>
+			<p>Értem. Köszönöm!<br>Megpróbáltam az IP címmel. Ugyan az.(mint mikor az aktiv.origo.hu-t írom be).<br>Az m.origóé gondolom más.<br>Írtam az origonak, kíváncsi vagyok, mit mondanak.<br>Hupsz ez itt OFF. (Ugye ez jelenti azt, ha nem a topik témájába vág?)<br><br><span>Inkább <a class="linkclass" href="http://www.pcworld.hu/forum/index.php?showtopic=13086&view=getnewpost">http://www.pcworld.hu/forum/index.php?showtopic=13086&amp;view=getnewpost</a>
+			</span><br>
+			<!--IBF.ATTACHMENT_424270-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. szeptember 6. 22:27</h4>
+			<p><!--coloro:#999999--><span style="color:#999999"><!--/coloro-->Pontosan.<!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_424276-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: willy36  2010. november 21. 20:18</h4>
+			<p>Sziasztok !<br>Az lenne a kérdésem, windows xp sp3 alatt 1 Tbyte-os winchesternél 800 gigás partíciót hogy lehet felismertetni?<br>Köszönöm a válaszokat
+			<br>
+			<!--IBF.ATTACHMENT_427703-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. november 21. 20:31</h4>
+			<p>Ezt nem értem. Tök ugyanúgy, mint egy 10 gigásat.
+			<br>
+			<!--IBF.ATTACHMENT_427704-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Priscin  2011. február 2. 16:22</h4>
+			<p>Tanácsotokat kérném: XP alá kellene egy 2 TB -os WD vinyót másodlagos vincsinek betennem. Az NTFS ugye nem tud 1 TB feletti partíciót kezelni. ezért szét 500 GB -os részekre akarom szedni. Aztán az elsőről futtatnám a virtualizációkat, másodikról az újabb programokat, a harmadikra menne a backup. és majd a negyediknek is kitalálok valamit.<br><br>- Mit gondoltok, elég jó ehhez az XP beépített lemezkezelője? Ha nem mit használjak?<br>- Mit javasoltok, a fenti feladatokra jó-e a fenti felosztás? Pl. a virtualizáció elég gyorsan fusson ezért akarom az 1. partícióra rakni. <br><br>Előre is köszönöm a segítségeteket
+			<br>
+			<!--IBF.ATTACHMENT_430998-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2011. február 2. 22:38</h4>
+			<p>Simán mehet egybe a 2 terra, az NTFS-nek nincs ilyen korlátja. Egyébként erre teljesen jó a beépített lemezkezelő is.
+			<br>
+			<!--IBF.ATTACHMENT_431050-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2011. február 2. 22:44</h4>
+			<p>Mehetne egybe a 2 TB, de érdemes az elejéből akkor is elkülöníteni egy részt a virtuális lemezképeknek, hogy ne szaladgáljanak mindenfelé a lemezen. (Emellett a virtuális lemezképeknek fix méretűeknek kell lenniük.)
+			<br>
+			<!--IBF.ATTACHMENT_431054-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: mikcip  2011. február 5. 16:14</h4>
+			<p>Egy másfél terrabájtos USB-s küldő lemezre Mac oprendszer alatt barátom készített egy backup-ot a rendszeréről. Erre a lemezre szeretnék én a Windows7-es rendszerem alatt állományokat másolni, de a windowsom nem látja a lemezt, csak a windows saját particionálója. Tehát, ott van, csak nem tudom használni saját célomra.<br>Kérdésem az volna - ha jó helyen járok vele - hogy miként olvashatok (illetve írhatok) Windows felhasználói felületről GUID lemezen lévő állományokat?
+			<br>
+			<!--IBF.ATTACHMENT_431187-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2011. február 7. 13:43</h4>
+			<p>A GUID az egy dolog, de fájlrendszert sem írtál.<br>Ebből adódóan elég valószínű, hogy az a Mac partíció HFS+ fájlrendszerű.<br><span>Ha így van, ingyenes megoldás nemigen van rá, de néz meg a <a class="linkclass" href="http://www.mediafour.com/products/macdrive/-at">http://www.mediafour.com/products/macdrive/-at</a>
+			</span><br>
+			<!--IBF.ATTACHMENT_431255-->
+			</p>
+		</div><!--Copyright-->	</div></body><style type="text/css">/*This block of style rules is inserted by AdBlock*/#RadAd_Skyscraper,#bbccom_leaderboard,#center_banner,#footer_adcode,#hbBHeaderSpon,#hiddenHeaderSpon,#navbar_adcode,#rightAds,#rightcolumn_adcode,#top-advertising,#topMPU,#tracker_advertorial,.ad-now,.dfpad,.prWrap,[id^="ad_block"],[id^="adbrite"],[id^="dclkAds"],[id^="ew"][id$="_bannerDiv"],[id^="konaLayer"],a.kLink span[id^="preLoadWrap"].preLoadWrap,a[href^="http://ad."][href*=".doubleclick.net/"],a[href^="http://adserver.adpredictive.com"],div#adxLeaderboard,div#dir_ads_site,div#FFN_Banner_Holder,div#FFN_imBox_Container,div#p360-format-box,div#rhs div#rhs_block table#mbEnd,div#rm_container,div#tads table[align="center"][width="100%"],div#tooltipbox[class^="itxt"],div[class^="dms_ad_IDS"],div[id^="adKontekst_"],div[id^="google_ads_div"],div[id^="kona_"][id$="_wrapper"],div[id^="sponsorads"],div[id^="y5_direct"],iframe.chitikaAdBlock,iframe[id^="dapIfM"],iframe[id^="etarget"][id$="banner"],iframe[name^="AdBrite"],iframe[name^="google_ads_"],img[src^="http://cdn.adnxs.com"],ispan#ab_pointer,object#flashad,object#ve_threesixty_swf[name="ve_threesixty_swf"],table[cellpadding="0"][width="100%"] > * > * > * > div[id^="tpa"],#A9AdsMiddleBoxTop,#A9AdsOutOfStockWidgetTop,#A9AdsServicesWidgetTop,#ADSLOT_1,#ADSLOT_2,#ADSLOT_3,#ADSLOT_4,#AD_CONTROL_22,#ADsmallWrapper,#Ad160x600,#Ad2,#Ad300x250,#Ad3Left,#Ad3Right,#Ad3TextAd,#AdArea,#AdBanner_F1,#AdBar,#AdBar1,#AdContainer,#AdContainerTop,#AdContentModule_F,#AdDetails_GoogleLinksBottom,#AdDetails_InsureWith,#AdFrame4,#AdLeaderboardBottom,#AdLeaderboardTop,#AdMiddle,#AdMobileLink,#AdRectangle,#AdSenseDiv,#AdServer,#AdShowcase_F1,#AdSky23,#AdSkyscraper,#AdSponsor_SF,#AdSubsectionShowcase_F1,#AdTargetControl1_iframe,#AdText,#AdTop,#AdTopLeader,#Ad_Block,#Ad_Center1,#Ad_Right1,#Ad_Top,#Adrectangle,#Ads,#AdsContent,#AdsRight,#AdsWrap,#Ads_BA_CAD,#Ads_BA_CAD2,#Ads_BA_CAD_box,#Ads_BA_SKY,#Ads_CAD,#Ads_Special,#AdvertMPU23b,#AdvertPanel,#Advertorial,#Advertorials,#BannerAdvert,#BigBoxAd,#BodyAd,#BotAd,#Bottom468x60AD,#ButtonAd,#CompanyDetailsNarrowGoogleAdsPresentationControl,#CompanyDetailsWideGoogleAdsPresentationControl,#ContentAd,#ContentAd1,#ContentAd2,#ContentAdPlaceHolder1,#ContentAdPlaceHolder2,#ContentAdXXL,#ContentPolepositionAds_Result,#DivAdEggHeadCafeTopBanner,#FooterAd,#FooterAdContainer,#GoogleAd1,#GoogleAd2,#GoogleAd3,#GoogleAdsPresentationControl,#GoogleAdsense,#Google_Adsense_Main,#HEADERAD,#HOME_TOP_RIGHT_BOXAD,#HeaderAD,#HeaderAdsBlock,#HeaderAdsBlockFront,#HeaderBannerAdSpacer,#HeaderTextAd,#HeroAd,#HomeAd1,#HouseAd,#ID_Ad_Sky,#JobsearchResultsAds,#Journal_Ad_125,#Journal_Ad_300,#KH-contentAd,#LargeRectangleAd,#LeftAd,#LeftAdF1,#LeftAdF2,#LftAd,#LoungeAdsDiv,#LowerContentAd,#MainSponsoredLinks,#Nightly_adContainer,#OverrideAdArea,#PREFOOTER_LEFT_BOXAD,#PREFOOTER_RIGHT_BOXAD,#PageLeaderAd,#RelevantAds,#RgtAd1,#RightAd,#RightBottom300x250AD,#RightNavTopAdSpot,#RightSponsoredAd,#SectionAd300-250,#SectionSponsorAd,#SidebarAdContainer,#SkyAd,#SpecialAds,#SponsoredAd,#SponsoredLinks,#TOP_ADROW,#TOP_RIGHT_BOXAD,#Top468x60AD,#TopAdBox,#TopAdContainer,#TopAdDiv,#TopAdPos,#VM-MPU-adspace,#VM-footer-adspace,#VM-header-adspace,#VM-header-adwrap,#XEadLeaderboard,#XEadSkyscraper,#YahooAdParentContainer,#_ads,#about_adsbottom,#ad-120x600-sidebar,#ad-120x60Div,#ad-160x600,#ad-160x600-sidebar,#ad-250,#ad-250x300,#ad-300,#ad-300x250,#ad-300x250-sidebar,#ad-300x250Div,#ad-300x60-1,#ad-728,#ad-728x90-leaderboard-top,#ad-article,#ad-banner,#ad-banner-1,#ad-block-125,#ad-bottom,#ad-bottom-wrapper,#ad-box-first,#ad-box-second,#ad-boxes,#ad-bs,#ad-buttons,#ad-colB-1,#ad-column,#ad-content,#ad-contentad,#ad-flex-first,#ad-footer,#ad-footprint-160x600,#ad-frame,#ad-front-footer,#ad-front-sponsoredlinks,#ad-halfpage,#ad-horizontal-header,#ad-img,#ad-inner,#ad-label,#ad-leaderboard,#ad-leaderboard-bottom,#ad-leaderboard-container,#ad-leaderboard-spot,#ad-leaderboard-top,#ad-left,#ad-links-content,#ad-list-row,#ad-lrec,#ad-medium,#ad-medium-rectangle,#ad-medrec,#ad-middlethree,#ad-middletwo,#ad-module,#ad-mpu,#ad-mpu1-spot,#ad-mpu2,#ad-mpu2-spot,#ad-north,#ad-one,#ad-placard,#ad-placeholder,#ad-rectangle,#ad-right,#ad-righttop,#ad-row,#ad-side-text,#ad-sidebar,#ad-sky,#ad-skyscraper,#ad-slug-wrapper,#ad-small-banner,#ad-space,#ad-special,#ad-splash,#ad-sponsors,#ad-spot,#ad-squares,#ad-target,#ad-target-Leaderbord,#ad-teaser,#ad-text,#ad-top-banner,#ad-top-text-low,#ad-top-wrap,#ad-tower,#ad-trailerboard-spot,#ad-two,#ad-typ1,#ad-unit,#ad-west,#ad-wrap,#ad-wrap-right,#ad-wrapper1,#ad-yahoo-simple,#ad1006,#ad11,#ad125BL,#ad125BR,#ad125TL,#ad125TR,#ad125x125,#ad160x600,#ad160x600right,#ad1Sp,#ad2,#ad2Sp,#ad300,#ad300-250,#ad300X250,#ad300_x_250,#ad300x100Middle,#ad300x150,#ad300x250,#ad300x250Module,#ad300x60,#ad300x600,#ad300x600_callout,#ad336,#ad336x280,#ad375x85,#ad4,#ad468,#ad468x60,#ad468x60_top,#ad526x250,#ad600,#ad7,#ad728,#ad728Mid,#ad728Top,#ad728Wrapper,#ad728top,#ad728x90_1,#adBadges,#adBanner120x600,#adBanner160x600,#adBanner336x280,#adBanner728,#adBannerTable,#adBannerTop,#adBar,#adBelt,#adBlock125,#adBlocks,#adBox,#adBox350,#adBox390,#adCirc300X200,#adCirc_620_100,#adColumn,#adContainer_1,#adContainer_2,#adContainer_3,#adDiv300,#adDiv728,#adFiller,#adFps,#adFtofrs,#adGallery,#adGroup1,#adHeaderTop,#adIsland,#adL,#adLB,#adLabel,#adLayer,#adLeader,#adLeaderTop,#adLeaderboard,#adMPU,#adMediumRectangle,#adMiddle0Frontpage,#adMiniPremiere,#adP,#adPlaceHolderRight,#adPlacer,#adRight,#adSenseModule,#adSenseWrapper,#adServer_marginal,#adSidebar,#adSidebarSq,#adSky,#adSkyscraper,#adSlider,#adSpace,#adSpace3,#adSpace300_ifrMain,#adSpace4,#adSpace5,#adSpace6,#adSpace7,#adSpace_footer,#adSpace_right,#adSpace_top,#adSpacer,#adSpecial,#adSplotlightEm,#adSpot-Leader,#adSpot-banner,#adSpot-island,#adSpot-mrec1,#adSpot-sponsoredlinks,#adSpot-textbox1,#adSpot-widestrip,#adSpotAdvertorial,#adSpotIsland,#adSpotSponsoredLinks,#adSquare,#adStaticA,#adStrip,#adSuperAd,#adSuperPremiere,#adSuperSkyscraper,#adSuperbanner,#adTableCell,#adTag1,#adTag2,#adText,#adTextLink,#adText_container,#adTile,#adTopContent,#adTopboxright,#adTower,#adUnit,#adZoneTop,#ad_1,#ad_160x160,#ad_160x600,#ad_190x90,#ad_2,#ad_3,#ad_300,#ad_300_250,#ad_300_250_1,#ad_300x250,#ad_300x250_content_column,#ad_300x90,#ad_4,#ad_468_60,#ad_5,#ad_728_foot,#ad_728x90,#ad_728x90_container,#ad_940,#ad_984,#ad_A,#ad_B,#ad_Banner,#ad_C,#ad_C2,#ad_D,#ad_E,#ad_F,#ad_G,#ad_H,#ad_I,#ad_J,#ad_K,#ad_L,#ad_M,#ad_N,#ad_O,#ad_P,#ad_YieldManager-300x250,#ad_anchor,#ad_banner,#ad_banner_top,#ad_bar,#ad_bellow_post,#ad_block_1,#ad_block_2,#ad_bottom,#ad_box,#ad_box_colspan,#ad_box_top,#ad_branding,#ad_bs_area,#ad_buttons,#ad_center_monster,#ad_cont,#ad_container_marginal,#ad_container_side,#ad_container_top,#ad_content_top,#ad_content_wrap,#ad_feature,#ad_firstpost,#ad_footer,#ad_front_three,#ad_fullbanner,#ad_global_header,#ad_haha_1,#ad_haha_4,#ad_halfpage,#ad_head,#ad_header,#ad_holder,#ad_horizontal,#ad_horseshoe_left,#ad_horseshoe_right,#ad_horseshoe_spacer,#ad_horseshoe_top,#ad_hotpots,#ad_in_arti,#ad_island,#ad_label,#ad_large_rectangular,#ad_lastpost,#ad_layer2,#ad_leaderBoard,#ad_leaderboard,#ad_leaderboard728x90,#ad_leaderboard_top,#ad_left,#ad_lrec,#ad_lwr_square,#ad_main,#ad_medium_rectangle,#ad_medium_rectangular,#ad_mediumrectangle,#ad_menu_header,#ad_middle,#ad_most_pop_234x60_req_wrapper,#ad_mpu,#ad_mpu300x250,#ad_mpuav,#ad_mrcontent,#ad_overlay,#ad_play_300,#ad_rect,#ad_rect_body,#ad_rect_bottom,#ad_rectangle,#ad_rectangle_medium,#ad_related_links_div,#ad_related_links_div_program,#ad_replace_div_0,#ad_replace_div_1,#ad_report_leaderboard,#ad_report_rectangle,#ad_right,#ad_right_main,#ad_ros_tower,#ad_rr_1,#ad_sec,#ad_sec_div,#ad_sgd,#ad_sidebar,#ad_sidebar1,#ad_sidebar2,#ad_sidebar3,#ad_skyscraper,#ad_skyscraper160x600,#ad_skyscraper_text,#ad_slot_leaderboard,#ad_slot_livesky,#ad_slot_sky_top,#ad_ss,#ad_term_bottom_place,#ad_text,#ad_thread_first_post_content,#ad_top,#ad_top_holder,#ad_tp_banner_1,#ad_tp_banner_2,#ad_unit,#ad_vertical,#ad_wide,#ad_wide_box,#ad_widget,#ad_window,#ad_wrap,#adbForum,#adbanner,#adbig,#adbnr,#adboard,#adbottom,#adbox1,#adbox2,#adclear,#adcode,#adcode1,#adcode2,#adcode3,#adcode4,#adcolumnwrapper,#adcontainer,#adcontainerRight,#adcontainsm,#adcontent,#adcontent1,#adcontrolPushSite,#add_ciao2,#addbottomleft,#addiv-bottom,#addiv-top,#adfooter,#adfooter_728x90,#adframe:not(frameset),#adhead,#adhead_g,#adheader,#adhome,#adiframe1_iframe,#adiframe2_iframe,#adiframe3_iframe,#adimg,#adition_content_ad,#adlabel,#adlabelFooter,#adlayerad,#adleaderboard,#adleft,#adlinks,#adlinkws,#adlrec,#admid,#admiddle3center,#admiddle3left,#adposition,#adposition-C,#adposition-FPMM,#adposition1,#adposition2,#adposition4,#adrectangle,#adrectanglea,#adrectangleb,#adrig,#adright,#adright2,#adrighthome,#ads-468,#ads-area,#ads-block,#ads-bot,#ads-bottom,#ads-col,#ads-dell,#ads-horizontal,#ads-indextext,#ads-leaderboard1,#ads-lrec,#ads-menu,#ads-middle,#ads-prices,#ads-rhs,#ads-right,#ads-sponsored-boxes,#ads-top,#ads-vers7,#ads-wrapper,#ads160left,#ads2,#ads300,#ads300-250,#ads300Bottom,#ads300Top,#ads336x280,#ads7,#ads728bottom,#ads728top,#ads790,#adsDisplay,#adsID,#ads_160,#ads_300,#ads_728,#ads_banner,#ads_belowforumlist,#ads_belownav,#ads_bottom_inner,#ads_bottom_outer,#ads_box,#ads_button,#ads_catDiv,#ads_footer,#ads_html1,#ads_html2,#ads_medrect,#ads_notice,#ads_right,#ads_right_sidebar,#ads_sidebar_roadblock,#ads_space,#ads_top,#ads_watch_top_square,#ads_zone27,#adsbottom,#adsbox,#adscolumn,#adsd_contentad_r1,#adsd_contentad_r2,#adsd_contentad_r3,#adsd_topbanner,#adsd_txt_sky,#adsdiv,#adsense-2,#adsense-header,#adsense-tag,#adsense-text,#adsenseOne,#adsenseWrap,#adsense_article_left,#adsense_box,#adsense_leaderboard,#adsense_overlay,#adsense_placeholder_2,#adsenseheader,#adsensetopplay,#adsensewidget-3,#adserv,#adsimage,#adsky,#adskyscraper,#adslot,#adsonar,#adspace-300x250,#adspace300x250,#adspaceBox,#adspaceBox300,#adspace_header,#adspot,#adspot-1,#adspot-149x170,#adspot-1x4,#adspot-2,#adspot-295x60,#adspot-2a,#adspot-2b,#adspot-300x250-pos-1,#adspot-300x250-pos-2,#adspot-468x60-pos-2,#adspot-a,#adspot300x250,#adspot_220x90,#adspot_300x250,#adspot_468x60,#adspot_728x90,#adsright,#adst,#adstop,#adt,#adtab,#adtag_right_side,#adtaily-widget-light,#adtech_googleslot_03c,#adtech_takeover,#adtop,#adtophp,#adtxt,#adv-masthead,#adv_google_300,#adv_google_728,#adv_top_banner_wrapper,#adver1,#adver2,#adver3,#adver4,#adver5,#adver6,#adver7,#advert-1,#advert-120,#advert-boomer,#advert-display,#advert-header,#advert-leaderboard,#advert-links-bottom,#advert-skyscraper,#advert-top,#advert1,#advertBanner,#advertContainer,#advertDB,#advertRight,#advert_125x125,#advert_250x250,#advert_box,#advert_home01,#advert_leaderboard,#advert_lrec_format,#advert_mid,#advert_mpu,#advert_right_skyscraper,#advertbox,#advertbox2,#advertbox3,#advertbox4,#adverthome,#advertise-here-sidebar,#advertise-now,#advertise1,#advertiseHere,#advertisement160x600,#advertisement728x90,#advertisementLigatus,#advertisementPrio2,#advertisementsarticle,#advertiser-container,#advertiserLinks,#advertisers,#advertising-banner,#advertising-caption,#advertising-container,#advertising-control,#advertising-skyscraper,#advertising2,#advertisingModule160x600,#advertisingModule728x90,#advertisment,#advertismentElementInUniversalbox,#advertorial,#adverts-top-container,#adverts-top-left,#adverts-top-middle,#adverts-top-right,#advertsingle,#advt,#adwhitepaperwidget,#adwin_rec,#adwith,#adwords-4-container,#adxBigAd,#adxMiddle5,#adxSponLink,#adxSponLinkA,#adxtop,#adz,#adzbanner,#adzerk,#adzerk1,#adzoneBANNER,#affinityBannerAd,#agi-ad300x250,#agi-ad300x250overlay,#agi-sponsored,#alert_ads,#anchorAd,#annoying_ad,#ap_adframe,#apiBackgroundAd,#apiTopAdWrap,#apmNADiv,#araHealthSponsorAd,#article-ad-container,#article-box-ad,#articleAdReplacement,#articleLeftAdColumn,#articleSideAd,#article_ad,#article_ad_container,#article_box_ad,#asinglead,#atlasAdDivGame,#awds-nt1-ad,#banner-300x250,#banner-ad,#banner-ad-container,#banner-ads,#banner250x250,#banner468x60,#banner728x90,#bannerAd,#bannerAdTop,#bannerAd_ctr,#banner_ad,#banner_ad_footer,#banner_ad_module,#banner_admicro,#banner_ads,#banner_content_ad,#banner_topad,#bannerad2,#baseAdvertising,#bbccom_mpu,#bbccom_storyprintsponsorship,#bbo_ad1,#bg-footer-ads,#bg-footer-ads2,#bg_YieldManager-300x250,#bigAd,#bigBoxAd,#bigad300outer,#bigadbox,#bigadframe,#bigadspot,#billboard_ad,#block-ad_cube-1,#block-openads-1,#block-openads-3,#block-openads-4,#block-openads-5,#block-thewrap_ads_250x300-0,#blog-ad,#blog_ad_content,#blog_ad_opa,#blox-big-ad,#blox-big-ad-bottom,#blox-big-ad-top,#blox-halfpage-ad,#blox-tile-ad,#blox-tower-ad,#body_728_ad,#book-ad,#botad,#bott_ad2,#bott_ad2_300,#bottom-ad,#bottom-ad-container,#bottom-ads,#bottomAd,#bottomAdCCBucket,#bottomAdContainer,#bottomAdSense,#bottomAdSenseDiv,#bottomAds,#bottomRightAd,#bottomRightAdSpace,#bottom_ad,#bottom_ad_area,#bottom_ads,#bottom_banner_ad,#bottom_overture,#bottom_sponsor_ads,#bottom_sponsored_links,#bottom_text_ad,#bottomad,#bottomads,#bottomadsense,#bottomadwrapper,#bottomleaderboardad,#box-content-ad,#box-googleadsense-1,#box-googleadsense-r,#box1ad,#boxAd300,#boxAdContainer,#box_ad,#box_advertisment,#box_mod_googleadsense,#boxad1,#boxad2,#boxad3,#boxad4,#boxad5,#bpAd,#bps-header-ad-container,#btr_horiz_ad,#burn_header_ad,#button-ads-horizontal,#button-ads-vertical,#buttonAdWrapper1,#buttonAdWrapper2,#buttonAds,#buttonAdsContainer,#button_ad_container,#button_ad_wrap,#buttonad,#buy-sell-ads,#c4ad-Middle1,#c_ad_sb,#c_ad_sky,#caAdLarger,#catad,#category-ad,#cellAd,#channel_ad,#channel_ads,#ciHomeRHSAdslot,#circ_ad,#cnnRR336ad,#cnnTopAd,#cnnVPAd,#col3_advertising,#colAd,#colRightAd,#collapseobj_adsection,#column4-google-ads,#comments-ad-container,#commercial_ads,#common_right_ad_wrapper,#common_right_lower_ad_wrapper,#common_right_lower_adspace,#common_right_lower_player_ad_wrapper,#common_right_lower_player_adspace,#common_right_player_ad_wrapper,#common_right_player_adspace,#common_right_right_adspace,#common_top_adspace,#companion-ad,#companionAdDiv,#containerLocalAds,#containerLocalAdsInner,#containerMrecAd,#containerSqAd,#content-ad-header,#content-header-ad,#contentBoxad,#contentTopAds2,#content_ad_square,#content_ad_top,#content_ads_content,#content_box_300body_sponsoredoffers,#content_box_adright300_google,#content_mpu,#contentad { visibility:hidden !important; display:none !important; } #contentad_imtext,#contentad_right,#contentads,#contentinlineAd,#contextad,#contextual-ads,#contextual-ads-block,#contextualad,#coverads,#ctl00_Adspace_Top_Height,#ctl00_BottomAd,#ctl00_ContentMain_BanManAd468_BanManAd,#ctl00_ContentRightColumn_RightColumn_Ad1_BanManAd,#ctl00_ContentRightColumn_RightColumn_Ad2_BanManAd,#ctl00_ContentRightColumn_RightColumn_PremiumAd1_ucBanMan_BanManAd,#ctl00_LHTowerAd,#ctl00_LeftHandAd,#ctl00_MasterHolder_IBanner_adHolder,#ctl00_TopAd,#ctl00_TowerAd,#ctl00_VBanner_adHolder,#ctl00__Content__RepeaterReplies_ctl03__AdReply,#ctl00_abot_bb,#ctl00_adFooter,#ctl00_advert_LargeMPU_div_AdPlaceHolder,#ctl00_atop_bt,#ctl00_cphMain_hlAd1,#ctl00_cphMain_hlAd2,#ctl00_cphMain_hlAd3,#ctl00_ctl00_MainPlaceHolder_itvAdSkyscraper,#ctl00_ctl00_ctl00_Main_Main_PlaceHolderGoogleTopBanner_MPTopBannerAd,#ctl00_ctl00_ctl00_Main_Main_SideBar_MPSideAd,#ctl00_dlTilesAds,#ctl00_m_skinTracker_m_adLBL,#ctl00_phCrackerMain_ucAffiliateAdvertDisplayMiddle_pnlAffiliateAdvert,#ctl00_phCrackerMain_ucAffiliateAdvertDisplayRight_pnlAffiliateAdvert,#ctrlsponsored,#cubeAd,#cube_ads,#cube_ads_inner,#cubead,#cubead-2,#dItemBox_ads,#dart_160x600,#dc-display-right-ad-1,#dcol-sponsored,#defer-adright,#detail_page_vid_topads,#div-gpt-ad-1,#div-gpt-ad-2,#div-gpt-ad-3,#div-gpt-ad-4,#divAdBox,#divAdWrapper,#divDoubleAd,#divLeftAd12,#divLeftRecAd,#divMenuAds,#divWNAdHeader,#divWrapper_Ad,#div_ad_leaderboard,#div_video_ads,#dlads,#dni-header-ad,#dnn_ad_banner,#download_ads,#ds-mpu,#editorsmpu,#embedded-ad,#evotopTen_advert,#ex-ligatus,#exads,#featured-advertisements,#featuredAdContainer2,#featuredAds,#feed_links_ad_container,#first-300-ad,#first-adlayer,#first_ad_unit,#firstad,#fl_hdrAd,#flash_ads_1,#flexiad,#footad,#footer-ad,#footer-advert,#footer-adverts,#footer-sponsored,#footerAd,#footerAdDiv,#footerAds,#footerAdvertisement,#footerAdverts,#footer_ad_01,#footer_ad_block,#footer_ad_container,#footer_ad_modules,#footer_adspace,#footer_text_ad,#footerad,#footerads,#footeradsbox,#forum_top_ad,#fpv_companionad,#fr_ad_center,#frame_admain,#frnAdSky,#frnBannerAd,#frnContentAd,#from_our_sponsors,#front_advert,#front_mpu,#ft-ad,#ft-ad-1,#ft-ad-container,#ft_mpu,#fusionad,#fw-advertisement,#g_ad,#g_adsense,#ga_300x250,#gad,#gad2,#gad3,#gad5,#galleries-tower-ad,#gallery-ad-m0,#gallery_ads,#game-info-ad,#gasense,#gglads,#global_header_ad_area,#gmi-ResourcePageAd,#gmi-ResourcePageLowerAd,#goads,#gooadtop,#google-ad,#google-ad-art,#google-ad-table-right,#google-ad-tower,#google-ads,#google-ads-bottom,#google-ads-header,#google-ads-left-side,#google-adsense-mpusize,#googleAd,#googleAds,#googleAdsSml,#googleAdsense,#googleAdsenseBanner,#googleAdsenseBannerBlog,#googleAdwordsModule,#googleAfcContainer,#googleSearchAds,#googleShoppingAdsRight,#googleShoppingAdsTop,#googleSubAds,#google_ad,#google_ad_container,#google_ad_inline,#google_ad_test,#google_ads,#google_ads_aCol,#google_ads_frame1,#google_ads_frame1_anchor,#google_ads_frame2,#google_ads_frame2_anchor,#google_ads_frame3,#google_ads_frame3_anchor,#google_ads_test,#google_ads_top,#google_adsense_home_468x60_1,#googlead2,#googleadbox,#googleads,#googleadsense,#googlesponsor,#gpt-ad-halfpage,#gpt-ad-rectangle1,#gpt-ad-rectangle2,#gpt-ad-skyscraper,#gpt-ad-story_rectangle3,#grid_ad,#gsyadrectangleload,#gsyadrightload,#gsyadtop,#gsyadtopload,#gtopadvts,#half-page-ad,#halfPageAd,#halfe-page-ad-box,#hd-ads,#hd-banner-ad,#hdtv_ad_ss,#headAd,#head_advert,#headad,#header-ad,#header-ad-rectangle-container,#header-ads,#header-adspace,#header-advert,#header-advertisement,#header-advertising,#header-adverts,#headerAd,#headerAdBackground,#headerAdContainer,#headerAdWrap,#headerAds,#headerAdsWrapper,#headerTopAd,#header_ad_728_90,#header_ad_container,#header_adcode,#header_ads,#header_advertisement_top,#header_leaderboard_ad_container,#header_publicidad,#headerad,#headeradbox,#headerads,#headeradsbox,#headeradwrap,#headline_ad,#headlinesAdBlock,#hiddenadAC,#hideads,#hl-sponsored-results,#hly_ad_side_bar_tower_left,#home-rectangle-ad,#homeTopRightAd,#home_ad,#home_bottom_ad,#home_contentad,#home_feature_ad,#home_mpu,#home_spensoredlinks,#homepage-ad,#homepageAdsTop,#homepageFooterAd,#homepage_right_ad,#homepage_right_ad_container,#homepage_top_ads,#hometop_234x60ad,#hor_ad,#horizontal-banner-ad,#horizontal_ad,#horizontal_ad_top,#horizontalads,#houseAd,#hp-header-ad,#hp-right-ad,#hp-store-ad,#hpV2_300x250Ad,#hpV2_googAds,#icePage_SearchLinks_AdRightDiv,#icePage_SearchLinks_DownloadToolbarAdRightDiv,#icePage_SearchResults_ads0_SponsoredLink,#icePage_SearchResults_ads1_SponsoredLink,#icePage_SearchResults_ads2_SponsoredLink,#icePage_SearchResults_ads3_SponsoredLink,#icePage_SearchResults_ads4_SponsoredLink,#imu_ad_module,#in_serp_ad,#inadspace,#indexad,#inline-story-ad,#inlinead,#inlinegoogleads,#inlist-ad-block,#inner-advert-row,#innerpage-ad,#inside-page-ad,#insider_ad_wrapper,#instoryad,#instoryadtext,#instoryadwrap,#int-ad,#interstitial_ad_wrapper,#islandAd,#j_ad,#ji_medShowAdBox,#jmp-ad-buttons,#joead,#joead2,#ka_adRightSkyscraperWide,#kdz_ad1,#kdz_ad2,#landing-adserver,#largead,#lateAd,#layerAds_layerDiv,#layerTLDADSERV,#lb-sponsor-left,#lb-sponsor-right,#leader-board-ad,#leader-sponsor,#leaderAd,#leaderAdContainer,#leader_board_ad,#leaderad,#leaderad_section,#leaderboard-ad,#leaderboard-bottom-ad,#leaderboard_ad,#left-ad-skin,#left-lower-adverts,#left-lower-adverts-container,#leftAdContainer,#leftAd_rdr,#leftAdvert,#leftSectionAd300-100,#left_ad,#left_adspace,#leftad,#leftads,#leftcolAd,#lg-banner-ad,#ligatus,#linkAds,#linkads,#live-ad,#logoAd,#longAdSpace,#lowerAdvertisementImg,#lowerads,#lowerthirdad,#lowertop-adverts,#lowertop-adverts-container,#lpAdPanel,#lrecad,#lsadvert-left_menu_1,#lsadvert-left_menu_2,#lsadvert-top,#mBannerAd,#main-ad,#main-ad160x600,#main-ad160x600-img,#main-ad728x90,#main-bottom-ad,#mainAdUnit,#mainAdvert,#main_ad,#main_rec_ad,#main_top_ad_container,#marketing-promo,#mastAd,#mastAdvert,#mastad,#mastercardAd,#masthead_ad,#masthead_topad,#medRecAd,#media_ad,#mediaplayer_adburner,#mediumAdvertisement,#medrectad,#menuAds,#mi_story_assets_ad,#mid-ad300x250,#mid-table-ad,#midRightTextAds,#mid_ad_div,#mid_ad_title,#mid_mpu,#midadd,#midadspace,#middle-ad,#middlead,#middleads,#midrect_ad,#midstrip_ad,#mini-ad,#mochila-column-right-ad-300x250,#mochila-column-right-ad-300x250-1,#module-google_ads,#module_ad,#module_box_ad,#module_sky_scraper,#monsterAd,#moogleAd,#most_popular_ad,#motionAd,#mpu,#mpu-advert,#mpu300250,#mpuAd,#mpuDiv,#mpuSlot,#mpuWrapper,#mpuWrapperAd,#mpu_banner,#mpu_holder,#mpu_text_ad,#mpuad,#mr_banner_topad,#mrecAdContainer,#msAds,#ms_ad,#msad,#multiLinkAdContainer,#multi_ad,#myads_HeaderButton,#n_sponsor_ads,#namecom_ad_hosting_main,#narrow_ad_unit,#natadad300x250,#national_microlink_ads,#nationalad,#navi_banner_ad_780,#nba160PromoAd,#nba300Ad,#nbaHouseAnd600Ad,#nbaLeft600Ad,#nbaMidAds,#nbaVid300Ad,#new_topad,#newads,#ng_rtcol_ad,#noresults_ad_container,#noresultsads,#northad,#ns_ad3,#oanda_ads,#onespot-ads,#online_ad,#p-googleadsense,#page-header-ad,#page-top-ad,#pageAds,#pageAdsDiv,#page_content_top_ad,#pagelet_adbox,#pagelet_netego_ads,#pagelet_search_ads2,#panelAd,#pb_report_ad,#pcworldAdBottom,#pcworldAdTop,#pinball_ad,#player-below-advert,#player_ad,#player_ads,#pod-ad-video-page,#populate_ad_bottom,#populate_ad_left,#portlet-advertisement-left,#portlet-advertisement-right,#post-promo-ad,#post5_adbox,#post_ad,#premium_ad,#priceGrabberAd,#prime-ad-space,#print_ads,#product-adsense,#promoAds,#ps-vertical-ads,#pub468x60,#publicidad,#pushdown_ad,#qm-ad-big-box,#qm-ad-sky,#qm-dvdad,#r1SoftAd,#rail_ad1,#rail_ad2,#realEstateAds,#rectAd,#rect_ad,#rectangle-ad,#rectangle_ad,#refine-300-ad,#region-node-advert,#region-top-ad,#rh-ad-container,#rh_tower_ad,#rhapsodyAd,#rhs_ads,#rhsadvert,#right-ad,#right-ad-skin,#right-ad-title,#right-ads-3,#right-box-ad,#right-featured-ad,#right-mpu-1-ad-container,#right-uppder-adverts,#right-uppder-adverts-container,#rightAd,#rightAd300x250,#rightAdBar,#rightAdColumn,#rightAd_rdr,#rightAdsDiv,#rightColAd,#rightColumnMpuAd,#rightColumnSkyAd,#rightTopSponsor,#right_ad_wrapper,#right_ads,#right_advertisement,#right_advertising,#right_column_ad_container,#right_column_ads,#right_column_internal_ad_container,#right_column_top_ad_unit,#rightad,#rightadContainer,#rightadvertbar-doubleclickads,#rightbar-ad,#rightcolumn_300x250ad,#rightside-ads,#rightside_ad,#righttop-adverts,#righttop-adverts-container,#rm_ad_text,#ros_ad,#rotatingads,#row2AdContainer,#rr_MSads,#rt-ad,#rt-ad-top,#rt-ad468,#rtMod_ad,#rtmod_ad,#sAdsBox,#sb-ad-sq,#sb_advert,#sb_sponsors,#search-google-ads,#search-sponsored-links,#search-sponsored-links-top,#searchAdSenseBox,#searchAdSenseBoxAd,#searchAdSkyscraperBox,#search_ads,#search_result_ad,#second-adlayer,#secondBoxAdContainer,#secondrowads,#section-ad-1-728,#section-ad-300-250,#section-ad-4-160,#section-blog-ad,#section-container-ddc_ads,#section-sponsors,#section_advertorial_feature,#servfail-ads,#sew-ad1,#shoppingads,#show-ad,#showAd,#showad,#side-ad,#side-ad-container,#sideAd,#sideAdSub,#sideBarAd,#side_ad,#side_ad_wrapper,#side_ads_by_google,#side_sky_ad,#sidead,#sideads,#sidebar-125x125-ads,#sidebar-125x125-ads-below-index,#sidebar-ad,#sidebar-ad-boxes,#sidebar-ad-space,#sidebar-ad-wrap,#sidebar-ad3,#sidebar2ads,#sidebar_ad,#sidebar_ad_widget,#sidebar_ads_180,#sidebar_sponsoredresult_body,#sidebarad,#sidebaradver_advertistxt,#sideline-ad,#single-mpu,#singlead,#site-leaderboard-ads,#site_top_ad,#sitead,#sky-ad,#skyAd,#skyAdContainer,#skyScrapperAd,#skyWrapperAds,#sky_ad,#sky_advert,#skyads,#skyadwrap,#skyline_ad,#skyscraper-ad,#skyscraperAd,#skyscraperAdContainer,#skyscraper_ad,#skyscraper_advert,#skyscraperad,#slide_ad,#sliderAdHolder,#slideshow_ad_300x250,#sm-banner-ad,#small_ad,#smallerAd,#some-ads,#some-more-ads,#specialadvertisingreport_container,#specials_ads,#speeds_ads,#speeds_ads_fstitem,#speedtest_mrec_ad,#sphereAd,#sponLinkDiv_1,#sponlink,#sponlinks,#sponsAds,#sponsLinks,#spons_left,#sponseredlinks,#sponsor-search,#sponsorAd1,#sponsorAd2,#sponsorAdDiv,#sponsorLinks,#sponsorTextLink,#sponsor_banderole,#sponsor_box,#sponsor_deals,#sponsor_panSponsor,#sponsor_recommendations,#sponsorbar,#sponsorbox,#sponsored-ads,#sponsored-features,#sponsored-links,#sponsored-resources,#sponsored1,#sponsoredBox1,#sponsoredBox2,#sponsoredLinks,#sponsoredList,#sponsoredResults,#sponsoredResultsWide,#sponsoredSiteMainline,#sponsoredSiteSidebar,#sponsored_ads_v4,#sponsored_content,#sponsored_game_row_listing,#sponsored_links,#sponsored_v12,#sponsoredads,#sponsoredlinks,#sponsoredlinks_cntr,#sponsoredlinkslabel,#sponsoredresults_top,#sponsoredwellcontainerbottom,#sponsoredwellcontainertop,#sponsoring_bar,#sponsorlink,#sponsors,#sponsors_top_container,#sponsorshipBadge,#spotlightAds,#spotlightad,#sqAd,#square-sponsors,#squareAd,#squareAdSpace,#squareAds,#square_ad,#start_middle_container_advertisment,#sticky-ad,#stickyBottomAd,#story-90-728-area,#story-ad-a,#story-ad-b,#story-leaderboard-ad,#story-sponsoredlinks,#storyAd,#storyAdWrap,#storyad2,#subpage-ad-right,#subpage-ad-top,#swads,#synch-ad,#systemad_background,#tabAdvertising,#takeoverad,#tblAd,#tbl_googlead,#tcwAd,#td-GblHdrAds,#template_ad_leaderboard,#tertiary_advertising,#text-ad,#text-ads,#text-link-ads,#textAd,#textAds,#text_ad,#text_ads,#text_advert,#textad,#textad3,#the-last-ad-standing,#thefooterad,#themis-ads,#tile-ad,#tmglBannerAd,#toolbarSlideUpAd,#top-ad,#top-ad-container,#top-ad-menu,#top-ads,#top-ads-tabs,#top-advertisement,#top-banner-ad,#top-search-ad-wrapper,#topAd728x90,#topAdBanner,#topAdBox,#topAdContainer,#topAdSenseDiv,#topAdcontainer,#topAds,#topAdsContainer,#topAdvert,#topBannerAdContainer,#topNavLeaderboardAdHolder,#topRightBlockAdSense,#top_ad_area,#top_ad_banner,#top_ad_game,#top_ad_wrapper,#top_ad_zone,#top_ads,#top_advertise,#top_advertising,#top_rectangle_ad,#top_right_ad,#top_wide_ad,#topad_left,#topad_right,#topadbar,#topadblock,#topaddwide,#topadsense,#topadspace,#topadzone,#topbanner_ad,#topbar-ad,#topcustomad,#topleaderboardad,#toprightAdvert,#toprightad,#topsponsored,#toptextad,#tour300Ad,#tourSponsoredLinksContainer,#towerad,#ts-ad_module,#ttp_ad_slot1,#ttp_ad_slot2,#twogamesAd,#txt_link_ads,#undergameAd,#upperAdvertisementImg,#upperMpu,#upperad,#urban_contentad_1,#urban_contentad_2,#urban_contentad_article,#v_ad,#vert_ad,#vert_ad_placeholder,#vertical_ad,#vertical_ads,#videoAd,#video_cnv_ad,#video_overlay_ad,#videoadlogo,#viewportAds,#viewvid_ad300x250,#walltopad,#weblink_ads_container,#welcomeAdsContainer,#welcome_ad_mrec,#welcome_advertisement,#wf_ContentAd,#wf_FrontSingleAd,#wf_SingleAd,#wf_bottomContentAd,#wgtAd,#whatsnews_top_ad,#whitepaper-ad,#whoisRightAdContainer,#wide_ad_unit_top,#widget_advertisement,#wrapAdRight,#wrapAdTop,#wrapperAdsTopLeft,#wrapperAdsTopRight,#y-ad-units,#y708-ad-expedia,#y708-ad-lrec,#y708-ad-partners,#y708-ad-ysm,#y708-advertorial-marketplace,#yahoo-ads,#yahoo-sponsors,#yahooSponsored,#yahoo_ads,#yahoo_ads_2010,#yahoo_text_ad,#yahooad-tbl,#yan-sponsored,#yatadsky,#ybf-ads,#yfi_fp_ad_mort,#yfi_fp_ad_nns,#yfi_pf_ad_mort,#ygrp-sponsored-links,#ymap_adbanner,#yn-gmy-ad-lrec,#yreSponsoredLinks,#ysm_ad_iframe,#zoneAdserverMrec,#zoneAdserverSuper,.ADBAR,.ADPod,.AD_ALBUM_ITEMLIST,.AD_MOVIE_ITEM,.AD_MOVIE_ITEMLIST,.AD_MOVIE_ITEMROW,.Ad-MPU,.Ad1,.Ad120x600,.Ad160x600,.Ad160x600left,.Ad160x600right,.Ad2,.Ad247x90,.Ad300x,.Ad300x250,.Ad300x250L,.Ad728x90,.AdBorder,.AdBox7,.AdContainerBox308,.AdHeader,.AdHere,.AdMedium,.AdPlaceHolder,.AdRingtone,.AdSenseLeft,.AdSlot,.AdSpace,.AdTextSmallFont,.AdUnit,.AdUnit300,.Ad_C,.Ad_D_Wrapper,.Ad_E_Wrapper,.Ad_Right,.AdsBoxBottom,.AdsBoxSection,.AdsBoxTop,.AdsLinks1,.AdsLinks2,.AdsRec,.AdvertMidPage,.AdvertiseWithUs,.AdvertisementTextTag,.ArticleAd,.ArticleInlineAd,.BannerAd,.BigBoxAd,.BlockAd,.BottomAdContainer,.BottomAffiliate,.BoxAd,.CG_adkit_leaderboard,.CG_details_ad_dropzone,.CWReviewsProdInfoAd,.ComAread,.CommentAd,.ContentAd,.ContentAds,.DAWRadvertisement,.DeptAd,.DisplayAd,.FT_Ad,.FlatAds,.GOOGLE_AD,.GoogleAd,.GoogleAdSenseBottomModule,.GoogleAdSenseRightModule,.HPG_Ad_B,.HPNewAdsBannerDiv,.HPRoundedAd,.HomeContentAd,.IABAdSpace,.IndexRightAd,.LazyLoadAd,.LeftAd,.LeftButtonAdSlot,.LeftTowerAd,.M2Advertisement,.MD_adZone,.MOS-ad-hack,.MPU,.MPUHolder,.MPUTitleWrapperClass,.MREC_ads,.MiddleAd,.MiddleAdContainer,.NewsAds,.OAS,.OpaqueAdBanner,.OpenXad,.PU_DoubleClickAdsContent,.Post5ad,.Post9ad,.RBboxAd,.RectangleAd,.RelatedAds,.Right300x250AD,.RightAd1,.RightAdvertiseArea,.RightGoogleAFC,.RightRailTop300x250Ad,.RightSponsoredAdTitle,.RightTowerAd,.STR_AdBlock,.SideAdCol,.SidebarAd,.SidebarAdvert,.SitesGoogleAdsModule,.SkyAdContainer,.SponsorCFrame,.SponsoredAdTitle,.SponsoredContent,.SponsoredLinkItemTD,.SponsoredLinks,.SponsoredLinksGrayBox,.SponsoredLinksModule,.SponsoredLinksPadding,.SponsorshipText,.SquareAd,.StandardAdLeft,.StandardAdRight,.TRU-onsite-ads-leaderboard,.TextAd,.TheEagleGoogleAdSense300x250,.TopAd,.TopAdContainer,.TopAdL,.TopAdR,.TopBannerAd,.UIWashFrame_SidebarAds,.UnderAd,.VerticalAd,.Video-Ad,.VideoAd,.WidgetAdvertiser,.a160x600,.a728x90,.ad-120x600,.ad-160,.ad-160x600,.ad-250,.ad-300,.ad-300-block,.ad-300-blog,.ad-300x100,.ad-300x250,.ad-300x250-right0,.ad-350,.ad-355x75,.ad-600,.ad-635x40,.ad-728,.ad-728x90,.ad-728x90-1,.ad-728x90_forum,.ad-90x600,.ad-above-header,.ad-adlink-bottom,.ad-adlink-side,.ad-area,.ad-background,.ad-banner,.ad-bigsize,.ad-block,.ad-blog2biz,.ad-body { visibility:hidden !important; display:none !important; } .ad-bottom,.ad-break,.ad-btn,.ad-btn-heading,.ad-cell,.ad-container-300x250,.ad-container-728x90,.ad-context,.ad-disclaimer,.ad-div,.ad-enabled,.ad-feedback,.ad-filler,.ad-flex,.ad-footer,.ad-footer-leaderboard,.ad-google,.ad-graphic-large,.ad-gray,.ad-hdr,.ad-head,.ad-header,.ad-heading,.ad-homeleaderboard,.ad-img,.ad-in-post,.ad-index-main,.ad-island,.ad-label,.ad-leaderboard,.ad-links,.ad-lrec,.ad-medium,.ad-medium-two,.ad-mpu,.ad-msn,.ad-note,.ad-notice,.ad-other,.ad-permalink,.ad-placeholder,.ad-postText,.ad-poster,.ad-priority,.ad-rect,.ad-rectangle,.ad-rectangle-text,.ad-related,.ad-rh,.ad-ri,.ad-right,.ad-right-header,.ad-right-txt,.ad-row,.ad-section,.ad-show-label,.ad-side,.ad-sidebar-outer,.ad-sidebar300,.ad-sky,.ad-slot,.ad-slot-234-60,.ad-slot-300-250,.ad-slot-728-90,.ad-space,.ad-space-mpu-box,.ad-spot,.ad-square300,.ad-squares,.ad-statement,.ad-story-inject,.ad-tabs,.ad-text-links,.ad-tile,.ad-title,.ad-top,.ad-top-left,.ad-unit,.ad-unit-300,.ad-unit-300-wrapper,.ad-unit-anchor,.ad-vert,.ad-vtu,.ad-wrap,.ad-wrapper,.ad-zone-s-q-l,.ad.super,.ad0,.ad10,.ad120,.ad120x240backgroundGray,.ad120x600,.ad125,.ad140,.ad160,.ad160x600,.ad160x600GrayBorder,.ad18,.ad19,.ad21,.ad230,.ad250,.ad250c,.ad3,.ad300,.ad300250,.ad300_250,.ad300x100,.ad300x250,.ad300x250-hp-features,.ad300x250Top,.ad300x250_container,.ad300x250box,.ad300x50-right,.ad300x600,.ad310,.ad336x280,.ad343x290,.ad4,.ad400right,.ad450,.ad468_60,.ad468x60,.ad6,.ad620x70,.ad626X35,.ad7,.ad728,.ad728_90,.ad728x90,.ad728x90_container,.ad8,.ad90x780,.adAgate,.adArea674x60,.adBanner,.adBanner300x250,.adBanner728x90,.adBannerTyp1,.adBannerTypSortableList,.adBannerTypW300,.adBar,.adBgBottom,.adBgMId,.adBgTop,.adBlock,.adBottomboxright,.adBoxBody,.adBoxBorder,.adBoxContainer,.adBoxContent,.adBoxInBignews,.adBoxSidebar,.adBoxSingle,.adBwrap,.adCMRight,.adCell,.adColumn,.adCont,.adContTop,.adContour,.adCreative,.adCube,.adFender3,.adFrame,.adFtr,.adFullWidthMiddle,.adGoogle,.adHeader,.adHeadline,.adHome300x250,.adHorisontal,.adInNews,.adLabel,.adLeader,.adLeaderForum,.adLeaderboard,.adLeft,.adLoaded,.adLocal,.adMarker,.adMastheadLeft,.adMastheadRight,.adMegaBoard,.adMkt2Colw,.adModuleAd,.adMpu,.adNewsChannel,.adNoOutline,.adNotice,.adNoticeOut,.adObj,.adPageBorderL,.adPageBorderR,.adPanel,.adRect,.adRight,.adSelfServiceAdvertiseLink,.adServer,.adSkyscraperHolder,.adSlot,.adSpBelow,.adSpacer,.adSplash,.adSponsor,.adSpot,.adSpot-searchAd,.adSpot-textBox,.adSpot-twin,.adSpotIsland,.adSquare,.adSubColPod,.adSuperboard,.adSupertower,.adTD,.adTab,.adTag,.adTileWrap,.adTiler,.adTopboxright,.adTout,.adTxt,.adUnit,.adUnitHorz,.adUnitVert,.adUnitVert_noImage,.adWebBoard,.adWidget,.adWithTab,.adWrap,.adWrapper,.ad_0,.ad_1,.ad_120x90,.ad_125,.ad_130x90,.ad_160,.ad_160x600,.ad_2,.ad_200,.ad_200x200,.ad_250x250,.ad_250x250_w,.ad_3,.ad_300,.ad_300_250,.ad_300x250,.ad_300x250_box_right,.ad_336,.ad_336x280,.ad_350x100,.ad_350x250,.ad_400x200,.ad_468,.ad_468x60,.ad_600,.ad_728,.ad_728x90,.ad_Left,.ad_amazon,.ad_banner,.ad_banner_border,.ad_bar,.ad_bg,.ad_bigbox,.ad_biz,.ad_block,.ad_block_338,.ad_body,.ad_border,.ad_botbanner,.ad_bottom_leaderboard,.ad_bottom_left,.ad_box,.ad_box2,.ad_box_ad,.ad_box_div,.ad_callout,.ad_caption,.ad_column,.ad_column_box,.ad_column_hl,.ad_contain,.ad_container,.ad_content,.ad_content_wide,.ad_contents,.ad_descriptor,.ad_disclaimer,.ad_eyebrow,.ad_footer,.ad_frame,.ad_framed,.ad_front_promo,.ad_head,.ad_headline,.ad_hpm,.ad_info_block,.ad_inline,.ad_island,.ad_label,.ad_launchpad,.ad_leader,.ad_leaderboard,.ad_left,.ad_line,.ad_link,.ad_linkunit,.ad_loc,.ad_lrec,.ad_main,.ad_medrec,.ad_medrect,.ad_middle,.ad_mpu,.ad_mr,.ad_mrec,.ad_mrec_title_article,.ad_mrect,.ad_news,.ad_notice,.ad_one,.ad_p360,.ad_partner,.ad_partners,.ad_plus,.ad_post,.ad_power,.ad_rectangle,.ad_right_col,.ad_row,.ad_sidebar,.ad_skyscraper,.ad_slug,.ad_slug_table,.ad_space_300_250,.ad_sponsor,.ad_sponsoredsection,.ad_spot_b,.ad_spot_c,.ad_square_r,.ad_square_top,.ad_text_w,.ad_title,.ad_top,.ad_top_leaderboard,.ad_top_left,.ad_topright,.ad_tower,.ad_unit,.ad_unit_rail,.ad_url,.ad_warning,.ad_wid300,.ad_wide,.ad_wrap,.ad_wrapper,.ad_wrapper_fixed,.ad_wrapper_top,.ad_zone,.adarea,.adarea-long,.adbanner,.adbannerbox,.adbannerright,.adbar,.adboard,.adborder,.adbot,.adbottom,.adbottomright,.adbox-outer,.adbox-wrapper,.adbox_300x600,.adbox_366x280,.adbox_468X60,.adbox_bottom,.adboxclass,.adbreak,.adbug,.adbuttons,.adcode,.adcolumn,.adcolumn_wrapper,.adcopy,.add_300x250,.adfieldbg,.adfoot,.adfootbox,.adhead,.adhead_h,.adhead_h_wide,.adheader,.adheader100,.adhere,.adhered,.adhi,.adhint,.adhoriz,.adi,.adiframe,.adinside,.adintro,.adjlink,.adkicker,.adkit,.adkit-advert,.adkit-lb-footer,.adlabel-horz,.adlabel-vert,.adleader,.adleaderboard,.adleft1,.adline,.adlinks,.adlnklst,.admarker,.admedrec,.admessage,.admodule,.admpu,.admpu-small,.adnation-banner,.adnotice,.adops,.adp-AdPrefix,.adpadding,.adpane,.adprice,.adproxy,.adroot,.adrotate_widget,.adrow,.adrow-post,.adrule,.ads-125,.ads-728x90-wrap,.ads-banner,.ads-below-content,.ads-categories-bsa,.ads-favicon,.ads-links-general,.ads-mpu,.ads-outer,.ads-profile,.ads-right,.ads-sidebar,.ads-sky,.ads-stripe,.ads-text,.ads-widget,.ads-widget-partner-gallery,.ads160,.ads1_250,.ads2,.ads3,.ads300,.ads460,.ads460_home,.ads468,.ads728,.ads728x90,.adsArea,.adsBelowHeadingNormal,.adsBlock,.adsBox,.adsCell,.adsCont,.adsDiv,.adsFull,.adsImages,.adsMPU,.adsRight,.adsTextHouse,.adsTop,.adsTower2,.adsTowerWrap,.adsWithUs,.ads_125_square,.ads_180,.ads_300,.ads_300x250,.ads_337x280,.ads_728x90,.ads_big,.ads_big-half,.ads_box,.ads_brace,.ads_catDiv,.ads_container,.ads_disc_anchor,.ads_disc_leader,.ads_disc_lwr_square,.ads_disc_skyscraper,.ads_disc_square,.ads_div,.ads_header,.ads_leaderboard,.ads_medrect,.ads_mpu,.ads_outer,.ads_rectangle,.ads_right,.ads_sc_bl_i,.ads_sc_tl_i,.ads_show_if,.ads_side,.ads_sidebar,.ads_singlepost,.ads_spacer,.ads_takeover,.ads_title,.ads_top,.ads_top_promo,.ads_tr,.ads_verticalSpace,.ads_vtlLink,.ads_widesky,.ads_wrapperads_top,.adsbg300,.adsblockvert,.adsborder,.adsbottom,.adsbox,.adsboxitem,.adsbyyahoo,.adsc,.adscaleAdvert,.adsclick,.adscontainer,.adscreen,.adsd_shift100,.adsection_a2,.adsection_c2,.adsense-ad,.adsense-category,.adsense-category-bottom,.adsense-heading,.adsense-post,.adsense-right,.adsense-title,.adsense3,.adsense300,.adsenseAds,.adsenseBlock,.adsenseContainer,.adsenseGreenBox,.adsense_bdc_v2,.adsense_mpu,.adsensebig,.adsenseblock,.adsenseblock_bottom,.adsenseblock_top,.adsenselr,.adsensem_widget,.adsensesq,.adsenvelope,.adset,.adsforums,.adsghori,.adsgvert,.adside,.adsidebox,.adsider,.adsingle,.adsleft,.adslink,.adslogan,.adsmalltext,.adsmessage,.adsnippet_widget,.adspace,.adspace-MR,.adspace-widget,.adspace180,.adspace_bottom,.adspace_buysell,.adspace_rotate,.adspace_skyscraper,.adspacer,.adspot,.adspot728x90,.adstextpad,.adstitle,.adstop,.adstory,.adstrip,.adtag,.adtech,.adtext_gray,.adtext_horizontal,.adtext_onwhite,.adtext_vertical,.adtile,.adtips,.adtips1,.adtop,.adtravel,.adtxt,.adtxtlinks,.adunit,.adv-mpu,.adver,.adverTag,.adver_cont_below,.advert-728x90,.advert-article-bottom,.advert-bannerad,.advert-box,.advert-head,.advert-iab-300-250,.advert-iab-468-60,.advert-mpu,.advert-skyscraper,.advert-text,.advert-txt,.advert300,.advert4,.advert5,.advert8,.advertColumn,.advertCont,.advertContainer,.advertHeadline,.advertRight,.advertText,.advertTitleSky,.advert_468x60,.advert_box,.advert_cont,.advert_djad,.advert_label,.advert_leaderboard,.advert_note,.advert_surr,.advert_top,.advertheader-red,.advertise-here,.advertise-homestrip,.advertise-horz,.advertise-leaderboard,.advertise-top,.advertise-vert,.advertiseContainer,.advertiseText,.advertise_ads,.advertise_here,.advertise_link,.advertise_link_sidebar,.advertisement-728x90,.advertisement-block,.advertisement-sidebar,.advertisement-space,.advertisement-sponsor,.advertisement-text,.advertisement-top,.advertisement468,.advertisementBox,.advertisementColumnGroup,.advertisementContainer,.advertisementHeader,.advertisementLabel,.advertisementPanel,.advertisement_btm,.advertisement_caption,.advertisement_g,.advertisement_header,.advertisement_horizontal,.advertisement_top,.advertiser-links,.advertisespace_div,.advertising-banner,.advertising-header,.advertising-local-links,.advertising2,.advertisingTable,.advertising_images,.advertisment_two,.advertize,.advertorial,.advertorial-2,.advertorial-promo-box,.advertorialtitle,.advt,.advt-banner-3,.advt-block,.advt-sec,.advt300,.advt720,.adwordListings,.adwords,.adwordsHeader,.adwrap,.adwrapper-lrec,.adwrapper948,.adzone-footer,.adzone-sidebar,.affiliate-link,.affiliate-sidebar,.affiliateAdvertText,.affinityAdHeader,.afsAdvertising,.after_ad,.agi-adsaleslinks,.alb-content-ad,.alignads,.alt_ad,.anchorAd,.another_text_ad,.answer_ad_content,.aolSponsoredLinks,.aopsadvert,.apiAdMarkerAbove,.apiAds,.archive-ads,.art_ads,.article-ads,.articleAd,.articleAds,.articleAdsL,.articleEmbeddedAdBox,.article_ad,.article_adbox,.article_mpu_box,.articleads,.aseadn,.aux-ad-widget-1,.aux-ad-widget-2,.b-astro-sponsored-links_horizontal,.b-astro-sponsored-links_vertical,.banner-ad,.banner-ads,.banner-adverts,.banner300x100,.banner300x250,.banner468,.bannerAd,.bannerAdWrapper300x250,.bannerAdWrapper730x86,.bannerRightAd,.banner_300x250,.banner_ad,.banner_ad_footer,.banner_ad_leaderboard,.bannerad,.barkerAd,.base-ad-mpu,.base_ad,.base_printer_widgets_AdBreak,.bg-ad-link,.bgnavad,.big-ads,.bigAd,.big_ad,.big_ads,.bigad,.bigad2,.bigbox_ad,.bigboxad,.billboard_ad,.blk_advert,.block-ad,.block-ad300,.block-admanager,.block-ads-bottom,.block-ads-top,.block-adsense,.block-openadstream,.block-openx,.block-thirdage-ads,.block-wtg_adtech,.blockAd,.blockAds,.block_ad_sb_text,.block_ad_sponsored_links,.block_ad_sponsored_links-wrapper,.blockad,.blocked-ads,.blocsponsor,.blog-ad-leader-inner,.blog-ads-container,.blogAd,.blogAdvertisement,.blogArtAd,.blogBigAd,.blog_ad,.blogads,.blox3featuredAd,.body_ad,.body_sponsoredresults_bottom,.body_sponsoredresults_middle,.body_sponsoredresults_top,.bookseller-header-advt,.bottomAd,.bottomAds,.bottom_ad,.bottom_adsense,.bottom_sponsor,.bottomad,.bottomadvert,.bottomrightrailAd,.bottomvidad,.box-ad,.box-ad-grey,.box-ads,.box-adsense,.boxAd,.boxAds,.box_ad,.box_ad_container,.box_ad_content,.box_ad_spacer,.box_ads,.box_advertising,.box_advertisment_62_border,.box_content_ad,.box_content_ads,.boxad,.boxyads,.bps-ad-wrapper,.bps-advertisement,.bps-advertisement-inline-ads,.br-ad,.breakad_container,.brokerad,.bsa_ads,.btm_ad,.btn-ad,.bullet-sponsored-links,.bullet-sponsored-links-gray,.burstContentAdIndex,.busrep_poll_and_ad_container,.buttonAd,.buttonAds,.buttonadbox,.bx_ad,.bx_ad_right,.cA-adStrap,.cColumn-TextAdsBox,.care2_adspace,.catalog_ads,.category-ad,.category__big_game_container_body_games_advertising,.cb-ad-container,.cb_ads,.cb_footer_sponsor,.cb_navigation_ad,.cbstv_ad_label,.cbzadvert,.cbzadvert_block,.cdAdTitle,.cdmainlineSearchAdParent,.cdsidebarSearchAdParent,.centerAd,.center_ad,.centerad,.centered-ad,.cinemabotad,.classifiedAdThree,.clearerad,.cm_ads,.cms-Advert,.cnbc_badge_banner_ad_area,.cnbc_banner_ad_area,.cnn160AdFooter,.cnnAd,.cnnMosaic160Container,.cnnSearchSponsorBox,.cnnStoreAd,.cnnStoryElementBoxAd,.cnnWCAdBox,.cnnWireAdLtgBox,.cnn_728adbin,.cnn_adcntr300x100,.cnn_adcntr728x90,.cnn_adspc336cntr,.cnn_adtitle,.column2-ad,.columnRightAdvert,.com-ad-server,.comment-advertisement,.comment_ad_box,.common_advertisement_title,.communityAd,.conTSponsored,.conductor_ad,.confirm_ad_left,.confirm_ad_right,.confirm_leader_ad,.consoleAd,.container-adwords,.containerSqAd,.container_serendipity_plugin_google_adsense,.content-ad,.contentAdFoot,.contentAdsWrapper,.content_ad,.content_ad_728,.content_adsq,.contentad,.contentad300x250,.contentad_right_col,.contentadcontainer,.contentadleft,.contentads,.contenttextad,.contest_ad,.cp_ad,.cpmstarHeadline,.cpmstarText,.create_ad,.cs-mpu,.cscTextAd,.cse_ads,.cspAd,.ct_ad,.cube-ad,.cubeAd,.cube_ads,.currency_ad,.custom_ads,.cwAdvert,.darla_ad,.dartAdImage,.dart_ad,.dart_tag,.dartadvert,.dartiframe,.dc-ad,.dcAdvertHeader,.deckAd,.deckads,.detailMpu,.detail_ad,.detail_top_advert,.divAd,.divAdright,.divad1,.divad2,.divad3,.divads,.divider_ad,.dmco_advert_iabrighttitle,.downloadAds,.download_ad,.downloadad,.dualAds,.dynamic-ads,.dynamic_ad,.e-ad,.ec-ads,.ec-ads-remove-if-empty,.em-ad,.embed-ad,.entry-body-ad,.entry_sidebar_ads,.entryad,.ez-clientAd,.f_Ads,.feature_ad,.featuredAds,.featuredadvertising,.firstpost_advert_container,.flagads,.flash-advertisement,.flash_ad,.flash_advert,.flashad,.flexiad,.flipbook_v2_sponsor_ad,.floatad,.floated_right_ad,.floatingAds,.fm-badge-ad,.footad,.footer-ad,.footerAd,.footerAdModule,.footerAdslot,.footerTextAd,.footer_ad,.footer_ads,.footer_block_ad,.footer_bottomad,.footer_line_ad,.footer_text_ad,.footerad,.forumtopad,.frn_adbox,.frn_cont_adbox,.frontads,.ft-ad,.ftdAdBar,.ftdContentAd,.full_ad_box,.fullbannerad,.g3rtn-ad-site,.gAdRows,.gAdSky,.gAdvertising { visibility:hidden !important; display:none !important; } .g_ggl_ad,.ga-ads,.ga-textads-bottom,.ga-textads-top,.gaTeaserAdsBox,.gads,.gads_cb,.gads_container,.gallery_ad,.gam_ad_slot,.gameAd,.gamesPage_ad_content,.gbl_advertisement,.gen_side_ad,.gglAds,.global_banner_ad,.googad,.googads,.google-ad,.google-ad-container,.google-ads,.google-ads-boxout,.google-ads-slim,.google-right-ad,.google-sponsored-ads,.google-sponsored-link,.google468_60,.googleAd,.googleAd-content,.googleAd-list,.googleAd300x250_wrapper,.googleAdBox,.googleAdSense,.googleAdSenseModule,.googleAd_body,.googleAds,.googleAds_article_page_above_comments,.googleAdsense,.googleContentAds,.googleProfileAd,.googleSearchAd_content,.googleSearchAd_sidebar,.google_ad,.google_ad_wide,.google_add_container,.google_ads,.google_ads_bom_title,.google_ads_content,.googlead,.googleaddiv,.googleaddiv2,.googleads,.googleads_300x250,.googleads_title,.googleafc,.googley_ads,.gpAdBox,.gpAds,.gradientAd,.grey-ad-line,.group_ad,.gsAd,.gsfAd,.gt_ad,.gt_ad_300x250,.gt_ad_728x90,.gt_adlabel,.gutter-ad-left,.gutter-ad-right,.h-ad-728x90-bottom,.h_Ads,.h_ad,.half-ad,.half_ad_box,.hcf-ad-rectangle,.hcf-cms-ad,.hd_advert,.hdr-ads,.header-advert,.headerAds,.headerAdvert,.headerTextAd,.header_ad,.header_ad_div,.header_advertisment,.headerad,.headerad-720,.hi5-ad,.highlightsAd,.hm_advertisment,.home-ad-links,.homeAd,.homeAd1,.homeAd2,.homeAdBoxA,.homeAdBoxBetweenBlocks,.homeAdBoxInBignews,.homeAdSection,.homeMediumAdGroup,.home_ad_bottom,.home_advertisement,.home_mrec_ad,.homead,.homepage-ad,.homepage300ad,.homepageFlexAdOuter,.homepageMPU,.homepage_middle_right_ad,.hor_ad,.horiz_adspace,.horizontalAd,.horizontal_ads,.horizontaltextadbox,.horizsponsoredlinks,.hortad,.houseAd1,.houseAdsStyle,.housead,.hp-col4-ads,.hp2-adtag,.hp_ad_cont,.hp_ad_text,.hp_t_ad,.hp_w_ad,.hpa-ad1,.html-advertisement,.ic-ads,.ico-adv,.idMultiAd,.image-advertisement,.imageads,.imgad,.in-page-ad,.in-story-ads,.in-story-text-ad,.indEntrySquareAd,.indie-sidead,.indy_googleads,.inhousead,.inline-ad,.inline-mpu,.inline-mpu-left,.inlineSideAd,.inline_ad,.inline_ad_title,.inlinead,.inlineadsense,.inlineadtitle,.inlist-ad,.inlistAd,.inner-advt-banner-3,.innerAds,.innerad,.inpostad,.insert_advertisement,.insertad,.insideStoryAd,.inteliusAd_image,.interest-based-ad,.internalAdsContainer,.is24-adplace,.isAd,.islandAd,.islandAdvert,.islandad,.jimdoAdDisclaimer,.jp-advertisment-promotional,.js-advert,.kw_advert,.kw_advert_pair,.l_ad_sub,.l_banner.ads_show_if,.labelads,.largeRectangleAd,.largeUnitAd,.lastRowAd,.lcontentbox_ad,.leaderAdTop,.leaderAdvert,.leader_ad,.leaderboardAd,.leaderboardad,.leaderboardadtop,.left-ad,.leftAd,.leftAdColumn,.leftAds,.left_ad,.left_ad_box,.left_adlink,.left_ads,.left_adsense,.leftad,.leftadtag,.leftbar_ad_160_600,.leftbarads,.leftbottomads,.leftnavad,.lgRecAd,.lg_ad,.ligatus,.linead,.link_adslider,.link_advertise,.live-search-list-ad-container,.ljad,.local-ads,.log_ads,.logoAds,.logoad,.logoutAd,.longAd,.lowerAds,.m-ad-tvguide-box,.m4-adsbygoogle,.m_banner_ads,.macAd,.macad,.main-ad,.main-advert,.main-tabs-ad-block,.main_ad,.main_ad_bg_div,.main_adbox,.main_intro_ad,.map_media_banner_ad,.marginadsthin,.marketing-ad,.masthead_topad,.matador_sidebar_ad_600,.mdl-ad,.media-advert,.mediaAd,.mediaAdContainer,.mediaResult_sponsoredSearch,.medium-rectangle-ad,.mediumRectangleAdvert,.medrect_ad,.menuItemBannerAd,.menueadimg,.messageBoardAd,.mf-ad300-container,.micro_ad,.mid_ad,.midad,.middleAds,.middleads,.min_navi_ad,.mini-ad,.miniad,.mmcAd_Iframe,.mobile-sponsoring,.mod-ad-lrec,.mod-ad-n,.mod-adopenx,.mod-vertical-ad,.mod_admodule,.module-ad-small,.module-ads,.moduleAdvertContent,.module_ad,.module_box_ad,.modulegad,.moduletable-advert,.moduletable-googleads,.moduletablesquaread,.mpu-ad,.mpu-advert,.mpu-footer,.mpu-fp,.mpu-title,.mpu-top-left,.mpu-top-left-banner,.mpu-top-right,.mpuAd,.mpuAdSlot,.mpuAdvert,.mpuArea,.mpuBox,.mpuContainer,.mpuHolder,.mpuTextAd,.mpu_ad,.mpu_advert,.mpu_container,.mpu_gold,.mpu_holder,.mpu_platinum,.mpu_text_ad,.mpuad,.mpuholderportalpage,.mrec_advert,.ms-ads-link,.msfg-shopping-mpu,.mwaads,.my-ad250x300,.nSponsoredLcContent,.nSponsoredLcTopic,.nadvt300,.narrow_ad_unit,.narrow_ads,.navAdsBanner,.navadbox,.navi_ad300,.naviad,.nba300Ad,.nbaT3Ad160,.nbaTVPodAd,.nbaTwo130Ads,.nbc_ad_carousel_wrp,.newTopAdContainer,.newad,.news_article_ad_google,.newsviewAdBoxInNews,.nf-adbox,.nn-mpu,.noAdForLead,.normalAds,.nrAds,.nsAdRow,.oas-ad,.oas-bottom-ads,.offer_sponsoredlinks,.oio-banner-zone,.oio-link-sidebar,.oio-zone-position,.on_single_ad_box,.onethirdadholder,.openads,.openadstext_after,.openx,.openx-ad,.osan-ads,.other_adv2,.outermainadtd1,.ovAdPromo,.ovAdSky,.ovAdartikel,.ov_spns,.pageGoogleAd,.pageGoogleAdFlat,.pageLeaderAd,.page_content_right_ad,.pagead,.pagenavindexcontentad,.paneladvert,.partner-ads-container,.partnersTextLinks,.pencil_ad,.player_ad_box,.player_hover_ad,.player_page_ad_box,.plista_inimg_box,.pnp_ad,.pod-ad-300,.podRelatedAdLinksWidget,.podSponsoredLink,.portalCenterContentAdBottom,.portalCenterContentAdMiddle,.portalCenterContentAdTop,.portalcontentad,.postAd,.post_ad,.post_ads,.post_sponsor_unit,.postbit_adbit_register,.postbit_adcode,.postgroup-ads,.postgroup-ads-middle,.prebodyads,.premium_ad_container,.promoAd,.promoAds,.promo_ad,.ps-ligatus_placeholder,.publication-ad,.publicidad,.puff-advertorials,.qa_ad_left,.qm-ad-content,.qm-ad-content-news,.quigo-ad,.qzvAdDiv,.r_ad_1,.r_ad_box,.r_ads,.rad_container,.rect_ad_module,.rectad,.rectangle-ad,.rectangleAd,.rectanglead,.redads_cont,.regular_728_ad,.regularad,.relatedAds,.related_post_google_ad,.remads,.resourceImagetAd,.result_ad,.results_sponsor,.results_sponsor_right,.reviewMidAdvertAlign,.rght300x250,.rhads,.rhs-ad,.rhs-ads-panel,.right-ad,.right-ad-holder,.right-ad2,.right-ads,.right-ads2,.right-sidebar-box-ad,.rightAdBox,.rightColAd,.rightColumnRectAd,.rightRailAd,.right_ad,.right_ad_160,.right_ad_box,.right_ad_text,.right_ad_top,.right_ads,.right_col_ad,.right_hand_advert_column,.right_side-partyad,.rightad_1,.rightad_2,.rightadbox1,.rightads,.rightadunit,.rightcol_boxad,.rightcoladvert,.rightcoltowerad,.rnav_ad,.rngtAd,.roundedCornersAd,.roundingrayboxads,.rt_ad1_300x90,.rt_ad_300x250,.rt_ad_call,.s2k_ad,.savvyad_unit,.sb-ad-sq-bg,.sbAd,.sbAdUnitContainer,.sb_adsN,.sb_adsNv2,.sb_adsW,.sb_adsWv2,.scanAd,.scc_advert,.sci-ad-main,.sci-ad-sub,.search-ad,.search-results-ad,.search-sponsor,.search-sponsored,.searchAd,.searchAds,.searchSponsoredResultsBox,.searchSponsoredResultsList,.search_column_results_sponsored,.search_results_sponsored_top,.section-ad2,.section-sponsor,.section_mpu_wrapper,.section_mpu_wrapper_wrapper,.selfServeAds,.sepContentAd,.serp_sponsored,.servsponserLinks,.shoppingGoogleAdSense,.showcaseAd,.sidbaread,.side-ad,.side-ads,.sideAd,.sideBoxAd,.side_ad,.side_ad2,.side_ad_1,.side_ad_2,.side_ad_3,.sidead,.sideads,.sideadsbox,.sideadvert,.sidebar-ad,.sidebar-ads,.sidebar-text-ad,.sidebarAd,.sidebarAdUnit,.sidebarAdvert,.sidebar_ad,.sidebar_ad_300_250,.sidebar_ads,.sidebar_ads_336,.sidebar_adsense,.sidebar_box_ad,.sidebarad,.sidebarad_bottom,.sidebaradbox,.sidebarboxad,.sideheadnarrowad,.sideheadsponsorsad,.singleAd,.singleAdsContainer,.singlead,.sitesponsor,.skinAd,.skin_ad_638,.sky-ad,.skyAd,.skyAdd,.skyAdvert,.sky_ad,.sky_scraper_ad,.skyad,.skyjobsadtext,.skyscraper-ad,.skyscraper_ad,.skyscraper_bannerAdHome,.sleekadbubble,.slideshow-ad,.slpBigSlimAdUnit,.slpSquareAdUnit,.sm_ad,.smallSkyAd1,.smallSkyAd2,.small_ad,.small_ads,.smallad-left,.smallads,.smallsponsorad,.smart_ads_bom_title,.specialAd175x90,.speedyads,.sphereAdContainer,.spl-ads,.spl_ad,.spl_ad2,.spl_ad_plus,.splitAd,.sponlinkbox,.spons-link,.spons_links,.sponslink,.sponsor-ad,.sponsor-bottom,.sponsor-link,.sponsor-links,.sponsor-right,.sponsor-services,.sponsor-top,.sponsorArea,.sponsorBox,.sponsorPanel,.sponsorPost,.sponsorPostWrap,.sponsorStrip,.sponsorTop,.sponsor_ad_area,.sponsor_footer,.sponsor_horizontal,.sponsor_line,.sponsor_links,.sponsor_logo,.sponsor_top,.sponsor_units,.sponsoradtitle,.sponsorbox,.sponsored-ads,.sponsored-chunk,.sponsored-editorial,.sponsored-features,.sponsored-links,.sponsored-links-alt-b,.sponsored-links-holder,.sponsored-links-right,.sponsored-post,.sponsored-post_ad,.sponsored-results,.sponsored-right-border,.sponsored-text,.sponsoredBox,.sponsoredInfo,.sponsoredInner,.sponsoredLabel,.sponsoredLinks,.sponsoredLinks2,.sponsoredLinksHeader,.sponsoredProduct,.sponsoredResults,.sponsoredSideInner,.sponsored_ads,.sponsored_box,.sponsored_box_search,.sponsored_by,.sponsored_links,.sponsored_links_title_container,.sponsored_links_title_container_top,.sponsored_links_top,.sponsored_results,.sponsored_well,.sponsoredibbox,.sponsoredlink,.sponsoredlinks,.sponsoredlinkscontainer,.sponsoredresults,.sponsoredtextlink_container_ovt,.sponsorlink,.sponsorlink2,.sponsormsg,.sponsors,.sponsors-box,.sponsors_bar,.sponsorshipbox,.sponsortable,.sponsortext,.spotlightAd,.squareAd,.square_ad,.square_banner_ad,.squared_ad,.ss-ad-mpu,.standard-ad,.start__newest__big_game_container_body_games_advertising,.staticAd,.stock-ticker-ad-tag,.stocks-ad-tag,.store-ads,.story_AD,.story_ad_div,.story_right_adv,.storyad,.storysponsorimage,.subad,.subcontent-ad,.subtitle-ad-container,.sugarad,.super-ad,.supercommentad_left,.supercommentad_right,.supp-ads,.supportAdItem,.surveyad,.t10ad,.tab_ad,.tab_ad_area,.tablebordersponsor,.tadsanzeige,.tadsbanner,.tadselement,.tallad,.tblTopAds,.tbl_ad,.tbox_ad,.td-Adholder,.teaser-sponsor,.teaserAdContainer,.teaser_adtiles,.text-ad-links,.text-advertisement,.text-g-advertisement,.text-g-group-short-rec-ad,.text-g-net-grp-google-ads-article-page,.textAd,.textAdBox,.textAds,.text_ad,.text_ads,.textad,.textadContainer,.textad_headline,.textadbox,.textadheadline,.textadlink,.textadsds,.textadsfoot,.textadtext,.textlink-ads,.tf_page_ad_search,.thisIsAd,.thisIsAnAd,.ticket-ad,.tileAds,.tips_advertisement,.title-ad,.title_adbig,.tncms-region-ads,.toolad,.toolbar-ad,.top-ad,.top-ad-space,.top-ads,.top-banner-ad,.top-menu-ads,.top-sponsors,.topAdWrap,.topAdvertisement,.topBannerAd,.topLeaderboardAd,.top_Ad,.top_ad,.top_ad_728,.top_ad_728_90,.top_ad_disclaimer,.top_ad_div,.top_ad_post,.top_ad_wrapper,.top_advert,.top_advertising_lb,.top_container_ad,.top_sponsor,.topad-bar,.topadbox,.topadspot,.topadvertisementsegment,.topcontentadvertisement,.topic_inad,.topstoriesad,.toptenAdBoxA,.tourFeatureAd,.towerAd,.towerAdLeft,.towerAds,.tower_ad,.tower_ad_disclaimer,.towerad,.tribal-ad,.ts-ad_unit_bigbox,.ts-banner_ad,.ttlAdsensel,.tto-sponsored-element,.tucadtext,.tvs-mpu,.twoColumnAd,.twoadcoll,.twoadcolr,.tx_smartadserver_pi1,.txt-ads,.txtAd,.txtAds,.txt_ads,.txtadvertise,.type_adscontainer,.type_miniad,.type_promoads,.ukAds,.undertimyads,.unit-ad,.universalboxADVBOX01,.universalboxADVBOX03,.universalboxADVBOX04a,.usenext,.vertad,.vertical-adsense,.videoAd,.videoBoxAd,.video_ad,.view-promo-mpu-right,.view_rig_ad,.virgin-mpu,.wa_adsbottom,.wantads,.wide-ad,.wide-skyscraper-ad,.wideAd,.wideAdTable,.wide_ad,.wide_ad_unit_top,.wide_ads,.wide_google_ads,.widget-ad,.widget-ad300x250,.widget-entry-ads-160,.widgetYahooAds,.widget_ad,.widget_ad_rotator,.widget_island_ad,.widget_sdac_bottom_ad_widget,.widget_sdac_footer_ads_widget,.widget_sdac_skyscraper_ad_widget,.widget_sponsor,.wikia-ad,.wikia_ad_placeholder,.wingadblock,.withAds,.wl-ad,.wnMultiAd,.wp125ad,.wp125ad_2,.wpn_ad_content,.wrap-ads,.wsSponsoredLinksRight,.wsTopSposoredLinks,.x03-adunit,.x04-adunit,.xads-blk2,.xads-ojedn,.y-ads,.y-ads-wide,.y7-advertisement,.yahoo-sponsored,.yahoo-sponsored-links,.yahooAds,.yahoo_ads,.yan-sponsored,.ygrp-ad,.yrail_ad_wrap,.yrail_ads,.ysmsponsor,.ysponsor,.yw-ad,a[href^="http://ad.doubleclick.net/"],a[href^="http://adserving.liveuniversenetwork.com/"],a[href^="http://galleries.pinballpublishernetwork.com/"],a[href^="http://galleries.securewebsiteaccess.com/"],a[href^="http://install.securewebsiteaccess.com/"],a[href^="http://latestdownloads.net/download.php?"],a[href^="http://secure.signup-page.com/"],a[href^="http://secure.signup-way.com/"],a[href^="http://www.FriendlyDuck.com/AF_"],a[href^="http://www.adbrite.com/mb/commerce/purchase_form.php?"],a[href^="http://www.friendlyduck.com/AF_"],a[href^="http://www.google.com/aclk?"],a[href^="http://www.liutilities.com/aff"],a[href^="http://www.liutilities.com/products/campaigns/adv/"],a[href^="http://www.my-dirty-hobby.com/?sub="],a[href^="http://www.ringtonematcher.com/"],div#mclip_container:first-child:last-child,div#tads.c,table.ra[align="left"][width="30%"],table.ra[align="right"][width="30%"],[src*="sixsigmatraffic.com"],embed[flashvars*="AdID"],#Ad1,#AdHeader,#Adbanner,#AdvertiseFrame,#Advertisement,#Advertisements,#Tadspacehead,#TopAd,#ad-container,#ad-header,#ad-top,#ad-wrapper,#ad1,#ad3,#ad728x90,#adBanner,#adComponentWrapper,#adContainer,#adDiv,#adHeader,#adTop,#adWrapper,#ad_area,#ad_container,#ad_leader,#ad_space,#ad_square,#ad_table,#ad_wrapper,#adbody,#adbox,#adposition3,#adsense,#adsense_inline,#adspace,#advert,#advertise,#advertising,#adverts,#adwrapper,#bannerad,#block_advert,#contentAd,#content_ad,#divAd,#featuread,#footer_ad,#footer_ads,#googlead,#head-ad,#header_ad,#mainAd,#printads,#promo-ad,#right_ad,#sidebar-ads,#sidebar_ads,#sponsored,#topAd,#topBannerAd,#top_ad,#topad,#topads,.AdBox,.AdInfo,.AdSense,.AdTitle,.Ads,.Advert,.ad-box,.ad-button,.ad-container,.ad-content,.ad-display,.ad-holder,.ad-sidebar,.ad-text,.ad1,.ad2,.ad468,.adBox,.adContainer,.adDiv,.adElement,.adHolder,.adModule,.adSpace,.adSummary,.adText,.adTitle,.ad_Right,.ad_header,.ad_links,.ad_right,.ad_space,.ad_text,.adbox,.adcol1,.adcol2,.adcont,.addiv,.adframe,.adholder,.adinfo,.adlink,.adlist,.adpic,.adright,.ads-section,.adsense,.adtable,.adtext,.advert-horizontal,.advert_list,.advertise,.advertisement,.advertiser,.advertising,.advertising_block,.advertisment,.adverts,.adwrapper,.affiliate,.banner_728x90,.block_ad,.bottom_ad_block,.contentAd,.detail-ads,.header-ad,.headerAd,.header_ad_center,.horizontal_ad,.module-ad,.mpu,.post-ad,.rightAd,.right_ads_column,.rightad,.sponsored,.sponsoredtextlink_container,.textads,.topAd,.topAds,.top_ads,.topad,.topads,a[href^="http://ad-emea.doubleclick.net/"] { visibility:hidden !important; display:none !important; }</style></html>

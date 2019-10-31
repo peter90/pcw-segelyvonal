@@ -1,0 +1,2789 @@
+
+<!-- saved from url=(0076)http://www.pcworld.hu/forum/index.php?act=Print&client=printer&f=117&t=13293 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
+		<title>PC WORLD Segélyvonal [Powered by Invision Power Board]</title>
+		<style type="text/css">
+	/* 
+ * Cascading Style Sheet(CSS 467), for Invision Power Board 2.1.0
+ * Author: James A. Mathias, admin@leihu.com, http://www.1lotus.com 
+ * Copyright: 2005 Invision Power Services, all rights reserved 
+ *
+ * All style attributes in alpha-numeric order starting from 0
+ *
+ */
+
+/* 
+ * ========================================
+ * global element styles 
+ * ========================================
+ */
+
+html{
+	overflow-x: auto; /* fixes MSIE scrollbar bug DO NOT REMOVE, has no effect in Mozilla, or Opera */
+}
+
+body{ 
+	background: #FFF;
+	color: #222;
+	font-family: Verdana, Tahoma, Arial, Trebuchet MS, Sans-Serif, Georgia, Courier, Times New Roman, Serif;
+	font-size: 11px;
+	line-height: 135%;
+	margin: 0px;
+	padding: 0px; /* required for Opera to have 0 margin */
+	text-align: center; /* centers board in MSIE */
+}
+
+/* 
+ * ========================================
+ * Set up IPB table
+ * ========================================
+ */
+ 
+.ipbtable { width:100% }
+
+table.ipbtable,
+tr.ipbtable,
+td.ipbtable
+{ /* required for text in tables, because tables do not inherit from body */
+	background: transparent;
+	color: #222;
+	font-size: 11px;
+	line-height: 135%;
+}
+
+.ipbtable td,
+.divpad{ /* gives all tables faux cellpadding of 5px */
+	padding: 5px;
+}
+
+td.nopad{ /* allows some tables to have no padding on the td */
+	padding: 0;
+}
+
+
+
+form{
+	display: inline;
+	margin: 0; /* removes mystery form tag gapping */
+	padding: 0; /* removes mystery form tag gapping */
+}
+
+img{
+	border: 0; /* makes sure linked images do not have a border */
+	vertical-align: middle;
+}
+
+/* 
+ * ========================================
+ * global hyperlink styles 
+ * ========================================
+ */
+
+a:link,
+a:visited,
+a:active{
+	background: transparent;
+	color: #222;
+	text-decoration: underline;
+}
+
+a:hover{
+	background: transparent;
+	color: #34498B;
+}
+
+/* 
+ * ========================================
+ * Main wrapper, this controls the overall width of the board in you browser view window. 
+ * ========================================
+ */
+
+#ipbwrapper{ 
+	margin: 20px auto 20px auto; /* centers the box, no matter the overall width, also applies a 20px gap at the top and bottom of the board */
+	text-align: left; /* re_aligns text to left second part of two part MSIE centering workaround */
+	/* EDIT THIS TO CHANGE THE WIDTH OF THE BOARD -> 750px is a common fixed resolution size */
+	width: 98%;
+}
+
+/* 
+ * ========================================
+ * styles for pagination links 
+ * ========================================
+ */
+ 
+
+.pagelink,
+.pagelinklast,
+.pagecurrent,
+.minipagelink,
+.minipagelinklast{
+	background: #F0F5FA;
+	border: 1px solid #072A66;
+	padding: 1px 3px 1px 3px;
+}
+
+.pagelinklast,
+.minipagelinklast{
+	background: #DFE6EF;
+}
+
+
+.pagecurrent{
+	background: #FFC9A5;
+}
+
+.minipagelink,
+.minipagelinklast{
+	border: 1px solid #C2CFDF;
+	font-size: 10px;
+	margin: 0 1px 0 0;
+}
+
+.pagelink a:active,
+.pagelink a:visited,
+.pagelink a:link,
+.pagelinklast a:active,
+.pagelinklast a:visited,
+.pagelinklast a:link,
+.pagecurrent a:active,
+.pagecurrent a:visited,
+.pagecurrent a:link,
+.minipagelink a:active,
+.minipagelink a:visited,
+.minipagelink a:link,
+.minipagelinklast a:active,
+.minipagelinklast a:visited,
+.minipagelinklast a:link{
+	text-decoration: none;
+}
+
+/* fake button effect for some links */
+.fauxbutton{
+	background: #BFCDE0;
+	border: 1px solid #072A66;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 4px;
+}
+
+.fauxbutton a:link,
+.fauxbutton a:visited,
+.fauxbutton a:active{
+	color: #222 !important;
+	text-decoration: none;
+}
+
+.forumdesc,
+.forumdesc a:link,
+.forumdesc a:visited,
+.forumdesc a:active{ 
+	background: transparent;
+	font-size: 10px; 
+	color: #666;
+	line-height: 135%;
+	margin: 2px 0 0 0;
+	padding: 0;
+}
+
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+
+.searchlite {
+	background-color:yellow;
+	font-weight:bold;
+	color: red;
+}
+
+.activeusers{
+	background: #FFF;
+	border: 1px solid #072A66;
+	color: #000;
+	margin: 0px;
+	padding: 1px;
+}
+
+.activeuserposting a:link,
+.activeuserposting a:visited,
+.activeuserposting a:active,
+.activeuserposting
+{
+	font-style:italic;
+	text-decoration: none;
+	border-bottom:1px dotted black;
+}
+
+fieldset.search{ 
+	line-height: 150%;
+	padding: 6px; 
+}
+
+label{ 
+	cursor: pointer; 
+}
+
+img.attach{ 
+	background: #808080 url(style_images/1/click2enlarge.gif) no-repeat top right;
+	border: 1px solid #808080;
+	margin: 0 2px 0 0;
+	padding: 11px 2px 2px 2px;
+}
+
+.thumbwrap,
+.thumbwrapp,
+.fullimagewrap{
+	border: 1px solid #072A66;
+	margin: 2px;
+}
+
+.thumbwrapp{
+	border: 2px solid #660707;
+}
+
+.fullimagewrap{
+	background: #F5F9FD;
+	text-align: center;
+	margin: 5px 0 5px 0;
+	padding: 5px;
+}
+
+.thumbwrap h4,
+.thumbwrapp h4{	
+	background: #DDE6F2;
+	border: 0 !important;
+	border-bottom: 1px solid #5176B5 !important;
+	color: #5176B5; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.thumbwrap p,
+.thumbwrapp p{
+	background: #EEF2F7 !important;
+	border: 0 !important;
+	border-top: 1px solid #5176B5 !important;
+	margin: 0 !important;
+	padding: 5px !important;
+	text-align: left;
+}
+
+.thumbwrap p.alt,
+.thumbwrapp p.alt{
+	background: #DFE6EF !important;
+	margin: 0 !important;
+	padding: 5px !important;
+	text-align: left;
+}
+
+.thumbwrapp p.pin{
+	background: #EFDFDF !important;
+	text-align: center !important;
+}
+	
+.thumbwrap img.galattach,
+.thumbwrapp img.galattach{
+	background: #FFF url(style_images/1/img_larger.gif) no-repeat bottom right;
+	border: 1px solid #072A66;
+	margin: 5px;
+	padding: 2px 2px 10px 2px;
+}
+
+li.helprow{ 
+	margin: 0 0 10px 0;
+	padding: 0; 
+}
+
+ul#help{ 
+	padding: 0 0 0 15px; 
+}
+
+.warngood,
+.warnbad{ 
+	color: #0B9500;
+	font-weight: bold;
+}
+
+.warnbad{ 
+	color: #DD0000;
+}
+
+#padandcenter{ 
+	margin: 0 auto 0 auto;
+	padding: 14px 0 14px 0;
+	text-align: center;
+}
+
+#profilename{ 
+	font-size: 28px; 
+	font-weight: bold; 
+}
+
+#photowrap{ 
+	padding: 6px; 
+}
+
+#phototitle{ 
+	border-bottom: 1px solid #000; 
+	font-size: 24px; 
+}
+
+#photoimg{ 
+	margin: 15px 0 0 0;
+	text-align: center; 
+} 
+
+#ucpmenu,
+#ucpcontent{ 
+	background: #F5F9FD;
+	border: 1px solid #345487;
+	line-height: 150%;
+}
+
+#ucpmenu p{ 
+	margin: 0; 
+	padding: 2px 5px 6px 9px;
+}
+
+#ucpmenu a:link, 
+#ucpmenu a:active, 
+#ucpmenu a:visited{ 
+	text-decoration: none; 
+}
+
+#ucpcontent{ 
+	width: auto;
+}
+
+#ucpcontent p{ 
+	margin: 0;
+	padding: 10px;
+}
+
+.activeuserstrip{ 
+	background: #BCD0ED;
+	padding: 6px;
+}
+
+/* Topic View elements */
+.signature{  
+	background: transparent;
+	color: #339; 
+	font-size: 10px;
+	line-height: 150%;
+}
+
+.postdetails{ 
+	font-size: 10px;
+	line-height:140%;
+}
+
+.postcolor{ 
+	font-size: 12px; 
+	line-height: 160%;
+}
+
+.normalname{ 
+	color: #003;
+	font-size: 12px; 
+	font-weight: bold; 
+}
+
+.normalname a:link, 
+.normalname a:visited, 
+.normalname a:active{ 
+	font-size: 12px;
+}
+
+.post1,
+.bg1{ 
+	background: #F5F9FD;
+}
+
+.post2,
+.bg3{ 
+	background: #EEF2F7;
+}
+
+.row2shaded,
+.post1shaded { background-color: #DEDBE4 }
+.row4shaded,
+.post2shaded { background-color: #E3DFE7 }
+
+.row1{ 
+	background: #DFE6EF; 
+}
+
+.row2{ 
+	background: #E4EAF2; 
+}
+
+.darkrow1{ 
+	background: #BCD0ED;
+	color: #3A4F6C; 
+}
+
+.darkrow3{ 
+	background: #D1DCEB; 
+	color: #3A4F6C; 
+}
+
+/* tableborders gives the white column / row lines effect */
+.plainborder,
+.tablefill,
+.tablepad{ 
+	background: #F5F9FD;
+	border: 1px solid #345487;
+}
+
+.tablefill,
+.tablepad{ 
+	padding: 6px;  
+}
+
+.tablepad{ 
+	border: 0 !important;
+}
+
+.wrapmini{ 
+	float: left;
+	line-height: 1.5em;
+	width: 25%;
+}
+
+.pagelinks{
+	float: left;
+	line-height: 1.2em;
+	width: 35%;
+}
+
+.desc{ 
+	font-size: 11px; 
+	color: #434951;
+}
+
+.lastaction
+{
+	font-size: 10px; 
+	color: #434951;
+}
+
+.edit{ 
+	font-size: 9px;
+}
+
+.thin{ 
+	border: 1px solid #FFF;
+	border-left: 0;
+	border-right: 0;
+	line-height: 150%;
+	margin: 2px 0 2px 0;
+	padding: 6px 0 6px 0;
+}
+
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+
+/* 
+ * ========================================
+ * calendar styles 
+ * ========================================
+ */
+	
+.calmonths{ 
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	font-size: 18px; 
+	font-weight: bold; 
+	margin: 5px 0 5px 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.weekday{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.calmonths a{
+	text-decoration: none;
+}
+
+.calday,
+.calweekday{ 
+	background: #DFE6EF;
+	color: #666;
+	font-size: 11px;
+	font-weight: bold;
+	margin: 0;
+	padding: 4px;
+	text-align: right;
+}
+
+.calweekday{
+	border-right: 1px solid #AAA;
+	color: #222;
+	font-size: 14px;
+	padding: 6px;
+	text-align: center;
+}
+
+.celltodayshaded,
+.celldateshaded,
+.cellblank,
+.celldate,
+.celltoday,
+.mcellblank,
+.mcelldate,
+.mcelltoday{
+	background: #EEF2F7; 
+	height: 100px;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+
+.celltodayshaded,
+.celldateshaded
+{
+	background: #E3DFE7;
+}
+
+.mcellblank,
+.mcelldate,
+.mcelltoday{
+	height: auto;
+}
+
+.cellblank,
+.mcellblank{
+	background: #C2CFDF;
+}
+
+.celltoday,
+.celltodayshaded,
+.mcelltoday{
+	border: 2px solid #8B0000;
+}
+
+.calranged
+{
+	border: 2px outset #C2CFDF;
+	background: #C2CFDF;
+	padding:4px;
+}
+
+.calitem
+{
+	border-bottom: 1px dotted #C2CFDF;
+	padding:4px;
+}
+
+/* 
+ * ========================================
+ * form styles 
+ * ========================================
+ */
+
+.input-warn,
+.input-green,
+input,
+textarea,
+select{
+	background: #FFF;
+	border: 1px solid #4C77B6;
+	color: #000;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 11px;
+	margin: 5px;
+	padding: 2px;
+	vertical-align: middle;
+}
+
+.input-warn,
+.input-warn-content
+{
+	border: 1px solid #C00;
+}
+
+.input-ok,
+.input-ok-content
+{
+	border: 1px solid #0C0;
+}
+
+.input-warn-content
+{
+	padding: 4px;
+	margin: 4px;
+	background-color: #FCC;
+}
+
+.input-ok-content
+{
+	padding: 4px;
+	margin: 4px;
+	background-color: #CFC;
+}
+
+
+.input-text
+{
+	color: #900;
+}
+
+select{
+	border: 0;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+
+input.button{
+	margin: 0;
+	width: auto;
+}
+
+optgroup option{
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.codebuttons{ 
+	font-family: Verdana, Helvetica, Sans-Serif; 
+	font-size: 10px; 
+	vertical-align: middle;
+	margin:2px;
+}
+
+.textarea,
+.searchinput,
+.button,
+.gobutton{
+	background: #FFF;
+	border: 1px solid #4C77B6;
+	color: #000;
+	font-family: Verdana, Helvetica, Sans-Serif;
+	font-size: 11px;
+	padding: 2px;
+	vertical-align: middle;
+}
+	
+.button{
+	background: #DFE6EF;
+}
+
+.gobutton{
+	background: transparent;
+	border: 0;
+	color: #072A66;
+	margin: 0;
+	vertical-align: middle;
+}
+
+.radiobutton,
+.checkbox,
+.helpbox { 
+	border: 0;
+	vertical-align: middle;
+}
+
+/* 
+ * class.formtable 
+ *
+ * used for tabled forms 
+ * technically tables should not be used for form display 
+ * but, in the case of IPB a table is easier to work with
+ * for the average webmaster, who has little to no CSS knowledge.
+ *
+ */
+
+.formtable{
+	background: transparent;
+}
+
+.formtable td,
+.pformleft,
+.pformleftw,
+.pformright{
+	background:#F5F9FD;
+	border: 1px solid #C2CFDF;
+	border-bottom: 0;
+	border-left: 0;
+	font-weight: bold;
+	margin: 1px 0 0 0;
+	padding: 6px;
+	width: 25%;
+} 
+
+.formtable td.wider,
+.pformleftw,
+.pformright{
+	width: 40%;
+}
+
+.formtable td.formright,
+.pformright{
+	border-right: 0px;
+	font-weight: normal;
+	width: auto;
+} 
+
+.formtable td.formtitle,
+.formsubtitle{
+	background: #D1DCEB;
+	border: 1px solid #9FB9D4; 
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+	font-weight: normal;
+}
+
+.formsubtitle{ 
+	border: 0;
+	color: #3A4F6C;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.formtable td.formstrip{
+	background: #DDE8F2;
+	border: 1px solid #9FB9D4;
+	border-left: 0;
+	border-right: 0;
+	font-weight: normal;
+}
+
+/* 
+ * ========================================
+ * new style quote and code wrappers MATT's DESIGN 
+ * ========================================
+ */
+
+.quotetop{
+	background: #E4EAF2 url(style_images/1/css_img_quote.gif) no-repeat right;
+	border: 1px dotted #000;
+	border-bottom: 0;
+	border-left: 4px solid #8394B2;
+	color: #000;
+	font-weight: bold;
+	font-size: 10px;
+	margin: 8px auto 0 auto;
+	padding: 3px;
+}
+
+.quotemain{
+	background: #FAFCFE;
+	border: 1px dotted #000;
+	border-left: 4px solid #8394B2;
+	border-top: 0;
+	color: #465584;
+	padding: 4px;
+	margin: 0 auto 8px auto;
+}
+
+.codetop,
+.sqltop,
+.htmltop{
+	background: #FDDBCC url(style_images/1/css_img_code.gif) no-repeat right;
+	color: #000;
+	font-weight: bold;
+	margin: 0 auto 0 auto;
+	padding: 3px;
+	width: 98%;
+}
+
+.codemain,
+.sqlmain,
+.htmlmain{
+	background: #FAFCFE;
+	border: 1px dotted #000;
+	color: #465584;
+	font-family: Courier, Courier New, Verdana, Arial;
+	margin: 0 auto 0 auto;
+	padding: 2px;
+	width: 98%;
+}
+
+/* 
+ * ========================================
+ * old school quote and code styles - backwards compatibility 
+ * ========================================
+ */
+
+#QUOTE,
+#CODE{  
+	background: #FAFCFE; 
+	border: 1px solid #000; 
+	color: #465584; 
+	font-family: Verdana, Arial; 
+	font-size: 11px; 
+	padding: 2px; 
+	white-space: normal;
+}
+
+#CODE{ 
+	font-family: Courier, Courier New, Verdana, Arial;
+}
+
+/* 
+ * ========================================
+ * All New Styles 
+ * ========================================
+ */
+.cleared{
+	clear: both;
+}
+
+.borderwrap,
+.borderwrapm{ /* this will affect the outlining border of all the tables and boxes through-out the skin. */
+	background: #FFF; 
+	border: 1px solid #072A66;
+	padding: 0px; 
+	margin: 0px; 
+}
+
+.borderwrapm{
+	margin: 5px;
+}
+
+.borderwrap h3,
+.maintitle,
+.maintitlecollapse{
+	background: url(style_images/1/tile_cat.gif);
+	border: 1px solid #FFF;
+	border-bottom: 1px solid #5176B5;
+	color: #FFF; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0px;
+	padding: 8px;
+}
+
+.maintitle td {
+	color: #FFF; 
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+.maintitlecollapse{
+	border: 1px solid #FFF;
+}
+
+.maintitle p,
+.maintitlecollapse p,
+.formsubtitle p{
+	background: transparent !important;
+	border: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.maintitle p.expand,
+.maintitle p.goto,
+.maintitlecollapse p.expand,
+.formsubtitle p.members{
+	float: right;
+	width: auto !important;
+}
+
+.maintitle a:link, 
+.maintitle a:visited,
+.maintitlecollapse a:link, 
+.maintitlecollapse a:visited{ 
+	background: transparent;
+	color: #FFF;
+	text-decoration: none; 
+}
+
+.maintitle a:hover, 
+.maintitle a:active,
+.maintitlecollapse a:hover, 
+.maintitlecollapse a:active{ 
+	background: transparent;
+	color: #F1F1F1;
+}
+
+table th,
+.borderwrap table th,
+.subtitle,
+.subtitlediv,
+.postlinksbar{ 
+	background: transparent url(style_images/1/tile_sub.gif);
+	border-bottom: 1px solid #5176B5;
+	color: #3A4F6C; 
+	font-size: 10px;
+	font-weight: bold; 
+	letter-spacing: 1px;
+	margin: 0; 
+	padding: 5px; 
+}
+
+.subtitlediv{
+	border: 1px solid #FFF;
+	border-bottom: 1px solid #5176B5;
+	text-align: right;
+}
+
+.borderwrap table th a:link,
+.subtitle a:link,
+.subtitlediv a:link,
+.borderwrap table th a:visited,
+.subtitle a:visited, 
+.subtitlediv a:visited, 
+.borderwrap table th a:active,
+.subtitle a:active,
+.subtitlediv a:active,
+.borderwrap table th a:hover,
+.subtitle a:hover,
+.subtitlediv a:hover{ 
+	background: transparent;
+	color: #3A4F6C;
+	text-decoration: none; 
+}
+
+.borderwrap h4{
+	background: #DDE6F2;
+	border: 1px solid #FFF;
+	border-bottom: 1px solid #5176B5;
+	border-top: 1px solid #5176B5;
+	color: #5176B5; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.borderwrap p{
+	background: #F9F9F9;
+	border: 1px solid #CCC;
+	margin: 5px;
+	padding: 10px;
+	text-align: left;
+}
+
+td.formbuttonrow,
+.borderwrap p.formbuttonrow,
+.borderwrap p.formbuttonrow1{
+	background: #D1DCEB !important; 
+	border: 1px solid #FFF;
+	border-top: 1px solid #5176B5;
+	margin: 0px !important;
+	padding: 5px !important;
+	text-align: center;
+}
+
+td.formbuttonrow{
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+}
+
+.borderwrap p.formbuttonrow1{
+	background: #F9F9F9 !important;
+	border: 0;
+	border-top: 1px solid #CCC;
+}
+
+.bar,
+.barb,
+.barc{
+	background: #DFE6EF;
+	border: 1px solid #FFF;
+}
+
+.barc{
+	border-bottom: 0;
+}
+
+.bar p,
+.barb p,
+.barc p{
+	background: transparent;
+	border: 0;
+	color: #222;
+	font-size: 11px;
+	margin: 0;
+	padding: 5px;
+	text-align: left;
+}
+
+.barb p{
+	text-align: right;
+}
+
+.bar p.over,
+.bar p.overs,
+.barc p.over,
+.barc p.overs{
+	float: right;
+}
+
+.barb p.over,
+.barb p.overs{
+	float: left;
+}
+
+.bar p.overs,
+.barb p.overs,
+.barc p.overs{
+	position: relative;
+	top: 5px;
+}
+
+.catend{
+	background: #8394B2;
+	color: #000;
+	font-size: 1px;
+	height: 5px;
+}
+
+.newslink{
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	margin: 0;
+	width: 100%;
+}
+
+.newslink td{
+	color: #222;
+	font-size: 10px;
+	padding: 5px 5px 5px 10px;
+}
+
+.newslink span{
+	background: transparent;
+	color: #072A66;
+	font-style: italic;
+	font-weight: normal;
+}
+
+.newslink input{
+	background: #FFF;
+	border: 1px solid #999;
+	color: #072A66;
+	font-size: 10px;
+	padding: 3px;
+	vertical-align: middle;
+	width: auto;
+}
+
+.newslink input.button{
+	background: transparent;
+	border: 0;
+	color: #072A66;
+	vertical-align: middle;
+}
+
+.fieldwrap{
+	background: #F9F9F9;
+	border: 1px solid #CCC;
+	border-top: 0;
+	margin: 5px;
+	padding: 0;
+	text-align: left;
+}
+
+.fieldwrap h4{
+	background: #EEE;
+	border: 1px solid #CCC;
+	border-left: 0;
+	border-right: 0;
+	color: #444; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.errorwrap {
+	background: #F2DDDD;
+	border: 1px solid #992A2A;
+	border-top: 0;
+	margin: 5px;
+	padding: 0;
+}
+
+
+.errorwrap h4 {
+	background: #E3C0C0;
+	border: 1px solid #992A2A;
+	border-left: 0;
+	border-right: 0;
+	color: #992A2A; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.errorwrap p {
+	background: transparent;
+	border: 0;
+	color: #992A2A;
+	margin: 0;
+	padding: 8px;
+}
+
+
+.ruleswrap{
+	background: #F2DDDD;
+	border: 1px solid #992A2A;
+	color: #992A2A; 
+	margin: 5px 0 5px 0;
+	padding: 5px;
+}
+
+#redirectwrap{
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	margin: 200px auto 0 auto;
+	text-align: left;
+	width: 500px;
+}
+
+#redirectwrap h4{
+	background: #D0DDEA;
+	border-bottom: 1px solid #C2CFDF;
+	color: #3A4F6C;
+	font-size: 14px;
+	margin: 0;
+	padding: 5px;
+}
+
+#redirectwrap p{
+	margin: 0;
+	padding: 5px;
+}
+
+#redirectwrap p.redirectfoot{
+	background: #E3EBF4;
+	border-top: 1px solid #C2CFDF;
+	text-align: center;
+}
+
+
+#gfooter{
+	background: #8394B2;
+	margin: 5px 0 5px 0;
+	padding: 0;
+	width: 100%;
+}
+
+#gfooter td{
+	color: #FFF;
+	font-size: 10px;
+	padding: 4px;
+}
+
+#gfooter a:link,
+#gfooter a:visited{
+	color: #FFF;
+}
+
+#logostrip{ 
+	background: #3860BB url(style_images/1/tile_back.gif);
+	border: 1px solid #FFF;
+	height: 68px;
+	margin: 0;
+	padding: 0;
+}
+
+#logographic{
+	background: transparent url(style_images/1/logo4.gif) no-repeat left;
+	height: 68px;
+	margin: 0;
+	padding: 0;
+}
+
+#submenu{ 
+	background: transparent url(style_images/1/tile_sub.gif);
+	border: 1px solid #FFF;
+	border-top: 0;
+	color: #3A4F6C; 
+	margin: 0; 
+}
+
+#userlinks,
+#userlinksguest{ 
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	margin: 5px 0 5px 0;
+	padding: 0 5px 0 5px;
+}
+
+#userlinksguest{ 
+	background: #F4E7EA;
+	border: 1px solid #986265;
+}
+
+#submenu p,
+#userlinks p,
+#userlinksguest p{
+	background: transparent !important;
+	border: 0 !important;
+	font-size: 10px;
+	font-weight: bold; 
+	letter-spacing: 1px;
+	margin: 0 !important;
+	padding: 7px 0 7px 0; 
+	text-align: right;
+}
+
+#userlinks p,
+#userlinksguest p{
+	font-weight: normal;
+	letter-spacing: 0;
+}
+
+#submenu p.home,
+#userlinks p.home,
+#userlinksguest p.home{
+	float: left;
+}
+
+#userlinksguest p.pcen{
+	text-align: center;
+}
+
+#submenu a:link, 
+#submenu  a:visited{ 
+	background: transparent; 
+	color: #3A4F6C; 
+	padding: 0 6px 0 6px;
+	text-decoration: none;
+}
+
+#submenu a:hover, 
+#submenu a:active{
+	background: transparent; 
+	color: #5176B5; 
+}
+
+#navstrip{ 
+	background: transparent;
+	color: #999;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+	padding: 14px 0px 8px 0px; 
+}
+
+#navstrip a:link, 
+#navstrip  a:visited{ 
+	background: transparent; 
+	color: #222; 
+	text-decoration: none;
+}
+
+#navstrip a:hover, 
+#navstrip a:active{
+	background: transparent; 
+	color: #5176B5; 
+}
+
+.toplinks{
+	background: transparent;
+	color: #000;
+	margin: 0;
+	padding: 0 0 5px 0;
+	text-align: right;
+}
+
+.toplinks span{
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	border-bottom: 0;
+	color: #000;
+	font-size: 10px;
+	font-weight: bold;
+	margin: 0 10px 0 0;
+	padding: 5px;
+}
+
+.copyright{ 
+	background: #EEE;
+	font-size: 11px; 
+	margin: 0 0 5px 0;
+	padding: 8px;
+}
+
+/* 
+ * ========================================
+ * print page styles 
+ * ========================================
+ */
+
+#print{
+	margin: 20px auto 20px auto;
+	padding: 0;
+	text-align: left;
+	width: 85%;
+}
+
+#print h1,
+#print h2,
+#print h3,
+#print h4,
+#print p{
+	color: #036;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+	padding: 8px;
+}
+
+#print h2,
+#print h3,
+#print p{
+	border-bottom: 1px solid #999;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+#print h3{
+	background: #F5F5F5;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0 0 10px 0;
+}
+
+#print h4{
+	background: #F9F9F9;
+	font-size: 11px;
+}
+
+#print p{
+	margin: 0 0 5px 0;
+	padding: 10px;
+}
+
+#print p.printcopy{
+	border: 0;
+	color: #000;
+	text-align: center;
+}
+
+/* ============================================================== */
+/* RTE STYLES
+/* ============================================================== */
+
+.rteimage {
+	/*background: #D3D3D3;*/
+	/*border: 1px outset transparent*/;
+	cursor: pointer;
+	cursor: hand;
+	padding:1px;
+}
+
+.rteImageRaised {
+	/*background: #D3D3D3;*/
+	border: 1px outset;
+	cursor: pointer;
+	cursor: hand;
+	padding:0px;
+}
+
+.rteImageLowered {
+	/*background: #D3D3D3;*/
+	border: 1px inset;
+	cursor: pointer;
+	cursor: hand;
+	padding:0px;
+}
+
+.rteimage:hover {
+	background: #EBEBEB;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.rteVertSep {
+	margin: 0 4px 0 4px;
+}
+
+.rteBack {
+	background: #D3D3D3;
+	border: 1px outset;
+	letter-spacing: 0;
+	padding: 2px;
+}
+
+/* used in ips_rte.js - do not remove */
+.rtebottombutton
+{
+	font-size:10px;
+	border:1px solid #777;
+	border-top:0px;
+	padding:3px;
+	margin:0px;
+	background-color: #EBEBEB;
+}
+
+/* used in ips_rte.js - do not remove */
+.rtebottombuttonon
+{
+	font-size:10px;
+	border:1px solid #777;
+	border-top:0px;
+	padding:3px;
+	margin:0px;
+	background-color: #D3D3D3;
+}
+
+.rtebuttonbar1 {
+	/*background: #D3D3D3;*/
+	background-image: url(style_images/1/folder_rte_images/rte_tile.gif);
+	border: 1px solid gray;
+	border-bottom:0px;
+	letter-spacing: 0;
+	padding: 2px;
+	height:26px;
+}
+
+.rtebuttonbar2 {
+	/*background: #D3D3D3;*/
+	background-image: url(style_images/1/folder_rte_images/rte_tile.gif);
+	border: 1px solid gray;
+	border-top:1px solid gray;
+	letter-spacing: 0;
+	padding: 2px;
+	height:26px;
+}
+
+.rtebuttonbar1 tbody tr td,
+.rtebuttonbar1 tr td,
+.rtebuttonbar2 tbody tr td,
+.rtebuttonbar2 tr td,
+.rteBack tbody tr td,
+.rteBack tr td
+{
+	/*background: #D3D3D3;*/
+	padding: 0;
+}
+
+.rteDiv {
+	display: block;
+	position: relative;
+	padding:0px;
+	margin:0px;
+}
+
+.rteiframe
+{
+	border:1px solid #777;
+	background-color:#FFF;
+}
+
+.rteselectbox
+{
+	font-size:11px;
+}
+
+
+.dny-edit-title
+{
+	border:0px;
+	padding:3px;
+	margin:0px;
+	background: #D1DCEB; 
+	color: #3A4F6C; 
+}
+
+
+/* ======================================== */
+/* TABS
+/* ======================================== */
+
+.tabon
+{
+	border-top:1px solid #999;
+	border-left:1px solid #999;
+	border-right:1px solid #999;
+	background-color:#FFF;
+	padding:8px;
+	padding-bottom:9px;
+	font-size:10px;
+	float:left;
+	width:auto;
+	margin-top:3px;
+}
+
+.taboff
+{
+	border-top: 1px solid #777;
+	border-left: 1px solid #777;
+	border-right: 1px solid #777;
+	background-color: #B5C3D9;
+	color: #333;
+	padding: 8px;
+	font-size:10px;
+	float: left;
+	width: auto;
+	margin-top:3px;
+}
+
+.tabon a:link, 
+.tabon a:visited, 
+.tabon a:active
+{
+	text-decoration:none;
+	color: #000;
+}
+
+.taboff a:link, 
+.taboff a:visited, 
+.taboff a:active
+{
+	text-decoration:none;
+	color: #333;
+}
+
+.mya-back
+{
+	background: #072A66;
+	margin:1px;
+}
+
+.mya-content
+{
+	background: #FFF;
+	padding:8px;
+	margin:1px;
+	border: 1px solid #777;
+}
+
+/* -------------------------------- */
+/* Create PM box defaults           */
+/* -------------------------------- */
+
+.iframeshim
+{
+	position:absolute;
+	display:none;
+	background: #FFF;
+	filter:alpha(opacity=0);
+	border:0px;
+	width:auto;
+	height:auto;
+}
+
+
+
+/* -------------------------------- */
+/* Experimental                     */
+/* -------------------------------- */
+
+.popupmenu
+{
+   background: #F0F5FA;
+   border: 1px solid #3A4F6C;
+   text-align:left;
+   font-size:10px;
+   white-space:nowrap;
+   /*padding:3px 5px 3px 3px;*/
+   /*width:300px;*/
+}
+
+.popupmenu-item
+{
+	padding: 5px;
+	/*margin-top:4px;*/
+	white-space: nowrap;
+	border-bottom: 1px solid #C2CFDF;
+}
+
+.popupmenu-item-last
+{
+	padding: 5px;
+	/*margin-top:4px;*/
+	white-space: nowrap;
+}
+
+.popmenubutton
+{
+	width:120px;
+	white-space:nowrap;
+	background-color: #C2CFDF;
+	border:1px solid #3A4F6C;
+	color: #3A4F6C;
+	font-weight:bold;
+	float:right;
+	height:18px;
+	text-align:center;
+	margin:0px;
+	font-size:11px;
+	padding:3px;
+}
+
+
+.popmenubutton a:link, 
+.popmenubutton a:visited,
+.popupmenu-item a:link, 
+.popupmenu-item a:visited,
+.popupmenu-item-last a:link, 
+.popupmenu-item-last a:visited
+{ 
+	color: #3A4F6C; 
+	text-decoration: none;
+}
+
+.popmenubutton a:hover, 
+.popupmenu-item a:hover, 
+.popupmenu-item-last a:hover
+{ 
+	color: #5176B5; 
+	text-decoration: none;
+}
+
+.popupmenu-category
+{ 
+	background: transparent url(style_images/1/tile_sub.gif);
+	border-top: 1px solid #5176B5;
+	border-bottom: 1px solid #5176B5;
+	color: #3A4F6C; 
+	font-size: 10px;
+	font-weight: bold; 
+	letter-spacing: 1px;
+	margin: 0; 
+	padding: 5px; 
+}
+</style>
+	</head>
+	<body>
+	<div id="print">
+		<h1>A téma nyomtatható változata</h1>
+		<h2><a href="http://www.pcworld.hu/forum/index.php?act=ST&f=117&t=13293" title="Téma megtekintése">Kattints ide az eredeti formátum megtekintéséhez!</a></h2>
+		<h3>PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés</h3><div class="printpost">
+			<h4>Szerző:: arpsoft  2005. június 29. 17:39</h4>
+			<p></p><blockquote><b><!--coloro:#006600--><span style="color:#006600"><!--/coloro--><!--fonto:Verdana--><span style="font-family:Verdana"><!--/fonto--><!--sizeo:4--><span style="font-size:14pt;line-height:100%"><!--/sizeo-->Hibakeresés<!--sizec--></span><!--/sizec--><!--fontc--></span><!--/fontc--><!--colorc--></span><!--/colorc--><br>Összekötöttük a gépeket, mégsem megy a háló</b></blockquote><ol type="1"><li> A megosztó gépen van net, a gépek nem látják egymást, máshol nincs net.</li><li> Minden gépen van net, a gépek nem látják egymást.</li><li> Mindenki lát mindenkit, de a megosztásokhoz nincs jogosultságunk a gép szerint.</li></ol><b><!--sizeo:3--><span style="font-size:12pt;line-height:100%"><!--/sizeo--><!--coloro:blue--><span style="color:blue"><!--/coloro-->Ökölszabály: hálózatoknál az első ellenőrizendő dolog, a kábelezés<!--colorc--></span><!--/colorc--><!--sizec--></span><!--/sizec--></b><br><blockquote>Ellenőrizzük, hogy a megfelelő kábeleket használtuk-e! Itt egy lista a megfelelő kábelekről:<ul><li> HUB ----x----- HUB </li><li> HUB uplink --------- HUB </li><li> HUB uplink -----x---- HUB Uplink </li><li> HUB ------ gép </li><li> SWITCH ----x----- SWITCH </li><li> SWITCH AUTO MDIX ------------ SWITCH </li><li> SWITCH AUTO MDIX ------x----- SWITCH </li><li> SWITCH -------x------ HUB </li><li> SWITCH AUTO MDIX ------------ HUB </li><li> SWITCH AUTO MDIX ------x----- HUB </li><li> SWITCH -------------- HUB Uplink </li><li> SWITCH AUTO MDIX ------------ HUB Uplink </li><li> SWITCH AUTO MDIX -----x------ HUB Uplink </li><li> SWITCH ------------ gép </li><li> SWITCH AUTO MDIX ------------- gép </li><li> SWITCH AUTO MDIX ------x------ gép </li><li> SWITCH AUTO MDIX ------------- SWITCH AUTO MDIX </li><li> SWITCH AUTO MDIX ------x------ SWITCH AUTO MDIX</li></ul><ul><li> <b>AUTO MDIX:</b> az eszköz automatikusan felismeri, hogy milyen kábelt dugtak bele</li><li> <b>------x------:</b> crosslink kábel</li><li> <b>-------------:</b> patch kábel</li></ul>A fenti felsorolásban a switch routerrel egybeépített eszköz is lehet.<br><blockquote><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/kebelek.jpg" border="0" alt="IPB kép"><br>Mindkét bekötési sorrend helyes. Az egyik az A, a másik a B típus. Egyenes kábel mindkét végén vagy A vagy B van, a kereszt kábelnek egyik felén A a másikon B.<br>Ha normális kábelt szeretnétek csinálni, akkor CSAK ezeket szabad használni. Rövid kábeleknél tényleg működik bármilyen sorrenddel a dolog, de egy méter fölött már nem.<br><br>A blankolásnál ügyelni kell, hogy a kábeleket ne vágd be. Amikor bedugod a kábel ereket a csatlakozóba, akkor minden érnek el kell érnie a csatlakozó legvégét. A krimpelés után az összes érintkezőnek egy magasságban kell lennie. A csatlakozó két szélén meg tudod nézni, hogy a kések megfelelő mélységben vannak-e, belemennek-e a kábelköpenybe. Vigyázzunk arra is, hogy ne törjük meg a kábelt!<br><br>Egyébként nem csak a kábel lehet kontaktos, hanem a csatlakozó is. Ezt a kábel megfordításával ellenőrizheted. Ha a kábeled mindkét vége ugyanúgy mutatja a hibát, akkor kezdhetsz gyanakodni, hogy nem vagy nem csak a kábeled rossz.<br><br>Cat5/Cat5e kábel esetében a maximális hossz 80-90 méter!</blockquote></blockquote><br><b><!--sizeo:3--><span style="font-size:12pt;line-height:100%"><!--/sizeo--><!--coloro:blue--><span style="color:blue"><!--/coloro-->Aktív hálózati eszközök ellenőrzése<!--colorc--></span><!--/colorc--><!--sizec--></span><!--/sizec--></b><br><blockquote>Győződjünk meg arról, hogy a hálózatunkban található berendezések megfelelően funkcionálnak. <br>A hálózat működőképességét elég nehéz lenne vakon ellenőrizni, ezért az eszközökön általában (egy-két régi hálókártya kivételével) találunk állapotjelző lámpácskákat, LED-eket.<br>A switch általában többféle információt is nyújt ezeken keresztül, mégpedig magáról a kapcsolatról, annak sebességéről és duplexitásáról, illetve magáról az adatforgalomról.<br>A hálókártyákon változatos formában az egyszerű adatforgalmi jelzéstől egészen a switch szintű információ mennyiségig széles a skála.<br><br>Ha egy hálókártya vagy egy switch nem világít, miután hibátlan kábellel összekötöttük őket, akkor valamelyik hardver elem hibás.<br>A switch esetében előfordulhat, hogy csak egy port romlott el. Ezt a kábel áthelyezésével meg lehet vizsgálni. Ha egy másik portban sem világít a lámpácska, akkor a hálókártya cseréje lehet a megoldás.<br>Integrált hálókártyáknál meg kell vizsgálni a BIOS beállításokat, mielőtt rossznak kiáltjuk ki, lehet, hogy csak le van tiltva.<br>Ha a hálókártya rendben van, de a switch még mindig nem világít, akkor ki kell cserélni a csillagponti eszközünket.<br><br>Ha minden világít, de problémák vannak a hálózattal, akkor meg lehet próbálkozni firmware-frissítéssel.<br><br>Ha minden működőképesnek látszik a hálózatban, de mégsem működik kielégítően vagy egyáltalán, akkor jöhet a szoftveres réteg. Ellenőrizzük a meghajtókat és beállításokat!<br>Ha csak a megosztások nem mennek, akkor jogosultságokat kellene kiosztani a többi felhasználónak.</blockquote>
+			<br>
+			<!--IBF.ATTACHMENT_18007-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Szili0  2009. október 28. 20:28</h4>
+			<p>Sziasztok!<br><br>Szeretném a segítségeteket kérni!<br>Tegnap bekötötte az UPC az internetet, ami elvileg 120megabittes. Hoztak valami Motorolla modemet és egy Netgear routert. Egyáltalán nem értek hozzá, azt viszont tudom, hogy sajnos durván percenként megáll a net, ledob a World of Warcraftből, és az aktuális honlap betöltését megállítja. Nincs ötletem, hogy mi baja lehet, viszont lefényképeztem nektek a modemnek a logját, remélem ti hozzátudtok valamit szólni. (remélem jót fotóztam le)<br><br><span><a class="linkclass" href="http://szili0.uw.hu/modemlog.jpg">http://szili0.uw.hu/modemlog.jpg</a></span><br><br>Vajon a router a nem jó (aki bekötötte azt mondta, hogy érdemes lecserélni egyből egy gigabittes modemre, hogy a sebességet rendesen tudjuk élvezni) vagy esetleg a házban van a hiba?<br>Kinéztem kettő routert:<br><span>1. <a class="linkclass" href="http://ipon.hu/webshop/product/tp_link_tl_wr1043nd/128645">http://ipon.hu/webshop/product/tp_link_tl_wr1043nd/128645</a></span><br><span>2. <a class="linkclass" href="http://ipon.hu/webshop/product/linksys_wap4410n/40281">http://ipon.hu/webshop/product/linksys_wap4410n/40281</a></span><br><br>Szeretném, ha valaki emberi nyelven leírná, hogy mi a probléma mert nem értek semmit sem a logból.<br>Előre is örök hála: Szili0
+			<br>
+			<!--IBF.ATTACHMENT_404715-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. október 28. 20:57</h4>
+			<p>Ne a kábel modem logját linkeld ide, ha ezzel gáz van a szolgáltatót kell hívni.<br>Mind a két esetben dobálja a netet? <br>1. Közvetlen modemes csatlakozással?<br>2. Csak router-rel megosztva?<br><br>Milyen típusú a modem és milyen a router? (Nem csak a márkájára vagyok kíváncsi!)<br><br>A vásárlási szándékod sem egészen tiszta. Mit kell akkor venned?<br><!--quoteo--></p><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->aki bekötötte azt mondta, hogy érdemes lecserélni egyből egy gigabittes modemre<!--QuoteEnd--></div><!--QuoteEEnd-->Milyen érdekes? Ha az UPC 120 megabites csomagot ígér, akkor nem gigabites modemet hoz hozzá !?   <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/blink.gif" style="vertical-align:middle" emoid=":pislog:" border="0" alt="blink.gif">   Mert ha így van, ez felér egy jó nagy fogyasztóvédelmi bírsággal is.  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/laughing.gif" style="vertical-align:middle" emoid=":lol:" border="0" alt="laughing.gif"><br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Kinéztem kettő routert:...<!--QuoteEnd--></div><!--QuoteEEnd-->Akkor most mégis routert kell venned? Mert ebben akkor igaza van a szerelőnek, ha valóban gigabites az a Motorola kábel modem, akkor nincs szűk keresztmetszet (100 Mbit/s) szóval akkor el kellhet egy gigabites port-al rendelkező router, mert a Netgear több mint valószínű hogy nem az. De ha a hálózati kártyád nem gigabites, akkor megint semmit sem fogsz érni a gigabites router-eddel, hiszen akkor ott lesz szűk a keresztmetszet.<br><br>Ami a linkelt eszközöket illeti, a második egészen biztosan nem kell neked, mert az egy Access Point nem pedig Wifi router. Az elsőt viszont nyugodt szívvel tudom ajánlani.
+			<br>
+			<!--IBF.ATTACHMENT_404718-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Szili0  2009. október 29. 9:54</h4>
+			<p><span>A modem típusa: Motorola SURFboard Digital Voice Modem (SBV6120E - CN) <a class="linkclass" href="http://business.motorola.com/ultrabroadbandsolutions/products-sbv6120.html">http://business.motorola.com/ultrabroadbandsolutions/products-sbv6120.html</a></span><br><span>A router típusa: Netgear RangeMAX Wireless Router WPN824 v2 <a class="linkclass" href="http://kb.netgear.com/app/products/model/a_id/2629">http://kb.netgear.com/app/products/model/a_id/2629</a></span><br><br>Tegnap este nem szakadt meg, viszont ha legközlebb ledobál egyből átdugom (ami egy kicsit macerás lesz, mert a szekrény tetején van a modem és rövid a kábel <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif">)<br>Amint többet tudok írni, frissítem a postot
+			<br>
+			<!--IBF.ATTACHMENT_404746-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2009. október 29. 14:25</h4>
+			<p>A routered 100Mbit/s tud maximum. Ha WiFi-zel, akkor csak 54 Mbit/s, az is csak elméletben.<br>Ekkora nethez már nyugodtan vehetsz gigabites routert.
+			<br>
+			<!--IBF.ATTACHMENT_404763-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Szili0  2009. november 2. 23:46</h4>
+			<p>Megvan a probléma oka: trágya a router, holnap után érkezik amit fentebb írtam.<br>Köszönöm mindenkinek a segítséget!
+			<br>
+			<!--IBF.ATTACHMENT_405246-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: tis11111  2009. november 19. 10:10</h4>
+			<p>sziasztok!<br><br> A héten jött be a net, kábelmodemes kapcsolat. Otthoni hálózaton két gép van összekötve switch-el. A gépek látják egymást, játék, miegymás megy. A kábelmodemet a switch-be kötöttem. Az egyik gép látja az internetet, a másik nem (sárga felkiáltójel: a kapcsolat korlátozott...). Mindkét gépen XP Prof.<br>((kikapcsolást állapotban a switch-en az egyik gép jelzőfényei világítanak, a másiké nem. ?)<br>kérdésem: elvileg így működnie kellene a netnek nem? azon a gépen, amelyiken nincs net új hálókártya kellene?<br><br>(a hálózatvarázslót próbáltam már) <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/blush.gif" style="vertical-align:middle" emoid=":upsz:" border="0" alt="blush.gif">
+			<br>
+			<!--IBF.ATTACHMENT_406597-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. november 19. 10:11</h4>
+			<p>Nem, routert kell venned.
+			<br>
+			<!--IBF.ATTACHMENT_406599-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: tis11111  2009. november 19. 10:16</h4>
+			<p>Maga a switch nem alkalmas az ilyen típusú megosztásra?
+			<br>
+			<!--IBF.ATTACHMENT_406600-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. november 19. 10:21</h4>
+			<p>Eltaláltad.
+			<br>
+			<!--IBF.ATTACHMENT_406601-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: tis11111  2009. november 19. 10:22</h4>
+			<p>Akkor marad a vásárlás. Köszi!
+			<br>
+			<!--IBF.ATTACHMENT_406602-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Timo  2009. december 29. 18:50</h4>
+			<p>Sziasztok, <br><br>Nekem wifi-s gondom van.<br>Laptop+Vista+wifi. A network center azt mondja kapcsolodom a hálózathoz, jelerősség kiváló.<br>Az óra mellett a tálcán ott a 2 kis számítógép a földgömbel.<br><br>Aztán ha indítom az Ie8-at akkor nem jön be a nyitó oldal. <br>Ha kerestetem vele a problémát akkor azt mondja nem tud csatlakozni az elsődleges dns szerverhez.<br>Felajánlja hogy automatikusan új beállításokat kér le. Reseteli a kapcsolatot de a probléma továbbra is fennáll és a földgömb eltűnik a kis számítógépektől. <br>Szóval még rosszabb lesz. <br><br>Nem tudom merre szaladjak, most a modem rossz a router a szolgáltató?<br>Vagy csak valaki Mac Filterrel?<br><br>Pls Help
+			<br>
+			<!--IBF.ATTACHMENT_409612-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. december 29. 19:20</h4>
+			<p>Kábeles kapcsolattal se jó?<br>Más Webböngészőt próbáltál már?
+			<br>
+			<!--IBF.ATTACHMENT_409613-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. december 29. 19:39</h4>
+			<p>Miután nincs földgömb, írd be egy parancssorba, hogy <b>ipconfig /all</b>. Mit ír az adapterednél DNS szervernek?
+			<br>
+			<!--IBF.ATTACHMENT_409618-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Timo  2009. december 29. 20:36</h4>
+			<p>Gyakorlatilag nincs netem. <br>Akármelyik böngészöt indíthatnám. <br>A vírusirtó nem frissít, a yahoo gadget sem.<br><br>A netet használtam. Az m1 en néztem a megy a gözöst. <br>Majd 1x csak "elment". <br>Ráhagytam gondoltam kihagy a net majd visszajön.<br>De nem. Azóta rossz s nem tudom mi ez a rejtélyes hiba&amp;ntilde;zenet.<br><br>Ja kábelesen meg az életbe nem próbáltam , még kábelem sincs. <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/cool.gif" style="vertical-align:middle" emoid="8)" border="0" alt="cool.gif"><br><br>Köszi KGigi a javítást. Egy deka ékezetem sincs. Csak ami ascii ra emléxem fejböl.<br><br>az ipconfigot kiprobálom de ahhoz idö kell. A net távol van most a gépemtöl. <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/cool.gif" style="vertical-align:middle" emoid="8)" border="0" alt="cool.gif">
+			<br>
+			<!--IBF.ATTACHMENT_409635-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. december 29. 20:44</h4>
+			<p><!--quoteo(post=409635:date=2009. december 29. 20&#58;36:name=Timo)--></p><div class="quotetop">IDÉZET(Timo @ 2009. december 29. 20:36) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=409635"><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Ja kábelesen meg az életbe nem próbáltam , még kábelem sincs. <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/cool.gif" style="vertical-align:middle" emoid="8)" border="0" alt="cool.gif"><!--QuoteEnd--></div><!--QuoteEEnd-->Ez érdekes. Egy csak van amivel, asztali (vagy egyéb) gépedet használod.  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/roll.gif" style="vertical-align:middle" emoid=":hááát:" border="0" alt="roll.gif">
+			<br>
+			<!--IBF.ATTACHMENT_409639-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Timo  2009. december 29. 23:24</h4>
+			<p>érdekes vagy sem. <br><br>Csak 1 árva laptopom van. <br>Az beszopja a hálózatot a levegöböl Wi aztán Fi és annyi. <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/cool.gif" style="vertical-align:middle" emoid="8)" border="0" alt="cool.gif"><br><br>Kiválasztom az én hálóm. Kapcsolódok beírom a jelszót 1x amit a rendszer elment s ha indítom a gépet az esetek 90% ban kiépíti a kapcsolatot és használható a net.<br><br>Kivéve most. Amikor  valami nem connect to dns mitudomén hova vagy miért. <br><br>ötlet?
+			<br>
+			<!--IBF.ATTACHMENT_409668-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. december 30. 8:00</h4>
+			<p>1. Indítsd újra a modemet és a router-t (ha még nem történt volna meg).<br>2. Nem ártana UTP kábelt szerezni arra az esetre, ha esetleg újra kell majd konfigurálni a routert.<br><br>Mi után látszólag sikeresen csatlakozik, mit ad ki a következő parancsra:<br><br>Start--&gt; futttás---&gt; cmd<br><br><!--c1--></p><div class="codetop">KÓD</div><div class="codemain"><!--ec1-->ipconfig /all<!--c2--></div><!--ec2-->
+			<br>
+			<!--IBF.ATTACHMENT_409676-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Timo  2009. december 30. 16:04</h4>
+			<p>Este kipróbáltam az ipconfigot.<br><br>Dns szerver van megadva benne, egy hosszú számsor nem  csak decimális.<br>A lista többi részén pedig a nem csatlakozik szöveg dominál.<br><br>A net diag azt mondja pingeli a hostot de nem kap választ.
+			<br>
+			<!--IBF.ATTACHMENT_409717-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Vogelmeister  2010. január 1. 16:48</h4>
+			<p>Sziasztok!<br><br>Egy "rövid" kérdésem lenne csak. Van két gépem, xp prof, 1. gépre jön a net D-Link ADSLmodem+Linksys router, ami úgy van rákötve mint egy switch, (a modemből ethernet kábelen megy a jel a routerbe, onnan tovább a gépbe) a mellékelt cd-rommal így nem tudom telepíteni, mert az internet bejövő jelet jelképező led nem világít a routeren, a webes beállító felületet nem tudom elérni, de a gép tud kapcsolódni a netre. Vezeték nélküli hálózatot szeretnék létrehozni.<br>Nem is lenne gondom, ha az 1. gépen ugye mutatná, hogy igen a routerem alkalmas vezeték nélküli hálózat kialakítására, és akkor csak be kéne állítani, hogy engedélyezem... de ebben az esetben nem látom a vezeték nélküli ikont, adaptert se. <br><br>Nem tudom mennyire érthető így a kérdés, van esetleg ahol le van már írva ezzel kapcsolatban valami kis segítség? vagy esetleg tudna éé valaki valamilyen tanácsot adni. <br><br>előre is köszönöm és boldog új évet!
+			<br>
+			<!--IBF.ATTACHMENT_409814-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2010. január 1. 17:01</h4>
+			<p>Az internetet dugd át a WAN-ba, és futtasd a szoftvert, ha kézzel nem megy.
+			<br>
+			<!--IBF.ATTACHMENT_409816-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: mazda6diesel  2010. január 13. 20:48</h4>
+			<p>mazda6diesel:<br><br>"Telepítettem az eszközöket, és olyan gondom támadt, hogy az adapterrel ellátott pc nem úgy működik ahogy kellene. Hol nincs net, hol van, nagyon sokszor nagyon lassú, valamikor meg olyan gyors hogy rendesen meglepődök smile.gif Már elvégeztem minden vírus, kémprogramirtást, töredezettségmentesítettem de semmi változás. A jelerősség legtöbbször kiváló, a legrosszabb esetben is jó. blink.gif Más vezeték nélküli hálózatot nem lát a rendszer. Mi lehet itt a gond?"<br><br>KGigi:<br><br>"Ezt itt off, de a jelminőség milyen? Nem csak a jelerősség számít."<br><br><br><br>Hát azt sajna nem tudom, azt hogy kell ellenőrizni?<br><br>
+			<br>
+			<!--IBF.ATTACHMENT_410865-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. január 13. 21:16</h4>
+			<p>A kapcsolat részletes adatainál megtalálod.
+			<br>
+			<!--IBF.ATTACHMENT_410869-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: mazda6diesel  2010. január 13. 21:32</h4>
+			<p>És mi számít jónak, rossznak?<br>
+			<br>
+			<!--IBF.ATTACHMENT_410872-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. január 13. 21:38</h4>
+			<p><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/question.gif" style="vertical-align:middle" emoid=":?:" border="0" alt="question.gif"> Nekem itt olyanok vannak, hogy jó, kiváló...
+			<br>
+			<!--IBF.ATTACHMENT_410874-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: mazda6diesel  2010. január 13. 22:00</h4>
+			<p>Akkor viszont rossz helyen keresgélek... Hol kell ezt nézni?<img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"><br>
+			<br>
+			<!--IBF.ATTACHMENT_410876-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. január 13. 22:16</h4>
+			<p>Ezt most nem tudom neked lépésről lépésre leírni, etherneten vagyok. <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/sad.gif" style="vertical-align:middle" emoid=":(" border="0" alt="sad.gif">
+			<br>
+			<!--IBF.ATTACHMENT_410878-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Nokia5800  2010. február 3. 12:33</h4>
+			<p>Sziasztok!<br><br>Hol tudom megnézni a kapcsolat milyenségét, és ha rossz mit kell módosítani? Nekem is az gondom, hogy a jelerősség kiváló, de netem az nincs. Vezetékkel semmi gondom nem volt, de amióta az asztali gép pci-os wlan kártyával kapcsolódik azóta nincs netem, vagy legalábbis nagyon rossz. 300Mbps Tp Link eszközeim vannak.
+			<br>
+			<!--IBF.ATTACHMENT_412503-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. február 3. 13:10</h4>
+			<p><!--quoteo(post=410869:date=2010. január 13. 21&#58;16:name=KGigi)--></p><div class="quotetop">IDÉZET(KGigi @ 2010. január 13. 21:16) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=410869"><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->A kapcsolat részletes adatainál megtalálod.<!--QuoteEnd--></div><!--QuoteEEnd--><br>A DNS szerverek be vannak állítva?
+			<br>
+			<!--IBF.ATTACHMENT_412506-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Nokia5800  2010. február 3. 13:21</h4>
+			<p>Öööö nem tudom <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/sad.gif" style="vertical-align:middle" emoid=":(" border="0" alt="sad.gif"> Nagyon laikus vagyok a témában. Mit kellene beállítani és hol? Köszönöm a segítséget, türelmet!
+			<br>
+			<!--IBF.ATTACHMENT_412510-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. február 3. 13:25</h4>
+			<p>Írd be egy parancssorba, hogy <b>ipconfig /all</b>. Mit ír az adapterednél DNS szervernek?
+			<br>
+			<!--IBF.ATTACHMENT_412512-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Nokia5800  2010. február 3. 13:52</h4>
+			<p>Délután négy körül, tudom megnézni és mindenképp írok! Amúgy minek kellene lennie? Köszönöm szépen!
+			<br>
+			<!--IBF.ATTACHMENT_412516-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. február 3. 13:58</h4>
+			<p>Az internetszolgáltatód DNS szerverének IP címeit.
+			<br>
+			<!--IBF.ATTACHMENT_412518-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2010. február 3. 14:00</h4>
+			<p>Ha van a hálózaton router, akkor a gépen nem a szolgáltató DNS szerverét kell megadni/látni, hanem a routerét.
+			<br>
+			<!--IBF.ATTACHMENT_412519-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. február 3. 14:30</h4>
+			<p>Fura, én is router mögött vagyok, de nekem az ISP DNS szerverei látszanak:<br><br><span><a class="linkclass" href="http://img42.imageshack.us/i/win7ipconfig.png/">http://img42.imageshack.us/i/win7ipconfig.png/</a>
+			</span><br>
+			<!--IBF.ATTACHMENT_412527-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Nokia5800  2010. február 3. 14:34</h4>
+			<p>Úgy néz ki a helyzet, hogy egy Tp Link router van 3 antennával és egy asztali PC nem messze a routertől szintén Tp Link gyártmányú wifi kártyával. A kettő között vezetékes kapcsolat nincs.Mindkettő 300Mbps sebességű. Ha megnyotom a hálózati kapcsolatokon belül a TCP/IP tulajdonságokat akkor minden automatára van állítva. Itt esetleg kell módosítani valamit?
+			<br>
+			<!--IBF.ATTACHMENT_412528-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. február 3. 14:38</h4>
+			<p>Nem kell. KGigi kérdésére válaszolj! Mit ír ki az <b>ipconfig /all</b> parancs hatására a gép?
+			<br>
+			<!--IBF.ATTACHMENT_412529-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Nokia5800  2010. február 3. 14:59</h4>
+			<p>Még egy óra és máris írom <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"> Köszönöm a segítséget!<br>------<br>Az a helyzet, hogy nem ír ki semmit. Feltűnik egy fekete ablak, de el is tűnik.
+			<br>
+			<!--IBF.ATTACHMENT_412534-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. február 3. 16:10</h4>
+			<p>Mert nem közvetlenül a futtatásba kell írni a parancsot. Start--&gt;Futtatás---&gt;írd be:cmd --&gt;[OK]. Ez után jöhet a parancs.
+			<br>
+			<!--IBF.ATTACHMENT_412548-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Nokia5800  2010. február 3. 16:17</h4>
+			<p>Ezt írja a DNS-re: DNS -kiszolgálók 192.168.1.1<br><br>Ilyet is ír: A Bérleti jog vége: 2010. február 3. 18:40<br><br>A DHCP beállításoknál kell megadni a szolgáltatótól (kábelnet) kapott DNS beállításokat? Az IP címet és az alapértelmezett átjárót is meg kell adni?
+			<br>
+			<!--IBF.ATTACHMENT_412549-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. február 3. 20:04</h4>
+			<p>Ennek jónak kellene lennie így, ahogy van. Próbáld pingelni a 192.168.1.1-et. A Wifi topikban leírtam, hogyan kell.
+			<br>
+			<!--IBF.ATTACHMENT_412584-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: mazda6diesel  2010. február 3. 21:18</h4>
+			<p>A DHCP beállításoknál megadtam a két DNS címet azóta minden megy szépen. Töröljem ki és pingeljem?<br><br>"Nokia 5800 is én vagyok, egy félreértés miatt regeltem még egyszer"
+			<br>
+			<!--IBF.ATTACHMENT_412593-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. február 3. 22:56</h4>
+			<p>Az IP-kérés automatikuson van most is? Mert akkor jó lesz így. Ha nem, akkor be kell állítani a routerben is a fix IP-t.
+			<br>
+			<!--IBF.ATTACHMENT_412597-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: szabszucs  2010. február 13. 12:45</h4>
+			<p>Sziasztok! A gondom a következő: Adott egy 15 Mbites upc net, egy modem, és egy router ami kábellel 2 asztali gépre, és wifivel egy laptopra osztja szét a netet. Namost, ha csak az egyik gép megy (az én gépem), akkor teljesen jól működik minden, a torrent szalad, a honlapok is gyorsan betöltődnek. Ha viszont a másik asztali gép (bátyámé) is fut, akár használ sávszélességet, akár nem (tehát alapjáraton megy a gép), nálam iszonyú lassú lesz minden, és kínlódás a böngészés, letöltés. Mivel nem értek a routerekhez és modemekhez, ezért írtam le itt a gondom, Ti biztosan tudtok valamit mondani erre, még ha egyszerű is a válasz. Köszönöm szépen előre is: szabi. / mindkét gépen 64 bites windows 7 fut /
+			<br>
+			<!--IBF.ATTACHMENT_413354-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2010. február 13. 12:55</h4>
+			<p>Router típusa? Szerintem elsőnek egy ilyet kellene eljátszani vele:</p><ol type="1"><li> Reset (talán 30/30/30-as kell neki);</li><li> Firmware-frissítés;</li><li> Reset;</li><li> Újrakonfigurálás;</li></ol>Persze az is lehet, hogy használja az a gép a hálózatot, csak a gazdája nem tud róla. Feladatkezelővel meg lehet nézni, mekkora a hálózat terheltsége.
+			<br>
+			<!--IBF.ATTACHMENT_413355-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: szabszucs  2010. február 13. 13:32</h4>
+			<p>Most nem tudom megnézni, de egy régebbinek tűnő D-Link router. Resettel már próbálkoztunk, nem segített. Konfigurálva pedig sosem volt, bedugtuk és működött <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"> Gondoltuk akkor jó minden. Plusz a szerelő is azt mondta hogy megy és ennyi. De megpróbálom, köszönöm <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif">
+			<br>
+			<!--IBF.ATTACHMENT_413357-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. február 13. 14:29</h4>
+			<p>Nem konfiguráltad soha?  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/huh.gif" style="vertical-align:middle" emoid=":huh:" border="0" alt="huh.gif">  Akkor például a torrent-nek, hogy engedted ki a portokat? (UPnP? De alapértelmezésben az sem szokott engedélyezve lenni, egyik gyártónál sem. <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/hmm.gif" style="vertical-align:middle" emoid=":hmm:" border="0" alt="hmm.gif">)<br>Elárulnád, milyen milyen csatlakozóit használod annak a router-nek? (Remélem nem switch-elt internetkapcsolat  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/roll.gif" style="vertical-align:middle" emoid=":hááát:" border="0" alt="roll.gif"> ) Ha mégis jól dugtad össze, vágom én hogy a WAN alapértelmezett beállítása a DHCP. De a UPC MAC cím alapján azonosít.
+			<br>
+			<!--IBF.ATTACHMENT_413358-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: szabszucs  2010. február 14. 14:52</h4>
+			<p>No, ennek a fele nekem idegen <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif"> Modemből megy egy kábel a routerbe, azt hiszem a wan-ba. Onnan pedig egyik asztali, másik asztali + wifije is üzemel többnyire. Tényleg nem volt beállítva semmi, bekötötték és annyi <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"> Közben megvan a típus: D-Link 802.11g / 2.4 GHz . Sikerült belépni a setup-ba is, de ott nem igazodom el <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/sad.gif" style="vertical-align:middle" emoid=":(" border="0" alt="sad.gif">
+			<br>
+			<!--IBF.ATTACHMENT_413429-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. február 14. 15:29</h4>
+			<p>1. A D-link-nek nincs ilyen típusa, a <b>802.11g</b> a támogatott vezeték nélküli szabványt jelöli.<br><span>2. <a class="linkclass" href="http://www.pcworld.hu/forum/index.php?showtopic=13299">http://www.pcworld.hu/forum/index.php?showtopic=13299</a></span><br><br><!--quoteo(post=413429:date=2010. február 14. 14&#58;52:name=szabszucs)--></p><div class="quotetop">IDÉZET(szabszucs @ 2010. február 14. 14:52) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=413429"><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->.. Modemből megy egy kábel a routerbe, azt hiszem a wan-ba.<!--QuoteEnd--></div><!--QuoteEEnd-->Ezt nem hinni kell, hanem tudni, a modemből jövő kábelnek máshol keresnivalója nincs!
+			<br>
+			<!--IBF.ATTACHMENT_413432-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: herhi1984  2010. február 14. 21:17</h4>
+			<p>sziasztok, nekem is probléma akadt....<br><br>adott egy digi kábeles net, belkin G 2.4 GHz router, panel lakásban.<br>az msi laptomon sokszor (vezeték nélkül csatlakoztatva), nem egyforma időre, és nem egyforma időközönként, ingadozik a net...folyamatosan azt írja ki , h jelerősség kiváló, ill csatlakoztatva, de ennek ellenére ingadozik...v meg sem jeleníti a lapot, aztán v hogy 2 perc után újra oké. és legtöbbször router ki-be dugás segít...<img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"><br>a laptoppal más helyen nem adódott még gondom.<br>tudtok-e segíteni ennyi info alapján? ennyire a vacak a router, v konfigurálni kell vmit pl?<br>kösz előre is
+			<br>
+			<!--IBF.ATTACHMENT_413450-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. február 14. 21:34</h4>
+			<p>Nem olyan rossz router (annak ellenére, hogy nekem van pár negatív tapasztalatom). Első körben próbálj meg Wifi csatornát váltani.
+			<br>
+			<!--IBF.ATTACHMENT_413452-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: herhi1984  2010. február 16. 12:07</h4>
+			<p>és már csak azt kéne megtudnom, hogy azt hogyan kell váltani?<img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif">)<br>ámátőőr vagyok <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/annoyed.gif" style="vertical-align:middle" emoid=":S" border="0" alt="annoyed.gif"><br>(leírás? egyebek nincsenek meg az eszközhöz)<br>köszii, üdv
+			<br>
+			<!--IBF.ATTACHMENT_413548-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. február 16. 12:53</h4>
+			<p>Ha pontosítanád melyik Belkin típus, én is pontosítani tudnák. Általánosan a Wireless beállításoknál szokott letti, ott ahol a vezeték nélküli hálózat nevét (SSID) és egyéb beállításait pl. régiót lehet beállítani (channel vagy ilyesmi néven).
+			<br>
+			<!--IBF.ATTACHMENT_413550-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: herhi1984  2010. február 18. 13:45</h4>
+			<p>Hello Csaba!<br>Belkin F5D7230-4   a típusa, köszi
+			<br>
+			<!--IBF.ATTACHMENT_413660-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. február 18. 16:18</h4>
+			<p><span><a class="linkclass" href="http://192.168.2.1/">http://192.168.2.1</a>  (jelszó alapértelmezésben nincs.)</span><br>Wireless (menü)--&gt;Channel and SSID<br>Wireless channel: Auto (alapérték). Olybá tűnik, hogy automatikusan választ az adott csatorna leterhelésétől függően. De azért kipróbálhatod egy másik fix csatornával, hátha...
+			<br>
+			<!--IBF.ATTACHMENT_413679-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: grassm31987  2010. február 28. 23:34</h4>
+			<p>Sziasztok!<br><br>Alábbi a problémám amit nem tudok megoldani jó pár hónapja.<br><br>UPC Fiberpower 60/6 Modem:SB6120E Router:Edimax BR-6204wg 10/100 Hálókártyám:10/100/1000<br><br>Ha összekötöm és jól beállítok mindent akkor jobb esetben 15/6-os a netem, ha csak modemmel kötöm össze akkor simán 60/6. Minendt próbáltam, a legfrisebb firmware, kábelcsere, MAC cím különböző klónozása, de semmi eredmény. Régen a 25/3-as netemmel minden jó volt, bánom hogy lecseréltem. Ha tudtok valami ötletet  írjatok, vagy vegyek másik routert ami gigabites, csak félek hogy azzal se lesz jó.<br>
+			<br>
+			<!--IBF.ATTACHMENT_414495-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. február 28. 23:45</h4>
+			<p>Egy 60-as netnek mennie, egy 10/100-as WAN/LAN portokkal rendelkező router-en, elvileg nem kéne gigabites router. Mivel a firmware frissítés is megvolt, így mást már nem igazán tehtsz. Vagy kompatibilitási hiba, vagy egyszerűen csak ennyit bírt átereszteni a hardver. Próbáld ki egy másik router-el is, ha van rá lehetőség.
+			<br>
+			<!--IBF.ATTACHMENT_414496-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: herhi1984  2010. március 18. 21:55</h4>
+			<p>Csaba, a fentebb taglalt Belkin routeren beállítottam fix csatornát, sokkal jobb lett a helyzet, de még így is gyanúsan sokszor szakad meg a net...esetleg van még valami fontos, kiemelendő beállítás, amire figyelnem kéne?<img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/yikies.gif" style="vertical-align:middle" emoid=":o" border="0" alt="yikies.gif"> <br>köszönöm<br><br>Egy másik probléma: régi Fujitsu laptop, újrarakott XP-vel nem tud hálózathoz csatlakozni, próbálkozik, de nem megy neki (feltűnő probléma nem látszik)<img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/tongue.gif" style="vertical-align:middle" emoid=":P" border="0" alt="tongue.gif">...(ehhez a hálózathoz a többi laptop simán kapcsolódik)<br>Mi a tippetek a probléma okára?<br>köszi <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/ani_wink.gif" style="vertical-align:middle" emoid=";)" border="0" alt="ani_wink.gif">
+			<br>
+			<!--IBF.ATTACHMENT_415607-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. március 24. 20:05</h4>
+			<p>1. Nincs több ötletem, amivel stabilabbá lehetne tenni egy instabil wifi router-t. Kipróbálhatsz egy újabb firmware-t (ha van). Vagy vegyél jobb router-t. <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"> <br><br>2. És a tiéden kívül, más Wifi hálózat-hoz tud csatlakozni a szóban forgó laptop?
+			<br>
+			<!--IBF.ATTACHMENT_415955-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: herhi1984  2010. március 29. 18:07</h4>
+			<p>Csaba,<br>1-es pont oké, köszi:)<br>2-es pont: végre rá tudtam nézni a gépre, úgyhogy bementem egy burger kingbe <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/yikies.gif" style="vertical-align:middle" emoid=":o" border="0" alt="yikies.gif">, ott csatlakozott a wifihez... passz, hogy milyen beállítás lehet más a másik, működő laptophoz képest!?<br>kösz
+			<br>
+			<!--IBF.ATTACHMENT_416125-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. március 29. 20:01</h4>
+			<p>Szerintem annak a router-nek csöppet véres a torka, és cseppet sem szoftveres dolgokra gondolok...<br>Tehát látszik a vezeték nélkül hálózat, el is kezdi a csatlakozást... IP címet is kap a wifi adapter? Mik jelennek meg ekkor a router log-jában?
+			<br>
+			<!--IBF.ATTACHMENT_416131-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: herhi1984  2010. március 29. 21:06</h4>
+			<p>Ahha...igen, elkezdi a csatlakozást, aztán abbahagyja, és nem történik semmi. Az IP címes, ill log os kérdésre nem tudom hol találom a választ <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/yikies.gif" style="vertical-align:middle" emoid=":o" border="0" alt="yikies.gif"> hol?<img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/tongue.gif" style="vertical-align:middle" emoid=":P" border="0" alt="tongue.gif"><br>Most észrevettem annyi különbséget (a csatlakozni tudó másik laptophoz képest), hogy annak a hálózati kapcsolatok XP almenüben, a konkrét kapcsolatok alatt van egy olyan téma, hogy "internetátjárók", és az ikon neve pedig Wan Connection (BELKIN)...<img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/yikies.gif" style="vertical-align:middle" emoid=":o" border="0" alt="yikies.gif">  Ez mi lehet?
+			<br>
+			<!--IBF.ATTACHMENT_416133-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. március 29. 22:00</h4>
+			<p>Úgy tűnik ez a típus csak a tűzfaláról készít log fájlt, de azzal ez esetben semmire se megyünk. Mikor próbálkozik mit ír ki? Olyan mintha csatlakozna, és mégsincs net? Vagy van valami hiba üzenet? Ilyenkor milyen IP címeket ír ki a következő parancsra? :<br>Indísd el a Parancssor ablakot (Start--&gt;Futtatás--&gt;írd be:cmd majd [OK])<br><!--c1--></p><div class="codetop">KÓD</div><div class="codemain"><!--ec1-->ipconfig /all<!--c2--></div><!--ec2--> <br>Az Internet átjáró ikon nem hibajelenség, XP SP3 óta jelenik meg. A pontos szerepét én sem tudom.
+			<br>
+			<!--IBF.ATTACHMENT_416135-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2010. március 30. 8:07</h4>
+			<p>Csak annyi a szerepe, hogy nem kell kiturkálni az ip címét a cuccnak, hanem rá kell kattintani és jön a router beállító oldala.<br>Igazából vállalati környezetben van értelme, mert ott nem csak a routereket, hanem az összes uPnP menedzselhető eszközt megjeleníti.
+			<br>
+			<!--IBF.ATTACHMENT_416140-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: herhi1984  2010. március 30. 12:18</h4>
+			<p>Igen, olyan mintha csatlakozna, aztán egyszer csak abbahagyja a csatlakozást, hibaüzenet nélkül.<br>A parancsra meg nem írt ki IP-ket, ellenben a működő laptoppal!<br>A rossz gépen a hardvereket taglalja, meg, hogy "adathordozó leválasztva", és kb ennyi...összességében fele annyi a szöveg, mint a jó gépen:) Tehát a hálókártyákhoz írt fizikai címeken kívül semmi számérték.
+			<br>
+			<!--IBF.ATTACHMENT_416144-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. március 30. 12:56</h4>
+			<p>Nincs újabb driver az adapter-hez?
+			<br>
+			<!--IBF.ATTACHMENT_416145-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: herhi1984  2010. március 30. 13:27</h4>
+			<p>Nem működik így sem.
+			<br>
+			<!--IBF.ATTACHMENT_416146-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: hadan  2010. április 4. 14:09</h4>
+			<p>Helló!<br>Problémám van a HP 530-as laptopommal. A minap furcsán viselkedett a gép internet folyton szakadozott. Ha UTP kábelre kötöttem akkor minden oké volt de WiFi-n nem működött. A ro<b><!--coloro:#FF0000--><span style="color:#FF0000"><!--/coloro-->u<!--colorc--></span><!--/colorc--></b>ter rendben volt ezért fogtam és az eszközkezelőből eltávolítottam a WiFi drivert. Azóta nem tudom a laptopot kábel nélkül használni. Az adapterbeállítások szerint a hálózati kártya le va tiltva, nem tudom engedélyezni. Még egy furcsaság hogy a Netgear PC Cardommal tudok netre kapcsolódni de az ugyancsak Netgear USB WiFi kulcsal nem. Nem is látja a hálózati kártyáknál. <br><br>Ezt írja a windows ha diagnosztizálom a problémát:<br><span><a class="linkclass" href="http://img535.imageshack.us/img535/6245/img0002ie.jpg">http://img535.imageshack.us/img535/6245/img0002ie.jpg</a></span><br><br>A gép már nem garanciás  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/sad.gif" style="vertical-align:middle" emoid=":(" border="0" alt="sad.gif"> <br><br>Kösz előre is a válaszokat!<br><br><!--coloro:#FF0000--><span style="color:#FF0000"><!--/coloro-->Ez mit keresett az ismeretlen hibajelenségeknél? &lt;KGigi&gt;<!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_416344-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. április 4. 14:19</h4>
+			<p>Keresd meg az interneten a kártyádhoz való drivert, töröld driverestől a kártyát az eszközkezelőben, indítsd újra a gépet, majd tedd fel a drivert.
+			<br>
+			<!--IBF.ATTACHMENT_416345-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: hadan  2010. április 4. 15:53</h4>
+			<p>Azt elfelejtettem írni, hogy linuxon (CD-ről) sem működik.
+			<br>
+			<!--IBF.ATTACHMENT_416352-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. április 4. 16:09</h4>
+			<p>És előtte linuxon ment? Mert nekem pl. nem minden linux ismeri fel a wifimet.
+			<br>
+			<!--IBF.ATTACHMENT_416357-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: hadan  2010. április 4. 16:12</h4>
+			<p>Ment előtte csak fel kellett telepíteni a drivert (utp kell hozzá).
+			<br>
+			<!--IBF.ATTACHMENT_416360-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. április 4. 16:19</h4>
+			<p>Próbáld meg akkor úgy is. Ha nem megy, akkor döglött a wifi-lapka.
+			<br>
+			<!--IBF.ATTACHMENT_416364-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: hadan  2010. április 4. 16:43</h4>
+			<p>Nem megy... <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/sad.gif" style="vertical-align:middle" emoid=":(" border="0" alt="sad.gif"><br>Abból vajon lenne probléma ha kiszedném a wifi lapkát az alaplapból és úgy indítanám el?
+			<br>
+			<!--IBF.ATTACHMENT_416369-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. április 4. 17:15</h4>
+			<p>Ha ki lehet, akkor nem. De kötve hiszem, szerintem integrált.
+			<br>
+			<!--IBF.ATTACHMENT_416372-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: hadan  2010. április 4. 19:52</h4>
+			<p>Ki lehetne venni mert egy apró lapka. Valami hasonló:<br></p><div align="center"><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/EPABWO2.JPG" border="0" alt="IPB kép"></div><br><br><br>Megoldódott a probléma nem tudom hogyan de meg. Mondtam hogy feladom aztán kikapcsoltam. Bekapcsolásnál viszont már érzékelte hogy ott van. De nem ment ismét újraindítás és megy....<br><br>Kösz a segítséget!
+			<br>
+			<!--IBF.ATTACHMENT_416387-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Epimenides  2010. április 6. 11:08</h4>
+			<p>Sziasztok!<br><br>Nemrég vettem egy TL-WN721N wifi adaptert és a régi szolgáltatómtól rám maradt egy<br>WLA-5000ap . olvastam a wifi-topicban, hogy így a saját hálózatomat is létrehozhatom, de<br>valamit nem jól csináltam mert nem annak ellenére, hogy csatlakozom a saját hálózatomra netezni nem tudok.<br><br>Pedig fix ipre állítottam a hozzáférési pontot, u.arról az ip-ről az adapteremmel csatlakozni is tudok a hálózatomra,de a <br>böngészőből nem érem el a netet. <br><br>Ha meg automatikusra állítom az adapterem nem tudok csatlakozni a saját hálózatomhoz,<br>csak más hálózatokhoz, akkor pedig minden működik; böngésző , letöltés.<br><br>
+			<br>
+			<!--IBF.ATTACHMENT_416444-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. április 6. 11:19</h4>
+			<p>Nem teljesen érthető, fizikailag hogy van kiépítve a hálózat.<br>Hány számítógép, milyen operációs rendszerrel? Mi a jelenlegi Internetszolgáltatód és hogy csatlakozol hozzá (közvetlenül UTP kábellel,  router-el esetleg USB-ről)?<br><br>Amennyi leszűrhető: helyi hálózatot akarsz Internet kapcsolattal. Az AP-hez csatlakozol az USB-s wifi adapterrel.
+			<br>
+			<!--IBF.ATTACHMENT_416446-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Epimenides  2010. április 7. 13:56</h4>
+			<p>Jelenleg nincs internet szolgáltatóm.<br><br>1db asztali gép<br>rajta windows xp<br>1db Tp link TL wn721n wifi adapter<br>1db ovislink wla 5000ap hozzáférési pont+antenna<br>1 db via ethernet adapter<br><br>Olvastam a wifi-s topicban,  a saját wifi-s hálózathoz nem kell más mint egy wifi adapter+ 1 hozzáférési pont.Remélem eddig még jól értettem.<br><br>Elvégeztem a beállításokat<br>1. helyi háló fix ip<br>2. AP-nak fix ip <br>11g/b mód<br>titkosítás<br>metnés<br>helyi háló átjáró+dns az AP IP címére állítottam, a vezeték nélküli hálózat fix ip-t adtam neki/nincs ütközés/ átjáróját és dns-ét is az AP IP címére, de a AP által létrehozott wifi hálózatomra, bár l tudok csatlakozni, netezni nem.<br><br>Ha a vezetéknélküli hálózatot aut. IP címre állítom, akkor más wifis hálózatokra tudok csatlakozni és netezni is.
+			<br>
+			<!--IBF.ATTACHMENT_416527-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. április 8. 15:13</h4>
+			<p><!--quoteo(post=416444:date=2010. április 6. 12&#58;08:name=Epimenides)--></p><div class="quotetop">IDÉZET(Epimenides @ 2010. április 6. 12:08) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=416444"><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->...olvastam a wifi-topicban, hogy így a saját hálózatomat is létrehozhatom, de valamit nem jól csináltam mert nem annak ellenére, hogy csatlakozom a saját hálózatomra <b>netezni nem tudok.</b> <!--QuoteEnd--></div><!--QuoteEEnd--><!--quoteo(post=416527:date=2010. április 7. 14&#58;56:name=Epimenides)--><div class="quotetop">IDÉZET(Epimenides @ 2010. április 7. 14:56) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=416527"><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->... de a AP által létrehozott wifi hálózatomra bár l tudok csatlakozni, netezni nem. Ha a vezetéknélküli hálózatot aut. IP címre állítom, akkor<br>más wifis hálózatokra tudok csatlakozni és netezni is.<!--QuoteEnd--></div><!--QuoteEEnd--><!--quoteo(post=416527:date=2010. április 7. 14&#58;56:name=Epimenides)--><div class="quotetop">IDÉZET(Epimenides @ 2010. április 7. 14:56) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=416527"><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Jelenleg <b>nincs internet szolgáltatóm.</b><!--QuoteEnd--></div><!--QuoteEEnd--> <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/huh.gif" style="vertical-align:middle" emoid=":huh:" border="0" alt="huh.gif"> <strike>És akkor mégis honnan a bánatból jön a Internet, amihez néha tudsz csatlakozni?  </strike> <br><br><strike>Jelenleg így néz ki?</strike> <br><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/topologia.png" border="0" alt="IPB kép"><br><br><b>Szerk.:</b> <br>Bocs, attól tartok én értettem félre. Szóval a helyi hálózatod csak akkor működik, ha a Wifi adaptered-nek fix IP-ket adsz. Így viszont más hálózatokon nem tudsz netezni, ahol DHCP kliensnek kell lenned, és kényelmetlen mindig állítgatni.<br><br>Ez esetben engedélyezd az AP-d DHCP szerverét, és foglalj le egy FIX IP címet a Wifi adaptered MAC címe alapján, természetesen a kiosztható tartományon belül:<br><br><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/airliveap5x.png" border="0" alt="IPB kép"><br><br><!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Hálózati adapterek (PCI, USB, PCMCIA) MAC címének listázásához:<br>Start -&gt; Futtatás -&gt;cmd<br>Adjuk ki a köv. parancsok valamelyikét: <br>ipconfig /all<br>getmac /v (kivéve Win XP home)<!--QuoteEnd--></div><!--QuoteEEnd-->
+			<br>
+			<!--IBF.ATTACHMENT_416547-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: szabszucs  2010. április 8. 17:22</h4>
+			<p>Sziasztok, egy gyors kérdésem lenne: Adott az UPC net, a router mindegy, anélkül is hibát produkál a gép. Tehát, ha bekapcsolom a gépet, nincs internet, bármit csinálok. Eltávolítom a Realtek driver-t (az alaplapon lévő csatlakozóét ugye, hirtelen nem jut eszembe a neve:) ), ujraindítom a gépet, feltelepíti, ekkor ismét van net. De ha megint újraindítom, megint nincsen, és megint az illesztőprogramot kell újratelepítenem, hogy legyen. Mi lehet a probléma és a megoldás? Köszönöm előre is. (Opr.: Win 7 Ultimate x64)
+			<br>
+			<!--IBF.ATTACHMENT_416551-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2010. április 8. 17:56</h4>
+			<p>Szerintem nem az a kártya van regisztrálva a upc-nél.<br><span>Látogass el a <a class="linkclass" href="http://pcreg.upc.hu/">http://pcreg.upc.hu</a> -ra.</span><br>Ez akkor is megy, ha nincs más net, persze ha regisztrációs problémád van.
+			<br>
+			<!--IBF.ATTACHMENT_416553-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Epimenides  2010. április 8. 18:56</h4>
+			<p>Kedves Csaba!<br><br>Nincs két pc, csak egy. <br>1 db gép, <br>1 db asztali szgép.<br>Nincs semmilyen internet szolgáltatóm. Ezen a gépen van a wireless kártya és az AP is. <br>Azt hittem, hogyha az AP-t beállítom , Ap módra, + elvégzem a megfelelő beállításokat, akkor azzal a saját wifis hálózatomat hozom létre, <b>- ez lehetséges? -</b> amin sokkal gyorsabban tudok netezni, ha el tudom érni a helyi hálón keresztül <br>a wireless kártyámmal az AP-t. Ezen az 1 db asztali gépen beállítottam az 1db pcm helyi átjárójának az ip címét fixre. Aztán beállítottam az AP-t is Fix IP-re. Megadtam a vez.-nélküli hál. SSID címét, az AP szórja a jelet. Beállítottam a wifi kártya ip jét abba a tartományba ahol az AP IP címe van.A helyi hálózat és a wifi kártya "dns+átjáró" címeit az AP IP címére állítottam be.<br>Látja a wifi kártya ezt a wifis hálózatot, <b>-&gt; ha egyáltalán az? </b> fel is tud rá csatlakozni a wifi kártya, de netezni nem tudok ezen a saját kézzel konfigurált általam létrehozott vezetéknélküli hálózaton.<br>Azért gondoltam az AP használatára is, mert vettem egy wifi antennát, és a fránya wireless adapteren nincs antenna csatlakozó. Arra gondoltam  tudok majd csatlakozni az AP-re, a wifis kártyámról és az AP segítségével /amelyre az antennát is csatlakoztattam/ azokra a wifis hálózatokra is amiket a gyengécske wifi kártya képtelen meglátni <b> -&gt; ez alaptalan feltevés volt tőlem?</b> és vagy arra a wifis hálózatra aminek a jelét szórja az AP.<br><br>Biztos valamit elszúrtam, ezért szerettem volna segítséget kérni.<br>Vagy félreértettem a wifis topicban leírtakat.<br><br><!--coloro:#CC0000--><span style="color:#CC0000"><!--/coloro-->Nem kell minden leírott 3-4 szó után enter-t ütni! Ügyelj a helyesírásodra, és kerüld a rövidítéseket! &lt;Csaba_#&gt;<!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_416559-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: szabszucs  2010. április 8. 19:17</h4>
+			<p>De, ez a kártya van regisztrálva, tegnap kötötték be, és akkor még működött is rendesen...ettől függetlenül elképzelhető hogy ezzel van a probléma, de szerintem inkább szoftveres hiba lehet...
+			<br>
+			<!--IBF.ATTACHMENT_416565-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. április 8. 19:24</h4>
+			<p><span>Próbálkoztál már újabb <a class="linkclass" href="http://www.realtek.com.tw/DOWNLOADS/">http://www.realtek.com.tw/DOWNLOADS/</a> Mert az említett törölgetős módszereddel, a Win 7 mindig a sajátját tölti vissza.</span><br><br><b>@Epimenides</b><br>Továbbra sem teljesen százas, hogy mit akarsz elérni, ugyan azon számítógépen két különböző wifi egységgel. Egy dolog biztos az AP AP módban nem fog neked semmilyen jelet felerősíteni (ehhez repeater mód kell. De felhívom a figyelmet az AP client mód használatára is.  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/arrow.gif" style="vertical-align:middle" emoid=":nyíl:" border="0" alt="arrow.gif"><span> <a class="linkclass" href="http://www.pcworld.hu/forum/index.php?s=&showtopic=13299&view=findpost&p=401392">http://www.pcworld.hu/forum/index.php?s=&amp;showtopic=13299&amp;view=findpost&amp;p=401392</a></span><br><br>A TP-Link TL-WN721N -helyett pedig a TP-Link TL-WN722N -et (vagy NC-t) kellett volna választanod, csak egy bő ezres a különbség, de ezen legalább van antennacsatlakozó is.
+			<br>
+			<!--IBF.ATTACHMENT_416568-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: szabszucs  2010. április 8. 20:04</h4>
+			<p>Találtam megoldást, és köszönöm a segítséget <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"><br><br>"A megoldás az ismeretlen hálózat problémájára Windows 7 alatt:<br><br>Eddig úgy néz ki hogy a Bonjour DNS Responder Service csinálja az ismeretlen hálózati problémát.<br><br>Megoldás:<br>Start menü - Futtatás (keresés programokban és fájlokban) - beírni: services.msc - majd enter<br><br>Legfelül az alábbi sor található:<br>##Id_String2.6844F930_1628_4223_B5CC_5BB94B879762## <br>- 2 klikk erre a sorra, majd Indítás típusa: LETILTVA - ezt választani<br><br>Letiltás után már minden indításnál van internetkapcsolat.) "
+			<br>
+			<!--IBF.ATTACHMENT_416569-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: herhi1984  2010. április 16. 14:32</h4>
+			<p>Az előző oldalon taglalt régi fujitsu laptop kapcsolódási problémáihoz szeretnék még annyit fűzni, egyúttal kérdezni is, hogy a hálózatok között miért nem látja a sajátunkat? Panelban vagyunk, egy új laptop lát kb 10-et, simán csatlakozik a sajáthoz is, de a régi fujitsu erre nem képes.... (kb CSAK kettőt lát, azok között nincs a saját, valamint  lakótárs költözése miatt lett egy router csere is, Belkinről TP-Linkre, de ez sem segített) <br>És azt se feledjük, hogy egy burger kingben, ill. egy másik lakásban csatlakozott simán a helyi wifikhez....<img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/yikies.gif" style="vertical-align:middle" emoid=":o" border="0" alt="yikies.gif"> <br>Van tippetek a probléma okára? köszi <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif">
+			<br>
+			<!--IBF.ATTACHMENT_416940-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2010. április 16. 14:55</h4>
+			<p>Szoftveres probléma van a gépen, vagy egyszerűen gáz van a hálózati kártyával (régi/hibás/gyenge).
+			<br>
+			<!--IBF.ATTACHMENT_416942-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: herhi1984  2010. április 16. 17:28</h4>
+			<p>Oké, köszönöm! Gondolom marad a szoftveres, ha más hálózathoz simán elég a kártya. (pl "utcai" burger king wifi)
+			<br>
+			<!--IBF.ATTACHMENT_416953-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2010. április 16. 17:31</h4>
+			<p>Indíts egy Ubuntu Live-ot, hátha felismeri a kártyádat, és próbáld ki. Ha nem ismeri, akkor nyilván nem kell kipróbálni. A driver most hogyan van fent? Telepítésre került a saját vezérlőprogramja, vagy a Windows-é van használatban? Bármelyik is legyen, meg lehetne próbálni a másikat.
+			<br>
+			<!--IBF.ATTACHMENT_416955-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: diffuzor  2010. április 21. 18:53</h4>
+			<p>Szinte minden órában egyszer leáll az internet. Ha újraindítom a gépet, akkor ismét van. Miért?<br><br>Előre is köszönöm!
+			<br>
+			<!--IBF.ATTACHMENT_417267-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. április 21. 19:07</h4>
+			<p>Ezzel nem sokra megyünk. Milyen típusú kapcsolat?<br><br>1) ADSL, kábelnet, egyéb?<br>2) Van router?<br>3) Vezetékes vagy vezeték nélküli kapcsolat?
+			<br>
+			<!--IBF.ATTACHMENT_417269-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: diffuzor  2010. április 21. 19:09</h4>
+			<p>Kábelinternet. Mi az a router?
+			<br>
+			<!--IBF.ATTACHMENT_417270-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. április 21. 19:19</h4>
+			<p>Na ez így gázos lesz. Ha több számítógép van, akkor a router felel azért, hogy minden számítógépen legyen internet, és a gépek közötti hálózati forgalom is ezen keresztül megy. Fizikailag egy modemhez hasonló doboz, csak sok kábelnek való luk van rajta. Az is elég, ha megmondod, hogy a modemből jövő kábel közvetlenül a gépbe van-e dugva.<br><br><!--coloro:#FF0000--><span style="color:#FF0000"><!--/coloro-->Kérlek, írj rendesen!<!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_417271-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: diffuzor  2010. április 21. 19:24</h4>
+			<p>Csak egy számítógép van a modemhez kapcsolva.<br><br>Próbálok rendesen írni de nem magyar az anyanyelvem, úgyhogy előre is elnézést.
+			<br>
+			<!--IBF.ATTACHMENT_417272-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. április 21. 19:59</h4>
+			<p>Értem. Akkor egyszerű lesz diagnosztizálni. Amikor elmegy a net, a kapcsolatot továbbra is élőnek jelzi?<br><br>Amikor éppen úgy látod, hogy nincsen net, próbáld meg parancssorban kiadni a <b>ping -t pcworld.hu</b> parancsot. Mindenütt egy szóköz van. Van válasz a szervertől?
+			<br>
+			<!--IBF.ATTACHMENT_417275-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: diffuzor  2010. április 21. 20:13</h4>
+			<p>Nem jelzi élőnek, mert egyszerűen megszakad, újraindítom a gépet, akkor megint van kb. 1 órát, néha kettőt, néha 45 percet, de minden újraindítás után van kapcsolat. Próbáltam, hogy kihúzom a modemet az áramból vagy a kompiból, de akkor sem jön vissza a kapcsolat. De mindig visszajön, ha újraindítom.
+			<br>
+			<!--IBF.ATTACHMENT_417277-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. április 21. 20:34</h4>
+			<p>De úgy szakad meg, hogy bontódik a kapcsolat, és nem tudsz újra csatlakozni, vagy a kapcsolat él, de nem töltenek be az oldalak? Ha utóbbi, akkor lenne jó ilyenkor pingelni egyet.
+			<br>
+			<!--IBF.ATTACHMENT_417278-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: diffuzor  2010. április 21. 20:37</h4>
+			<p>Úgy szakad meg, hogy nem tudok újrakapcsolódni. Kiírja, nincs kapcsolat, megszakadt, restart és minden ok, egy ideig.
+			<br>
+			<!--IBF.ATTACHMENT_417280-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. április 21. 20:48</h4>
+			<p>Töröld a kapcsolatot, majd az eszközkezelőben töröld a hálózati kártyát. A felugró ablakban legyen kipipálva a driver törlése is. Ha külön kellett hozzá drivert telepíteni, akkor ezelőtt a gyártó honlapjáról szedd le a legfrissebbet. Újraindítás után mehet fel a driver (illetve ha nem kell, akkor magától felismeri), és hozd létre újra a kapcsolatot. Meglátjuk, hogy továbbra is csinálja-e.
+			<br>
+			<!--IBF.ATTACHMENT_417281-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: mazda6diesel  2010. május 17. 17:49</h4>
+			<p>Sziasztok!<br><br>Olyan dolog történt, hogy egy asus router setup-jában szerettem volna beállítani a kébelnet adatait, beállítottam mindent majd a beállítások alatt a lan ip-hez beírtam a szolgáltatótól kapott statikus íp címet, újraindítottam, azóta viszont be se tudok lépni a router menüjébe és még net sincs... Mi lehet a baj?
+			<br>
+			<!--IBF.ATTACHMENT_418692-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. május 17. 18:01</h4>
+			<p><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/arrow.gif" style="vertical-align:middle" emoid=":nyíl:" border="0" alt="arrow.gif"> Hard reset!<br><br>Amúgy, milyen kábelszolgáltatónál vagy? Biztos, hogy nem dinamikusak az IP-k? (Még az is előfordulhat, hogy MAC szerint is azonosít.)
+			<br>
+			<!--IBF.ATTACHMENT_418693-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KeLa  2010. május 17. 18:02</h4>
+			<p>A hiba pontos okát nehéz meghatározni. Lehet meghibásodás, hibás adat megadás és még sok minden. Mivel nem tudsz belépni, így nem is lehet megtudni egykönnyen.<br>Ha a routeren található reset gomb (lyuk ahova pl. gémkapocs befér?) reseteled a kütyüt és a gyári beállításokkal betudsz lépni. Ez a jobbik eset, a másik eshetőség a meghibásodás. Ekkor a csere segít. Ha nem garis már, úgy többe kerül.<br><br>Nekünk kukás lett egy Dlink router, mert elfelejtették a jelszót a reset meg nem működött.
+			<br>
+			<!--IBF.ATTACHMENT_418694-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: mazda6diesel  2010. május 17. 18:11</h4>
+			<p>HFC Network a szolgáltatóm, statikus IP címem van, mindig ugyan az. Megpróbálom a resetet... kettő gomb van rajta amivel esetleg lehet, az egyik egy piros szinű EZSetup felirtú a másik pedig egy Restore feliratú. Melyikkel érdemes?
+			<br>
+			<!--IBF.ATTACHMENT_418695-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. május 17. 18:54</h4>
+			<p>A "Restore" lesz az, érdekes különcködés ez az Asus-tól szinte mindig reset szokott lenni. Húzd ki az árforrást, nyomd meg, helyezd áram alá, majd kb 8-10 másodperc múlva mikor eltűnnek a ledek engedd el.
+			<br>
+			<!--IBF.ATTACHMENT_418698-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2010. május 17. 18:54</h4>
+			<p>mindig ugyanaz != statikus cím<br><br>Az EZSetup nem lehet, így a másik lesz.
+			<br>
+			<!--IBF.ATTACHMENT_418699-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. május 17. 18:59</h4>
+			<p><span><a class="linkclass" href="http://www.hfcnetwork.hu/pg019.html">http://www.hfcnetwork.hu/pg019.html</a> Valamit akkor elírhattál, amitől behülyült a router, reset -eld ki és kezd elölről.
+			</span><br>
+			<!--IBF.ATTACHMENT_418701-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: mazda6diesel  2010. május 17. 19:07</h4>
+			<p>Már próbáltam mindenhogy de nem jó. Viszont az asus firmware restoratin tud rá tölteni adatot csak mindig kiírja hogy várjak még újraindul, csak az a baj hogy nem indul újra... Újraindítottam magamtól de ha beírom a 192.168.1.1-et nem lát semmit:(
+			<br>
+			<!--IBF.ATTACHMENT_418702-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. május 17. 19:14</h4>
+			<p>Pontosan milyen típusú Asus router ez?
+			<br>
+			<!--IBF.ATTACHMENT_418703-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: mazda6diesel  2010. május 17. 19:28</h4>
+			<p>Asus WL-520GC
+			<br>
+			<!--IBF.ATTACHMENT_418704-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. május 17. 19:41</h4>
+			<p>Úgy tűnik, csak 5 másodpercig kell nyomni a restore-t, csináld inkább áram alatt. Előtte húzz ki belőle minden UTP kábelt. Ha sikerül a reset próbáld úgy beírni az IP címeket, hogy nincs csatlakoztatva a szolgáltató eszköze, csak a számítógép a LAN1-ben. Miután elmentetted, és újraindul a router csak utána dugd be.<br><br>Ugye visszaállítottad a számítógéped hálókártyájának TCP/IP beállításait automatikus címkérésre?
+			<br>
+			<!--IBF.ATTACHMENT_418706-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: mazda6diesel  2010. május 18. 15:49</h4>
+			<p>Amikor megnyomom a restore-t akkor utána villog az "air" led, ez jelent mit?<br><br><br>Ui: <br><br>Sikerült!! Köszönöm!<br><br>Annyit kérdeznék még, hogyan tudom beállítani a DHCP szervert?<br>Mert itt csak a DNS Server1-et tudom írni a DNS Server2-őt nem:<br><br><span>Itt egy <a class="linkclass" href="http://kephost.hu/image-5CEC_4BF2AC03.jpg">http://kephost.hu/image-5CEC_4BF2AC03.jpg</a>
+			</span><br>
+			<!--IBF.ATTACHMENT_418742-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2010. május 18. 16:24</h4>
+			<p>Jónak tűnik a DHCP, de ha rám hallgatsz, akkor a DD-WRT-t még ma felpakolod.
+			<br>
+			<!--IBF.ATTACHMENT_418744-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: mazda6diesel  2010. május 18. 17:27</h4>
+			<p>Ez valami, firmware az Asus routerekhez, ami letölthető?
+			<br>
+			<!--IBF.ATTACHMENT_418761-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. május 18. 19:18</h4>
+			<p>Ez egy Open source Linux alapú firmware, de nem csak Asus-ok-hoz. Gyakorlatilag jócskán kibővíti a gyári firmware tudását, és stabilabb is annál (többnyire). Szóval érdemes elgondolkodni a használatán.
+			<br>
+			<!--IBF.ATTACHMENT_418767-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: mazda6diesel  2010. május 19. 9:17</h4>
+			<p>Köszönöm az eddigi segítségeket!<br><br>Az a helyzet most, hogy a laptopon csak úgy van net, ha össze van kötve kábellel. Wifi-n nem. Egy másik laptop látja a routert. A vezeték nélküli hálózati kártya tulajdonságai között beállítottam, hogy a win kezelje a vezeték nélküli hálózatokat, mindenféle titkosítás elől kivettem a pipát, de nem lát semmit. A hálózatok listájánál ott a router neve de egy piros x van mellette és nemtudok sehogy sem kapcsolódni hozzá. Ha a vezeték nélküli hálózat ikonra kattintok, azt írja hogy nincs elérhető vezeték nélküli hálózat, hiába frissítem. Hol lehet a hiba?
+			<br>
+			<!--IBF.ATTACHMENT_418792-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Kisszabó  2010. május 19. 9:38</h4>
+			<p>Csak úgy hirtelen: a WiFi szabványok ( b, g, n) egyformák?<br>
+			<br>
+			<!--IBF.ATTACHMENT_418793-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. május 19. 9:47</h4>
+			<p>Már miért lennének egy formák?<br><br><b>@mazda6diesel</b> <br><br>Azzal a másik laptoppal csatlakozni is tudsz, és van is Internet?
+			<br>
+			<!--IBF.ATTACHMENT_418794-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Kisszabó  2010. május 19. 10:02</h4>
+			<p>Találkoztam már olyannal, hogy a router N-re volt állítva a noti pedig csak G-t tudott. Nem is talált hálózatot.
+			<br>
+			<!--IBF.ATTACHMENT_418796-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. május 19. 10:53</h4>
+			<p>Ez teljesen érthető, hiszen a G-s adapter nem képes felvenni egy N-es AP sebességét. Ezért szokás az N-es AP-ket b/g/n mixed mode -ra állítani, hogy az N-eseken kívül más klienseink is vannak.
+			<br>
+			<!--IBF.ATTACHMENT_418800-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Kisszabó  2010. május 19. 11:07</h4>
+			<p>Bocs rosszul fogalmaztam meg a kérdést <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/blush.gif" style="vertical-align:middle" emoid=":upsz:" border="0" alt="blush.gif"> . Én a mazda6diesel problémájára (hátha a beállítások nem jók) céloztam.<br><!--coloro:#666666--><span style="color:#666666"><!--/coloro-->Azzal én is tisztában vagyok, hogy a szabványok egyformák (elméletileg <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/twisted.gif" style="vertical-align:middle" emoid=":démonikacaj:" border="0" alt="twisted.gif"> )<!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_418801-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. május 19. 11:14</h4>
+			<p>Ha piros X van a hálózat neve mellett, akkor próbáld meg kitörölni a hálózat beállításait, aztán újra csatlakozni.
+			<br>
+			<!--IBF.ATTACHMENT_418802-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: mazda6diesel  2010. május 19. 15:15</h4>
+			<p><!--quoteo(post=418794:date=2010. május 19. 9&#58;47:name=Csaba_#)--></p><div class="quotetop">IDÉZET(Csaba_# @ 2010. május 19. 9:47) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=418794"><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Már miért lennének egy formák?<br><br><b>@mazda6diesel</b> <br><br>Azzal a másik laptoppal csatlakozni is tudsz, és van is Internet?<!--QuoteEnd--></div><!--QuoteEEnd--><br><br>Igen másik laptop látja!<br><br>A router mixed mode-ban működik.<br><br>Hogyan kell kitörölni a hálózat beállításait?
+			<br>
+			<!--IBF.ATTACHMENT_418818-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. május 19. 17:18</h4>
+			<p>Milyen oprendszer?
+			<br>
+			<!--IBF.ATTACHMENT_418833-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: mazda6diesel  2010. május 19. 17:53</h4>
+			<p>Win XP 32bit.
+			<br>
+			<!--IBF.ATTACHMENT_418834-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. május 19. 18:05</h4>
+			<p>A hálózati kapcsolatoknál a Wifi tulajdonságok paneljén valamelyik fülön megtalálod a beállított vezeték nélküli kapcsolatokat. Ott lesz törlés is. Bocsánat a ködös leírásért, évek óta nem láttam XP-t.
+			<br>
+			<!--IBF.ATTACHMENT_418836-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: mazda6diesel  2010. május 21. 17:08</h4>
+			<p>Hiába törlöm ki a vezeték nélküli kapcsolatokat, nem történik semmi. Viszont észrevettem azt, hogy minden újrindítás után nem indul el a "konfigurációmentes vezeték nélküli hálózat". Ha kézzel elindítom sikerül csatlakozni, de újrindítás után nem indul el pedig automatikusra van állítva. Az msconfig-ban a szolgáltatások fülön belül is be van pipálva. Hogyan lehetne elérni, hogy mindig automatikusan induljon el?
+			<br>
+			<!--IBF.ATTACHMENT_418958-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. május 21. 17:09</h4>
+			<p>A hálózati kártya tulajdonságainál ki kell pipálni, hogy a Windows kezeli a kapcsolatot.
+			<br>
+			<!--IBF.ATTACHMENT_418959-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. május 21. 17:21</h4>
+			<p>A Wifi adapter saját Utility-je szokott még bekavarni, ami a driver-el együtt kerül fel. Célszerű ezt is letiltani az msconfig -ban.
+			<br>
+			<!--IBF.ATTACHMENT_418961-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: mazda6diesel  2010. május 22. 15:00</h4>
+			<p>Ezt milyen néven találom meg?<br>
+			<br>
+			<!--IBF.ATTACHMENT_419018-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. május 22. 15:29</h4>
+			<p>Nem tudom előre, ez gyártófüggő. Nézz olyat ami utalhat ilyesmire, ha nem az volt az legfeljebb visszakapcsolod.
+			<br>
+			<!--IBF.ATTACHMENT_419019-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: tamas1968  2010. július 7. 10:30</h4>
+			<p>Üdvözlök mindenkit!<br>Segítséget szeretnék kérni,hogy tudnék nyelvet választani a Gigabyte Wireless Router 108/54Mbps GN-B49G típusú routernál, ugyanis resetelés után kínai vagy valami hasonló nyelven van írva az ip-re való bejelentkezés után,és így nagyon nehéz beállításokat elvégezni.Köszönöm a előre is a válaszokat.
+			<br>
+			<!--IBF.ATTACHMENT_421450-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. július 8. 18:21</h4>
+			<p>Reset -eld ki! Szerintem angolnak kéne lenni az alapértelmezett nyelvnek.
+			<br>
+			<!--IBF.ATTACHMENT_421571-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: tiva77  2010. július 13. 10:23</h4>
+			<p>sziasztok<br><br>Van egy TP-Link 524 es WIFI routerem . A wifi részével van nekem gondom hogy  a ASUS A6R laptop belső wifi vevője nem érzi a router jelét. Ugyanakkor van egy USB-s vevőm amivel ha rácsatlakozok szépen müködik  a net. Szóval a router jonak látszik. Ugyanakkor ezzel a laptoppal más wifi hálozatokat lehet látni ha elviszem magammal egy utra de itthon semmit sem érzékel.   És amikor megvettem a routert kb egy jó darabig müködött a laptop vevője is.  Mi lehet a probléma? Előre is köszi a segítségeket!<br><br>üdv : Tiva<br>
+			<br>
+			<!--IBF.ATTACHMENT_421840-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. július 13. 10:25</h4>
+			<p>Haldoklik a vevő, esetleg véletlenül letiltottad az adott hálózatot. Érdemes lenne megnézni, hogy egy Ubuntu LiveCD-vel tudsz-e csatlakozni.
+			<br>
+			<!--IBF.ATTACHMENT_421841-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: tiva77  2010. július 13. 11:13</h4>
+			<p>hello<br><br>A laptop vevője más hálózatokban gond nélkül müködik, az itthonit nem érzékeli sajnos. Most majd kérek kölcsön egy másik laptopot aztán megnézzük az érzi e az itthoni hálozatot.
+			<br>
+			<!--IBF.ATTACHMENT_421844-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. július 13. 11:55</h4>
+			<p>Ettől még lehet probléma a vevővel. Közben eszembe jutott még valami. Lehet, hogy a laptop olyan szabványt használ, amit a router nem enged, vagy fordítva. Pl. lehet, hogy a routerben le van tiltva az N-es wifi. Mondjuk ettől még a hálózatot látnia kéne. <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/annoyed.gif" style="vertical-align:middle" emoid=":S" border="0" alt="annoyed.gif">
+			<br>
+			<!--IBF.ATTACHMENT_421846-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. július 13. 19:04</h4>
+			<p>A router-en: Hard reset --&gt; firmware frissítés --&gt; Újrakonfigurálás.<br>A kliensen: Wifi és chipset driver frissítés.<br><br>Mindig ezzel kell kezdeni, mert sok időt lehet vele spórolni...<br>Amúgy a Wifi adapter gyári csatlakozás kezelőjét használod, vagy a Windowsét (WZC)?
+			<br>
+			<!--IBF.ATTACHMENT_421861-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: tiva77  2010. július 13. 22:38</h4>
+			<p>hello<br><br>A routeren reset és ujrakonfigurálás megvolt utánna ujra müködött a laptop vevője addig amig ujra nem lett inditva a laptop. Most már hiába csinálom meg ugyanezt sosem müködik. A laptopon  WIFI vevő gyári programjával és a WZC-vel is próbáltam.
+			<br>
+			<!--IBF.ATTACHMENT_421872-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. július 14. 11:26</h4>
+			<p>Ezért mondtam a LiveCD-t. Gyorsabb lenne, mint a driverekkel barkóbázni.
+			<br>
+			<!--IBF.ATTACHMENT_421880-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: tiva77  2010. július 14. 20:54</h4>
+			<p>Töltöttem le egy Ubuntu Live CD-t. Az én asztali gépem bebootól róla viszont a laptop nem.Szóva ezt így nem tudtam megpróbálni. Ma hoztak másik laptopot is és az is jol látja a wifi hálozatomat. Most már tényleg nem értem ezt az egészet. Az lesz a vége hogy szerzek a laptophoz egy külsö usb s vevőt és használom arról.
+			<br>
+			<!--IBF.ATTACHMENT_421899-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: tiva77  2010. július 20. 19:09</h4>
+			<p>Közben sikerült megoldani a problémát! A laptop nál a vezetéknélküli hálozatoknál ki volt tiltva az itthoni hálózat neve! A tiltás kitörlése óta jol müködik a wifi net  a laptopon is.<br><br>üdv : Tiva
+			<br>
+			<!--IBF.ATTACHMENT_422152-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. július 20. 19:10</h4>
+			<p><!--quoteo(post=421841:date=2010. július 13. 11&#58;25:name=KGigi)--></p><div class="quotetop">IDÉZET(KGigi @ 2010. július 13. 11:25) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=421841"><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->esetleg véletlenül letiltottad az adott hálózatot<!--QuoteEnd--></div><!--QuoteEEnd--><br> <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/roll.gif" style="vertical-align:middle" emoid=":hááát:" border="0" alt="roll.gif">
+			<br>
+			<!--IBF.ATTACHMENT_422154-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: otoslaci  2010. július 25. 16:08</h4>
+			<p>Sziasztok!<br><br>Nekem a következő gondom lenne és remélem találok itt rá megoldást a segítségetekkel.<br>Durván 1 hónappal ezelőtt kötötték be a netet a T-Home-osok, szereztem 1 switchet mert itthon 2 gép van és meg is osztódott a net, semmi baj nem volt nálam , de úgy 3 nappal ezelőtt elkezdett ledobálni a net.Eltelt 1 kis idő a bekapcsolás után, neteltem és 1x csak kiírta hogy a kapcsolat nem jött létre vagy korlátozott ezt játsza immáron 3 napja.Megnéztem a hálózati kapcsolat részleteit és max 1 órás a bérleti jogom, miután lejár ez az idő kiírja a korlátozott kapcsolati problémát.Hiába indítom újra mindig csak 1 órás lesz a bérleti jog! <br>Kérlek benneteket segítsetek ez ügyben hogy mi lehet a probléma.<br>előre is köszönöm
+			<br>
+			<!--IBF.ATTACHMENT_422370-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. július 25. 16:36</h4>
+			<p>Felejtsd el a Switch -et, mert nem Internetmegosztásra találták ki. Vegyél helyette inkább Router-t és nem lesznek ilyen "vászonproblémáid".
+			<br>
+			<!--IBF.ATTACHMENT_422371-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: iownzyou  2010. augusztus 7. 12:18</h4>
+			<p>Sziasztok !<br><br>Az alábbiakban kérnék supportot.<br>Márciusban átálltam T-home 8 mbites csomagról 15 mbitesre.  Ping jó volt, letöltés jött olyan 12 mbittel ( elég messze vagyok a központtól ). Kb. júniustól elkezdett szakadozni a net, volt hogy 20 percenként, de volt, hogy bírta fél napig is ( modem: D-link ADSL2+ DSL-360R ; router: US Robotics USR 8054 ), ha újraindítottam a routert akkor visszajött a net. A modem nagyon meleg volt amúgy. Routert kiiktatva közvetlenül bekötöttem netet a gépbe, de a szakadozás így is fennállt. Szereztem kölcsönbe egy másik modemet ( Huawei SmartAX MT800u-T ), ezzel nem szakadt a net csak játék közben "lagolt" elég rendesen, ill. a letöltési sebesség visszaesett  6-7 mbitre. Elvileg akkor nem a router a rossz, hanem a modem vagy a net szolgáltatás. Bejelentettem a hibát, modem cserét kértem, de csak ugyanazt a típust tudták adni, a hiba is maradt ugyanolyan. Megint hibabejelentés, azt mondták, hogy akkor visszarakják 5 mbitre ( most már csak 5 vagy 15 mbites csomag van ), aminek nem igazán örülnék. <br>Amennyiben jól gondolom a modem elveszíti a netet, újracsatlakozik, kapok új ipt. A router nem látja és újra kell indítani, hogy meglegyen az új ip, így a net. Olyan megoldást keresnék - ha egyáltalán létezik -, hogy a router ha érzékeli, hogy nincs net, automatikusan újracsatlakozzon és ne kelljen manuálisan restartolni állandóan. <br>Előre is kösz a helpet.
+			<br>
+			<!--IBF.ATTACHMENT_423075-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. augusztus 7. 13:20</h4>
+			<p><span>Nekem dettó ugyan ez a problémám volt, az én vonalam sem bírta a 15 Mbps -ot. És a tiédhez hasonló hibajelenséget produkálta. <a class="linkclass" href="http://www.pcworld.hu/forum/index.php?s=&showtopic=13299&view=findpost&p=417511">http://www.pcworld.hu/forum/index.php?s=&amp;showtopic=13299&amp;view=findpost&amp;p=417511</a> a teljes herce - hurcámat: a lényeg, hogy ilyesmit neked is érdemes lenne megkérdezni. Vagyis visszatérni a 8 Mbps-ra természetesen az 5-ös és a 15-ös árának a számtani közepe környéki összegért.</span><br>Én végül nem fogadtam el a árajánlatukat a 8 Mbps-ra, így a 5 Mbps-ra válthattam még hűségidőm belül.<br><br>Ami a router-t illeti a WAN beállításoknál a PPPoE-nél valami olyasmit keress, hogy Connection mode, amit "Automatically" -ra ha nincs ilyen, akkor "Keep Alive" vagy "Contiguous" -állítsd. Mást nem nagyon lehet ez ügyben beállítani. Ezen kívül még egy firmware frissítés sem fog ártani.
+			<br>
+			<!--IBF.ATTACHMENT_423080-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: iownzyou  2010. augusztus 7. 15:16</h4>
+			<p>Köszi a gyors választ.<br>Hát, ez rossz hír. Megpróbálkozok akkor T-home-al, meglátjuk mire jutok velük.<br>A routeren a legfrissebb firmware van.<br>Wan beállításoknál nincs olyasmi amit írtál, de van egy hasonló dolog. <br>Ez:<br>"Connect on Demand: Enables or disables the connect on demand function, which enables the the router to initiate a connection with your ISP when an Internet request is made to the router. When enabled, the router automatically connects to the Internet when you open your default browser.<br><br>Idle Time Out: Specify the amount of time that will elapse before the router times out of a connection."<br><br>Érteni értem, hogy mit jelent de nem tudom, hogy ez lenne-e a megoldás. <br>Eddig is Enabled-re volt állítva, az Idle Time Out most 1-en van.
+			<br>
+			<!--IBF.ATTACHMENT_423089-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. augusztus 7. 16:07</h4>
+			<p>Hát, ennél okosabbat akkor nem lehet beállítani.
+			<br>
+			<!--IBF.ATTACHMENT_423097-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: iownzyou  2010. augusztus 7. 16:25</h4>
+			<p>Linksys WRT320N típ. router leírásában találtam meg azt amit írtál:<br><br>"Keep Alive: Redial Period If you select this option,<br>the Router will periodically check your Internet<br>connection. If you are disconnected, then the Router<br>will automatically re-establish your connection. To use<br>this option, select Keep Alive. In the Redial Period field,<br>you specify how often you want the Router to check<br>the Internet connection. The default Redial Period is<br>30 seconds."<br><br>Ez a funkció szerinted megoldás lehet az automatikus visszacsatlakozásra?
+			<br>
+			<!--IBF.ATTACHMENT_423099-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Frisztaylo110  2010. augusztus 15. 12:35</h4>
+			<p>Szevasztok!<br>2 napja az a hiba jelentkezett nálam hogy elment folyton a net (TV Netwrok----&gt;Digi TV) felhívtam őket majd kijöttek ők azt mondták hogy vegyek új hálókártyát...Nos ezt megtettem és még a windowst (WIN 7 64BIT) is újra raktam de nem lett jobbb.... a Modemig elmegy a jel de a Modemtől a géig már nemér el normálisan majd megszakad. Ha kihúzom az UTP kábelt a modemből és vissza dugom akkor megint lesz net pár percig. Valami ötlet?
+			<br>
+			<!--IBF.ATTACHMENT_423442-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. augusztus 15. 13:07</h4>
+			<p><b>@iownzyou</b><br><br>Bocs a kései válaszért. Igen ez az a funkció amiről beszéltem, viszont a Linksys integrált, beépített  antennás eszközeit jobb ha kerülöd.<br><br><b>@Frisztaylo110</b><br><br>Egy kálókari csere, és egy OS reinstall után már csak a kábelcsere marad. Ez után a szolgáltató ablakán kéne kopogtatni. <!--coloro:#C0C0C0--><span style="color:#C0C0C0"><!--/coloro-->Gondolom a kétes eredetű Windows 7 és szoftverek használatát kizárhatjuk, legalábbis remélem.<!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_423443-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Frisztaylo110  2010. augusztus 15. 18:42</h4>
+			<p>Nem adok pénzt szoftverért csak alkatrészért. <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif">
+			<br>
+			<!--IBF.ATTACHMENT_423456-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. augusztus 15. 18:50</h4>
+			<p>Igen ám, csak a taknyolt Windows-ok gyakran küzdenek megmagyarázhatatlan problémákkal...
+			<br>
+			<!--IBF.ATTACHMENT_423458-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Frisztaylo110  2010. augusztus 16. 4:46</h4>
+			<p>Másfél éve használom majd egyik-napról a másikra elromlik ez azért furcsa <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif">,  mindegy délután kihívok egy szerelőt és megnézi.
+			<br>
+			<!--IBF.ATTACHMENT_423479-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: naaaaad2  2010. augusztus 31. 16:57</h4>
+			<p>Sziasztok!<br><br>Van egy kis gondom a routerrel. A letöltési sebesség 142kbps körül van a 2 Mbit helyett, a feltöltés viszont normális. PPPoE modem-em van, user/pass kell hozzá. Ha közvetlenül abba dugom a gépet, és csinálok egy internetcsatlakozást hozzá, akkor minden oké, csak a routeren keresztül van ez.<br><br>Akkor romlott el, amikor firmware-t frissítettem. Megakadt közben, és nem lehetett elérni az admin felületet, de ettől még ment a net. Aztán recovery módban feltöltöttem rá egy másikat, akkor működött, de lasabb lett. Utána megpróbéltam egyenként a különböző firmware verziókat, de csak egyre lassabb lett minden frissítésnél.<br><br>Van valami ötletetek, mit lehetne tenni?
+			<br>
+			<!--IBF.ATTACHMENT_424034-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. augusztus 31. 21:14</h4>
+			<p>Ha még garis, akkor jobb ha kicserélteted.
+			<br>
+			<!--IBF.ATTACHMENT_424043-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: naaaaad2  2010. szeptember 1. 18:21</h4>
+			<p><!--quoteo(post=424043:date=2010. augusztus 31. 20&#58;14:name=Csaba_#)--></p><div class="quotetop">IDÉZET(Csaba_# @ 2010. augusztus 31. 20:14) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=424043"><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Ha még garis, akkor jobb ha kicserélteted.<!--QuoteEnd--></div><!--QuoteEEnd--><br><br>Sajnos már nem az. Közben feltöltöttem rá egy dd-wrt firmware-t. Azzal most 300kbps körül mozog az internet letöltés, de az ugye még mindig kevés. <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/sad.gif" style="vertical-align:middle" emoid=":(" border="0" alt="sad.gif">
+			<br>
+			<!--IBF.ATTACHMENT_424075-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Cimiii  2010. október 27. 11:32</h4>
+			<p><!--quoteo(post=424075:date=2010. szeptember 1. 19&#58;21:name=naaaaad2)--></p><div class="quotetop">IDÉZET(naaaaad2 @ 2010. szeptember 1. 19:21) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=424075"><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec--><!--quoteo(post=424043:date=2010. augusztus 31. 20&#58;14:name=Csaba_#)--><div class="quotetop">IDÉZET(Csaba_# @ 2010. augusztus 31. 20:14) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=424043"><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Ha még garis, akkor jobb ha kicserélteted.<!--QuoteEnd--></div><!--QuoteEEnd--><br><br>Sajnos már nem az. Közben feltöltöttem rá egy dd-wrt firmware-t. Azzal most 300kbps körül mozog az internet letöltés, de az ugye még mindig kevés. <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/sad.gif" style="vertical-align:middle" emoid=":(" border="0" alt="sad.gif"><!--QuoteEnd--></div><!--QuoteEEnd--><br><br><br>Nem írtad milyen router (gondolom Linksys) de egy próbát lehet megérne régebbi, 'eredeti' fw. visszatölteni.<br>A tomato fw. feltöltés után nekem is volt egy minimális sávszélesség csökkenés.
+			<br>
+			<!--IBF.ATTACHMENT_426220-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Cimiii  2010. október 27. 11:37</h4>
+			<p>Üdv.<br><br>Segítséget szeretnék kérni mert nekem már nincs ötletem.<br><br>Van egy Tp-link TL-WR542G router mellyel olyan probléma adódott, hogy <br>nagyon lassú az internet elérés. Tesztelésként pingeltem mint belülről egy webcímet mint kívülről az <br>eszközt és meglepődve tapasztaltam, hogy nagyon sokszor kimaradnak ping csomagok. Az első routert visszaküldtem amit ki is cseréltek de a a probléma ugyanúgy fennáll az új routerral is. Egy másik routerrel (Linksys) megpróbálva nem jelentkezik a probléma.<br>Az ADSL szolgáltató is megvizsgálta a vonalat de nem talált hibát.<br><br>Remélem van valakinek ötlete a probléma megoldásához.<br><br>Előre is köszönöm.<br>
+			<br>
+			<!--IBF.ATTACHMENT_426221-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Dávid Csaba  2010. október 27. 19:57</h4>
+			<p><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/yes.gif" style="vertical-align:middle" emoid=":igen:" border="0" alt="yes.gif"> Te is írtad: <!--quoteo--></p><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Egy másik routerrel  (Linksys) megpróbálva nem jelentkezik a probléma.<!--QuoteEnd--></div><!--QuoteEEnd--> Egy firmware frissítést is kipróbálhatnál az 542G-n.
+			<br>
+			<!--IBF.ATTACHMENT_426235-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: silver  2010. november 9. 3:57</h4>
+			<p><strike><!--sizeo:1--><span style="font-size:8pt;line-height:100%"><!--/sizeo-->Sziasztok<br>Vettem egy netgear wpn824 v2 routert...a problémám nem tudom rávenni hogy működjön<br>már volt minden átnéztem a FAQ ot meg az archivumot is reset,ip beirás a netgear oldalon mindig hibát jelez egyszerüen nem ad hálozatot bármit csinálok,akárhogy állitom .<br>a régi routerem visszadugom egyből minden ok van hálozat minden....<br>sima 10mb-os kábelnetem van....<br>ami érdekes hogy telepitési esgéd fix ip-s-nek érzékeli a netet holott a régi router dinamikus ip-s-nek,valóban az is...<br>mi lehet a gond?<br>A választ köszi..<!--sizec--></span><!--/sizec--></strike><br><br>Sziasztok !<br><br>Vettem egy Netgear wpn824 v2 routert. Az a problémám, hogy nem tudom működésre bírni.<br>Már volt minden, átnéztem a FAQ -t meg az archívumot is, reset, IP beírás. A Netgear oldalon mindig hibát jelez, egyszerűen nem ad hálózatot bármit csinálok, akárhogy állítom. Ha a régi routerem visszadugom egyből minden ok, van Internet. Sima 10 Mbps-os kábelnetem van.<br>Ami még érdekes, hogy telepítési segéd fix IP-s-nek érzékeli a netet, holott a régi router dinamikus IP-s-nek, és valóban az is.<br>Mi lehet a gond?<br>A választ köszi.<br><br><!--coloro:#CC0000--><span style="color:#CC0000"><!--/coloro--><span>Ügyelj a helyesírásodra ! --&gt;<a class="linkclass" href="http://www.pcworld.hu/forum/index.php?act=boardrules">http://www.pcworld.hu/forum/index.php?act=boardrules</a> &lt;Csaba_#&gt;</span><!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_427077-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. november 9. 6:45</h4>
+			<p>Az előző router beállításai alapján csináld. A telepítési "segédet" meg jobb ha elfelejted. A Webes felületet használd, és szép sorba állítsd be.<br> <br>Szerintem egyébként a MAC címekkel lesz a bibi. Azt a WAN oldali MAC címet kéne használni, amivel elsőnek sikeresen csatlakoztál. Ha már nincs meg az a számítógép, akkor legegyszerűbb a régi router -edből kilesni.<br><span>--&gt; <a class="linkclass" href="http://www.pcworld.hu/forum/index.php?showtopic=13299">http://www.pcworld.hu/forum/index.php?showtopic=13299</a></span><br>Ha pedig biztosan tudod, hogy dinamikus, akkor annál ne irkálj semmilyen IP címet sehova.
+			<br>
+			<!--IBF.ATTACHMENT_427078-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: silver  2010. november 9. 11:42</h4>
+			<p>Szia!<br>Elnézést a írásomért. <br>Köszönöm a segítséget !!!<br>Valóban az volt a gond.<br>Csak a régi router mac címével tudott csatlakozni.
+			<br>
+			<!--IBF.ATTACHMENT_427080-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Cimiii  2010. november 15. 14:55</h4>
+			<p><!--quoteo(post=426235:date=2010. október 27. 19&#58;57:name=Dávid Csaba)--></p><div class="quotetop">IDÉZET(Dávid Csaba @ 2010. október 27. 19:57) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=426235"><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec--><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/yes.gif" style="vertical-align:middle" emoid=":igen:" border="0" alt="yes.gif"> Te is írtad: <!--quoteo--><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Egy másik routerrel  (Linksys) megpróbálva nem jelentkezik a probléma.<!--QuoteEnd--></div><!--QuoteEEnd--> Egy firmware frissítést is kipróbálhatnál az 542G-n.<!--QuoteEnd--></div><!--QuoteEEnd--><br><br><br>Olvastam máshol, hogy a nagy T megváltoztatta az ADSL szabványt a vonalaikon. Ezért nem mindegyik modem tud kommunikálni rendesen adott márkájú routerekkel.<br>A legfrissebb firmware van fent.
+			<br>
+			<!--IBF.ATTACHMENT_427369-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Dávid Csaba  2010. november 15. 15:51</h4>
+			<p>Ezzel az információval még nem találkoztam, de ez nem jelenti azt, hogy ne lenne igaz. <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif"> Nekem is T internetem van (VDSL), a modem mögött jelenleg egy WR740N és egy WR542G router-rel. Mindkettő minden további nélkül végzi a dolgát.
+			<br>
+			<!--IBF.ATTACHMENT_427373-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Cimiii  2010. november 16. 11:51</h4>
+			<p>Nem tudtam 542G mit csinálni. Beraktam egy egy Linksys-t.<br>Majd talán WDS-ben jól fog müködni a Tp-Link.<br>Köszi a válaszokat.
+			<br>
+			<!--IBF.ATTACHMENT_427443-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Fuszi427  2010. november 24. 18:37</h4>
+			<p>Abban szeretnék segítséget kérni, hogy.:<br><br>Van egy Tp-link WA701ND típusú access point, amit univerzal repeate módban szeretnének használni.<br>A gond amit nem tudok hogy a gép hibája vagy valami másé az az hogy: <br>Az access point kezelőfelületén hiába választom ki és mentem el hogy melyik wifi pontot szeretném univ.repeate módban használni , a számítógéphez csatlakoztatott wifi kulcs és más wifi eszköz sem látja az access point-ot.<br><br>A másik gondom hogy a wifi kulcs egy kültéri antennára csatlakozik amivel kb. 12db wifi pontot lehet fogni.<br>De ha úgyanazt az antennát rákötöm az access point-ra kb. 4-5db wifi pontot lehet vele csak fogni amit úgyszintén nem értem hogy miért csak annyit.<br><br>Választ elöre is köszönöm.
+			<br>
+			<!--IBF.ATTACHMENT_427878-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Kisszabó  2010. december 10. 10:53</h4>
+			<p>Sziasztok!<br><br>Olyan problémával fordulok Hozzátok ami előtt tanácstalanul állok.<br><span>Adott egy <a class="linkclass" href="http://ce.computers.toshiba-europe.com/innovation/jsp/SUPPORTSECTION/discontinuedProductPage.do?LNG=23&service=CE&PRODUCT_ID=1059070&DISC_MODEL=1">http://ce.computers.toshiba-europe.com/innovation/jsp/SUPPORTSECTION/discontinuedProductPage.do?LNG=23&amp;service=CE&amp;PRODUCT_ID=1059070&amp;DISC_MODEL=1</a> amivel bármilyen WiFi hálózatra fel tudok csatlakozni, de az internetre nem jut ki. Tehát a kapcsolat létre jön (a routert látom, betudok lépni az admin felületre) viszont nincs net (vezetékkel csatlakozva nincs gond). Ezt produkálja minden kipróbált routerrel (FritzBox, Tp-link, Linksys), ebből gondolom, hogy a géppel van a gond. Az Op rendszer: WinXP SP3 (jogtiszta), WiFi: Realtek RTL-8187B, beállítás: minden alap a Win által konfigolt (fix IP-vel is ugyanezt csinálja)</span><br> Amit eddig "elkövettem": driver frissítés, vírus ellenőrzés (a ESS nem talált semmit), Win (tiszta) telepítés. Külső WiFi sticket még nem próbáltam (nincs elérhető a közelemben). Ha bármilyen ötletetek, megoldásotok van szívesen fogadom.<br>Előre is köszönöm
+			<br>
+			<!--IBF.ATTACHMENT_428408-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2010. december 10. 12:11</h4>
+			<p>Másold be légyszi az ipconfig /all- ra adott válaszát a gépednek.
+			<br>
+			<!--IBF.ATTACHMENT_428410-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Kisszabó  2010. december 10. 12:30</h4>
+			<p>Kiadtam a parancsot. Hogyan tudnám el érni, hogy ne csak egy pillanatra ugorjon fel az ablak?<br>
+			<br>
+			<!--IBF.ATTACHMENT_428411-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2010. december 10. 12:32</h4>
+			<p>Ha nyitsz egy admin jogú parancssort.<br>De egyszerűbb lesz a bemásolás, ha átirányítod egy szövegfájlba. <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/arrow.gif" style="vertical-align:middle" emoid=":nyíl:" border="0" alt="arrow.gif"> <b>ipconfig /all &gt; ip.txt</b><br><br>Mi van beállítva átjárónak és DNS szervernek?
+			<br>
+			<!--IBF.ATTACHMENT_428413-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Kisszabó  2010. december 10. 12:46</h4>
+			<p>És azt (ip.txt) hova menti? Nem találom<br>
+			<br>
+			<!--IBF.ATTACHMENT_428414-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2010. december 10. 13:00</h4>
+			<p>Nézz meg a \Documents and Settings\{usernév} alatt. De rá is kereshetsz.
+			<br>
+			<!--IBF.ATTACHMENT_428415-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Kisszabó  2010. december 10. 13:13</h4>
+			<p>Meg van:<br><br><br>Windows IP konfiguráció<br><br><br><br>        Állomásnév. . . . . . . . . . . . . . : toshiba<br><br>        Elsődleges DNS-utótag . . . . . . . . : <br><br>        Csomóponttípus  . . . . . . . . . . . : Ismeretlen<br><br>        IP útválasztás engedélyezve . . . . . : Nem<br><br>        WINS-proxy engedélyezve . . . . . . . : Nem<br><br>        DNS-utótag keresési listája . . . . . : fritz.box<br><br>                                                fritz.box<br><br><br><br>Ethernet-adapter Vezeték nélküli hálózati kapcsolat 2:<br><br><br><br>        Kapcsolatspecifikus DNS-utótag. . . . : fritz.box<br><br>        Leírás. . . . . . . . . . . . . . . . : Realtek RTL8187B vezeték nélküli 802.11b/g 54Mbps USB 2.0 hálózati adapter<br><br>        Fizikai cím . . . . . . . . . . . . . : 00-22-5F-2E-51-65<br><br>        DHCP engedélyezve . . . . . . . . . . : Igen<br><br>        Automatikus konfiguráció engedélyezve : Igen<br><br>        IP-cím. . . . . . . . . . . . . . . . : 192.168.178.21<br><br>        Alhálózati maszk. . . . . . . . . . . : 255.255.255.0<br><br>        Alapértelmezett átjáró. . . . . . . . : 192.168.178.1<br><br>        DHCP kiszolgáló . . . . . . . . . . . : 192.168.178.1<br><br>        DNS-kiszolgálók . . . . . . . . . . . : 192.168.178.1<br><br>        Bérleti jog kezdete . . . . . . . . . : 2010. december 10. 9:54:19<br><br>        Bérleti jog vége. . . . . . . . . . . : 2010. december 20. 9:54:19<br><br><br><br>Ethernet-adapter Helyi kapcsolat:<br><br><br><br>        Kapcsolatspecifikus DNS-utótag. . . . : fritz.box<br><br>        Leírás. . . . . . . . . . . . . . . . : Realtek PCIe FE Family Controller<br><br>        Fizikai cím . . . . . . . . . . . . . : 00-1E-33-76-39-82<br><br>        DHCP engedélyezve . . . . . . . . . . : Igen<br><br>        Automatikus konfiguráció engedélyezve : Igen<br><br>        IP-cím. . . . . . . . . . . . . . . . : 192.168.178.22<br><br>        Alhálózati maszk. . . . . . . . . . . : 255.255.255.0<br><br>        Alapértelmezett átjáró. . . . . . . . : 192.168.178.1<br><br>        DHCP kiszolgáló . . . . . . . . . . . : 192.168.178.1<br><br>        DNS-kiszolgálók . . . . . . . . . . . : 192.168.178.1<br><br>        Bérleti jog kezdete . . . . . . . . . : 2010. december 10. 9:49:18<br><br>        Bérleti jog vége. . . . . . . . . . . : 2010. december 20. 9:49:18<br><br>A 192.168.178.1 a router IP-je
+			<br>
+			<!--IBF.ATTACHMENT_428416-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2010. december 10. 19:35</h4>
+			<p>És így megy vezetékkel, de nem megy vezeték nélkül?
+			<br>
+			<!--IBF.ATTACHMENT_428420-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Kisszabó  2010. december 10. 19:55</h4>
+			<p>Pontosan! Ezért vagyok tanácstalan, mert elvileg minden jó és mégsem.Kipróbáltam kikapcsolt tűzfallal(hátha), szintén semmi. Javasolták a linux live cd-t azt még megpróbálom, ha azzal sem működik akkor szinte biztosan hardver hiba lesz.<br><!--coloro:#666666--><span style="color:#666666"><!--/coloro-->Melyik linux lenne a megfelelő (teljesen idegen a linux nekem)?<!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_428422-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2010. december 10. 20:12</h4>
+			<p><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/hmm.gif" style="vertical-align:middle" emoid=":hmm:" border="0" alt="hmm.gif"> Még bizonyos alaphelyzetbe állítást ki lehet próbálni parancssorból, hogy hátha.<br><br>netsh winsock reset<br>ipconfig /flushdns
+			<br>
+			<!--IBF.ATTACHMENT_428423-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Kisszabó  2010. december 11. 12:48</h4>
+			<p>Sajnos ez se jött be.  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/angry.gif" style="vertical-align:middle" emoid=":dühös:" border="0" alt="angry.gif"> <br><br><!--coloro:#666666--><span style="color:#666666"><!--/coloro-->Megyek linux topikba<!--colorc--></span><!--/colorc--><br><br>szerk.: Megoldódott, többször volt telepítve a kártya drivere és ez egy kicsit "megzavarta" a Win lelkét. Lepucoltam mindent a driver sweeper-rel és máris működik rendesen.<br>           Köszönöm mindenkinek a segítséget!
+			<br>
+			<!--IBF.ATTACHMENT_428433-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: warynski  2010. december 22. 13:00</h4>
+			<p>Most már a második Linksys wifi kártya produkálja a következő hibajelenséget. A net (15 MBites) szépen megy rajta, de helyi hálózatban, ha egyik gépről a másikra egy nagyobb file-t akarok másolni, akkor először hatalmas sebességgel megindul (10-12000 kbyte/s) majd pár másodperc alatt 1-2000-re lassul, kisvártatva pedig 300 kbyte/s-ra. <br><br>Előtörténet.<br>Eredetileg volt egy olyan helyi hálózat, ahol egy Linksys WRT54G wifi routerhez az én gépem kábellel csatlakozott, a lányom gépe pedig az ominózus Linksys WMP54G wifi kártyával.  Működött minden tökéletesen. Vagy 2 év működés után, ha helyi hálózatban akartam egyik gépről a másikra másolni, akkor a fenti hibajelenség jelentkezett. Átmenetileg a wifis gépet kábellel csatlakoztattam a routerhez, és akkor nagy sebességgel ment a helyi hálózat. Gondoltam, a Linksys wifi kártya megadta magát, a net még megy rajta, de a nagyobb sebességű helyi hálózat nem. Ezért kicseréltem egy TP-Link 300 Mbit-es wifi kártyára. Akkor ismét normálisan működött a helyi háló is.<br><br>Az ADSL internet elérésről kábeles internet elérésre váltottam, amihez a szolgáltató adott egy Cisco home gateway-t, ami ugye wifi routerként is szolgál. Minthogy a HGW a másik szobában a TV mellett van, kábellel nagyon körülményes lett volna csatlakoznom hozzá. Ezért vettem az én gépembe is egy TP-Link 300 MB-es wifi kártyát. A net és a helyi háló is hibátlanul ment ezzel. Viszont a drivere zavarta a külső E-MU 0404 hangkártya driverét. (Ezt egy másik topikban már írtam.) Mindenki azt tanácsolta, hogy próbáljam egy másik gyártmányú wifi kártyára cserélni. Sikerült kicseréltetnem a TP-Link wifi kártyát egy Linksys-re. (Abban a hiszemben tettem, hogy a régi Linksys kértya hibás, mert lassú vele a helyi háló.) <br><br>Kicsit meglepődtem, amikor az új Linksys kártyával is az elején leírt drasztikus lassulást tapasztaltam. Most ott tartok, hogy van két db. Linksys wifi kártyám, amelyek feltehetőleg nem lehetnek egyformán hibásak. A hiba hátterében a Linksys router nem állhat, mert az most használaton kívül van. (A Cisco HGW-vel megy most hálózat.) TP-Link kártyával, kábellel gyors a helyi háló. Gondolná az ember, hogy persze, kábellel, vagy a 300 MB-es wifi kártyával működik rendesen a hálózat, és az 54 MB-es Linksys-szel nem. Csakhogy ezzel az 54 MB-es Linksys-szel jó ideig hibátlanul ment minden.<br>Bocsánat, hogy ilyen hosszan írtam, de talán kellenek a részletek, a jobb megértéshez.<br><br>Ha van tipp, segítség, előre is kösz.<br>
+			<br>
+			<!--IBF.ATTACHMENT_428915-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: SkyBird  2010. december 22. 13:42</h4>
+			<p><!--quoteo(post=428915:date=2010. december 22. 13&#58;00:name=warynski)--></p><div class="quotetop">IDÉZET(warynski @ 2010. december 22. 13:00) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=428915"><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Most már a második Linksys wifi kártya produkálja a következő hibajelenséget. <!--QuoteEnd--></div><!--QuoteEEnd--><br><img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/hmm.gif" style="vertical-align:middle" emoid=":hmm:" border="0" alt="hmm.gif"> Én a másik topicban wifi adapternek nem kártyát, hanem USB-t javasoltam, pláne ilyen kicsi távolságra.<br>Praktikusabb, és még az adatátvitelben sem feltétlen rosszabb, mint egy nagyobb antennával jelentkező PCI kártyás saját tapasztalatom szerint.<br>A PCI nekem a zajt is jobban hozta, igaz ez a megállapításom csak egy típuson alapul.<br>Ha jól értem, talán csak nem egy ugyanolyan típusú kártyára cseréltetted, mint már volt?  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/roll.gif" style="vertical-align:middle" emoid=":hááát:" border="0" alt="roll.gif"> <br>Egy 300 Mbites USB stickkel jobban jártál volna.<br><br>Ami a drasztikus és megmagyarázhatatlan sebességcsökkenést illeti, erről egyes Linksys adapterek vagy routerek esetén néha lehet olvasni a neten.<br>A Linksys/Cisco supportot és fórumokat kellene nézegetni, hogy van-e valami megoldás, vagy milyen körülmények között jön ez elő.<br>Sajnos konkrétan nem tudok segíteni.  <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/no.gif" style="vertical-align:middle" emoid=":nem:" border="0" alt="no.gif"> Azért másik, esetleg frissebb hálókártya driverrel próbálkozhatsz.
+			<br>
+			<!--IBF.ATTACHMENT_428916-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: warynski  2010. december 26. 15:46</h4>
+			<p>Kösz a választ!<br><br>USB adapterrel azért nem próbálkoztam, mert a külső hangkártya (audio/midi interface) is USB-re csatlakozik, és néha még ezzel is vannak problémáim. Nem mertem újabb USB-s eszközt bevetni.<br><br>Azért vettem Linksys wifi kártyát, mert a TP Link drivere - mint írtam másik topikban - valamilyen módon bezavart a külső hangkártya driverébe. <br>A korábbi, már meglévő Linksys kártya évekig tök jól teljesített, és csak utána kezdte a WLAN-ban a lassulást. Amúgy ennek a drivere nem zavarta a külső hangkártyát, csak a helyi hálózatban volt lassú és gondoltam veszek egy újat, ami nem hibás. (A régiről a lassulás miatt azt gondoltam, hogy meghibásodott.) Aztán jött a meglepetés, ezzel is lassú a WLAN. Az már megint egy másik kérdés, hogy az első Linksys kártya vajon miért működött évekig jól, és aztán mi történt vele (vagy a hálózattal) és az új most miért produkálja ugyanazt a hibajelenséget.<br><br>Elolvastam egy csomó külföldi fórumot és tényleg rengetegen panaszkodnak erre a Linksys kártyára. Bár nagyrészük az internet kapcsolatban észlelt lassulást. Egy-két olyan komment volt, ahol a WLAN lassulást írták. A válaszoktól nem lettem sokkal okosabb. (Rakjon fel új drivert, frissítsen firmware-t, váltson a routeren más csatornára stb.)<br>Átmeneti megoldásként most azt csinálom, hogy ha helyi hálózatban kell nagyobb fájlt másolni, akkor a Linksys routert bekapcsolom &#8211; ehhez kábellel csatlakozom &#8211; és mint switch-et használom. (Az internet a HGW-ről jön.) <br>
+			<br>
+			<!--IBF.ATTACHMENT_429076-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: microbi  2010. december 30. 13:56</h4>
+			<p>Sziasztok!<br><br>Van egy Win7 alatt futó 3 PC-ből álló otthoni hálozatom, ami részben routerrel van elosztva és részben egy gépről tovább osztva. Ahogy a képen látni a PC1 és PC2 egy WL-5460Ap v2-be van kötve. A PC2-n meg van osztva a net egy másik hálozati kártyára, amire csatlakozik a PC3.<br><br>Az internet működik mindhárom gépen.<br><br> Ami nem működik az a következő:<br>-PC1 és PC3 nem látja egymást sem mint hálozati gép sem pedig otthoni csoportban<br>-PC2 és PC3 nem látja egymást otthoni csoportban<br><br>A pingelés működik, kivéve, ha a PC1-röl pingelek PC3-ra. Akkor nincs válasz.<br><br><span><a class="linkclass" href="http://img827.imageshack.us/i/netfull.jpg/">http://img827.imageshack.us/i/netfull.jpg/</a></span><br>
+			<br>
+			<!--IBF.ATTACHMENT_429249-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: [OP]Destroy-man  2010. december 30. 15:06</h4>
+			<p>Ha az internet működik, akkor nembiztos, hogy sokat fog számítani, de azért egy probát megér:<br>A 2. gépen csinálj hídkapcsolatot a két hálókártya között (router és 3. PC):</p><ul><li>Start menübe gépeld be: Hálózati kapcsolatok megjeneítése.</li><li>Jelöld ki a két eszközt</li><li>Jobb klikk, majd hídkapcsolat.</li></ul>Hátha. Egy probát megér.
+			<br>
+			<!--IBF.ATTACHMENT_429252-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: microbi  2010. december 30. 15:41</h4>
+			<p>Köszönöm szépen Destroy-man <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/worship.gif" style="vertical-align:middle" emoid=":istenvagy:" border="0" alt="worship.gif"> <br><br>Működik a dolog. Persze előtte ki kellet kapcsolnom az internetmegosztást a PC2-n, mert csak így lehetett hídkapcsolatot létrehozni. A PC3-n ekkor megszakadt a kapcsolat, de a Win7 elhárította a hibát, majd ugyanitt  vissza kellet még kapcsolnom manuálisan a fájl és nyomtatómegosztást - hálózati gépek felderítését és voalá, a három gép elérhetővé vált egymás között.<br><br></p><div align="center"> <img src="./PC WORLD Segélyvonal _ Hálózatépítés _ Hibakeresés_files/ole.gif" style="vertical-align:middle" emoid=":olé:" border="0" alt="ole.gif"> </div>
+			<br>
+			<!--IBF.ATTACHMENT_429254-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2010. december 31. 13:36</h4>
+			<p>@warinsky:<br>ha jól értem, akkor most mindkét gép drót nélkül megy (menne). Ha csak az egyik gépet kötöd be kábellel, akkor is lassú az adatátvitel?
+			<br>
+			<!--IBF.ATTACHMENT_429281-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: warynski  2011. január 2. 16:45</h4>
+			<p>Igen, most mindkét gép wifi-vel megy.  <br>A net működik is rendesen. Amikor viszont nagyobb fájlt akarok egyik gépről a másikra másolni, akkor kábellel csatlakozom a szobámban lévő Linksys routerre, a másik gépen át kell állítani a wifit a Linksys-re, és akkor elfogadható sebességgel megy a helyi hálózat. Elég fapados megoldás, de minthogy úgyis megmaradt a Linksys router, egyelőre megteszi. <br><br><span><a class="linkclass" href="http://img211.imageshack.us/img211/5004/hlzat.jpg">http://img211.imageshack.us/img211/5004/hlzat.jpg</a> (A függőleges és vízszintes vonalak a falakat akarják jelenteni.)</span><br><br>Az érdekessége az a dolognak, hogy ameddig az 1. gépben TP-Link wifi kártya volt, addig csak wifin keresztül is elég gyors volta helyi háló. (Ennek a kártyának a drivere zavarta a külső hangkártyát.) A mostani Linksys kártya nem zavarja a hangkártyát, de iszonyat lassú vele a helyi hálózat...<br><br>Az igazi az volna, ha kábellel tudnék a Cisco HGW-hez csatlakozni, de ahhoz falat kellene fúrni stb. A másik megoldás az lehetne, ha a Linksys WRT54G router tudna AP-ként üzemelni, de az meg nem megy.<br><br>Mindazonáltal van itt egy leírás, hogyan lehet AP-t csinálni ebből a routerből, de nekem ez nem ment, és szerintem eléggé zavarosan van leírva.<br><span><a class="linkclass" href="http://www.wikihow.com/Convert-Linksys-WRT54G-to-Be-an-Access-Point">http://www.wikihow.com/Convert-Linksys-WRT54G-to-Be-an-Access-Point</a></span><br><br>Mi a véleményed?<br><br><br>
+			<br>
+			<!--IBF.ATTACHMENT_429399-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2011. január 2. 17:32</h4>
+			<p><span><a class="linkclass" href="http://www.pcworld.hu/forum/index.php?showtopic=13299">http://www.pcworld.hu/forum/index.php?showtopic=13299</a> van egy leírásunk a routerekről és AP-król. Egyébként a WRT54G 7-es verziója nem használható AP-ként, azzal ne is próbálkozz. A többi igen, de le kell hozzá cserélni a gyári firmwaret.</span><br><br>Ha kikapcsolod a hangkártyát, miközben másolsz, akkor is lassú?
+			<br>
+			<!--IBF.ATTACHMENT_429400-->
+			</p>
+		</div><!--Copyright-->	</div></body><style type="text/css">/*This block of style rules is inserted by AdBlock*/#RadAd_Skyscraper,#bbccom_leaderboard,#center_banner,#footer_adcode,#hbBHeaderSpon,#hiddenHeaderSpon,#navbar_adcode,#rightAds,#rightcolumn_adcode,#top-advertising,#topMPU,#tracker_advertorial,.ad-now,.dfpad,.prWrap,[id^="ad_block"],[id^="adbrite"],[id^="dclkAds"],[id^="ew"][id$="_bannerDiv"],[id^="konaLayer"],a.kLink span[id^="preLoadWrap"].preLoadWrap,a[href^="http://ad."][href*=".doubleclick.net/"],a[href^="http://adserver.adpredictive.com"],div#adxLeaderboard,div#dir_ads_site,div#FFN_Banner_Holder,div#FFN_imBox_Container,div#p360-format-box,div#rhs div#rhs_block table#mbEnd,div#rm_container,div#tads table[align="center"][width="100%"],div#tooltipbox[class^="itxt"],div[class^="dms_ad_IDS"],div[id^="adKontekst_"],div[id^="google_ads_div"],div[id^="kona_"][id$="_wrapper"],div[id^="sponsorads"],div[id^="y5_direct"],iframe.chitikaAdBlock,iframe[id^="dapIfM"],iframe[id^="etarget"][id$="banner"],iframe[name^="AdBrite"],iframe[name^="google_ads_"],img[src^="http://cdn.adnxs.com"],ispan#ab_pointer,object#flashad,object#ve_threesixty_swf[name="ve_threesixty_swf"],table[cellpadding="0"][width="100%"] > * > * > * > div[id^="tpa"],#A9AdsMiddleBoxTop,#A9AdsOutOfStockWidgetTop,#A9AdsServicesWidgetTop,#ADSLOT_1,#ADSLOT_2,#ADSLOT_3,#ADSLOT_4,#AD_CONTROL_22,#ADsmallWrapper,#Ad160x600,#Ad2,#Ad300x250,#Ad3Left,#Ad3Right,#Ad3TextAd,#AdArea,#AdBanner_F1,#AdBar,#AdBar1,#AdContainer,#AdContainerTop,#AdContentModule_F,#AdDetails_GoogleLinksBottom,#AdDetails_InsureWith,#AdFrame4,#AdLeaderboardBottom,#AdLeaderboardTop,#AdMiddle,#AdMobileLink,#AdRectangle,#AdSenseDiv,#AdServer,#AdShowcase_F1,#AdSky23,#AdSkyscraper,#AdSponsor_SF,#AdSubsectionShowcase_F1,#AdTargetControl1_iframe,#AdText,#AdTop,#AdTopLeader,#Ad_Block,#Ad_Center1,#Ad_Right1,#Ad_Top,#Adrectangle,#Ads,#AdsContent,#AdsRight,#AdsWrap,#Ads_BA_CAD,#Ads_BA_CAD2,#Ads_BA_CAD_box,#Ads_BA_SKY,#Ads_CAD,#Ads_Special,#AdvertMPU23b,#AdvertPanel,#Advertorial,#Advertorials,#BannerAdvert,#BigBoxAd,#BodyAd,#BotAd,#Bottom468x60AD,#ButtonAd,#CompanyDetailsNarrowGoogleAdsPresentationControl,#CompanyDetailsWideGoogleAdsPresentationControl,#ContentAd,#ContentAd1,#ContentAd2,#ContentAdPlaceHolder1,#ContentAdPlaceHolder2,#ContentAdXXL,#ContentPolepositionAds_Result,#DivAdEggHeadCafeTopBanner,#FooterAd,#FooterAdContainer,#GoogleAd1,#GoogleAd2,#GoogleAd3,#GoogleAdsPresentationControl,#GoogleAdsense,#Google_Adsense_Main,#HEADERAD,#HOME_TOP_RIGHT_BOXAD,#HeaderAD,#HeaderAdsBlock,#HeaderAdsBlockFront,#HeaderBannerAdSpacer,#HeaderTextAd,#HeroAd,#HomeAd1,#HouseAd,#ID_Ad_Sky,#JobsearchResultsAds,#Journal_Ad_125,#Journal_Ad_300,#KH-contentAd,#LargeRectangleAd,#LeftAd,#LeftAdF1,#LeftAdF2,#LftAd,#LoungeAdsDiv,#LowerContentAd,#MainSponsoredLinks,#Nightly_adContainer,#OverrideAdArea,#PREFOOTER_LEFT_BOXAD,#PREFOOTER_RIGHT_BOXAD,#PageLeaderAd,#RelevantAds,#RgtAd1,#RightAd,#RightBottom300x250AD,#RightNavTopAdSpot,#RightSponsoredAd,#SectionAd300-250,#SectionSponsorAd,#SidebarAdContainer,#SkyAd,#SpecialAds,#SponsoredAd,#SponsoredLinks,#TOP_ADROW,#TOP_RIGHT_BOXAD,#Top468x60AD,#TopAdBox,#TopAdContainer,#TopAdDiv,#TopAdPos,#VM-MPU-adspace,#VM-footer-adspace,#VM-header-adspace,#VM-header-adwrap,#XEadLeaderboard,#XEadSkyscraper,#YahooAdParentContainer,#_ads,#about_adsbottom,#ad-120x600-sidebar,#ad-120x60Div,#ad-160x600,#ad-160x600-sidebar,#ad-250,#ad-250x300,#ad-300,#ad-300x250,#ad-300x250-sidebar,#ad-300x250Div,#ad-300x60-1,#ad-728,#ad-728x90-leaderboard-top,#ad-article,#ad-banner,#ad-banner-1,#ad-block-125,#ad-bottom,#ad-bottom-wrapper,#ad-box-first,#ad-box-second,#ad-boxes,#ad-bs,#ad-buttons,#ad-colB-1,#ad-column,#ad-content,#ad-contentad,#ad-flex-first,#ad-footer,#ad-footprint-160x600,#ad-frame,#ad-front-footer,#ad-front-sponsoredlinks,#ad-halfpage,#ad-horizontal-header,#ad-img,#ad-inner,#ad-label,#ad-leaderboard,#ad-leaderboard-bottom,#ad-leaderboard-container,#ad-leaderboard-spot,#ad-leaderboard-top,#ad-left,#ad-links-content,#ad-list-row,#ad-lrec,#ad-medium,#ad-medium-rectangle,#ad-medrec,#ad-middlethree,#ad-middletwo,#ad-module,#ad-mpu,#ad-mpu1-spot,#ad-mpu2,#ad-mpu2-spot,#ad-north,#ad-one,#ad-placard,#ad-placeholder,#ad-rectangle,#ad-right,#ad-righttop,#ad-row,#ad-side-text,#ad-sidebar,#ad-sky,#ad-skyscraper,#ad-slug-wrapper,#ad-small-banner,#ad-space,#ad-special,#ad-splash,#ad-sponsors,#ad-spot,#ad-squares,#ad-target,#ad-target-Leaderbord,#ad-teaser,#ad-text,#ad-top-banner,#ad-top-text-low,#ad-top-wrap,#ad-tower,#ad-trailerboard-spot,#ad-two,#ad-typ1,#ad-unit,#ad-west,#ad-wrap,#ad-wrap-right,#ad-wrapper1,#ad-yahoo-simple,#ad1006,#ad11,#ad125BL,#ad125BR,#ad125TL,#ad125TR,#ad125x125,#ad160x600,#ad160x600right,#ad1Sp,#ad2,#ad2Sp,#ad300,#ad300-250,#ad300X250,#ad300_x_250,#ad300x100Middle,#ad300x150,#ad300x250,#ad300x250Module,#ad300x60,#ad300x600,#ad300x600_callout,#ad336,#ad336x280,#ad375x85,#ad4,#ad468,#ad468x60,#ad468x60_top,#ad526x250,#ad600,#ad7,#ad728,#ad728Mid,#ad728Top,#ad728Wrapper,#ad728top,#ad728x90_1,#adBadges,#adBanner120x600,#adBanner160x600,#adBanner336x280,#adBanner728,#adBannerTable,#adBannerTop,#adBar,#adBelt,#adBlock125,#adBlocks,#adBox,#adBox350,#adBox390,#adCirc300X200,#adCirc_620_100,#adColumn,#adContainer_1,#adContainer_2,#adContainer_3,#adDiv300,#adDiv728,#adFiller,#adFps,#adFtofrs,#adGallery,#adGroup1,#adHeaderTop,#adIsland,#adL,#adLB,#adLabel,#adLayer,#adLeader,#adLeaderTop,#adLeaderboard,#adMPU,#adMediumRectangle,#adMiddle0Frontpage,#adMiniPremiere,#adP,#adPlaceHolderRight,#adPlacer,#adRight,#adSenseModule,#adSenseWrapper,#adServer_marginal,#adSidebar,#adSidebarSq,#adSky,#adSkyscraper,#adSlider,#adSpace,#adSpace3,#adSpace300_ifrMain,#adSpace4,#adSpace5,#adSpace6,#adSpace7,#adSpace_footer,#adSpace_right,#adSpace_top,#adSpacer,#adSpecial,#adSplotlightEm,#adSpot-Leader,#adSpot-banner,#adSpot-island,#adSpot-mrec1,#adSpot-sponsoredlinks,#adSpot-textbox1,#adSpot-widestrip,#adSpotAdvertorial,#adSpotIsland,#adSpotSponsoredLinks,#adSquare,#adStaticA,#adStrip,#adSuperAd,#adSuperPremiere,#adSuperSkyscraper,#adSuperbanner,#adTableCell,#adTag1,#adTag2,#adText,#adTextLink,#adText_container,#adTile,#adTopContent,#adTopboxright,#adTower,#adUnit,#adZoneTop,#ad_1,#ad_160x160,#ad_160x600,#ad_190x90,#ad_2,#ad_3,#ad_300,#ad_300_250,#ad_300_250_1,#ad_300x250,#ad_300x250_content_column,#ad_300x90,#ad_4,#ad_468_60,#ad_5,#ad_728_foot,#ad_728x90,#ad_728x90_container,#ad_940,#ad_984,#ad_A,#ad_B,#ad_Banner,#ad_C,#ad_C2,#ad_D,#ad_E,#ad_F,#ad_G,#ad_H,#ad_I,#ad_J,#ad_K,#ad_L,#ad_M,#ad_N,#ad_O,#ad_P,#ad_YieldManager-300x250,#ad_anchor,#ad_banner,#ad_banner_top,#ad_bar,#ad_bellow_post,#ad_block_1,#ad_block_2,#ad_bottom,#ad_box,#ad_box_colspan,#ad_box_top,#ad_branding,#ad_bs_area,#ad_buttons,#ad_center_monster,#ad_cont,#ad_container_marginal,#ad_container_side,#ad_container_top,#ad_content_top,#ad_content_wrap,#ad_feature,#ad_firstpost,#ad_footer,#ad_front_three,#ad_fullbanner,#ad_global_header,#ad_haha_1,#ad_haha_4,#ad_halfpage,#ad_head,#ad_header,#ad_holder,#ad_horizontal,#ad_horseshoe_left,#ad_horseshoe_right,#ad_horseshoe_spacer,#ad_horseshoe_top,#ad_hotpots,#ad_in_arti,#ad_island,#ad_label,#ad_large_rectangular,#ad_lastpost,#ad_layer2,#ad_leaderBoard,#ad_leaderboard,#ad_leaderboard728x90,#ad_leaderboard_top,#ad_left,#ad_lrec,#ad_lwr_square,#ad_main,#ad_medium_rectangle,#ad_medium_rectangular,#ad_mediumrectangle,#ad_menu_header,#ad_middle,#ad_most_pop_234x60_req_wrapper,#ad_mpu,#ad_mpu300x250,#ad_mpuav,#ad_mrcontent,#ad_overlay,#ad_play_300,#ad_rect,#ad_rect_body,#ad_rect_bottom,#ad_rectangle,#ad_rectangle_medium,#ad_related_links_div,#ad_related_links_div_program,#ad_replace_div_0,#ad_replace_div_1,#ad_report_leaderboard,#ad_report_rectangle,#ad_right,#ad_right_main,#ad_ros_tower,#ad_rr_1,#ad_sec,#ad_sec_div,#ad_sgd,#ad_sidebar,#ad_sidebar1,#ad_sidebar2,#ad_sidebar3,#ad_skyscraper,#ad_skyscraper160x600,#ad_skyscraper_text,#ad_slot_leaderboard,#ad_slot_livesky,#ad_slot_sky_top,#ad_ss,#ad_term_bottom_place,#ad_text,#ad_thread_first_post_content,#ad_top,#ad_top_holder,#ad_tp_banner_1,#ad_tp_banner_2,#ad_unit,#ad_vertical,#ad_wide,#ad_wide_box,#ad_widget,#ad_window,#ad_wrap,#adbForum,#adbanner,#adbig,#adbnr,#adboard,#adbottom,#adbox1,#adbox2,#adclear,#adcode,#adcode1,#adcode2,#adcode3,#adcode4,#adcolumnwrapper,#adcontainer,#adcontainerRight,#adcontainsm,#adcontent,#adcontent1,#adcontrolPushSite,#add_ciao2,#addbottomleft,#addiv-bottom,#addiv-top,#adfooter,#adfooter_728x90,#adframe:not(frameset),#adhead,#adhead_g,#adheader,#adhome,#adiframe1_iframe,#adiframe2_iframe,#adiframe3_iframe,#adimg,#adition_content_ad,#adlabel,#adlabelFooter,#adlayerad,#adleaderboard,#adleft,#adlinks,#adlinkws,#adlrec,#admid,#admiddle3center,#admiddle3left,#adposition,#adposition-C,#adposition-FPMM,#adposition1,#adposition2,#adposition4,#adrectangle,#adrectanglea,#adrectangleb,#adrig,#adright,#adright2,#adrighthome,#ads-468,#ads-area,#ads-block,#ads-bot,#ads-bottom,#ads-col,#ads-dell,#ads-horizontal,#ads-indextext,#ads-leaderboard1,#ads-lrec,#ads-menu,#ads-middle,#ads-prices,#ads-rhs,#ads-right,#ads-sponsored-boxes,#ads-top,#ads-vers7,#ads-wrapper,#ads160left,#ads2,#ads300,#ads300-250,#ads300Bottom,#ads300Top,#ads336x280,#ads7,#ads728bottom,#ads728top,#ads790,#adsDisplay,#adsID,#ads_160,#ads_300,#ads_728,#ads_banner,#ads_belowforumlist,#ads_belownav,#ads_bottom_inner,#ads_bottom_outer,#ads_box,#ads_button,#ads_catDiv,#ads_footer,#ads_html1,#ads_html2,#ads_medrect,#ads_notice,#ads_right,#ads_right_sidebar,#ads_sidebar_roadblock,#ads_space,#ads_top,#ads_watch_top_square,#ads_zone27,#adsbottom,#adsbox,#adscolumn,#adsd_contentad_r1,#adsd_contentad_r2,#adsd_contentad_r3,#adsd_topbanner,#adsd_txt_sky,#adsdiv,#adsense-2,#adsense-header,#adsense-tag,#adsense-text,#adsenseOne,#adsenseWrap,#adsense_article_left,#adsense_box,#adsense_leaderboard,#adsense_overlay,#adsense_placeholder_2,#adsenseheader,#adsensetopplay,#adsensewidget-3,#adserv,#adsimage,#adsky,#adskyscraper,#adslot,#adsonar,#adspace-300x250,#adspace300x250,#adspaceBox,#adspaceBox300,#adspace_header,#adspot,#adspot-1,#adspot-149x170,#adspot-1x4,#adspot-2,#adspot-295x60,#adspot-2a,#adspot-2b,#adspot-300x250-pos-1,#adspot-300x250-pos-2,#adspot-468x60-pos-2,#adspot-a,#adspot300x250,#adspot_220x90,#adspot_300x250,#adspot_468x60,#adspot_728x90,#adsright,#adst,#adstop,#adt,#adtab,#adtag_right_side,#adtaily-widget-light,#adtech_googleslot_03c,#adtech_takeover,#adtop,#adtophp,#adtxt,#adv-masthead,#adv_google_300,#adv_google_728,#adv_top_banner_wrapper,#adver1,#adver2,#adver3,#adver4,#adver5,#adver6,#adver7,#advert-1,#advert-120,#advert-boomer,#advert-display,#advert-header,#advert-leaderboard,#advert-links-bottom,#advert-skyscraper,#advert-top,#advert1,#advertBanner,#advertContainer,#advertDB,#advertRight,#advert_125x125,#advert_250x250,#advert_box,#advert_home01,#advert_leaderboard,#advert_lrec_format,#advert_mid,#advert_mpu,#advert_right_skyscraper,#advertbox,#advertbox2,#advertbox3,#advertbox4,#adverthome,#advertise-here-sidebar,#advertise-now,#advertise1,#advertiseHere,#advertisement160x600,#advertisement728x90,#advertisementLigatus,#advertisementPrio2,#advertisementsarticle,#advertiser-container,#advertiserLinks,#advertisers,#advertising-banner,#advertising-caption,#advertising-container,#advertising-control,#advertising-skyscraper,#advertising2,#advertisingModule160x600,#advertisingModule728x90,#advertisment,#advertismentElementInUniversalbox,#advertorial,#adverts-top-container,#adverts-top-left,#adverts-top-middle,#adverts-top-right,#advertsingle,#advt,#adwhitepaperwidget,#adwin_rec,#adwith,#adwords-4-container,#adxBigAd,#adxMiddle5,#adxSponLink,#adxSponLinkA,#adxtop,#adz,#adzbanner,#adzerk,#adzerk1,#adzoneBANNER,#affinityBannerAd,#agi-ad300x250,#agi-ad300x250overlay,#agi-sponsored,#alert_ads,#anchorAd,#annoying_ad,#ap_adframe,#apiBackgroundAd,#apiTopAdWrap,#apmNADiv,#araHealthSponsorAd,#article-ad-container,#article-box-ad,#articleAdReplacement,#articleLeftAdColumn,#articleSideAd,#article_ad,#article_ad_container,#article_box_ad,#asinglead,#atlasAdDivGame,#awds-nt1-ad,#banner-300x250,#banner-ad,#banner-ad-container,#banner-ads,#banner250x250,#banner468x60,#banner728x90,#bannerAd,#bannerAdTop,#bannerAd_ctr,#banner_ad,#banner_ad_footer,#banner_ad_module,#banner_admicro,#banner_ads,#banner_content_ad,#banner_topad,#bannerad2,#baseAdvertising,#bbccom_mpu,#bbccom_storyprintsponsorship,#bbo_ad1,#bg-footer-ads,#bg-footer-ads2,#bg_YieldManager-300x250,#bigAd,#bigBoxAd,#bigad300outer,#bigadbox,#bigadframe,#bigadspot,#billboard_ad,#block-ad_cube-1,#block-openads-1,#block-openads-3,#block-openads-4,#block-openads-5,#block-thewrap_ads_250x300-0,#blog-ad,#blog_ad_content,#blog_ad_opa,#blox-big-ad,#blox-big-ad-bottom,#blox-big-ad-top,#blox-halfpage-ad,#blox-tile-ad,#blox-tower-ad,#body_728_ad,#book-ad,#botad,#bott_ad2,#bott_ad2_300,#bottom-ad,#bottom-ad-container,#bottom-ads,#bottomAd,#bottomAdCCBucket,#bottomAdContainer,#bottomAdSense,#bottomAdSenseDiv,#bottomAds,#bottomRightAd,#bottomRightAdSpace,#bottom_ad,#bottom_ad_area,#bottom_ads,#bottom_banner_ad,#bottom_overture,#bottom_sponsor_ads,#bottom_sponsored_links,#bottom_text_ad,#bottomad,#bottomads,#bottomadsense,#bottomadwrapper,#bottomleaderboardad,#box-content-ad,#box-googleadsense-1,#box-googleadsense-r,#box1ad,#boxAd300,#boxAdContainer,#box_ad,#box_advertisment,#box_mod_googleadsense,#boxad1,#boxad2,#boxad3,#boxad4,#boxad5,#bpAd,#bps-header-ad-container,#btr_horiz_ad,#burn_header_ad,#button-ads-horizontal,#button-ads-vertical,#buttonAdWrapper1,#buttonAdWrapper2,#buttonAds,#buttonAdsContainer,#button_ad_container,#button_ad_wrap,#buttonad,#buy-sell-ads,#c4ad-Middle1,#c_ad_sb,#c_ad_sky,#caAdLarger,#catad,#category-ad,#cellAd,#channel_ad,#channel_ads,#ciHomeRHSAdslot,#circ_ad,#cnnRR336ad,#cnnTopAd,#cnnVPAd,#col3_advertising,#colAd,#colRightAd,#collapseobj_adsection,#column4-google-ads,#comments-ad-container,#commercial_ads,#common_right_ad_wrapper,#common_right_lower_ad_wrapper,#common_right_lower_adspace,#common_right_lower_player_ad_wrapper,#common_right_lower_player_adspace,#common_right_player_ad_wrapper,#common_right_player_adspace,#common_right_right_adspace,#common_top_adspace,#companion-ad,#companionAdDiv,#containerLocalAds,#containerLocalAdsInner,#containerMrecAd,#containerSqAd,#content-ad-header,#content-header-ad,#contentBoxad,#contentTopAds2,#content_ad_square,#content_ad_top,#content_ads_content,#content_box_300body_sponsoredoffers,#content_box_adright300_google,#content_mpu,#contentad { visibility:hidden !important; display:none !important; } #contentad_imtext,#contentad_right,#contentads,#contentinlineAd,#contextad,#contextual-ads,#contextual-ads-block,#contextualad,#coverads,#ctl00_Adspace_Top_Height,#ctl00_BottomAd,#ctl00_ContentMain_BanManAd468_BanManAd,#ctl00_ContentRightColumn_RightColumn_Ad1_BanManAd,#ctl00_ContentRightColumn_RightColumn_Ad2_BanManAd,#ctl00_ContentRightColumn_RightColumn_PremiumAd1_ucBanMan_BanManAd,#ctl00_LHTowerAd,#ctl00_LeftHandAd,#ctl00_MasterHolder_IBanner_adHolder,#ctl00_TopAd,#ctl00_TowerAd,#ctl00_VBanner_adHolder,#ctl00__Content__RepeaterReplies_ctl03__AdReply,#ctl00_abot_bb,#ctl00_adFooter,#ctl00_advert_LargeMPU_div_AdPlaceHolder,#ctl00_atop_bt,#ctl00_cphMain_hlAd1,#ctl00_cphMain_hlAd2,#ctl00_cphMain_hlAd3,#ctl00_ctl00_MainPlaceHolder_itvAdSkyscraper,#ctl00_ctl00_ctl00_Main_Main_PlaceHolderGoogleTopBanner_MPTopBannerAd,#ctl00_ctl00_ctl00_Main_Main_SideBar_MPSideAd,#ctl00_dlTilesAds,#ctl00_m_skinTracker_m_adLBL,#ctl00_phCrackerMain_ucAffiliateAdvertDisplayMiddle_pnlAffiliateAdvert,#ctl00_phCrackerMain_ucAffiliateAdvertDisplayRight_pnlAffiliateAdvert,#ctrlsponsored,#cubeAd,#cube_ads,#cube_ads_inner,#cubead,#cubead-2,#dItemBox_ads,#dart_160x600,#dc-display-right-ad-1,#dcol-sponsored,#defer-adright,#detail_page_vid_topads,#div-gpt-ad-1,#div-gpt-ad-2,#div-gpt-ad-3,#div-gpt-ad-4,#divAdBox,#divAdWrapper,#divDoubleAd,#divLeftAd12,#divLeftRecAd,#divMenuAds,#divWNAdHeader,#divWrapper_Ad,#div_ad_leaderboard,#div_video_ads,#dlads,#dni-header-ad,#dnn_ad_banner,#download_ads,#ds-mpu,#editorsmpu,#embedded-ad,#evotopTen_advert,#ex-ligatus,#exads,#featured-advertisements,#featuredAdContainer2,#featuredAds,#feed_links_ad_container,#first-300-ad,#first-adlayer,#first_ad_unit,#firstad,#fl_hdrAd,#flash_ads_1,#flexiad,#footad,#footer-ad,#footer-advert,#footer-adverts,#footer-sponsored,#footerAd,#footerAdDiv,#footerAds,#footerAdvertisement,#footerAdverts,#footer_ad_01,#footer_ad_block,#footer_ad_container,#footer_ad_modules,#footer_adspace,#footer_text_ad,#footerad,#footerads,#footeradsbox,#forum_top_ad,#fpv_companionad,#fr_ad_center,#frame_admain,#frnAdSky,#frnBannerAd,#frnContentAd,#from_our_sponsors,#front_advert,#front_mpu,#ft-ad,#ft-ad-1,#ft-ad-container,#ft_mpu,#fusionad,#fw-advertisement,#g_ad,#g_adsense,#ga_300x250,#gad,#gad2,#gad3,#gad5,#galleries-tower-ad,#gallery-ad-m0,#gallery_ads,#game-info-ad,#gasense,#gglads,#global_header_ad_area,#gmi-ResourcePageAd,#gmi-ResourcePageLowerAd,#goads,#gooadtop,#google-ad,#google-ad-art,#google-ad-table-right,#google-ad-tower,#google-ads,#google-ads-bottom,#google-ads-header,#google-ads-left-side,#google-adsense-mpusize,#googleAd,#googleAds,#googleAdsSml,#googleAdsense,#googleAdsenseBanner,#googleAdsenseBannerBlog,#googleAdwordsModule,#googleAfcContainer,#googleSearchAds,#googleShoppingAdsRight,#googleShoppingAdsTop,#googleSubAds,#google_ad,#google_ad_container,#google_ad_inline,#google_ad_test,#google_ads,#google_ads_aCol,#google_ads_frame1,#google_ads_frame1_anchor,#google_ads_frame2,#google_ads_frame2_anchor,#google_ads_frame3,#google_ads_frame3_anchor,#google_ads_test,#google_ads_top,#google_adsense_home_468x60_1,#googlead2,#googleadbox,#googleads,#googleadsense,#googlesponsor,#gpt-ad-halfpage,#gpt-ad-rectangle1,#gpt-ad-rectangle2,#gpt-ad-skyscraper,#gpt-ad-story_rectangle3,#grid_ad,#gsyadrectangleload,#gsyadrightload,#gsyadtop,#gsyadtopload,#gtopadvts,#half-page-ad,#halfPageAd,#halfe-page-ad-box,#hd-ads,#hd-banner-ad,#hdtv_ad_ss,#headAd,#head_advert,#headad,#header-ad,#header-ad-rectangle-container,#header-ads,#header-adspace,#header-advert,#header-advertisement,#header-advertising,#header-adverts,#headerAd,#headerAdBackground,#headerAdContainer,#headerAdWrap,#headerAds,#headerAdsWrapper,#headerTopAd,#header_ad_728_90,#header_ad_container,#header_adcode,#header_ads,#header_advertisement_top,#header_leaderboard_ad_container,#header_publicidad,#headerad,#headeradbox,#headerads,#headeradsbox,#headeradwrap,#headline_ad,#headlinesAdBlock,#hiddenadAC,#hideads,#hl-sponsored-results,#hly_ad_side_bar_tower_left,#home-rectangle-ad,#homeTopRightAd,#home_ad,#home_bottom_ad,#home_contentad,#home_feature_ad,#home_mpu,#home_spensoredlinks,#homepage-ad,#homepageAdsTop,#homepageFooterAd,#homepage_right_ad,#homepage_right_ad_container,#homepage_top_ads,#hometop_234x60ad,#hor_ad,#horizontal-banner-ad,#horizontal_ad,#horizontal_ad_top,#horizontalads,#houseAd,#hp-header-ad,#hp-right-ad,#hp-store-ad,#hpV2_300x250Ad,#hpV2_googAds,#icePage_SearchLinks_AdRightDiv,#icePage_SearchLinks_DownloadToolbarAdRightDiv,#icePage_SearchResults_ads0_SponsoredLink,#icePage_SearchResults_ads1_SponsoredLink,#icePage_SearchResults_ads2_SponsoredLink,#icePage_SearchResults_ads3_SponsoredLink,#icePage_SearchResults_ads4_SponsoredLink,#imu_ad_module,#in_serp_ad,#inadspace,#indexad,#inline-story-ad,#inlinead,#inlinegoogleads,#inlist-ad-block,#inner-advert-row,#innerpage-ad,#inside-page-ad,#insider_ad_wrapper,#instoryad,#instoryadtext,#instoryadwrap,#int-ad,#interstitial_ad_wrapper,#islandAd,#j_ad,#ji_medShowAdBox,#jmp-ad-buttons,#joead,#joead2,#ka_adRightSkyscraperWide,#kdz_ad1,#kdz_ad2,#landing-adserver,#largead,#lateAd,#layerAds_layerDiv,#layerTLDADSERV,#lb-sponsor-left,#lb-sponsor-right,#leader-board-ad,#leader-sponsor,#leaderAd,#leaderAdContainer,#leader_board_ad,#leaderad,#leaderad_section,#leaderboard-ad,#leaderboard-bottom-ad,#leaderboard_ad,#left-ad-skin,#left-lower-adverts,#left-lower-adverts-container,#leftAdContainer,#leftAd_rdr,#leftAdvert,#leftSectionAd300-100,#left_ad,#left_adspace,#leftad,#leftads,#leftcolAd,#lg-banner-ad,#ligatus,#linkAds,#linkads,#live-ad,#logoAd,#longAdSpace,#lowerAdvertisementImg,#lowerads,#lowerthirdad,#lowertop-adverts,#lowertop-adverts-container,#lpAdPanel,#lrecad,#lsadvert-left_menu_1,#lsadvert-left_menu_2,#lsadvert-top,#mBannerAd,#main-ad,#main-ad160x600,#main-ad160x600-img,#main-ad728x90,#main-bottom-ad,#mainAdUnit,#mainAdvert,#main_ad,#main_rec_ad,#main_top_ad_container,#marketing-promo,#mastAd,#mastAdvert,#mastad,#mastercardAd,#masthead_ad,#masthead_topad,#medRecAd,#media_ad,#mediaplayer_adburner,#mediumAdvertisement,#medrectad,#menuAds,#mi_story_assets_ad,#mid-ad300x250,#mid-table-ad,#midRightTextAds,#mid_ad_div,#mid_ad_title,#mid_mpu,#midadd,#midadspace,#middle-ad,#middlead,#middleads,#midrect_ad,#midstrip_ad,#mini-ad,#mochila-column-right-ad-300x250,#mochila-column-right-ad-300x250-1,#module-google_ads,#module_ad,#module_box_ad,#module_sky_scraper,#monsterAd,#moogleAd,#most_popular_ad,#motionAd,#mpu,#mpu-advert,#mpu300250,#mpuAd,#mpuDiv,#mpuSlot,#mpuWrapper,#mpuWrapperAd,#mpu_banner,#mpu_holder,#mpu_text_ad,#mpuad,#mr_banner_topad,#mrecAdContainer,#msAds,#ms_ad,#msad,#multiLinkAdContainer,#multi_ad,#myads_HeaderButton,#n_sponsor_ads,#namecom_ad_hosting_main,#narrow_ad_unit,#natadad300x250,#national_microlink_ads,#nationalad,#navi_banner_ad_780,#nba160PromoAd,#nba300Ad,#nbaHouseAnd600Ad,#nbaLeft600Ad,#nbaMidAds,#nbaVid300Ad,#new_topad,#newads,#ng_rtcol_ad,#noresults_ad_container,#noresultsads,#northad,#ns_ad3,#oanda_ads,#onespot-ads,#online_ad,#p-googleadsense,#page-header-ad,#page-top-ad,#pageAds,#pageAdsDiv,#page_content_top_ad,#pagelet_adbox,#pagelet_netego_ads,#pagelet_search_ads2,#panelAd,#pb_report_ad,#pcworldAdBottom,#pcworldAdTop,#pinball_ad,#player-below-advert,#player_ad,#player_ads,#pod-ad-video-page,#populate_ad_bottom,#populate_ad_left,#portlet-advertisement-left,#portlet-advertisement-right,#post-promo-ad,#post5_adbox,#post_ad,#premium_ad,#priceGrabberAd,#prime-ad-space,#print_ads,#product-adsense,#promoAds,#ps-vertical-ads,#pub468x60,#publicidad,#pushdown_ad,#qm-ad-big-box,#qm-ad-sky,#qm-dvdad,#r1SoftAd,#rail_ad1,#rail_ad2,#realEstateAds,#rectAd,#rect_ad,#rectangle-ad,#rectangle_ad,#refine-300-ad,#region-node-advert,#region-top-ad,#rh-ad-container,#rh_tower_ad,#rhapsodyAd,#rhs_ads,#rhsadvert,#right-ad,#right-ad-skin,#right-ad-title,#right-ads-3,#right-box-ad,#right-featured-ad,#right-mpu-1-ad-container,#right-uppder-adverts,#right-uppder-adverts-container,#rightAd,#rightAd300x250,#rightAdBar,#rightAdColumn,#rightAd_rdr,#rightAdsDiv,#rightColAd,#rightColumnMpuAd,#rightColumnSkyAd,#rightTopSponsor,#right_ad_wrapper,#right_ads,#right_advertisement,#right_advertising,#right_column_ad_container,#right_column_ads,#right_column_internal_ad_container,#right_column_top_ad_unit,#rightad,#rightadContainer,#rightadvertbar-doubleclickads,#rightbar-ad,#rightcolumn_300x250ad,#rightside-ads,#rightside_ad,#righttop-adverts,#righttop-adverts-container,#rm_ad_text,#ros_ad,#rotatingads,#row2AdContainer,#rr_MSads,#rt-ad,#rt-ad-top,#rt-ad468,#rtMod_ad,#rtmod_ad,#sAdsBox,#sb-ad-sq,#sb_advert,#sb_sponsors,#search-google-ads,#search-sponsored-links,#search-sponsored-links-top,#searchAdSenseBox,#searchAdSenseBoxAd,#searchAdSkyscraperBox,#search_ads,#search_result_ad,#second-adlayer,#secondBoxAdContainer,#secondrowads,#section-ad-1-728,#section-ad-300-250,#section-ad-4-160,#section-blog-ad,#section-container-ddc_ads,#section-sponsors,#section_advertorial_feature,#servfail-ads,#sew-ad1,#shoppingads,#show-ad,#showAd,#showad,#side-ad,#side-ad-container,#sideAd,#sideAdSub,#sideBarAd,#side_ad,#side_ad_wrapper,#side_ads_by_google,#side_sky_ad,#sidead,#sideads,#sidebar-125x125-ads,#sidebar-125x125-ads-below-index,#sidebar-ad,#sidebar-ad-boxes,#sidebar-ad-space,#sidebar-ad-wrap,#sidebar-ad3,#sidebar2ads,#sidebar_ad,#sidebar_ad_widget,#sidebar_ads_180,#sidebar_sponsoredresult_body,#sidebarad,#sidebaradver_advertistxt,#sideline-ad,#single-mpu,#singlead,#site-leaderboard-ads,#site_top_ad,#sitead,#sky-ad,#skyAd,#skyAdContainer,#skyScrapperAd,#skyWrapperAds,#sky_ad,#sky_advert,#skyads,#skyadwrap,#skyline_ad,#skyscraper-ad,#skyscraperAd,#skyscraperAdContainer,#skyscraper_ad,#skyscraper_advert,#skyscraperad,#slide_ad,#sliderAdHolder,#slideshow_ad_300x250,#sm-banner-ad,#small_ad,#smallerAd,#some-ads,#some-more-ads,#specialadvertisingreport_container,#specials_ads,#speeds_ads,#speeds_ads_fstitem,#speedtest_mrec_ad,#sphereAd,#sponLinkDiv_1,#sponlink,#sponlinks,#sponsAds,#sponsLinks,#spons_left,#sponseredlinks,#sponsor-search,#sponsorAd1,#sponsorAd2,#sponsorAdDiv,#sponsorLinks,#sponsorTextLink,#sponsor_banderole,#sponsor_box,#sponsor_deals,#sponsor_panSponsor,#sponsor_recommendations,#sponsorbar,#sponsorbox,#sponsored-ads,#sponsored-features,#sponsored-links,#sponsored-resources,#sponsored1,#sponsoredBox1,#sponsoredBox2,#sponsoredLinks,#sponsoredList,#sponsoredResults,#sponsoredResultsWide,#sponsoredSiteMainline,#sponsoredSiteSidebar,#sponsored_ads_v4,#sponsored_content,#sponsored_game_row_listing,#sponsored_links,#sponsored_v12,#sponsoredads,#sponsoredlinks,#sponsoredlinks_cntr,#sponsoredlinkslabel,#sponsoredresults_top,#sponsoredwellcontainerbottom,#sponsoredwellcontainertop,#sponsoring_bar,#sponsorlink,#sponsors,#sponsors_top_container,#sponsorshipBadge,#spotlightAds,#spotlightad,#sqAd,#square-sponsors,#squareAd,#squareAdSpace,#squareAds,#square_ad,#start_middle_container_advertisment,#sticky-ad,#stickyBottomAd,#story-90-728-area,#story-ad-a,#story-ad-b,#story-leaderboard-ad,#story-sponsoredlinks,#storyAd,#storyAdWrap,#storyad2,#subpage-ad-right,#subpage-ad-top,#swads,#synch-ad,#systemad_background,#tabAdvertising,#takeoverad,#tblAd,#tbl_googlead,#tcwAd,#td-GblHdrAds,#template_ad_leaderboard,#tertiary_advertising,#text-ad,#text-ads,#text-link-ads,#textAd,#textAds,#text_ad,#text_ads,#text_advert,#textad,#textad3,#the-last-ad-standing,#thefooterad,#themis-ads,#tile-ad,#tmglBannerAd,#toolbarSlideUpAd,#top-ad,#top-ad-container,#top-ad-menu,#top-ads,#top-ads-tabs,#top-advertisement,#top-banner-ad,#top-search-ad-wrapper,#topAd728x90,#topAdBanner,#topAdBox,#topAdContainer,#topAdSenseDiv,#topAdcontainer,#topAds,#topAdsContainer,#topAdvert,#topBannerAdContainer,#topNavLeaderboardAdHolder,#topRightBlockAdSense,#top_ad_area,#top_ad_banner,#top_ad_game,#top_ad_wrapper,#top_ad_zone,#top_ads,#top_advertise,#top_advertising,#top_rectangle_ad,#top_right_ad,#top_wide_ad,#topad_left,#topad_right,#topadbar,#topadblock,#topaddwide,#topadsense,#topadspace,#topadzone,#topbanner_ad,#topbar-ad,#topcustomad,#topleaderboardad,#toprightAdvert,#toprightad,#topsponsored,#toptextad,#tour300Ad,#tourSponsoredLinksContainer,#towerad,#ts-ad_module,#ttp_ad_slot1,#ttp_ad_slot2,#twogamesAd,#txt_link_ads,#undergameAd,#upperAdvertisementImg,#upperMpu,#upperad,#urban_contentad_1,#urban_contentad_2,#urban_contentad_article,#v_ad,#vert_ad,#vert_ad_placeholder,#vertical_ad,#vertical_ads,#videoAd,#video_cnv_ad,#video_overlay_ad,#videoadlogo,#viewportAds,#viewvid_ad300x250,#walltopad,#weblink_ads_container,#welcomeAdsContainer,#welcome_ad_mrec,#welcome_advertisement,#wf_ContentAd,#wf_FrontSingleAd,#wf_SingleAd,#wf_bottomContentAd,#wgtAd,#whatsnews_top_ad,#whitepaper-ad,#whoisRightAdContainer,#wide_ad_unit_top,#widget_advertisement,#wrapAdRight,#wrapAdTop,#wrapperAdsTopLeft,#wrapperAdsTopRight,#y-ad-units,#y708-ad-expedia,#y708-ad-lrec,#y708-ad-partners,#y708-ad-ysm,#y708-advertorial-marketplace,#yahoo-ads,#yahoo-sponsors,#yahooSponsored,#yahoo_ads,#yahoo_ads_2010,#yahoo_text_ad,#yahooad-tbl,#yan-sponsored,#yatadsky,#ybf-ads,#yfi_fp_ad_mort,#yfi_fp_ad_nns,#yfi_pf_ad_mort,#ygrp-sponsored-links,#ymap_adbanner,#yn-gmy-ad-lrec,#yreSponsoredLinks,#ysm_ad_iframe,#zoneAdserverMrec,#zoneAdserverSuper,.ADBAR,.ADPod,.AD_ALBUM_ITEMLIST,.AD_MOVIE_ITEM,.AD_MOVIE_ITEMLIST,.AD_MOVIE_ITEMROW,.Ad-MPU,.Ad1,.Ad120x600,.Ad160x600,.Ad160x600left,.Ad160x600right,.Ad2,.Ad247x90,.Ad300x,.Ad300x250,.Ad300x250L,.Ad728x90,.AdBorder,.AdBox7,.AdContainerBox308,.AdHeader,.AdHere,.AdMedium,.AdPlaceHolder,.AdRingtone,.AdSenseLeft,.AdSlot,.AdSpace,.AdTextSmallFont,.AdUnit,.AdUnit300,.Ad_C,.Ad_D_Wrapper,.Ad_E_Wrapper,.Ad_Right,.AdsBoxBottom,.AdsBoxSection,.AdsBoxTop,.AdsLinks1,.AdsLinks2,.AdsRec,.AdvertMidPage,.AdvertiseWithUs,.AdvertisementTextTag,.ArticleAd,.ArticleInlineAd,.BannerAd,.BigBoxAd,.BlockAd,.BottomAdContainer,.BottomAffiliate,.BoxAd,.CG_adkit_leaderboard,.CG_details_ad_dropzone,.CWReviewsProdInfoAd,.ComAread,.CommentAd,.ContentAd,.ContentAds,.DAWRadvertisement,.DeptAd,.DisplayAd,.FT_Ad,.FlatAds,.GOOGLE_AD,.GoogleAd,.GoogleAdSenseBottomModule,.GoogleAdSenseRightModule,.HPG_Ad_B,.HPNewAdsBannerDiv,.HPRoundedAd,.HomeContentAd,.IABAdSpace,.IndexRightAd,.LazyLoadAd,.LeftAd,.LeftButtonAdSlot,.LeftTowerAd,.M2Advertisement,.MD_adZone,.MOS-ad-hack,.MPU,.MPUHolder,.MPUTitleWrapperClass,.MREC_ads,.MiddleAd,.MiddleAdContainer,.NewsAds,.OAS,.OpaqueAdBanner,.OpenXad,.PU_DoubleClickAdsContent,.Post5ad,.Post9ad,.RBboxAd,.RectangleAd,.RelatedAds,.Right300x250AD,.RightAd1,.RightAdvertiseArea,.RightGoogleAFC,.RightRailTop300x250Ad,.RightSponsoredAdTitle,.RightTowerAd,.STR_AdBlock,.SideAdCol,.SidebarAd,.SidebarAdvert,.SitesGoogleAdsModule,.SkyAdContainer,.SponsorCFrame,.SponsoredAdTitle,.SponsoredContent,.SponsoredLinkItemTD,.SponsoredLinks,.SponsoredLinksGrayBox,.SponsoredLinksModule,.SponsoredLinksPadding,.SponsorshipText,.SquareAd,.StandardAdLeft,.StandardAdRight,.TRU-onsite-ads-leaderboard,.TextAd,.TheEagleGoogleAdSense300x250,.TopAd,.TopAdContainer,.TopAdL,.TopAdR,.TopBannerAd,.UIWashFrame_SidebarAds,.UnderAd,.VerticalAd,.Video-Ad,.VideoAd,.WidgetAdvertiser,.a160x600,.a728x90,.ad-120x600,.ad-160,.ad-160x600,.ad-250,.ad-300,.ad-300-block,.ad-300-blog,.ad-300x100,.ad-300x250,.ad-300x250-right0,.ad-350,.ad-355x75,.ad-600,.ad-635x40,.ad-728,.ad-728x90,.ad-728x90-1,.ad-728x90_forum,.ad-90x600,.ad-above-header,.ad-adlink-bottom,.ad-adlink-side,.ad-area,.ad-background,.ad-banner,.ad-bigsize,.ad-block,.ad-blog2biz,.ad-body { visibility:hidden !important; display:none !important; } .ad-bottom,.ad-break,.ad-btn,.ad-btn-heading,.ad-cell,.ad-container-300x250,.ad-container-728x90,.ad-context,.ad-disclaimer,.ad-div,.ad-enabled,.ad-feedback,.ad-filler,.ad-flex,.ad-footer,.ad-footer-leaderboard,.ad-google,.ad-graphic-large,.ad-gray,.ad-hdr,.ad-head,.ad-header,.ad-heading,.ad-homeleaderboard,.ad-img,.ad-in-post,.ad-index-main,.ad-island,.ad-label,.ad-leaderboard,.ad-links,.ad-lrec,.ad-medium,.ad-medium-two,.ad-mpu,.ad-msn,.ad-note,.ad-notice,.ad-other,.ad-permalink,.ad-placeholder,.ad-postText,.ad-poster,.ad-priority,.ad-rect,.ad-rectangle,.ad-rectangle-text,.ad-related,.ad-rh,.ad-ri,.ad-right,.ad-right-header,.ad-right-txt,.ad-row,.ad-section,.ad-show-label,.ad-side,.ad-sidebar-outer,.ad-sidebar300,.ad-sky,.ad-slot,.ad-slot-234-60,.ad-slot-300-250,.ad-slot-728-90,.ad-space,.ad-space-mpu-box,.ad-spot,.ad-square300,.ad-squares,.ad-statement,.ad-story-inject,.ad-tabs,.ad-text-links,.ad-tile,.ad-title,.ad-top,.ad-top-left,.ad-unit,.ad-unit-300,.ad-unit-300-wrapper,.ad-unit-anchor,.ad-vert,.ad-vtu,.ad-wrap,.ad-wrapper,.ad-zone-s-q-l,.ad.super,.ad0,.ad10,.ad120,.ad120x240backgroundGray,.ad120x600,.ad125,.ad140,.ad160,.ad160x600,.ad160x600GrayBorder,.ad18,.ad19,.ad21,.ad230,.ad250,.ad250c,.ad3,.ad300,.ad300250,.ad300_250,.ad300x100,.ad300x250,.ad300x250-hp-features,.ad300x250Top,.ad300x250_container,.ad300x250box,.ad300x50-right,.ad300x600,.ad310,.ad336x280,.ad343x290,.ad4,.ad400right,.ad450,.ad468_60,.ad468x60,.ad6,.ad620x70,.ad626X35,.ad7,.ad728,.ad728_90,.ad728x90,.ad728x90_container,.ad8,.ad90x780,.adAgate,.adArea674x60,.adBanner,.adBanner300x250,.adBanner728x90,.adBannerTyp1,.adBannerTypSortableList,.adBannerTypW300,.adBar,.adBgBottom,.adBgMId,.adBgTop,.adBlock,.adBottomboxright,.adBoxBody,.adBoxBorder,.adBoxContainer,.adBoxContent,.adBoxInBignews,.adBoxSidebar,.adBoxSingle,.adBwrap,.adCMRight,.adCell,.adColumn,.adCont,.adContTop,.adContour,.adCreative,.adCube,.adFender3,.adFrame,.adFtr,.adFullWidthMiddle,.adGoogle,.adHeader,.adHeadline,.adHome300x250,.adHorisontal,.adInNews,.adLabel,.adLeader,.adLeaderForum,.adLeaderboard,.adLeft,.adLoaded,.adLocal,.adMarker,.adMastheadLeft,.adMastheadRight,.adMegaBoard,.adMkt2Colw,.adModuleAd,.adMpu,.adNewsChannel,.adNoOutline,.adNotice,.adNoticeOut,.adObj,.adPageBorderL,.adPageBorderR,.adPanel,.adRect,.adRight,.adSelfServiceAdvertiseLink,.adServer,.adSkyscraperHolder,.adSlot,.adSpBelow,.adSpacer,.adSplash,.adSponsor,.adSpot,.adSpot-searchAd,.adSpot-textBox,.adSpot-twin,.adSpotIsland,.adSquare,.adSubColPod,.adSuperboard,.adSupertower,.adTD,.adTab,.adTag,.adTileWrap,.adTiler,.adTopboxright,.adTout,.adTxt,.adUnit,.adUnitHorz,.adUnitVert,.adUnitVert_noImage,.adWebBoard,.adWidget,.adWithTab,.adWrap,.adWrapper,.ad_0,.ad_1,.ad_120x90,.ad_125,.ad_130x90,.ad_160,.ad_160x600,.ad_2,.ad_200,.ad_200x200,.ad_250x250,.ad_250x250_w,.ad_3,.ad_300,.ad_300_250,.ad_300x250,.ad_300x250_box_right,.ad_336,.ad_336x280,.ad_350x100,.ad_350x250,.ad_400x200,.ad_468,.ad_468x60,.ad_600,.ad_728,.ad_728x90,.ad_Left,.ad_amazon,.ad_banner,.ad_banner_border,.ad_bar,.ad_bg,.ad_bigbox,.ad_biz,.ad_block,.ad_block_338,.ad_body,.ad_border,.ad_botbanner,.ad_bottom_leaderboard,.ad_bottom_left,.ad_box,.ad_box2,.ad_box_ad,.ad_box_div,.ad_callout,.ad_caption,.ad_column,.ad_column_box,.ad_column_hl,.ad_contain,.ad_container,.ad_content,.ad_content_wide,.ad_contents,.ad_descriptor,.ad_disclaimer,.ad_eyebrow,.ad_footer,.ad_frame,.ad_framed,.ad_front_promo,.ad_head,.ad_headline,.ad_hpm,.ad_info_block,.ad_inline,.ad_island,.ad_label,.ad_launchpad,.ad_leader,.ad_leaderboard,.ad_left,.ad_line,.ad_link,.ad_linkunit,.ad_loc,.ad_lrec,.ad_main,.ad_medrec,.ad_medrect,.ad_middle,.ad_mpu,.ad_mr,.ad_mrec,.ad_mrec_title_article,.ad_mrect,.ad_news,.ad_notice,.ad_one,.ad_p360,.ad_partner,.ad_partners,.ad_plus,.ad_post,.ad_power,.ad_rectangle,.ad_right_col,.ad_row,.ad_sidebar,.ad_skyscraper,.ad_slug,.ad_slug_table,.ad_space_300_250,.ad_sponsor,.ad_sponsoredsection,.ad_spot_b,.ad_spot_c,.ad_square_r,.ad_square_top,.ad_text_w,.ad_title,.ad_top,.ad_top_leaderboard,.ad_top_left,.ad_topright,.ad_tower,.ad_unit,.ad_unit_rail,.ad_url,.ad_warning,.ad_wid300,.ad_wide,.ad_wrap,.ad_wrapper,.ad_wrapper_fixed,.ad_wrapper_top,.ad_zone,.adarea,.adarea-long,.adbanner,.adbannerbox,.adbannerright,.adbar,.adboard,.adborder,.adbot,.adbottom,.adbottomright,.adbox-outer,.adbox-wrapper,.adbox_300x600,.adbox_366x280,.adbox_468X60,.adbox_bottom,.adboxclass,.adbreak,.adbug,.adbuttons,.adcode,.adcolumn,.adcolumn_wrapper,.adcopy,.add_300x250,.adfieldbg,.adfoot,.adfootbox,.adhead,.adhead_h,.adhead_h_wide,.adheader,.adheader100,.adhere,.adhered,.adhi,.adhint,.adhoriz,.adi,.adiframe,.adinside,.adintro,.adjlink,.adkicker,.adkit,.adkit-advert,.adkit-lb-footer,.adlabel-horz,.adlabel-vert,.adleader,.adleaderboard,.adleft1,.adline,.adlinks,.adlnklst,.admarker,.admedrec,.admessage,.admodule,.admpu,.admpu-small,.adnation-banner,.adnotice,.adops,.adp-AdPrefix,.adpadding,.adpane,.adprice,.adproxy,.adroot,.adrotate_widget,.adrow,.adrow-post,.adrule,.ads-125,.ads-728x90-wrap,.ads-banner,.ads-below-content,.ads-categories-bsa,.ads-favicon,.ads-links-general,.ads-mpu,.ads-outer,.ads-profile,.ads-right,.ads-sidebar,.ads-sky,.ads-stripe,.ads-text,.ads-widget,.ads-widget-partner-gallery,.ads160,.ads1_250,.ads2,.ads3,.ads300,.ads460,.ads460_home,.ads468,.ads728,.ads728x90,.adsArea,.adsBelowHeadingNormal,.adsBlock,.adsBox,.adsCell,.adsCont,.adsDiv,.adsFull,.adsImages,.adsMPU,.adsRight,.adsTextHouse,.adsTop,.adsTower2,.adsTowerWrap,.adsWithUs,.ads_125_square,.ads_180,.ads_300,.ads_300x250,.ads_337x280,.ads_728x90,.ads_big,.ads_big-half,.ads_box,.ads_brace,.ads_catDiv,.ads_container,.ads_disc_anchor,.ads_disc_leader,.ads_disc_lwr_square,.ads_disc_skyscraper,.ads_disc_square,.ads_div,.ads_header,.ads_leaderboard,.ads_medrect,.ads_mpu,.ads_outer,.ads_rectangle,.ads_right,.ads_sc_bl_i,.ads_sc_tl_i,.ads_show_if,.ads_side,.ads_sidebar,.ads_singlepost,.ads_spacer,.ads_takeover,.ads_title,.ads_top,.ads_top_promo,.ads_tr,.ads_verticalSpace,.ads_vtlLink,.ads_widesky,.ads_wrapperads_top,.adsbg300,.adsblockvert,.adsborder,.adsbottom,.adsbox,.adsboxitem,.adsbyyahoo,.adsc,.adscaleAdvert,.adsclick,.adscontainer,.adscreen,.adsd_shift100,.adsection_a2,.adsection_c2,.adsense-ad,.adsense-category,.adsense-category-bottom,.adsense-heading,.adsense-post,.adsense-right,.adsense-title,.adsense3,.adsense300,.adsenseAds,.adsenseBlock,.adsenseContainer,.adsenseGreenBox,.adsense_bdc_v2,.adsense_mpu,.adsensebig,.adsenseblock,.adsenseblock_bottom,.adsenseblock_top,.adsenselr,.adsensem_widget,.adsensesq,.adsenvelope,.adset,.adsforums,.adsghori,.adsgvert,.adside,.adsidebox,.adsider,.adsingle,.adsleft,.adslink,.adslogan,.adsmalltext,.adsmessage,.adsnippet_widget,.adspace,.adspace-MR,.adspace-widget,.adspace180,.adspace_bottom,.adspace_buysell,.adspace_rotate,.adspace_skyscraper,.adspacer,.adspot,.adspot728x90,.adstextpad,.adstitle,.adstop,.adstory,.adstrip,.adtag,.adtech,.adtext_gray,.adtext_horizontal,.adtext_onwhite,.adtext_vertical,.adtile,.adtips,.adtips1,.adtop,.adtravel,.adtxt,.adtxtlinks,.adunit,.adv-mpu,.adver,.adverTag,.adver_cont_below,.advert-728x90,.advert-article-bottom,.advert-bannerad,.advert-box,.advert-head,.advert-iab-300-250,.advert-iab-468-60,.advert-mpu,.advert-skyscraper,.advert-text,.advert-txt,.advert300,.advert4,.advert5,.advert8,.advertColumn,.advertCont,.advertContainer,.advertHeadline,.advertRight,.advertText,.advertTitleSky,.advert_468x60,.advert_box,.advert_cont,.advert_djad,.advert_label,.advert_leaderboard,.advert_note,.advert_surr,.advert_top,.advertheader-red,.advertise-here,.advertise-homestrip,.advertise-horz,.advertise-leaderboard,.advertise-top,.advertise-vert,.advertiseContainer,.advertiseText,.advertise_ads,.advertise_here,.advertise_link,.advertise_link_sidebar,.advertisement-728x90,.advertisement-block,.advertisement-sidebar,.advertisement-space,.advertisement-sponsor,.advertisement-text,.advertisement-top,.advertisement468,.advertisementBox,.advertisementColumnGroup,.advertisementContainer,.advertisementHeader,.advertisementLabel,.advertisementPanel,.advertisement_btm,.advertisement_caption,.advertisement_g,.advertisement_header,.advertisement_horizontal,.advertisement_top,.advertiser-links,.advertisespace_div,.advertising-banner,.advertising-header,.advertising-local-links,.advertising2,.advertisingTable,.advertising_images,.advertisment_two,.advertize,.advertorial,.advertorial-2,.advertorial-promo-box,.advertorialtitle,.advt,.advt-banner-3,.advt-block,.advt-sec,.advt300,.advt720,.adwordListings,.adwords,.adwordsHeader,.adwrap,.adwrapper-lrec,.adwrapper948,.adzone-footer,.adzone-sidebar,.affiliate-link,.affiliate-sidebar,.affiliateAdvertText,.affinityAdHeader,.afsAdvertising,.after_ad,.agi-adsaleslinks,.alb-content-ad,.alignads,.alt_ad,.anchorAd,.another_text_ad,.answer_ad_content,.aolSponsoredLinks,.aopsadvert,.apiAdMarkerAbove,.apiAds,.archive-ads,.art_ads,.article-ads,.articleAd,.articleAds,.articleAdsL,.articleEmbeddedAdBox,.article_ad,.article_adbox,.article_mpu_box,.articleads,.aseadn,.aux-ad-widget-1,.aux-ad-widget-2,.b-astro-sponsored-links_horizontal,.b-astro-sponsored-links_vertical,.banner-ad,.banner-ads,.banner-adverts,.banner300x100,.banner300x250,.banner468,.bannerAd,.bannerAdWrapper300x250,.bannerAdWrapper730x86,.bannerRightAd,.banner_300x250,.banner_ad,.banner_ad_footer,.banner_ad_leaderboard,.bannerad,.barkerAd,.base-ad-mpu,.base_ad,.base_printer_widgets_AdBreak,.bg-ad-link,.bgnavad,.big-ads,.bigAd,.big_ad,.big_ads,.bigad,.bigad2,.bigbox_ad,.bigboxad,.billboard_ad,.blk_advert,.block-ad,.block-ad300,.block-admanager,.block-ads-bottom,.block-ads-top,.block-adsense,.block-openadstream,.block-openx,.block-thirdage-ads,.block-wtg_adtech,.blockAd,.blockAds,.block_ad_sb_text,.block_ad_sponsored_links,.block_ad_sponsored_links-wrapper,.blockad,.blocked-ads,.blocsponsor,.blog-ad-leader-inner,.blog-ads-container,.blogAd,.blogAdvertisement,.blogArtAd,.blogBigAd,.blog_ad,.blogads,.blox3featuredAd,.body_ad,.body_sponsoredresults_bottom,.body_sponsoredresults_middle,.body_sponsoredresults_top,.bookseller-header-advt,.bottomAd,.bottomAds,.bottom_ad,.bottom_adsense,.bottom_sponsor,.bottomad,.bottomadvert,.bottomrightrailAd,.bottomvidad,.box-ad,.box-ad-grey,.box-ads,.box-adsense,.boxAd,.boxAds,.box_ad,.box_ad_container,.box_ad_content,.box_ad_spacer,.box_ads,.box_advertising,.box_advertisment_62_border,.box_content_ad,.box_content_ads,.boxad,.boxyads,.bps-ad-wrapper,.bps-advertisement,.bps-advertisement-inline-ads,.br-ad,.breakad_container,.brokerad,.bsa_ads,.btm_ad,.btn-ad,.bullet-sponsored-links,.bullet-sponsored-links-gray,.burstContentAdIndex,.busrep_poll_and_ad_container,.buttonAd,.buttonAds,.buttonadbox,.bx_ad,.bx_ad_right,.cA-adStrap,.cColumn-TextAdsBox,.care2_adspace,.catalog_ads,.category-ad,.category__big_game_container_body_games_advertising,.cb-ad-container,.cb_ads,.cb_footer_sponsor,.cb_navigation_ad,.cbstv_ad_label,.cbzadvert,.cbzadvert_block,.cdAdTitle,.cdmainlineSearchAdParent,.cdsidebarSearchAdParent,.centerAd,.center_ad,.centerad,.centered-ad,.cinemabotad,.classifiedAdThree,.clearerad,.cm_ads,.cms-Advert,.cnbc_badge_banner_ad_area,.cnbc_banner_ad_area,.cnn160AdFooter,.cnnAd,.cnnMosaic160Container,.cnnSearchSponsorBox,.cnnStoreAd,.cnnStoryElementBoxAd,.cnnWCAdBox,.cnnWireAdLtgBox,.cnn_728adbin,.cnn_adcntr300x100,.cnn_adcntr728x90,.cnn_adspc336cntr,.cnn_adtitle,.column2-ad,.columnRightAdvert,.com-ad-server,.comment-advertisement,.comment_ad_box,.common_advertisement_title,.communityAd,.conTSponsored,.conductor_ad,.confirm_ad_left,.confirm_ad_right,.confirm_leader_ad,.consoleAd,.container-adwords,.containerSqAd,.container_serendipity_plugin_google_adsense,.content-ad,.contentAdFoot,.contentAdsWrapper,.content_ad,.content_ad_728,.content_adsq,.contentad,.contentad300x250,.contentad_right_col,.contentadcontainer,.contentadleft,.contentads,.contenttextad,.contest_ad,.cp_ad,.cpmstarHeadline,.cpmstarText,.create_ad,.cs-mpu,.cscTextAd,.cse_ads,.cspAd,.ct_ad,.cube-ad,.cubeAd,.cube_ads,.currency_ad,.custom_ads,.cwAdvert,.darla_ad,.dartAdImage,.dart_ad,.dart_tag,.dartadvert,.dartiframe,.dc-ad,.dcAdvertHeader,.deckAd,.deckads,.detailMpu,.detail_ad,.detail_top_advert,.divAd,.divAdright,.divad1,.divad2,.divad3,.divads,.divider_ad,.dmco_advert_iabrighttitle,.downloadAds,.download_ad,.downloadad,.dualAds,.dynamic-ads,.dynamic_ad,.e-ad,.ec-ads,.ec-ads-remove-if-empty,.em-ad,.embed-ad,.entry-body-ad,.entry_sidebar_ads,.entryad,.ez-clientAd,.f_Ads,.feature_ad,.featuredAds,.featuredadvertising,.firstpost_advert_container,.flagads,.flash-advertisement,.flash_ad,.flash_advert,.flashad,.flexiad,.flipbook_v2_sponsor_ad,.floatad,.floated_right_ad,.floatingAds,.fm-badge-ad,.footad,.footer-ad,.footerAd,.footerAdModule,.footerAdslot,.footerTextAd,.footer_ad,.footer_ads,.footer_block_ad,.footer_bottomad,.footer_line_ad,.footer_text_ad,.footerad,.forumtopad,.frn_adbox,.frn_cont_adbox,.frontads,.ft-ad,.ftdAdBar,.ftdContentAd,.full_ad_box,.fullbannerad,.g3rtn-ad-site,.gAdRows,.gAdSky,.gAdvertising { visibility:hidden !important; display:none !important; } .g_ggl_ad,.ga-ads,.ga-textads-bottom,.ga-textads-top,.gaTeaserAdsBox,.gads,.gads_cb,.gads_container,.gallery_ad,.gam_ad_slot,.gameAd,.gamesPage_ad_content,.gbl_advertisement,.gen_side_ad,.gglAds,.global_banner_ad,.googad,.googads,.google-ad,.google-ad-container,.google-ads,.google-ads-boxout,.google-ads-slim,.google-right-ad,.google-sponsored-ads,.google-sponsored-link,.google468_60,.googleAd,.googleAd-content,.googleAd-list,.googleAd300x250_wrapper,.googleAdBox,.googleAdSense,.googleAdSenseModule,.googleAd_body,.googleAds,.googleAds_article_page_above_comments,.googleAdsense,.googleContentAds,.googleProfileAd,.googleSearchAd_content,.googleSearchAd_sidebar,.google_ad,.google_ad_wide,.google_add_container,.google_ads,.google_ads_bom_title,.google_ads_content,.googlead,.googleaddiv,.googleaddiv2,.googleads,.googleads_300x250,.googleads_title,.googleafc,.googley_ads,.gpAdBox,.gpAds,.gradientAd,.grey-ad-line,.group_ad,.gsAd,.gsfAd,.gt_ad,.gt_ad_300x250,.gt_ad_728x90,.gt_adlabel,.gutter-ad-left,.gutter-ad-right,.h-ad-728x90-bottom,.h_Ads,.h_ad,.half-ad,.half_ad_box,.hcf-ad-rectangle,.hcf-cms-ad,.hd_advert,.hdr-ads,.header-advert,.headerAds,.headerAdvert,.headerTextAd,.header_ad,.header_ad_div,.header_advertisment,.headerad,.headerad-720,.hi5-ad,.highlightsAd,.hm_advertisment,.home-ad-links,.homeAd,.homeAd1,.homeAd2,.homeAdBoxA,.homeAdBoxBetweenBlocks,.homeAdBoxInBignews,.homeAdSection,.homeMediumAdGroup,.home_ad_bottom,.home_advertisement,.home_mrec_ad,.homead,.homepage-ad,.homepage300ad,.homepageFlexAdOuter,.homepageMPU,.homepage_middle_right_ad,.hor_ad,.horiz_adspace,.horizontalAd,.horizontal_ads,.horizontaltextadbox,.horizsponsoredlinks,.hortad,.houseAd1,.houseAdsStyle,.housead,.hp-col4-ads,.hp2-adtag,.hp_ad_cont,.hp_ad_text,.hp_t_ad,.hp_w_ad,.hpa-ad1,.html-advertisement,.ic-ads,.ico-adv,.idMultiAd,.image-advertisement,.imageads,.imgad,.in-page-ad,.in-story-ads,.in-story-text-ad,.indEntrySquareAd,.indie-sidead,.indy_googleads,.inhousead,.inline-ad,.inline-mpu,.inline-mpu-left,.inlineSideAd,.inline_ad,.inline_ad_title,.inlinead,.inlineadsense,.inlineadtitle,.inlist-ad,.inlistAd,.inner-advt-banner-3,.innerAds,.innerad,.inpostad,.insert_advertisement,.insertad,.insideStoryAd,.inteliusAd_image,.interest-based-ad,.internalAdsContainer,.is24-adplace,.isAd,.islandAd,.islandAdvert,.islandad,.jimdoAdDisclaimer,.jp-advertisment-promotional,.js-advert,.kw_advert,.kw_advert_pair,.l_ad_sub,.l_banner.ads_show_if,.labelads,.largeRectangleAd,.largeUnitAd,.lastRowAd,.lcontentbox_ad,.leaderAdTop,.leaderAdvert,.leader_ad,.leaderboardAd,.leaderboardad,.leaderboardadtop,.left-ad,.leftAd,.leftAdColumn,.leftAds,.left_ad,.left_ad_box,.left_adlink,.left_ads,.left_adsense,.leftad,.leftadtag,.leftbar_ad_160_600,.leftbarads,.leftbottomads,.leftnavad,.lgRecAd,.lg_ad,.ligatus,.linead,.link_adslider,.link_advertise,.live-search-list-ad-container,.ljad,.local-ads,.log_ads,.logoAds,.logoad,.logoutAd,.longAd,.lowerAds,.m-ad-tvguide-box,.m4-adsbygoogle,.m_banner_ads,.macAd,.macad,.main-ad,.main-advert,.main-tabs-ad-block,.main_ad,.main_ad_bg_div,.main_adbox,.main_intro_ad,.map_media_banner_ad,.marginadsthin,.marketing-ad,.masthead_topad,.matador_sidebar_ad_600,.mdl-ad,.media-advert,.mediaAd,.mediaAdContainer,.mediaResult_sponsoredSearch,.medium-rectangle-ad,.mediumRectangleAdvert,.medrect_ad,.menuItemBannerAd,.menueadimg,.messageBoardAd,.mf-ad300-container,.micro_ad,.mid_ad,.midad,.middleAds,.middleads,.min_navi_ad,.mini-ad,.miniad,.mmcAd_Iframe,.mobile-sponsoring,.mod-ad-lrec,.mod-ad-n,.mod-adopenx,.mod-vertical-ad,.mod_admodule,.module-ad-small,.module-ads,.moduleAdvertContent,.module_ad,.module_box_ad,.modulegad,.moduletable-advert,.moduletable-googleads,.moduletablesquaread,.mpu-ad,.mpu-advert,.mpu-footer,.mpu-fp,.mpu-title,.mpu-top-left,.mpu-top-left-banner,.mpu-top-right,.mpuAd,.mpuAdSlot,.mpuAdvert,.mpuArea,.mpuBox,.mpuContainer,.mpuHolder,.mpuTextAd,.mpu_ad,.mpu_advert,.mpu_container,.mpu_gold,.mpu_holder,.mpu_platinum,.mpu_text_ad,.mpuad,.mpuholderportalpage,.mrec_advert,.ms-ads-link,.msfg-shopping-mpu,.mwaads,.my-ad250x300,.nSponsoredLcContent,.nSponsoredLcTopic,.nadvt300,.narrow_ad_unit,.narrow_ads,.navAdsBanner,.navadbox,.navi_ad300,.naviad,.nba300Ad,.nbaT3Ad160,.nbaTVPodAd,.nbaTwo130Ads,.nbc_ad_carousel_wrp,.newTopAdContainer,.newad,.news_article_ad_google,.newsviewAdBoxInNews,.nf-adbox,.nn-mpu,.noAdForLead,.normalAds,.nrAds,.nsAdRow,.oas-ad,.oas-bottom-ads,.offer_sponsoredlinks,.oio-banner-zone,.oio-link-sidebar,.oio-zone-position,.on_single_ad_box,.onethirdadholder,.openads,.openadstext_after,.openx,.openx-ad,.osan-ads,.other_adv2,.outermainadtd1,.ovAdPromo,.ovAdSky,.ovAdartikel,.ov_spns,.pageGoogleAd,.pageGoogleAdFlat,.pageLeaderAd,.page_content_right_ad,.pagead,.pagenavindexcontentad,.paneladvert,.partner-ads-container,.partnersTextLinks,.pencil_ad,.player_ad_box,.player_hover_ad,.player_page_ad_box,.plista_inimg_box,.pnp_ad,.pod-ad-300,.podRelatedAdLinksWidget,.podSponsoredLink,.portalCenterContentAdBottom,.portalCenterContentAdMiddle,.portalCenterContentAdTop,.portalcontentad,.postAd,.post_ad,.post_ads,.post_sponsor_unit,.postbit_adbit_register,.postbit_adcode,.postgroup-ads,.postgroup-ads-middle,.prebodyads,.premium_ad_container,.promoAd,.promoAds,.promo_ad,.ps-ligatus_placeholder,.publication-ad,.publicidad,.puff-advertorials,.qa_ad_left,.qm-ad-content,.qm-ad-content-news,.quigo-ad,.qzvAdDiv,.r_ad_1,.r_ad_box,.r_ads,.rad_container,.rect_ad_module,.rectad,.rectangle-ad,.rectangleAd,.rectanglead,.redads_cont,.regular_728_ad,.regularad,.relatedAds,.related_post_google_ad,.remads,.resourceImagetAd,.result_ad,.results_sponsor,.results_sponsor_right,.reviewMidAdvertAlign,.rght300x250,.rhads,.rhs-ad,.rhs-ads-panel,.right-ad,.right-ad-holder,.right-ad2,.right-ads,.right-ads2,.right-sidebar-box-ad,.rightAdBox,.rightColAd,.rightColumnRectAd,.rightRailAd,.right_ad,.right_ad_160,.right_ad_box,.right_ad_text,.right_ad_top,.right_ads,.right_col_ad,.right_hand_advert_column,.right_side-partyad,.rightad_1,.rightad_2,.rightadbox1,.rightads,.rightadunit,.rightcol_boxad,.rightcoladvert,.rightcoltowerad,.rnav_ad,.rngtAd,.roundedCornersAd,.roundingrayboxads,.rt_ad1_300x90,.rt_ad_300x250,.rt_ad_call,.s2k_ad,.savvyad_unit,.sb-ad-sq-bg,.sbAd,.sbAdUnitContainer,.sb_adsN,.sb_adsNv2,.sb_adsW,.sb_adsWv2,.scanAd,.scc_advert,.sci-ad-main,.sci-ad-sub,.search-ad,.search-results-ad,.search-sponsor,.search-sponsored,.searchAd,.searchAds,.searchSponsoredResultsBox,.searchSponsoredResultsList,.search_column_results_sponsored,.search_results_sponsored_top,.section-ad2,.section-sponsor,.section_mpu_wrapper,.section_mpu_wrapper_wrapper,.selfServeAds,.sepContentAd,.serp_sponsored,.servsponserLinks,.shoppingGoogleAdSense,.showcaseAd,.sidbaread,.side-ad,.side-ads,.sideAd,.sideBoxAd,.side_ad,.side_ad2,.side_ad_1,.side_ad_2,.side_ad_3,.sidead,.sideads,.sideadsbox,.sideadvert,.sidebar-ad,.sidebar-ads,.sidebar-text-ad,.sidebarAd,.sidebarAdUnit,.sidebarAdvert,.sidebar_ad,.sidebar_ad_300_250,.sidebar_ads,.sidebar_ads_336,.sidebar_adsense,.sidebar_box_ad,.sidebarad,.sidebarad_bottom,.sidebaradbox,.sidebarboxad,.sideheadnarrowad,.sideheadsponsorsad,.singleAd,.singleAdsContainer,.singlead,.sitesponsor,.skinAd,.skin_ad_638,.sky-ad,.skyAd,.skyAdd,.skyAdvert,.sky_ad,.sky_scraper_ad,.skyad,.skyjobsadtext,.skyscraper-ad,.skyscraper_ad,.skyscraper_bannerAdHome,.sleekadbubble,.slideshow-ad,.slpBigSlimAdUnit,.slpSquareAdUnit,.sm_ad,.smallSkyAd1,.smallSkyAd2,.small_ad,.small_ads,.smallad-left,.smallads,.smallsponsorad,.smart_ads_bom_title,.specialAd175x90,.speedyads,.sphereAdContainer,.spl-ads,.spl_ad,.spl_ad2,.spl_ad_plus,.splitAd,.sponlinkbox,.spons-link,.spons_links,.sponslink,.sponsor-ad,.sponsor-bottom,.sponsor-link,.sponsor-links,.sponsor-right,.sponsor-services,.sponsor-top,.sponsorArea,.sponsorBox,.sponsorPanel,.sponsorPost,.sponsorPostWrap,.sponsorStrip,.sponsorTop,.sponsor_ad_area,.sponsor_footer,.sponsor_horizontal,.sponsor_line,.sponsor_links,.sponsor_logo,.sponsor_top,.sponsor_units,.sponsoradtitle,.sponsorbox,.sponsored-ads,.sponsored-chunk,.sponsored-editorial,.sponsored-features,.sponsored-links,.sponsored-links-alt-b,.sponsored-links-holder,.sponsored-links-right,.sponsored-post,.sponsored-post_ad,.sponsored-results,.sponsored-right-border,.sponsored-text,.sponsoredBox,.sponsoredInfo,.sponsoredInner,.sponsoredLabel,.sponsoredLinks,.sponsoredLinks2,.sponsoredLinksHeader,.sponsoredProduct,.sponsoredResults,.sponsoredSideInner,.sponsored_ads,.sponsored_box,.sponsored_box_search,.sponsored_by,.sponsored_links,.sponsored_links_title_container,.sponsored_links_title_container_top,.sponsored_links_top,.sponsored_results,.sponsored_well,.sponsoredibbox,.sponsoredlink,.sponsoredlinks,.sponsoredlinkscontainer,.sponsoredresults,.sponsoredtextlink_container_ovt,.sponsorlink,.sponsorlink2,.sponsormsg,.sponsors,.sponsors-box,.sponsors_bar,.sponsorshipbox,.sponsortable,.sponsortext,.spotlightAd,.squareAd,.square_ad,.square_banner_ad,.squared_ad,.ss-ad-mpu,.standard-ad,.start__newest__big_game_container_body_games_advertising,.staticAd,.stock-ticker-ad-tag,.stocks-ad-tag,.store-ads,.story_AD,.story_ad_div,.story_right_adv,.storyad,.storysponsorimage,.subad,.subcontent-ad,.subtitle-ad-container,.sugarad,.super-ad,.supercommentad_left,.supercommentad_right,.supp-ads,.supportAdItem,.surveyad,.t10ad,.tab_ad,.tab_ad_area,.tablebordersponsor,.tadsanzeige,.tadsbanner,.tadselement,.tallad,.tblTopAds,.tbl_ad,.tbox_ad,.td-Adholder,.teaser-sponsor,.teaserAdContainer,.teaser_adtiles,.text-ad-links,.text-advertisement,.text-g-advertisement,.text-g-group-short-rec-ad,.text-g-net-grp-google-ads-article-page,.textAd,.textAdBox,.textAds,.text_ad,.text_ads,.textad,.textadContainer,.textad_headline,.textadbox,.textadheadline,.textadlink,.textadsds,.textadsfoot,.textadtext,.textlink-ads,.tf_page_ad_search,.thisIsAd,.thisIsAnAd,.ticket-ad,.tileAds,.tips_advertisement,.title-ad,.title_adbig,.tncms-region-ads,.toolad,.toolbar-ad,.top-ad,.top-ad-space,.top-ads,.top-banner-ad,.top-menu-ads,.top-sponsors,.topAdWrap,.topAdvertisement,.topBannerAd,.topLeaderboardAd,.top_Ad,.top_ad,.top_ad_728,.top_ad_728_90,.top_ad_disclaimer,.top_ad_div,.top_ad_post,.top_ad_wrapper,.top_advert,.top_advertising_lb,.top_container_ad,.top_sponsor,.topad-bar,.topadbox,.topadspot,.topadvertisementsegment,.topcontentadvertisement,.topic_inad,.topstoriesad,.toptenAdBoxA,.tourFeatureAd,.towerAd,.towerAdLeft,.towerAds,.tower_ad,.tower_ad_disclaimer,.towerad,.tribal-ad,.ts-ad_unit_bigbox,.ts-banner_ad,.ttlAdsensel,.tto-sponsored-element,.tucadtext,.tvs-mpu,.twoColumnAd,.twoadcoll,.twoadcolr,.tx_smartadserver_pi1,.txt-ads,.txtAd,.txtAds,.txt_ads,.txtadvertise,.type_adscontainer,.type_miniad,.type_promoads,.ukAds,.undertimyads,.unit-ad,.universalboxADVBOX01,.universalboxADVBOX03,.universalboxADVBOX04a,.usenext,.vertad,.vertical-adsense,.videoAd,.videoBoxAd,.video_ad,.view-promo-mpu-right,.view_rig_ad,.virgin-mpu,.wa_adsbottom,.wantads,.wide-ad,.wide-skyscraper-ad,.wideAd,.wideAdTable,.wide_ad,.wide_ad_unit_top,.wide_ads,.wide_google_ads,.widget-ad,.widget-ad300x250,.widget-entry-ads-160,.widgetYahooAds,.widget_ad,.widget_ad_rotator,.widget_island_ad,.widget_sdac_bottom_ad_widget,.widget_sdac_footer_ads_widget,.widget_sdac_skyscraper_ad_widget,.widget_sponsor,.wikia-ad,.wikia_ad_placeholder,.wingadblock,.withAds,.wl-ad,.wnMultiAd,.wp125ad,.wp125ad_2,.wpn_ad_content,.wrap-ads,.wsSponsoredLinksRight,.wsTopSposoredLinks,.x03-adunit,.x04-adunit,.xads-blk2,.xads-ojedn,.y-ads,.y-ads-wide,.y7-advertisement,.yahoo-sponsored,.yahoo-sponsored-links,.yahooAds,.yahoo_ads,.yan-sponsored,.ygrp-ad,.yrail_ad_wrap,.yrail_ads,.ysmsponsor,.ysponsor,.yw-ad,a[href^="http://ad.doubleclick.net/"],a[href^="http://adserving.liveuniversenetwork.com/"],a[href^="http://galleries.pinballpublishernetwork.com/"],a[href^="http://galleries.securewebsiteaccess.com/"],a[href^="http://install.securewebsiteaccess.com/"],a[href^="http://latestdownloads.net/download.php?"],a[href^="http://secure.signup-page.com/"],a[href^="http://secure.signup-way.com/"],a[href^="http://www.FriendlyDuck.com/AF_"],a[href^="http://www.adbrite.com/mb/commerce/purchase_form.php?"],a[href^="http://www.friendlyduck.com/AF_"],a[href^="http://www.google.com/aclk?"],a[href^="http://www.liutilities.com/aff"],a[href^="http://www.liutilities.com/products/campaigns/adv/"],a[href^="http://www.my-dirty-hobby.com/?sub="],a[href^="http://www.ringtonematcher.com/"],div#mclip_container:first-child:last-child,div#tads.c,table.ra[align="left"][width="30%"],table.ra[align="right"][width="30%"],[src*="sixsigmatraffic.com"],embed[flashvars*="AdID"],#Ad1,#AdHeader,#Adbanner,#AdvertiseFrame,#Advertisement,#Advertisements,#Tadspacehead,#TopAd,#ad-container,#ad-header,#ad-top,#ad-wrapper,#ad1,#ad3,#ad728x90,#adBanner,#adComponentWrapper,#adContainer,#adDiv,#adHeader,#adTop,#adWrapper,#ad_area,#ad_container,#ad_leader,#ad_space,#ad_square,#ad_table,#ad_wrapper,#adbody,#adbox,#adposition3,#adsense,#adsense_inline,#adspace,#advert,#advertise,#advertising,#adverts,#adwrapper,#bannerad,#block_advert,#contentAd,#content_ad,#divAd,#featuread,#footer_ad,#footer_ads,#googlead,#head-ad,#header_ad,#mainAd,#printads,#promo-ad,#right_ad,#sidebar-ads,#sidebar_ads,#sponsored,#topAd,#topBannerAd,#top_ad,#topad,#topads,.AdBox,.AdInfo,.AdSense,.AdTitle,.Ads,.Advert,.ad-box,.ad-button,.ad-container,.ad-content,.ad-display,.ad-holder,.ad-sidebar,.ad-text,.ad1,.ad2,.ad468,.adBox,.adContainer,.adDiv,.adElement,.adHolder,.adModule,.adSpace,.adSummary,.adText,.adTitle,.ad_Right,.ad_header,.ad_links,.ad_right,.ad_space,.ad_text,.adbox,.adcol1,.adcol2,.adcont,.addiv,.adframe,.adholder,.adinfo,.adlink,.adlist,.adpic,.adright,.ads-section,.adsense,.adtable,.adtext,.advert-horizontal,.advert_list,.advertise,.advertisement,.advertiser,.advertising,.advertising_block,.advertisment,.adverts,.adwrapper,.affiliate,.banner_728x90,.block_ad,.bottom_ad_block,.contentAd,.detail-ads,.header-ad,.headerAd,.header_ad_center,.horizontal_ad,.module-ad,.mpu,.post-ad,.rightAd,.right_ads_column,.rightad,.sponsored,.sponsoredtextlink_container,.textads,.topAd,.topAds,.top_ads,.topad,.topads,a[href^="http://ad-emea.doubleclick.net/"] { visibility:hidden !important; display:none !important; }</style></html>

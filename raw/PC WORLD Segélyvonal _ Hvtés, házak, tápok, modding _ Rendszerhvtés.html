@@ -1,0 +1,2393 @@
+
+<!-- saved from url=(0075)http://www.pcworld.hu/forum/index.php?act=Print&client=printer&f=24&t=13231 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
+		<title>PC WORLD Segélyvonal [Powered by Invision Power Board]</title>
+		<style type="text/css">
+	/* 
+ * Cascading Style Sheet(CSS 467), for Invision Power Board 2.1.0
+ * Author: James A. Mathias, admin@leihu.com, http://www.1lotus.com 
+ * Copyright: 2005 Invision Power Services, all rights reserved 
+ *
+ * All style attributes in alpha-numeric order starting from 0
+ *
+ */
+
+/* 
+ * ========================================
+ * global element styles 
+ * ========================================
+ */
+
+html{
+	overflow-x: auto; /* fixes MSIE scrollbar bug DO NOT REMOVE, has no effect in Mozilla, or Opera */
+}
+
+body{ 
+	background: #FFF;
+	color: #222;
+	font-family: Verdana, Tahoma, Arial, Trebuchet MS, Sans-Serif, Georgia, Courier, Times New Roman, Serif;
+	font-size: 11px;
+	line-height: 135%;
+	margin: 0px;
+	padding: 0px; /* required for Opera to have 0 margin */
+	text-align: center; /* centers board in MSIE */
+}
+
+/* 
+ * ========================================
+ * Set up IPB table
+ * ========================================
+ */
+ 
+.ipbtable { width:100% }
+
+table.ipbtable,
+tr.ipbtable,
+td.ipbtable
+{ /* required for text in tables, because tables do not inherit from body */
+	background: transparent;
+	color: #222;
+	font-size: 11px;
+	line-height: 135%;
+}
+
+.ipbtable td,
+.divpad{ /* gives all tables faux cellpadding of 5px */
+	padding: 5px;
+}
+
+td.nopad{ /* allows some tables to have no padding on the td */
+	padding: 0;
+}
+
+
+
+form{
+	display: inline;
+	margin: 0; /* removes mystery form tag gapping */
+	padding: 0; /* removes mystery form tag gapping */
+}
+
+img{
+	border: 0; /* makes sure linked images do not have a border */
+	vertical-align: middle;
+}
+
+/* 
+ * ========================================
+ * global hyperlink styles 
+ * ========================================
+ */
+
+a:link,
+a:visited,
+a:active{
+	background: transparent;
+	color: #222;
+	text-decoration: underline;
+}
+
+a:hover{
+	background: transparent;
+	color: #34498B;
+}
+
+/* 
+ * ========================================
+ * Main wrapper, this controls the overall width of the board in you browser view window. 
+ * ========================================
+ */
+
+#ipbwrapper{ 
+	margin: 20px auto 20px auto; /* centers the box, no matter the overall width, also applies a 20px gap at the top and bottom of the board */
+	text-align: left; /* re_aligns text to left second part of two part MSIE centering workaround */
+	/* EDIT THIS TO CHANGE THE WIDTH OF THE BOARD -> 750px is a common fixed resolution size */
+	width: 98%;
+}
+
+/* 
+ * ========================================
+ * styles for pagination links 
+ * ========================================
+ */
+ 
+
+.pagelink,
+.pagelinklast,
+.pagecurrent,
+.minipagelink,
+.minipagelinklast{
+	background: #F0F5FA;
+	border: 1px solid #072A66;
+	padding: 1px 3px 1px 3px;
+}
+
+.pagelinklast,
+.minipagelinklast{
+	background: #DFE6EF;
+}
+
+
+.pagecurrent{
+	background: #FFC9A5;
+}
+
+.minipagelink,
+.minipagelinklast{
+	border: 1px solid #C2CFDF;
+	font-size: 10px;
+	margin: 0 1px 0 0;
+}
+
+.pagelink a:active,
+.pagelink a:visited,
+.pagelink a:link,
+.pagelinklast a:active,
+.pagelinklast a:visited,
+.pagelinklast a:link,
+.pagecurrent a:active,
+.pagecurrent a:visited,
+.pagecurrent a:link,
+.minipagelink a:active,
+.minipagelink a:visited,
+.minipagelink a:link,
+.minipagelinklast a:active,
+.minipagelinklast a:visited,
+.minipagelinklast a:link{
+	text-decoration: none;
+}
+
+/* fake button effect for some links */
+.fauxbutton{
+	background: #BFCDE0;
+	border: 1px solid #072A66;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 4px;
+}
+
+.fauxbutton a:link,
+.fauxbutton a:visited,
+.fauxbutton a:active{
+	color: #222 !important;
+	text-decoration: none;
+}
+
+.forumdesc,
+.forumdesc a:link,
+.forumdesc a:visited,
+.forumdesc a:active{ 
+	background: transparent;
+	font-size: 10px; 
+	color: #666;
+	line-height: 135%;
+	margin: 2px 0 0 0;
+	padding: 0;
+}
+
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+
+.searchlite {
+	background-color:yellow;
+	font-weight:bold;
+	color: red;
+}
+
+.activeusers{
+	background: #FFF;
+	border: 1px solid #072A66;
+	color: #000;
+	margin: 0px;
+	padding: 1px;
+}
+
+.activeuserposting a:link,
+.activeuserposting a:visited,
+.activeuserposting a:active,
+.activeuserposting
+{
+	font-style:italic;
+	text-decoration: none;
+	border-bottom:1px dotted black;
+}
+
+fieldset.search{ 
+	line-height: 150%;
+	padding: 6px; 
+}
+
+label{ 
+	cursor: pointer; 
+}
+
+img.attach{ 
+	background: #808080 url(style_images/1/click2enlarge.gif) no-repeat top right;
+	border: 1px solid #808080;
+	margin: 0 2px 0 0;
+	padding: 11px 2px 2px 2px;
+}
+
+.thumbwrap,
+.thumbwrapp,
+.fullimagewrap{
+	border: 1px solid #072A66;
+	margin: 2px;
+}
+
+.thumbwrapp{
+	border: 2px solid #660707;
+}
+
+.fullimagewrap{
+	background: #F5F9FD;
+	text-align: center;
+	margin: 5px 0 5px 0;
+	padding: 5px;
+}
+
+.thumbwrap h4,
+.thumbwrapp h4{	
+	background: #DDE6F2;
+	border: 0 !important;
+	border-bottom: 1px solid #5176B5 !important;
+	color: #5176B5; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.thumbwrap p,
+.thumbwrapp p{
+	background: #EEF2F7 !important;
+	border: 0 !important;
+	border-top: 1px solid #5176B5 !important;
+	margin: 0 !important;
+	padding: 5px !important;
+	text-align: left;
+}
+
+.thumbwrap p.alt,
+.thumbwrapp p.alt{
+	background: #DFE6EF !important;
+	margin: 0 !important;
+	padding: 5px !important;
+	text-align: left;
+}
+
+.thumbwrapp p.pin{
+	background: #EFDFDF !important;
+	text-align: center !important;
+}
+	
+.thumbwrap img.galattach,
+.thumbwrapp img.galattach{
+	background: #FFF url(style_images/1/img_larger.gif) no-repeat bottom right;
+	border: 1px solid #072A66;
+	margin: 5px;
+	padding: 2px 2px 10px 2px;
+}
+
+li.helprow{ 
+	margin: 0 0 10px 0;
+	padding: 0; 
+}
+
+ul#help{ 
+	padding: 0 0 0 15px; 
+}
+
+.warngood,
+.warnbad{ 
+	color: #0B9500;
+	font-weight: bold;
+}
+
+.warnbad{ 
+	color: #DD0000;
+}
+
+#padandcenter{ 
+	margin: 0 auto 0 auto;
+	padding: 14px 0 14px 0;
+	text-align: center;
+}
+
+#profilename{ 
+	font-size: 28px; 
+	font-weight: bold; 
+}
+
+#photowrap{ 
+	padding: 6px; 
+}
+
+#phototitle{ 
+	border-bottom: 1px solid #000; 
+	font-size: 24px; 
+}
+
+#photoimg{ 
+	margin: 15px 0 0 0;
+	text-align: center; 
+} 
+
+#ucpmenu,
+#ucpcontent{ 
+	background: #F5F9FD;
+	border: 1px solid #345487;
+	line-height: 150%;
+}
+
+#ucpmenu p{ 
+	margin: 0; 
+	padding: 2px 5px 6px 9px;
+}
+
+#ucpmenu a:link, 
+#ucpmenu a:active, 
+#ucpmenu a:visited{ 
+	text-decoration: none; 
+}
+
+#ucpcontent{ 
+	width: auto;
+}
+
+#ucpcontent p{ 
+	margin: 0;
+	padding: 10px;
+}
+
+.activeuserstrip{ 
+	background: #BCD0ED;
+	padding: 6px;
+}
+
+/* Topic View elements */
+.signature{  
+	background: transparent;
+	color: #339; 
+	font-size: 10px;
+	line-height: 150%;
+}
+
+.postdetails{ 
+	font-size: 10px;
+	line-height:140%;
+}
+
+.postcolor{ 
+	font-size: 12px; 
+	line-height: 160%;
+}
+
+.normalname{ 
+	color: #003;
+	font-size: 12px; 
+	font-weight: bold; 
+}
+
+.normalname a:link, 
+.normalname a:visited, 
+.normalname a:active{ 
+	font-size: 12px;
+}
+
+.post1,
+.bg1{ 
+	background: #F5F9FD;
+}
+
+.post2,
+.bg3{ 
+	background: #EEF2F7;
+}
+
+.row2shaded,
+.post1shaded { background-color: #DEDBE4 }
+.row4shaded,
+.post2shaded { background-color: #E3DFE7 }
+
+.row1{ 
+	background: #DFE6EF; 
+}
+
+.row2{ 
+	background: #E4EAF2; 
+}
+
+.darkrow1{ 
+	background: #BCD0ED;
+	color: #3A4F6C; 
+}
+
+.darkrow3{ 
+	background: #D1DCEB; 
+	color: #3A4F6C; 
+}
+
+/* tableborders gives the white column / row lines effect */
+.plainborder,
+.tablefill,
+.tablepad{ 
+	background: #F5F9FD;
+	border: 1px solid #345487;
+}
+
+.tablefill,
+.tablepad{ 
+	padding: 6px;  
+}
+
+.tablepad{ 
+	border: 0 !important;
+}
+
+.wrapmini{ 
+	float: left;
+	line-height: 1.5em;
+	width: 25%;
+}
+
+.pagelinks{
+	float: left;
+	line-height: 1.2em;
+	width: 35%;
+}
+
+.desc{ 
+	font-size: 11px; 
+	color: #434951;
+}
+
+.lastaction
+{
+	font-size: 10px; 
+	color: #434951;
+}
+
+.edit{ 
+	font-size: 9px;
+}
+
+.thin{ 
+	border: 1px solid #FFF;
+	border-left: 0;
+	border-right: 0;
+	line-height: 150%;
+	margin: 2px 0 2px 0;
+	padding: 6px 0 6px 0;
+}
+
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+
+/* 
+ * ========================================
+ * calendar styles 
+ * ========================================
+ */
+	
+.calmonths{ 
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	font-size: 18px; 
+	font-weight: bold; 
+	margin: 5px 0 5px 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.weekday{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.calmonths a{
+	text-decoration: none;
+}
+
+.calday,
+.calweekday{ 
+	background: #DFE6EF;
+	color: #666;
+	font-size: 11px;
+	font-weight: bold;
+	margin: 0;
+	padding: 4px;
+	text-align: right;
+}
+
+.calweekday{
+	border-right: 1px solid #AAA;
+	color: #222;
+	font-size: 14px;
+	padding: 6px;
+	text-align: center;
+}
+
+.celltodayshaded,
+.celldateshaded,
+.cellblank,
+.celldate,
+.celltoday,
+.mcellblank,
+.mcelldate,
+.mcelltoday{
+	background: #EEF2F7; 
+	height: 100px;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+
+.celltodayshaded,
+.celldateshaded
+{
+	background: #E3DFE7;
+}
+
+.mcellblank,
+.mcelldate,
+.mcelltoday{
+	height: auto;
+}
+
+.cellblank,
+.mcellblank{
+	background: #C2CFDF;
+}
+
+.celltoday,
+.celltodayshaded,
+.mcelltoday{
+	border: 2px solid #8B0000;
+}
+
+.calranged
+{
+	border: 2px outset #C2CFDF;
+	background: #C2CFDF;
+	padding:4px;
+}
+
+.calitem
+{
+	border-bottom: 1px dotted #C2CFDF;
+	padding:4px;
+}
+
+/* 
+ * ========================================
+ * form styles 
+ * ========================================
+ */
+
+.input-warn,
+.input-green,
+input,
+textarea,
+select{
+	background: #FFF;
+	border: 1px solid #4C77B6;
+	color: #000;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 11px;
+	margin: 5px;
+	padding: 2px;
+	vertical-align: middle;
+}
+
+.input-warn,
+.input-warn-content
+{
+	border: 1px solid #C00;
+}
+
+.input-ok,
+.input-ok-content
+{
+	border: 1px solid #0C0;
+}
+
+.input-warn-content
+{
+	padding: 4px;
+	margin: 4px;
+	background-color: #FCC;
+}
+
+.input-ok-content
+{
+	padding: 4px;
+	margin: 4px;
+	background-color: #CFC;
+}
+
+
+.input-text
+{
+	color: #900;
+}
+
+select{
+	border: 0;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+
+input.button{
+	margin: 0;
+	width: auto;
+}
+
+optgroup option{
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.codebuttons{ 
+	font-family: Verdana, Helvetica, Sans-Serif; 
+	font-size: 10px; 
+	vertical-align: middle;
+	margin:2px;
+}
+
+.textarea,
+.searchinput,
+.button,
+.gobutton{
+	background: #FFF;
+	border: 1px solid #4C77B6;
+	color: #000;
+	font-family: Verdana, Helvetica, Sans-Serif;
+	font-size: 11px;
+	padding: 2px;
+	vertical-align: middle;
+}
+	
+.button{
+	background: #DFE6EF;
+}
+
+.gobutton{
+	background: transparent;
+	border: 0;
+	color: #072A66;
+	margin: 0;
+	vertical-align: middle;
+}
+
+.radiobutton,
+.checkbox,
+.helpbox { 
+	border: 0;
+	vertical-align: middle;
+}
+
+/* 
+ * class.formtable 
+ *
+ * used for tabled forms 
+ * technically tables should not be used for form display 
+ * but, in the case of IPB a table is easier to work with
+ * for the average webmaster, who has little to no CSS knowledge.
+ *
+ */
+
+.formtable{
+	background: transparent;
+}
+
+.formtable td,
+.pformleft,
+.pformleftw,
+.pformright{
+	background:#F5F9FD;
+	border: 1px solid #C2CFDF;
+	border-bottom: 0;
+	border-left: 0;
+	font-weight: bold;
+	margin: 1px 0 0 0;
+	padding: 6px;
+	width: 25%;
+} 
+
+.formtable td.wider,
+.pformleftw,
+.pformright{
+	width: 40%;
+}
+
+.formtable td.formright,
+.pformright{
+	border-right: 0px;
+	font-weight: normal;
+	width: auto;
+} 
+
+.formtable td.formtitle,
+.formsubtitle{
+	background: #D1DCEB;
+	border: 1px solid #9FB9D4; 
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+	font-weight: normal;
+}
+
+.formsubtitle{ 
+	border: 0;
+	color: #3A4F6C;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.formtable td.formstrip{
+	background: #DDE8F2;
+	border: 1px solid #9FB9D4;
+	border-left: 0;
+	border-right: 0;
+	font-weight: normal;
+}
+
+/* 
+ * ========================================
+ * new style quote and code wrappers MATT's DESIGN 
+ * ========================================
+ */
+
+.quotetop{
+	background: #E4EAF2 url(style_images/1/css_img_quote.gif) no-repeat right;
+	border: 1px dotted #000;
+	border-bottom: 0;
+	border-left: 4px solid #8394B2;
+	color: #000;
+	font-weight: bold;
+	font-size: 10px;
+	margin: 8px auto 0 auto;
+	padding: 3px;
+}
+
+.quotemain{
+	background: #FAFCFE;
+	border: 1px dotted #000;
+	border-left: 4px solid #8394B2;
+	border-top: 0;
+	color: #465584;
+	padding: 4px;
+	margin: 0 auto 8px auto;
+}
+
+.codetop,
+.sqltop,
+.htmltop{
+	background: #FDDBCC url(style_images/1/css_img_code.gif) no-repeat right;
+	color: #000;
+	font-weight: bold;
+	margin: 0 auto 0 auto;
+	padding: 3px;
+	width: 98%;
+}
+
+.codemain,
+.sqlmain,
+.htmlmain{
+	background: #FAFCFE;
+	border: 1px dotted #000;
+	color: #465584;
+	font-family: Courier, Courier New, Verdana, Arial;
+	margin: 0 auto 0 auto;
+	padding: 2px;
+	width: 98%;
+}
+
+/* 
+ * ========================================
+ * old school quote and code styles - backwards compatibility 
+ * ========================================
+ */
+
+#QUOTE,
+#CODE{  
+	background: #FAFCFE; 
+	border: 1px solid #000; 
+	color: #465584; 
+	font-family: Verdana, Arial; 
+	font-size: 11px; 
+	padding: 2px; 
+	white-space: normal;
+}
+
+#CODE{ 
+	font-family: Courier, Courier New, Verdana, Arial;
+}
+
+/* 
+ * ========================================
+ * All New Styles 
+ * ========================================
+ */
+.cleared{
+	clear: both;
+}
+
+.borderwrap,
+.borderwrapm{ /* this will affect the outlining border of all the tables and boxes through-out the skin. */
+	background: #FFF; 
+	border: 1px solid #072A66;
+	padding: 0px; 
+	margin: 0px; 
+}
+
+.borderwrapm{
+	margin: 5px;
+}
+
+.borderwrap h3,
+.maintitle,
+.maintitlecollapse{
+	background: url(style_images/1/tile_cat.gif);
+	border: 1px solid #FFF;
+	border-bottom: 1px solid #5176B5;
+	color: #FFF; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0px;
+	padding: 8px;
+}
+
+.maintitle td {
+	color: #FFF; 
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+.maintitlecollapse{
+	border: 1px solid #FFF;
+}
+
+.maintitle p,
+.maintitlecollapse p,
+.formsubtitle p{
+	background: transparent !important;
+	border: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.maintitle p.expand,
+.maintitle p.goto,
+.maintitlecollapse p.expand,
+.formsubtitle p.members{
+	float: right;
+	width: auto !important;
+}
+
+.maintitle a:link, 
+.maintitle a:visited,
+.maintitlecollapse a:link, 
+.maintitlecollapse a:visited{ 
+	background: transparent;
+	color: #FFF;
+	text-decoration: none; 
+}
+
+.maintitle a:hover, 
+.maintitle a:active,
+.maintitlecollapse a:hover, 
+.maintitlecollapse a:active{ 
+	background: transparent;
+	color: #F1F1F1;
+}
+
+table th,
+.borderwrap table th,
+.subtitle,
+.subtitlediv,
+.postlinksbar{ 
+	background: transparent url(style_images/1/tile_sub.gif);
+	border-bottom: 1px solid #5176B5;
+	color: #3A4F6C; 
+	font-size: 10px;
+	font-weight: bold; 
+	letter-spacing: 1px;
+	margin: 0; 
+	padding: 5px; 
+}
+
+.subtitlediv{
+	border: 1px solid #FFF;
+	border-bottom: 1px solid #5176B5;
+	text-align: right;
+}
+
+.borderwrap table th a:link,
+.subtitle a:link,
+.subtitlediv a:link,
+.borderwrap table th a:visited,
+.subtitle a:visited, 
+.subtitlediv a:visited, 
+.borderwrap table th a:active,
+.subtitle a:active,
+.subtitlediv a:active,
+.borderwrap table th a:hover,
+.subtitle a:hover,
+.subtitlediv a:hover{ 
+	background: transparent;
+	color: #3A4F6C;
+	text-decoration: none; 
+}
+
+.borderwrap h4{
+	background: #DDE6F2;
+	border: 1px solid #FFF;
+	border-bottom: 1px solid #5176B5;
+	border-top: 1px solid #5176B5;
+	color: #5176B5; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.borderwrap p{
+	background: #F9F9F9;
+	border: 1px solid #CCC;
+	margin: 5px;
+	padding: 10px;
+	text-align: left;
+}
+
+td.formbuttonrow,
+.borderwrap p.formbuttonrow,
+.borderwrap p.formbuttonrow1{
+	background: #D1DCEB !important; 
+	border: 1px solid #FFF;
+	border-top: 1px solid #5176B5;
+	margin: 0px !important;
+	padding: 5px !important;
+	text-align: center;
+}
+
+td.formbuttonrow{
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+}
+
+.borderwrap p.formbuttonrow1{
+	background: #F9F9F9 !important;
+	border: 0;
+	border-top: 1px solid #CCC;
+}
+
+.bar,
+.barb,
+.barc{
+	background: #DFE6EF;
+	border: 1px solid #FFF;
+}
+
+.barc{
+	border-bottom: 0;
+}
+
+.bar p,
+.barb p,
+.barc p{
+	background: transparent;
+	border: 0;
+	color: #222;
+	font-size: 11px;
+	margin: 0;
+	padding: 5px;
+	text-align: left;
+}
+
+.barb p{
+	text-align: right;
+}
+
+.bar p.over,
+.bar p.overs,
+.barc p.over,
+.barc p.overs{
+	float: right;
+}
+
+.barb p.over,
+.barb p.overs{
+	float: left;
+}
+
+.bar p.overs,
+.barb p.overs,
+.barc p.overs{
+	position: relative;
+	top: 5px;
+}
+
+.catend{
+	background: #8394B2;
+	color: #000;
+	font-size: 1px;
+	height: 5px;
+}
+
+.newslink{
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	margin: 0;
+	width: 100%;
+}
+
+.newslink td{
+	color: #222;
+	font-size: 10px;
+	padding: 5px 5px 5px 10px;
+}
+
+.newslink span{
+	background: transparent;
+	color: #072A66;
+	font-style: italic;
+	font-weight: normal;
+}
+
+.newslink input{
+	background: #FFF;
+	border: 1px solid #999;
+	color: #072A66;
+	font-size: 10px;
+	padding: 3px;
+	vertical-align: middle;
+	width: auto;
+}
+
+.newslink input.button{
+	background: transparent;
+	border: 0;
+	color: #072A66;
+	vertical-align: middle;
+}
+
+.fieldwrap{
+	background: #F9F9F9;
+	border: 1px solid #CCC;
+	border-top: 0;
+	margin: 5px;
+	padding: 0;
+	text-align: left;
+}
+
+.fieldwrap h4{
+	background: #EEE;
+	border: 1px solid #CCC;
+	border-left: 0;
+	border-right: 0;
+	color: #444; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.errorwrap {
+	background: #F2DDDD;
+	border: 1px solid #992A2A;
+	border-top: 0;
+	margin: 5px;
+	padding: 0;
+}
+
+
+.errorwrap h4 {
+	background: #E3C0C0;
+	border: 1px solid #992A2A;
+	border-left: 0;
+	border-right: 0;
+	color: #992A2A; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.errorwrap p {
+	background: transparent;
+	border: 0;
+	color: #992A2A;
+	margin: 0;
+	padding: 8px;
+}
+
+
+.ruleswrap{
+	background: #F2DDDD;
+	border: 1px solid #992A2A;
+	color: #992A2A; 
+	margin: 5px 0 5px 0;
+	padding: 5px;
+}
+
+#redirectwrap{
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	margin: 200px auto 0 auto;
+	text-align: left;
+	width: 500px;
+}
+
+#redirectwrap h4{
+	background: #D0DDEA;
+	border-bottom: 1px solid #C2CFDF;
+	color: #3A4F6C;
+	font-size: 14px;
+	margin: 0;
+	padding: 5px;
+}
+
+#redirectwrap p{
+	margin: 0;
+	padding: 5px;
+}
+
+#redirectwrap p.redirectfoot{
+	background: #E3EBF4;
+	border-top: 1px solid #C2CFDF;
+	text-align: center;
+}
+
+
+#gfooter{
+	background: #8394B2;
+	margin: 5px 0 5px 0;
+	padding: 0;
+	width: 100%;
+}
+
+#gfooter td{
+	color: #FFF;
+	font-size: 10px;
+	padding: 4px;
+}
+
+#gfooter a:link,
+#gfooter a:visited{
+	color: #FFF;
+}
+
+#logostrip{ 
+	background: #3860BB url(style_images/1/tile_back.gif);
+	border: 1px solid #FFF;
+	height: 68px;
+	margin: 0;
+	padding: 0;
+}
+
+#logographic{
+	background: transparent url(style_images/1/logo4.gif) no-repeat left;
+	height: 68px;
+	margin: 0;
+	padding: 0;
+}
+
+#submenu{ 
+	background: transparent url(style_images/1/tile_sub.gif);
+	border: 1px solid #FFF;
+	border-top: 0;
+	color: #3A4F6C; 
+	margin: 0; 
+}
+
+#userlinks,
+#userlinksguest{ 
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	margin: 5px 0 5px 0;
+	padding: 0 5px 0 5px;
+}
+
+#userlinksguest{ 
+	background: #F4E7EA;
+	border: 1px solid #986265;
+}
+
+#submenu p,
+#userlinks p,
+#userlinksguest p{
+	background: transparent !important;
+	border: 0 !important;
+	font-size: 10px;
+	font-weight: bold; 
+	letter-spacing: 1px;
+	margin: 0 !important;
+	padding: 7px 0 7px 0; 
+	text-align: right;
+}
+
+#userlinks p,
+#userlinksguest p{
+	font-weight: normal;
+	letter-spacing: 0;
+}
+
+#submenu p.home,
+#userlinks p.home,
+#userlinksguest p.home{
+	float: left;
+}
+
+#userlinksguest p.pcen{
+	text-align: center;
+}
+
+#submenu a:link, 
+#submenu  a:visited{ 
+	background: transparent; 
+	color: #3A4F6C; 
+	padding: 0 6px 0 6px;
+	text-decoration: none;
+}
+
+#submenu a:hover, 
+#submenu a:active{
+	background: transparent; 
+	color: #5176B5; 
+}
+
+#navstrip{ 
+	background: transparent;
+	color: #999;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+	padding: 14px 0px 8px 0px; 
+}
+
+#navstrip a:link, 
+#navstrip  a:visited{ 
+	background: transparent; 
+	color: #222; 
+	text-decoration: none;
+}
+
+#navstrip a:hover, 
+#navstrip a:active{
+	background: transparent; 
+	color: #5176B5; 
+}
+
+.toplinks{
+	background: transparent;
+	color: #000;
+	margin: 0;
+	padding: 0 0 5px 0;
+	text-align: right;
+}
+
+.toplinks span{
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	border-bottom: 0;
+	color: #000;
+	font-size: 10px;
+	font-weight: bold;
+	margin: 0 10px 0 0;
+	padding: 5px;
+}
+
+.copyright{ 
+	background: #EEE;
+	font-size: 11px; 
+	margin: 0 0 5px 0;
+	padding: 8px;
+}
+
+/* 
+ * ========================================
+ * print page styles 
+ * ========================================
+ */
+
+#print{
+	margin: 20px auto 20px auto;
+	padding: 0;
+	text-align: left;
+	width: 85%;
+}
+
+#print h1,
+#print h2,
+#print h3,
+#print h4,
+#print p{
+	color: #036;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+	padding: 8px;
+}
+
+#print h2,
+#print h3,
+#print p{
+	border-bottom: 1px solid #999;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+#print h3{
+	background: #F5F5F5;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0 0 10px 0;
+}
+
+#print h4{
+	background: #F9F9F9;
+	font-size: 11px;
+}
+
+#print p{
+	margin: 0 0 5px 0;
+	padding: 10px;
+}
+
+#print p.printcopy{
+	border: 0;
+	color: #000;
+	text-align: center;
+}
+
+/* ============================================================== */
+/* RTE STYLES
+/* ============================================================== */
+
+.rteimage {
+	/*background: #D3D3D3;*/
+	/*border: 1px outset transparent*/;
+	cursor: pointer;
+	cursor: hand;
+	padding:1px;
+}
+
+.rteImageRaised {
+	/*background: #D3D3D3;*/
+	border: 1px outset;
+	cursor: pointer;
+	cursor: hand;
+	padding:0px;
+}
+
+.rteImageLowered {
+	/*background: #D3D3D3;*/
+	border: 1px inset;
+	cursor: pointer;
+	cursor: hand;
+	padding:0px;
+}
+
+.rteimage:hover {
+	background: #EBEBEB;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.rteVertSep {
+	margin: 0 4px 0 4px;
+}
+
+.rteBack {
+	background: #D3D3D3;
+	border: 1px outset;
+	letter-spacing: 0;
+	padding: 2px;
+}
+
+/* used in ips_rte.js - do not remove */
+.rtebottombutton
+{
+	font-size:10px;
+	border:1px solid #777;
+	border-top:0px;
+	padding:3px;
+	margin:0px;
+	background-color: #EBEBEB;
+}
+
+/* used in ips_rte.js - do not remove */
+.rtebottombuttonon
+{
+	font-size:10px;
+	border:1px solid #777;
+	border-top:0px;
+	padding:3px;
+	margin:0px;
+	background-color: #D3D3D3;
+}
+
+.rtebuttonbar1 {
+	/*background: #D3D3D3;*/
+	background-image: url(style_images/1/folder_rte_images/rte_tile.gif);
+	border: 1px solid gray;
+	border-bottom:0px;
+	letter-spacing: 0;
+	padding: 2px;
+	height:26px;
+}
+
+.rtebuttonbar2 {
+	/*background: #D3D3D3;*/
+	background-image: url(style_images/1/folder_rte_images/rte_tile.gif);
+	border: 1px solid gray;
+	border-top:1px solid gray;
+	letter-spacing: 0;
+	padding: 2px;
+	height:26px;
+}
+
+.rtebuttonbar1 tbody tr td,
+.rtebuttonbar1 tr td,
+.rtebuttonbar2 tbody tr td,
+.rtebuttonbar2 tr td,
+.rteBack tbody tr td,
+.rteBack tr td
+{
+	/*background: #D3D3D3;*/
+	padding: 0;
+}
+
+.rteDiv {
+	display: block;
+	position: relative;
+	padding:0px;
+	margin:0px;
+}
+
+.rteiframe
+{
+	border:1px solid #777;
+	background-color:#FFF;
+}
+
+.rteselectbox
+{
+	font-size:11px;
+}
+
+
+.dny-edit-title
+{
+	border:0px;
+	padding:3px;
+	margin:0px;
+	background: #D1DCEB; 
+	color: #3A4F6C; 
+}
+
+
+/* ======================================== */
+/* TABS
+/* ======================================== */
+
+.tabon
+{
+	border-top:1px solid #999;
+	border-left:1px solid #999;
+	border-right:1px solid #999;
+	background-color:#FFF;
+	padding:8px;
+	padding-bottom:9px;
+	font-size:10px;
+	float:left;
+	width:auto;
+	margin-top:3px;
+}
+
+.taboff
+{
+	border-top: 1px solid #777;
+	border-left: 1px solid #777;
+	border-right: 1px solid #777;
+	background-color: #B5C3D9;
+	color: #333;
+	padding: 8px;
+	font-size:10px;
+	float: left;
+	width: auto;
+	margin-top:3px;
+}
+
+.tabon a:link, 
+.tabon a:visited, 
+.tabon a:active
+{
+	text-decoration:none;
+	color: #000;
+}
+
+.taboff a:link, 
+.taboff a:visited, 
+.taboff a:active
+{
+	text-decoration:none;
+	color: #333;
+}
+
+.mya-back
+{
+	background: #072A66;
+	margin:1px;
+}
+
+.mya-content
+{
+	background: #FFF;
+	padding:8px;
+	margin:1px;
+	border: 1px solid #777;
+}
+
+/* -------------------------------- */
+/* Create PM box defaults           */
+/* -------------------------------- */
+
+.iframeshim
+{
+	position:absolute;
+	display:none;
+	background: #FFF;
+	filter:alpha(opacity=0);
+	border:0px;
+	width:auto;
+	height:auto;
+}
+
+
+
+/* -------------------------------- */
+/* Experimental                     */
+/* -------------------------------- */
+
+.popupmenu
+{
+   background: #F0F5FA;
+   border: 1px solid #3A4F6C;
+   text-align:left;
+   font-size:10px;
+   white-space:nowrap;
+   /*padding:3px 5px 3px 3px;*/
+   /*width:300px;*/
+}
+
+.popupmenu-item
+{
+	padding: 5px;
+	/*margin-top:4px;*/
+	white-space: nowrap;
+	border-bottom: 1px solid #C2CFDF;
+}
+
+.popupmenu-item-last
+{
+	padding: 5px;
+	/*margin-top:4px;*/
+	white-space: nowrap;
+}
+
+.popmenubutton
+{
+	width:120px;
+	white-space:nowrap;
+	background-color: #C2CFDF;
+	border:1px solid #3A4F6C;
+	color: #3A4F6C;
+	font-weight:bold;
+	float:right;
+	height:18px;
+	text-align:center;
+	margin:0px;
+	font-size:11px;
+	padding:3px;
+}
+
+
+.popmenubutton a:link, 
+.popmenubutton a:visited,
+.popupmenu-item a:link, 
+.popupmenu-item a:visited,
+.popupmenu-item-last a:link, 
+.popupmenu-item-last a:visited
+{ 
+	color: #3A4F6C; 
+	text-decoration: none;
+}
+
+.popmenubutton a:hover, 
+.popupmenu-item a:hover, 
+.popupmenu-item-last a:hover
+{ 
+	color: #5176B5; 
+	text-decoration: none;
+}
+
+.popupmenu-category
+{ 
+	background: transparent url(style_images/1/tile_sub.gif);
+	border-top: 1px solid #5176B5;
+	border-bottom: 1px solid #5176B5;
+	color: #3A4F6C; 
+	font-size: 10px;
+	font-weight: bold; 
+	letter-spacing: 1px;
+	margin: 0; 
+	padding: 5px; 
+}
+</style>
+	</head>
+	<body>
+	<div id="print">
+		<h1>A téma nyomtatható változata</h1>
+		<h2><a href="http://www.pcworld.hu/forum/index.php?act=ST&f=24&t=13231" title="Téma megtekintése">Kattints ide az eredeti formátum megtekintéséhez!</a></h2>
+		<h3>PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés</h3><div class="printpost">
+			<h4>Szerző:: Jay  2009. május 17. 15:44</h4>
+			<p></p><blockquote><b><!--coloro:#006600--><span style="color:#006600"><!--/coloro--><!--fonto:Verdana--><span style="font-family:Verdana"><!--/fonto--><!--sizeo:5--><span style="font-size:18pt;line-height:100%"><!--/sizeo-->Számítógép tisztítás<!--sizec--></span><!--/sizec--><!--fontc--></span><!--/fontc--><!--colorc--></span><!--/colorc--><br>A legtöbb ember azt gondolja, hogy a számítógépek és az elektronikus berendezések nem igényelnek semmilyen mechanikai karbantartást, de ez nem így van. Sok számítógépeben okozhat hibákat és túlmelegedést az idővel összegyűlt piszkok és por. A tisztítást érdemes évente vagy még gyakrabban elvégezni, ezzel biztosíthatjuk a hűtőrendszer ideális hatékonyságát, így növelhetjük a számítógép élettartamát.</b></blockquote><br><br><!--coloro:#ff6000--><span style="color:#ff6000"><!--/coloro--><b>Szükséges eszközök:</b><!--colorc--></span><!--/colorc--><i><ul><li> Egy kis fejű csavarhúzó</li><li> Puha, szöszmentes ruha</li><li> Egy doboz sűrített levegő (elektronikai / számítógépboltban kapható)</li><li> Porszívó, ha lehet valamilyen szűkítő fejjel</li><li> Egy kis ecset hosszú, természetes szőrű</li></ul></i><br><br><b><!--coloro:#ff0000--><span style="color:#ff0000"><!--/coloro--><!--sizeo:3--><span style="font-size:12pt;line-height:100%"><!--/sizeo-->VIGYÁZAT!<!--sizec--></span><!--/sizec--><!--colorc--></span><!--/colorc--><ul><li> A számítógépet tisztítás előtt áramtalanítani kell, ezért húzza ki a tápkábelt a dugaszoló aljzatból. Nem elég lekapcsolni a tápegységen lévő kapcsolót!</li><li> Ha lehetséges szabaduljunk meg az olyan ruhadaraboktól, amelyek elektromosan feltöltődhetnek.</li><li> A tisztítást jól szellőző helyen végezzük (ha valamilyen allergiában szenved, viseljen por maszkot).</li><li> A számítógépet nedves, puha ronggyal lehet tisztítani. Ne használjon olyan folyékony vagy aeroszolos tisztítószereket, amelyek gyúlékony anyagokat tartalmaznak.</li><li> A sűrített levegőt ne fújjuk közvetlenül az áramkörre vagy az elektronikus alkatrészekre!</li></ul></b><br><br><b><!--sizeo:3--><span style="font-size:12pt;line-height:100%"><!--/sizeo--><!--coloro:blue--><span style="color:blue"><!--/coloro-->Ház<!--colorc--></span><!--/colorc--><!--sizec--></span><!--/sizec--></b><br><blockquote>Húzzuk ki a hálózati és egyéb csatlakozó kábeleket majd távolítsuk el a ház lemezburkolatát. (Általában a ház hátulján találunk csavarokat, amiket kicsavarva az esetek nagy többségében hátrafelé vagy felfelé lehúzható a számítógép oldallapja, vagy az egész ház borítása.) Ezután előbb porszívóval szívjuk ki a laza porréteget. Ehhez a porszívó keskeny szívócsonkját használjuk, a vastagabb porréteg fellazítását pedig egy hosszú szőrű keskeny ecsettel végezzük el, és így szívás közben portalanítsuk a váz belsejét. Vigyázzunk, hogy az elektronikai alkatrészeket ne üssük meg, a szívócsővel ne is érintsük.</blockquote><br><b><!--sizeo:3--><span style="font-size:12pt;line-height:100%"><!--/sizeo--><!--coloro:blue--><span style="color:blue"><!--/coloro-->Kártyák<!--colorc--></span><!--/colorc--><!--sizec--></span><!--/sizec--></b><br><blockquote>Ezt követően azokat a kártyákat vegyük sorra, amelyeknek egyes alkatrészeit a túlzott felmelegedéstől hűtőbordák védik, vagy felületük maga szolgál hűtőfelületként. A felületükre rakodó porréteg ugyanis jelentősen csökkenti a hőleadásukat. Előbb porszívóval szívjuk le róluk és a panelről is a laza porréteget, majd az ecset szőrével igyekezzünk eltávolítani a felületükre szívósabban lerakódott szennyeződést, és ezt porszívóval azonnal távolítsunk is el. Esetenként a különféle kártyákat célszerű ki is emelni a foglalatukból, mert így könnyebben és alaposabban lehet a nehezebben hozzáférhető helyeket megtisztítani, illetve a foglaltok érintkezőit kontakt spray-el befújni. A kártyák helyeit sűrített levegővel fújjuk ki. A hűtőbordákat a portalanítás után még alaposabban, teljes felületükön tisztító folyadékos tamponnal (fültisztító pálcika) áttörölve is tisztítsuk meg.</blockquote><br><b><!--sizeo:3--><span style="font-size:12pt;line-height:100%"><!--/sizeo--><!--coloro:blue--><span style="color:blue"><!--/coloro-->Processzor<!--colorc--></span><!--/colorc--><!--sizec--></span><!--/sizec--></b><br><blockquote>A lerakódásokat nemcsak a lapátokról, hanem a ventilátorházról is teljesen el kell távolítani. Ha erre mód van, akkor a ventilátor egységet szereljük le, és előbb a kosár belsejéből, majd a lapátok felületéről, végül pedig a védőkosár külsejéről is ecsettel, tisztítószeres ronggyal, nyeles tamponnal távolítsuk el a szennyeződéseket.<br><span>A kiemelt kártyák alkatrészeiről is óvatosan, az ecset szőrzetével seperjük le a port. Ha a ventilátor a tisztítást követően is nagyon hangosan működik, akkor ennek oka lehet a csapágy kiszáradása is, amit <a class="linkclass" href="http://www.pcworld.hu/forum/index.php?s=&showtopic=13231&view=findpost&p=390693">http://www.pcworld.hu/forum/index.php?s=&amp;showtopic=13231&amp;view=findpost&amp;p=390693</a></span></blockquote><br><b><!--sizeo:3--><span style="font-size:12pt;line-height:100%"><!--/sizeo--><!--coloro:blue--><span style="color:blue"><!--/coloro-->Tápegység<!--colorc--></span><!--/colorc--><!--sizec--></span><!--/sizec--></b><br><blockquote>A tápegységből és az eldugottabb helyekről a port nagynyomású levegő spray-el (függőlegesen kell tartani!!!) lehet kifújni a hozzá adott hosszabbító cső segítségével. Bátran dugjuk be a tápegység ventilátor nyílásán és használjuk bőven, több kisebbet fújjunk, mint egy hosszút.</blockquote><br><br>Miután a takarítással végeztünk, minden kártyát és egyéb szerelvényt tegyünk a helyére, majd csatlakoztassuk a kábeleket.
+			<br>
+			<!--IBF.ATTACHMENT_389144-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. május 31. 15:26</h4>
+			<p></p><blockquote><b><!--coloro:#006600--><span style="color:#006600"><!--/coloro--><!--fonto:Verdana--><span style="font-family:Verdana"><!--/fonto--><!--sizeo:5--><span style="font-size:18pt;line-height:100%"><!--/sizeo-->Szellőztetés<!--sizec--></span><!--/sizec--><!--fontc--></span><!--/fontc--><!--colorc--></span><!--/colorc--><br>Ventilátorok elhelyezése ATX-es házban</b></blockquote><br><!--sizeo:1--><span style="font-size:8pt;line-height:100%"><!--/sizeo--><i>Senki se akadjon meg azon, hogy van-e az adott nyílnál szellőző vagy sem!</i><!--sizec--></span><!--/sizec--><br><br><div align="center"><img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/oldaltj.jpg" border="0" alt="IPB kép"><br>---------------------------------------------------------------------------------<br><img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/elolrolj.jpg" border="0" alt="IPB kép"></div><br><br><blockquote>A befelé fújó ventilátorokra akkor van igazán szükség, amikor valamit közvetlenül kel hűteni, például:<br><!--sizeo:1--><span style="font-size:8pt;line-height:100%"><!--/sizeo-->(Inkább több menjen ki, mint be.)<!--sizec--></span><!--/sizec--><ul><li> Merevlemezek</li><li> Melegedő bővítőkártyák, kiemelten passzív videokártyák</li></ul>Mielőtt megkérdezné valaki, <b>merre fúj</b> a ventilátora: van rajta <b>2 nyíl, az egyik a forgás, másik a légáramlat irányát mutatja</b>.<br><br><br><b>Porszűrő</b><ul><li> Csak bemeneti oldalra kell, de</li><li> figyelembe kell venni, hogy csökkenti a légáramlatot, de</li><li> ennek ellenére is érdemes használni.</li></ul><b>Beszerelés</b><ul><li> Mind a négy rögzítési pontot használjuk ki!</li><li> Alkalmazhatunk csavart, gumirögzítőt, vagy ha máshogyan nem lehet, akkor alkalmazzunk kábelkötegelőt (gyorskötöző).</li><li> Az alaplap bármely csatlakozójára köthetjük őket, a CPUFAN jelöléssel ellátottat hagyjuk meg a processzorhűtőnek, már ha aktívhűtő van rajta.<br>Egy ilyen csatlakozóra lehetőleg csak egy ventilátort kössünk!</li><li> Ha elfogynak a 3 vagy 4 pines alaplapi aljzatok, akkor alkalmazhatunk átalakítót, amelyet molex-dugóra kell kötnünk. Többféle van, pl.: csak egy darab 12 V-os aljzatot biztosít, vagy épp 2-2 12 és 5 V-ost.</li><li> Ha van rá keret, akkor bejöhetnek a képbe a potméteres szabályzók, hasznosak tudnak lenni. (Potméternél oda kell figyelni, mi az a minimum beállítás, amivel még működik a vezérelni kívánt ventilátor.) Vásárlásnál figyeljünk oda, milyen aljzatokkal rendelkezik a ventilátorok számára (ne kell alakítgatni).</li><li> Zajcsökkentés miatt érdemes lehet gumigyűrűvel (egyfajta keret a ventilátor és a fémlap között) szerelni a légkavarókat.</li></ul><b>Megfelelő légáramlat mellett ne távolítsuk el a ház oldallapjait, csak romlani fog a hűtés!</b></blockquote>
+			<br>
+			<!--IBF.ATTACHMENT_390688-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. május 31. 17:15</h4>
+			<p></p><blockquote><b><!--coloro:#006600--><span style="color:#006600"><!--/coloro--><!--fonto:Verdana--><span style="font-family:Verdana"><!--/fonto--><!--sizeo:5--><span style="font-size:18pt;line-height:100%"><!--/sizeo-->Olajozott gépezet<!--sizec--></span><!--/sizec--><!--fontc--></span><!--/fontc--><!--colorc--></span><!--/colorc--><br><u>Csúszócsapágyas</u> ventilátorok karbantartása</b></blockquote><br><div align="center"><!--coloro:#ff0000--><span style="color:#ff0000"><!--/coloro--><b>Saját felelősségre, MUHAHAHA <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/exclamat.gif" style="vertical-align:middle" emoid=":!:" border="0" alt="exclamat.gif"></b><!--colorc--></span><!--/colorc--></div><br><!--coloro:#ff6000--><span style="color:#ff6000"><!--/coloro--><b>Szükséges eszközök:</b><!--colorc--></span><!--/colorc--><i><ul><li> Szervizelendő ventilátor</li><li> Kefe</li><li> Hegyes végű csipesz</li><li> Törlőkendő</li><li> Olaj (nem feltétlen műszerolaj, lehet durvább is, de ne gépzsír legyen <strike>[WD40, étolaj, szilikonzsír]</strike>)</li><li> Szigetelőszalag</li></ul></i><br><br><b>Művelet</b><ol type="1"><li> Felgyűlt port el kell távolítanunk a kefével!</li><li> Le kell venni a matricát a ventilátorról, és ha van a tengelyen egy kupak, akkor azt is ki kell piszkálnunk!</li><li> A tengelyen egy gyűrűt kell ezután látnunk, ez tartja a forgórészt. Ezt óvatosan húzzuk le, figyeljünk rá, mert könnyen (meg)pattan!</li><li> Ezután szét lehet választani a forgó és álló részt, majd a súrlódó felületeket kell letisztítani!</li><li> Ezután vigyünk fel a felületekre minimális olajat, aztán egyesítsük a két részt!</li><li> Mehet vissza rá a gyűrű, de ha elvesztettük, se baj, meg kell állnia anélkül is a forgó résznek.</li><li> Mehet vissza a sapka (ha volt), a matrica, ha még ragad. Ha nem, akkor -- előrelátásunknak hála -- van nálunk szigetelőszalag, használjuk!</li></ol>Egyébként elég messze áll a jótól az, ha csak a tengely végére csepegtetünk olajat. Viszont azt is tudni kell, hogy az olajozással kevés időt nyerhetünk (néhányszor meg lehet csinálni), de érdemesebb cserélni.<br><br><br>----<br><b><u>Golyóscsapágyasokhoz</u> inkább ne nyúljunk, csere!</b>
+			<br>
+			<!--IBF.ATTACHMENT_390693-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. május 31. 18:42</h4>
+			<p>Enyém.
+			<br>
+			<!--IBF.ATTACHMENT_390702-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: hgf  2009. június 16. 17:55</h4>
+			<p>Üdv!<br><br><!--coloro:#999999--><span style="color:#999999"><!--/coloro-->Ide írok, mert a releváns fórumok alul mind le vannak zárva.<!--colorc--></span><!--/colorc--><br><br><span>Létezik olyan, hogy egy hűtő csak arra legyen alkalmas, hogy bentről (a házból) kifújja a levegőt? Tehát csak hátra lehessen szerelni, előre ne? Konkrétan az Arctic Fan 12L-lel kapcsolatban mondják ezt <a class="linkclass" href="http://www.ipon.hu/webshop/product/coolermaster_rc_331_kkn1_gp_elite/15875">http://www.ipon.hu/webshop/product/coolermaster_rc_331_kkn1_gp_elite/15875</a></span><br><br>És ha igen, mit érdemes venni (hasonlóan halkat, hasonlóan olcsót) a ház elejébe?
+			<br>
+			<!--IBF.ATTACHMENT_392524-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. június 16. 18:05</h4>
+			<p>Azt tudom elképzelni, hogy csak az egyik oldalán van hely csavarnak. Ettől persze a ventilátor még jó, ha valahogy rögzíteni tudod.
+			<br>
+			<!--IBF.ATTACHMENT_392526-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. június 16. 18:07</h4>
+			<p>Az elrendezése miatt valóban nem lehet tetszőleges irányba forgatni.<br><br>szerk:<br>KGigi megoldása is jó lehet. De ez a "valahogy" kifejezés kókányolást rejt magában. Így nagyobb a rezonancia kockázata.
+			<br>
+			<!--IBF.ATTACHMENT_392528-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. június 16. 18:11</h4>
+			<p>Arctic Cooling, Scythe, Noctua ventilátorokat tudom ajánlani.
+			<br>
+			<!--IBF.ATTACHMENT_392531-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: hgf  2009. június 16. 18:13</h4>
+			<p>Kösz! És valami sűrűbben fellelhető márka? (Mert ezeket biztos hiába vadásznám a helyi boltokban, megrendelni pedig... hát, az szállítási költség is, meg idő is. És az új gépem addig is ott áll egy szem hátsó ventilátorral. Vagy az nem probléma egy-két napig?)<br><br>Közben átszerkesztettem, amikor láttam, hogy válaszoltál.)
+			<br>
+			<!--IBF.ATTACHMENT_392532-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. június 16. 18:15</h4>
+			<p>Cooler Master Elite 335-ös házhoz jár egy 12 cm-es hűtő, így ha már megvetted az AC-t, akkor nem kell többet, csupán át kell szerelned a gyárit előre, figyelve az irányára.
+			<br>
+			<!--IBF.ATTACHMENT_392533-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: hgf  2009. június 16. 18:20</h4>
+			<p>A CM Elite 335-öst sehol nem lehet kapni az egész országban. Egy Sharkoont rendeltem helyette (Revenge Economy), de ahhoz nem adnak hűtőt.
+			<br>
+			<!--IBF.ATTACHMENT_392535-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. június 16. 18:22</h4>
+			<p>Értem, akkor a fenti 3 gyártó közül válassz egy szépet. <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif">
+			<br>
+			<!--IBF.ATTACHMENT_392536-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: hgf  2009. június 16. 18:32</h4>
+			<p>Két gondom van velük: az egyik, hogy drágák (kivéve talán az Arcticot), a másik, hogy valami népszerűbb márka kellene, amit megtalálhatok egy környékbeli boltban is akár - ugyanis a gépem csütörtökön áll össze, és akkorra nyilván nem ártana meglennie a ventilátornak sem.<br><br>Vagy az nem probléma, ha a gép egy-két napig csak egy hátsó hűtővel működik?<br><br>És akkor már muszáj kérdeznem még egyet. Honnan tudom megállapítani (mondjuk egy webáruházban, ránézésre), hogy egy ventilátor alkalmas-e a ház elejébe? Mert nem írják oda.
+			<br>
+			<!--IBF.ATTACHMENT_392537-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. június 16. 18:36</h4>
+			<p>Onnan, hogy eddig csak erről az AC-ról tudom, hogy nem jó. <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"> Ha környező boltokban akarod megvenni, akkor az elérhetőeknek nézd meg a zajszintjét, a leghalkabbat vedd meg (máshogy fogalmazva a leglassabbat, ~800-1200 RPM, a motor áramigényéből is lehet következtetni a hangjára: 0,3 A alattit vegyél lehetőleg).
+			<br>
+			<!--IBF.ATTACHMENT_392538-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: hgf  2009. június 17. 20:22</h4>
+			<p>Csak lehet egyszer nekem is szerencsém: az egyik kis boltocskában ott figyelt egy utolsó példány Arctic Cooling (1000-es fordulatszám, 0,15V) <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"><br><br>A házamnak az a gyengéje az eredetileg tervezetthez képest, hogy nincs porszűrője. Hogyan barkácsol az ember porszűrőt?
+			<br>
+			<!--IBF.ATTACHMENT_392721-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. június 17. 20:26</h4>
+			<p><span><a class="linkclass" href="http://www.radikalmod.hu/index.php?p=6&y=38&st=260">http://www.radikalmod.hu/index.php?p=6&amp;y=38&amp;st=260</a>
+			</span><br>
+			<!--IBF.ATTACHMENT_392722-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: kmisi99  2009. június 25. 12:10</h4>
+			<p>Szerintetek milyen ventilátort vegyek a gépbe?<br><br>Chieftec, zalnman, Cooler Master, Sharkoon, Arctic hűtőt néztem szerintetek melyik a jobb renszerhűtő?
+			<br>
+			<!--IBF.ATTACHMENT_393671-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. június 25. 12:30</h4>
+			<p>Noctua, Arctic, amiről tudom, hogy nagyon jó.
+			<br>
+			<!--IBF.ATTACHMENT_393676-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: kmisi99  2009. június 25. 12:38</h4>
+			<p>Akkor veszek vagy két  Arctic AF8025 PWM 8cm 2000RPM-et.
+			<br>
+			<!--IBF.ATTACHMENT_393682-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. június 25. 12:40</h4>
+			<p>Nagyobb nem fér el? Én legalább 12 cm-est vennék.
+			<br>
+			<!--IBF.ATTACHMENT_393684-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: kmisi99  2009. június 25. 12:43</h4>
+			<p>Csak 2 darab 8cm es hely van a gépházban. <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/huh.gif" style="vertical-align:middle" emoid=":huh:" border="0" alt="huh.gif">
+			<br>
+			<!--IBF.ATTACHMENT_393686-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. június 25. 12:47</h4>
+			<p>Akkor javaslok egy cserét, ha ekkora VGA-t akarsz tenni bele. Abba aztán mehetnek alacsony fordulatszámú Noctuák.
+			<br>
+			<!--IBF.ATTACHMENT_393687-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: kmisi99  2009. június 25. 12:51</h4>
+			<p>Csak a Noctuák drágák már akkor inkább leveszem az oldallapot és úgy jól szellőzik. Legfeljebb majd gyakran portalanítom. De ha majd lesz pénzem veszek jobb gépházat olyat amibe elfér több 12cm es venti.
+			<br>
+			<!--IBF.ATTACHMENT_393689-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. június 25. 12:56</h4>
+			<p>Drágák? Egy ventilátor annyira nem lehet drága, hogy ne érje meg. Az oldallapot semmiképp ne vedd le, megbontja a szellőzést. Az esetek jelentős részében többet árt, mint használ. Ha elöl-hátul van ventilátor, akkor nagy gond nem lehet. Az első pár napban nézd a kártya hőmérsékletét.
+			<br>
+			<!--IBF.ATTACHMENT_393690-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: kmisi99  2009. június 25. 13:01</h4>
+			<p>Ok, de ráadásul a kártya intel core i7-el lesz gyári hűtővel, szóval húst is lehet majd sütni a gépben. <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/laughing.gif" style="vertical-align:middle" emoid=":lol:" border="0" alt="laughing.gif">
+			<br>
+			<!--IBF.ATTACHMENT_393691-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. június 25. 13:30</h4>
+			<p>A Core i7 azért nem olyan forrófejű. Nem sokkal melegebb egy Core 2 Quad-nál. A gyári hűtővel sem lesz gond. Azt nem értem, hogyha telik i7-re meg 4870-re, akkor miért nem telik házra. Egy rossz minőségű ház tönkre vághatja az alaplapot, ami ilyen árfekvésben nem lenne szerencsés. De ez itt off.
+			<br>
+			<!--IBF.ATTACHMENT_393696-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: kmisi99  2009. június 25. 13:48</h4>
+			<p><span>Ilyen házam van. <a class="linkclass" href="http://www.sidelis.hu/images/Codegen6210LCA400wfeketeezustTRP.gif">http://www.sidelis.hu/images/Codegen6210LCA400wfeketeezustTRP.gif</a> És miértvágná tönkre az alaplapot?
+			</span><br>
+			<!--IBF.ATTACHMENT_393698-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. június 25. 13:53</h4>
+			<p><!--coloro:#999999--><span style="color:#999999"><!--/coloro-->OFF<br><br><span>Mert zártak, és nagyon rosszul szellőznek. De KGigi Inkább a benne lévő tápra értette. Egy silány minőségű házban, még silányabb veszélyes tápok rejtőznek. Ha gagyi házat akarsz venni, akkor táp nélküli változatot vegyél. <a class="linkclass" href="http://www.pcworld.hu/forum/index.php?s=&showtopic=12782&view=findpost&p=371986">http://www.pcworld.hu/forum/index.php?s=&amp;showtopic=12782&amp;view=findpost&amp;p=371986</a></span><!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_393699-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. június 25. 13:56</h4>
+			<p><!--coloro:#999999--><span style="color:#999999"><!--/coloro-->A ház is. Meggörbítheti az alaplapot. Tápot cserél, és az jó is.<!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_393700-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: LordDzseff  2009. június 25. 16:16</h4>
+			<p>Üdvözletem. Ventilátorokkal kapcsolatosan lenne egy kérdésem!<br><br>Miért van az, hogy látok ventilátorokat amikre mondjuk az van ráírva, hogy 2000 RPM és vannak olyanok amin az van hogy 600-2000 RPM.<br>Jól értelemezem én, hogy az utóbbi szabályozható pl. BIOSban vagy szoftveresen az előbbi pedig nem, csak pl. feszültségcsökkentéssel?  <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/blush.gif" style="vertical-align:middle" emoid=":upsz:" border="0" alt="blush.gif"> <br><br>Üdv, LordDzseff
+			<br>
+			<!--IBF.ATTACHMENT_393731-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. június 25. 16:36</h4>
+			<p>Az előbbi valószínűleg lustaság, és a maximális fordulatszám.
+			<br>
+			<!--IBF.ATTACHMENT_393734-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: LordDzseff  2009. június 25. 16:48</h4>
+			<p>Értem. Viszont ez furcsa!<br><br>ArticCooling:<br><span><a class="linkclass" href="http://www.arctic-cooling.com/catalog/product_info.php?cPath=3_46_62&mID=86">http://www.arctic-cooling.com/catalog/product_info.php?cPath=3_46_62&amp;mID=86</a></span><br><span><a class="linkclass" href="http://www.arctic-cooling.com/catalog/product_info.php?cPath=3_46_63&mID=145">http://www.arctic-cooling.com/catalog/product_info.php?cPath=3_46_63&amp;mID=145</a></span><br><br>Most mi a különbség?<br><br>Üdv, LordDzseff<br><br>Szerk: Jól értelmezem, hogy ez a processzor 4tűs csatlakozóját megosztja és minden ventit ugyanarra a fordulatszámra állít? Ez feszültségek terén nem lehet picit bajos??
+			<br>
+			<!--IBF.ATTACHMENT_393736-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. június 25. 16:52</h4>
+			<p>Pontosan ezt teszi. Nekem nem tetszik az ötlet. Bár hasznos lehet, ha nincs elég szabályzó az alaplapon.
+			<br>
+			<!--IBF.ATTACHMENT_393737-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: LordDzseff  2009. június 25. 16:57</h4>
+			<p>Értem.<br>Egy teszt erejéig ötleteket várok!<br>Adott egy Zalman 80mm házhűtő 3tűvel Asus P5QL Pro alaplapra kötve. Biosban mit állítsak, hogy Speedfannal ezt szabályozhassam?<br><br>Üdv, LordDzseff
+			<br>
+			<!--IBF.ATTACHMENT_393739-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: kmisi99  2009. június 25. 16:59</h4>
+			<p>Na visszább olvastam és akkor ha jól értem nem a ház teszi tönkre benne az alplapot hanem a gagyi tápjai? Mert emiatt nem kell aggódi mert 620w os corsair tápot veszek.
+			<br>
+			<!--IBF.ATTACHMENT_393740-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. június 25. 17:03</h4>
+			<p>@LordDzseff<br>Elvileg így magától szabályozza.<br><br>@kmisi99<br><!--coloro:#999999--><span style="color:#999999"><!--/coloro-->A ház önmagában is tudja, ha gagyi anyagokból van. Mint írtam is.<!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_393743-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: kmisi99  2009. június 25. 17:09</h4>
+			<p>Nos a ház főként alumíniumból van és egy kis része műanyag csak nem rontja el nem? Kb fél évig lenne benne mert majd később veszek új házat.
+			<br>
+			<!--IBF.ATTACHMENT_393745-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: LordDzseff  2009. június 25. 17:13</h4>
+			<p>Sajnos nem... 2900 RPMen megy folyamatosan és nem reagál semmire! <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/sad.gif" style="vertical-align:middle" emoid=":(" border="0" alt="sad.gif"><br>Mit tegyek? Így nagyon zajos...<br><br>Üdv, LordDzseff
+			<br>
+			<!--IBF.ATTACHMENT_393747-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. június 25. 17:16</h4>
+			<p>Az érdekes. Ezek szerint mégsem szabályozza. Én inkább vennék egy csendesebb ventilátort. Szoftveresen csak az alaplapon keresztül tudnád szabályozni.<br><br>@kimisi99<br><!--coloro:#999999--><span style="color:#999999"><!--/coloro-->Azok pont a legrosszabbak, de talán kihúzza.<!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_393748-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: LordDzseff  2009. június 25. 17:21</h4>
+			<p>Ezt találtam az Asus honlapján... lehet hogy a Zalman hűtő miatt nem jó valami?<br><br><br>Fan Xpert<br><br>Active Quiet &amp; Cool<br>ASUS Fan Xpert intelligently allows users to adjust both the CPU fan speed according to different ambient temperature , which is caused by different climate conditions in different geographic regions and system loading. Built-in variety of useful profiles offer flexible controls of fan speed to achieve a quiet and cool environment.
+			<br>
+			<!--IBF.ATTACHMENT_393750-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. június 25. 18:09</h4>
+			<p>Ezek szerint az alaplap tudja. Marad a ventilátor.
+			<br>
+			<!--IBF.ATTACHMENT_393763-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: LordDzseff  2009. június 25. 18:14</h4>
+			<p>Holnap hozok egy Artic Cooling ventit, megnézzük azzal mi lesz... (arról úgy írták, hogy 600-2000 RPM. nos, majd meglátjuk.)<br><br>Szerk: Még jobban körbenéztem... sajna az alaplap nem támogatja... most csalódtam az ASUS-ban <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/weep.gif" style="vertical-align:middle" emoid=":sír:" border="0" alt="weep.gif"><br>Kénytelen leszek hozni még egy Fan Mate 2-t <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/annoyed.gif" style="vertical-align:middle" emoid=":S" border="0" alt="annoyed.gif"><br><br><span>2. Szerk: <a class="linkclass" href="http://xilence.hu/haz_ventilator/xpf92.r.pwm.htm">http://xilence.hu/haz_ventilator/xpf92.r.pwm.htm</a></span><br><span><a class="linkclass" href="http://xilence.hu/haz_ventilator/xpf92.r.htm">http://xilence.hu/haz_ventilator/xpf92.r.htm</a></span><br>Na akkor ez most mi??  <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/huh.gif" style="vertical-align:middle" emoid=":huh:" border="0" alt="huh.gif"> <br>
+			<br>
+			<!--IBF.ATTACHMENT_393765-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. június 25. 20:54</h4>
+			<p>Valószínűleg a szabályzó nélküli fix fordulattal forog.
+			<br>
+			<!--IBF.ATTACHMENT_393786-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: LordDzseff  2009. június 25. 21:34</h4>
+			<p>Akkor még is lehet, hogy nem a lap a hibás?<br>Na mindegy... holnap kiderül...
+			<br>
+			<!--IBF.ATTACHMENT_393791-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. június 25. 22:13</h4>
+			<p>Ezt írtam az előző hozzászólásomban.
+			<br>
+			<!--IBF.ATTACHMENT_393793-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: kmisi99  2009. június 26. 8:12</h4>
+			<p>Megnéztem  a gépházam és vagy vasból vagy acélból van mert vonzza a mágnes.<img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/laughing.gif" style="vertical-align:middle" emoid=":lol:" border="0" alt="laughing.gif"> És csak a teteje meg az előlapja műanyag. És miért tenné tönkre az alaplapot? Mert jól szellőzik és <!--coloro:#ff0000--><span style="color:#ff0000"><!--/coloro--><!--sizeo:5--><span style="font-size:18pt;line-height:100%"><!--/sizeo--><b>lesz</b><!--sizec--></span><!--/sizec--><!--colorc--></span><!--/colorc--> benne 2 darab 8 cm-es hűtő.
+			<br>
+			<!--IBF.ATTACHMENT_393803-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. június 26. 8:19</h4>
+			<p>Ha túl vékony és gagyi az alaplapi tálca, akkor a meleg hatására meggörbül, és mivel hozzá van csavarozva az alaplap, görbül az is.
+			<br>
+			<!--IBF.ATTACHMENT_393804-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: kmisi99  2009. június 26. 9:54</h4>
+			<p>Értem de ez egy több éves gépház és nincs még meggörbülve és elég vastag. Bár a régi alaplap ami benne volt egy nagyon kicsit meg volt görbülve de szabad szemmel alig látható. És amint lesz kb 10 000-Ft-om veszek egy jobb gépházat ez olyan 2 hónapon belül esedékes.
+			<br>
+			<!--IBF.ATTACHMENT_393808-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: LordDzseff  2009. június 26. 17:35</h4>
+			<p>Közben kiderült, a lap a hibás... na nembaj majd lesz valami... <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif"> Fan Mate 2 elintézi  <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/roll.gif" style="vertical-align:middle" emoid=":hááát:" border="0" alt="roll.gif"> <br><br>Üdv, LordDzseff
+			<br>
+			<!--IBF.ATTACHMENT_393866-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: [OP]Destroy-man  2009. június 27. 14:26</h4>
+			<p>Ezek az adatok alapjáraton mennyire jó értékek? Mert szerintem magasak. <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/annoyed.gif" style="vertical-align:middle" emoid=":S" border="0" alt="annoyed.gif"><br><img src="http://images.netbag.hu/20090627/15172323033.png" border="0" alt="IPB kép"><br>Az adatok everestből vannak.<br><br>A gép:<br>ASUS M3N-H/HDMI<br>AMD Phenom 9850BE<br>4x1GB 1066MHz DDRII Kingmax<br>HKC USP5580<br><br>Egy kicsit játszottam, akkor mentek fel ennyire ezek az értékek, és nem csökkennek. <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/annoyed.gif" style="vertical-align:middle" emoid=":S" border="0" alt="annoyed.gif"> Így viszont elég hangos a proci hűtése (~4000RPM - szerintem ez nem normális).
+			<br>
+			<!--IBF.ATTACHMENT_393972-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. június 27. 14:28</h4>
+			<p>Teljesen rendben vannak az értékek. Viszont azt a HKC tápot dobd ki a francba.
+			<br>
+			<!--IBF.ATTACHMENT_393973-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: LordDzseff  2009. június 27. 14:36</h4>
+			<p>Hát nem tudom... ha hangos (gyári hűtő van rajta??) és nem akarsz sokat költeni, próbáld ki az Artic Freezer 64-et,  <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/bulb.gif" style="vertical-align:middle" emoid=":ötlet:" border="0" alt="bulb.gif">  (Nekem a 7-es van, az való Intelre, a 64 AMD-re, csak a felfogatás különbözik, ugyanaz a borda és venti és nekem tényleg bevált) 2 magra bőven elég volt. Pjotr! Szerinted elég erre a Phenomra is? Ha van rá pénzed, full réz Zalman féle megoldás... <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/ani_wink.gif" style="vertical-align:middle" emoid=";)" border="0" alt="ani_wink.gif"><br><br>Üdv, LordDzseff
+			<br>
+			<!--IBF.ATTACHMENT_393974-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. június 27. 14:47</h4>
+			<p>Tuning nélkül egy AC Freezer 64 Pro PWM jó a Phenom 9850-re. De nem kell vennie, egyébként az energiagazdálkodás (C'n'Q) aktív?
+			<br>
+			<!--IBF.ATTACHMENT_393977-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: [OP]Destroy-man  2009. június 27. 14:58</h4>
+			<p>A C'n'Q aktív. Régebben nem volt ilyen zajos, akkor alapjáraton a proci 45°C-os volt, és a hűtés is 2000-2200 RPM között ment. A hűtő nem koszos, megnéztem.<br>A táp most került bele a gépbe, mert a korábbi megdöglött (az LC Power volt), és árban csak ez volt megfizethető. ASUS-t szerettem volna, de mondták, hogy el van írva az árlista, így lett ez. Eddig stabilnak tűnik a táp.
+			<br>
+			<!--IBF.ATTACHMENT_393978-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. június 27. 16:12</h4>
+			<p><!--coloro:#999999--><span style="color:#999999"><!--/coloro-->OFF<br><span><a class="linkclass" href="http://www.youtube.com/watch?v=XhCnwiWBbUY&feature=channel_page">http://www.youtube.com/watch?v=XhCnwiWBbUY&amp;feature=channel_page</a> Az értékek nagyon is jók, ha ez a táp nem fűti fel a géped, egy nagyon rövid végzetes ideig.  </span><img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/roll.gif" style="vertical-align:middle" emoid=":hááát:" border="0" alt="roll.gif"> (Ó, bocs lelőttem <b>Pjotr</b> poénját.  <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"> )<!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_393990-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: LordDzseff  2009. június 27. 17:55</h4>
+			<p><!--coloro:#999999--><span style="color:#999999"><!--/coloro-->Ez nem semmi!  <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/twisted.gif" style="vertical-align:middle" emoid=":démonikacaj:" border="0" alt="twisted.gif"> <br>Rosszabb mint Vargáné és Tsa tápok!<!--colorc--></span><!--/colorc--><br><br><b>Itt nem a rendszerhűtéssel lesz a baj, hanem a táppal!<br></b><br><!--coloro:#999999--><span style="color:#999999"><!--/coloro-->FSP/Chieftec! Ilyen értékek mellett előbb utóbb beadja a kulcsot a géped! De ez már a Tápegységvásárlás topic!<!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_393996-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: [OP]Destroy-man  2009. június 28. 17:37</h4>
+			<p><!--coloro:#C0C0C0--><span style="color:#C0C0C0"><!--/coloro-->Szerencsére nálam nem ugrálnak így a feszültség értékek (már ha az alaplap pontossan mér), mint a videon, igaz a videon nem ez a táp van. <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"><!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_394126-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. június 28. 17:46</h4>
+			<p><!--quoteo--></p><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec--><!--coloro:#C0C0C0--><span style="color:#C0C0C0"><!--/coloro-->... igaz a videon nem ez a táp van. <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"><!--colorc--></span><!--/colorc--><!--QuoteEnd--></div><!--QuoteEEnd--><!--coloro:#999999--><span style="color:#999999"><!--/coloro-->Ezek után, engem ez nem nyugtatna meg... <!--colorc--></span><!--/colorc--> <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/roll.gif" style="vertical-align:middle" emoid=":hááát:" border="0" alt="roll.gif">
+			<br>
+			<!--IBF.ATTACHMENT_394131-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: [OP]Destroy-man  2009. június 28. 18:24</h4>
+			<p><!--coloro:#999999--><span style="color:#999999"><!--/coloro-->Elvégeztem a videon látható tesztet.<br>+5V alapjáraton: 4.99V<br>+5V terhelés alatt: 5.02V (minimális ingadozás kb fél percenként 5.01 és 5.02 között, de inkább az 5.02 dominál)<br>+12V alapjáraton: 12.02V<br>+12V terhelés alatt: 11.90-11.99V (szaporán ugrál, másodpercenként változik, de ebből a tartománybol nem ugrik ki)<br><br><span>Terhelést a <a class="linkclass" href="http://www.passmark.com/products/bit.htm">http://www.passmark.com/products/bit.htm</a> legújabbb 30 napos probaváltozatával csináltam 5-5 perces időintervallumig, a mérést pedig multimeterel csináltam.</span><!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_394132-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: mesza  2009. július 18. 14:22</h4>
+			<p>Üdv! Kérlek segítsetek. Most cseréltem alaplapot és videokártyát Gigabytera és elég érdekesen alakulnak a hőfokok odabenn:<br>Alaplap 49 celsius<br>CPU 42 celsius<br>Aux 40 celsius<br>GPU 56 celsius<br>Maxtor winchester 42 celsius<br>Elöl 1 ventillátor van, hátul 2 és a CPUnak is van sajátja. De főleg a videokártyáét sokallom.
+			<br>
+			<!--IBF.ATTACHMENT_396194-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. július 18. 14:25</h4>
+			<p>Nincs ezekkel semmi gond. Ventilátorok jó irányban állnak egyébként?
+			<br>
+			<!--IBF.ATTACHMENT_396196-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Ceadrick  2009. július 18. 17:23</h4>
+			<p>Egyik HDD-m Maxtor nekem is, nálam  tegnap 40fokra felment (a WD nagyjából 3-4 fokkal hűvösebb), pedig egy CM HAF922-ben van jópár venti kíséretében. De hát nincs mit tenni akkor, amikor a szobában is 30fok felett van a hőmérséklet...<br>Lapom Gigabyte szintén, ami 40-45fok környékén van ezekben a "gatyarohasztó" melegekben.<br>Szóval nem kell aggódni szerintem se.
+			<br>
+			<!--IBF.ATTACHMENT_396203-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: L.Gyuri  2009. augusztus 19. 14:56</h4>
+			<p>Sziasztok!<br><br>Szerintetek rá lehet tenni egy Zalman NBF47-es bordát egy GA-73VM-S2 alaplapra? Bocs, ha hülyeséget kérdezek, de nem tudom, hogy ez mindegyik alaplapra passzol-e.
+			<br>
+			<!--IBF.ATTACHMENT_399234-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. augusztus 19. 15:45</h4>
+			<p>Univerzális. A kis sínek segítségével bármilyen furattávolságra jó. <br> <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/arrow.gif" style="vertical-align:middle" emoid=":nyíl:" border="0" alt="arrow.gif"><span> <a class="linkclass" href="http://www.zalman.co.kr/ENG/product/Product_Setup.asp?Idx=133">http://www.zalman.co.kr/ENG/product/Product_Setup.asp?Idx=133</a> </span><img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif">
+			<br>
+			<!--IBF.ATTACHMENT_399237-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: L.Gyuri  2009. augusztus 19. 20:46</h4>
+			<p>Kösz a választ! <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif">
+			<br>
+			<!--IBF.ATTACHMENT_399249-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: L.Gyuri  2009. augusztus 28. 16:18</h4>
+			<p>Sziasztok!<br><br>Megvettem ezt a bizonyos Zalman bordát és nem nagyon vagyok vele megelégedve, mert az eredeti 58 fok helyett csak 54 fokra sikerült leszorítani a hőmérsékletet. Esetleg van valakinek ötlete hogyan lehetne lejjebb hűteni?
+			<br>
+			<!--IBF.ATTACHMENT_399927-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. augusztus 28. 16:35</h4>
+			<p>Milyen módon szellőzteted a házad jelenleg?<br>(Különben az én Asus P5K- m északi hídja is feszt 47-50 °C között mozog.)
+			<br>
+			<!--IBF.ATTACHMENT_399931-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: L.Gyuri  2009. augusztus 28. 16:39</h4>
+			<p>Elöl egy 8cm-es venti szívja be a levegőt, hátul a tápom 12cm-es ventije meg kifújja.
+			<br>
+			<!--IBF.ATTACHMENT_399932-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. augusztus 28. 18:10</h4>
+			<p>Kéne egy ventilátor hátulra, nem elég a tápé. Sőt, így az elülső ventilátor talán még ront is a helyzeten.
+			<br>
+			<!--IBF.ATTACHMENT_399943-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: L.Gyuri  2009. augusztus 28. 20:04</h4>
+			<p>Viszont ha az elülsőt átszerelem hátra, akkor a merevlemezeket nem fogja hűteni semmi.
+			<br>
+			<!--IBF.ATTACHMENT_399969-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. augusztus 28. 20:08</h4>
+			<p>Nem is mondtam, hogy szereld át, kell az oda. Szerezz be egy hátsó ventilátort. Csúcskategóriásat kapsz pár ezerért.
+			<br>
+			<!--IBF.ATTACHMENT_399972-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: L.Gyuri  2009. augusztus 28. 20:31</h4>
+			<p>Sajnos több ventilátort nem tudok a gépbe tenni, mert nincs több csatlakozó az alaplapon.
+			<br>
+			<!--IBF.ATTACHMENT_399974-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. augusztus 28. 20:39</h4>
+			<p><img src="http://www.pcsilent.de/ppic_MAXI__525molex3.jpg" border="0" alt="IPB kép">
+			<br>
+			<!--IBF.ATTACHMENT_399975-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: L.Gyuri  2009. augusztus 28. 20:48</h4>
+			<p>Kösz. Ezt a boltban, hogy kérjem, mi a neve?
+			<br>
+			<!--IBF.ATTACHMENT_399976-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. augusztus 28. 20:57</h4>
+			<p>4 pin molex - 3 pin adapter kábel. Hivatalos neve szerintem nincs is.  <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"> Tapasztalataim alapján, minden második PC boltban megtalálható pár száz forintért.<br>Különben ritkán mellékelni szokták a ház hűtő dobozában is.
+			<br>
+			<!--IBF.ATTACHMENT_399979-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: L.Gyuri  2009. augusztus 30. 15:28</h4>
+			<p>A fejlemények: találtam itthon egy 8cm-es noname ventit amit beszereltem hátra. Ekkor a hőmérséklet nem változott semmit. Azután átszereltem az oldallapra, bele a légcsatornába és így sikerült 49-52 fokra lecsökkenteni az nforce chipsetem hőmérsékletét. Köszönök minden eddigi segítséget.
+			<br>
+			<!--IBF.ATTACHMENT_400151-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. október 31. 12:06</h4>
+			<p>A régi topikban volt szó a Cooler Master CM-690-emről. Na most végre ráértem, és öcsémmel az oldallap felfüggesztéseit és a ventilátor alátéteit is gumiztuk. Így valóban halkabb lett, de a búgó hang továbbra is megmaradt. Ha megnyomom az oldallapot a ventilátor felett, vagy ha csak eltakarom a ventilátort, akkor normális hangja van. Mit lehetne még csinálni? Pjotr ajánlott egy olyat, hogy álljak neki egy hegesztővel, de ez nem túl szimpatikus. <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif"><br><br>Nem lehet, hogy valami a házban adja a hangot, ahogy átnyomja rajta a levegőt?
+			<br>
+			<!--IBF.ATTACHMENT_405012-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. október 31. 13:29</h4>
+			<p>Merevítőket kell bele hegeszteni, mint a versenyautókba. <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/tongue.gif" style="vertical-align:middle" emoid=":P" border="0" alt="tongue.gif"><br><br><span>Úgy tűnik a Cooler Master-ek ilyenen rezgősek, az én <a class="linkclass" href="http://prohardver.hu/teszt/cooler_master_ammo_533_rambo_haza/diszszemle.html">http://prohardver.hu/teszt/cooler_master_ammo_533_rambo_haza/diszszemle.html</a> -am műanyag előlapja rezonált régen, rögzítettem a közepére egy fémkampót, majd egy hosszú tejgumival odaszorítottam a ház hátuljához. Jó tudom, igénytelen megoldás </span><img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/blush.gif" style="vertical-align:middle" emoid=":upsz:" border="0" alt="blush.gif">, de legalább már nem rezonál. Régebben ha felpörgött a DVD író még a hajam is égnek állt.
+			<br>
+			<!--IBF.ATTACHMENT_405016-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. október 31. 13:57</h4>
+			<p><!--quoteo(post=405016:date=2009. október 31. 13&#58;29:name=Csaba_#)--></p><div class="quotetop">IDÉZET(Csaba_# @ 2009. október 31. 13:29) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=405016"><img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Merevítőket kell bele hegeszteni [...]<!--QuoteEnd--></div><!--QuoteEEnd--><br>Mondtam én. <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/tongue.gif" style="vertical-align:middle" emoid=":P" border="0" alt="tongue.gif"> <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/ani_wink.gif" style="vertical-align:middle" emoid=";)" border="0" alt="ani_wink.gif">
+			<br>
+			<!--IBF.ATTACHMENT_405018-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: jagdtigger  2009. október 31. 14:53</h4>
+			<p><!--quoteo(post=405012:date=2009. október 31. 12&#58;06:name=KGigi)--></p><div class="quotetop">IDÉZET(KGigi @ 2009. október 31. 12:06) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=405012"><img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Pjotr ajánlott egy olyat, hogy álljak neki egy hegesztővel, de ez nem túl szimpatikus. <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif"><!--QuoteEnd--></div><!--QuoteEEnd--><br>Mert? <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/roll.gif" style="vertical-align:middle" emoid=":hááát:" border="0" alt="roll.gif"> Engem láttál volna a dekopír fűrésszel <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/laughing.gif" style="vertical-align:middle" emoid=":lol:" border="0" alt="laughing.gif"><span> , oldalsó 8-as hely elég ritkásan volt kilyuggatva de ha már barbár módszer akkor előnye is legyen így kibővítettem egy <a class="linkclass" href="http://dl.getdropbox.com/u/1201829/K%C3%A9p%20068.jpg">http://dl.getdropbox.com/u/1201829/K%C3%A9p%20068.jpg</a>(bocs a nagy kép miatt, de most csak ezért nem állok neki aksit tölteni).
+			</span><br>
+			<!--IBF.ATTACHMENT_405024-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. október 31. 16:17</h4>
+			<p>Bár jobban belegondolva, a hegesztés valóban agyament ötlet.  <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/twisted.gif" style="vertical-align:middle" emoid=":démonikacaj:" border="0" alt="twisted.gif"> <br><br>El lehet gondolkodni a hegesztő eljáráson, egy 0,8-1 mm-es ki tudja milyen ötvözetű lemez esetében, főleg ha alu: <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/roll.gif" style="vertical-align:middle" emoid=":hááát:" border="0" alt="roll.gif"> <br><br>1. Bevont elektródás ív: esélytelen  <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/laughing.gif" style="vertical-align:middle" emoid=":lol:" border="0" alt="laughing.gif"> .<br>2. Védőgázas ív: esélyes, de nincs Feri bácsi sufnijában<br>3. Pont hegesztés: U.A.<br>4. Láng (acetilén vagy PB, oxigénnel): Esélyes, de minimum leég az összes festék, az anyagot pedig elrántja a hő.<br><br>Szóval marad a ragasztás, csavarozás esetleg popszegecselés...
+			<br>
+			<!--IBF.ATTACHMENT_405029-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. október 31. 22:09</h4>
+			<p>Ezt hogyan gondolod kivitelezni?
+			<br>
+			<!--IBF.ATTACHMENT_405046-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: NiceFire  2010. január 4. 18:06</h4>
+			<p>Bocs, ha túl nagy h***eséget kérdezek!<br><br> Van a házamnak az oldalán egy lukacsozás köralakban és belülről egy műanyag - talán légvezető ? - cső van felerősítve amin keresztül többé-kevésbé a processzor látszik. Arra gondoltam, hogy tennék ide egy ventilátort. Milyen legyen szívjon kifele a gépből, vagy fújja a levegőt befele ? Egyéb házhűtés a tápén kívül nincs.<br> Most ébredtem rá, a hozzászólásokat olvasva, hogy micsoda jelentősége van a hűtésnek.  <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/blush.gif" style="vertical-align:middle" emoid=":upsz:" border="0" alt="blush.gif">  Igaz proci és vidikari szintjén már felismertem a dolog fontosságát, de a többi eddig kimaradt.<br><br> Köszi a válaszért előre is !
+			<br>
+			<!--IBF.ATTACHMENT_410109-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. január 4. 18:53</h4>
+			<p>Inkább szívja befelé (hőcsatornának is pont ez a szerepe). Egyébként meg totál értelmetlen oda ventilátort szerelni. <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/roll.gif" style="vertical-align:middle" emoid=":hááát:" border="0" alt="roll.gif">
+			<br>
+			<!--IBF.ATTACHMENT_410112-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: [OP]Destroy-man  2010. január 4. 18:57</h4>
+			<p>Szívót rakj rá! Az hogy nézne ki, hogy a proci szívójára rányomatnád a levegőt! Megölnéd vele azt a "kicsi" hűtést is ami most van. <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif">
+			<br>
+			<!--IBF.ATTACHMENT_410113-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Temporary  2010. január 4. 21:31</h4>
+			<p>Szerintem:</p><ul><li>Az ideális megoldás, ha a processzorra fújja a levegőt a ventilátora, és ezzel egy irányban dolgozik az oldalsó nagyobb méretű és <b>kisebb </b>légszállítású venti. </li><li>Nagyobb hűtési hatékonysága van a befelé irányuló hűvös levegőnek, mint a kiszívott melegnek. Viszont ennél fontosabb, hogy a processzorral szembeni oldal ventilátornak a proci ventivel egy irányban kell dolgoznia.</li><li>Ha nem egy nagyobb videokártya van a gépben (esetleg passzív hűtésű) akkor a csövet annál közelebb lehet húzni a proci ventihez, minél inkább egy tengelybe esnek.</li><li>A legjobb, ha kipróbáljuk a különböző felállásokat miközben futtatunk egy stressz tesztet (például az Everest-el naplózni is tudjuk a hőmérsékletek alakulását).</li></ul>
+			<br>
+			<!--IBF.ATTACHMENT_410141-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: NiceFire  2010. január 5. 13:27</h4>
+			<p>Talán most lesz belőlem elegetek, de ...  <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/blush.gif" style="vertical-align:middle" emoid=":upsz:" border="0" alt="blush.gif"> <br><br>Szóval a légvezető cső vagy mi alatt is van egy téglalap alakot formázó perforáció az oldal lapon. Oda is kell venti, vagy az csak azért van, hogy tudjon áramolni a levegő?<br><br>Igérem megnézem a bevezetőben leírt ábrát is, biztos aból is sikerül rá jönnöm, mit csináljak ...  <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif">
+			<br>
+			<!--IBF.ATTACHMENT_410176-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2010. január 5. 19:35</h4>
+			<p>A topik elején van 2 db 2D-s rajz, mindent elmond.<br><br>Fent jól olvastam olyat, hogy a processzorhűtőn szívóventilátor van? <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/laughing.gif" style="vertical-align:middle" emoid=":lol:" border="0" alt="laughing.gif"> Legfeljebb, ha 2 ventilátor dolgozik rajta, egyébként mindig a bordára fújja a levegőt a ventilátora.
+			<br>
+			<!--IBF.ATTACHMENT_410208-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: mismis10  2010. január 10. 15:23</h4>
+			<p>Hello. Van itt nekem feleslegbe nekem egy 9cm es vadonatúj rendszer hűtőm. És a gépházam oldalán van hely egy 12cm esnek és szerintetek ha sufni tuningal rádrótoznám az oldalára azzal lehetnem bármi bajt csinálni? Vagy van értelme?<br>Ja és harisnyát használni porszűrőnek hülyeség?<br><br>Ja és mivel nem találtma más témát ahová írhatnám ezért itt kérdezem.<br>Két vagy több ilyet szabad egymásba dugni és úgy használni? <br><img src="http://www.pcsilent.de/ppic_MAXI__525molex3.jpg" border="0" alt="IPB kép">
+			<br>
+			<!--IBF.ATTACHMENT_410630-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Zsoc@m  2010. január 19. 18:48</h4>
+			<p>Sziasztok!<br>Dell Latitude D620as notim van. Van vagy 3 éves, azonban az utóbbi 2-3 hónapban eszméletlen forró a készülék. Szétszedték, kitisztították, de még mindig tűzforró, venti 100%, cpu 0%. Ilyenkor mit lehet tenni?<br>CPUm már 88 fokos, mindjárt kifolyik az alján <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/annoyed.gif" style="vertical-align:middle" emoid=":S" border="0" alt="annoyed.gif"><br>segítsééég
+			<br>
+			<!--IBF.ATTACHMENT_411297-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: kismszabo  2010. február 7. 18:31</h4>
+			<p>Sziasztok!<br><br>Acer Aspire 5710Z laptopom van. Erősen melegedett, szétszedtem. Tele volt porral és a venti nem tudta kifújni a levegőt. Kitisztítottam, de most a venti bekapcsol, majd 3-10 másodperc múlva le is áll. Előfordul, hogy csak beindul és leáll. Mi lehet a gond? Mindezt alacsony hőmérsékleten csinálja és percenként, futó alkalmazás:0.<br><br>Előre is köszönöm a segítséget!
+			<br>
+			<!--IBF.ATTACHMENT_412934-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Temporary  2010. február 7. 19:53</h4>
+			<p>Lehet, hogy már egyszer megsült az a venti, és/vagy a csapágyazásban  maradhatott még szmötyi. Ilyen előzmények után az a biztos, ha inkább kicseréled egy újra.
+			<br>
+			<!--IBF.ATTACHMENT_412943-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: solties  2010. február 7. 19:56</h4>
+			<p><!--quoteo(post=411297:date=2010. január 19. 18&#58;48:name=Zsoc@m)--></p><div class="quotetop">IDÉZET(Zsoc@m @ 2010. január 19. 18:48) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=411297"><img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Sziasztok!<br>Dell Latitude D620as notim van. Van vagy 3 éves, azonban az utóbbi 2-3 hónapban eszméletlen forró a készülék. Szétszedték, kitisztították, de még mindig tűzforró, venti 100%, cpu 0%. Ilyenkor mit lehet tenni?<br>CPUm már 88 fokos, mindjárt kifolyik az alján <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/annoyed.gif" style="vertical-align:middle" emoid=":S" border="0" alt="annoyed.gif"><br>segítsééég<!--QuoteEnd--></div><!--QuoteEEnd--><br>Ha már ilyen forró (volt a családban nálunk is egy hasonló eset, egy Fujitsu Siemens Amilo 3200+ procival), szét kéne még egyszer szedni, és rámérni a gyanús kondikra. Ha valamelyik púpos, vagy trutyis a teteje stb...<br>Nálunk is  ilyen elko hiba okozta a forrósodást, és miután kicseréltem őket, már normálisan működtek.<br>Ha van műszered, rámérsz a kondik lábára egy ellenálást, (ekkor feltöltődik) mindegy mit mutat, aztán ha megint rámérsz egyre csökkenő értéket kell látnod. Ilyenkor kisűl. Akkor jó.<br>Csak azért írom le, mert az öcsém gépével ez oldotta meg a forrósodás problémát. Az is egy 2005-ös gép.<br>De lehet, hogy teljesen más a gond. Próba....
+			<br>
+			<!--IBF.ATTACHMENT_412944-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: kismszabo  2010. február 7. 20:30</h4>
+			<p>Köszi Temp!
+			<br>
+			<!--IBF.ATTACHMENT_412948-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: mismis10  2010. február 21. 12:11</h4>
+			<p>Üdv! Van egy Scythe Mugen 2 es cpu hűtőm most úgy van hogy a gép hátulja felől szív a ventilátor. Tőle kb 3 cm re a gép hátsó szellőző rácsán van egy 9cm es ventilátor. Szerintetek azt fordítsam meg és csináljam úgy hogy friss levegőt fújjon közvetlen a cpu ventilátorra vagy pedig szedjem le és azt is rakjam rá a hűtőbordára. Ugyanis akár 4 ventilátor is ráfér a bordára.<br><br><span>Valahogy így néz ki most <a class="linkclass" href="http://www.kepfeltoltes.hu/100221/F_nyk_pek-0565_www.kepfeltoltes.hu_.jpg">http://www.kepfeltoltes.hu/100221/F_nyk_pek-0565_www.kepfeltoltes.hu_.jpg</a>
+			</span><br>
+			<!--IBF.ATTACHMENT_413939-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2010. február 21. 12:38</h4>
+			<p>A topik elején találsz képet, hogy kell fordítani a ventilátorokat.
+			<br>
+			<!--IBF.ATTACHMENT_413944-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: mismis10  2010. március 1. 15:40</h4>
+			<p>Köszönöm a segítséged. <br>Lenne még egy kérdésem. Tudnék venni 1400ft+ a posta egy darab Thermaltake 12cm-es ventilátort,szabályzóval. Egy vízhűtő egység ventilátora új. <br>Adatok<br>* Fan Speed: 1300~2400 RPM<br>* Max. Air Flow: 38.6CFM~93.7CFM<br>* Noise: 16 dB<br>* Life Expectancy: 30,000 hr<br>* Connector: 4pin<br>Szerintetek megéri az árát?<br><span>Itt egy kép róla <a class="linkclass" href="http://hardverapro.hu/dl/uad/2010-01/928571pic.jpg">http://hardverapro.hu/dl/uad/2010-01/928571pic.jpg</a>
+			</span><br>
+			<!--IBF.ATTACHMENT_414531-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: szabszucs  2010. július 2. 12:07</h4>
+			<p>Sziasztok! Van egy Aspire X-Cruiser házam, szeretném tudni, hogyan a legeredményesebb a bekötés ventik szempontjából, mivel több hely van, de csak 3 venti <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"> <br><br>Tehát: elöl semmi, ház tetején 8 cm kifelé  hátul 12cm kifelé, az oldallapon (tölcsér nélkül) 8cm szintén kifelé (?). Így kaptam kézhez, és gyanús, hogy valami nem stimmel. Köszönöm előre is a segítséget <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif">
+			<br>
+			<!--IBF.ATTACHMENT_421234-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. július 2. 12:44</h4>
+			<p>Hátul maradjon a 12 cm kifelé, a 8 centis fenti menjen át előre befelé, az oldalsó pedig befelé fújjon.
+			<br>
+			<!--IBF.ATTACHMENT_421238-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: szabszucs  2010. július 2. 12:50</h4>
+			<p><img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/blush.gif" style="vertical-align:middle" emoid=":upsz:" border="0" alt="blush.gif"> Ha az oldalsó befelé fúj, nem szívja el rögtön a 12-es? Elöl pedig túl hangos  <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/no.gif" style="vertical-align:middle" emoid=":nem:" border="0" alt="no.gif">  De ha azt mondod, így jobb a hűtés, akkor félredobom aggodalmaskodásom, és hallgatok Rád <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif">
+			<br>
+			<!--IBF.ATTACHMENT_421239-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. július 2. 13:12</h4>
+			<p>A cél az, hogy áramlást alakíts ki, tehát pont az a lényeg, hogy a hátsó ventilátor elszívja azt, amit az első és az oldalsó ventilátor bepumpál a házba. Különben csak örvénylik bent a meleg levegő, és rosszabb lesz a helyzet, mintha egyáltalán nem lenne hűtés. Persze ésszerű keretek között, ha egymástól 5 centire van a két ventilátor, akkor ez értelemszerűen semmit nem ér.<br><br>A hang származhat rossz felfogatásból, illetve abból, hogy van valami a ventilátor előtt, amin fennakad a levegő. Esetleg belelóg a lapátok közé a ventilátor saját vezetéke. Velem egyszer előfordult. <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/tongue.gif" style="vertical-align:middle" emoid=":P" border="0" alt="tongue.gif">
+			<br>
+			<!--IBF.ATTACHMENT_421245-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: szabszucs  2010. július 2. 20:55</h4>
+			<p>Ácsi ácsi, ennyire nem vagyok laikus, és józan eszem is van <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif"> Tisztában vagyok a fizikai lényeggel, a hőkivezetéssel, csak érdekelt, mit mond az, aki ténylegesen ért hozzá, és sokszor csinált ilyet/adott tanácsot másoknak is. Az oldalsó venti a procival szemben van, se nem közel, se nem távol a 12-eshez képest ami hátul fúj kifelé. Tölcsér nincs rajta <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/no.gif" style="vertical-align:middle" emoid=":nem:" border="0" alt="no.gif"> Elöl pedig a házon lévő kis lyukak keltenek szélzajt... A felső maradt a helyén, gondolom ha kifelé fújódik a levegő, megy elöl friss magától is befelé, forgó nélkül <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif">
+			<br>
+			<!--IBF.ATTACHMENT_421263-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. július 2. 20:57</h4>
+			<p>Na, ennek örülök. Benne vagy az 5%-ban. <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif"> Nem lesz olyan hatékony a hűtés, de ez is megteszi. Akkor viszont semmiképpen ne szerelj fel tölcsért, hogy minden szellőzzön.
+			<br>
+			<!--IBF.ATTACHMENT_421264-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Dávid Csaba  2010. augusztus 9. 21:45</h4>
+			<p>Tudja valaki a Cooler Master Elite 335-ös házhoz gyárilag adott ventilátor paramétereit? Méret megvan. <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif">
+			<br>
+			<!--IBF.ATTACHMENT_423227-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. augusztus 10. 6:49</h4>
+			<p>Pl. a Cooler Master Ammo 533 -hoz 12 cm-es 2000 rpm-es van, milyen adatok érdekelnének még?
+			<br>
+			<!--IBF.ATTACHMENT_423234-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Dávid Csaba  2010. augusztus 10. 7:10</h4>
+			<p>Zajszint, illetve hogy fix-e a fordulatszám?
+			<br>
+			<!--IBF.ATTACHMENT_423235-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2010. augusztus 10. 8:26</h4>
+			<p>Nincs olyan ventilátor, aminek fix a fordulatszáma.
+			<br>
+			<!--IBF.ATTACHMENT_423238-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Dávid Csaba  2010. augusztus 10. 9:02</h4>
+			<p>Látom azonosultál az avatároddal. <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif"><br><br>Átfogalmazom a kérdést: 3 vagy 4 pin-es a csatlakozója?
+			<br>
+			<!--IBF.ATTACHMENT_423240-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2010. augusztus 10. 10:04</h4>
+			<p><img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/gap.gif" style="vertical-align:middle" emoid=":fogatlan:" border="0" alt="gap.gif"><br><br>Szerintem 3 tűs lesz, ~0.35 A-es motorral.
+			<br>
+			<!--IBF.ATTACHMENT_423241-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. augusztus 10. 12:17</h4>
+			<p>Az én Cooler Master-ekhez 3 tűseket kaptam. Ha érdekel, megnézek rajta minden mást is. CM 690-es és egy Elite valami van itthon. Azt hiszem talán pont 335-ös.
+			<br>
+			<!--IBF.ATTACHMENT_423244-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. augusztus 10. 12:18</h4>
+			<p>Így van, három tűs. Max. fordulaton azért már lehet egy picit hallani, de az én alaplapomba engedélyezve van a Q-FAN, ami 1000 rpm környékén tartja, és csak akkor pörgeti igazán, ha muszáj. Így viszont gyakorlatilag észre sem lehet venni a működését.
+			<br>
+			<!--IBF.ATTACHMENT_423245-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Dávid Csaba  2010. augusztus 10. 12:25</h4>
+			<p>@KGigi<br>A kérdésem azért aktuális, mert holnap délután érkezik a 335-ösöm, s nem akarom, hogy gépemet egy szélerőmű zajos lapátjai hűtsék. Ha kellene, még az üzletben kicseréltetném egy halkabbra. Előre is köszönöm!<br><br>@Csaba_#<br>Köszönöm, ezek szerint nem muszáj lecserélnem. Az meg majd kiderül, hogy kell-e mellé még egy, bár a mostani házban sem melegszik a gépem egy 80mm-es CM ventivel a tápegység alatt.<br><span><a class="linkclass" href="http://img153.imageshack.us/i/20100810133153.png/">http://img153.imageshack.us/i/20100810133153.png/</a>
+			</span><br>
+			<!--IBF.ATTACHMENT_423247-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. augusztus 10. 12:27</h4>
+			<p>Nekem magával a ventilátorral nincs bajom, viszont ha az oldallapra szerelem, zúg a ház a rezonanciától. Ezt két éve nem sikerül megoldanom, pedig már ezer dolgot próbáltam, és nagyon idegesítő.
+			<br>
+			<!--IBF.ATTACHMENT_423250-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Dávid Csaba  2010. augusztus 10. 12:42</h4>
+			<p><!--coloro:#999999--><span style="color:#999999"><!--/coloro-->Az se jött be, hogy ventilátort a négy furatánál fogva az oldallap síkjában gumiszalagokkal kifeszíted, majd a ventilátorra körbe szivacstappancsokat ragasztasz? <br>Ne nézz rám ilyen furán, nem értek hozzá, csak agymenésem van. <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif"> <!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_423252-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. augusztus 10. 12:53</h4>
+			<p>Nem gond. <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif"> Eddig három dolgot próbáltam. Első körben műanyag alátétet tettem az oldallap és a ventilátor közé, ez nem segített. Másodjára gumialátéttel próbálkoztam, de sem hozott érdemi változást. Harmadjára az oldallap rögzítési pontjai alá tettem gumit (most is és az előzőnél is kilyukadt bicikligumi belsőből). Ez már hatott, de sajnos még ez is kevés. Igazából én magából a ventilátorból hallom a hangot, de az az érdekes, hogy ha elé vagy mögé teszem a kezem, akkor megszűnik.
+			<br>
+			<!--IBF.ATTACHMENT_423253-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Dávid Csaba  2010. augusztus 28. 9:19</h4>
+			<p>Cooler Master A12025-12CB-3BN-F1 az általam kérdezett ventilátor "neve". Nem csak az Elite 335-ösbe raknak ilyet, hanem sok CM házba. Fekete színű. <br><br>A legjobb barátunk ezt mondja:<br>- 120 x 120 x 25mm<br>- 3 pin (adnak hozzá molex adaptert is, de abban az aljzatban csak 2 pin "él")<br>- 1200 RPM (nálam jelenleg 710)<br>- 44.03 CFM<br>- 19.8 dBA<br>- DC 12V<br>- 0,16A<br>- 130g
+			<br>
+			<!--IBF.ATTACHMENT_423911-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: zschni87  2010. október 20. 14:04</h4>
+			<p>Sziasztok!<br>Most vettem Arctic Cooling F8 és F12 pro PWN ventilátorokat. Két különböző gépbe szeretném beszerelni, de az a cink, hogy itt a ventin nekem 4 tűs csatlakozója van(fekete, sárga, piros, kék színű kábelekkel) és van egy 3 tűs is, de abból csak egyetlen szerencsétlen sárga vezeték jön.<br>Ez mindkettő ventilátor esetén így van.<br>Az alaplapokban pedig 1-1 darab 3 tűs csatlakozó van sysfan felirattal alatta, több 4 tűs foglalat nincsen, csak amit a procihűtő már lefoglal.<br>Azt szeretném kérdezni, hogy ez most egy nagyon nagy szívás és vihetem vissza másodjára is cserére (elsőre én qrtam el), vagy esetleg beköthetem úgy hogy a venti 4tűs csatlakozóját az alaplap 3 tűs csatlakozójába rakom és akkor a kék színű kábel nem lesz kihasználva?<br>EDIT:<br>A 4 tűseket bedugtam a 3 tűs foglalatba és királyul megy.
+			<br>
+			<!--IBF.ATTACHMENT_425933-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Kiskalóz  2010. október 28. 6:42</h4>
+			<p>Lehet túlhűteni egy rendszert?<br><br>Nekem most az egyik gépem az erkélyen van (szél és vízbiztos helyen) és ma reggel az alábbi hőfokokat mértem:<br>CPU: 6 Celsius<br>Alaplap: 11 Celsius<br>HDD: 8 Celsius<br><br>Lehet valami baja a gépnek?<br>Persze sokszor ki van kapcsolva (főleg ha nem vagyok otthon).
+			<br>
+			<!--IBF.ATTACHMENT_426248-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Jay  2010. október 28. 6:50</h4>
+			<p>Olvastam olyan alaplapról, ami -10 és 60 Celsius-fokos hőmérséklet között üzemeltethető.
+			<br>
+			<!--IBF.ATTACHMENT_426250-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2010. október 28. 8:17</h4>
+			<p>Amíg pluszban vannak a fokok, addig jó, de pl. a merevlemez elhalálozásának esélye nő, ha ~30 fok alatti a hőmérséklete.
+			<br>
+			<!--IBF.ATTACHMENT_426251-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Temporary  2010. október 28. 14:26</h4>
+			<p>Minden elektronikus alkatrésznek/eszköznek van egy hőmérsékleti tartománya, amin belül stabilan működik.<br>Az üzemi hőmérséklettől való durva eltérés az "elhalálozásának esélye"-t növeli. A Te esetedben ráadásul további probléma környezeti hőmérséklet állandó ingadozása, ami nem kívánatos hőtágulást okozhat, főleg a precíziós alkatrészekben. Rossz esetben még páralecsapódás is képződhet és gondolom nem kell részletezni mit okozhat egy PC belsejében a víz.<br><br>Lehet, hogy évekig üzemelni fog gond nélkül az erkélyen a géped, de én egy P4-nél drágább konfigot biztos nem tennék ki ilyen körülményeknek, a rajta lévő adatokról már nem is beszélve <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"><br>Inkább lakáson belül old meg a hűtést, pl tedd a spájzba, nálam ott van <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif">
+			<br>
+			<!--IBF.ATTACHMENT_426263-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Kiskalóz  2010. október 28. 17:08</h4>
+			<p>Na akkor megfogadva a tanácsokat holnap behozom <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"><br><br>Bár elég jó konfig (Gigabyte GA-EP45DS3, Intel Core 2 duo 2800Mhz, 4GB RAM, 2db HDD) és gombokért vettem, nem szeretném ha tönkre menne <img src="./PC WORLD Segélyvonal _ Hűtés, házak, tápok, modding _ Rendszerhűtés_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif">
+			<br>
+			<!--IBF.ATTACHMENT_426269-->
+			</p>
+		</div><!--Copyright-->	</div></body><style type="text/css">/*This block of style rules is inserted by AdBlock*/#RadAd_Skyscraper,#bbccom_leaderboard,#center_banner,#footer_adcode,#hbBHeaderSpon,#hiddenHeaderSpon,#navbar_adcode,#rightAds,#rightcolumn_adcode,#top-advertising,#topMPU,#tracker_advertorial,.ad-now,.dfpad,.prWrap,[id^="ad_block"],[id^="adbrite"],[id^="dclkAds"],[id^="ew"][id$="_bannerDiv"],[id^="konaLayer"],a.kLink span[id^="preLoadWrap"].preLoadWrap,a[href^="http://ad."][href*=".doubleclick.net/"],a[href^="http://adserver.adpredictive.com"],div#adxLeaderboard,div#dir_ads_site,div#FFN_Banner_Holder,div#FFN_imBox_Container,div#p360-format-box,div#rhs div#rhs_block table#mbEnd,div#rm_container,div#tads table[align="center"][width="100%"],div#tooltipbox[class^="itxt"],div[class^="dms_ad_IDS"],div[id^="adKontekst_"],div[id^="google_ads_div"],div[id^="kona_"][id$="_wrapper"],div[id^="sponsorads"],div[id^="y5_direct"],iframe.chitikaAdBlock,iframe[id^="dapIfM"],iframe[id^="etarget"][id$="banner"],iframe[name^="AdBrite"],iframe[name^="google_ads_"],img[src^="http://cdn.adnxs.com"],ispan#ab_pointer,object#flashad,object#ve_threesixty_swf[name="ve_threesixty_swf"],table[cellpadding="0"][width="100%"] > * > * > * > div[id^="tpa"],#A9AdsMiddleBoxTop,#A9AdsOutOfStockWidgetTop,#A9AdsServicesWidgetTop,#ADSLOT_1,#ADSLOT_2,#ADSLOT_3,#ADSLOT_4,#AD_CONTROL_22,#ADsmallWrapper,#Ad160x600,#Ad2,#Ad300x250,#Ad3Left,#Ad3Right,#Ad3TextAd,#AdArea,#AdBanner_F1,#AdBar,#AdBar1,#AdContainer,#AdContainerTop,#AdContentModule_F,#AdDetails_GoogleLinksBottom,#AdDetails_InsureWith,#AdFrame4,#AdLeaderboardBottom,#AdLeaderboardTop,#AdMiddle,#AdMobileLink,#AdRectangle,#AdSenseDiv,#AdServer,#AdShowcase_F1,#AdSky23,#AdSkyscraper,#AdSponsor_SF,#AdSubsectionShowcase_F1,#AdTargetControl1_iframe,#AdText,#AdTop,#AdTopLeader,#Ad_Block,#Ad_Center1,#Ad_Right1,#Ad_Top,#Adrectangle,#Ads,#AdsContent,#AdsRight,#AdsWrap,#Ads_BA_CAD,#Ads_BA_CAD2,#Ads_BA_CAD_box,#Ads_BA_SKY,#Ads_CAD,#Ads_Special,#AdvertMPU23b,#AdvertPanel,#Advertorial,#Advertorials,#BannerAdvert,#BigBoxAd,#BodyAd,#BotAd,#Bottom468x60AD,#ButtonAd,#CompanyDetailsNarrowGoogleAdsPresentationControl,#CompanyDetailsWideGoogleAdsPresentationControl,#ContentAd,#ContentAd1,#ContentAd2,#ContentAdPlaceHolder1,#ContentAdPlaceHolder2,#ContentAdXXL,#ContentPolepositionAds_Result,#DivAdEggHeadCafeTopBanner,#FooterAd,#FooterAdContainer,#GoogleAd1,#GoogleAd2,#GoogleAd3,#GoogleAdsPresentationControl,#GoogleAdsense,#Google_Adsense_Main,#HEADERAD,#HOME_TOP_RIGHT_BOXAD,#HeaderAD,#HeaderAdsBlock,#HeaderAdsBlockFront,#HeaderBannerAdSpacer,#HeaderTextAd,#HeroAd,#HomeAd1,#HouseAd,#ID_Ad_Sky,#JobsearchResultsAds,#Journal_Ad_125,#Journal_Ad_300,#KH-contentAd,#LargeRectangleAd,#LeftAd,#LeftAdF1,#LeftAdF2,#LftAd,#LoungeAdsDiv,#LowerContentAd,#MainSponsoredLinks,#Nightly_adContainer,#OverrideAdArea,#PREFOOTER_LEFT_BOXAD,#PREFOOTER_RIGHT_BOXAD,#PageLeaderAd,#RelevantAds,#RgtAd1,#RightAd,#RightBottom300x250AD,#RightNavTopAdSpot,#RightSponsoredAd,#SectionAd300-250,#SectionSponsorAd,#SidebarAdContainer,#SkyAd,#SpecialAds,#SponsoredAd,#SponsoredLinks,#TOP_ADROW,#TOP_RIGHT_BOXAD,#Top468x60AD,#TopAdBox,#TopAdContainer,#TopAdDiv,#TopAdPos,#VM-MPU-adspace,#VM-footer-adspace,#VM-header-adspace,#VM-header-adwrap,#XEadLeaderboard,#XEadSkyscraper,#YahooAdParentContainer,#_ads,#about_adsbottom,#ad-120x600-sidebar,#ad-120x60Div,#ad-160x600,#ad-160x600-sidebar,#ad-250,#ad-250x300,#ad-300,#ad-300x250,#ad-300x250-sidebar,#ad-300x250Div,#ad-300x60-1,#ad-728,#ad-728x90-leaderboard-top,#ad-article,#ad-banner,#ad-banner-1,#ad-block-125,#ad-bottom,#ad-bottom-wrapper,#ad-box-first,#ad-box-second,#ad-boxes,#ad-bs,#ad-buttons,#ad-colB-1,#ad-column,#ad-content,#ad-contentad,#ad-flex-first,#ad-footer,#ad-footprint-160x600,#ad-frame,#ad-front-footer,#ad-front-sponsoredlinks,#ad-halfpage,#ad-horizontal-header,#ad-img,#ad-inner,#ad-label,#ad-leaderboard,#ad-leaderboard-bottom,#ad-leaderboard-container,#ad-leaderboard-spot,#ad-leaderboard-top,#ad-left,#ad-links-content,#ad-list-row,#ad-lrec,#ad-medium,#ad-medium-rectangle,#ad-medrec,#ad-middlethree,#ad-middletwo,#ad-module,#ad-mpu,#ad-mpu1-spot,#ad-mpu2,#ad-mpu2-spot,#ad-north,#ad-one,#ad-placard,#ad-placeholder,#ad-rectangle,#ad-right,#ad-righttop,#ad-row,#ad-side-text,#ad-sidebar,#ad-sky,#ad-skyscraper,#ad-slug-wrapper,#ad-small-banner,#ad-space,#ad-special,#ad-splash,#ad-sponsors,#ad-spot,#ad-squares,#ad-target,#ad-target-Leaderbord,#ad-teaser,#ad-text,#ad-top-banner,#ad-top-text-low,#ad-top-wrap,#ad-tower,#ad-trailerboard-spot,#ad-two,#ad-typ1,#ad-unit,#ad-west,#ad-wrap,#ad-wrap-right,#ad-wrapper1,#ad-yahoo-simple,#ad1006,#ad11,#ad125BL,#ad125BR,#ad125TL,#ad125TR,#ad125x125,#ad160x600,#ad160x600right,#ad1Sp,#ad2,#ad2Sp,#ad300,#ad300-250,#ad300X250,#ad300_x_250,#ad300x100Middle,#ad300x150,#ad300x250,#ad300x250Module,#ad300x60,#ad300x600,#ad300x600_callout,#ad336,#ad336x280,#ad375x85,#ad4,#ad468,#ad468x60,#ad468x60_top,#ad526x250,#ad600,#ad7,#ad728,#ad728Mid,#ad728Top,#ad728Wrapper,#ad728top,#ad728x90_1,#adBadges,#adBanner120x600,#adBanner160x600,#adBanner336x280,#adBanner728,#adBannerTable,#adBannerTop,#adBar,#adBelt,#adBlock125,#adBlocks,#adBox,#adBox350,#adBox390,#adCirc300X200,#adCirc_620_100,#adColumn,#adContainer_1,#adContainer_2,#adContainer_3,#adDiv300,#adDiv728,#adFiller,#adFps,#adFtofrs,#adGallery,#adGroup1,#adHeaderTop,#adIsland,#adL,#adLB,#adLabel,#adLayer,#adLeader,#adLeaderTop,#adLeaderboard,#adMPU,#adMediumRectangle,#adMiddle0Frontpage,#adMiniPremiere,#adP,#adPlaceHolderRight,#adPlacer,#adRight,#adSenseModule,#adSenseWrapper,#adServer_marginal,#adSidebar,#adSidebarSq,#adSky,#adSkyscraper,#adSlider,#adSpace,#adSpace3,#adSpace300_ifrMain,#adSpace4,#adSpace5,#adSpace6,#adSpace7,#adSpace_footer,#adSpace_right,#adSpace_top,#adSpacer,#adSpecial,#adSplotlightEm,#adSpot-Leader,#adSpot-banner,#adSpot-island,#adSpot-mrec1,#adSpot-sponsoredlinks,#adSpot-textbox1,#adSpot-widestrip,#adSpotAdvertorial,#adSpotIsland,#adSpotSponsoredLinks,#adSquare,#adStaticA,#adStrip,#adSuperAd,#adSuperPremiere,#adSuperSkyscraper,#adSuperbanner,#adTableCell,#adTag1,#adTag2,#adText,#adTextLink,#adText_container,#adTile,#adTopContent,#adTopboxright,#adTower,#adUnit,#adZoneTop,#ad_1,#ad_160x160,#ad_160x600,#ad_190x90,#ad_2,#ad_3,#ad_300,#ad_300_250,#ad_300_250_1,#ad_300x250,#ad_300x250_content_column,#ad_300x90,#ad_4,#ad_468_60,#ad_5,#ad_728_foot,#ad_728x90,#ad_728x90_container,#ad_940,#ad_984,#ad_A,#ad_B,#ad_Banner,#ad_C,#ad_C2,#ad_D,#ad_E,#ad_F,#ad_G,#ad_H,#ad_I,#ad_J,#ad_K,#ad_L,#ad_M,#ad_N,#ad_O,#ad_P,#ad_YieldManager-300x250,#ad_anchor,#ad_banner,#ad_banner_top,#ad_bar,#ad_bellow_post,#ad_block_1,#ad_block_2,#ad_bottom,#ad_box,#ad_box_colspan,#ad_box_top,#ad_branding,#ad_bs_area,#ad_buttons,#ad_center_monster,#ad_cont,#ad_container_marginal,#ad_container_side,#ad_container_top,#ad_content_top,#ad_content_wrap,#ad_feature,#ad_firstpost,#ad_footer,#ad_front_three,#ad_fullbanner,#ad_global_header,#ad_haha_1,#ad_haha_4,#ad_halfpage,#ad_head,#ad_header,#ad_holder,#ad_horizontal,#ad_horseshoe_left,#ad_horseshoe_right,#ad_horseshoe_spacer,#ad_horseshoe_top,#ad_hotpots,#ad_in_arti,#ad_island,#ad_label,#ad_large_rectangular,#ad_lastpost,#ad_layer2,#ad_leaderBoard,#ad_leaderboard,#ad_leaderboard728x90,#ad_leaderboard_top,#ad_left,#ad_lrec,#ad_lwr_square,#ad_main,#ad_medium_rectangle,#ad_medium_rectangular,#ad_mediumrectangle,#ad_menu_header,#ad_middle,#ad_most_pop_234x60_req_wrapper,#ad_mpu,#ad_mpu300x250,#ad_mpuav,#ad_mrcontent,#ad_overlay,#ad_play_300,#ad_rect,#ad_rect_body,#ad_rect_bottom,#ad_rectangle,#ad_rectangle_medium,#ad_related_links_div,#ad_related_links_div_program,#ad_replace_div_0,#ad_replace_div_1,#ad_report_leaderboard,#ad_report_rectangle,#ad_right,#ad_right_main,#ad_ros_tower,#ad_rr_1,#ad_sec,#ad_sec_div,#ad_sgd,#ad_sidebar,#ad_sidebar1,#ad_sidebar2,#ad_sidebar3,#ad_skyscraper,#ad_skyscraper160x600,#ad_skyscraper_text,#ad_slot_leaderboard,#ad_slot_livesky,#ad_slot_sky_top,#ad_ss,#ad_term_bottom_place,#ad_text,#ad_thread_first_post_content,#ad_top,#ad_top_holder,#ad_tp_banner_1,#ad_tp_banner_2,#ad_unit,#ad_vertical,#ad_wide,#ad_wide_box,#ad_widget,#ad_window,#ad_wrap,#adbForum,#adbanner,#adbig,#adbnr,#adboard,#adbottom,#adbox1,#adbox2,#adclear,#adcode,#adcode1,#adcode2,#adcode3,#adcode4,#adcolumnwrapper,#adcontainer,#adcontainerRight,#adcontainsm,#adcontent,#adcontent1,#adcontrolPushSite,#add_ciao2,#addbottomleft,#addiv-bottom,#addiv-top,#adfooter,#adfooter_728x90,#adframe:not(frameset),#adhead,#adhead_g,#adheader,#adhome,#adiframe1_iframe,#adiframe2_iframe,#adiframe3_iframe,#adimg,#adition_content_ad,#adlabel,#adlabelFooter,#adlayerad,#adleaderboard,#adleft,#adlinks,#adlinkws,#adlrec,#admid,#admiddle3center,#admiddle3left,#adposition,#adposition-C,#adposition-FPMM,#adposition1,#adposition2,#adposition4,#adrectangle,#adrectanglea,#adrectangleb,#adrig,#adright,#adright2,#adrighthome,#ads-468,#ads-area,#ads-block,#ads-bot,#ads-bottom,#ads-col,#ads-dell,#ads-horizontal,#ads-indextext,#ads-leaderboard1,#ads-lrec,#ads-menu,#ads-middle,#ads-prices,#ads-rhs,#ads-right,#ads-sponsored-boxes,#ads-top,#ads-vers7,#ads-wrapper,#ads160left,#ads2,#ads300,#ads300-250,#ads300Bottom,#ads300Top,#ads336x280,#ads7,#ads728bottom,#ads728top,#ads790,#adsDisplay,#adsID,#ads_160,#ads_300,#ads_728,#ads_banner,#ads_belowforumlist,#ads_belownav,#ads_bottom_inner,#ads_bottom_outer,#ads_box,#ads_button,#ads_catDiv,#ads_footer,#ads_html1,#ads_html2,#ads_medrect,#ads_notice,#ads_right,#ads_right_sidebar,#ads_sidebar_roadblock,#ads_space,#ads_top,#ads_watch_top_square,#ads_zone27,#adsbottom,#adsbox,#adscolumn,#adsd_contentad_r1,#adsd_contentad_r2,#adsd_contentad_r3,#adsd_topbanner,#adsd_txt_sky,#adsdiv,#adsense-2,#adsense-header,#adsense-tag,#adsense-text,#adsenseOne,#adsenseWrap,#adsense_article_left,#adsense_box,#adsense_leaderboard,#adsense_overlay,#adsense_placeholder_2,#adsenseheader,#adsensetopplay,#adsensewidget-3,#adserv,#adsimage,#adsky,#adskyscraper,#adslot,#adsonar,#adspace-300x250,#adspace300x250,#adspaceBox,#adspaceBox300,#adspace_header,#adspot,#adspot-1,#adspot-149x170,#adspot-1x4,#adspot-2,#adspot-295x60,#adspot-2a,#adspot-2b,#adspot-300x250-pos-1,#adspot-300x250-pos-2,#adspot-468x60-pos-2,#adspot-a,#adspot300x250,#adspot_220x90,#adspot_300x250,#adspot_468x60,#adspot_728x90,#adsright,#adst,#adstop,#adt,#adtab,#adtag_right_side,#adtaily-widget-light,#adtech_googleslot_03c,#adtech_takeover,#adtop,#adtophp,#adtxt,#adv-masthead,#adv_google_300,#adv_google_728,#adv_top_banner_wrapper,#adver1,#adver2,#adver3,#adver4,#adver5,#adver6,#adver7,#advert-1,#advert-120,#advert-boomer,#advert-display,#advert-header,#advert-leaderboard,#advert-links-bottom,#advert-skyscraper,#advert-top,#advert1,#advertBanner,#advertContainer,#advertDB,#advertRight,#advert_125x125,#advert_250x250,#advert_box,#advert_home01,#advert_leaderboard,#advert_lrec_format,#advert_mid,#advert_mpu,#advert_right_skyscraper,#advertbox,#advertbox2,#advertbox3,#advertbox4,#adverthome,#advertise-here-sidebar,#advertise-now,#advertise1,#advertiseHere,#advertisement160x600,#advertisement728x90,#advertisementLigatus,#advertisementPrio2,#advertisementsarticle,#advertiser-container,#advertiserLinks,#advertisers,#advertising-banner,#advertising-caption,#advertising-container,#advertising-control,#advertising-skyscraper,#advertising2,#advertisingModule160x600,#advertisingModule728x90,#advertisment,#advertismentElementInUniversalbox,#advertorial,#adverts-top-container,#adverts-top-left,#adverts-top-middle,#adverts-top-right,#advertsingle,#advt,#adwhitepaperwidget,#adwin_rec,#adwith,#adwords-4-container,#adxBigAd,#adxMiddle5,#adxSponLink,#adxSponLinkA,#adxtop,#adz,#adzbanner,#adzerk,#adzerk1,#adzoneBANNER,#affinityBannerAd,#agi-ad300x250,#agi-ad300x250overlay,#agi-sponsored,#alert_ads,#anchorAd,#annoying_ad,#ap_adframe,#apiBackgroundAd,#apiTopAdWrap,#apmNADiv,#araHealthSponsorAd,#article-ad-container,#article-box-ad,#articleAdReplacement,#articleLeftAdColumn,#articleSideAd,#article_ad,#article_ad_container,#article_box_ad,#asinglead,#atlasAdDivGame,#awds-nt1-ad,#banner-300x250,#banner-ad,#banner-ad-container,#banner-ads,#banner250x250,#banner468x60,#banner728x90,#bannerAd,#bannerAdTop,#bannerAd_ctr,#banner_ad,#banner_ad_footer,#banner_ad_module,#banner_admicro,#banner_ads,#banner_content_ad,#banner_topad,#bannerad2,#baseAdvertising,#bbccom_mpu,#bbccom_storyprintsponsorship,#bbo_ad1,#bg-footer-ads,#bg-footer-ads2,#bg_YieldManager-300x250,#bigAd,#bigBoxAd,#bigad300outer,#bigadbox,#bigadframe,#bigadspot,#billboard_ad,#block-ad_cube-1,#block-openads-1,#block-openads-3,#block-openads-4,#block-openads-5,#block-thewrap_ads_250x300-0,#blog-ad,#blog_ad_content,#blog_ad_opa,#blox-big-ad,#blox-big-ad-bottom,#blox-big-ad-top,#blox-halfpage-ad,#blox-tile-ad,#blox-tower-ad,#body_728_ad,#book-ad,#botad,#bott_ad2,#bott_ad2_300,#bottom-ad,#bottom-ad-container,#bottom-ads,#bottomAd,#bottomAdCCBucket,#bottomAdContainer,#bottomAdSense,#bottomAdSenseDiv,#bottomAds,#bottomRightAd,#bottomRightAdSpace,#bottom_ad,#bottom_ad_area,#bottom_ads,#bottom_banner_ad,#bottom_overture,#bottom_sponsor_ads,#bottom_sponsored_links,#bottom_text_ad,#bottomad,#bottomads,#bottomadsense,#bottomadwrapper,#bottomleaderboardad,#box-content-ad,#box-googleadsense-1,#box-googleadsense-r,#box1ad,#boxAd300,#boxAdContainer,#box_ad,#box_advertisment,#box_mod_googleadsense,#boxad1,#boxad2,#boxad3,#boxad4,#boxad5,#bpAd,#bps-header-ad-container,#btr_horiz_ad,#burn_header_ad,#button-ads-horizontal,#button-ads-vertical,#buttonAdWrapper1,#buttonAdWrapper2,#buttonAds,#buttonAdsContainer,#button_ad_container,#button_ad_wrap,#buttonad,#buy-sell-ads,#c4ad-Middle1,#c_ad_sb,#c_ad_sky,#caAdLarger,#catad,#category-ad,#cellAd,#channel_ad,#channel_ads,#ciHomeRHSAdslot,#circ_ad,#cnnRR336ad,#cnnTopAd,#cnnVPAd,#col3_advertising,#colAd,#colRightAd,#collapseobj_adsection,#column4-google-ads,#comments-ad-container,#commercial_ads,#common_right_ad_wrapper,#common_right_lower_ad_wrapper,#common_right_lower_adspace,#common_right_lower_player_ad_wrapper,#common_right_lower_player_adspace,#common_right_player_ad_wrapper,#common_right_player_adspace,#common_right_right_adspace,#common_top_adspace,#companion-ad,#companionAdDiv,#containerLocalAds,#containerLocalAdsInner,#containerMrecAd,#containerSqAd,#content-ad-header,#content-header-ad,#contentBoxad,#contentTopAds2,#content_ad_square,#content_ad_top,#content_ads_content,#content_box_300body_sponsoredoffers,#content_box_adright300_google,#content_mpu,#contentad { visibility:hidden !important; display:none !important; } #contentad_imtext,#contentad_right,#contentads,#contentinlineAd,#contextad,#contextual-ads,#contextual-ads-block,#contextualad,#coverads,#ctl00_Adspace_Top_Height,#ctl00_BottomAd,#ctl00_ContentMain_BanManAd468_BanManAd,#ctl00_ContentRightColumn_RightColumn_Ad1_BanManAd,#ctl00_ContentRightColumn_RightColumn_Ad2_BanManAd,#ctl00_ContentRightColumn_RightColumn_PremiumAd1_ucBanMan_BanManAd,#ctl00_LHTowerAd,#ctl00_LeftHandAd,#ctl00_MasterHolder_IBanner_adHolder,#ctl00_TopAd,#ctl00_TowerAd,#ctl00_VBanner_adHolder,#ctl00__Content__RepeaterReplies_ctl03__AdReply,#ctl00_abot_bb,#ctl00_adFooter,#ctl00_advert_LargeMPU_div_AdPlaceHolder,#ctl00_atop_bt,#ctl00_cphMain_hlAd1,#ctl00_cphMain_hlAd2,#ctl00_cphMain_hlAd3,#ctl00_ctl00_MainPlaceHolder_itvAdSkyscraper,#ctl00_ctl00_ctl00_Main_Main_PlaceHolderGoogleTopBanner_MPTopBannerAd,#ctl00_ctl00_ctl00_Main_Main_SideBar_MPSideAd,#ctl00_dlTilesAds,#ctl00_m_skinTracker_m_adLBL,#ctl00_phCrackerMain_ucAffiliateAdvertDisplayMiddle_pnlAffiliateAdvert,#ctl00_phCrackerMain_ucAffiliateAdvertDisplayRight_pnlAffiliateAdvert,#ctrlsponsored,#cubeAd,#cube_ads,#cube_ads_inner,#cubead,#cubead-2,#dItemBox_ads,#dart_160x600,#dc-display-right-ad-1,#dcol-sponsored,#defer-adright,#detail_page_vid_topads,#div-gpt-ad-1,#div-gpt-ad-2,#div-gpt-ad-3,#div-gpt-ad-4,#divAdBox,#divAdWrapper,#divDoubleAd,#divLeftAd12,#divLeftRecAd,#divMenuAds,#divWNAdHeader,#divWrapper_Ad,#div_ad_leaderboard,#div_video_ads,#dlads,#dni-header-ad,#dnn_ad_banner,#download_ads,#ds-mpu,#editorsmpu,#embedded-ad,#evotopTen_advert,#ex-ligatus,#exads,#featured-advertisements,#featuredAdContainer2,#featuredAds,#feed_links_ad_container,#first-300-ad,#first-adlayer,#first_ad_unit,#firstad,#fl_hdrAd,#flash_ads_1,#flexiad,#footad,#footer-ad,#footer-advert,#footer-adverts,#footer-sponsored,#footerAd,#footerAdDiv,#footerAds,#footerAdvertisement,#footerAdverts,#footer_ad_01,#footer_ad_block,#footer_ad_container,#footer_ad_modules,#footer_adspace,#footer_text_ad,#footerad,#footerads,#footeradsbox,#forum_top_ad,#fpv_companionad,#fr_ad_center,#frame_admain,#frnAdSky,#frnBannerAd,#frnContentAd,#from_our_sponsors,#front_advert,#front_mpu,#ft-ad,#ft-ad-1,#ft-ad-container,#ft_mpu,#fusionad,#fw-advertisement,#g_ad,#g_adsense,#ga_300x250,#gad,#gad2,#gad3,#gad5,#galleries-tower-ad,#gallery-ad-m0,#gallery_ads,#game-info-ad,#gasense,#gglads,#global_header_ad_area,#gmi-ResourcePageAd,#gmi-ResourcePageLowerAd,#goads,#gooadtop,#google-ad,#google-ad-art,#google-ad-table-right,#google-ad-tower,#google-ads,#google-ads-bottom,#google-ads-header,#google-ads-left-side,#google-adsense-mpusize,#googleAd,#googleAds,#googleAdsSml,#googleAdsense,#googleAdsenseBanner,#googleAdsenseBannerBlog,#googleAdwordsModule,#googleAfcContainer,#googleSearchAds,#googleShoppingAdsRight,#googleShoppingAdsTop,#googleSubAds,#google_ad,#google_ad_container,#google_ad_inline,#google_ad_test,#google_ads,#google_ads_aCol,#google_ads_frame1,#google_ads_frame1_anchor,#google_ads_frame2,#google_ads_frame2_anchor,#google_ads_frame3,#google_ads_frame3_anchor,#google_ads_test,#google_ads_top,#google_adsense_home_468x60_1,#googlead2,#googleadbox,#googleads,#googleadsense,#googlesponsor,#gpt-ad-halfpage,#gpt-ad-rectangle1,#gpt-ad-rectangle2,#gpt-ad-skyscraper,#gpt-ad-story_rectangle3,#grid_ad,#gsyadrectangleload,#gsyadrightload,#gsyadtop,#gsyadtopload,#gtopadvts,#half-page-ad,#halfPageAd,#halfe-page-ad-box,#hd-ads,#hd-banner-ad,#hdtv_ad_ss,#headAd,#head_advert,#headad,#header-ad,#header-ad-rectangle-container,#header-ads,#header-adspace,#header-advert,#header-advertisement,#header-advertising,#header-adverts,#headerAd,#headerAdBackground,#headerAdContainer,#headerAdWrap,#headerAds,#headerAdsWrapper,#headerTopAd,#header_ad_728_90,#header_ad_container,#header_adcode,#header_ads,#header_advertisement_top,#header_leaderboard_ad_container,#header_publicidad,#headerad,#headeradbox,#headerads,#headeradsbox,#headeradwrap,#headline_ad,#headlinesAdBlock,#hiddenadAC,#hideads,#hl-sponsored-results,#hly_ad_side_bar_tower_left,#home-rectangle-ad,#homeTopRightAd,#home_ad,#home_bottom_ad,#home_contentad,#home_feature_ad,#home_mpu,#home_spensoredlinks,#homepage-ad,#homepageAdsTop,#homepageFooterAd,#homepage_right_ad,#homepage_right_ad_container,#homepage_top_ads,#hometop_234x60ad,#hor_ad,#horizontal-banner-ad,#horizontal_ad,#horizontal_ad_top,#horizontalads,#houseAd,#hp-header-ad,#hp-right-ad,#hp-store-ad,#hpV2_300x250Ad,#hpV2_googAds,#icePage_SearchLinks_AdRightDiv,#icePage_SearchLinks_DownloadToolbarAdRightDiv,#icePage_SearchResults_ads0_SponsoredLink,#icePage_SearchResults_ads1_SponsoredLink,#icePage_SearchResults_ads2_SponsoredLink,#icePage_SearchResults_ads3_SponsoredLink,#icePage_SearchResults_ads4_SponsoredLink,#imu_ad_module,#in_serp_ad,#inadspace,#indexad,#inline-story-ad,#inlinead,#inlinegoogleads,#inlist-ad-block,#inner-advert-row,#innerpage-ad,#inside-page-ad,#insider_ad_wrapper,#instoryad,#instoryadtext,#instoryadwrap,#int-ad,#interstitial_ad_wrapper,#islandAd,#j_ad,#ji_medShowAdBox,#jmp-ad-buttons,#joead,#joead2,#ka_adRightSkyscraperWide,#kdz_ad1,#kdz_ad2,#landing-adserver,#largead,#lateAd,#layerAds_layerDiv,#layerTLDADSERV,#lb-sponsor-left,#lb-sponsor-right,#leader-board-ad,#leader-sponsor,#leaderAd,#leaderAdContainer,#leader_board_ad,#leaderad,#leaderad_section,#leaderboard-ad,#leaderboard-bottom-ad,#leaderboard_ad,#left-ad-skin,#left-lower-adverts,#left-lower-adverts-container,#leftAdContainer,#leftAd_rdr,#leftAdvert,#leftSectionAd300-100,#left_ad,#left_adspace,#leftad,#leftads,#leftcolAd,#lg-banner-ad,#ligatus,#linkAds,#linkads,#live-ad,#logoAd,#longAdSpace,#lowerAdvertisementImg,#lowerads,#lowerthirdad,#lowertop-adverts,#lowertop-adverts-container,#lpAdPanel,#lrecad,#lsadvert-left_menu_1,#lsadvert-left_menu_2,#lsadvert-top,#mBannerAd,#main-ad,#main-ad160x600,#main-ad160x600-img,#main-ad728x90,#main-bottom-ad,#mainAdUnit,#mainAdvert,#main_ad,#main_rec_ad,#main_top_ad_container,#marketing-promo,#mastAd,#mastAdvert,#mastad,#mastercardAd,#masthead_ad,#masthead_topad,#medRecAd,#media_ad,#mediaplayer_adburner,#mediumAdvertisement,#medrectad,#menuAds,#mi_story_assets_ad,#mid-ad300x250,#mid-table-ad,#midRightTextAds,#mid_ad_div,#mid_ad_title,#mid_mpu,#midadd,#midadspace,#middle-ad,#middlead,#middleads,#midrect_ad,#midstrip_ad,#mini-ad,#mochila-column-right-ad-300x250,#mochila-column-right-ad-300x250-1,#module-google_ads,#module_ad,#module_box_ad,#module_sky_scraper,#monsterAd,#moogleAd,#most_popular_ad,#motionAd,#mpu,#mpu-advert,#mpu300250,#mpuAd,#mpuDiv,#mpuSlot,#mpuWrapper,#mpuWrapperAd,#mpu_banner,#mpu_holder,#mpu_text_ad,#mpuad,#mr_banner_topad,#mrecAdContainer,#msAds,#ms_ad,#msad,#multiLinkAdContainer,#multi_ad,#myads_HeaderButton,#n_sponsor_ads,#namecom_ad_hosting_main,#narrow_ad_unit,#natadad300x250,#national_microlink_ads,#nationalad,#navi_banner_ad_780,#nba160PromoAd,#nba300Ad,#nbaHouseAnd600Ad,#nbaLeft600Ad,#nbaMidAds,#nbaVid300Ad,#new_topad,#newads,#ng_rtcol_ad,#noresults_ad_container,#noresultsads,#northad,#ns_ad3,#oanda_ads,#onespot-ads,#online_ad,#p-googleadsense,#page-header-ad,#page-top-ad,#pageAds,#pageAdsDiv,#page_content_top_ad,#pagelet_adbox,#pagelet_netego_ads,#pagelet_search_ads2,#panelAd,#pb_report_ad,#pcworldAdBottom,#pcworldAdTop,#pinball_ad,#player-below-advert,#player_ad,#player_ads,#pod-ad-video-page,#populate_ad_bottom,#populate_ad_left,#portlet-advertisement-left,#portlet-advertisement-right,#post-promo-ad,#post5_adbox,#post_ad,#premium_ad,#priceGrabberAd,#prime-ad-space,#print_ads,#product-adsense,#promoAds,#ps-vertical-ads,#pub468x60,#publicidad,#pushdown_ad,#qm-ad-big-box,#qm-ad-sky,#qm-dvdad,#r1SoftAd,#rail_ad1,#rail_ad2,#realEstateAds,#rectAd,#rect_ad,#rectangle-ad,#rectangle_ad,#refine-300-ad,#region-node-advert,#region-top-ad,#rh-ad-container,#rh_tower_ad,#rhapsodyAd,#rhs_ads,#rhsadvert,#right-ad,#right-ad-skin,#right-ad-title,#right-ads-3,#right-box-ad,#right-featured-ad,#right-mpu-1-ad-container,#right-uppder-adverts,#right-uppder-adverts-container,#rightAd,#rightAd300x250,#rightAdBar,#rightAdColumn,#rightAd_rdr,#rightAdsDiv,#rightColAd,#rightColumnMpuAd,#rightColumnSkyAd,#rightTopSponsor,#right_ad_wrapper,#right_ads,#right_advertisement,#right_advertising,#right_column_ad_container,#right_column_ads,#right_column_internal_ad_container,#right_column_top_ad_unit,#rightad,#rightadContainer,#rightadvertbar-doubleclickads,#rightbar-ad,#rightcolumn_300x250ad,#rightside-ads,#rightside_ad,#righttop-adverts,#righttop-adverts-container,#rm_ad_text,#ros_ad,#rotatingads,#row2AdContainer,#rr_MSads,#rt-ad,#rt-ad-top,#rt-ad468,#rtMod_ad,#rtmod_ad,#sAdsBox,#sb-ad-sq,#sb_advert,#sb_sponsors,#search-google-ads,#search-sponsored-links,#search-sponsored-links-top,#searchAdSenseBox,#searchAdSenseBoxAd,#searchAdSkyscraperBox,#search_ads,#search_result_ad,#second-adlayer,#secondBoxAdContainer,#secondrowads,#section-ad-1-728,#section-ad-300-250,#section-ad-4-160,#section-blog-ad,#section-container-ddc_ads,#section-sponsors,#section_advertorial_feature,#servfail-ads,#sew-ad1,#shoppingads,#show-ad,#showAd,#showad,#side-ad,#side-ad-container,#sideAd,#sideAdSub,#sideBarAd,#side_ad,#side_ad_wrapper,#side_ads_by_google,#side_sky_ad,#sidead,#sideads,#sidebar-125x125-ads,#sidebar-125x125-ads-below-index,#sidebar-ad,#sidebar-ad-boxes,#sidebar-ad-space,#sidebar-ad-wrap,#sidebar-ad3,#sidebar2ads,#sidebar_ad,#sidebar_ad_widget,#sidebar_ads_180,#sidebar_sponsoredresult_body,#sidebarad,#sidebaradver_advertistxt,#sideline-ad,#single-mpu,#singlead,#site-leaderboard-ads,#site_top_ad,#sitead,#sky-ad,#skyAd,#skyAdContainer,#skyScrapperAd,#skyWrapperAds,#sky_ad,#sky_advert,#skyads,#skyadwrap,#skyline_ad,#skyscraper-ad,#skyscraperAd,#skyscraperAdContainer,#skyscraper_ad,#skyscraper_advert,#skyscraperad,#slide_ad,#sliderAdHolder,#slideshow_ad_300x250,#sm-banner-ad,#small_ad,#smallerAd,#some-ads,#some-more-ads,#specialadvertisingreport_container,#specials_ads,#speeds_ads,#speeds_ads_fstitem,#speedtest_mrec_ad,#sphereAd,#sponLinkDiv_1,#sponlink,#sponlinks,#sponsAds,#sponsLinks,#spons_left,#sponseredlinks,#sponsor-search,#sponsorAd1,#sponsorAd2,#sponsorAdDiv,#sponsorLinks,#sponsorTextLink,#sponsor_banderole,#sponsor_box,#sponsor_deals,#sponsor_panSponsor,#sponsor_recommendations,#sponsorbar,#sponsorbox,#sponsored-ads,#sponsored-features,#sponsored-links,#sponsored-resources,#sponsored1,#sponsoredBox1,#sponsoredBox2,#sponsoredLinks,#sponsoredList,#sponsoredResults,#sponsoredResultsWide,#sponsoredSiteMainline,#sponsoredSiteSidebar,#sponsored_ads_v4,#sponsored_content,#sponsored_game_row_listing,#sponsored_links,#sponsored_v12,#sponsoredads,#sponsoredlinks,#sponsoredlinks_cntr,#sponsoredlinkslabel,#sponsoredresults_top,#sponsoredwellcontainerbottom,#sponsoredwellcontainertop,#sponsoring_bar,#sponsorlink,#sponsors,#sponsors_top_container,#sponsorshipBadge,#spotlightAds,#spotlightad,#sqAd,#square-sponsors,#squareAd,#squareAdSpace,#squareAds,#square_ad,#start_middle_container_advertisment,#sticky-ad,#stickyBottomAd,#story-90-728-area,#story-ad-a,#story-ad-b,#story-leaderboard-ad,#story-sponsoredlinks,#storyAd,#storyAdWrap,#storyad2,#subpage-ad-right,#subpage-ad-top,#swads,#synch-ad,#systemad_background,#tabAdvertising,#takeoverad,#tblAd,#tbl_googlead,#tcwAd,#td-GblHdrAds,#template_ad_leaderboard,#tertiary_advertising,#text-ad,#text-ads,#text-link-ads,#textAd,#textAds,#text_ad,#text_ads,#text_advert,#textad,#textad3,#the-last-ad-standing,#thefooterad,#themis-ads,#tile-ad,#tmglBannerAd,#toolbarSlideUpAd,#top-ad,#top-ad-container,#top-ad-menu,#top-ads,#top-ads-tabs,#top-advertisement,#top-banner-ad,#top-search-ad-wrapper,#topAd728x90,#topAdBanner,#topAdBox,#topAdContainer,#topAdSenseDiv,#topAdcontainer,#topAds,#topAdsContainer,#topAdvert,#topBannerAdContainer,#topNavLeaderboardAdHolder,#topRightBlockAdSense,#top_ad_area,#top_ad_banner,#top_ad_game,#top_ad_wrapper,#top_ad_zone,#top_ads,#top_advertise,#top_advertising,#top_rectangle_ad,#top_right_ad,#top_wide_ad,#topad_left,#topad_right,#topadbar,#topadblock,#topaddwide,#topadsense,#topadspace,#topadzone,#topbanner_ad,#topbar-ad,#topcustomad,#topleaderboardad,#toprightAdvert,#toprightad,#topsponsored,#toptextad,#tour300Ad,#tourSponsoredLinksContainer,#towerad,#ts-ad_module,#ttp_ad_slot1,#ttp_ad_slot2,#twogamesAd,#txt_link_ads,#undergameAd,#upperAdvertisementImg,#upperMpu,#upperad,#urban_contentad_1,#urban_contentad_2,#urban_contentad_article,#v_ad,#vert_ad,#vert_ad_placeholder,#vertical_ad,#vertical_ads,#videoAd,#video_cnv_ad,#video_overlay_ad,#videoadlogo,#viewportAds,#viewvid_ad300x250,#walltopad,#weblink_ads_container,#welcomeAdsContainer,#welcome_ad_mrec,#welcome_advertisement,#wf_ContentAd,#wf_FrontSingleAd,#wf_SingleAd,#wf_bottomContentAd,#wgtAd,#whatsnews_top_ad,#whitepaper-ad,#whoisRightAdContainer,#wide_ad_unit_top,#widget_advertisement,#wrapAdRight,#wrapAdTop,#wrapperAdsTopLeft,#wrapperAdsTopRight,#y-ad-units,#y708-ad-expedia,#y708-ad-lrec,#y708-ad-partners,#y708-ad-ysm,#y708-advertorial-marketplace,#yahoo-ads,#yahoo-sponsors,#yahooSponsored,#yahoo_ads,#yahoo_ads_2010,#yahoo_text_ad,#yahooad-tbl,#yan-sponsored,#yatadsky,#ybf-ads,#yfi_fp_ad_mort,#yfi_fp_ad_nns,#yfi_pf_ad_mort,#ygrp-sponsored-links,#ymap_adbanner,#yn-gmy-ad-lrec,#yreSponsoredLinks,#ysm_ad_iframe,#zoneAdserverMrec,#zoneAdserverSuper,.ADBAR,.ADPod,.AD_ALBUM_ITEMLIST,.AD_MOVIE_ITEM,.AD_MOVIE_ITEMLIST,.AD_MOVIE_ITEMROW,.Ad-MPU,.Ad1,.Ad120x600,.Ad160x600,.Ad160x600left,.Ad160x600right,.Ad2,.Ad247x90,.Ad300x,.Ad300x250,.Ad300x250L,.Ad728x90,.AdBorder,.AdBox7,.AdContainerBox308,.AdHeader,.AdHere,.AdMedium,.AdPlaceHolder,.AdRingtone,.AdSenseLeft,.AdSlot,.AdSpace,.AdTextSmallFont,.AdUnit,.AdUnit300,.Ad_C,.Ad_D_Wrapper,.Ad_E_Wrapper,.Ad_Right,.AdsBoxBottom,.AdsBoxSection,.AdsBoxTop,.AdsLinks1,.AdsLinks2,.AdsRec,.AdvertMidPage,.AdvertiseWithUs,.AdvertisementTextTag,.ArticleAd,.ArticleInlineAd,.BannerAd,.BigBoxAd,.BlockAd,.BottomAdContainer,.BottomAffiliate,.BoxAd,.CG_adkit_leaderboard,.CG_details_ad_dropzone,.CWReviewsProdInfoAd,.ComAread,.CommentAd,.ContentAd,.ContentAds,.DAWRadvertisement,.DeptAd,.DisplayAd,.FT_Ad,.FlatAds,.GOOGLE_AD,.GoogleAd,.GoogleAdSenseBottomModule,.GoogleAdSenseRightModule,.HPG_Ad_B,.HPNewAdsBannerDiv,.HPRoundedAd,.HomeContentAd,.IABAdSpace,.IndexRightAd,.LazyLoadAd,.LeftAd,.LeftButtonAdSlot,.LeftTowerAd,.M2Advertisement,.MD_adZone,.MOS-ad-hack,.MPU,.MPUHolder,.MPUTitleWrapperClass,.MREC_ads,.MiddleAd,.MiddleAdContainer,.NewsAds,.OAS,.OpaqueAdBanner,.OpenXad,.PU_DoubleClickAdsContent,.Post5ad,.Post9ad,.RBboxAd,.RectangleAd,.RelatedAds,.Right300x250AD,.RightAd1,.RightAdvertiseArea,.RightGoogleAFC,.RightRailTop300x250Ad,.RightSponsoredAdTitle,.RightTowerAd,.STR_AdBlock,.SideAdCol,.SidebarAd,.SidebarAdvert,.SitesGoogleAdsModule,.SkyAdContainer,.SponsorCFrame,.SponsoredAdTitle,.SponsoredContent,.SponsoredLinkItemTD,.SponsoredLinks,.SponsoredLinksGrayBox,.SponsoredLinksModule,.SponsoredLinksPadding,.SponsorshipText,.SquareAd,.StandardAdLeft,.StandardAdRight,.TRU-onsite-ads-leaderboard,.TextAd,.TheEagleGoogleAdSense300x250,.TopAd,.TopAdContainer,.TopAdL,.TopAdR,.TopBannerAd,.UIWashFrame_SidebarAds,.UnderAd,.VerticalAd,.Video-Ad,.VideoAd,.WidgetAdvertiser,.a160x600,.a728x90,.ad-120x600,.ad-160,.ad-160x600,.ad-250,.ad-300,.ad-300-block,.ad-300-blog,.ad-300x100,.ad-300x250,.ad-300x250-right0,.ad-350,.ad-355x75,.ad-600,.ad-635x40,.ad-728,.ad-728x90,.ad-728x90-1,.ad-728x90_forum,.ad-90x600,.ad-above-header,.ad-adlink-bottom,.ad-adlink-side,.ad-area,.ad-background,.ad-banner,.ad-bigsize,.ad-block,.ad-blog2biz,.ad-body { visibility:hidden !important; display:none !important; } .ad-bottom,.ad-break,.ad-btn,.ad-btn-heading,.ad-cell,.ad-container-300x250,.ad-container-728x90,.ad-context,.ad-disclaimer,.ad-div,.ad-enabled,.ad-feedback,.ad-filler,.ad-flex,.ad-footer,.ad-footer-leaderboard,.ad-google,.ad-graphic-large,.ad-gray,.ad-hdr,.ad-head,.ad-header,.ad-heading,.ad-homeleaderboard,.ad-img,.ad-in-post,.ad-index-main,.ad-island,.ad-label,.ad-leaderboard,.ad-links,.ad-lrec,.ad-medium,.ad-medium-two,.ad-mpu,.ad-msn,.ad-note,.ad-notice,.ad-other,.ad-permalink,.ad-placeholder,.ad-postText,.ad-poster,.ad-priority,.ad-rect,.ad-rectangle,.ad-rectangle-text,.ad-related,.ad-rh,.ad-ri,.ad-right,.ad-right-header,.ad-right-txt,.ad-row,.ad-section,.ad-show-label,.ad-side,.ad-sidebar-outer,.ad-sidebar300,.ad-sky,.ad-slot,.ad-slot-234-60,.ad-slot-300-250,.ad-slot-728-90,.ad-space,.ad-space-mpu-box,.ad-spot,.ad-square300,.ad-squares,.ad-statement,.ad-story-inject,.ad-tabs,.ad-text-links,.ad-tile,.ad-title,.ad-top,.ad-top-left,.ad-unit,.ad-unit-300,.ad-unit-300-wrapper,.ad-unit-anchor,.ad-vert,.ad-vtu,.ad-wrap,.ad-wrapper,.ad-zone-s-q-l,.ad.super,.ad0,.ad10,.ad120,.ad120x240backgroundGray,.ad120x600,.ad125,.ad140,.ad160,.ad160x600,.ad160x600GrayBorder,.ad18,.ad19,.ad21,.ad230,.ad250,.ad250c,.ad3,.ad300,.ad300250,.ad300_250,.ad300x100,.ad300x250,.ad300x250-hp-features,.ad300x250Top,.ad300x250_container,.ad300x250box,.ad300x50-right,.ad300x600,.ad310,.ad336x280,.ad343x290,.ad4,.ad400right,.ad450,.ad468_60,.ad468x60,.ad6,.ad620x70,.ad626X35,.ad7,.ad728,.ad728_90,.ad728x90,.ad728x90_container,.ad8,.ad90x780,.adAgate,.adArea674x60,.adBanner,.adBanner300x250,.adBanner728x90,.adBannerTyp1,.adBannerTypSortableList,.adBannerTypW300,.adBar,.adBgBottom,.adBgMId,.adBgTop,.adBlock,.adBottomboxright,.adBoxBody,.adBoxBorder,.adBoxContainer,.adBoxContent,.adBoxInBignews,.adBoxSidebar,.adBoxSingle,.adBwrap,.adCMRight,.adCell,.adColumn,.adCont,.adContTop,.adContour,.adCreative,.adCube,.adFender3,.adFrame,.adFtr,.adFullWidthMiddle,.adGoogle,.adHeader,.adHeadline,.adHome300x250,.adHorisontal,.adInNews,.adLabel,.adLeader,.adLeaderForum,.adLeaderboard,.adLeft,.adLoaded,.adLocal,.adMarker,.adMastheadLeft,.adMastheadRight,.adMegaBoard,.adMkt2Colw,.adModuleAd,.adMpu,.adNewsChannel,.adNoOutline,.adNotice,.adNoticeOut,.adObj,.adPageBorderL,.adPageBorderR,.adPanel,.adRect,.adRight,.adSelfServiceAdvertiseLink,.adServer,.adSkyscraperHolder,.adSlot,.adSpBelow,.adSpacer,.adSplash,.adSponsor,.adSpot,.adSpot-searchAd,.adSpot-textBox,.adSpot-twin,.adSpotIsland,.adSquare,.adSubColPod,.adSuperboard,.adSupertower,.adTD,.adTab,.adTag,.adTileWrap,.adTiler,.adTopboxright,.adTout,.adTxt,.adUnit,.adUnitHorz,.adUnitVert,.adUnitVert_noImage,.adWebBoard,.adWidget,.adWithTab,.adWrap,.adWrapper,.ad_0,.ad_1,.ad_120x90,.ad_125,.ad_130x90,.ad_160,.ad_160x600,.ad_2,.ad_200,.ad_200x200,.ad_250x250,.ad_250x250_w,.ad_3,.ad_300,.ad_300_250,.ad_300x250,.ad_300x250_box_right,.ad_336,.ad_336x280,.ad_350x100,.ad_350x250,.ad_400x200,.ad_468,.ad_468x60,.ad_600,.ad_728,.ad_728x90,.ad_Left,.ad_amazon,.ad_banner,.ad_banner_border,.ad_bar,.ad_bg,.ad_bigbox,.ad_biz,.ad_block,.ad_block_338,.ad_body,.ad_border,.ad_botbanner,.ad_bottom_leaderboard,.ad_bottom_left,.ad_box,.ad_box2,.ad_box_ad,.ad_box_div,.ad_callout,.ad_caption,.ad_column,.ad_column_box,.ad_column_hl,.ad_contain,.ad_container,.ad_content,.ad_content_wide,.ad_contents,.ad_descriptor,.ad_disclaimer,.ad_eyebrow,.ad_footer,.ad_frame,.ad_framed,.ad_front_promo,.ad_head,.ad_headline,.ad_hpm,.ad_info_block,.ad_inline,.ad_island,.ad_label,.ad_launchpad,.ad_leader,.ad_leaderboard,.ad_left,.ad_line,.ad_link,.ad_linkunit,.ad_loc,.ad_lrec,.ad_main,.ad_medrec,.ad_medrect,.ad_middle,.ad_mpu,.ad_mr,.ad_mrec,.ad_mrec_title_article,.ad_mrect,.ad_news,.ad_notice,.ad_one,.ad_p360,.ad_partner,.ad_partners,.ad_plus,.ad_post,.ad_power,.ad_rectangle,.ad_right_col,.ad_row,.ad_sidebar,.ad_skyscraper,.ad_slug,.ad_slug_table,.ad_space_300_250,.ad_sponsor,.ad_sponsoredsection,.ad_spot_b,.ad_spot_c,.ad_square_r,.ad_square_top,.ad_text_w,.ad_title,.ad_top,.ad_top_leaderboard,.ad_top_left,.ad_topright,.ad_tower,.ad_unit,.ad_unit_rail,.ad_url,.ad_warning,.ad_wid300,.ad_wide,.ad_wrap,.ad_wrapper,.ad_wrapper_fixed,.ad_wrapper_top,.ad_zone,.adarea,.adarea-long,.adbanner,.adbannerbox,.adbannerright,.adbar,.adboard,.adborder,.adbot,.adbottom,.adbottomright,.adbox-outer,.adbox-wrapper,.adbox_300x600,.adbox_366x280,.adbox_468X60,.adbox_bottom,.adboxclass,.adbreak,.adbug,.adbuttons,.adcode,.adcolumn,.adcolumn_wrapper,.adcopy,.add_300x250,.adfieldbg,.adfoot,.adfootbox,.adhead,.adhead_h,.adhead_h_wide,.adheader,.adheader100,.adhere,.adhered,.adhi,.adhint,.adhoriz,.adi,.adiframe,.adinside,.adintro,.adjlink,.adkicker,.adkit,.adkit-advert,.adkit-lb-footer,.adlabel-horz,.adlabel-vert,.adleader,.adleaderboard,.adleft1,.adline,.adlinks,.adlnklst,.admarker,.admedrec,.admessage,.admodule,.admpu,.admpu-small,.adnation-banner,.adnotice,.adops,.adp-AdPrefix,.adpadding,.adpane,.adprice,.adproxy,.adroot,.adrotate_widget,.adrow,.adrow-post,.adrule,.ads-125,.ads-728x90-wrap,.ads-banner,.ads-below-content,.ads-categories-bsa,.ads-favicon,.ads-links-general,.ads-mpu,.ads-outer,.ads-profile,.ads-right,.ads-sidebar,.ads-sky,.ads-stripe,.ads-text,.ads-widget,.ads-widget-partner-gallery,.ads160,.ads1_250,.ads2,.ads3,.ads300,.ads460,.ads460_home,.ads468,.ads728,.ads728x90,.adsArea,.adsBelowHeadingNormal,.adsBlock,.adsBox,.adsCell,.adsCont,.adsDiv,.adsFull,.adsImages,.adsMPU,.adsRight,.adsTextHouse,.adsTop,.adsTower2,.adsTowerWrap,.adsWithUs,.ads_125_square,.ads_180,.ads_300,.ads_300x250,.ads_337x280,.ads_728x90,.ads_big,.ads_big-half,.ads_box,.ads_brace,.ads_catDiv,.ads_container,.ads_disc_anchor,.ads_disc_leader,.ads_disc_lwr_square,.ads_disc_skyscraper,.ads_disc_square,.ads_div,.ads_header,.ads_leaderboard,.ads_medrect,.ads_mpu,.ads_outer,.ads_rectangle,.ads_right,.ads_sc_bl_i,.ads_sc_tl_i,.ads_show_if,.ads_side,.ads_sidebar,.ads_singlepost,.ads_spacer,.ads_takeover,.ads_title,.ads_top,.ads_top_promo,.ads_tr,.ads_verticalSpace,.ads_vtlLink,.ads_widesky,.ads_wrapperads_top,.adsbg300,.adsblockvert,.adsborder,.adsbottom,.adsbox,.adsboxitem,.adsbyyahoo,.adsc,.adscaleAdvert,.adsclick,.adscontainer,.adscreen,.adsd_shift100,.adsection_a2,.adsection_c2,.adsense-ad,.adsense-category,.adsense-category-bottom,.adsense-heading,.adsense-post,.adsense-right,.adsense-title,.adsense3,.adsense300,.adsenseAds,.adsenseBlock,.adsenseContainer,.adsenseGreenBox,.adsense_bdc_v2,.adsense_mpu,.adsensebig,.adsenseblock,.adsenseblock_bottom,.adsenseblock_top,.adsenselr,.adsensem_widget,.adsensesq,.adsenvelope,.adset,.adsforums,.adsghori,.adsgvert,.adside,.adsidebox,.adsider,.adsingle,.adsleft,.adslink,.adslogan,.adsmalltext,.adsmessage,.adsnippet_widget,.adspace,.adspace-MR,.adspace-widget,.adspace180,.adspace_bottom,.adspace_buysell,.adspace_rotate,.adspace_skyscraper,.adspacer,.adspot,.adspot728x90,.adstextpad,.adstitle,.adstop,.adstory,.adstrip,.adtag,.adtech,.adtext_gray,.adtext_horizontal,.adtext_onwhite,.adtext_vertical,.adtile,.adtips,.adtips1,.adtop,.adtravel,.adtxt,.adtxtlinks,.adunit,.adv-mpu,.adver,.adverTag,.adver_cont_below,.advert-728x90,.advert-article-bottom,.advert-bannerad,.advert-box,.advert-head,.advert-iab-300-250,.advert-iab-468-60,.advert-mpu,.advert-skyscraper,.advert-text,.advert-txt,.advert300,.advert4,.advert5,.advert8,.advertColumn,.advertCont,.advertContainer,.advertHeadline,.advertRight,.advertText,.advertTitleSky,.advert_468x60,.advert_box,.advert_cont,.advert_djad,.advert_label,.advert_leaderboard,.advert_note,.advert_surr,.advert_top,.advertheader-red,.advertise-here,.advertise-homestrip,.advertise-horz,.advertise-leaderboard,.advertise-top,.advertise-vert,.advertiseContainer,.advertiseText,.advertise_ads,.advertise_here,.advertise_link,.advertise_link_sidebar,.advertisement-728x90,.advertisement-block,.advertisement-sidebar,.advertisement-space,.advertisement-sponsor,.advertisement-text,.advertisement-top,.advertisement468,.advertisementBox,.advertisementColumnGroup,.advertisementContainer,.advertisementHeader,.advertisementLabel,.advertisementPanel,.advertisement_btm,.advertisement_caption,.advertisement_g,.advertisement_header,.advertisement_horizontal,.advertisement_top,.advertiser-links,.advertisespace_div,.advertising-banner,.advertising-header,.advertising-local-links,.advertising2,.advertisingTable,.advertising_images,.advertisment_two,.advertize,.advertorial,.advertorial-2,.advertorial-promo-box,.advertorialtitle,.advt,.advt-banner-3,.advt-block,.advt-sec,.advt300,.advt720,.adwordListings,.adwords,.adwordsHeader,.adwrap,.adwrapper-lrec,.adwrapper948,.adzone-footer,.adzone-sidebar,.affiliate-link,.affiliate-sidebar,.affiliateAdvertText,.affinityAdHeader,.afsAdvertising,.after_ad,.agi-adsaleslinks,.alb-content-ad,.alignads,.alt_ad,.anchorAd,.another_text_ad,.answer_ad_content,.aolSponsoredLinks,.aopsadvert,.apiAdMarkerAbove,.apiAds,.archive-ads,.art_ads,.article-ads,.articleAd,.articleAds,.articleAdsL,.articleEmbeddedAdBox,.article_ad,.article_adbox,.article_mpu_box,.articleads,.aseadn,.aux-ad-widget-1,.aux-ad-widget-2,.b-astro-sponsored-links_horizontal,.b-astro-sponsored-links_vertical,.banner-ad,.banner-ads,.banner-adverts,.banner300x100,.banner300x250,.banner468,.bannerAd,.bannerAdWrapper300x250,.bannerAdWrapper730x86,.bannerRightAd,.banner_300x250,.banner_ad,.banner_ad_footer,.banner_ad_leaderboard,.bannerad,.barkerAd,.base-ad-mpu,.base_ad,.base_printer_widgets_AdBreak,.bg-ad-link,.bgnavad,.big-ads,.bigAd,.big_ad,.big_ads,.bigad,.bigad2,.bigbox_ad,.bigboxad,.billboard_ad,.blk_advert,.block-ad,.block-ad300,.block-admanager,.block-ads-bottom,.block-ads-top,.block-adsense,.block-openadstream,.block-openx,.block-thirdage-ads,.block-wtg_adtech,.blockAd,.blockAds,.block_ad_sb_text,.block_ad_sponsored_links,.block_ad_sponsored_links-wrapper,.blockad,.blocked-ads,.blocsponsor,.blog-ad-leader-inner,.blog-ads-container,.blogAd,.blogAdvertisement,.blogArtAd,.blogBigAd,.blog_ad,.blogads,.blox3featuredAd,.body_ad,.body_sponsoredresults_bottom,.body_sponsoredresults_middle,.body_sponsoredresults_top,.bookseller-header-advt,.bottomAd,.bottomAds,.bottom_ad,.bottom_adsense,.bottom_sponsor,.bottomad,.bottomadvert,.bottomrightrailAd,.bottomvidad,.box-ad,.box-ad-grey,.box-ads,.box-adsense,.boxAd,.boxAds,.box_ad,.box_ad_container,.box_ad_content,.box_ad_spacer,.box_ads,.box_advertising,.box_advertisment_62_border,.box_content_ad,.box_content_ads,.boxad,.boxyads,.bps-ad-wrapper,.bps-advertisement,.bps-advertisement-inline-ads,.br-ad,.breakad_container,.brokerad,.bsa_ads,.btm_ad,.btn-ad,.bullet-sponsored-links,.bullet-sponsored-links-gray,.burstContentAdIndex,.busrep_poll_and_ad_container,.buttonAd,.buttonAds,.buttonadbox,.bx_ad,.bx_ad_right,.cA-adStrap,.cColumn-TextAdsBox,.care2_adspace,.catalog_ads,.category-ad,.category__big_game_container_body_games_advertising,.cb-ad-container,.cb_ads,.cb_footer_sponsor,.cb_navigation_ad,.cbstv_ad_label,.cbzadvert,.cbzadvert_block,.cdAdTitle,.cdmainlineSearchAdParent,.cdsidebarSearchAdParent,.centerAd,.center_ad,.centerad,.centered-ad,.cinemabotad,.classifiedAdThree,.clearerad,.cm_ads,.cms-Advert,.cnbc_badge_banner_ad_area,.cnbc_banner_ad_area,.cnn160AdFooter,.cnnAd,.cnnMosaic160Container,.cnnSearchSponsorBox,.cnnStoreAd,.cnnStoryElementBoxAd,.cnnWCAdBox,.cnnWireAdLtgBox,.cnn_728adbin,.cnn_adcntr300x100,.cnn_adcntr728x90,.cnn_adspc336cntr,.cnn_adtitle,.column2-ad,.columnRightAdvert,.com-ad-server,.comment-advertisement,.comment_ad_box,.common_advertisement_title,.communityAd,.conTSponsored,.conductor_ad,.confirm_ad_left,.confirm_ad_right,.confirm_leader_ad,.consoleAd,.container-adwords,.containerSqAd,.container_serendipity_plugin_google_adsense,.content-ad,.contentAdFoot,.contentAdsWrapper,.content_ad,.content_ad_728,.content_adsq,.contentad,.contentad300x250,.contentad_right_col,.contentadcontainer,.contentadleft,.contentads,.contenttextad,.contest_ad,.cp_ad,.cpmstarHeadline,.cpmstarText,.create_ad,.cs-mpu,.cscTextAd,.cse_ads,.cspAd,.ct_ad,.cube-ad,.cubeAd,.cube_ads,.currency_ad,.custom_ads,.cwAdvert,.darla_ad,.dartAdImage,.dart_ad,.dart_tag,.dartadvert,.dartiframe,.dc-ad,.dcAdvertHeader,.deckAd,.deckads,.detailMpu,.detail_ad,.detail_top_advert,.divAd,.divAdright,.divad1,.divad2,.divad3,.divads,.divider_ad,.dmco_advert_iabrighttitle,.downloadAds,.download_ad,.downloadad,.dualAds,.dynamic-ads,.dynamic_ad,.e-ad,.ec-ads,.ec-ads-remove-if-empty,.em-ad,.embed-ad,.entry-body-ad,.entry_sidebar_ads,.entryad,.ez-clientAd,.f_Ads,.feature_ad,.featuredAds,.featuredadvertising,.firstpost_advert_container,.flagads,.flash-advertisement,.flash_ad,.flash_advert,.flashad,.flexiad,.flipbook_v2_sponsor_ad,.floatad,.floated_right_ad,.floatingAds,.fm-badge-ad,.footad,.footer-ad,.footerAd,.footerAdModule,.footerAdslot,.footerTextAd,.footer_ad,.footer_ads,.footer_block_ad,.footer_bottomad,.footer_line_ad,.footer_text_ad,.footerad,.forumtopad,.frn_adbox,.frn_cont_adbox,.frontads,.ft-ad,.ftdAdBar,.ftdContentAd,.full_ad_box,.fullbannerad,.g3rtn-ad-site,.gAdRows,.gAdSky,.gAdvertising { visibility:hidden !important; display:none !important; } .g_ggl_ad,.ga-ads,.ga-textads-bottom,.ga-textads-top,.gaTeaserAdsBox,.gads,.gads_cb,.gads_container,.gallery_ad,.gam_ad_slot,.gameAd,.gamesPage_ad_content,.gbl_advertisement,.gen_side_ad,.gglAds,.global_banner_ad,.googad,.googads,.google-ad,.google-ad-container,.google-ads,.google-ads-boxout,.google-ads-slim,.google-right-ad,.google-sponsored-ads,.google-sponsored-link,.google468_60,.googleAd,.googleAd-content,.googleAd-list,.googleAd300x250_wrapper,.googleAdBox,.googleAdSense,.googleAdSenseModule,.googleAd_body,.googleAds,.googleAds_article_page_above_comments,.googleAdsense,.googleContentAds,.googleProfileAd,.googleSearchAd_content,.googleSearchAd_sidebar,.google_ad,.google_ad_wide,.google_add_container,.google_ads,.google_ads_bom_title,.google_ads_content,.googlead,.googleaddiv,.googleaddiv2,.googleads,.googleads_300x250,.googleads_title,.googleafc,.googley_ads,.gpAdBox,.gpAds,.gradientAd,.grey-ad-line,.group_ad,.gsAd,.gsfAd,.gt_ad,.gt_ad_300x250,.gt_ad_728x90,.gt_adlabel,.gutter-ad-left,.gutter-ad-right,.h-ad-728x90-bottom,.h_Ads,.h_ad,.half-ad,.half_ad_box,.hcf-ad-rectangle,.hcf-cms-ad,.hd_advert,.hdr-ads,.header-advert,.headerAds,.headerAdvert,.headerTextAd,.header_ad,.header_ad_div,.header_advertisment,.headerad,.headerad-720,.hi5-ad,.highlightsAd,.hm_advertisment,.home-ad-links,.homeAd,.homeAd1,.homeAd2,.homeAdBoxA,.homeAdBoxBetweenBlocks,.homeAdBoxInBignews,.homeAdSection,.homeMediumAdGroup,.home_ad_bottom,.home_advertisement,.home_mrec_ad,.homead,.homepage-ad,.homepage300ad,.homepageFlexAdOuter,.homepageMPU,.homepage_middle_right_ad,.hor_ad,.horiz_adspace,.horizontalAd,.horizontal_ads,.horizontaltextadbox,.horizsponsoredlinks,.hortad,.houseAd1,.houseAdsStyle,.housead,.hp-col4-ads,.hp2-adtag,.hp_ad_cont,.hp_ad_text,.hp_t_ad,.hp_w_ad,.hpa-ad1,.html-advertisement,.ic-ads,.ico-adv,.idMultiAd,.image-advertisement,.imageads,.imgad,.in-page-ad,.in-story-ads,.in-story-text-ad,.indEntrySquareAd,.indie-sidead,.indy_googleads,.inhousead,.inline-ad,.inline-mpu,.inline-mpu-left,.inlineSideAd,.inline_ad,.inline_ad_title,.inlinead,.inlineadsense,.inlineadtitle,.inlist-ad,.inlistAd,.inner-advt-banner-3,.innerAds,.innerad,.inpostad,.insert_advertisement,.insertad,.insideStoryAd,.inteliusAd_image,.interest-based-ad,.internalAdsContainer,.is24-adplace,.isAd,.islandAd,.islandAdvert,.islandad,.jimdoAdDisclaimer,.jp-advertisment-promotional,.js-advert,.kw_advert,.kw_advert_pair,.l_ad_sub,.l_banner.ads_show_if,.labelads,.largeRectangleAd,.largeUnitAd,.lastRowAd,.lcontentbox_ad,.leaderAdTop,.leaderAdvert,.leader_ad,.leaderboardAd,.leaderboardad,.leaderboardadtop,.left-ad,.leftAd,.leftAdColumn,.leftAds,.left_ad,.left_ad_box,.left_adlink,.left_ads,.left_adsense,.leftad,.leftadtag,.leftbar_ad_160_600,.leftbarads,.leftbottomads,.leftnavad,.lgRecAd,.lg_ad,.ligatus,.linead,.link_adslider,.link_advertise,.live-search-list-ad-container,.ljad,.local-ads,.log_ads,.logoAds,.logoad,.logoutAd,.longAd,.lowerAds,.m-ad-tvguide-box,.m4-adsbygoogle,.m_banner_ads,.macAd,.macad,.main-ad,.main-advert,.main-tabs-ad-block,.main_ad,.main_ad_bg_div,.main_adbox,.main_intro_ad,.map_media_banner_ad,.marginadsthin,.marketing-ad,.masthead_topad,.matador_sidebar_ad_600,.mdl-ad,.media-advert,.mediaAd,.mediaAdContainer,.mediaResult_sponsoredSearch,.medium-rectangle-ad,.mediumRectangleAdvert,.medrect_ad,.menuItemBannerAd,.menueadimg,.messageBoardAd,.mf-ad300-container,.micro_ad,.mid_ad,.midad,.middleAds,.middleads,.min_navi_ad,.mini-ad,.miniad,.mmcAd_Iframe,.mobile-sponsoring,.mod-ad-lrec,.mod-ad-n,.mod-adopenx,.mod-vertical-ad,.mod_admodule,.module-ad-small,.module-ads,.moduleAdvertContent,.module_ad,.module_box_ad,.modulegad,.moduletable-advert,.moduletable-googleads,.moduletablesquaread,.mpu-ad,.mpu-advert,.mpu-footer,.mpu-fp,.mpu-title,.mpu-top-left,.mpu-top-left-banner,.mpu-top-right,.mpuAd,.mpuAdSlot,.mpuAdvert,.mpuArea,.mpuBox,.mpuContainer,.mpuHolder,.mpuTextAd,.mpu_ad,.mpu_advert,.mpu_container,.mpu_gold,.mpu_holder,.mpu_platinum,.mpu_text_ad,.mpuad,.mpuholderportalpage,.mrec_advert,.ms-ads-link,.msfg-shopping-mpu,.mwaads,.my-ad250x300,.nSponsoredLcContent,.nSponsoredLcTopic,.nadvt300,.narrow_ad_unit,.narrow_ads,.navAdsBanner,.navadbox,.navi_ad300,.naviad,.nba300Ad,.nbaT3Ad160,.nbaTVPodAd,.nbaTwo130Ads,.nbc_ad_carousel_wrp,.newTopAdContainer,.newad,.news_article_ad_google,.newsviewAdBoxInNews,.nf-adbox,.nn-mpu,.noAdForLead,.normalAds,.nrAds,.nsAdRow,.oas-ad,.oas-bottom-ads,.offer_sponsoredlinks,.oio-banner-zone,.oio-link-sidebar,.oio-zone-position,.on_single_ad_box,.onethirdadholder,.openads,.openadstext_after,.openx,.openx-ad,.osan-ads,.other_adv2,.outermainadtd1,.ovAdPromo,.ovAdSky,.ovAdartikel,.ov_spns,.pageGoogleAd,.pageGoogleAdFlat,.pageLeaderAd,.page_content_right_ad,.pagead,.pagenavindexcontentad,.paneladvert,.partner-ads-container,.partnersTextLinks,.pencil_ad,.player_ad_box,.player_hover_ad,.player_page_ad_box,.plista_inimg_box,.pnp_ad,.pod-ad-300,.podRelatedAdLinksWidget,.podSponsoredLink,.portalCenterContentAdBottom,.portalCenterContentAdMiddle,.portalCenterContentAdTop,.portalcontentad,.postAd,.post_ad,.post_ads,.post_sponsor_unit,.postbit_adbit_register,.postbit_adcode,.postgroup-ads,.postgroup-ads-middle,.prebodyads,.premium_ad_container,.promoAd,.promoAds,.promo_ad,.ps-ligatus_placeholder,.publication-ad,.publicidad,.puff-advertorials,.qa_ad_left,.qm-ad-content,.qm-ad-content-news,.quigo-ad,.qzvAdDiv,.r_ad_1,.r_ad_box,.r_ads,.rad_container,.rect_ad_module,.rectad,.rectangle-ad,.rectangleAd,.rectanglead,.redads_cont,.regular_728_ad,.regularad,.relatedAds,.related_post_google_ad,.remads,.resourceImagetAd,.result_ad,.results_sponsor,.results_sponsor_right,.reviewMidAdvertAlign,.rght300x250,.rhads,.rhs-ad,.rhs-ads-panel,.right-ad,.right-ad-holder,.right-ad2,.right-ads,.right-ads2,.right-sidebar-box-ad,.rightAdBox,.rightColAd,.rightColumnRectAd,.rightRailAd,.right_ad,.right_ad_160,.right_ad_box,.right_ad_text,.right_ad_top,.right_ads,.right_col_ad,.right_hand_advert_column,.right_side-partyad,.rightad_1,.rightad_2,.rightadbox1,.rightads,.rightadunit,.rightcol_boxad,.rightcoladvert,.rightcoltowerad,.rnav_ad,.rngtAd,.roundedCornersAd,.roundingrayboxads,.rt_ad1_300x90,.rt_ad_300x250,.rt_ad_call,.s2k_ad,.savvyad_unit,.sb-ad-sq-bg,.sbAd,.sbAdUnitContainer,.sb_adsN,.sb_adsNv2,.sb_adsW,.sb_adsWv2,.scanAd,.scc_advert,.sci-ad-main,.sci-ad-sub,.search-ad,.search-results-ad,.search-sponsor,.search-sponsored,.searchAd,.searchAds,.searchSponsoredResultsBox,.searchSponsoredResultsList,.search_column_results_sponsored,.search_results_sponsored_top,.section-ad2,.section-sponsor,.section_mpu_wrapper,.section_mpu_wrapper_wrapper,.selfServeAds,.sepContentAd,.serp_sponsored,.servsponserLinks,.shoppingGoogleAdSense,.showcaseAd,.sidbaread,.side-ad,.side-ads,.sideAd,.sideBoxAd,.side_ad,.side_ad2,.side_ad_1,.side_ad_2,.side_ad_3,.sidead,.sideads,.sideadsbox,.sideadvert,.sidebar-ad,.sidebar-ads,.sidebar-text-ad,.sidebarAd,.sidebarAdUnit,.sidebarAdvert,.sidebar_ad,.sidebar_ad_300_250,.sidebar_ads,.sidebar_ads_336,.sidebar_adsense,.sidebar_box_ad,.sidebarad,.sidebarad_bottom,.sidebaradbox,.sidebarboxad,.sideheadnarrowad,.sideheadsponsorsad,.singleAd,.singleAdsContainer,.singlead,.sitesponsor,.skinAd,.skin_ad_638,.sky-ad,.skyAd,.skyAdd,.skyAdvert,.sky_ad,.sky_scraper_ad,.skyad,.skyjobsadtext,.skyscraper-ad,.skyscraper_ad,.skyscraper_bannerAdHome,.sleekadbubble,.slideshow-ad,.slpBigSlimAdUnit,.slpSquareAdUnit,.sm_ad,.smallSkyAd1,.smallSkyAd2,.small_ad,.small_ads,.smallad-left,.smallads,.smallsponsorad,.smart_ads_bom_title,.specialAd175x90,.speedyads,.sphereAdContainer,.spl-ads,.spl_ad,.spl_ad2,.spl_ad_plus,.splitAd,.sponlinkbox,.spons-link,.spons_links,.sponslink,.sponsor-ad,.sponsor-bottom,.sponsor-link,.sponsor-links,.sponsor-right,.sponsor-services,.sponsor-top,.sponsorArea,.sponsorBox,.sponsorPanel,.sponsorPost,.sponsorPostWrap,.sponsorStrip,.sponsorTop,.sponsor_ad_area,.sponsor_footer,.sponsor_horizontal,.sponsor_line,.sponsor_links,.sponsor_logo,.sponsor_top,.sponsor_units,.sponsoradtitle,.sponsorbox,.sponsored-ads,.sponsored-chunk,.sponsored-editorial,.sponsored-features,.sponsored-links,.sponsored-links-alt-b,.sponsored-links-holder,.sponsored-links-right,.sponsored-post,.sponsored-post_ad,.sponsored-results,.sponsored-right-border,.sponsored-text,.sponsoredBox,.sponsoredInfo,.sponsoredInner,.sponsoredLabel,.sponsoredLinks,.sponsoredLinks2,.sponsoredLinksHeader,.sponsoredProduct,.sponsoredResults,.sponsoredSideInner,.sponsored_ads,.sponsored_box,.sponsored_box_search,.sponsored_by,.sponsored_links,.sponsored_links_title_container,.sponsored_links_title_container_top,.sponsored_links_top,.sponsored_results,.sponsored_well,.sponsoredibbox,.sponsoredlink,.sponsoredlinks,.sponsoredlinkscontainer,.sponsoredresults,.sponsoredtextlink_container_ovt,.sponsorlink,.sponsorlink2,.sponsormsg,.sponsors,.sponsors-box,.sponsors_bar,.sponsorshipbox,.sponsortable,.sponsortext,.spotlightAd,.squareAd,.square_ad,.square_banner_ad,.squared_ad,.ss-ad-mpu,.standard-ad,.start__newest__big_game_container_body_games_advertising,.staticAd,.stock-ticker-ad-tag,.stocks-ad-tag,.store-ads,.story_AD,.story_ad_div,.story_right_adv,.storyad,.storysponsorimage,.subad,.subcontent-ad,.subtitle-ad-container,.sugarad,.super-ad,.supercommentad_left,.supercommentad_right,.supp-ads,.supportAdItem,.surveyad,.t10ad,.tab_ad,.tab_ad_area,.tablebordersponsor,.tadsanzeige,.tadsbanner,.tadselement,.tallad,.tblTopAds,.tbl_ad,.tbox_ad,.td-Adholder,.teaser-sponsor,.teaserAdContainer,.teaser_adtiles,.text-ad-links,.text-advertisement,.text-g-advertisement,.text-g-group-short-rec-ad,.text-g-net-grp-google-ads-article-page,.textAd,.textAdBox,.textAds,.text_ad,.text_ads,.textad,.textadContainer,.textad_headline,.textadbox,.textadheadline,.textadlink,.textadsds,.textadsfoot,.textadtext,.textlink-ads,.tf_page_ad_search,.thisIsAd,.thisIsAnAd,.ticket-ad,.tileAds,.tips_advertisement,.title-ad,.title_adbig,.tncms-region-ads,.toolad,.toolbar-ad,.top-ad,.top-ad-space,.top-ads,.top-banner-ad,.top-menu-ads,.top-sponsors,.topAdWrap,.topAdvertisement,.topBannerAd,.topLeaderboardAd,.top_Ad,.top_ad,.top_ad_728,.top_ad_728_90,.top_ad_disclaimer,.top_ad_div,.top_ad_post,.top_ad_wrapper,.top_advert,.top_advertising_lb,.top_container_ad,.top_sponsor,.topad-bar,.topadbox,.topadspot,.topadvertisementsegment,.topcontentadvertisement,.topic_inad,.topstoriesad,.toptenAdBoxA,.tourFeatureAd,.towerAd,.towerAdLeft,.towerAds,.tower_ad,.tower_ad_disclaimer,.towerad,.tribal-ad,.ts-ad_unit_bigbox,.ts-banner_ad,.ttlAdsensel,.tto-sponsored-element,.tucadtext,.tvs-mpu,.twoColumnAd,.twoadcoll,.twoadcolr,.tx_smartadserver_pi1,.txt-ads,.txtAd,.txtAds,.txt_ads,.txtadvertise,.type_adscontainer,.type_miniad,.type_promoads,.ukAds,.undertimyads,.unit-ad,.universalboxADVBOX01,.universalboxADVBOX03,.universalboxADVBOX04a,.usenext,.vertad,.vertical-adsense,.videoAd,.videoBoxAd,.video_ad,.view-promo-mpu-right,.view_rig_ad,.virgin-mpu,.wa_adsbottom,.wantads,.wide-ad,.wide-skyscraper-ad,.wideAd,.wideAdTable,.wide_ad,.wide_ad_unit_top,.wide_ads,.wide_google_ads,.widget-ad,.widget-ad300x250,.widget-entry-ads-160,.widgetYahooAds,.widget_ad,.widget_ad_rotator,.widget_island_ad,.widget_sdac_bottom_ad_widget,.widget_sdac_footer_ads_widget,.widget_sdac_skyscraper_ad_widget,.widget_sponsor,.wikia-ad,.wikia_ad_placeholder,.wingadblock,.withAds,.wl-ad,.wnMultiAd,.wp125ad,.wp125ad_2,.wpn_ad_content,.wrap-ads,.wsSponsoredLinksRight,.wsTopSposoredLinks,.x03-adunit,.x04-adunit,.xads-blk2,.xads-ojedn,.y-ads,.y-ads-wide,.y7-advertisement,.yahoo-sponsored,.yahoo-sponsored-links,.yahooAds,.yahoo_ads,.yan-sponsored,.ygrp-ad,.yrail_ad_wrap,.yrail_ads,.ysmsponsor,.ysponsor,.yw-ad,a[href^="http://ad.doubleclick.net/"],a[href^="http://adserving.liveuniversenetwork.com/"],a[href^="http://galleries.pinballpublishernetwork.com/"],a[href^="http://galleries.securewebsiteaccess.com/"],a[href^="http://install.securewebsiteaccess.com/"],a[href^="http://latestdownloads.net/download.php?"],a[href^="http://secure.signup-page.com/"],a[href^="http://secure.signup-way.com/"],a[href^="http://www.FriendlyDuck.com/AF_"],a[href^="http://www.adbrite.com/mb/commerce/purchase_form.php?"],a[href^="http://www.friendlyduck.com/AF_"],a[href^="http://www.google.com/aclk?"],a[href^="http://www.liutilities.com/aff"],a[href^="http://www.liutilities.com/products/campaigns/adv/"],a[href^="http://www.my-dirty-hobby.com/?sub="],a[href^="http://www.ringtonematcher.com/"],div#mclip_container:first-child:last-child,div#tads.c,table.ra[align="left"][width="30%"],table.ra[align="right"][width="30%"],[src*="sixsigmatraffic.com"],embed[flashvars*="AdID"],#Ad1,#AdHeader,#Adbanner,#AdvertiseFrame,#Advertisement,#Advertisements,#Tadspacehead,#TopAd,#ad-container,#ad-header,#ad-top,#ad-wrapper,#ad1,#ad3,#ad728x90,#adBanner,#adComponentWrapper,#adContainer,#adDiv,#adHeader,#adTop,#adWrapper,#ad_area,#ad_container,#ad_leader,#ad_space,#ad_square,#ad_table,#ad_wrapper,#adbody,#adbox,#adposition3,#adsense,#adsense_inline,#adspace,#advert,#advertise,#advertising,#adverts,#adwrapper,#bannerad,#block_advert,#contentAd,#content_ad,#divAd,#featuread,#footer_ad,#footer_ads,#googlead,#head-ad,#header_ad,#mainAd,#printads,#promo-ad,#right_ad,#sidebar-ads,#sidebar_ads,#sponsored,#topAd,#topBannerAd,#top_ad,#topad,#topads,.AdBox,.AdInfo,.AdSense,.AdTitle,.Ads,.Advert,.ad-box,.ad-button,.ad-container,.ad-content,.ad-display,.ad-holder,.ad-sidebar,.ad-text,.ad1,.ad2,.ad468,.adBox,.adContainer,.adDiv,.adElement,.adHolder,.adModule,.adSpace,.adSummary,.adText,.adTitle,.ad_Right,.ad_header,.ad_links,.ad_right,.ad_space,.ad_text,.adbox,.adcol1,.adcol2,.adcont,.addiv,.adframe,.adholder,.adinfo,.adlink,.adlist,.adpic,.adright,.ads-section,.adsense,.adtable,.adtext,.advert-horizontal,.advert_list,.advertise,.advertisement,.advertiser,.advertising,.advertising_block,.advertisment,.adverts,.adwrapper,.affiliate,.banner_728x90,.block_ad,.bottom_ad_block,.contentAd,.detail-ads,.header-ad,.headerAd,.header_ad_center,.horizontal_ad,.module-ad,.mpu,.post-ad,.rightAd,.right_ads_column,.rightad,.sponsored,.sponsoredtextlink_container,.textads,.topAd,.topAds,.top_ads,.topad,.topads,a[href^="http://ad-emea.doubleclick.net/"] { visibility:hidden !important; display:none !important; }</style></html>

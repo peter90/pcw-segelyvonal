@@ -1,0 +1,2609 @@
+
+<!-- saved from url=(0076)http://www.pcworld.hu/forum/index.php?act=Print&client=printer&f=114&t=12935 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
+		<title>PC WORLD Segélyvonal [Powered by Invision Power Board]</title>
+		<style type="text/css">
+	/* 
+ * Cascading Style Sheet(CSS 467), for Invision Power Board 2.1.0
+ * Author: James A. Mathias, admin@leihu.com, http://www.1lotus.com 
+ * Copyright: 2005 Invision Power Services, all rights reserved 
+ *
+ * All style attributes in alpha-numeric order starting from 0
+ *
+ */
+
+/* 
+ * ========================================
+ * global element styles 
+ * ========================================
+ */
+
+html{
+	overflow-x: auto; /* fixes MSIE scrollbar bug DO NOT REMOVE, has no effect in Mozilla, or Opera */
+}
+
+body{ 
+	background: #FFF;
+	color: #222;
+	font-family: Verdana, Tahoma, Arial, Trebuchet MS, Sans-Serif, Georgia, Courier, Times New Roman, Serif;
+	font-size: 11px;
+	line-height: 135%;
+	margin: 0px;
+	padding: 0px; /* required for Opera to have 0 margin */
+	text-align: center; /* centers board in MSIE */
+}
+
+/* 
+ * ========================================
+ * Set up IPB table
+ * ========================================
+ */
+ 
+.ipbtable { width:100% }
+
+table.ipbtable,
+tr.ipbtable,
+td.ipbtable
+{ /* required for text in tables, because tables do not inherit from body */
+	background: transparent;
+	color: #222;
+	font-size: 11px;
+	line-height: 135%;
+}
+
+.ipbtable td,
+.divpad{ /* gives all tables faux cellpadding of 5px */
+	padding: 5px;
+}
+
+td.nopad{ /* allows some tables to have no padding on the td */
+	padding: 0;
+}
+
+
+
+form{
+	display: inline;
+	margin: 0; /* removes mystery form tag gapping */
+	padding: 0; /* removes mystery form tag gapping */
+}
+
+img{
+	border: 0; /* makes sure linked images do not have a border */
+	vertical-align: middle;
+}
+
+/* 
+ * ========================================
+ * global hyperlink styles 
+ * ========================================
+ */
+
+a:link,
+a:visited,
+a:active{
+	background: transparent;
+	color: #222;
+	text-decoration: underline;
+}
+
+a:hover{
+	background: transparent;
+	color: #34498B;
+}
+
+/* 
+ * ========================================
+ * Main wrapper, this controls the overall width of the board in you browser view window. 
+ * ========================================
+ */
+
+#ipbwrapper{ 
+	margin: 20px auto 20px auto; /* centers the box, no matter the overall width, also applies a 20px gap at the top and bottom of the board */
+	text-align: left; /* re_aligns text to left second part of two part MSIE centering workaround */
+	/* EDIT THIS TO CHANGE THE WIDTH OF THE BOARD -> 750px is a common fixed resolution size */
+	width: 98%;
+}
+
+/* 
+ * ========================================
+ * styles for pagination links 
+ * ========================================
+ */
+ 
+
+.pagelink,
+.pagelinklast,
+.pagecurrent,
+.minipagelink,
+.minipagelinklast{
+	background: #F0F5FA;
+	border: 1px solid #072A66;
+	padding: 1px 3px 1px 3px;
+}
+
+.pagelinklast,
+.minipagelinklast{
+	background: #DFE6EF;
+}
+
+
+.pagecurrent{
+	background: #FFC9A5;
+}
+
+.minipagelink,
+.minipagelinklast{
+	border: 1px solid #C2CFDF;
+	font-size: 10px;
+	margin: 0 1px 0 0;
+}
+
+.pagelink a:active,
+.pagelink a:visited,
+.pagelink a:link,
+.pagelinklast a:active,
+.pagelinklast a:visited,
+.pagelinklast a:link,
+.pagecurrent a:active,
+.pagecurrent a:visited,
+.pagecurrent a:link,
+.minipagelink a:active,
+.minipagelink a:visited,
+.minipagelink a:link,
+.minipagelinklast a:active,
+.minipagelinklast a:visited,
+.minipagelinklast a:link{
+	text-decoration: none;
+}
+
+/* fake button effect for some links */
+.fauxbutton{
+	background: #BFCDE0;
+	border: 1px solid #072A66;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 4px;
+}
+
+.fauxbutton a:link,
+.fauxbutton a:visited,
+.fauxbutton a:active{
+	color: #222 !important;
+	text-decoration: none;
+}
+
+.forumdesc,
+.forumdesc a:link,
+.forumdesc a:visited,
+.forumdesc a:active{ 
+	background: transparent;
+	font-size: 10px; 
+	color: #666;
+	line-height: 135%;
+	margin: 2px 0 0 0;
+	padding: 0;
+}
+
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+
+.searchlite {
+	background-color:yellow;
+	font-weight:bold;
+	color: red;
+}
+
+.activeusers{
+	background: #FFF;
+	border: 1px solid #072A66;
+	color: #000;
+	margin: 0px;
+	padding: 1px;
+}
+
+.activeuserposting a:link,
+.activeuserposting a:visited,
+.activeuserposting a:active,
+.activeuserposting
+{
+	font-style:italic;
+	text-decoration: none;
+	border-bottom:1px dotted black;
+}
+
+fieldset.search{ 
+	line-height: 150%;
+	padding: 6px; 
+}
+
+label{ 
+	cursor: pointer; 
+}
+
+img.attach{ 
+	background: #808080 url(style_images/1/click2enlarge.gif) no-repeat top right;
+	border: 1px solid #808080;
+	margin: 0 2px 0 0;
+	padding: 11px 2px 2px 2px;
+}
+
+.thumbwrap,
+.thumbwrapp,
+.fullimagewrap{
+	border: 1px solid #072A66;
+	margin: 2px;
+}
+
+.thumbwrapp{
+	border: 2px solid #660707;
+}
+
+.fullimagewrap{
+	background: #F5F9FD;
+	text-align: center;
+	margin: 5px 0 5px 0;
+	padding: 5px;
+}
+
+.thumbwrap h4,
+.thumbwrapp h4{	
+	background: #DDE6F2;
+	border: 0 !important;
+	border-bottom: 1px solid #5176B5 !important;
+	color: #5176B5; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.thumbwrap p,
+.thumbwrapp p{
+	background: #EEF2F7 !important;
+	border: 0 !important;
+	border-top: 1px solid #5176B5 !important;
+	margin: 0 !important;
+	padding: 5px !important;
+	text-align: left;
+}
+
+.thumbwrap p.alt,
+.thumbwrapp p.alt{
+	background: #DFE6EF !important;
+	margin: 0 !important;
+	padding: 5px !important;
+	text-align: left;
+}
+
+.thumbwrapp p.pin{
+	background: #EFDFDF !important;
+	text-align: center !important;
+}
+	
+.thumbwrap img.galattach,
+.thumbwrapp img.galattach{
+	background: #FFF url(style_images/1/img_larger.gif) no-repeat bottom right;
+	border: 1px solid #072A66;
+	margin: 5px;
+	padding: 2px 2px 10px 2px;
+}
+
+li.helprow{ 
+	margin: 0 0 10px 0;
+	padding: 0; 
+}
+
+ul#help{ 
+	padding: 0 0 0 15px; 
+}
+
+.warngood,
+.warnbad{ 
+	color: #0B9500;
+	font-weight: bold;
+}
+
+.warnbad{ 
+	color: #DD0000;
+}
+
+#padandcenter{ 
+	margin: 0 auto 0 auto;
+	padding: 14px 0 14px 0;
+	text-align: center;
+}
+
+#profilename{ 
+	font-size: 28px; 
+	font-weight: bold; 
+}
+
+#photowrap{ 
+	padding: 6px; 
+}
+
+#phototitle{ 
+	border-bottom: 1px solid #000; 
+	font-size: 24px; 
+}
+
+#photoimg{ 
+	margin: 15px 0 0 0;
+	text-align: center; 
+} 
+
+#ucpmenu,
+#ucpcontent{ 
+	background: #F5F9FD;
+	border: 1px solid #345487;
+	line-height: 150%;
+}
+
+#ucpmenu p{ 
+	margin: 0; 
+	padding: 2px 5px 6px 9px;
+}
+
+#ucpmenu a:link, 
+#ucpmenu a:active, 
+#ucpmenu a:visited{ 
+	text-decoration: none; 
+}
+
+#ucpcontent{ 
+	width: auto;
+}
+
+#ucpcontent p{ 
+	margin: 0;
+	padding: 10px;
+}
+
+.activeuserstrip{ 
+	background: #BCD0ED;
+	padding: 6px;
+}
+
+/* Topic View elements */
+.signature{  
+	background: transparent;
+	color: #339; 
+	font-size: 10px;
+	line-height: 150%;
+}
+
+.postdetails{ 
+	font-size: 10px;
+	line-height:140%;
+}
+
+.postcolor{ 
+	font-size: 12px; 
+	line-height: 160%;
+}
+
+.normalname{ 
+	color: #003;
+	font-size: 12px; 
+	font-weight: bold; 
+}
+
+.normalname a:link, 
+.normalname a:visited, 
+.normalname a:active{ 
+	font-size: 12px;
+}
+
+.post1,
+.bg1{ 
+	background: #F5F9FD;
+}
+
+.post2,
+.bg3{ 
+	background: #EEF2F7;
+}
+
+.row2shaded,
+.post1shaded { background-color: #DEDBE4 }
+.row4shaded,
+.post2shaded { background-color: #E3DFE7 }
+
+.row1{ 
+	background: #DFE6EF; 
+}
+
+.row2{ 
+	background: #E4EAF2; 
+}
+
+.darkrow1{ 
+	background: #BCD0ED;
+	color: #3A4F6C; 
+}
+
+.darkrow3{ 
+	background: #D1DCEB; 
+	color: #3A4F6C; 
+}
+
+/* tableborders gives the white column / row lines effect */
+.plainborder,
+.tablefill,
+.tablepad{ 
+	background: #F5F9FD;
+	border: 1px solid #345487;
+}
+
+.tablefill,
+.tablepad{ 
+	padding: 6px;  
+}
+
+.tablepad{ 
+	border: 0 !important;
+}
+
+.wrapmini{ 
+	float: left;
+	line-height: 1.5em;
+	width: 25%;
+}
+
+.pagelinks{
+	float: left;
+	line-height: 1.2em;
+	width: 35%;
+}
+
+.desc{ 
+	font-size: 11px; 
+	color: #434951;
+}
+
+.lastaction
+{
+	font-size: 10px; 
+	color: #434951;
+}
+
+.edit{ 
+	font-size: 9px;
+}
+
+.thin{ 
+	border: 1px solid #FFF;
+	border-left: 0;
+	border-right: 0;
+	line-height: 150%;
+	margin: 2px 0 2px 0;
+	padding: 6px 0 6px 0;
+}
+
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+
+/* 
+ * ========================================
+ * calendar styles 
+ * ========================================
+ */
+	
+.calmonths{ 
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	font-size: 18px; 
+	font-weight: bold; 
+	margin: 5px 0 5px 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.weekday{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.calmonths a{
+	text-decoration: none;
+}
+
+.calday,
+.calweekday{ 
+	background: #DFE6EF;
+	color: #666;
+	font-size: 11px;
+	font-weight: bold;
+	margin: 0;
+	padding: 4px;
+	text-align: right;
+}
+
+.calweekday{
+	border-right: 1px solid #AAA;
+	color: #222;
+	font-size: 14px;
+	padding: 6px;
+	text-align: center;
+}
+
+.celltodayshaded,
+.celldateshaded,
+.cellblank,
+.celldate,
+.celltoday,
+.mcellblank,
+.mcelldate,
+.mcelltoday{
+	background: #EEF2F7; 
+	height: 100px;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+
+.celltodayshaded,
+.celldateshaded
+{
+	background: #E3DFE7;
+}
+
+.mcellblank,
+.mcelldate,
+.mcelltoday{
+	height: auto;
+}
+
+.cellblank,
+.mcellblank{
+	background: #C2CFDF;
+}
+
+.celltoday,
+.celltodayshaded,
+.mcelltoday{
+	border: 2px solid #8B0000;
+}
+
+.calranged
+{
+	border: 2px outset #C2CFDF;
+	background: #C2CFDF;
+	padding:4px;
+}
+
+.calitem
+{
+	border-bottom: 1px dotted #C2CFDF;
+	padding:4px;
+}
+
+/* 
+ * ========================================
+ * form styles 
+ * ========================================
+ */
+
+.input-warn,
+.input-green,
+input,
+textarea,
+select{
+	background: #FFF;
+	border: 1px solid #4C77B6;
+	color: #000;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 11px;
+	margin: 5px;
+	padding: 2px;
+	vertical-align: middle;
+}
+
+.input-warn,
+.input-warn-content
+{
+	border: 1px solid #C00;
+}
+
+.input-ok,
+.input-ok-content
+{
+	border: 1px solid #0C0;
+}
+
+.input-warn-content
+{
+	padding: 4px;
+	margin: 4px;
+	background-color: #FCC;
+}
+
+.input-ok-content
+{
+	padding: 4px;
+	margin: 4px;
+	background-color: #CFC;
+}
+
+
+.input-text
+{
+	color: #900;
+}
+
+select{
+	border: 0;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+
+input.button{
+	margin: 0;
+	width: auto;
+}
+
+optgroup option{
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.codebuttons{ 
+	font-family: Verdana, Helvetica, Sans-Serif; 
+	font-size: 10px; 
+	vertical-align: middle;
+	margin:2px;
+}
+
+.textarea,
+.searchinput,
+.button,
+.gobutton{
+	background: #FFF;
+	border: 1px solid #4C77B6;
+	color: #000;
+	font-family: Verdana, Helvetica, Sans-Serif;
+	font-size: 11px;
+	padding: 2px;
+	vertical-align: middle;
+}
+	
+.button{
+	background: #DFE6EF;
+}
+
+.gobutton{
+	background: transparent;
+	border: 0;
+	color: #072A66;
+	margin: 0;
+	vertical-align: middle;
+}
+
+.radiobutton,
+.checkbox,
+.helpbox { 
+	border: 0;
+	vertical-align: middle;
+}
+
+/* 
+ * class.formtable 
+ *
+ * used for tabled forms 
+ * technically tables should not be used for form display 
+ * but, in the case of IPB a table is easier to work with
+ * for the average webmaster, who has little to no CSS knowledge.
+ *
+ */
+
+.formtable{
+	background: transparent;
+}
+
+.formtable td,
+.pformleft,
+.pformleftw,
+.pformright{
+	background:#F5F9FD;
+	border: 1px solid #C2CFDF;
+	border-bottom: 0;
+	border-left: 0;
+	font-weight: bold;
+	margin: 1px 0 0 0;
+	padding: 6px;
+	width: 25%;
+} 
+
+.formtable td.wider,
+.pformleftw,
+.pformright{
+	width: 40%;
+}
+
+.formtable td.formright,
+.pformright{
+	border-right: 0px;
+	font-weight: normal;
+	width: auto;
+} 
+
+.formtable td.formtitle,
+.formsubtitle{
+	background: #D1DCEB;
+	border: 1px solid #9FB9D4; 
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+	font-weight: normal;
+}
+
+.formsubtitle{ 
+	border: 0;
+	color: #3A4F6C;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.formtable td.formstrip{
+	background: #DDE8F2;
+	border: 1px solid #9FB9D4;
+	border-left: 0;
+	border-right: 0;
+	font-weight: normal;
+}
+
+/* 
+ * ========================================
+ * new style quote and code wrappers MATT's DESIGN 
+ * ========================================
+ */
+
+.quotetop{
+	background: #E4EAF2 url(style_images/1/css_img_quote.gif) no-repeat right;
+	border: 1px dotted #000;
+	border-bottom: 0;
+	border-left: 4px solid #8394B2;
+	color: #000;
+	font-weight: bold;
+	font-size: 10px;
+	margin: 8px auto 0 auto;
+	padding: 3px;
+}
+
+.quotemain{
+	background: #FAFCFE;
+	border: 1px dotted #000;
+	border-left: 4px solid #8394B2;
+	border-top: 0;
+	color: #465584;
+	padding: 4px;
+	margin: 0 auto 8px auto;
+}
+
+.codetop,
+.sqltop,
+.htmltop{
+	background: #FDDBCC url(style_images/1/css_img_code.gif) no-repeat right;
+	color: #000;
+	font-weight: bold;
+	margin: 0 auto 0 auto;
+	padding: 3px;
+	width: 98%;
+}
+
+.codemain,
+.sqlmain,
+.htmlmain{
+	background: #FAFCFE;
+	border: 1px dotted #000;
+	color: #465584;
+	font-family: Courier, Courier New, Verdana, Arial;
+	margin: 0 auto 0 auto;
+	padding: 2px;
+	width: 98%;
+}
+
+/* 
+ * ========================================
+ * old school quote and code styles - backwards compatibility 
+ * ========================================
+ */
+
+#QUOTE,
+#CODE{  
+	background: #FAFCFE; 
+	border: 1px solid #000; 
+	color: #465584; 
+	font-family: Verdana, Arial; 
+	font-size: 11px; 
+	padding: 2px; 
+	white-space: normal;
+}
+
+#CODE{ 
+	font-family: Courier, Courier New, Verdana, Arial;
+}
+
+/* 
+ * ========================================
+ * All New Styles 
+ * ========================================
+ */
+.cleared{
+	clear: both;
+}
+
+.borderwrap,
+.borderwrapm{ /* this will affect the outlining border of all the tables and boxes through-out the skin. */
+	background: #FFF; 
+	border: 1px solid #072A66;
+	padding: 0px; 
+	margin: 0px; 
+}
+
+.borderwrapm{
+	margin: 5px;
+}
+
+.borderwrap h3,
+.maintitle,
+.maintitlecollapse{
+	background: url(style_images/1/tile_cat.gif);
+	border: 1px solid #FFF;
+	border-bottom: 1px solid #5176B5;
+	color: #FFF; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0px;
+	padding: 8px;
+}
+
+.maintitle td {
+	color: #FFF; 
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+.maintitlecollapse{
+	border: 1px solid #FFF;
+}
+
+.maintitle p,
+.maintitlecollapse p,
+.formsubtitle p{
+	background: transparent !important;
+	border: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.maintitle p.expand,
+.maintitle p.goto,
+.maintitlecollapse p.expand,
+.formsubtitle p.members{
+	float: right;
+	width: auto !important;
+}
+
+.maintitle a:link, 
+.maintitle a:visited,
+.maintitlecollapse a:link, 
+.maintitlecollapse a:visited{ 
+	background: transparent;
+	color: #FFF;
+	text-decoration: none; 
+}
+
+.maintitle a:hover, 
+.maintitle a:active,
+.maintitlecollapse a:hover, 
+.maintitlecollapse a:active{ 
+	background: transparent;
+	color: #F1F1F1;
+}
+
+table th,
+.borderwrap table th,
+.subtitle,
+.subtitlediv,
+.postlinksbar{ 
+	background: transparent url(style_images/1/tile_sub.gif);
+	border-bottom: 1px solid #5176B5;
+	color: #3A4F6C; 
+	font-size: 10px;
+	font-weight: bold; 
+	letter-spacing: 1px;
+	margin: 0; 
+	padding: 5px; 
+}
+
+.subtitlediv{
+	border: 1px solid #FFF;
+	border-bottom: 1px solid #5176B5;
+	text-align: right;
+}
+
+.borderwrap table th a:link,
+.subtitle a:link,
+.subtitlediv a:link,
+.borderwrap table th a:visited,
+.subtitle a:visited, 
+.subtitlediv a:visited, 
+.borderwrap table th a:active,
+.subtitle a:active,
+.subtitlediv a:active,
+.borderwrap table th a:hover,
+.subtitle a:hover,
+.subtitlediv a:hover{ 
+	background: transparent;
+	color: #3A4F6C;
+	text-decoration: none; 
+}
+
+.borderwrap h4{
+	background: #DDE6F2;
+	border: 1px solid #FFF;
+	border-bottom: 1px solid #5176B5;
+	border-top: 1px solid #5176B5;
+	color: #5176B5; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.borderwrap p{
+	background: #F9F9F9;
+	border: 1px solid #CCC;
+	margin: 5px;
+	padding: 10px;
+	text-align: left;
+}
+
+td.formbuttonrow,
+.borderwrap p.formbuttonrow,
+.borderwrap p.formbuttonrow1{
+	background: #D1DCEB !important; 
+	border: 1px solid #FFF;
+	border-top: 1px solid #5176B5;
+	margin: 0px !important;
+	padding: 5px !important;
+	text-align: center;
+}
+
+td.formbuttonrow{
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+}
+
+.borderwrap p.formbuttonrow1{
+	background: #F9F9F9 !important;
+	border: 0;
+	border-top: 1px solid #CCC;
+}
+
+.bar,
+.barb,
+.barc{
+	background: #DFE6EF;
+	border: 1px solid #FFF;
+}
+
+.barc{
+	border-bottom: 0;
+}
+
+.bar p,
+.barb p,
+.barc p{
+	background: transparent;
+	border: 0;
+	color: #222;
+	font-size: 11px;
+	margin: 0;
+	padding: 5px;
+	text-align: left;
+}
+
+.barb p{
+	text-align: right;
+}
+
+.bar p.over,
+.bar p.overs,
+.barc p.over,
+.barc p.overs{
+	float: right;
+}
+
+.barb p.over,
+.barb p.overs{
+	float: left;
+}
+
+.bar p.overs,
+.barb p.overs,
+.barc p.overs{
+	position: relative;
+	top: 5px;
+}
+
+.catend{
+	background: #8394B2;
+	color: #000;
+	font-size: 1px;
+	height: 5px;
+}
+
+.newslink{
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	margin: 0;
+	width: 100%;
+}
+
+.newslink td{
+	color: #222;
+	font-size: 10px;
+	padding: 5px 5px 5px 10px;
+}
+
+.newslink span{
+	background: transparent;
+	color: #072A66;
+	font-style: italic;
+	font-weight: normal;
+}
+
+.newslink input{
+	background: #FFF;
+	border: 1px solid #999;
+	color: #072A66;
+	font-size: 10px;
+	padding: 3px;
+	vertical-align: middle;
+	width: auto;
+}
+
+.newslink input.button{
+	background: transparent;
+	border: 0;
+	color: #072A66;
+	vertical-align: middle;
+}
+
+.fieldwrap{
+	background: #F9F9F9;
+	border: 1px solid #CCC;
+	border-top: 0;
+	margin: 5px;
+	padding: 0;
+	text-align: left;
+}
+
+.fieldwrap h4{
+	background: #EEE;
+	border: 1px solid #CCC;
+	border-left: 0;
+	border-right: 0;
+	color: #444; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.errorwrap {
+	background: #F2DDDD;
+	border: 1px solid #992A2A;
+	border-top: 0;
+	margin: 5px;
+	padding: 0;
+}
+
+
+.errorwrap h4 {
+	background: #E3C0C0;
+	border: 1px solid #992A2A;
+	border-left: 0;
+	border-right: 0;
+	color: #992A2A; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.errorwrap p {
+	background: transparent;
+	border: 0;
+	color: #992A2A;
+	margin: 0;
+	padding: 8px;
+}
+
+
+.ruleswrap{
+	background: #F2DDDD;
+	border: 1px solid #992A2A;
+	color: #992A2A; 
+	margin: 5px 0 5px 0;
+	padding: 5px;
+}
+
+#redirectwrap{
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	margin: 200px auto 0 auto;
+	text-align: left;
+	width: 500px;
+}
+
+#redirectwrap h4{
+	background: #D0DDEA;
+	border-bottom: 1px solid #C2CFDF;
+	color: #3A4F6C;
+	font-size: 14px;
+	margin: 0;
+	padding: 5px;
+}
+
+#redirectwrap p{
+	margin: 0;
+	padding: 5px;
+}
+
+#redirectwrap p.redirectfoot{
+	background: #E3EBF4;
+	border-top: 1px solid #C2CFDF;
+	text-align: center;
+}
+
+
+#gfooter{
+	background: #8394B2;
+	margin: 5px 0 5px 0;
+	padding: 0;
+	width: 100%;
+}
+
+#gfooter td{
+	color: #FFF;
+	font-size: 10px;
+	padding: 4px;
+}
+
+#gfooter a:link,
+#gfooter a:visited{
+	color: #FFF;
+}
+
+#logostrip{ 
+	background: #3860BB url(style_images/1/tile_back.gif);
+	border: 1px solid #FFF;
+	height: 68px;
+	margin: 0;
+	padding: 0;
+}
+
+#logographic{
+	background: transparent url(style_images/1/logo4.gif) no-repeat left;
+	height: 68px;
+	margin: 0;
+	padding: 0;
+}
+
+#submenu{ 
+	background: transparent url(style_images/1/tile_sub.gif);
+	border: 1px solid #FFF;
+	border-top: 0;
+	color: #3A4F6C; 
+	margin: 0; 
+}
+
+#userlinks,
+#userlinksguest{ 
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	margin: 5px 0 5px 0;
+	padding: 0 5px 0 5px;
+}
+
+#userlinksguest{ 
+	background: #F4E7EA;
+	border: 1px solid #986265;
+}
+
+#submenu p,
+#userlinks p,
+#userlinksguest p{
+	background: transparent !important;
+	border: 0 !important;
+	font-size: 10px;
+	font-weight: bold; 
+	letter-spacing: 1px;
+	margin: 0 !important;
+	padding: 7px 0 7px 0; 
+	text-align: right;
+}
+
+#userlinks p,
+#userlinksguest p{
+	font-weight: normal;
+	letter-spacing: 0;
+}
+
+#submenu p.home,
+#userlinks p.home,
+#userlinksguest p.home{
+	float: left;
+}
+
+#userlinksguest p.pcen{
+	text-align: center;
+}
+
+#submenu a:link, 
+#submenu  a:visited{ 
+	background: transparent; 
+	color: #3A4F6C; 
+	padding: 0 6px 0 6px;
+	text-decoration: none;
+}
+
+#submenu a:hover, 
+#submenu a:active{
+	background: transparent; 
+	color: #5176B5; 
+}
+
+#navstrip{ 
+	background: transparent;
+	color: #999;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+	padding: 14px 0px 8px 0px; 
+}
+
+#navstrip a:link, 
+#navstrip  a:visited{ 
+	background: transparent; 
+	color: #222; 
+	text-decoration: none;
+}
+
+#navstrip a:hover, 
+#navstrip a:active{
+	background: transparent; 
+	color: #5176B5; 
+}
+
+.toplinks{
+	background: transparent;
+	color: #000;
+	margin: 0;
+	padding: 0 0 5px 0;
+	text-align: right;
+}
+
+.toplinks span{
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	border-bottom: 0;
+	color: #000;
+	font-size: 10px;
+	font-weight: bold;
+	margin: 0 10px 0 0;
+	padding: 5px;
+}
+
+.copyright{ 
+	background: #EEE;
+	font-size: 11px; 
+	margin: 0 0 5px 0;
+	padding: 8px;
+}
+
+/* 
+ * ========================================
+ * print page styles 
+ * ========================================
+ */
+
+#print{
+	margin: 20px auto 20px auto;
+	padding: 0;
+	text-align: left;
+	width: 85%;
+}
+
+#print h1,
+#print h2,
+#print h3,
+#print h4,
+#print p{
+	color: #036;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+	padding: 8px;
+}
+
+#print h2,
+#print h3,
+#print p{
+	border-bottom: 1px solid #999;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+#print h3{
+	background: #F5F5F5;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0 0 10px 0;
+}
+
+#print h4{
+	background: #F9F9F9;
+	font-size: 11px;
+}
+
+#print p{
+	margin: 0 0 5px 0;
+	padding: 10px;
+}
+
+#print p.printcopy{
+	border: 0;
+	color: #000;
+	text-align: center;
+}
+
+/* ============================================================== */
+/* RTE STYLES
+/* ============================================================== */
+
+.rteimage {
+	/*background: #D3D3D3;*/
+	/*border: 1px outset transparent*/;
+	cursor: pointer;
+	cursor: hand;
+	padding:1px;
+}
+
+.rteImageRaised {
+	/*background: #D3D3D3;*/
+	border: 1px outset;
+	cursor: pointer;
+	cursor: hand;
+	padding:0px;
+}
+
+.rteImageLowered {
+	/*background: #D3D3D3;*/
+	border: 1px inset;
+	cursor: pointer;
+	cursor: hand;
+	padding:0px;
+}
+
+.rteimage:hover {
+	background: #EBEBEB;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.rteVertSep {
+	margin: 0 4px 0 4px;
+}
+
+.rteBack {
+	background: #D3D3D3;
+	border: 1px outset;
+	letter-spacing: 0;
+	padding: 2px;
+}
+
+/* used in ips_rte.js - do not remove */
+.rtebottombutton
+{
+	font-size:10px;
+	border:1px solid #777;
+	border-top:0px;
+	padding:3px;
+	margin:0px;
+	background-color: #EBEBEB;
+}
+
+/* used in ips_rte.js - do not remove */
+.rtebottombuttonon
+{
+	font-size:10px;
+	border:1px solid #777;
+	border-top:0px;
+	padding:3px;
+	margin:0px;
+	background-color: #D3D3D3;
+}
+
+.rtebuttonbar1 {
+	/*background: #D3D3D3;*/
+	background-image: url(style_images/1/folder_rte_images/rte_tile.gif);
+	border: 1px solid gray;
+	border-bottom:0px;
+	letter-spacing: 0;
+	padding: 2px;
+	height:26px;
+}
+
+.rtebuttonbar2 {
+	/*background: #D3D3D3;*/
+	background-image: url(style_images/1/folder_rte_images/rte_tile.gif);
+	border: 1px solid gray;
+	border-top:1px solid gray;
+	letter-spacing: 0;
+	padding: 2px;
+	height:26px;
+}
+
+.rtebuttonbar1 tbody tr td,
+.rtebuttonbar1 tr td,
+.rtebuttonbar2 tbody tr td,
+.rtebuttonbar2 tr td,
+.rteBack tbody tr td,
+.rteBack tr td
+{
+	/*background: #D3D3D3;*/
+	padding: 0;
+}
+
+.rteDiv {
+	display: block;
+	position: relative;
+	padding:0px;
+	margin:0px;
+}
+
+.rteiframe
+{
+	border:1px solid #777;
+	background-color:#FFF;
+}
+
+.rteselectbox
+{
+	font-size:11px;
+}
+
+
+.dny-edit-title
+{
+	border:0px;
+	padding:3px;
+	margin:0px;
+	background: #D1DCEB; 
+	color: #3A4F6C; 
+}
+
+
+/* ======================================== */
+/* TABS
+/* ======================================== */
+
+.tabon
+{
+	border-top:1px solid #999;
+	border-left:1px solid #999;
+	border-right:1px solid #999;
+	background-color:#FFF;
+	padding:8px;
+	padding-bottom:9px;
+	font-size:10px;
+	float:left;
+	width:auto;
+	margin-top:3px;
+}
+
+.taboff
+{
+	border-top: 1px solid #777;
+	border-left: 1px solid #777;
+	border-right: 1px solid #777;
+	background-color: #B5C3D9;
+	color: #333;
+	padding: 8px;
+	font-size:10px;
+	float: left;
+	width: auto;
+	margin-top:3px;
+}
+
+.tabon a:link, 
+.tabon a:visited, 
+.tabon a:active
+{
+	text-decoration:none;
+	color: #000;
+}
+
+.taboff a:link, 
+.taboff a:visited, 
+.taboff a:active
+{
+	text-decoration:none;
+	color: #333;
+}
+
+.mya-back
+{
+	background: #072A66;
+	margin:1px;
+}
+
+.mya-content
+{
+	background: #FFF;
+	padding:8px;
+	margin:1px;
+	border: 1px solid #777;
+}
+
+/* -------------------------------- */
+/* Create PM box defaults           */
+/* -------------------------------- */
+
+.iframeshim
+{
+	position:absolute;
+	display:none;
+	background: #FFF;
+	filter:alpha(opacity=0);
+	border:0px;
+	width:auto;
+	height:auto;
+}
+
+
+
+/* -------------------------------- */
+/* Experimental                     */
+/* -------------------------------- */
+
+.popupmenu
+{
+   background: #F0F5FA;
+   border: 1px solid #3A4F6C;
+   text-align:left;
+   font-size:10px;
+   white-space:nowrap;
+   /*padding:3px 5px 3px 3px;*/
+   /*width:300px;*/
+}
+
+.popupmenu-item
+{
+	padding: 5px;
+	/*margin-top:4px;*/
+	white-space: nowrap;
+	border-bottom: 1px solid #C2CFDF;
+}
+
+.popupmenu-item-last
+{
+	padding: 5px;
+	/*margin-top:4px;*/
+	white-space: nowrap;
+}
+
+.popmenubutton
+{
+	width:120px;
+	white-space:nowrap;
+	background-color: #C2CFDF;
+	border:1px solid #3A4F6C;
+	color: #3A4F6C;
+	font-weight:bold;
+	float:right;
+	height:18px;
+	text-align:center;
+	margin:0px;
+	font-size:11px;
+	padding:3px;
+}
+
+
+.popmenubutton a:link, 
+.popmenubutton a:visited,
+.popupmenu-item a:link, 
+.popupmenu-item a:visited,
+.popupmenu-item-last a:link, 
+.popupmenu-item-last a:visited
+{ 
+	color: #3A4F6C; 
+	text-decoration: none;
+}
+
+.popmenubutton a:hover, 
+.popupmenu-item a:hover, 
+.popupmenu-item-last a:hover
+{ 
+	color: #5176B5; 
+	text-decoration: none;
+}
+
+.popupmenu-category
+{ 
+	background: transparent url(style_images/1/tile_sub.gif);
+	border-top: 1px solid #5176B5;
+	border-bottom: 1px solid #5176B5;
+	color: #3A4F6C; 
+	font-size: 10px;
+	font-weight: bold; 
+	letter-spacing: 1px;
+	margin: 0; 
+	padding: 5px; 
+}
+</style>
+	</head>
+	<body>
+	<div id="print">
+		<h1>A téma nyomtatható változata</h1>
+		<h2><a href="http://www.pcworld.hu/forum/index.php?act=ST&f=114&t=12935" title="Téma megtekintése">Kattints ide az eredeti formátum megtekintéséhez!</a></h2>
+		<h3>PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép</h3><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. február 4. 22:02</h4>
+			<p></p><blockquote><b><!--coloro:#006600--><span style="color:#006600"><!--/coloro--><!--fonto:Verdana--><span style="font-family:Verdana"><!--/fonto--><!--sizeo:5--><span style="font-size:18pt;line-height:100%"><!--/sizeo-->Lefagy a számítógép<!--sizec--></span><!--/sizec--><!--fontc--></span><!--/fontc--><!--colorc--></span><!--/colorc--><br>Ez tök ugyanaz, mint az újraindulásos! <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/laughing.gif" style="vertical-align:middle" emoid=":lol:" border="0" alt="laughing.gif"> </b></blockquote><br><br><blockquote><!--coloro:#ff6000--><span style="color:#ff6000"><!--/coloro--><b><!--sizeo:3--><span style="font-size:12pt;line-height:100%"><!--/sizeo--><span><a class="linkclass" href="http://www.pcworld.hu/forum/index.php?showtopic=12931">http://www.pcworld.hu/forum/index.php?showtopic=12931</a></span><!--sizec--></span><!--/sizec--></b><!--colorc--></span><!--/colorc--></blockquote><br><blockquote><!--coloro:#ff6000--><span style="color:#ff6000"><!--/coloro--><b><!--sizeo:3--><span style="font-size:12pt;line-height:100%"><!--/sizeo--><span><a class="linkclass" href="http://www.pcworld.hu/forum/index.php?s=&showtopic=12782&view=findpost&p=371985">http://www.pcworld.hu/forum/index.php?s=&amp;showtopic=12782&amp;view=findpost&amp;p=371985</a></span><!--sizec--></span><!--/sizec--></b><!--colorc--></span><!--/colorc--><ul><li> Ha tápegységünk szerepel a nem ajánlott listában, akkor cseréljük le egy, az ajánlott listában szereplőre!</li><li> Viszont, ha elméletileg jó minőségű tápegységünk van, akkor is ellenőrizzük, hiszen bármi elromolhat. Szervizekben van rá eszköz, ennél egyszerűbb, ha kölcsönkérünk egyet. A tesztelés annyiból áll, hogy leterheljük a gépet. Ha huzamos ideig stabil marad, akkor örülhetünk.</li><li> Ha nincs már garancia a tápegységünkre, akkor ki is nyithatjuk, hogy a kondenzátorokat ellenőrizhessük. Ha púposak, akkor cseréljünk tápot!</li></ul>Felhívnám a figyelmet, hogy a linkelt topikban egyéb okosság is akad!</blockquote><br><blockquote><u><b><!--sizeo:3--><span style="font-size:12pt;line-height:100%"><!--/sizeo-->Melegedés<!--sizec--></span><!--/sizec--></b></u><br>Nézzük meg az alakrészek hőmérsékletét, mert könnyen lehet, hogy túlmelegszik valami. Ha úgy véljük, hogy egy-egy alkatrész hőmérséklete magas, akkor tisztítsuk ki a hűtőjét, illetve pasztázzunk újra. Az is előfordulhat, hogy a házunk szellőzése rossz. Ebben az esetben szereljünk ventilátorokat a házba (elől be, hátul ki)!</blockquote><br><blockquote><!--coloro:#ff6000--><span style="color:#ff6000"><!--/coloro--><b><!--sizeo:3--><span style="font-size:12pt;line-height:100%"><!--/sizeo--><span><a class="linkclass" href="http://www.pcworld.hu/forum/index.php?showtopic=12590">http://www.pcworld.hu/forum/index.php?showtopic=12590</a></span><!--sizec--></span><!--/sizec--></b><!--colorc--></span><!--/colorc--></blockquote><br><blockquote><u><b><!--sizeo:3--><span style="font-size:12pt;line-height:100%"><!--/sizeo-->Alaplap<!--sizec--></span><!--/sizec--></b></u><ul><li> Alaplaphiba miatt is újraindulhat a számítógépünk, de nem kell azonnal a legrosszabbra gondolni. Előfordulhat, hogy csak a BIOS beállításai nem megfelelőek, célszerű lehet CMOS resetet végezni, illetve a problémás beállításokat ellenőrizni (pl. AGP fast write kikapcsolása)!</li><li> Ha ennyi nem elég, akkor szintén kérjünk kölcsön egy alaplapot teszteléshez.</li></ul></blockquote><br><blockquote><u><b><!--sizeo:3--><span style="font-size:12pt;line-height:100%"><!--/sizeo-->Merevlemez<!--sizec--></span><!--/sizec--></b></u><ul><li> Kábelcsere</li><li> Hard Disk Sentinel</li></ul></blockquote><br><blockquote><!--coloro:#ff6000--><span style="color:#ff6000"><!--/coloro--><b><!--sizeo:3--><span style="font-size:12pt;line-height:100%"><!--/sizeo--><span><a class="linkclass" href="http://www.pcworld.hu/forum/index.php?showtopic=12920">http://www.pcworld.hu/forum/index.php?showtopic=12920</a></span><!--sizec--></span><!--/sizec--></b><!--colorc--></span><!--/colorc--></blockquote>
+			<br>
+			<!--IBF.ATTACHMENT_378323-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Friedrich  2009. június 9. 11:21</h4>
+			<p>Sziasztok.<br><br>Van egy olyan apró, uszkve 3 hónapja tartó problémám a géppel, hogy bármit futtatok rajta -legyen az játék, vagy egyéb- kb 15-20p múlva befagy. Tulajdonképpen nincs kék halál, egyszerűen megáll és csak resettel lehet újra életet lehelni bele.<br>Először mikor ez jelentkezett a memória ugrott be elsőnek, no azt ki is cseréltem de a hiba nem szűnt meg.<br>Ezt követően új vinyó került bele, új dvd olvasó, új proci de még mindig ugyanez a gond.<br>Az alaplapom kb fél éves, a vga dettó, egyedül most már csak a táp az ami elmúlt 8 éves.<br><br>A bios-t átnéztem, az rendben van, a win szintén kifogástalan, minden cumó ami a gépen van vírusmentes és csak azokat a progikat szoktam feltenni amiket nap mint nap használok (mint pl.: ACDsee, Daemon-tools, winrar + amik kellenek, így az alaplapi vezérlők és a latest vga driver) de mostanra már ott tartok, hogy kivágom az egészet csukott ablakon keresztül, mert egy egészségeset nem tudok játszani se vele, hogy be ne fagyjon.<br><br>A gépem most így néz ki:<br>- Win Xp Pro v.2002 sp2<br>- Intel P4 2600mhz proci<br>- 1gb DDR1 400<br>- ASRocK P4VM900-SATA2 alaplap<br>- GF EN8400GS 256DDR2 vga (bár spec ennél nem értem, hogy a driver, everest vagy bármi más miért 512mb-nak írja a memóriáját miközben csak 256)<br>- 160Gb Seagate HDD (ide)<br>- alaplapi hang<br>- codegen/sowah [atx 2.03(p4) model: 300x]<br><br>Tulajdonképpen már szinte mindent kipróbáltam. Kicseréltem azon cuccokat mik már picit idősebbek voltak, újra lett húzva a win, víruskukucs lett minden mentett adatomon, portalanítva lett mindenhol (!) a gép de semmi látszatja, hogy bármit is tettem volna. Van, hogy filmet se tok végignézni, vagy egyszerűen már az indulásnál megfagy.<br><br>Nagyon szépen megköszönném ha tudnátok nekem segíteni, hogy mi lehet a gond.<br><br><!--coloro:#FF0000--><span style="color:#FF0000"><!--/coloro-->Ha nem kékhalál, akkor megvan a megfelelő topikja. Valamint ajánlok egy magyar nyelvtanfolyamot. &lt;KGigi&gt;<!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_391531-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. június 9. 11:22</h4>
+			<p>Tápcsere: FSP 350PNF
+			<br>
+			<!--IBF.ATTACHMENT_391532-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: ezermester  2009. június 9. 11:30</h4>
+			<p>Ha itt kezdted volna, a táppal kezdted volna, meg az adatkábelek cseréjével. Most olcsóbb lenne. <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/roll.gif" style="vertical-align:middle" emoid=":hááát:" border="0" alt="roll.gif"><br>Mindent kicseréltél, csak éppen az ATA adatkábelt nem. Pedig ha érintkezési hiba okozza a fagyást, az az első, aztán hamar utána a táp is.<br>8 éves codegen. Eddig te vagy a nyerő a kategóriában. Ezt a kort még nem haladta meg senki.<br>Vedd ki, és tegyél rá egy kétgombos CD-t, meg egy aktív hangfalat. Jó lesz konyha CD lejátszónak. <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif">
+			<br>
+			<!--IBF.ATTACHMENT_391535-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Friedrich  2009. június 9. 11:41</h4>
+			<p>Erről jut eszembe: a létező összes Ide kábelt kicseréltem a gépben kb 1 hónapja bontatlan, vadi új darabokra de ez se volt okés. Tehát mégiscsak maga a táp lenne a ludas? Annyit filóztam rajta, hogy le kéne cserélni mert már matuzsálem de arra jutottam mindig, hogy ha nem lenne jó akkor már elfüstölte volna a gépem, vagy be se indulna. De ezek szerint mégis az, rendben, nagyon köszönöm a segítséget, amint tudom, kicserélem egy újra. Bár, hogy őszinte legyek, nemigazán tudom, megéri-e öt rongy alatt venni de sajna kilőttem szinte minden tartalékom amit a gépre tettem. Még egyszer köszönöm a segítséget. Most már legalább tudom, hogy ha van valami gáz, van hol megérdeklődhetem, nem pedig ''észnélkül'' cserékbe ugrani. <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/ani_wink.gif" style="vertical-align:middle" emoid=";)" border="0" alt="ani_wink.gif"> A cd lejátszós ötlet oda***, meg is csinálom. <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"><br><br><!--coloro:#FF0000--><span style="color:#FF0000"><!--/coloro-->Ugyanaz...<!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_391539-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: ezermester  2009. június 9. 11:47</h4>
+			<p>A trabant is még megy.<br><br>Kérdés kit visz el a zebrán 30 éves kopott fékkel.<br>Cseréld le, minél gyorsabban.<br>Ne 5000.-ért, hanem legalább 10-ért. Ha valami kereskedő tud egy príma tápot, de tényleg nagyon jót 4300-ért, akkor keress egy másik kereskedőt! Ha 5600.-ért tudja, az ugyanaz, csak drágábban.<br><br>A CD-s kütyü műszaki segítségét privátban, ha szükség lesz rá.
+			<br>
+			<!--IBF.ATTACHMENT_391540-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Akapella  2009. július 28. 12:04</h4>
+			<p>Sziasztok!<br>Segítség kéne, mert a gépem leszokott fagyni van amikor a windows logonál fagy le és van amikor már teljesen belépett és lépnék be Valami játékba vagy internetbe.De igazából nem csak ennyi baja van, van amikor nem akar be bootolni és kéri a cd\dvd-t, ilyenkor kikapcsolom a gépet és várok 30percet utánna általában elindul és van még 1 gond az pedig olyan hogy teljesen belépett a gép, jáccok vagy valamit csinálok huzamosabb ideig és 1x csak kattanás a merevlemezből és lekapcsolja.(2 hdd-m van és szerencsére nem azt kapcsolja le ameiken a Windows van.)<br>Segítségeteket előre is köszönöm.
+			<br>
+			<!--IBF.ATTACHMENT_397195-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Temporary  2009. július 28. 16:16</h4>
+			<p>A kattanás a merevlemezből és utána fagyás szerintem tápellátási hibájára utalhat.  Ki kellene próbálni másik csatlakozón, tápkábelen, majd esetleg másik táppal is. Próba kedvéért betehetsz egy másik diszket is amiért nem kár <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif">  Ha továbbra is ugyanazt csinálja, akkor keress egy szakembert. <br><br>
+			<br>
+			<!--IBF.ATTACHMENT_397239-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: djgala123  2009. augusztus 3. 13:02</h4>
+			<p>Sziasztok!<br><br>Állandóan lefagy a gépem és hardveresen (lefagyás után nem reagál a numlockra pl.). Teljesen független lefagyás: netezés közben, win bootolás közben, sőőt még akkor is mikor csak bejön az alaplap screenje és megáll. Ilyenkor az újra indítás reset-el történik de néha ez sem segít rajta.(reset és utána sötét képernyő, utána még1 reset attól a gép leáll és beindul utána megint leáll és utána indul újra. A hőmérséklettel szerintem nincs gond, a processzor hőmérséklet nem haladja meg a 43 fokot, az alaplap a 38fokot, a videokártya pedig az 50fokot. Memóriabusz: 265,9</p><ul><li> ASRock 945GCM-S (2 PCI, 1 PCI-E x1, 1 PCI-E x16, 2 DDR2 DIMM, Audio, LAN)</li><li> Kingmax KLDE88F-B8NU5 2 GB DDR2-800 DDR2 SDRAM</li><li> NVIDIA GeForce 8400 GS (512 MB)</li><li> FSP ATX 300PNR</li></ul>Volt olyan eset is, hogy ment a gép 1 órát hiba nélkül. Elkezdtem dvd-t írni, a konvertálás 1 óra volt (ekkor se fagyott), elkezdte írni a dvd-t és 5%-nál lefagyott....<ul><li> Memória tesztet futtattam Memtest86+ progival, semmi hiba.</li><li> Hdd teszt is volt Hard Disc Sentinel-el. Minden ok.</li></ul>A számítógép még nincs 3hónapos, de sajna már le szedtem az oldalát...úgyhogy a gari ugrott.<br>A segítség előre is köszönöm!<br><br>Üdv. Gala
+			<br>
+			<!--IBF.ATTACHMENT_397888-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. augusztus 3. 13:19</h4>
+			<p>Nézd meg másik táppal, ha ugyanúgy rossz, akkor másik alaplappal!
+			<br>
+			<!--IBF.ATTACHMENT_397890-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. augusztus 3. 13:21</h4>
+			<p>Alaplap csere előtt, még nézd meg integrált grafikus vezérlővel is.
+			<br>
+			<!--IBF.ATTACHMENT_397891-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: djgala123  2009. augusztus 3. 14:29</h4>
+			<p>Köszi a gyors választ. Magyarul vidi kártya helyett az alaplapnak a ''videókariját'' használjam?
+			<br>
+			<!--IBF.ATTACHMENT_397893-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. augusztus 3. 14:37</h4>
+			<p>Igen.
+			<br>
+			<!--IBF.ATTACHMENT_397894-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: djgala123  2009. augusztus 3. 20:41</h4>
+			<p>Még egy kérdés.<br>Kivegyem a viderókarit és úgy használjam az alaplapét?<br>Azt pedig ma vettem észre, hogy lefagyás után a cd író sem nyílik ki.
+			<br>
+			<!--IBF.ATTACHMENT_397908-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. augusztus 3. 21:15</h4>
+			<p>Igen, mivel hogy másképp nem is aktiválódna.
+			<br>
+			<!--IBF.ATTACHMENT_397913-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: djgala123  2009. augusztus 4. 14:20</h4>
+			<p>Na Sziasztok...<br><br>Kivettem a videó karit és a monitort az alaplapra kötöttem. Bekapcsoltam, betöltött a win és felismerte, hogy integrált videó vezérlő. Beraktam az alaplap cd-t meg is találta rajta, csak ahogy felpörgött a cd, fagyott.<br>Ezután az ismerős reset, sötét kép, még egy reset még sötét kép, és a harmadik reset-nél indult ujra és utána megint install megint fagyás...<img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/annoyed.gif" style="vertical-align:middle" emoid=":S" border="0" alt="annoyed.gif"><br><br>Lehetne hogy a táp rossz? pedig az is csak 3 hónapos.<br><br>Választ előre is köszi.<br>Üdv Gala
+			<br>
+			<!--IBF.ATTACHMENT_397967-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. augusztus 4. 14:36</h4>
+			<p>Leszedted előtte a régi VGA driverét?
+			<br>
+			<!--IBF.ATTACHMENT_397970-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Temporary  2009. augusztus 4. 21:52</h4>
+			<p>A próbálj ki egy másik DVD írót vagy csak húzd le a  kábeleit. Nekem egy hasonló esetben ez segített.
+			<br>
+			<!--IBF.ATTACHMENT_398016-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: djgala123  2009. augusztus 5. 15:37</h4>
+			<p>Üdv. <br><br>Nem szettem le az előző drivert, de rájöttem valamire. Van nekem a winyón egy windows 7 rc telepítője. Ezt elindítom és a windows fájlokat másol, na ott egyből lefagy. Kipróbáltam ezt úgy is hogy lehúztam mindent a dvd ről. Most kipróbálom azt hogy leszedem a videókártyám driverét. Kiveszem, kiveszem, kötök az alaplapra és megpróbálom fölrakni az alaplap videó driverjét.<br><br>Köszi mindent.<br>Csáó<br><br>Szerk. 1:<br>Újabb fejlemény. Régi driver le, kártya ki. Bekapcsolás kéri a drivert(alaplapét) cd- felpörög h telepítse, fagy...<br><br>Kb negyed óráig el sem indult.<br><br>Ugyanezt  megcsináltam úgy, hogy kihúztam a dvd-t de ugyanúgy fagy...<br>Most olyat vettem észre, hogy lehet hogy a winyók melegednek. az egyik max hőfoka 41 fok, ezt már narancssárgával jelzi  a HARD DISK SENTIEL. a másiknak pedig 39fok a maximuma.<br><br>Megnéztem a gépben, hogy közel vannak egymáshoz. Széjjelebb szedtem őket, most tesztelek.<br>Írjatok mi lehet a bajom.<br><br>Köszi. Csáó<br><br>Szerk. 2:<br>Ugynézki, hogy ez a winyó hőmérséklet se hiba, mert ugyanúgy fagyott, 33fokon is <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/annoyed.gif" style="vertical-align:middle" emoid=":S" border="0" alt="annoyed.gif"><br><br>Valamit írjatok légy szíves. Köszi. Csáó
+			<br>
+			<!--IBF.ATTACHMENT_398068-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. augusztus 5. 16:04</h4>
+			<p>Szerintem annyi mindent tettél már rá a gépre, hogy formázz. Aztán menjenek fel normálisan a driverek. Ha marad a hiba, akkor hardver.
+			<br>
+			<!--IBF.ATTACHMENT_398075-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: djgala123  2009. augusztus 11. 16:31</h4>
+			<p>Üdv. Szerintem biztos hardver...<br>Megint a win7 telepítést mondom(ami más gépen föl tudtam rakni).<br><br>Ugye gépen indítom elindul a telepítés, gép automatikusan újraindul, folytatódik a telepítés és egy bizonyos százaléknál lefagy. És itt szerintem semmi köze a drivereknek hozzá.<br><br>Léécci valami ötletet.<br><br>Csáó
+			<br>
+			<!--IBF.ATTACHMENT_398576-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. augusztus 11. 17:46</h4>
+			<p>Korábbi Windows verziók telepítésénél is fagy?
+			<br>
+			<!--IBF.ATTACHMENT_398578-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2009. augusztus 11. 19:10</h4>
+			<p>Milyen optiai meghajtók vannak a gépedben? Mert egyszer CD-t írsz, egyszer DVD-t. Több is van?
+			<br>
+			<!--IBF.ATTACHMENT_398582-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: djgala123  2009. augusztus 11. 20:57</h4>
+			<p>Igen másnál is fagy, pl xp-nél is.<br><br>Csak egy meghajtó van és az is uj egy Lg dvd író. <br><br>De már próbáltam ugy hogy kikötötem és ugyis fagyott...
+			<br>
+			<!--IBF.ATTACHMENT_398596-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: ezermester  2009. augusztus 12. 0:53</h4>
+			<p>Én most cseréltem le egy tápot. Egy hónapos volt. Folyton lefagyott a gép. Nem találtam hibát, így tápcsere volt. Most jó. Ha nem lenne jó, akkor alaplap kuka.
+			<br>
+			<!--IBF.ATTACHMENT_398602-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: djgala123  2009. augusztus 12. 9:23</h4>
+			<p>Üdv.<br><br>Remélem akkor táp lesz. Van itthon tápom ami jó csak az a baj vele hogy a csatija 20 pin-es, ami kell az meg 24 pin-es.<br><br>De megpróbálok szerezni, jó lenne ha ez lenne a baja ez nem olyan nagy kiadás.<br><br>Köszi mindent.<br><br>Szép napot <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/cool.gif" style="vertical-align:middle" emoid="8)" border="0" alt="cool.gif">
+			<br>
+			<!--IBF.ATTACHMENT_398622-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. augusztus 12. 9:28</h4>
+			<p>20 pin-essel is elindulhat. <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/ani_wink.gif" style="vertical-align:middle" emoid=";)" border="0" alt="ani_wink.gif">
+			<br>
+			<!--IBF.ATTACHMENT_398625-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: djgala123  2009. augusztus 12. 10:33</h4>
+			<p>Elindulhat?<br><br>Az mit jelent?<br><br>Ha nem indul akkor nem lesz baja másnak ugye?<br>
+			<br>
+			<!--IBF.ATTACHMENT_398648-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. augusztus 12. 10:38</h4>
+			<p>A +4 drót extra tápellátás miatt van, ha a géped nem igényel semmi ilyet, akkor elindul. Ha nem, akkor szerezned kell egy átalakítót, vagy egy másik tápot.
+			<br>
+			<!--IBF.ATTACHMENT_398650-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: djgala123  2009. augusztus 12. 10:42</h4>
+			<p>Köszi a választ, akkor kipróbálom.
+			<br>
+			<!--IBF.ATTACHMENT_398653-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: djgala123  2009. augusztus 13. 13:07</h4>
+			<p>Üdv.<br><br>Érdekes események...<br><br>Valahogy, nem tudom, hogy feltudtam rakni a win7-et amitől fagytam egyfolytában.<br><br>Na amióta az van fönt egyszer sem fagytam le. (egyszer talán, mikor újraindítottam, és sötét kép volt, reset után indult simán)<br><br>Drivert nem raktam fel semmit, az van fent amit a win fölrakott magától.<br><br>Lehet mégiscsak a driver-ek miatt fagyott...<br><br>Üdv... <br><br>
+			<br>
+			<!--IBF.ATTACHMENT_398747-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: mokuska1  2009. augusztus 20. 17:08</h4>
+			<p>Sziasztok!<br><br>Ez pontosan mit jelent?<br>"A képernyő illesztő nem válaszol és utána helyreállt,az nvidia windows kernel mode driver version 186.18" <br>Ezután pár másodpercre lefagy utána megy. Windows 7-en van ilyen hiba, XP-n nincs. Gainward 6600GT videokártyáról van szó.<br>Új driverrel ugyanez a baj.
+			<br>
+			<!--IBF.ATTACHMENT_399313-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. augusztus 20. 17:29</h4>
+			<p>Eleve hiba volt felrakni a régi 186.16-ost, hiszen az túl régi  driver és nem is Win 7-re készült.<br><span>Takarítsd le a <a class="linkclass" href="http://www.drivercleaner.net/-el">http://www.drivercleaner.net/-el</a> vagy a <a class="linkclass" href="http://www.guru3d.com/category/driversweeper/-el">http://www.guru3d.com/category/driversweeper/-el</a> Majd tedd fel a legújabb Windows 7-es drivert (Platformra ügyelni: <a class="linkclass" href="http://www.nvidia.co.uk/object/win7_winvista_32bit_190.38_whql_uk.html">http://www.nvidia.co.uk/object/win7_winvista_32bit_190.38_whql_uk.html</a> <a class="linkclass" href="http://www.nvidia.com/object/win7_winvista_64bit_190.38_whql.html">http://www.nvidia.com/object/win7_winvista_64bit_190.38_whql.html</a>)
+			</span><br>
+			<!--IBF.ATTACHMENT_399314-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: mokuska1  2009. augusztus 21. 8:31</h4>
+			<p>Köszi, megnézem, jó-e.<br><br><strike>köszi meg nézem jó e.</strike><br>---<br>Sajnos a hiba megmaradt, ugyanazt csinálja.<br><br><strike>sajnos a hiba meg marat ugyanezt csinálja drv nem jó  amit ajánlotál.</strike><br><br><!--coloro:#ff0000--><span style="color:#ff0000"><!--/coloro-->Vazz...<!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_399328-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. augusztus 21. 13:10</h4>
+			<p>Formázz, és felejtsd el a régi, nem kompatibilis driverek-et.
+			<br>
+			<!--IBF.ATTACHMENT_399339-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Darkfun666  2009. október 29. 12:50</h4>
+			<p>Sziasztok! Lenne egy kicsit nagy problémám.<br>Egy hónapja vettem egy 4 magos amd phenomX4-es procit, hozzá alaplappot, 4 gb ramot. Működött, semmi baja nem volt. Most elkezdte azt csinálni, hogy akármelyik játékba belépek, fél perc után befagy. Eltűnik a kép, majd visszajön, megy tovább a játék, majd fél perc után visszajön, megint eltűnik, majd újraindul...<br>Nem tudom már, mi lehet a gáz. A videókarim INNO 3d 8800 GT 1Gb. Lehet a vga-mal van valami?<br>Help pls <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif"><br>Előre is köszönöm!<br><br><!--coloro:#FF0000--><span style="color:#FF0000"><!--/coloro-->Ezt csak azért nem dobom ki, mert első hozzászólásod. Gyakorlatilag az egészet újra kellett írnom, hogy értelme legyen. &lt;KGigi&gt;<!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_404758-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2009. október 29. 13:22</h4>
+			<p>Milyen tápod van?
+			<br>
+			<!--IBF.ATTACHMENT_404759-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Zajos  2009. október 30. 11:02</h4>
+			<p>Sziasztok!!!<br>Olvastam a fórumot de nem kaptam választ a hibára ami a gépemet sújtja !!!<br>A hiba jelenség elégérdekes mivel nem mindig jelentkezik , úgy három-négy naponta gondol egyet és kimerevedik a kép [lefagy az egész] és csak újra indítás után áll helyre !!<br>A kérdésem az hogy okozhatja a merevlemez túlmelegedése ami 50-52fokos!!!<br>Vagy valami más? A meghajtó samsung ! <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/no.gif" style="vertical-align:middle" emoid=":nem:" border="0" alt="no.gif">  <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/blush.gif" style="vertical-align:middle" emoid=":upsz:" border="0" alt="blush.gif"><br>A kábeleket cseréltem!<br>A lefagyás teljesen független volt , hogy a bootolás során , internetezés közben ....stb  <br>A táp egy Chieftec amit nem rég raktam be , szerintem az jó !!!!<br>Memória modul jó le lett próbálva a memtessel !!!
+			<br>
+			<!--IBF.ATTACHMENT_404871-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Dávid Csaba  2009. október 30. 12:58</h4>
+			<p>A merevlemez magas hőmérséklete okozhat ilyesmit, na de bootolás közben? Hacsak nem hevítetted előtte, nem lehet induláskor ilyen meleg. Ha jól emlékszem, 50 fok a felső határ, ami még elfogadható, de csak több órás intenzív használat után. <br>Hasonló gondom nekem is volt egy korábbi géppel, annak az alaplapja volt beteg.
+			<br>
+			<!--IBF.ATTACHMENT_404888-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Zajos  2009. október 30. 13:43</h4>
+			<p>Szia!!!<br><br>Köszönöm a választ !!!!<br>Úgy látom, hogy nálam összetett hiba van !!!!<br>Mind a merevlemez és a alaplap is rendetlenkedik !<br>Valami programmal letudom próbálni az alaplapot ? <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/bulb.gif" style="vertical-align:middle" emoid=":ötlet:" border="0" alt="bulb.gif">
+			<br>
+			<!--IBF.ATTACHMENT_404894-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: update0630  2009. október 31. 11:39</h4>
+			<p>Ha isorol telepítek, nem mindig, de kb minden 2. alkalommal lefagy a gépem. Hűtés meg van oldva rendesen, próbáltam több progival is a mountolást, egyik se jó.<br>Ötletek?
+			<br>
+			<!--IBF.ATTACHMENT_405007-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: knoxie  2009. november 3. 22:20</h4>
+			<p>Sziasztok!<br>Problémám:Nem rég cseréltem alaplapot a gépembe (GA-M720-US3) fel raktam a win 7-et. A driverek rendesen fel is települtek minden okés volt. Aztán egyszer csak elkezdett lefagyni a játékoknál, aztán már akkor is amikor csak windows-ba zenét hallgatok és töltök meg közbe böngészek mindezt úgy, hogy a hang is beragad. Aztán el telt pár nap lefagyás nélkül. Utána bekapcsoltam a gépet és bejött a windows recovery tool. Ott Startup repair-re rámentem utána indult csak el. Ez után csinálta a lefagyásokat ugyanúgy. Aztán, egyszer csak nem bootolt be a win 7 a régi xp viszont igen csak nem tudott elindulni mivel a régi alaplapi driverek voltak rajta. akkor úgy sikerült életre keltenem a win 7-et, hogy nyomtam F8-at bejött a windows memory diagnostic azt hagytam végig menni utána bebootolt. Ezek után ramokat megfordítottam meg másik portba is raktam de ugyanaz. Leszedtem a memtestet be bootoltam róla de közbe is lefagyott, az óta nem futattam még de amíg ment nem írt ki semmi hibát. Szóval kérdésem az lenne, hogy most szerintetek a memóriákkal van baj amiknek eddig semmi baja nem volt előző deszkán vagy a deszkának van baja vagy driver összeakadás?<br>Esetleg még arra tippelek, hogy nekem azt mondták, hogy a procira egy borsószemnyi pasztát tegyek na én ennél egy kicsivel kevesebbet raktam rá mivel úgy is szétterül rajta és a bordát is a régihez képest 180 fokkal elforgatva tettem rá, mert különben nem érte volna el a drót a CPU_Fan-t. Segítségeket, véleményeket előre is köszönöm.
+			<br>
+			<!--IBF.ATTACHMENT_405320-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. november 6. 23:25</h4>
+			<p>Ha közvetlenül bekapcsolás után sem tudsz memtestet futtatni, akkor a melegedést kizárhatjuk. Érdemes lenne memtestet futtatni egy másik gépen.
+			<br>
+			<!--IBF.ATTACHMENT_405598-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: StevieTheGod  2009. november 7. 15:39</h4>
+			<p>Hello!<br><br>Az én problémám:<br><br>Alig egy hónapja raktam össze egy teljesen új gépet. És gyakran előfordul, hogy a bekapcsolásnál nem indul el rendesen. Azaz a gép bekapcsol, csak nem indul el... a monitor sötét és nem történik semmi. Kikapcsolom, bekapcsolom újra és elindul. És a legtöbb játéknál 10-20 perc után lefagy, és indíthatom újra.<br>A gép:<br><br>-Alaplap:         ASRcok A770De+<br>-Processzor:    AMD Phenom II X3 720 Black Edition<br>-VGA:             Sapphire HD4850 1GB DDR3 <br>-Táp:              Gigabyte Superb 460W<br>-Memória:       Samsung 2GB<br>-Merevlemez:  SAMSUNG HD321KJ<br><br>Esetleg valamelyik alkatrész nem jó a többihez? Előre is köszönöm a segítséget!
+			<br>
+			<!--IBF.ATTACHMENT_405660-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. november 7. 19:08</h4>
+			<p>Hogyan fagy le? Kimerevedik, kékhalál, fekete lesz a képernyő, kidob az asztalra stb.
+			<br>
+			<!--IBF.ATTACHMENT_405682-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: StevieTheGod  2009. november 7. 19:13</h4>
+			<p>Hát egyszerűen kimerevedik és kész...se kép se hang, nem lehet csinálni semmit a géppel csak reset...<br><br>(Ahogy elkezdtem ezt a hozzászólást írni, akkor is lefagyott)
+			<br>
+			<!--IBF.ATTACHMENT_405685-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. november 7. 19:57</h4>
+			<p><span>Futtass <a class="linkclass" href="http://www.pcworld.hu/forum/index.php?showtopic=12590">http://www.pcworld.hu/forum/index.php?showtopic=12590</a> Legalább 2-3 alkalommal menjen végig.
+			</span><br>
+			<!--IBF.ATTACHMENT_405691-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: StevieTheGod  2009. november 7. 22:13</h4>
+			<p>Okés, köszönöm szépen!
+			<br>
+			<!--IBF.ATTACHMENT_405723-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: StevieTheGod  2009. november 11. 20:17</h4>
+			<p>Lefuttattam a memtestet, ment vagy 18 órát, de nem talált hibát. Akkor most mit csináljak?
+			<br>
+			<!--IBF.ATTACHMENT_406060-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. november 14. 15:22</h4>
+			<p>Akkor próbálkozz egy másik VGA-val. Előtte ha beindul, csökkentett módban Driver Sweeperrel le kellene szedni a másik drivert.
+			<br>
+			<!--IBF.ATTACHMENT_406240-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: ZcSlay3r  2009. november 15. 13:01</h4>
+			<p>Sziasztok, olyan problémám van hogy elindul a gép viszont a memóriateszt után lefagy, nem kezdi el keresni a merevlemezeket, illetve a BIOS-ba se tudok belépni... Esetleg megoldás erre a problémára???<br>Előre is köszönöm!
+			<br>
+			<!--IBF.ATTACHMENT_406342-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2009. november 15. 13:56</h4>
+			<p><span>Első lépésként te is futtass <a class="linkclass" href="http://www.pcworld.hu/forum/index.php?showtopic=12590">http://www.pcworld.hu/forum/index.php?showtopic=12590</a> Legalább 2-3 alkalommal menjen végig.
+			</span><br>
+			<!--IBF.ATTACHMENT_406346-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: BáGyu  2009. november 17. 10:26</h4>
+			<p>Mindenki okulására.<br>Van egy nem túl új Pc-m, melyben az alábbi eszközöket használom:<br>P4 3GH Prescott<br>Ati Radeon HD 2600 XT AGP<br>4db HDD ebből az egyik problémás<br>2 db optikai meghajtó<br>LG Flat. 19"-os monitor.<br>350 W Noname táp<br><br>A történet a következő, az utóbbi időben először csak heti, majd napi egy-egy alkalommal fagyogatott a gépem. Amikor már egy indítás után a memóriateszteig sem jutott el és csak a második, harmadik indítás után töltött be rendesen, majd a Windows is fagyott, már kapkodni kezdtem. Teszteltem MemTeszt 86, FutureMark stb., de semmi különös nem történt. Kivettem a hibás HDD is, azt nem is mondtam a monitorom hol alig látható módon, hol jobban villódzott. A probléma maradt. Radikális lépésre szántam el magam, vettem egy FSP SAGA II 400W ATX/EATX tápegységet, de mielőtt beszereltem volna csontra szétszedtem a számítógépet, csak a processzort hagytam a helyén. A gép belsejét egy kompresszorral teljesen portalanítottam, 3 hónap alatt iszonyat mennyiségű por gyült fel benne. A videókártyából szabályosan egy pordugó jött ki  <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/huh.gif" style="vertical-align:middle" emoid=":huh:" border="0" alt="huh.gif"> A csatlakozókat - amihez hozzáfértem - enyhén alkoholos zsebkendővel, fültisztítóval megtörölgettem. A gépet összerakatam és minden hardvert visszaraktam.<br>A gép már egy hete probléma nélkül üzemel a monitor nem villódzik.<br>Összefoglalva: szedd szét, rakd össze újra, közben tisztítsd meg, esetleg vegyél egy új tápot.<br>Remélem tudtam segíteni <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif">
+			<br>
+			<!--IBF.ATTACHMENT_406472-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Dumdum87  2009. november 18. 16:47</h4>
+			<p>Sziasztok!<br><br>Segítséget szeretnék kérni, mivel elakadtam a gépem valamilyen ismeretlen hibájának megoldásánál.<br>A probléma a következő:<br>  Bekapcsolás után hibátlanul működik, egészen addig, míg nem kezdek el valami olyat művelni, ami egy kicsit is leterheli (ez általában videó szerkesztést jelent, ritkább esetben játékot). Ilyenkor egy ideig gond nélkül megy minden, majd random(5-10-15 perc munka után) a gép egyszer csak lefagy.<br>Minden alkatrész max 1-1,5 éves, friss win7-tel és driverekkel.<br><br>Kizártam a ramot, videókarit és a merevlemezeket, de itt elakadtam, bármit csinálok vele, a gond ugyanúgy fennáll továbbra is.<br><br>A gép:<br> <br>- Asus M2N SLI Deluxe alaplap<br>- x2 6000+ os proci<br>- 4Gb DDR2 kingston ram<br>- MSI 9800Gt 1Gb videókari<br>- Samsung vinyók (Sata mind)<br>- 450W táp (ez még gyanús, de másik táppal is meghalt a rendszer)<br><br><br>Bármilyen ötletért vagy javaslatért nagyon hálás lennék, a gépet főleg munkához használom, és így elég nehéz produktív munkát letenni <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/annoyed.gif" style="vertical-align:middle" emoid=":S" border="0" alt="annoyed.gif"><br><br><br>Előre is köszi <br>Dumdum
+			<br>
+			<!--IBF.ATTACHMENT_406551-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. november 18. 19:05</h4>
+			<p>Jó-jó, de milyen tápokról van szó?
+			<br>
+			<!--IBF.ATTACHMENT_406567-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Dumdum87  2009. november 18. 20:49</h4>
+			<p>Valami noname, Purepower vagy ilyesmi, de másik táppal is fagyott <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/annoyed.gif" style="vertical-align:middle" emoid=":S" border="0" alt="annoyed.gif">
+			<br>
+			<!--IBF.ATTACHMENT_406575-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: BáGyu  2009. november 19. 7:54</h4>
+			<p>Első kőrben szerintem a táp, de:<br>A hűtéssel mi a helyzet? Poros a géped belül?<br>A merevlemezeket mivel tesztelted?
+			<br>
+			<!--IBF.ATTACHMENT_406590-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Dumdum87  2009. november 19. 9:53</h4>
+			<p>Jogos a kérdés:)<br>Hűtés gyári, de kb havonta portalanítom, és soha nincs fönt a gép oldala.<br>A merevlemezt most tesztelem, illetve igazság szerint új windowst rakok másik vinyóra(nem csak emiatt), és akkor talán...
+			<br>
+			<!--IBF.ATTACHMENT_406596-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: ShayneM7  2009. november 26. 14:31</h4>
+			<p>Bocsi,hogy ide írom..de ehhez hasonló problémának nem leltem topicot..<br>Szóval az lenne a problémám,hogy játék,Webcamozás,videó nézés közben..a legváratlanabb pillanatokban elmegy a kép..de nem a monitor kapcsol ki,hanem effektíve elfeketedik..és csak időnként tér vissza a normális kerékvágásba..ráadásul most már reboot után sem javul meg..csak 4. 5. újraindításra kb..<br>Az lenne a kérdésem,hogy ez vajon szoftver probléma,vagy a VGA-m csesződhetett el?
+			<br>
+			<!--IBF.ATTACHMENT_407135-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2009. november 26. 17:14</h4>
+			<p>Inkább a VGA. Ventilátor pucolás, kártya érintkezőinek tisztítása esetleg segíthet.
+			<br>
+			<!--IBF.ATTACHMENT_407146-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2009. november 26. 19:19</h4>
+			<p>Ha nem kapcsol stand by állapotba, akkor szerintem a monitor főtt meg (szó szerint).
+			<br>
+			<!--IBF.ATTACHMENT_407159-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: ShayneM7  2009. november 26. 22:09</h4>
+			<p>Azóta rájöttem,hogy a probléma a VGA túlmelegedése..de nem kispályás módon.. 90 - 100 fok körül mozog.. Pedig nem egy atom jó kártya..Hiába tisztítottam meg a ventiket..és dugtam rá újra..annyit értem el,hogy kb 7-8 fokot csökkent a hőmérséklet..de még így is magas..és ugyanúgy elmegy a kép,ha valami megterhelőbbet futtatnék..<br>Meglehet kevés a 3 hűtő ami benne van.. <br>Meg lehet ezt úszni új VGA vásárlása nélkül?<br><br>mármint a házon lévő alap hűtő tuti nem elég..a VGA-n lévő meg valószínüleg nem megfelően működik,ha a GPU dióda hőmérséklete 75-80 fok között mozog
+			<br>
+			<!--IBF.ATTACHMENT_407171-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2009. november 27. 8:14</h4>
+			<p>Esetleg leszedheted a VGA hűtőt és újra pasztázva visszateheted.
+			<br>
+			<!--IBF.ATTACHMENT_407187-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KeLa  2009. november 27. 13:46</h4>
+			<p>Ilyennel még nem találkoztam!<br><br>Egy ismerősöm keresett meg az este, segítsek már, nem tudja mi lett a gépükkel a szerverrel. Látják az adatokat de nem férnek hozzá. Nincs joga senkinek. Valami vírusra gondoltam ezért mondtam hozza el a vinyókat mikor jön haza és megnézem. Az adatok tárolására használt winyónál mindenki jogosultsága törölve volt. A könyvtárak-fájlok több mint 90%-ánál már felhasználó sem volt található. Persze így a víruskeresés sem volt megoldható! Keservesen visszaállítottam a jogokat. Volt ahol fájlszintre kellett menni, mert a könyvtárszint nem volt elég. Ezen nem találtam semmi vírust.<br>Jött a másik winyó. Ezen két partíció van, rendszer és a másikon a ritkán használt dolgok. Már itt is sok könyvtárnál volt hasonló probléma. Itt is hejreállítottam a jogokat és több víruskeresővel is átnézettem de nem találtak semmit. Reggel visszarakták a winyokat, majd nemsokára csörögtek, hogy már megint kezdődik. Most én mentem a hejszínre. Érdekes a dolog. Először az adat winyó felhasználóinak a jogai tünnek el, majd maga a felhasználó is. A winyók nem régiek és semmi jel nem utal meghibásodásra. Smart adatok és a HD Sentinel szerint minden szép és jó! <br>Már szinte az összes elérhető víruskereső és egyéb gazemberség felderítő progit végig próbáltam. De nem volt eredmény. Egyik sem talált semmit. Tiszták a többi gépek is, két asztali és egy noti. Pedig valami van! A bekapcsolt gép winyója időnként aktivitást mutat, kb. mint a rapidos letöltésnél, fel fel villan a led.<br><br>A szerveren az MS-től legálisan beszerzett 180-napos server 2003 van. Jövőre akarják a server 2008-at beszerezni. Akkorra már látják mi és mennyi kell nekik.<br><br>Jelen pillanatba az adatok lementése zajlik. Azt követően egy újratelepítés, előtte komoly formázás, stb. Bár azom gondolkodom, hogy a birtokomba lévő (én kértem annó az MS-től) Small Busines Server 2003-at rakom fel. Szintén 180 napos próbaverzió, viszont azt teszteltem és nem csinált semmi kalamajkát.<br><br>Mi lehet ez a rejtéjes jogosultságfaló valami?<br><br>Ja! A csatlakozó gépeken Win 7 fut, legális dobozos. A notin XP-SP3 és minden frissítés ami kell.
+			<br>
+			<!--IBF.ATTACHMENT_407203-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2009. november 27. 15:13</h4>
+			<p>Van egy vírus, sajnos nem tudom a nevét, ami lezúzza a jogokat, illetve blokkolja a usereket is az AD-ben.<br>A Kasperskynek van hozzá jó eltávolítója. Holnap megmondom melyik az.
+			<br>
+			<!--IBF.ATTACHMENT_407205-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KeLa  2009. november 27. 15:46</h4>
+			<p>Pedig a KAV sem talált semmit, igaz abból csak az online scanner volt futtatva! Csináltam a rendszerről egy mentést, azon kipróbálom az eltávolítót, ha rátalálsz.<br>Meg azt is ki kell nyomozni, hogy kerülhetett fel a szerverre a vírus és lehet mégis fertőzött a többi gép is.<br><br>Egyébként a szerverre az avast 4 Server Edition, a többire meg a panda cloud van felrakva. Tűzfal minden gépen csak a beépített.<br><br>Köszi előre is!
+			<br>
+			<!--IBF.ATTACHMENT_407207-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KeLa  2009. november 30. 10:06</h4>
+			<p>@arpsoft<br><br>Csak szükség lenne az információra, mert a notijuk is fertőzött vele. Valószínűleg az fertőzte meg a szervert is. Azzal a főnök szokott másfelé is felcsatlakozni, így elég lehetetlen kideríteni, hol is szedte össze.
+			<br>
+			<!--IBF.ATTACHMENT_407479-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Ricso333  2010. január 16. 16:05</h4>
+			<p>Üdv mindenkinek<br><br>Tudnátok segíteni nekem, mert már 1 éve nyüglődöm a gépemmel hogy mi lehet a hiba. <br><br>Először is, néhány játéknak (nem minden játékkal csinálja) megáll a kép, bevibrál, olykor elsötétül, visszahozza a textúrákat csúnyán, vagy lefagy a gép, néha engedi a ctrl+alt+del-t, vagy újra kell indítanom a számítógépet. Kék halált eddig nem jelzett.<br><br>a gépembe ezek vannak:<br><br>Windows Xp Sp3<br>NVIDIA Geforce 9800 GT<br>AMD Athlon 64x2 Dual Core Processor 4600+<br>2.41GHz   2,00 GB RAM<br>MSI K9A platinum alaplap<br><br>Nem tudom hogy a monitorom befolyásolja-e (Samsung SyncMaster 940N) de már az összes hozzávaló drivereket kipróbáltam, ha sok drivert tettem fel újraformáztam a gépet, ha kaptam hozzá telepítőlemezt akkor azt tettem fel, de még most se tudom, mitől áll meg a kép. <br><br>Kérlek segítsetek rajtam, adjatok valami ötletet, mit kezdjek vele, mit csináljak!<br><br>Előre is Köszönöm
+			<br>
+			<!--IBF.ATTACHMENT_411061-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Jay  2010. január 16. 17:25</h4>
+			<p>Szia!<br>A legelső hozzászólást elolvastad?
+			<br>
+			<!--IBF.ATTACHMENT_411070-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Ricso333  2010. január 16. 19:28</h4>
+			<p>Rendben köszönöm, megnézem, hátha segíteni fog. Köszönöm.
+			<br>
+			<!--IBF.ATTACHMENT_411073-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: rustyka18  2010. január 28. 15:11</h4>
+			<p>Segítsen valaki...<br>A problémám a következő:<br>Amikor a cd meghajtóba beteszek 1 cdt vagy dvdt akkor újraindul de nem mindig....ugyanakkor amikor játszok valami játékot egy idő után újraindul de ez sem mindig történik....<br>mi a gáz???<br>jah és van amikor kattog a hdd s lefagy a pc...de ezt mostanában nem csinálja<br>inkább az a gáz h ha beteszek 1 cdt újraindul...segítsen valaki pls:((
+			<br>
+			<!--IBF.ATTACHMENT_411893-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2010. január 28. 15:13</h4>
+			<p>Első körben 8 év általános, majd 4 év középiskola segítene, bár a 4 év középiskola lehet, hogy nem is kell.<br><br>Tápcsere.
+			<br>
+			<!--IBF.ATTACHMENT_411895-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: rustyka18  2010. január 28. 15:48</h4>
+			<p>Ezt kinek írtad?
+			<br>
+			<!--IBF.ATTACHMENT_411900-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2010. január 28. 15:51</h4>
+			<p>Mit tippelsz?
+			<br>
+			<!--IBF.ATTACHMENT_411902-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: rustyka18  2010. január 28. 15:54</h4>
+			<p>Most mi a bajod???<br>Én feltettem egy kérdést , mert problémám van...<br>Te meg jössz itt az iskolázottsággal...<br>Amúgy most egyetemen vagyok utolsó év, nem értem mire fel írtad??<br>Ok nélkül miért kell kötekedni???
+			<br>
+			<!--IBF.ATTACHMENT_411905-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: arpsoft  2010. január 28. 16:12</h4>
+			<p>Nem ok nélkül teszi. A fórumszabályzatban - amit elfogadtál a regisztrációddal - le van írva, hogy magyarul írunk. Ebbe bele tartozik a helyesírás is. Szóval igyekezni kell helyesen írni, ahogy az iskolában tanultuk. Ennyit az iskolázottságról.<br><br><!--coloro:#CCCCCC--><span style="color:#CCCCCC"><!--/coloro-->Ne húzd fel magad, nem érdemes, ráadásul attól nem oldódik meg a problémád.<!--colorc--></span><!--/colorc--><br><br>A gondjaid forrása az optikai meghajtód lehet. Próbáltad már másik eszközzel? <br>Esetleg ha leírnád, hogy milyen konfigurációd van, az segítene. (A tápot se felejtsük ki, az is a géped szerves és nagyon sok mindenért felelős része)<br><br>
+			<br>
+			<!--IBF.ATTACHMENT_411907-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: rustyka18  2010. január 28. 17:26</h4>
+			<p>Jól van de akkor sem így kell válaszolni...<br>Ideges is vagyok kicsit mert már egy ideje újraindul a gépem.Na mindegy<br>Számítógép konfigurációm:<br><br>Operációs rendszer                                Microsoft Windows XP Professional<br>Opr. javítócsomag                                 Service Pack 3<br>CPU típusa                                        Intel Pentium 4HT, 2400 MHz (3 x 800)<br>Alaplap neve                                      Asus P4PE-X  (6 PCI, 1 AGP, 3 DIMM, Audio, LAN)<br>Rendszer memória                                  1024 MB  (DDR SDRAM)<br>BIOS típusa                                       Award Modular (05/21/03)<br>Videokártya                                       NVIDIA GeForce FX 5500  (128 MB)<br>Hangkártya                                        Intel 82801DB(M) ICH4(-M) - AC'97 Audio Controller [B-0]<br>Lemezes meghajtó                                  SAMSUNG SP0802N  (80 GB, 7200 RPM, Ultra-ATA/133)<br>Lemezes meghajtó                                  ST380012ACE  (80 GB, 7200 RPM, Ultra-ATA/100)<br>Optikai meghajtó                                  PHILIPS SPD2414T<br>Hálózati kártya                                   ASUSTeK/Broadcom 440x 10/100 Integrated Controller<br><br>Valaki segítsen légyszíves.Örök hálám
+			<br>
+			<!--IBF.ATTACHMENT_411921-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. január 28. 17:59</h4>
+			<p>És milyen tápod van?<br>Illetve a RAM(ok) márkáját se hagyd ki. A DDR1-es időszakban több volt a bóvli.
+			<br>
+			<!--IBF.ATTACHMENT_411925-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: rustyka18  2010. január 28. 18:04</h4>
+			<p>A táp márkáját hogyan lehet megtudni?
+			<br>
+			<!--IBF.ATTACHMENT_411928-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. január 28. 18:20</h4>
+			<p>Az oldalára van írva. Ha nincs, az elég rossz hír, akkor valószínűleg valami noname trágya.
+			<br>
+			<!--IBF.ATTACHMENT_411933-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: rustyka18  2010. január 28. 18:34</h4>
+			<p>Ram memóriák:<br>CSX 512 Mb DDR1 400MHz<br>PQI 512Mb Mb DDR1 400 MHz<br><br>A tápegységen nem találok semmilyen típusra utaló írást.
+			<br>
+			<!--IBF.ATTACHMENT_411935-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2010. január 28. 19:36</h4>
+			<p>Na, mit mondtam? <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/roll.gif" style="vertical-align:middle" emoid=":hááát:" border="0" alt="roll.gif">
+			<br>
+			<!--IBF.ATTACHMENT_411943-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: rustyka18  2010. január 28. 20:49</h4>
+			<p>Kicseréltem a tápegységet az volt a probléma <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif"><br>köszi a segítséget mindenkinek <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif"><br>Örök hálám!
+			<br>
+			<!--IBF.ATTACHMENT_411952-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: zsazsazsa  2010. február 19. 3:49</h4>
+			<p>Hellósztok!<br>Olvastam a szoftverellenőrzés pontban, hogy:"Fontos: Ha már a Windows telepítője is kifagy a rendszerünkön (és itt véletlenül se a SATA-tól való elszállásról beszélek), akkor biztosak lehetünk benne, hogy valami nem stimmel a hardverek környékén, legyen az BIOS-beállítás vagy memóriahiba."<br>Én így jártam, végül nagy nehezen sikerült felrakni az XP SP3at.Próbálom lokalizálni a probkémát.<br>  Az alaplap be lett vizsgálva 4x1GB RAM-mal és nem találtak problémát.BIOS frissítve.<br>  A winyókat HD Tune-nal teszteltem, negatív.<br>A VGA szinte vadi új, nincs vele probléma, hacsaknem, némi drájver hiba amivel küszködtem, de kis utánajárással sikerült kiküszöbölni a hibát. (ismeretlen okból hiányzott a nWiz file...indítási hibaüzenetet és fagyást okozott!)<br>   A proci. De mégis, mi baja lehet egy procinak? Kicsit fel volt pörgetve(3,3GB-ig) de ha rossz valamilyen érték, legfeljebb leállítja magát,...úgy hallottam nem igazán lehet elrontani egy ilyen procit és állítólag a szórás is 1:1000000, hogy rossz...<br>  A RAM-okat (3x1GB) kb 20 órán keresztül teszteltem, kuttttyabaja.<br>Olvastam, hogy ha 2~3GB-osak a RAM-ok akkor nem igazán van szükség PageFile-ra ( független a merevlemezterülettől, mert az a pár Giga manapság ugye...)<br>Töröltem és most csak a hardwer-t használja...és a gépem megint olyan, mint mikor elhoztam a boltból,...mint a villám!<br>Ez lehetett esetleg, fagyást okozó probléma szerintetek?
+			<br>
+			<!--IBF.ATTACHMENT_413725-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2010. február 19. 8:47</h4>
+			<p>A lapozófájl még nem létezik, mikor telepíted a Windows-t, így biztosan nem ez volt a probléma.
+			<br>
+			<!--IBF.ATTACHMENT_413738-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: zsazsazsa  2010. február 19. 16:13</h4>
+			<p>Igaz. Akkor még arra tippelek, vagy inkább kérdezném, hogy esetleg a winyó,(bár futtattam a HD tesztet...) vagy, aa winyó kábelével lesz a gond? Ha a SATA kábellel van probléma, azt érzékeli a HD Tune vajon?<br>Alaplap jó<br>RAM-ok jók.<br>VGA jó.<br>HD-ek jók.<br>Táp is viszonylag új és erős.<br>Optikai meghajtót is a közelmúltban vettem. Bár a két uttóbbit nem teszteltem... Nem tudom lehet-e, és ha igen, akkor a hogyanról tudna valaki mondani valamit?<br>De, ha rosszul okoskodom, akkor az ismert információk alapján tudna valaki segíteni, hogy mi lehet a baj?<br>---<br>Valaki az ismertek alapján tudna segíteni, hogy mi lehet a gond? Illetve, vajon lehet -e hardweres probléma? Ha igen, akkor a procival lesz a gond? Mi baja lehet egy procinak? Attól elromolhat, hogy 3GHz-ről 3,3GHz-re tuningolták?
+			<br>
+			<!--IBF.ATTACHMENT_413773-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: eldzsé  2010. február 24. 13:02</h4>
+			<p>Hali mindenki!<br><br>A problémám az volna, hogy egy ismerősöm gépe játék közben vagy lefagy, de legtöbbször kikapcsol a monitor és utánna semmi.  Olyan játékokra gondolok mint pl. COD4-5-6, Airborne.<br><br>Mitől lehet ez? <br>Videókártya vagy táp?<br><br>Nem pontos adatok tudom, de az everest ezt írja:<br><span><a class="linkclass" href="http://kepfeltoltes.hu/view/100224/kep_www.kepfeltoltes.hu_.png">http://kepfeltoltes.hu/view/100224/kep_www.kepfeltoltes.hu_.png</a></span><br><br>Gép adatai:<br>Abit IC7-G<br>Pentium 4 2,8Ghz<br>Nvidia 6600 GT 128MB NV43GTAGP<br>1GB RAM<br>meg egy gagyi 350W Mercury táp<br><br>Köszi előre a választ!
+			<br>
+			<!--IBF.ATTACHMENT_414143-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. február 24. 13:37</h4>
+			<p><span>A tápra szavazok. Rajta van <a class="linkclass" href="http://www.pcworld.hu/forum/index.php?s=&showtopic=12782&view=findpost&p=371985">http://www.pcworld.hu/forum/index.php?s=&amp;showtopic=12782&amp;view=findpost&amp;p=371985</a> is, ráadásul a legelső helyen.
+			</span><br>
+			<!--IBF.ATTACHMENT_414145-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: nagyjani  2010. február 24. 15:29</h4>
+			<p>PS2 billentyűzet is okozhat lefagyást, belefutottam egy ilyenbe.
+			<br>
+			<!--IBF.ATTACHMENT_414146-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Letrune  2010. április 14. 16:39</h4>
+			<p>Helló mindenki, van egy borzalmas dolog nálam.<br><br>Eleddig a gépem kis hibákkal elment, túléltem. A videókártya hibákat jelzett egy idő után, semmi nem segített rajta, se új driver, se új windows, semmi.<br><br>Ma a gép teljesen megállt. Semmit nem tudtam mozdítani, semmire nem reagált, csak a reset gombra. Egyszerűen csak msn-eztem, mikor ezt tette.<br><br>Nem értem, miért csinálja, mert eddig nem csinálta. Nincs pénzem bevinni szervizelni, új gépre meg pláne nincs... És ha ez elromlik, nekem eléggé annyi lesz, mert a suli megköveteli, hogy legyen.
+			<br>
+			<!--IBF.ATTACHMENT_416853-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2010. április 14. 16:40</h4>
+			<p>Aláírásom.
+			<br>
+			<!--IBF.ATTACHMENT_416854-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: yossarian78  2010. április 14. 18:12</h4>
+			<p>Sziasztok!<br><br>Van egy kb. 5 éves asztali gépem. Az a gondom vele, hogy ha a processzor normál órajelre (2200 MHz) van állítva lefagy. Ha a bios-ban a cpu external freq. 200ról 100-ra csökkentem, akkor ez jóval ritkábban fordul elő, de ilyenkor értelemszerűen tetű lesz. <br>Általában lefagy, de néha van kékhalál is, de ekkor csak annyit ír ki, hogy Hardwer Malfunkction. Call your hardwer vendor for support! Néha csak az egér (usb?)d<br>-.  fagy le, minden más működik! A memorián memtestet lefuttatam, de nem volt gond. Az újratelepítés sem oldotta meg a problémát.<br>asus a7n8x<br>amd barton 3200+<br>codegem táp<br>ati 9600 pro<br><br>Előre is köszönöm!
+			<br>
+			<!--IBF.ATTACHMENT_416865-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. április 14. 18:20</h4>
+			<p><b>@Letrune</b> <br>Pjotr monta: "aláírásom" <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/arrow.gif" style="vertical-align:middle" emoid=":nyíl:" border="0" alt="arrow.gif"> <br><!--quoteo--></p><div class="quotetop">IDÉZET</div><div class="quotemain"><!--quotec-->Kérdés nélkül is erre válaszolj elsőként: Milyen tápod van?<!--QuoteEnd--></div><!--QuoteEEnd--> <br><br><b>@yossarian78</b> <br>Első körben, teszteld le egy megbízhatóbb táppal is.
+			<br>
+			<!--IBF.ATTACHMENT_416869-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: yossarian78  2010. április 14. 18:34</h4>
+			<p>Van valami olyan program, amivel a tápot le lehetne tesztelni? Problémás lenne egy tápot szerezni.
+			<br>
+			<!--IBF.ATTACHMENT_416871-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. április 14. 18:56</h4>
+			<p><span>Pl. a <a class="linkclass" href="http://www.gtopala.com/siw-download.html">http://www.gtopala.com/siw-download.html</a> megmutatja az alaplapi szenzorok által mért aktuális feszültség értékeket, de nem hiszem, hogy értékelhetően tesztelhető lenne általa egy táp. Mivel a tápod szerepel <a class="linkclass" href="http://www.pcworld.hu/forum/index.php?s=&showtopic=12782&view=findpost&p=371985">http://www.pcworld.hu/forum/index.php?s=&amp;showtopic=12782&amp;view=findpost&amp;p=371985</a> Ezért a táphiba kizárása vagy megerősítése végett, tápcserével kezdeném a tesztelést.
+			</span><br>
+			<!--IBF.ATTACHMENT_416872-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: solties  2010. április 14. 19:19</h4>
+			<p>Biztos van benne igazság, már ami a tápok jellemzőit illeti.<br>De, hogy megvédjem valamennyire a codegen-t, van egy egyszerű gépünk, amiben egy 300-as codegen dolgozik már nyolc éve, és nem volt igazán kímélve! (játékok tuning tesztek stb..)<br>Annyi por volt benne, hogy a virágmagok kikeltek volna, sőt, aztán a hűtőventilátora is megadta magát, de soha semmi baj nem volt vele. Még mindig üzemképes, bár már nem használjuk, és még egy 450-es Chieftec-et is túlélt!
+			<br>
+			<!--IBF.ATTACHMENT_416876-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. április 14. 19:25</h4>
+			<p><!--quoteo(post=371985:date=2008. december 31. 2&#58;03:name=Pjotr)--></p><div class="quotetop">IDÉZET(Pjotr @ 2008. december 31. 2:03) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=371985"><img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->NEM ajánlott vételek, veszélyes tápok (Didyman):<br><b>Codegen</b> /Display/Sowah (<b>a nagyon régieket kivéve</b>, illetve az újabb szériákban már előfordul korrektebb belvilág is) <!--QuoteEnd--></div><!--QuoteEEnd-->
+			<br>
+			<!--IBF.ATTACHMENT_416878-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Letrune  2010. április 14. 20:13</h4>
+			<p>Eg Acer Aspire 5715Z laptop W65-ös táp (igen, ennyi van ráírva) van benne, gyári darab... Ha jól tudom, csak ilyen van hozzá megint, tehát...
+			<br>
+			<!--IBF.ATTACHMENT_416884-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: LightingSpeedy  2010. május 5. 18:53</h4>
+			<p>Sziasztok!<br><br>Nekem egy olyan problémám akadt az újdonsült gépemmel. Filmezés közben 1 óra elteltével kifagy a gép tehát semmire se reagál csak reset segít rajta.További tünetet akkor is produkálja ha éppen a MS virtual pc-n tesztelek valamilyen os-t jelen esetben egy xp volt.Ami a megdöbbentő h játékoknál ez a gond nem jelentkezik( GTA IV; SW: Force Unleashed)<br><br>Gép config:<br><br>PROCESZOR: AMD Phenom II 945 3.00Mhz<br>ALAPLAP: Gigabyte MA 770T- UD3<br>RAM: Kingmax 2048 MB DDR3 1333MHZ<br>VIDEOKÁRTYA: ASUS ATI HD 4770 Formula 512<br>Tápegység: Gigabyte Superb 450w/550W<br>Winchester: SAMSUNG 500 GB
+			<br>
+			<!--IBF.ATTACHMENT_417993-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: yossarian78  2010. május 18. 14:43</h4>
+			<p>Sziasztok!<br><br>Szereztem egy jó tápot, de a hiba nem oldódott meg. Továbbra is megdermed az egér, vagy lefagy a gép vagy ritkán kék halál (legutóbb ezt írta ki: trap cause unknown stop: 0x0000001 (0X00000001, 0x00000000, 0x00000000, 0x00000000). <br>Mit és hogyan lenne érdemes leellenőrizni? Egyszer a windows újratelepítése során is lefagyott, gondolom valami hardver hibának kell lenie.
+			<br>
+			<!--IBF.ATTACHMENT_418737-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. május 18. 16:46</h4>
+			<p>Milyen táp?
+			<br>
+			<!--IBF.ATTACHMENT_418746-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: BáGyu  2010. május 19. 14:06</h4>
+			<p>Szerintem nem szabad a HDD-t mint hibaforrást kihagyni!<br>Van valamilyen felügyeleti szoftvered?<br>Teszteld a merevlemezt!
+			<br>
+			<!--IBF.ATTACHMENT_418815-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: yossarian78  2010. május 20. 9:58</h4>
+			<p>Az eredeti egy codegem volt. Ez most egy Hdk, kölcsönben van nálam. Az árából ítélve ez sem egy nagy történet, de nem szerepel a gázos tápok listáján.<br>Két vinyóm van, mindkettővel jelentkezik a probléma. De azért letesztelem őket. <br>Egyébként nem melegedik túl semmi a gépben. Az usb portok közül meg mikor melyik működik.
+			<br>
+			<!--IBF.ATTACHMENT_418860-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Levkomrad  2010. május 23. 19:29</h4>
+			<p>Mint korábban mondtam mindig lefagy a gépem. Újraindítás után az everest MCP- nek 72fokot ír ki, az sok? Alapból 55-60 között szokott lenni.
+			<br>
+			<!--IBF.ATTACHMENT_419109-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Csaba_#  2010. május 23. 20:41</h4>
+			<p>Igen, az sok egy picit.
+			<br>
+			<!--IBF.ATTACHMENT_419118-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Levkomrad  2010. május 23. 20:59</h4>
+			<p>Odadugtam neki egy ventilátort és úgy lett 46C és úgy is lefagy. Mi lehet az oka a túlmelegedésnek és miért fagy le így is? Ki lett próbálva egy másik táppal is (Mercury) azzal is ugyan ezt csinálta pedig az is zsír új. Minőségi tápot meg nem tudtam kölcsönkérni. Szóval ha nincs más választás beviszem egy boltba, hogy nézzék meg. (Amúgy mindent kicseréltem benne egyesével, az se használt. <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/weep.gif" style="vertical-align:middle" emoid=":sír:" border="0" alt="weep.gif"><br><br>Most meg szerintem meghalt benn valami, mert újraindítom és bejön az Asrockos kép majd elkezd tölteni a Windows aztán bevillan a kék képernyő és újraindul.
+			<br>
+			<!--IBF.ATTACHMENT_419121-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Ratgab  2010. június 22. 11:02</h4>
+			<p>Sziasztok!<br><br>Nálam kiszámíthatatlan módon lefagy a gép! Van mikor 1-2 hetet van mikor pár hónapot is kibír, de a lefagyás mindig ugyanaz!<br><br>Általában játék közben fagy le úgy, hogy megáll a kép és folyamatos hangot ad ki a gép (gondolom a beragadt hang a játékokból). Ezután csak a reset segít, de hálistennek helyreáll a rendszer mindig.<br><br>Néha szokott olyat is csinálni, hogy a windowsban elkezd akadozni az egér és egy idő után "beragad", akárhogy mozgatom nem mozdul az egér, a gép meg tölt valamit. Ilyenkor reset után megoldódik a probléma.<br><br>Memória ellenőrizve semmi baja, winyót már cseréltem, nem oldódott meg a gond, hűtés a windows alatt nem nagyon tartom valószínűnek, hogy kevésnek bizonyul, mert sok esetben nem jön elő a gond.  Előző videókártyám tönkrement, ott is és az új-nál is ugyanaz a hiba jön elő.<br><br>Jah igen számos windows újrarakás után is előjön a hiba.<br><br>2 winchester van a gépben esetleg azok akadnak össze?<br><br>Írtam a "mennyit bír a táp" topikba is, lehet, hogy azzal függ össze a hiba?<br><br>
+			<br>
+			<!--IBF.ATTACHMENT_420651-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Temporary  2010. június 22. 13:09</h4>
+			<p>Pontosan milyen tápod van ? <br> (aláírásom  <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"> )
+			<br>
+			<!--IBF.ATTACHMENT_420658-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Temporary  2010. június 22. 13:14</h4>
+			<p><!--quoteo(post=420651:date=2010. június 22. 11&#58;02:name=Ratgab)--></p><div class="quotetop">IDÉZET(Ratgab @ 2010. június 22. 11:02) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=420651"><img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Előző videókártyám tönkrement, ott is és az új-nál is ugyanaz a hiba jön elő.<!--QuoteEnd--></div><!--QuoteEEnd--> <!--quoteo(post=420650:date=2010. június 22. 10&#58;51:name=Ratgab)--><div class="quotetop">IDÉZET(Ratgab @ 2010. június 22. 10:51) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=420650"><img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Elszenvedett többször már áramszüntetet, egyszer a túlfeszültségvédelem is bekapcsolt, .... ventillátort is kellett benne cseréltetnem ....<br>De félek, hogy egyszer csak amikor megadja magát visz magával pár részegységet is.<!--QuoteEnd--></div><!--QuoteEEnd--><br>Nagyon valószínű a táp hiba  <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"> <br>
+			<br>
+			<!--IBF.ATTACHMENT_420660-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: Ratgab  2010. június 22. 13:24</h4>
+			<p>Chieftec 450 wattos!<br><br>Már 3 éves, de eleinte is előfordult ilyesmi!
+			<br>
+			<!--IBF.ATTACHMENT_420661-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: nagyjani  2010. június 22. 14:32</h4>
+			<p>Első körben próbáld meg egy memóriával, vagy másikkal. Vannak alaplapok, amik bizonyos típusokból nem szeretik a duplaoldalast, vagy bizonyos modulokat. Az alaplap könyve segít ebben. Csak azért gondolom, mert az alaplapon kívül már minden volt szinte cserélve. Egyébként a billentyűzet (egér) is okozhat gondokat ezeken kívül.
+			<br>
+			<!--IBF.ATTACHMENT_420668-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Ratgab  2010. június 22. 14:57</h4>
+			<p>Lefagy a billentyűzet vagy az egér miatt a gép????<br><br>Hát ilyet még nem hallottam, de elhiszem neked!<br><br>Mondjuk a billentyűzet párszor már landolt a földön! Íróasztalom jellegéből adódóan könnyen "lerúgható" a billenytűzetet tartó gördülő felület. Mikor nem megfelelő szögben kelek föl a székből, előfordul, hogy kirúgom a sínéből ezt a felületet, ekkor a billenytűzet rossza esetben a földig landol!<br><br>Talán valószínűbb a táp nem?<br><br>Memóriák már voltak bevizsgálva, azoknak semmi bajuk!
+			<br>
+			<!--IBF.ATTACHMENT_420670-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: nagyjani  2010. június 23. 14:14</h4>
+			<p>Az lehet hogy a memóriáknak semmi bajuk, de amit írtam róluk az a lényeg. A billentyűzetnél elég ha eldörzsölődik a vezeték, megtörik stb. Nem is látható és el lehet kínlódni mire kiderül. Az újraindulás legtöbbször pillanatnyi zárlat miatt fordulhat elő, ez lehet persze a táp miatt is, de az inkább lefagyást okoz. Ezért nem szabad semmit kihagyni tesztnél, és a legjobb asztalon próbálni.
+			<br>
+			<!--IBF.ATTACHMENT_420709-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Ratgab  2010. június 23. 14:30</h4>
+			<p>Kösz a választ, akkor lehet, hogy egy billentyűzet cserére is benevezek, nem egy ökör ára, de megéri hátha az okozza a gondot! Egeret még nem ejtettem le egyszer sem.<br><br>Egyébként úgy döntöttem, hogy kicseréltetem a régi tápom egy jó kis corsair-re, az kevésbé okozhat hibát, mint a mostani chieftec.<br><br>Ha már új táp, úgy is kinéztem egy jó kis házat hozzá (Aerocool PGS RS-9 Pro: 6 ventihely (6 gyári 12cm-es aerocool ventivel), gumitalpak, winyó gumirozott tartók, venti sebesség szabályzás, kábelelrejtési lehetőség, alsó táp elhelyezés).<br><br>Hátha a hibát meg tudom így oldani és még plusszba sokat csökkennek az alkatrészek hőmérsékletei is.<br><br>De legalább nem fogok félni, hogy táp viszi magával a gépet! :-D
+			<br>
+			<!--IBF.ATTACHMENT_420710-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Ratgab  2010. június 24. 21:35</h4>
+			<p>Nagyjani: Megnéztem az alaplap kézikönyvét és az elirányította gigabyte honlapjára (gigabyte alaplap) és mivel nekem 2.1-es verziójú gigabyte GA-P35-Ds3-as alaplapom van ez támogatja a gépemben lévő Kingmax 1066 MHz-es memóriákat. Szóval nem a memóriát nem szereti a gépem, nem ettől van a problémám. Még ellenőrzöm a billentyűzetet is hátha az lesz a hibás.<br><br>De ha azzal sem járok sikerrel, akkor már tényleg nemtudom mi lehet.
+			<br>
+			<!--IBF.ATTACHMENT_420780-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Ratgab  2010. június 25. 14:44</h4>
+			<p>Megnéztem a gépem eseménynaplóját és pont a hiba előfordulása előtt hibát érzékelt, illetve folyamatosan hibát érzékelt.<br><br>A számítógépben kezdetektől fogva van egy RAid kártya, mivel a 2 db winyó beszerelés után nem maradt szabad kábel a DVD Rom-nak, ezért be kellett szerelni ezt a kártyát, most is így működik a gép!<br><br>A tegnapi hiba (fagyás, egér akadozás) alkalmával az eseménynapló először TCPIP-re (4226-os kód) írta, hogy a kapcsolatok száma elérte a biztonsági korlátot. <br><br>Ezután a JRAId 9-es kóddal jelzett, hogy az eszköz nem válaszolt, ezután még egy ideig figyeltem a rendszer, mivel kivételesen nem fagyott le, hanem az egér folyamatosan akadozott, kicsit ment , majd megin akadozott.<br><br>Ezt a 9-es kódot hozta fel az adott időpontban váltogatva a 15-ös kóddal, hogy az (CD Rom)eszköz nem elérhető.<br><br>Szóval, ha jól értelmezem, akkor a Raid kártyával megszűnik a kapcsolat váratlanul és ez okozza a lefagyásokat, egér akadozást.<br><br>Légyszives erősítsetek meg ebben a feltevésemben. És ha mindezt jól gondolom, akkor ezután mi a teendő, cseréljem a kártyát, vagy iktassam ki a rendszerből, vagy cseréljem a DVD Rom-ot is?<br><br>Várom a mielőbbi válaszokat.
+			<br>
+			<!--IBF.ATTACHMENT_420812-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2010. június 25. 15:09</h4>
+			<p>Először csak szedd ki a gépből, vagy csak tiltsd le az Eszközkezelőben.
+			<br>
+			<!--IBF.ATTACHMENT_420813-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Ratgab  2010. június 25. 15:13</h4>
+			<p>Kártyát vagy a DVD ROM-ot?
+			<br>
+			<!--IBF.ATTACHMENT_420815-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Ratgab  2010. június 25. 15:23</h4>
+			<p>Most néztem a Raid kártya másik végén kábel sehova sincs bedugva! Ezek szerint már ki lett rég iktatva, de a slotjába még be van illesztve! Akkor hogy tud így hibát generálni?<br><br>Vagy nem is az okozza, hanem a DVD ROM-om?
+			<br>
+			<!--IBF.ATTACHMENT_420816-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: nagyjani  2010. június 25. 20:12</h4>
+			<p>Nekem egyre gyanúsabb, hogy nem e az alaplapon lévő északi vagy déli híddal lehet probléma, ami vezérli a perifériákat. Bár ez általában laptophiba, de ott is hasonlóak a tünetek. (hőtágulás miatti érintkezésvesztés, nem csak a bga chip alatt, hanem magában bent is)<br>Tényleg mindent ki kellene zárni teljesen!
+			<br>
+			<!--IBF.ATTACHMENT_420826-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Ratgab  2010. június 26. 11:02</h4>
+			<p>Na ma ismét nem lefagyott a gépem, hanem az egér kezdett akadozni, benéztem az eseménynaplóba és 15-ös eseményt ismételgette folyamatosan, vagyis a cdrom nem áll készenlétben (DVD combo-m van).<br><br>Eseménynapló nem írt i804-es driver próblémát, amit ahogy utánaolvastam és az általad leírt egér hibánál azt szokta eseménynaplóba írni, szóval az is kilőve.<br><br>Éppen játszottam, de most nem fagyott le hálistennek így tudtam tesztelni a hibát.<br><br>Megpróbáltam az egérakadozás után rögtön lehúzni az egeret és a billenytűzetet, lehúztam, semmi változás, billentyűzet kiiktatása után egér ugyanúgy akadozott szóval az kizárva.<br><br>Mostmár minden nap legalább egyszer kiaakad.<br><br>Be is dobtam rögtön egy lemezt és meg se nyikkant, szerintem el fog szállni a DVD rom-om, mondjuk már elég régi van vagy 5 éves szóval megérett a cserére, egeret, bill-t úgy döntöttem nem bántom.<br><br>Namár most nemtudom, hogy csak a vezeték haldoklik, vagy maga a DVD ROm. Mindenesetre úgy érzem, hogy szűkül a kör!
+			<br>
+			<!--IBF.ATTACHMENT_420857-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: MOSAIC  2010. június 26. 12:10</h4>
+			<p>Hát nem hiszem, hogy a kábel haldoklik! Azért ha van másik kábeled, akkor cseréld ki és nézd meg úgy.
+			<br>
+			<!--IBF.ATTACHMENT_420860-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: yossarian78  2010. július 11. 20:46</h4>
+			<p><!--quoteo(post=416865:date=2010. április 14. 17&#58;12:name=yossarian78)--></p><div class="quotetop">IDÉZET(yossarian78 @ 2010. április 14. 17:12) <a href="http://www.pcworld.hu/forum/index.php?act=findpost&pid=416865"><img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/post_snapback.gif" alt="*" border="0"></a></div><div class="quotemain"><!--quotec-->Sziasztok!<br><br>Van egy kb. 5 éves asztali gépem. Az a gondom vele, hogy ha a processzor normál órajelre (2200 MHz) van állítva lefagy. Ha a bios-ban a cpu external freq. 200ról 100-ra csökkentem, akkor ez jóval ritkábban fordul elő, de ilyenkor értelemszerűen tetű lesz. <br>Általában lefagy, de néha van kékhalál is, de ekkor csak annyit ír ki, hogy Hardwer Malfunkction. Call your hardwer vendor for support! Néha csak az egér (usb?)d<br>-.  fagy le, minden más működik! A memorián memtestet lefuttatam, de nem volt gond. Az újratelepítés sem oldotta meg a problémát.<br>asus a7n8x<br>amd barton 3200+<br>codegem táp<br>ati 9600 pro<br><br>Előre is köszönöm!<!--QuoteEnd--></div><!--QuoteEEnd--><br><br>Az alaplap csere oldotta meg a gondot, azóta minden ok. Csak azért írtam be hátha valakinek hasonló problémája lesz van. Köszönöm a segítséget.
+			<br>
+			<!--IBF.ATTACHMENT_421750-->
+			<p></p>
+		</div><div class="printpost">
+			<h4>Szerző:: eremit  2010. július 26. 11:12</h4>
+			<p>Az a gondom, hogy gyakran - egy-két naponta - lefagy a gépem. Talán a feszültségekkel lehet baj, fogalmam sincs. A SIW-vel készítettem egy képernyőfotót a szenzorokról, így néz ki:<br><br><span><a class="linkclass" href="http://kepfeltoltes.hu/view/100726/temperature2_www.kepfeltoltes.hu_.png">http://kepfeltoltes.hu/view/100726/temperature2_www.kepfeltoltes.hu_.png</a></span><br><br>Win7-et használok, a gépem így "néz ki":<br>Ház - Cooler Master Elite 331, TÁP - Gigabyte GE-R460-V1, Alaplap - Gigabyte GA MA770-UD3, Processzor - AMD Phenom II X2 550, Memória - 2*Kingmax DDR2 KLEE88F-B8KU6, Videokártya - Gigabyte ATI Radeon HD 4850 PCI-e 512 MB, Hdd - WDC WD5000AAKS-00A7B2, DVD író - Sony Nec Optiarc AD-7200S.<br>Szünetmentes is van: MaxOffice 400 VA.<br>Köszi!
+			<br>
+			<!--IBF.ATTACHMENT_422412-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2010. július 26. 13:42</h4>
+			<p>Tápra szavazok, elég spórolós a belseje a kondikat tekintve.
+			<br>
+			<!--IBF.ATTACHMENT_422418-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: eremit  2010. július 26. 15:27</h4>
+			<p>Úgy tudtam, hogy a Gigabyte minőségi tápokat készít.<br>Egyébként a lefagyás előfordult már játéknál, az IrfanView-val, az OpenOffice-szal és a Foxit PDF-Readerrel.<br>Erről nem készít az op. rendszer valamilyen naplót? A lefagyás nem kék halálként jelentkezik, hanem az egér mozdulatlanná és mozdíthatatlanná válik, a billentyűzet nem reagál leütésekre és a képernyő ugyanazt mutatja.  <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/sad.gif" style="vertical-align:middle" emoid=":(" border="0" alt="sad.gif">
+			<br>
+			<!--IBF.ATTACHMENT_422427-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Fujitsu  2010. július 26. 20:18</h4>
+			<p>Az operációs rendszer a hardveres eredetű lefagyásokat nem tudja naplózni, legfeljebb azt, hogy a rendszerleállás váratlan volt. Gondolj bele: ha úgy lefagy az egész gép, hogy az összes folyamat megáll, akkor az a folyamat sem futhat, amelyik az Eseménynaplóba rögzítené a problémát.
+			<br>
+			<!--IBF.ATTACHMENT_422461-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: nagyjani  2010. július 27. 8:47</h4>
+			<p>Az a 80 fok az egyik szenzornál, így hogy minden szinte hidegen fut, szerintem sok. Nem éppen a chipseté lehet? Mert akkor használat közben 100 fok fölé is ugorhat, és az már sok. Hűtőbordája a rendesen fent van?
+			<br>
+			<!--IBF.ATTACHMENT_422479-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: eremit  2010. július 27. 12:47</h4>
+			<p>Az a TMPIN2 szenzor már bekapcsoláskor 80 fokot mutat. Hogy forrósodik fel ennyire 1 perc alatt?   <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/blink.gif" style="vertical-align:middle" emoid=":pislog:" border="0" alt="blink.gif">
+			<br>
+			<!--IBF.ATTACHMENT_422488-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: BáGyu  2010. július 28. 12:10</h4>
+			<p>Lehet, hogy a szenzor nem jó eredményt mér!<br>Mi a helyzet a merevlemezeddel? <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/hmm.gif" style="vertical-align:middle" emoid=":hmm:" border="0" alt="hmm.gif"><br>Kábeleket mozgasd át!<br>Alaplapot nézd át nincs-e felpúposodott kondi!<br>Én javasolnám, hogy szed szét teljesen (vezetékek le, memóriák ki stb.), portalanítsd, tisztogasd meg az érintkező felületeket.
+			<br>
+			<!--IBF.ATTACHMENT_422544-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: eremit  2010. július 30. 8:31</h4>
+			<p>Köszi a tippeket!
+			<br>
+			<!--IBF.ATTACHMENT_422643-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Dávid Csaba  2010. augusztus 7. 12:19</h4>
+			<p>Tanácsot kérnék.<br><br>Ismerős panaszkodott, hogy állandóan lefagy a gépe és időnként villódzik a monitor képe. Áthozattam vele hozzánk a PC-t (monitort nem). Kipucoltam, majd rákötöttem a saját monitoromra, boot, a frissen telepített Windows felállt. Ráengedtem a gépre mindenféle, fórumon javasolt teszt- és izzasztószoftvert, 4 órán keresztül nyüstöltem. Azon kívül, hogy eléggé melegedett a rendszer, nem tapasztaltam - nem dobott ki egy szoftver sem - semmi hibát. Se villódzás, se fagyás. <br><br>Tény, hogy a rendszerpartíciót tartalmazó merevlemez néha 48 fokos volt, a passzív hűtésű videokártya meg időnként 80 fok körülire is felment, de nem fagyott le 4 óra alatt egyszer sem.<br><br>Röviden: itt minden (?) rendben volt. <br><br>Azzal adtam vissza a gépet, hogy ha nem kell, vegye ki a kislemezmeghajtót és tegye feljebb az egyik merevlemezt, hogy jobban szellőzzön. Javasoltam egy jobb tápot is a mostani helyett, mert nem elég, hogy nem ajánlott kategóriájú, de a gép még a határon is mozog a 4 merevlemezzel. Kivettem 2 RAM-ot is (4x1GB volt benne), mert túl közel voltak a videokártya bordájához (konkrétan az egyik a lamellák közé is lógott, ráadásul nem egyformák voltak és agyoncsapták a dual channelt).<br><br>Hazavitte a srác a gépet, útközben megrendelte a Superb tápot. Most telefonált, hogy a gép megint fagy, villódzik a kép. Nálam 4 óra alatt egy hibát se produkált, nála röviddel a bekapcsolás után igen.<br><br>Kérdésem: én nem vettem figyelembe valamit, vagy elképzelhető, hogy a monitorával, netán a konnektorral, hosszabbítóval van gond, amit használ otthon? Vagy valami más tipp?
+			<br>
+			<!--IBF.ATTACHMENT_423076-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. augusztus 7. 14:53</h4>
+			<p>A villódzás lehet a képernyő hibája, de a fagyás egészen biztosan nem. Valami a géppel lesz. De hogy mi. <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/blink.gif" style="vertical-align:middle" emoid=":pislog:" border="0" alt="blink.gif">
+			<br>
+			<!--IBF.ATTACHMENT_423088-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Temporary  2010. augusztus 7. 18:09</h4>
+			<p>Rossz monitor kábel nem okozhat fagyást?
+			<br>
+			<!--IBF.ATTACHMENT_423104-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. augusztus 7. 18:24</h4>
+			<p>Nagyon nehezen tudom elképzelni. Én legalábbis még nem hallottam ilyenről. De egy próbát megér.
+			<br>
+			<!--IBF.ATTACHMENT_423106-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Dávid Csaba  2010. augusztus 8. 20:49</h4>
+			<p>Nemrég beszéltem a srác feleségével. Megtudtam, hogy elvileg a gép monitorostól egy olyan konnektorról (vagy elosztóról) kap áramot, amiből a múltkor füst szállt ki, a villanyórát meg levágta az esemény... <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/banghead.gif" style="vertical-align:middle" emoid=":fal:" border="0" alt="banghead.gif">
+			<br>
+			<!--IBF.ATTACHMENT_423164-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. augusztus 8. 21:32</h4>
+			<p>Úristen. <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif">
+			<br>
+			<!--IBF.ATTACHMENT_423168-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: sona  2010. szeptember 17. 19:40</h4>
+			<p>Sziasztok!<br>Már egy hete vacakol a laptopom (Amilo L1310G), indításkor lefagy. Eljut az üdvözöljük képernyőig és megáll, vagy bejön az asztal, pár program elindul, pl. NOD, de utána megáll. Vár egy-két percet és megjelenik a hálózati kapcsolatok ikon stb. Ezután már minden müködik normálisan, bár néha kis fagyások vannak. Ha két perc mulva nem megy tovább, akkor csak a kikapcsoló gomb segít rajta.<br>Sok mindent kipróbáltam: <br>Programokat kivettem az automatikus indításból.(NOD-ot is!)<br>Memtest megvolt. OK.<br>HDD-t ellenöriztem,HDD Regenerator, Sentinel. OK.<br>Háromszor telepítettem a Windows XP-t, hiba ugyanott ,ugyanaz.<br>Szétszedtem,kitakaritottam, csatlakozások ellenörizve. <br><br>Négy éves a gép, három éve alaplap és hdd csere volt, még garanciába. Félve kérdezem: megint alaplap?<br>Vagy mi lehet még a hiba okozója?
+			<br>
+			<!--IBF.ATTACHMENT_424713-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: nagyjani  2010. szeptember 18. 7:41</h4>
+			<p>Szerintem megint alaplap, bár így azért nehéz elsőre biztosat mondani, de jellegzetesen tápáramkör, vagy chipset.
+			<br>
+			<!--IBF.ATTACHMENT_424728-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Dávid Csaba  2010. szeptember 18. 16:29</h4>
+			<p><span><a class="linkclass" href="http://www.youtube.com/watch?v=Y8oeXR3pbPM">http://www.youtube.com/watch?v=Y8oeXR3pbPM</a></span><br><br><span>A Memtest a 2*1GB Kingmax-ra nem jelzett hibát (egy egész éjszakán át ment), az alaplapon friss (nem a BETA) BIOS van, a videokártyát 4 órán keresztül nyüstöltem tesztszoftverrel, de nem produkált hibát még 80C fokon sem. Igaz, akkor a fenti hiba sem jött elő, míg egy órával rá, a gép gazdájánál igen. <a class="linkclass" href="http://www.pcworld.hu/forum/index.php?s=&showtopic=12935&view=findpost&p=423076">http://www.pcworld.hu/forum/index.php?s=&amp;showtopic=12935&amp;view=findpost&amp;p=423076</a></span><br><br>Az alaplap IDE portja hol felismeri a slave-ben rákötött DVD meghajtót, hol nem. A master ugyanezen a csatornán egy 160GB-os merevlemez, aminek a SMART-ja (HDSentinel) kábelhibát jelez, hiába cseréltük. A másik két SATA-s WD merevlemez hibátlan, az egyiken egy Win7-tel. A tápegység egy Superb 460W, még friss, ropogós. <br><br>Az kondenzátorok egyike sem púpos, nem is színeződtek el. A ház szellőzése megfelelő.<br><br>A videón jól látható, hogy a monitor képe torz és villog is, de a monitor nem kapcsol ki. Arról nem készült felvétel, de tapasztaltam, hogy a Windows (7 és XP) használata közben is előfordul ez a hibajelenség, igaz, villogás nélkül, mert ilyenkor lefagy a gép. A hiba alkalmi, van hogy napokig nem jelentkezik, utána meg több újraindítás sem segít. Többek között akkor sem produkálta, mikor visszavitték a boltba.<br><br>Másik monitorral és kábelekkel is lepróbáltuk - szünetmentesre kötve -, a hiba ugyanúgy megjelent. A monitort D-SUB to DVI átalakítóval lehet a géphez csatlakoztatni. Ezt nem tudtuk cserélni a teszt idejére.<br><br>A fenitek alapján elsősorban az alaplapra tippelnék, ugyanakkor nem zárom ki a videokártyát sem, de minden ötletet szívesen várok!
+			<br>
+			<!--IBF.ATTACHMENT_424741-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: nagyjani  2010. szeptember 18. 18:52</h4>
+			<p>Én azt mondanám, hogy alaplapi chiphiba. Elveszíti a perifériákat, nem ismeri fel a vinyót, villog a kép. Asztali alaplapokon ritkán jelentkező hiba azért furcsa. A billentyűzet és az egér is nálad volt a Te teszted alatt? Zárlatos bill. is okozhat ilyesmit esetlegesen, vagy a házban nincs valami rendben a földeléssel, már ahol a hiba jelentkezik, mert ezek szerint nálad jó volt.
+			<br>
+			<!--IBF.ATTACHMENT_424751-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Dávid Csaba  2010. szeptember 18. 19:06</h4>
+			<p>Billentyűzet és egér a sajátom volt. A srác ismét áthozta a gépet, de ezúttal monitorostól. A videó nálam készült, már itt is produkálta a hibát, az én monitorommal (és szerelvényeivel) is. Eddig 2 szavazat az alaplapra (az enyémmel együtt).
+			<br>
+			<!--IBF.ATTACHMENT_424755-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2010. szeptember 18. 19:59</h4>
+			<p>Másik videokártyával még nem próbáltátok? Szerintem szimplán foschtaliga az oszcillátor rajta.
+			<br>
+			<!--IBF.ATTACHMENT_424760-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Dávid Csaba  2010. szeptember 18. 20:29</h4>
+			<p>Úgy tudom, hogy mikor levitték a gépet, ott először ment egy ideig hiba nélkül az eredeti hardverekkel, aztán videokártyát cserélt benne az eladó és azzal is járatták, de szintén semmi. Nekem alaplapi vezérlőm van, azt talán mégse... <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/biggrin.gif" style="vertical-align:middle" emoid=":D" border="0" alt="biggrin.gif"> <br><br><!--coloro:#999999--><span style="color:#999999"><!--/coloro-->Persze én is gondoltam már erre a... oszciizére. Szinte azonnal ez ugrott be, nem is tudom, hogyan felejthettem el. <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/tongue.gif" style="vertical-align:middle" emoid=":P" border="0" alt="tongue.gif"> <!--colorc--></span><!--/colorc-->
+			<br>
+			<!--IBF.ATTACHMENT_424765-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Ahenobarbus  2010. szeptember 18. 21:12</h4>
+			<p>Sziasztok!<br>Nekem egy elég érdekes problémám van,amivel nem tudok mit kezdeni.Elindítom a gépet,feláll a rendszer majd 5-10 perc után lefagy.Resetelem,lassan bebootol,és és miután feláll a rendszer tökéletesen megy.És mindig ezt csinálja.Mit lehet ilyenkor csinálni?
+			<br>
+			<!--IBF.ATTACHMENT_424769-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Blaziken93  2010. november 3. 13:44</h4>
+			<p>Sziasztok! Nekem az lenne a gépemmel a probléma, hogy mióta új alaplapot és procit tettem bele (Asus P5QL EPU és Intel Core2 Duo 3,06Ghz) lefagy a monitor kikapcsolása után ha sokáig nem használom. A képernyő kímélő közben bármikor akarom használni semmi baj és egyébként is gyors a gép a tapasztalataim szerint mind csak netezéshez, mind játékokhoz is. Alvó állapotból is rendesen visszaáll csak ha képernyőkímélő után lekapcsol a monitor és utána újra használni szeretném egyszerűen lefagy. Ilyenkor kb. 1 percen belül vagy magához tér egy a gépházból jövő csipogással egy időben vagy nem és resetelni kell. <br>Van valakinek valami ötlete mi lehet a hiba?
+			<br>
+			<!--IBF.ATTACHMENT_426659-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. november 3. 16:29</h4>
+			<p>A csere újratelepítéssel is járt? A csipogás BIOS vagy Windows hang? Egyáltalán nem mindegy.
+			<br>
+			<!--IBF.ATTACHMENT_426667-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Blaziken93  2010. november 3. 22:16</h4>
+			<p>Igen, bár a gép elindult az új alaplappal én úgy gondoltam, hogy jobb lesz újra telepíteni a rendszert. A hang pedig a gépházból jön, tehát szerintem BIOS hang.
+			<br>
+			<!--IBF.ATTACHMENT_426686-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. november 4. 20:40</h4>
+			<p>Jól van berakva a VGA kártya? Ha igen, akkor is érdemes lenne megmozgatni.
+			<br>
+			<!--IBF.ATTACHMENT_426744-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: [OP]Destroy-man  2010. november 4. 23:36</h4>
+			<p>Ilyen hibám nekem is volt. <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif"> Valamelyik eszköz (feltehetően a videokártya) valami miatt nem kezeli rendessen az alvás módot (nem tud felébredni, csak lefagy tőle a gép az esetek többségében). A megoldás: Vagy a windows energiaközpontjában ke kikapcsolni a videokártya alvó módba küldését x idő utánt, vagy ugyanezt a BIOS-ban tiltani. A BIOSban azért célszerübb, mertha nem a videokártya a ludas, akkor is megoldódik a probléma, ugyanis ott az összes hardverre vonatkozóan lehet ezt beállítani. <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/smile.gif" style="vertical-align:middle" emoid=":)" border="0" alt="smile.gif">
+			<br>
+			<!--IBF.ATTACHMENT_426762-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. november 5. 6:31</h4>
+			<p>De eddig ment neki, szóval hardveresen nincs gond. Előbb a VGA illesztőprogramjával.
+			<br>
+			<!--IBF.ATTACHMENT_426765-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Blaziken93  2010. november 5. 13:08</h4>
+			<p>Benéztem a Vezérlőpulton az Energiagazdálkodási sémákhoz és valami imfc Power Scheme nevezetű sémára volt állítva a gép. Ez gondolom valamelyik hardver beépített sémája vagy nem tudom de minden esetre átállítottam Kiegyensúlyozottra. De még nem volt időm megnézni, hogy most mit csinála gép a monitor kikapcsolása után. A BOIS-ban nem találtam olyan beállítást, ami szerintem ilyesmire vonatkozna. Tudnátok esetleg valami konkrét nevet mondani, hogy mit keressek? Egyébként egy Nvidia 9800 GT kártyám van hozzá a legfrissebb driver-rel.
+			<br>
+			<!--IBF.ATTACHMENT_426791-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: KGigi  2010. november 6. 12:48</h4>
+			<p>Ha eddig ment az alvás, akkor ne turkálj a BIOS-ban, nincs értelme. Az elkutyult energiagazdálkodás minden esetre nagyon is okozhatta ezt.
+			<br>
+			<!--IBF.ATTACHMENT_426865-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: matyesz001  2010. november 15. 10:38</h4>
+			<p>[email]Tisztelettel megkérnék egy hozzáértőt, hogy segítsen nekem. Idén januárban az IPON-nál rakattam össze egy gépet ami tökéletesen működött, durván fél évig, most pedig nagyon sokszor a legváratlanabb időpontokban lefagy. A képernyőn a kép kimerevedik és nem reagál semmire, csak újraindítással lehet életre kelteni. Most már ott tartok, hogy 1 órán belül 5-6 alkalommal is előfordul. A gépet újratelepítettem, de a probléma maradt.<br>A lefagyáskor a hangszórók hangosan recsegve búgnak. <br><br>A gép:   alaplap:           GIGABYTE GA-P55 UD3<br>             Ház táppal:      GIGABYTE GZ-X3 460 W<br>             memória:        CORSAIR TwinX 4096 DD3 1333 MHz CL9 KI<br>             proci:              INTEL i5-750 2.66Ghz 1156 box<br>             Hdd:                WD 500 GB 7200rpm 16mb SATA2<br>             videó kari:       SAPPHIRE HD5770 1GB GDDR5 VAPOR-X LITE P<br>             cd író:             NEC AD-7240S<br>             op rendszer:    WINDOWS 7 Home Premium 64 bit M<br><br>
+			<br>
+			<!--IBF.ATTACHMENT_427356-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Pjotr  2010. november 15. 11:32</h4>
+			<p>Alaplap vagy táp. <img src="./PC WORLD Segélyvonal _ Ismeretlen hibajelenségek _ Lefagy a számítógép_files/hmm.gif" style="vertical-align:middle" emoid=":hmm:" border="0" alt="hmm.gif">
+			<br>
+			<!--IBF.ATTACHMENT_427361-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Fujitsu  2010. november 15. 16:44</h4>
+			<p>Küldd vissza nekik, a tesztelés és a csere térítésmentes, ha reprodukálható a probléma. (Márpedig ez nagyon annak tűnik...)
+			<br>
+			<!--IBF.ATTACHMENT_427381-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Gegeba06  2010. november 20. 8:48</h4>
+			<p>Sziasztok, végig olvasgattam mindent de nem találtam és reménykedem, hogy itt valaki tud nekem segíteni..<br><br>Fél évvel ezelőtt vettem a gépet.. már akkor is fagyogatott indításnál, meg BS error-ozott.. aztán yo lett 1-2 hónapig.. most megint elkezdte csinálni.. <br><br>Olyan kérdésem lenne hogy mi a különbség a "csökkentett mód" és a "normál mód" között.. mivel csökkentett módba 10/10-szer elindul, viszont normálba 10/2-szer (mai arány az 20/0).. és picit idegesítő.. igazából szerintem nem a konfiggal van a gond, tápom meg nem található meg a nem támogatottak között :/<br><br>Ha valaki esetleg tudna segíteni, megköszönném!
+			<br>
+			<!--IBF.ATTACHMENT_427625-->
+			</p>
+		</div><div class="printpost">
+			<h4>Szerző:: Dávid Csaba  2010. november 20. 9:03</h4>
+			<p>Kellene a BS hibakódja.
+			<br>
+			<!--IBF.ATTACHMENT_427627-->
+			</p>
+		</div><!--Copyright-->	</div></body><style type="text/css">/*This block of style rules is inserted by AdBlock*/#RadAd_Skyscraper,#bbccom_leaderboard,#center_banner,#footer_adcode,#hbBHeaderSpon,#hiddenHeaderSpon,#navbar_adcode,#rightAds,#rightcolumn_adcode,#top-advertising,#topMPU,#tracker_advertorial,.ad-now,.dfpad,.prWrap,[id^="ad_block"],[id^="adbrite"],[id^="dclkAds"],[id^="ew"][id$="_bannerDiv"],[id^="konaLayer"],a.kLink span[id^="preLoadWrap"].preLoadWrap,a[href^="http://ad."][href*=".doubleclick.net/"],a[href^="http://adserver.adpredictive.com"],div#adxLeaderboard,div#dir_ads_site,div#FFN_Banner_Holder,div#FFN_imBox_Container,div#p360-format-box,div#rhs div#rhs_block table#mbEnd,div#rm_container,div#tads table[align="center"][width="100%"],div#tooltipbox[class^="itxt"],div[class^="dms_ad_IDS"],div[id^="adKontekst_"],div[id^="google_ads_div"],div[id^="kona_"][id$="_wrapper"],div[id^="sponsorads"],div[id^="y5_direct"],iframe.chitikaAdBlock,iframe[id^="dapIfM"],iframe[id^="etarget"][id$="banner"],iframe[name^="AdBrite"],iframe[name^="google_ads_"],img[src^="http://cdn.adnxs.com"],ispan#ab_pointer,object#flashad,object#ve_threesixty_swf[name="ve_threesixty_swf"],table[cellpadding="0"][width="100%"] > * > * > * > div[id^="tpa"],#A9AdsMiddleBoxTop,#A9AdsOutOfStockWidgetTop,#A9AdsServicesWidgetTop,#ADSLOT_1,#ADSLOT_2,#ADSLOT_3,#ADSLOT_4,#AD_CONTROL_22,#ADsmallWrapper,#Ad160x600,#Ad2,#Ad300x250,#Ad3Left,#Ad3Right,#Ad3TextAd,#AdArea,#AdBanner_F1,#AdBar,#AdBar1,#AdContainer,#AdContainerTop,#AdContentModule_F,#AdDetails_GoogleLinksBottom,#AdDetails_InsureWith,#AdFrame4,#AdLeaderboardBottom,#AdLeaderboardTop,#AdMiddle,#AdMobileLink,#AdRectangle,#AdSenseDiv,#AdServer,#AdShowcase_F1,#AdSky23,#AdSkyscraper,#AdSponsor_SF,#AdSubsectionShowcase_F1,#AdTargetControl1_iframe,#AdText,#AdTop,#AdTopLeader,#Ad_Block,#Ad_Center1,#Ad_Right1,#Ad_Top,#Adrectangle,#Ads,#AdsContent,#AdsRight,#AdsWrap,#Ads_BA_CAD,#Ads_BA_CAD2,#Ads_BA_CAD_box,#Ads_BA_SKY,#Ads_CAD,#Ads_Special,#AdvertMPU23b,#AdvertPanel,#Advertorial,#Advertorials,#BannerAdvert,#BigBoxAd,#BodyAd,#BotAd,#Bottom468x60AD,#ButtonAd,#CompanyDetailsNarrowGoogleAdsPresentationControl,#CompanyDetailsWideGoogleAdsPresentationControl,#ContentAd,#ContentAd1,#ContentAd2,#ContentAdPlaceHolder1,#ContentAdPlaceHolder2,#ContentAdXXL,#ContentPolepositionAds_Result,#DivAdEggHeadCafeTopBanner,#FooterAd,#FooterAdContainer,#GoogleAd1,#GoogleAd2,#GoogleAd3,#GoogleAdsPresentationControl,#GoogleAdsense,#Google_Adsense_Main,#HEADERAD,#HOME_TOP_RIGHT_BOXAD,#HeaderAD,#HeaderAdsBlock,#HeaderAdsBlockFront,#HeaderBannerAdSpacer,#HeaderTextAd,#HeroAd,#HomeAd1,#HouseAd,#ID_Ad_Sky,#JobsearchResultsAds,#Journal_Ad_125,#Journal_Ad_300,#KH-contentAd,#LargeRectangleAd,#LeftAd,#LeftAdF1,#LeftAdF2,#LftAd,#LoungeAdsDiv,#LowerContentAd,#MainSponsoredLinks,#Nightly_adContainer,#OverrideAdArea,#PREFOOTER_LEFT_BOXAD,#PREFOOTER_RIGHT_BOXAD,#PageLeaderAd,#RelevantAds,#RgtAd1,#RightAd,#RightBottom300x250AD,#RightNavTopAdSpot,#RightSponsoredAd,#SectionAd300-250,#SectionSponsorAd,#SidebarAdContainer,#SkyAd,#SpecialAds,#SponsoredAd,#SponsoredLinks,#TOP_ADROW,#TOP_RIGHT_BOXAD,#Top468x60AD,#TopAdBox,#TopAdContainer,#TopAdDiv,#TopAdPos,#VM-MPU-adspace,#VM-footer-adspace,#VM-header-adspace,#VM-header-adwrap,#XEadLeaderboard,#XEadSkyscraper,#YahooAdParentContainer,#_ads,#about_adsbottom,#ad-120x600-sidebar,#ad-120x60Div,#ad-160x600,#ad-160x600-sidebar,#ad-250,#ad-250x300,#ad-300,#ad-300x250,#ad-300x250-sidebar,#ad-300x250Div,#ad-300x60-1,#ad-728,#ad-728x90-leaderboard-top,#ad-article,#ad-banner,#ad-banner-1,#ad-block-125,#ad-bottom,#ad-bottom-wrapper,#ad-box-first,#ad-box-second,#ad-boxes,#ad-bs,#ad-buttons,#ad-colB-1,#ad-column,#ad-content,#ad-contentad,#ad-flex-first,#ad-footer,#ad-footprint-160x600,#ad-frame,#ad-front-footer,#ad-front-sponsoredlinks,#ad-halfpage,#ad-horizontal-header,#ad-img,#ad-inner,#ad-label,#ad-leaderboard,#ad-leaderboard-bottom,#ad-leaderboard-container,#ad-leaderboard-spot,#ad-leaderboard-top,#ad-left,#ad-links-content,#ad-list-row,#ad-lrec,#ad-medium,#ad-medium-rectangle,#ad-medrec,#ad-middlethree,#ad-middletwo,#ad-module,#ad-mpu,#ad-mpu1-spot,#ad-mpu2,#ad-mpu2-spot,#ad-north,#ad-one,#ad-placard,#ad-placeholder,#ad-rectangle,#ad-right,#ad-righttop,#ad-row,#ad-side-text,#ad-sidebar,#ad-sky,#ad-skyscraper,#ad-slug-wrapper,#ad-small-banner,#ad-space,#ad-special,#ad-splash,#ad-sponsors,#ad-spot,#ad-squares,#ad-target,#ad-target-Leaderbord,#ad-teaser,#ad-text,#ad-top-banner,#ad-top-text-low,#ad-top-wrap,#ad-tower,#ad-trailerboard-spot,#ad-two,#ad-typ1,#ad-unit,#ad-west,#ad-wrap,#ad-wrap-right,#ad-wrapper1,#ad-yahoo-simple,#ad1006,#ad11,#ad125BL,#ad125BR,#ad125TL,#ad125TR,#ad125x125,#ad160x600,#ad160x600right,#ad1Sp,#ad2,#ad2Sp,#ad300,#ad300-250,#ad300X250,#ad300_x_250,#ad300x100Middle,#ad300x150,#ad300x250,#ad300x250Module,#ad300x60,#ad300x600,#ad300x600_callout,#ad336,#ad336x280,#ad375x85,#ad4,#ad468,#ad468x60,#ad468x60_top,#ad526x250,#ad600,#ad7,#ad728,#ad728Mid,#ad728Top,#ad728Wrapper,#ad728top,#ad728x90_1,#adBadges,#adBanner120x600,#adBanner160x600,#adBanner336x280,#adBanner728,#adBannerTable,#adBannerTop,#adBar,#adBelt,#adBlock125,#adBlocks,#adBox,#adBox350,#adBox390,#adCirc300X200,#adCirc_620_100,#adColumn,#adContainer_1,#adContainer_2,#adContainer_3,#adDiv300,#adDiv728,#adFiller,#adFps,#adFtofrs,#adGallery,#adGroup1,#adHeaderTop,#adIsland,#adL,#adLB,#adLabel,#adLayer,#adLeader,#adLeaderTop,#adLeaderboard,#adMPU,#adMediumRectangle,#adMiddle0Frontpage,#adMiniPremiere,#adP,#adPlaceHolderRight,#adPlacer,#adRight,#adSenseModule,#adSenseWrapper,#adServer_marginal,#adSidebar,#adSidebarSq,#adSky,#adSkyscraper,#adSlider,#adSpace,#adSpace3,#adSpace300_ifrMain,#adSpace4,#adSpace5,#adSpace6,#adSpace7,#adSpace_footer,#adSpace_right,#adSpace_top,#adSpacer,#adSpecial,#adSplotlightEm,#adSpot-Leader,#adSpot-banner,#adSpot-island,#adSpot-mrec1,#adSpot-sponsoredlinks,#adSpot-textbox1,#adSpot-widestrip,#adSpotAdvertorial,#adSpotIsland,#adSpotSponsoredLinks,#adSquare,#adStaticA,#adStrip,#adSuperAd,#adSuperPremiere,#adSuperSkyscraper,#adSuperbanner,#adTableCell,#adTag1,#adTag2,#adText,#adTextLink,#adText_container,#adTile,#adTopContent,#adTopboxright,#adTower,#adUnit,#adZoneTop,#ad_1,#ad_160x160,#ad_160x600,#ad_190x90,#ad_2,#ad_3,#ad_300,#ad_300_250,#ad_300_250_1,#ad_300x250,#ad_300x250_content_column,#ad_300x90,#ad_4,#ad_468_60,#ad_5,#ad_728_foot,#ad_728x90,#ad_728x90_container,#ad_940,#ad_984,#ad_A,#ad_B,#ad_Banner,#ad_C,#ad_C2,#ad_D,#ad_E,#ad_F,#ad_G,#ad_H,#ad_I,#ad_J,#ad_K,#ad_L,#ad_M,#ad_N,#ad_O,#ad_P,#ad_YieldManager-300x250,#ad_anchor,#ad_banner,#ad_banner_top,#ad_bar,#ad_bellow_post,#ad_block_1,#ad_block_2,#ad_bottom,#ad_box,#ad_box_colspan,#ad_box_top,#ad_branding,#ad_bs_area,#ad_buttons,#ad_center_monster,#ad_cont,#ad_container_marginal,#ad_container_side,#ad_container_top,#ad_content_top,#ad_content_wrap,#ad_feature,#ad_firstpost,#ad_footer,#ad_front_three,#ad_fullbanner,#ad_global_header,#ad_haha_1,#ad_haha_4,#ad_halfpage,#ad_head,#ad_header,#ad_holder,#ad_horizontal,#ad_horseshoe_left,#ad_horseshoe_right,#ad_horseshoe_spacer,#ad_horseshoe_top,#ad_hotpots,#ad_in_arti,#ad_island,#ad_label,#ad_large_rectangular,#ad_lastpost,#ad_layer2,#ad_leaderBoard,#ad_leaderboard,#ad_leaderboard728x90,#ad_leaderboard_top,#ad_left,#ad_lrec,#ad_lwr_square,#ad_main,#ad_medium_rectangle,#ad_medium_rectangular,#ad_mediumrectangle,#ad_menu_header,#ad_middle,#ad_most_pop_234x60_req_wrapper,#ad_mpu,#ad_mpu300x250,#ad_mpuav,#ad_mrcontent,#ad_overlay,#ad_play_300,#ad_rect,#ad_rect_body,#ad_rect_bottom,#ad_rectangle,#ad_rectangle_medium,#ad_related_links_div,#ad_related_links_div_program,#ad_replace_div_0,#ad_replace_div_1,#ad_report_leaderboard,#ad_report_rectangle,#ad_right,#ad_right_main,#ad_ros_tower,#ad_rr_1,#ad_sec,#ad_sec_div,#ad_sgd,#ad_sidebar,#ad_sidebar1,#ad_sidebar2,#ad_sidebar3,#ad_skyscraper,#ad_skyscraper160x600,#ad_skyscraper_text,#ad_slot_leaderboard,#ad_slot_livesky,#ad_slot_sky_top,#ad_ss,#ad_term_bottom_place,#ad_text,#ad_thread_first_post_content,#ad_top,#ad_top_holder,#ad_tp_banner_1,#ad_tp_banner_2,#ad_unit,#ad_vertical,#ad_wide,#ad_wide_box,#ad_widget,#ad_window,#ad_wrap,#adbForum,#adbanner,#adbig,#adbnr,#adboard,#adbottom,#adbox1,#adbox2,#adclear,#adcode,#adcode1,#adcode2,#adcode3,#adcode4,#adcolumnwrapper,#adcontainer,#adcontainerRight,#adcontainsm,#adcontent,#adcontent1,#adcontrolPushSite,#add_ciao2,#addbottomleft,#addiv-bottom,#addiv-top,#adfooter,#adfooter_728x90,#adframe:not(frameset),#adhead,#adhead_g,#adheader,#adhome,#adiframe1_iframe,#adiframe2_iframe,#adiframe3_iframe,#adimg,#adition_content_ad,#adlabel,#adlabelFooter,#adlayerad,#adleaderboard,#adleft,#adlinks,#adlinkws,#adlrec,#admid,#admiddle3center,#admiddle3left,#adposition,#adposition-C,#adposition-FPMM,#adposition1,#adposition2,#adposition4,#adrectangle,#adrectanglea,#adrectangleb,#adrig,#adright,#adright2,#adrighthome,#ads-468,#ads-area,#ads-block,#ads-bot,#ads-bottom,#ads-col,#ads-dell,#ads-horizontal,#ads-indextext,#ads-leaderboard1,#ads-lrec,#ads-menu,#ads-middle,#ads-prices,#ads-rhs,#ads-right,#ads-sponsored-boxes,#ads-top,#ads-vers7,#ads-wrapper,#ads160left,#ads2,#ads300,#ads300-250,#ads300Bottom,#ads300Top,#ads336x280,#ads7,#ads728bottom,#ads728top,#ads790,#adsDisplay,#adsID,#ads_160,#ads_300,#ads_728,#ads_banner,#ads_belowforumlist,#ads_belownav,#ads_bottom_inner,#ads_bottom_outer,#ads_box,#ads_button,#ads_catDiv,#ads_footer,#ads_html1,#ads_html2,#ads_medrect,#ads_notice,#ads_right,#ads_right_sidebar,#ads_sidebar_roadblock,#ads_space,#ads_top,#ads_watch_top_square,#ads_zone27,#adsbottom,#adsbox,#adscolumn,#adsd_contentad_r1,#adsd_contentad_r2,#adsd_contentad_r3,#adsd_topbanner,#adsd_txt_sky,#adsdiv,#adsense-2,#adsense-header,#adsense-tag,#adsense-text,#adsenseOne,#adsenseWrap,#adsense_article_left,#adsense_box,#adsense_leaderboard,#adsense_overlay,#adsense_placeholder_2,#adsenseheader,#adsensetopplay,#adsensewidget-3,#adserv,#adsimage,#adsky,#adskyscraper,#adslot,#adsonar,#adspace-300x250,#adspace300x250,#adspaceBox,#adspaceBox300,#adspace_header,#adspot,#adspot-1,#adspot-149x170,#adspot-1x4,#adspot-2,#adspot-295x60,#adspot-2a,#adspot-2b,#adspot-300x250-pos-1,#adspot-300x250-pos-2,#adspot-468x60-pos-2,#adspot-a,#adspot300x250,#adspot_220x90,#adspot_300x250,#adspot_468x60,#adspot_728x90,#adsright,#adst,#adstop,#adt,#adtab,#adtag_right_side,#adtaily-widget-light,#adtech_googleslot_03c,#adtech_takeover,#adtop,#adtophp,#adtxt,#adv-masthead,#adv_google_300,#adv_google_728,#adv_top_banner_wrapper,#adver1,#adver2,#adver3,#adver4,#adver5,#adver6,#adver7,#advert-1,#advert-120,#advert-boomer,#advert-display,#advert-header,#advert-leaderboard,#advert-links-bottom,#advert-skyscraper,#advert-top,#advert1,#advertBanner,#advertContainer,#advertDB,#advertRight,#advert_125x125,#advert_250x250,#advert_box,#advert_home01,#advert_leaderboard,#advert_lrec_format,#advert_mid,#advert_mpu,#advert_right_skyscraper,#advertbox,#advertbox2,#advertbox3,#advertbox4,#adverthome,#advertise-here-sidebar,#advertise-now,#advertise1,#advertiseHere,#advertisement160x600,#advertisement728x90,#advertisementLigatus,#advertisementPrio2,#advertisementsarticle,#advertiser-container,#advertiserLinks,#advertisers,#advertising-banner,#advertising-caption,#advertising-container,#advertising-control,#advertising-skyscraper,#advertising2,#advertisingModule160x600,#advertisingModule728x90,#advertisment,#advertismentElementInUniversalbox,#advertorial,#adverts-top-container,#adverts-top-left,#adverts-top-middle,#adverts-top-right,#advertsingle,#advt,#adwhitepaperwidget,#adwin_rec,#adwith,#adwords-4-container,#adxBigAd,#adxMiddle5,#adxSponLink,#adxSponLinkA,#adxtop,#adz,#adzbanner,#adzerk,#adzerk1,#adzoneBANNER,#affinityBannerAd,#agi-ad300x250,#agi-ad300x250overlay,#agi-sponsored,#alert_ads,#anchorAd,#annoying_ad,#ap_adframe,#apiBackgroundAd,#apiTopAdWrap,#apmNADiv,#araHealthSponsorAd,#article-ad-container,#article-box-ad,#articleAdReplacement,#articleLeftAdColumn,#articleSideAd,#article_ad,#article_ad_container,#article_box_ad,#asinglead,#atlasAdDivGame,#awds-nt1-ad,#banner-300x250,#banner-ad,#banner-ad-container,#banner-ads,#banner250x250,#banner468x60,#banner728x90,#bannerAd,#bannerAdTop,#bannerAd_ctr,#banner_ad,#banner_ad_footer,#banner_ad_module,#banner_admicro,#banner_ads,#banner_content_ad,#banner_topad,#bannerad2,#baseAdvertising,#bbccom_mpu,#bbccom_storyprintsponsorship,#bbo_ad1,#bg-footer-ads,#bg-footer-ads2,#bg_YieldManager-300x250,#bigAd,#bigBoxAd,#bigad300outer,#bigadbox,#bigadframe,#bigadspot,#billboard_ad,#block-ad_cube-1,#block-openads-1,#block-openads-3,#block-openads-4,#block-openads-5,#block-thewrap_ads_250x300-0,#blog-ad,#blog_ad_content,#blog_ad_opa,#blox-big-ad,#blox-big-ad-bottom,#blox-big-ad-top,#blox-halfpage-ad,#blox-tile-ad,#blox-tower-ad,#body_728_ad,#book-ad,#botad,#bott_ad2,#bott_ad2_300,#bottom-ad,#bottom-ad-container,#bottom-ads,#bottomAd,#bottomAdCCBucket,#bottomAdContainer,#bottomAdSense,#bottomAdSenseDiv,#bottomAds,#bottomRightAd,#bottomRightAdSpace,#bottom_ad,#bottom_ad_area,#bottom_ads,#bottom_banner_ad,#bottom_overture,#bottom_sponsor_ads,#bottom_sponsored_links,#bottom_text_ad,#bottomad,#bottomads,#bottomadsense,#bottomadwrapper,#bottomleaderboardad,#box-content-ad,#box-googleadsense-1,#box-googleadsense-r,#box1ad,#boxAd300,#boxAdContainer,#box_ad,#box_advertisment,#box_mod_googleadsense,#boxad1,#boxad2,#boxad3,#boxad4,#boxad5,#bpAd,#bps-header-ad-container,#btr_horiz_ad,#burn_header_ad,#button-ads-horizontal,#button-ads-vertical,#buttonAdWrapper1,#buttonAdWrapper2,#buttonAds,#buttonAdsContainer,#button_ad_container,#button_ad_wrap,#buttonad,#buy-sell-ads,#c4ad-Middle1,#c_ad_sb,#c_ad_sky,#caAdLarger,#catad,#category-ad,#cellAd,#channel_ad,#channel_ads,#ciHomeRHSAdslot,#circ_ad,#cnnRR336ad,#cnnTopAd,#cnnVPAd,#col3_advertising,#colAd,#colRightAd,#collapseobj_adsection,#column4-google-ads,#comments-ad-container,#commercial_ads,#common_right_ad_wrapper,#common_right_lower_ad_wrapper,#common_right_lower_adspace,#common_right_lower_player_ad_wrapper,#common_right_lower_player_adspace,#common_right_player_ad_wrapper,#common_right_player_adspace,#common_right_right_adspace,#common_top_adspace,#companion-ad,#companionAdDiv,#containerLocalAds,#containerLocalAdsInner,#containerMrecAd,#containerSqAd,#content-ad-header,#content-header-ad,#contentBoxad,#contentTopAds2,#content_ad_square,#content_ad_top,#content_ads_content,#content_box_300body_sponsoredoffers,#content_box_adright300_google,#content_mpu,#contentad { visibility:hidden !important; display:none !important; } #contentad_imtext,#contentad_right,#contentads,#contentinlineAd,#contextad,#contextual-ads,#contextual-ads-block,#contextualad,#coverads,#ctl00_Adspace_Top_Height,#ctl00_BottomAd,#ctl00_ContentMain_BanManAd468_BanManAd,#ctl00_ContentRightColumn_RightColumn_Ad1_BanManAd,#ctl00_ContentRightColumn_RightColumn_Ad2_BanManAd,#ctl00_ContentRightColumn_RightColumn_PremiumAd1_ucBanMan_BanManAd,#ctl00_LHTowerAd,#ctl00_LeftHandAd,#ctl00_MasterHolder_IBanner_adHolder,#ctl00_TopAd,#ctl00_TowerAd,#ctl00_VBanner_adHolder,#ctl00__Content__RepeaterReplies_ctl03__AdReply,#ctl00_abot_bb,#ctl00_adFooter,#ctl00_advert_LargeMPU_div_AdPlaceHolder,#ctl00_atop_bt,#ctl00_cphMain_hlAd1,#ctl00_cphMain_hlAd2,#ctl00_cphMain_hlAd3,#ctl00_ctl00_MainPlaceHolder_itvAdSkyscraper,#ctl00_ctl00_ctl00_Main_Main_PlaceHolderGoogleTopBanner_MPTopBannerAd,#ctl00_ctl00_ctl00_Main_Main_SideBar_MPSideAd,#ctl00_dlTilesAds,#ctl00_m_skinTracker_m_adLBL,#ctl00_phCrackerMain_ucAffiliateAdvertDisplayMiddle_pnlAffiliateAdvert,#ctl00_phCrackerMain_ucAffiliateAdvertDisplayRight_pnlAffiliateAdvert,#ctrlsponsored,#cubeAd,#cube_ads,#cube_ads_inner,#cubead,#cubead-2,#dItemBox_ads,#dart_160x600,#dc-display-right-ad-1,#dcol-sponsored,#defer-adright,#detail_page_vid_topads,#div-gpt-ad-1,#div-gpt-ad-2,#div-gpt-ad-3,#div-gpt-ad-4,#divAdBox,#divAdWrapper,#divDoubleAd,#divLeftAd12,#divLeftRecAd,#divMenuAds,#divWNAdHeader,#divWrapper_Ad,#div_ad_leaderboard,#div_video_ads,#dlads,#dni-header-ad,#dnn_ad_banner,#download_ads,#ds-mpu,#editorsmpu,#embedded-ad,#evotopTen_advert,#ex-ligatus,#exads,#featured-advertisements,#featuredAdContainer2,#featuredAds,#feed_links_ad_container,#first-300-ad,#first-adlayer,#first_ad_unit,#firstad,#fl_hdrAd,#flash_ads_1,#flexiad,#footad,#footer-ad,#footer-advert,#footer-adverts,#footer-sponsored,#footerAd,#footerAdDiv,#footerAds,#footerAdvertisement,#footerAdverts,#footer_ad_01,#footer_ad_block,#footer_ad_container,#footer_ad_modules,#footer_adspace,#footer_text_ad,#footerad,#footerads,#footeradsbox,#forum_top_ad,#fpv_companionad,#fr_ad_center,#frame_admain,#frnAdSky,#frnBannerAd,#frnContentAd,#from_our_sponsors,#front_advert,#front_mpu,#ft-ad,#ft-ad-1,#ft-ad-container,#ft_mpu,#fusionad,#fw-advertisement,#g_ad,#g_adsense,#ga_300x250,#gad,#gad2,#gad3,#gad5,#galleries-tower-ad,#gallery-ad-m0,#gallery_ads,#game-info-ad,#gasense,#gglads,#global_header_ad_area,#gmi-ResourcePageAd,#gmi-ResourcePageLowerAd,#goads,#gooadtop,#google-ad,#google-ad-art,#google-ad-table-right,#google-ad-tower,#google-ads,#google-ads-bottom,#google-ads-header,#google-ads-left-side,#google-adsense-mpusize,#googleAd,#googleAds,#googleAdsSml,#googleAdsense,#googleAdsenseBanner,#googleAdsenseBannerBlog,#googleAdwordsModule,#googleAfcContainer,#googleSearchAds,#googleShoppingAdsRight,#googleShoppingAdsTop,#googleSubAds,#google_ad,#google_ad_container,#google_ad_inline,#google_ad_test,#google_ads,#google_ads_aCol,#google_ads_frame1,#google_ads_frame1_anchor,#google_ads_frame2,#google_ads_frame2_anchor,#google_ads_frame3,#google_ads_frame3_anchor,#google_ads_test,#google_ads_top,#google_adsense_home_468x60_1,#googlead2,#googleadbox,#googleads,#googleadsense,#googlesponsor,#gpt-ad-halfpage,#gpt-ad-rectangle1,#gpt-ad-rectangle2,#gpt-ad-skyscraper,#gpt-ad-story_rectangle3,#grid_ad,#gsyadrectangleload,#gsyadrightload,#gsyadtop,#gsyadtopload,#gtopadvts,#half-page-ad,#halfPageAd,#halfe-page-ad-box,#hd-ads,#hd-banner-ad,#hdtv_ad_ss,#headAd,#head_advert,#headad,#header-ad,#header-ad-rectangle-container,#header-ads,#header-adspace,#header-advert,#header-advertisement,#header-advertising,#header-adverts,#headerAd,#headerAdBackground,#headerAdContainer,#headerAdWrap,#headerAds,#headerAdsWrapper,#headerTopAd,#header_ad_728_90,#header_ad_container,#header_adcode,#header_ads,#header_advertisement_top,#header_leaderboard_ad_container,#header_publicidad,#headerad,#headeradbox,#headerads,#headeradsbox,#headeradwrap,#headline_ad,#headlinesAdBlock,#hiddenadAC,#hideads,#hl-sponsored-results,#hly_ad_side_bar_tower_left,#home-rectangle-ad,#homeTopRightAd,#home_ad,#home_bottom_ad,#home_contentad,#home_feature_ad,#home_mpu,#home_spensoredlinks,#homepage-ad,#homepageAdsTop,#homepageFooterAd,#homepage_right_ad,#homepage_right_ad_container,#homepage_top_ads,#hometop_234x60ad,#hor_ad,#horizontal-banner-ad,#horizontal_ad,#horizontal_ad_top,#horizontalads,#houseAd,#hp-header-ad,#hp-right-ad,#hp-store-ad,#hpV2_300x250Ad,#hpV2_googAds,#icePage_SearchLinks_AdRightDiv,#icePage_SearchLinks_DownloadToolbarAdRightDiv,#icePage_SearchResults_ads0_SponsoredLink,#icePage_SearchResults_ads1_SponsoredLink,#icePage_SearchResults_ads2_SponsoredLink,#icePage_SearchResults_ads3_SponsoredLink,#icePage_SearchResults_ads4_SponsoredLink,#imu_ad_module,#in_serp_ad,#inadspace,#indexad,#inline-story-ad,#inlinead,#inlinegoogleads,#inlist-ad-block,#inner-advert-row,#innerpage-ad,#inside-page-ad,#insider_ad_wrapper,#instoryad,#instoryadtext,#instoryadwrap,#int-ad,#interstitial_ad_wrapper,#islandAd,#j_ad,#ji_medShowAdBox,#jmp-ad-buttons,#joead,#joead2,#ka_adRightSkyscraperWide,#kdz_ad1,#kdz_ad2,#landing-adserver,#largead,#lateAd,#layerAds_layerDiv,#layerTLDADSERV,#lb-sponsor-left,#lb-sponsor-right,#leader-board-ad,#leader-sponsor,#leaderAd,#leaderAdContainer,#leader_board_ad,#leaderad,#leaderad_section,#leaderboard-ad,#leaderboard-bottom-ad,#leaderboard_ad,#left-ad-skin,#left-lower-adverts,#left-lower-adverts-container,#leftAdContainer,#leftAd_rdr,#leftAdvert,#leftSectionAd300-100,#left_ad,#left_adspace,#leftad,#leftads,#leftcolAd,#lg-banner-ad,#ligatus,#linkAds,#linkads,#live-ad,#logoAd,#longAdSpace,#lowerAdvertisementImg,#lowerads,#lowerthirdad,#lowertop-adverts,#lowertop-adverts-container,#lpAdPanel,#lrecad,#lsadvert-left_menu_1,#lsadvert-left_menu_2,#lsadvert-top,#mBannerAd,#main-ad,#main-ad160x600,#main-ad160x600-img,#main-ad728x90,#main-bottom-ad,#mainAdUnit,#mainAdvert,#main_ad,#main_rec_ad,#main_top_ad_container,#marketing-promo,#mastAd,#mastAdvert,#mastad,#mastercardAd,#masthead_ad,#masthead_topad,#medRecAd,#media_ad,#mediaplayer_adburner,#mediumAdvertisement,#medrectad,#menuAds,#mi_story_assets_ad,#mid-ad300x250,#mid-table-ad,#midRightTextAds,#mid_ad_div,#mid_ad_title,#mid_mpu,#midadd,#midadspace,#middle-ad,#middlead,#middleads,#midrect_ad,#midstrip_ad,#mini-ad,#mochila-column-right-ad-300x250,#mochila-column-right-ad-300x250-1,#module-google_ads,#module_ad,#module_box_ad,#module_sky_scraper,#monsterAd,#moogleAd,#most_popular_ad,#motionAd,#mpu,#mpu-advert,#mpu300250,#mpuAd,#mpuDiv,#mpuSlot,#mpuWrapper,#mpuWrapperAd,#mpu_banner,#mpu_holder,#mpu_text_ad,#mpuad,#mr_banner_topad,#mrecAdContainer,#msAds,#ms_ad,#msad,#multiLinkAdContainer,#multi_ad,#myads_HeaderButton,#n_sponsor_ads,#namecom_ad_hosting_main,#narrow_ad_unit,#natadad300x250,#national_microlink_ads,#nationalad,#navi_banner_ad_780,#nba160PromoAd,#nba300Ad,#nbaHouseAnd600Ad,#nbaLeft600Ad,#nbaMidAds,#nbaVid300Ad,#new_topad,#newads,#ng_rtcol_ad,#noresults_ad_container,#noresultsads,#northad,#ns_ad3,#oanda_ads,#onespot-ads,#online_ad,#p-googleadsense,#page-header-ad,#page-top-ad,#pageAds,#pageAdsDiv,#page_content_top_ad,#pagelet_adbox,#pagelet_netego_ads,#pagelet_search_ads2,#panelAd,#pb_report_ad,#pcworldAdBottom,#pcworldAdTop,#pinball_ad,#player-below-advert,#player_ad,#player_ads,#pod-ad-video-page,#populate_ad_bottom,#populate_ad_left,#portlet-advertisement-left,#portlet-advertisement-right,#post-promo-ad,#post5_adbox,#post_ad,#premium_ad,#priceGrabberAd,#prime-ad-space,#print_ads,#product-adsense,#promoAds,#ps-vertical-ads,#pub468x60,#publicidad,#pushdown_ad,#qm-ad-big-box,#qm-ad-sky,#qm-dvdad,#r1SoftAd,#rail_ad1,#rail_ad2,#realEstateAds,#rectAd,#rect_ad,#rectangle-ad,#rectangle_ad,#refine-300-ad,#region-node-advert,#region-top-ad,#rh-ad-container,#rh_tower_ad,#rhapsodyAd,#rhs_ads,#rhsadvert,#right-ad,#right-ad-skin,#right-ad-title,#right-ads-3,#right-box-ad,#right-featured-ad,#right-mpu-1-ad-container,#right-uppder-adverts,#right-uppder-adverts-container,#rightAd,#rightAd300x250,#rightAdBar,#rightAdColumn,#rightAd_rdr,#rightAdsDiv,#rightColAd,#rightColumnMpuAd,#rightColumnSkyAd,#rightTopSponsor,#right_ad_wrapper,#right_ads,#right_advertisement,#right_advertising,#right_column_ad_container,#right_column_ads,#right_column_internal_ad_container,#right_column_top_ad_unit,#rightad,#rightadContainer,#rightadvertbar-doubleclickads,#rightbar-ad,#rightcolumn_300x250ad,#rightside-ads,#rightside_ad,#righttop-adverts,#righttop-adverts-container,#rm_ad_text,#ros_ad,#rotatingads,#row2AdContainer,#rr_MSads,#rt-ad,#rt-ad-top,#rt-ad468,#rtMod_ad,#rtmod_ad,#sAdsBox,#sb-ad-sq,#sb_advert,#sb_sponsors,#search-google-ads,#search-sponsored-links,#search-sponsored-links-top,#searchAdSenseBox,#searchAdSenseBoxAd,#searchAdSkyscraperBox,#search_ads,#search_result_ad,#second-adlayer,#secondBoxAdContainer,#secondrowads,#section-ad-1-728,#section-ad-300-250,#section-ad-4-160,#section-blog-ad,#section-container-ddc_ads,#section-sponsors,#section_advertorial_feature,#servfail-ads,#sew-ad1,#shoppingads,#show-ad,#showAd,#showad,#side-ad,#side-ad-container,#sideAd,#sideAdSub,#sideBarAd,#side_ad,#side_ad_wrapper,#side_ads_by_google,#side_sky_ad,#sidead,#sideads,#sidebar-125x125-ads,#sidebar-125x125-ads-below-index,#sidebar-ad,#sidebar-ad-boxes,#sidebar-ad-space,#sidebar-ad-wrap,#sidebar-ad3,#sidebar2ads,#sidebar_ad,#sidebar_ad_widget,#sidebar_ads_180,#sidebar_sponsoredresult_body,#sidebarad,#sidebaradver_advertistxt,#sideline-ad,#single-mpu,#singlead,#site-leaderboard-ads,#site_top_ad,#sitead,#sky-ad,#skyAd,#skyAdContainer,#skyScrapperAd,#skyWrapperAds,#sky_ad,#sky_advert,#skyads,#skyadwrap,#skyline_ad,#skyscraper-ad,#skyscraperAd,#skyscraperAdContainer,#skyscraper_ad,#skyscraper_advert,#skyscraperad,#slide_ad,#sliderAdHolder,#slideshow_ad_300x250,#sm-banner-ad,#small_ad,#smallerAd,#some-ads,#some-more-ads,#specialadvertisingreport_container,#specials_ads,#speeds_ads,#speeds_ads_fstitem,#speedtest_mrec_ad,#sphereAd,#sponLinkDiv_1,#sponlink,#sponlinks,#sponsAds,#sponsLinks,#spons_left,#sponseredlinks,#sponsor-search,#sponsorAd1,#sponsorAd2,#sponsorAdDiv,#sponsorLinks,#sponsorTextLink,#sponsor_banderole,#sponsor_box,#sponsor_deals,#sponsor_panSponsor,#sponsor_recommendations,#sponsorbar,#sponsorbox,#sponsored-ads,#sponsored-features,#sponsored-links,#sponsored-resources,#sponsored1,#sponsoredBox1,#sponsoredBox2,#sponsoredLinks,#sponsoredList,#sponsoredResults,#sponsoredResultsWide,#sponsoredSiteMainline,#sponsoredSiteSidebar,#sponsored_ads_v4,#sponsored_content,#sponsored_game_row_listing,#sponsored_links,#sponsored_v12,#sponsoredads,#sponsoredlinks,#sponsoredlinks_cntr,#sponsoredlinkslabel,#sponsoredresults_top,#sponsoredwellcontainerbottom,#sponsoredwellcontainertop,#sponsoring_bar,#sponsorlink,#sponsors,#sponsors_top_container,#sponsorshipBadge,#spotlightAds,#spotlightad,#sqAd,#square-sponsors,#squareAd,#squareAdSpace,#squareAds,#square_ad,#start_middle_container_advertisment,#sticky-ad,#stickyBottomAd,#story-90-728-area,#story-ad-a,#story-ad-b,#story-leaderboard-ad,#story-sponsoredlinks,#storyAd,#storyAdWrap,#storyad2,#subpage-ad-right,#subpage-ad-top,#swads,#synch-ad,#systemad_background,#tabAdvertising,#takeoverad,#tblAd,#tbl_googlead,#tcwAd,#td-GblHdrAds,#template_ad_leaderboard,#tertiary_advertising,#text-ad,#text-ads,#text-link-ads,#textAd,#textAds,#text_ad,#text_ads,#text_advert,#textad,#textad3,#the-last-ad-standing,#thefooterad,#themis-ads,#tile-ad,#tmglBannerAd,#toolbarSlideUpAd,#top-ad,#top-ad-container,#top-ad-menu,#top-ads,#top-ads-tabs,#top-advertisement,#top-banner-ad,#top-search-ad-wrapper,#topAd728x90,#topAdBanner,#topAdBox,#topAdContainer,#topAdSenseDiv,#topAdcontainer,#topAds,#topAdsContainer,#topAdvert,#topBannerAdContainer,#topNavLeaderboardAdHolder,#topRightBlockAdSense,#top_ad_area,#top_ad_banner,#top_ad_game,#top_ad_wrapper,#top_ad_zone,#top_ads,#top_advertise,#top_advertising,#top_rectangle_ad,#top_right_ad,#top_wide_ad,#topad_left,#topad_right,#topadbar,#topadblock,#topaddwide,#topadsense,#topadspace,#topadzone,#topbanner_ad,#topbar-ad,#topcustomad,#topleaderboardad,#toprightAdvert,#toprightad,#topsponsored,#toptextad,#tour300Ad,#tourSponsoredLinksContainer,#towerad,#ts-ad_module,#ttp_ad_slot1,#ttp_ad_slot2,#twogamesAd,#txt_link_ads,#undergameAd,#upperAdvertisementImg,#upperMpu,#upperad,#urban_contentad_1,#urban_contentad_2,#urban_contentad_article,#v_ad,#vert_ad,#vert_ad_placeholder,#vertical_ad,#vertical_ads,#videoAd,#video_cnv_ad,#video_overlay_ad,#videoadlogo,#viewportAds,#viewvid_ad300x250,#walltopad,#weblink_ads_container,#welcomeAdsContainer,#welcome_ad_mrec,#welcome_advertisement,#wf_ContentAd,#wf_FrontSingleAd,#wf_SingleAd,#wf_bottomContentAd,#wgtAd,#whatsnews_top_ad,#whitepaper-ad,#whoisRightAdContainer,#wide_ad_unit_top,#widget_advertisement,#wrapAdRight,#wrapAdTop,#wrapperAdsTopLeft,#wrapperAdsTopRight,#y-ad-units,#y708-ad-expedia,#y708-ad-lrec,#y708-ad-partners,#y708-ad-ysm,#y708-advertorial-marketplace,#yahoo-ads,#yahoo-sponsors,#yahooSponsored,#yahoo_ads,#yahoo_ads_2010,#yahoo_text_ad,#yahooad-tbl,#yan-sponsored,#yatadsky,#ybf-ads,#yfi_fp_ad_mort,#yfi_fp_ad_nns,#yfi_pf_ad_mort,#ygrp-sponsored-links,#ymap_adbanner,#yn-gmy-ad-lrec,#yreSponsoredLinks,#ysm_ad_iframe,#zoneAdserverMrec,#zoneAdserverSuper,.ADBAR,.ADPod,.AD_ALBUM_ITEMLIST,.AD_MOVIE_ITEM,.AD_MOVIE_ITEMLIST,.AD_MOVIE_ITEMROW,.Ad-MPU,.Ad1,.Ad120x600,.Ad160x600,.Ad160x600left,.Ad160x600right,.Ad2,.Ad247x90,.Ad300x,.Ad300x250,.Ad300x250L,.Ad728x90,.AdBorder,.AdBox7,.AdContainerBox308,.AdHeader,.AdHere,.AdMedium,.AdPlaceHolder,.AdRingtone,.AdSenseLeft,.AdSlot,.AdSpace,.AdTextSmallFont,.AdUnit,.AdUnit300,.Ad_C,.Ad_D_Wrapper,.Ad_E_Wrapper,.Ad_Right,.AdsBoxBottom,.AdsBoxSection,.AdsBoxTop,.AdsLinks1,.AdsLinks2,.AdsRec,.AdvertMidPage,.AdvertiseWithUs,.AdvertisementTextTag,.ArticleAd,.ArticleInlineAd,.BannerAd,.BigBoxAd,.BlockAd,.BottomAdContainer,.BottomAffiliate,.BoxAd,.CG_adkit_leaderboard,.CG_details_ad_dropzone,.CWReviewsProdInfoAd,.ComAread,.CommentAd,.ContentAd,.ContentAds,.DAWRadvertisement,.DeptAd,.DisplayAd,.FT_Ad,.FlatAds,.GOOGLE_AD,.GoogleAd,.GoogleAdSenseBottomModule,.GoogleAdSenseRightModule,.HPG_Ad_B,.HPNewAdsBannerDiv,.HPRoundedAd,.HomeContentAd,.IABAdSpace,.IndexRightAd,.LazyLoadAd,.LeftAd,.LeftButtonAdSlot,.LeftTowerAd,.M2Advertisement,.MD_adZone,.MOS-ad-hack,.MPU,.MPUHolder,.MPUTitleWrapperClass,.MREC_ads,.MiddleAd,.MiddleAdContainer,.NewsAds,.OAS,.OpaqueAdBanner,.OpenXad,.PU_DoubleClickAdsContent,.Post5ad,.Post9ad,.RBboxAd,.RectangleAd,.RelatedAds,.Right300x250AD,.RightAd1,.RightAdvertiseArea,.RightGoogleAFC,.RightRailTop300x250Ad,.RightSponsoredAdTitle,.RightTowerAd,.STR_AdBlock,.SideAdCol,.SidebarAd,.SidebarAdvert,.SitesGoogleAdsModule,.SkyAdContainer,.SponsorCFrame,.SponsoredAdTitle,.SponsoredContent,.SponsoredLinkItemTD,.SponsoredLinks,.SponsoredLinksGrayBox,.SponsoredLinksModule,.SponsoredLinksPadding,.SponsorshipText,.SquareAd,.StandardAdLeft,.StandardAdRight,.TRU-onsite-ads-leaderboard,.TextAd,.TheEagleGoogleAdSense300x250,.TopAd,.TopAdContainer,.TopAdL,.TopAdR,.TopBannerAd,.UIWashFrame_SidebarAds,.UnderAd,.VerticalAd,.Video-Ad,.VideoAd,.WidgetAdvertiser,.a160x600,.a728x90,.ad-120x600,.ad-160,.ad-160x600,.ad-250,.ad-300,.ad-300-block,.ad-300-blog,.ad-300x100,.ad-300x250,.ad-300x250-right0,.ad-350,.ad-355x75,.ad-600,.ad-635x40,.ad-728,.ad-728x90,.ad-728x90-1,.ad-728x90_forum,.ad-90x600,.ad-above-header,.ad-adlink-bottom,.ad-adlink-side,.ad-area,.ad-background,.ad-banner,.ad-bigsize,.ad-block,.ad-blog2biz,.ad-body { visibility:hidden !important; display:none !important; } .ad-bottom,.ad-break,.ad-btn,.ad-btn-heading,.ad-cell,.ad-container-300x250,.ad-container-728x90,.ad-context,.ad-disclaimer,.ad-div,.ad-enabled,.ad-feedback,.ad-filler,.ad-flex,.ad-footer,.ad-footer-leaderboard,.ad-google,.ad-graphic-large,.ad-gray,.ad-hdr,.ad-head,.ad-header,.ad-heading,.ad-homeleaderboard,.ad-img,.ad-in-post,.ad-index-main,.ad-island,.ad-label,.ad-leaderboard,.ad-links,.ad-lrec,.ad-medium,.ad-medium-two,.ad-mpu,.ad-msn,.ad-note,.ad-notice,.ad-other,.ad-permalink,.ad-placeholder,.ad-postText,.ad-poster,.ad-priority,.ad-rect,.ad-rectangle,.ad-rectangle-text,.ad-related,.ad-rh,.ad-ri,.ad-right,.ad-right-header,.ad-right-txt,.ad-row,.ad-section,.ad-show-label,.ad-side,.ad-sidebar-outer,.ad-sidebar300,.ad-sky,.ad-slot,.ad-slot-234-60,.ad-slot-300-250,.ad-slot-728-90,.ad-space,.ad-space-mpu-box,.ad-spot,.ad-square300,.ad-squares,.ad-statement,.ad-story-inject,.ad-tabs,.ad-text-links,.ad-tile,.ad-title,.ad-top,.ad-top-left,.ad-unit,.ad-unit-300,.ad-unit-300-wrapper,.ad-unit-anchor,.ad-vert,.ad-vtu,.ad-wrap,.ad-wrapper,.ad-zone-s-q-l,.ad.super,.ad0,.ad10,.ad120,.ad120x240backgroundGray,.ad120x600,.ad125,.ad140,.ad160,.ad160x600,.ad160x600GrayBorder,.ad18,.ad19,.ad21,.ad230,.ad250,.ad250c,.ad3,.ad300,.ad300250,.ad300_250,.ad300x100,.ad300x250,.ad300x250-hp-features,.ad300x250Top,.ad300x250_container,.ad300x250box,.ad300x50-right,.ad300x600,.ad310,.ad336x280,.ad343x290,.ad4,.ad400right,.ad450,.ad468_60,.ad468x60,.ad6,.ad620x70,.ad626X35,.ad7,.ad728,.ad728_90,.ad728x90,.ad728x90_container,.ad8,.ad90x780,.adAgate,.adArea674x60,.adBanner,.adBanner300x250,.adBanner728x90,.adBannerTyp1,.adBannerTypSortableList,.adBannerTypW300,.adBar,.adBgBottom,.adBgMId,.adBgTop,.adBlock,.adBottomboxright,.adBoxBody,.adBoxBorder,.adBoxContainer,.adBoxContent,.adBoxInBignews,.adBoxSidebar,.adBoxSingle,.adBwrap,.adCMRight,.adCell,.adColumn,.adCont,.adContTop,.adContour,.adCreative,.adCube,.adFender3,.adFrame,.adFtr,.adFullWidthMiddle,.adGoogle,.adHeader,.adHeadline,.adHome300x250,.adHorisontal,.adInNews,.adLabel,.adLeader,.adLeaderForum,.adLeaderboard,.adLeft,.adLoaded,.adLocal,.adMarker,.adMastheadLeft,.adMastheadRight,.adMegaBoard,.adMkt2Colw,.adModuleAd,.adMpu,.adNewsChannel,.adNoOutline,.adNotice,.adNoticeOut,.adObj,.adPageBorderL,.adPageBorderR,.adPanel,.adRect,.adRight,.adSelfServiceAdvertiseLink,.adServer,.adSkyscraperHolder,.adSlot,.adSpBelow,.adSpacer,.adSplash,.adSponsor,.adSpot,.adSpot-searchAd,.adSpot-textBox,.adSpot-twin,.adSpotIsland,.adSquare,.adSubColPod,.adSuperboard,.adSupertower,.adTD,.adTab,.adTag,.adTileWrap,.adTiler,.adTopboxright,.adTout,.adTxt,.adUnit,.adUnitHorz,.adUnitVert,.adUnitVert_noImage,.adWebBoard,.adWidget,.adWithTab,.adWrap,.adWrapper,.ad_0,.ad_1,.ad_120x90,.ad_125,.ad_130x90,.ad_160,.ad_160x600,.ad_2,.ad_200,.ad_200x200,.ad_250x250,.ad_250x250_w,.ad_3,.ad_300,.ad_300_250,.ad_300x250,.ad_300x250_box_right,.ad_336,.ad_336x280,.ad_350x100,.ad_350x250,.ad_400x200,.ad_468,.ad_468x60,.ad_600,.ad_728,.ad_728x90,.ad_Left,.ad_amazon,.ad_banner,.ad_banner_border,.ad_bar,.ad_bg,.ad_bigbox,.ad_biz,.ad_block,.ad_block_338,.ad_body,.ad_border,.ad_botbanner,.ad_bottom_leaderboard,.ad_bottom_left,.ad_box,.ad_box2,.ad_box_ad,.ad_box_div,.ad_callout,.ad_caption,.ad_column,.ad_column_box,.ad_column_hl,.ad_contain,.ad_container,.ad_content,.ad_content_wide,.ad_contents,.ad_descriptor,.ad_disclaimer,.ad_eyebrow,.ad_footer,.ad_frame,.ad_framed,.ad_front_promo,.ad_head,.ad_headline,.ad_hpm,.ad_info_block,.ad_inline,.ad_island,.ad_label,.ad_launchpad,.ad_leader,.ad_leaderboard,.ad_left,.ad_line,.ad_link,.ad_linkunit,.ad_loc,.ad_lrec,.ad_main,.ad_medrec,.ad_medrect,.ad_middle,.ad_mpu,.ad_mr,.ad_mrec,.ad_mrec_title_article,.ad_mrect,.ad_news,.ad_notice,.ad_one,.ad_p360,.ad_partner,.ad_partners,.ad_plus,.ad_post,.ad_power,.ad_rectangle,.ad_right_col,.ad_row,.ad_sidebar,.ad_skyscraper,.ad_slug,.ad_slug_table,.ad_space_300_250,.ad_sponsor,.ad_sponsoredsection,.ad_spot_b,.ad_spot_c,.ad_square_r,.ad_square_top,.ad_text_w,.ad_title,.ad_top,.ad_top_leaderboard,.ad_top_left,.ad_topright,.ad_tower,.ad_unit,.ad_unit_rail,.ad_url,.ad_warning,.ad_wid300,.ad_wide,.ad_wrap,.ad_wrapper,.ad_wrapper_fixed,.ad_wrapper_top,.ad_zone,.adarea,.adarea-long,.adbanner,.adbannerbox,.adbannerright,.adbar,.adboard,.adborder,.adbot,.adbottom,.adbottomright,.adbox-outer,.adbox-wrapper,.adbox_300x600,.adbox_366x280,.adbox_468X60,.adbox_bottom,.adboxclass,.adbreak,.adbug,.adbuttons,.adcode,.adcolumn,.adcolumn_wrapper,.adcopy,.add_300x250,.adfieldbg,.adfoot,.adfootbox,.adhead,.adhead_h,.adhead_h_wide,.adheader,.adheader100,.adhere,.adhered,.adhi,.adhint,.adhoriz,.adi,.adiframe,.adinside,.adintro,.adjlink,.adkicker,.adkit,.adkit-advert,.adkit-lb-footer,.adlabel-horz,.adlabel-vert,.adleader,.adleaderboard,.adleft1,.adline,.adlinks,.adlnklst,.admarker,.admedrec,.admessage,.admodule,.admpu,.admpu-small,.adnation-banner,.adnotice,.adops,.adp-AdPrefix,.adpadding,.adpane,.adprice,.adproxy,.adroot,.adrotate_widget,.adrow,.adrow-post,.adrule,.ads-125,.ads-728x90-wrap,.ads-banner,.ads-below-content,.ads-categories-bsa,.ads-favicon,.ads-links-general,.ads-mpu,.ads-outer,.ads-profile,.ads-right,.ads-sidebar,.ads-sky,.ads-stripe,.ads-text,.ads-widget,.ads-widget-partner-gallery,.ads160,.ads1_250,.ads2,.ads3,.ads300,.ads460,.ads460_home,.ads468,.ads728,.ads728x90,.adsArea,.adsBelowHeadingNormal,.adsBlock,.adsBox,.adsCell,.adsCont,.adsDiv,.adsFull,.adsImages,.adsMPU,.adsRight,.adsTextHouse,.adsTop,.adsTower2,.adsTowerWrap,.adsWithUs,.ads_125_square,.ads_180,.ads_300,.ads_300x250,.ads_337x280,.ads_728x90,.ads_big,.ads_big-half,.ads_box,.ads_brace,.ads_catDiv,.ads_container,.ads_disc_anchor,.ads_disc_leader,.ads_disc_lwr_square,.ads_disc_skyscraper,.ads_disc_square,.ads_div,.ads_header,.ads_leaderboard,.ads_medrect,.ads_mpu,.ads_outer,.ads_rectangle,.ads_right,.ads_sc_bl_i,.ads_sc_tl_i,.ads_show_if,.ads_side,.ads_sidebar,.ads_singlepost,.ads_spacer,.ads_takeover,.ads_title,.ads_top,.ads_top_promo,.ads_tr,.ads_verticalSpace,.ads_vtlLink,.ads_widesky,.ads_wrapperads_top,.adsbg300,.adsblockvert,.adsborder,.adsbottom,.adsbox,.adsboxitem,.adsbyyahoo,.adsc,.adscaleAdvert,.adsclick,.adscontainer,.adscreen,.adsd_shift100,.adsection_a2,.adsection_c2,.adsense-ad,.adsense-category,.adsense-category-bottom,.adsense-heading,.adsense-post,.adsense-right,.adsense-title,.adsense3,.adsense300,.adsenseAds,.adsenseBlock,.adsenseContainer,.adsenseGreenBox,.adsense_bdc_v2,.adsense_mpu,.adsensebig,.adsenseblock,.adsenseblock_bottom,.adsenseblock_top,.adsenselr,.adsensem_widget,.adsensesq,.adsenvelope,.adset,.adsforums,.adsghori,.adsgvert,.adside,.adsidebox,.adsider,.adsingle,.adsleft,.adslink,.adslogan,.adsmalltext,.adsmessage,.adsnippet_widget,.adspace,.adspace-MR,.adspace-widget,.adspace180,.adspace_bottom,.adspace_buysell,.adspace_rotate,.adspace_skyscraper,.adspacer,.adspot,.adspot728x90,.adstextpad,.adstitle,.adstop,.adstory,.adstrip,.adtag,.adtech,.adtext_gray,.adtext_horizontal,.adtext_onwhite,.adtext_vertical,.adtile,.adtips,.adtips1,.adtop,.adtravel,.adtxt,.adtxtlinks,.adunit,.adv-mpu,.adver,.adverTag,.adver_cont_below,.advert-728x90,.advert-article-bottom,.advert-bannerad,.advert-box,.advert-head,.advert-iab-300-250,.advert-iab-468-60,.advert-mpu,.advert-skyscraper,.advert-text,.advert-txt,.advert300,.advert4,.advert5,.advert8,.advertColumn,.advertCont,.advertContainer,.advertHeadline,.advertRight,.advertText,.advertTitleSky,.advert_468x60,.advert_box,.advert_cont,.advert_djad,.advert_label,.advert_leaderboard,.advert_note,.advert_surr,.advert_top,.advertheader-red,.advertise-here,.advertise-homestrip,.advertise-horz,.advertise-leaderboard,.advertise-top,.advertise-vert,.advertiseContainer,.advertiseText,.advertise_ads,.advertise_here,.advertise_link,.advertise_link_sidebar,.advertisement-728x90,.advertisement-block,.advertisement-sidebar,.advertisement-space,.advertisement-sponsor,.advertisement-text,.advertisement-top,.advertisement468,.advertisementBox,.advertisementColumnGroup,.advertisementContainer,.advertisementHeader,.advertisementLabel,.advertisementPanel,.advertisement_btm,.advertisement_caption,.advertisement_g,.advertisement_header,.advertisement_horizontal,.advertisement_top,.advertiser-links,.advertisespace_div,.advertising-banner,.advertising-header,.advertising-local-links,.advertising2,.advertisingTable,.advertising_images,.advertisment_two,.advertize,.advertorial,.advertorial-2,.advertorial-promo-box,.advertorialtitle,.advt,.advt-banner-3,.advt-block,.advt-sec,.advt300,.advt720,.adwordListings,.adwords,.adwordsHeader,.adwrap,.adwrapper-lrec,.adwrapper948,.adzone-footer,.adzone-sidebar,.affiliate-link,.affiliate-sidebar,.affiliateAdvertText,.affinityAdHeader,.afsAdvertising,.after_ad,.agi-adsaleslinks,.alb-content-ad,.alignads,.alt_ad,.anchorAd,.another_text_ad,.answer_ad_content,.aolSponsoredLinks,.aopsadvert,.apiAdMarkerAbove,.apiAds,.archive-ads,.art_ads,.article-ads,.articleAd,.articleAds,.articleAdsL,.articleEmbeddedAdBox,.article_ad,.article_adbox,.article_mpu_box,.articleads,.aseadn,.aux-ad-widget-1,.aux-ad-widget-2,.b-astro-sponsored-links_horizontal,.b-astro-sponsored-links_vertical,.banner-ad,.banner-ads,.banner-adverts,.banner300x100,.banner300x250,.banner468,.bannerAd,.bannerAdWrapper300x250,.bannerAdWrapper730x86,.bannerRightAd,.banner_300x250,.banner_ad,.banner_ad_footer,.banner_ad_leaderboard,.bannerad,.barkerAd,.base-ad-mpu,.base_ad,.base_printer_widgets_AdBreak,.bg-ad-link,.bgnavad,.big-ads,.bigAd,.big_ad,.big_ads,.bigad,.bigad2,.bigbox_ad,.bigboxad,.billboard_ad,.blk_advert,.block-ad,.block-ad300,.block-admanager,.block-ads-bottom,.block-ads-top,.block-adsense,.block-openadstream,.block-openx,.block-thirdage-ads,.block-wtg_adtech,.blockAd,.blockAds,.block_ad_sb_text,.block_ad_sponsored_links,.block_ad_sponsored_links-wrapper,.blockad,.blocked-ads,.blocsponsor,.blog-ad-leader-inner,.blog-ads-container,.blogAd,.blogAdvertisement,.blogArtAd,.blogBigAd,.blog_ad,.blogads,.blox3featuredAd,.body_ad,.body_sponsoredresults_bottom,.body_sponsoredresults_middle,.body_sponsoredresults_top,.bookseller-header-advt,.bottomAd,.bottomAds,.bottom_ad,.bottom_adsense,.bottom_sponsor,.bottomad,.bottomadvert,.bottomrightrailAd,.bottomvidad,.box-ad,.box-ad-grey,.box-ads,.box-adsense,.boxAd,.boxAds,.box_ad,.box_ad_container,.box_ad_content,.box_ad_spacer,.box_ads,.box_advertising,.box_advertisment_62_border,.box_content_ad,.box_content_ads,.boxad,.boxyads,.bps-ad-wrapper,.bps-advertisement,.bps-advertisement-inline-ads,.br-ad,.breakad_container,.brokerad,.bsa_ads,.btm_ad,.btn-ad,.bullet-sponsored-links,.bullet-sponsored-links-gray,.burstContentAdIndex,.busrep_poll_and_ad_container,.buttonAd,.buttonAds,.buttonadbox,.bx_ad,.bx_ad_right,.cA-adStrap,.cColumn-TextAdsBox,.care2_adspace,.catalog_ads,.category-ad,.category__big_game_container_body_games_advertising,.cb-ad-container,.cb_ads,.cb_footer_sponsor,.cb_navigation_ad,.cbstv_ad_label,.cbzadvert,.cbzadvert_block,.cdAdTitle,.cdmainlineSearchAdParent,.cdsidebarSearchAdParent,.centerAd,.center_ad,.centerad,.centered-ad,.cinemabotad,.classifiedAdThree,.clearerad,.cm_ads,.cms-Advert,.cnbc_badge_banner_ad_area,.cnbc_banner_ad_area,.cnn160AdFooter,.cnnAd,.cnnMosaic160Container,.cnnSearchSponsorBox,.cnnStoreAd,.cnnStoryElementBoxAd,.cnnWCAdBox,.cnnWireAdLtgBox,.cnn_728adbin,.cnn_adcntr300x100,.cnn_adcntr728x90,.cnn_adspc336cntr,.cnn_adtitle,.column2-ad,.columnRightAdvert,.com-ad-server,.comment-advertisement,.comment_ad_box,.common_advertisement_title,.communityAd,.conTSponsored,.conductor_ad,.confirm_ad_left,.confirm_ad_right,.confirm_leader_ad,.consoleAd,.container-adwords,.containerSqAd,.container_serendipity_plugin_google_adsense,.content-ad,.contentAdFoot,.contentAdsWrapper,.content_ad,.content_ad_728,.content_adsq,.contentad,.contentad300x250,.contentad_right_col,.contentadcontainer,.contentadleft,.contentads,.contenttextad,.contest_ad,.cp_ad,.cpmstarHeadline,.cpmstarText,.create_ad,.cs-mpu,.cscTextAd,.cse_ads,.cspAd,.ct_ad,.cube-ad,.cubeAd,.cube_ads,.currency_ad,.custom_ads,.cwAdvert,.darla_ad,.dartAdImage,.dart_ad,.dart_tag,.dartadvert,.dartiframe,.dc-ad,.dcAdvertHeader,.deckAd,.deckads,.detailMpu,.detail_ad,.detail_top_advert,.divAd,.divAdright,.divad1,.divad2,.divad3,.divads,.divider_ad,.dmco_advert_iabrighttitle,.downloadAds,.download_ad,.downloadad,.dualAds,.dynamic-ads,.dynamic_ad,.e-ad,.ec-ads,.ec-ads-remove-if-empty,.em-ad,.embed-ad,.entry-body-ad,.entry_sidebar_ads,.entryad,.ez-clientAd,.f_Ads,.feature_ad,.featuredAds,.featuredadvertising,.firstpost_advert_container,.flagads,.flash-advertisement,.flash_ad,.flash_advert,.flashad,.flexiad,.flipbook_v2_sponsor_ad,.floatad,.floated_right_ad,.floatingAds,.fm-badge-ad,.footad,.footer-ad,.footerAd,.footerAdModule,.footerAdslot,.footerTextAd,.footer_ad,.footer_ads,.footer_block_ad,.footer_bottomad,.footer_line_ad,.footer_text_ad,.footerad,.forumtopad,.frn_adbox,.frn_cont_adbox,.frontads,.ft-ad,.ftdAdBar,.ftdContentAd,.full_ad_box,.fullbannerad,.g3rtn-ad-site,.gAdRows,.gAdSky,.gAdvertising { visibility:hidden !important; display:none !important; } .g_ggl_ad,.ga-ads,.ga-textads-bottom,.ga-textads-top,.gaTeaserAdsBox,.gads,.gads_cb,.gads_container,.gallery_ad,.gam_ad_slot,.gameAd,.gamesPage_ad_content,.gbl_advertisement,.gen_side_ad,.gglAds,.global_banner_ad,.googad,.googads,.google-ad,.google-ad-container,.google-ads,.google-ads-boxout,.google-ads-slim,.google-right-ad,.google-sponsored-ads,.google-sponsored-link,.google468_60,.googleAd,.googleAd-content,.googleAd-list,.googleAd300x250_wrapper,.googleAdBox,.googleAdSense,.googleAdSenseModule,.googleAd_body,.googleAds,.googleAds_article_page_above_comments,.googleAdsense,.googleContentAds,.googleProfileAd,.googleSearchAd_content,.googleSearchAd_sidebar,.google_ad,.google_ad_wide,.google_add_container,.google_ads,.google_ads_bom_title,.google_ads_content,.googlead,.googleaddiv,.googleaddiv2,.googleads,.googleads_300x250,.googleads_title,.googleafc,.googley_ads,.gpAdBox,.gpAds,.gradientAd,.grey-ad-line,.group_ad,.gsAd,.gsfAd,.gt_ad,.gt_ad_300x250,.gt_ad_728x90,.gt_adlabel,.gutter-ad-left,.gutter-ad-right,.h-ad-728x90-bottom,.h_Ads,.h_ad,.half-ad,.half_ad_box,.hcf-ad-rectangle,.hcf-cms-ad,.hd_advert,.hdr-ads,.header-advert,.headerAds,.headerAdvert,.headerTextAd,.header_ad,.header_ad_div,.header_advertisment,.headerad,.headerad-720,.hi5-ad,.highlightsAd,.hm_advertisment,.home-ad-links,.homeAd,.homeAd1,.homeAd2,.homeAdBoxA,.homeAdBoxBetweenBlocks,.homeAdBoxInBignews,.homeAdSection,.homeMediumAdGroup,.home_ad_bottom,.home_advertisement,.home_mrec_ad,.homead,.homepage-ad,.homepage300ad,.homepageFlexAdOuter,.homepageMPU,.homepage_middle_right_ad,.hor_ad,.horiz_adspace,.horizontalAd,.horizontal_ads,.horizontaltextadbox,.horizsponsoredlinks,.hortad,.houseAd1,.houseAdsStyle,.housead,.hp-col4-ads,.hp2-adtag,.hp_ad_cont,.hp_ad_text,.hp_t_ad,.hp_w_ad,.hpa-ad1,.html-advertisement,.ic-ads,.ico-adv,.idMultiAd,.image-advertisement,.imageads,.imgad,.in-page-ad,.in-story-ads,.in-story-text-ad,.indEntrySquareAd,.indie-sidead,.indy_googleads,.inhousead,.inline-ad,.inline-mpu,.inline-mpu-left,.inlineSideAd,.inline_ad,.inline_ad_title,.inlinead,.inlineadsense,.inlineadtitle,.inlist-ad,.inlistAd,.inner-advt-banner-3,.innerAds,.innerad,.inpostad,.insert_advertisement,.insertad,.insideStoryAd,.inteliusAd_image,.interest-based-ad,.internalAdsContainer,.is24-adplace,.isAd,.islandAd,.islandAdvert,.islandad,.jimdoAdDisclaimer,.jp-advertisment-promotional,.js-advert,.kw_advert,.kw_advert_pair,.l_ad_sub,.l_banner.ads_show_if,.labelads,.largeRectangleAd,.largeUnitAd,.lastRowAd,.lcontentbox_ad,.leaderAdTop,.leaderAdvert,.leader_ad,.leaderboardAd,.leaderboardad,.leaderboardadtop,.left-ad,.leftAd,.leftAdColumn,.leftAds,.left_ad,.left_ad_box,.left_adlink,.left_ads,.left_adsense,.leftad,.leftadtag,.leftbar_ad_160_600,.leftbarads,.leftbottomads,.leftnavad,.lgRecAd,.lg_ad,.ligatus,.linead,.link_adslider,.link_advertise,.live-search-list-ad-container,.ljad,.local-ads,.log_ads,.logoAds,.logoad,.logoutAd,.longAd,.lowerAds,.m-ad-tvguide-box,.m4-adsbygoogle,.m_banner_ads,.macAd,.macad,.main-ad,.main-advert,.main-tabs-ad-block,.main_ad,.main_ad_bg_div,.main_adbox,.main_intro_ad,.map_media_banner_ad,.marginadsthin,.marketing-ad,.masthead_topad,.matador_sidebar_ad_600,.mdl-ad,.media-advert,.mediaAd,.mediaAdContainer,.mediaResult_sponsoredSearch,.medium-rectangle-ad,.mediumRectangleAdvert,.medrect_ad,.menuItemBannerAd,.menueadimg,.messageBoardAd,.mf-ad300-container,.micro_ad,.mid_ad,.midad,.middleAds,.middleads,.min_navi_ad,.mini-ad,.miniad,.mmcAd_Iframe,.mobile-sponsoring,.mod-ad-lrec,.mod-ad-n,.mod-adopenx,.mod-vertical-ad,.mod_admodule,.module-ad-small,.module-ads,.moduleAdvertContent,.module_ad,.module_box_ad,.modulegad,.moduletable-advert,.moduletable-googleads,.moduletablesquaread,.mpu-ad,.mpu-advert,.mpu-footer,.mpu-fp,.mpu-title,.mpu-top-left,.mpu-top-left-banner,.mpu-top-right,.mpuAd,.mpuAdSlot,.mpuAdvert,.mpuArea,.mpuBox,.mpuContainer,.mpuHolder,.mpuTextAd,.mpu_ad,.mpu_advert,.mpu_container,.mpu_gold,.mpu_holder,.mpu_platinum,.mpu_text_ad,.mpuad,.mpuholderportalpage,.mrec_advert,.ms-ads-link,.msfg-shopping-mpu,.mwaads,.my-ad250x300,.nSponsoredLcContent,.nSponsoredLcTopic,.nadvt300,.narrow_ad_unit,.narrow_ads,.navAdsBanner,.navadbox,.navi_ad300,.naviad,.nba300Ad,.nbaT3Ad160,.nbaTVPodAd,.nbaTwo130Ads,.nbc_ad_carousel_wrp,.newTopAdContainer,.newad,.news_article_ad_google,.newsviewAdBoxInNews,.nf-adbox,.nn-mpu,.noAdForLead,.normalAds,.nrAds,.nsAdRow,.oas-ad,.oas-bottom-ads,.offer_sponsoredlinks,.oio-banner-zone,.oio-link-sidebar,.oio-zone-position,.on_single_ad_box,.onethirdadholder,.openads,.openadstext_after,.openx,.openx-ad,.osan-ads,.other_adv2,.outermainadtd1,.ovAdPromo,.ovAdSky,.ovAdartikel,.ov_spns,.pageGoogleAd,.pageGoogleAdFlat,.pageLeaderAd,.page_content_right_ad,.pagead,.pagenavindexcontentad,.paneladvert,.partner-ads-container,.partnersTextLinks,.pencil_ad,.player_ad_box,.player_hover_ad,.player_page_ad_box,.plista_inimg_box,.pnp_ad,.pod-ad-300,.podRelatedAdLinksWidget,.podSponsoredLink,.portalCenterContentAdBottom,.portalCenterContentAdMiddle,.portalCenterContentAdTop,.portalcontentad,.postAd,.post_ad,.post_ads,.post_sponsor_unit,.postbit_adbit_register,.postbit_adcode,.postgroup-ads,.postgroup-ads-middle,.prebodyads,.premium_ad_container,.promoAd,.promoAds,.promo_ad,.ps-ligatus_placeholder,.publication-ad,.publicidad,.puff-advertorials,.qa_ad_left,.qm-ad-content,.qm-ad-content-news,.quigo-ad,.qzvAdDiv,.r_ad_1,.r_ad_box,.r_ads,.rad_container,.rect_ad_module,.rectad,.rectangle-ad,.rectangleAd,.rectanglead,.redads_cont,.regular_728_ad,.regularad,.relatedAds,.related_post_google_ad,.remads,.resourceImagetAd,.result_ad,.results_sponsor,.results_sponsor_right,.reviewMidAdvertAlign,.rght300x250,.rhads,.rhs-ad,.rhs-ads-panel,.right-ad,.right-ad-holder,.right-ad2,.right-ads,.right-ads2,.right-sidebar-box-ad,.rightAdBox,.rightColAd,.rightColumnRectAd,.rightRailAd,.right_ad,.right_ad_160,.right_ad_box,.right_ad_text,.right_ad_top,.right_ads,.right_col_ad,.right_hand_advert_column,.right_side-partyad,.rightad_1,.rightad_2,.rightadbox1,.rightads,.rightadunit,.rightcol_boxad,.rightcoladvert,.rightcoltowerad,.rnav_ad,.rngtAd,.roundedCornersAd,.roundingrayboxads,.rt_ad1_300x90,.rt_ad_300x250,.rt_ad_call,.s2k_ad,.savvyad_unit,.sb-ad-sq-bg,.sbAd,.sbAdUnitContainer,.sb_adsN,.sb_adsNv2,.sb_adsW,.sb_adsWv2,.scanAd,.scc_advert,.sci-ad-main,.sci-ad-sub,.search-ad,.search-results-ad,.search-sponsor,.search-sponsored,.searchAd,.searchAds,.searchSponsoredResultsBox,.searchSponsoredResultsList,.search_column_results_sponsored,.search_results_sponsored_top,.section-ad2,.section-sponsor,.section_mpu_wrapper,.section_mpu_wrapper_wrapper,.selfServeAds,.sepContentAd,.serp_sponsored,.servsponserLinks,.shoppingGoogleAdSense,.showcaseAd,.sidbaread,.side-ad,.side-ads,.sideAd,.sideBoxAd,.side_ad,.side_ad2,.side_ad_1,.side_ad_2,.side_ad_3,.sidead,.sideads,.sideadsbox,.sideadvert,.sidebar-ad,.sidebar-ads,.sidebar-text-ad,.sidebarAd,.sidebarAdUnit,.sidebarAdvert,.sidebar_ad,.sidebar_ad_300_250,.sidebar_ads,.sidebar_ads_336,.sidebar_adsense,.sidebar_box_ad,.sidebarad,.sidebarad_bottom,.sidebaradbox,.sidebarboxad,.sideheadnarrowad,.sideheadsponsorsad,.singleAd,.singleAdsContainer,.singlead,.sitesponsor,.skinAd,.skin_ad_638,.sky-ad,.skyAd,.skyAdd,.skyAdvert,.sky_ad,.sky_scraper_ad,.skyad,.skyjobsadtext,.skyscraper-ad,.skyscraper_ad,.skyscraper_bannerAdHome,.sleekadbubble,.slideshow-ad,.slpBigSlimAdUnit,.slpSquareAdUnit,.sm_ad,.smallSkyAd1,.smallSkyAd2,.small_ad,.small_ads,.smallad-left,.smallads,.smallsponsorad,.smart_ads_bom_title,.specialAd175x90,.speedyads,.sphereAdContainer,.spl-ads,.spl_ad,.spl_ad2,.spl_ad_plus,.splitAd,.sponlinkbox,.spons-link,.spons_links,.sponslink,.sponsor-ad,.sponsor-bottom,.sponsor-link,.sponsor-links,.sponsor-right,.sponsor-services,.sponsor-top,.sponsorArea,.sponsorBox,.sponsorPanel,.sponsorPost,.sponsorPostWrap,.sponsorStrip,.sponsorTop,.sponsor_ad_area,.sponsor_footer,.sponsor_horizontal,.sponsor_line,.sponsor_links,.sponsor_logo,.sponsor_top,.sponsor_units,.sponsoradtitle,.sponsorbox,.sponsored-ads,.sponsored-chunk,.sponsored-editorial,.sponsored-features,.sponsored-links,.sponsored-links-alt-b,.sponsored-links-holder,.sponsored-links-right,.sponsored-post,.sponsored-post_ad,.sponsored-results,.sponsored-right-border,.sponsored-text,.sponsoredBox,.sponsoredInfo,.sponsoredInner,.sponsoredLabel,.sponsoredLinks,.sponsoredLinks2,.sponsoredLinksHeader,.sponsoredProduct,.sponsoredResults,.sponsoredSideInner,.sponsored_ads,.sponsored_box,.sponsored_box_search,.sponsored_by,.sponsored_links,.sponsored_links_title_container,.sponsored_links_title_container_top,.sponsored_links_top,.sponsored_results,.sponsored_well,.sponsoredibbox,.sponsoredlink,.sponsoredlinks,.sponsoredlinkscontainer,.sponsoredresults,.sponsoredtextlink_container_ovt,.sponsorlink,.sponsorlink2,.sponsormsg,.sponsors,.sponsors-box,.sponsors_bar,.sponsorshipbox,.sponsortable,.sponsortext,.spotlightAd,.squareAd,.square_ad,.square_banner_ad,.squared_ad,.ss-ad-mpu,.standard-ad,.start__newest__big_game_container_body_games_advertising,.staticAd,.stock-ticker-ad-tag,.stocks-ad-tag,.store-ads,.story_AD,.story_ad_div,.story_right_adv,.storyad,.storysponsorimage,.subad,.subcontent-ad,.subtitle-ad-container,.sugarad,.super-ad,.supercommentad_left,.supercommentad_right,.supp-ads,.supportAdItem,.surveyad,.t10ad,.tab_ad,.tab_ad_area,.tablebordersponsor,.tadsanzeige,.tadsbanner,.tadselement,.tallad,.tblTopAds,.tbl_ad,.tbox_ad,.td-Adholder,.teaser-sponsor,.teaserAdContainer,.teaser_adtiles,.text-ad-links,.text-advertisement,.text-g-advertisement,.text-g-group-short-rec-ad,.text-g-net-grp-google-ads-article-page,.textAd,.textAdBox,.textAds,.text_ad,.text_ads,.textad,.textadContainer,.textad_headline,.textadbox,.textadheadline,.textadlink,.textadsds,.textadsfoot,.textadtext,.textlink-ads,.tf_page_ad_search,.thisIsAd,.thisIsAnAd,.ticket-ad,.tileAds,.tips_advertisement,.title-ad,.title_adbig,.tncms-region-ads,.toolad,.toolbar-ad,.top-ad,.top-ad-space,.top-ads,.top-banner-ad,.top-menu-ads,.top-sponsors,.topAdWrap,.topAdvertisement,.topBannerAd,.topLeaderboardAd,.top_Ad,.top_ad,.top_ad_728,.top_ad_728_90,.top_ad_disclaimer,.top_ad_div,.top_ad_post,.top_ad_wrapper,.top_advert,.top_advertising_lb,.top_container_ad,.top_sponsor,.topad-bar,.topadbox,.topadspot,.topadvertisementsegment,.topcontentadvertisement,.topic_inad,.topstoriesad,.toptenAdBoxA,.tourFeatureAd,.towerAd,.towerAdLeft,.towerAds,.tower_ad,.tower_ad_disclaimer,.towerad,.tribal-ad,.ts-ad_unit_bigbox,.ts-banner_ad,.ttlAdsensel,.tto-sponsored-element,.tucadtext,.tvs-mpu,.twoColumnAd,.twoadcoll,.twoadcolr,.tx_smartadserver_pi1,.txt-ads,.txtAd,.txtAds,.txt_ads,.txtadvertise,.type_adscontainer,.type_miniad,.type_promoads,.ukAds,.undertimyads,.unit-ad,.universalboxADVBOX01,.universalboxADVBOX03,.universalboxADVBOX04a,.usenext,.vertad,.vertical-adsense,.videoAd,.videoBoxAd,.video_ad,.view-promo-mpu-right,.view_rig_ad,.virgin-mpu,.wa_adsbottom,.wantads,.wide-ad,.wide-skyscraper-ad,.wideAd,.wideAdTable,.wide_ad,.wide_ad_unit_top,.wide_ads,.wide_google_ads,.widget-ad,.widget-ad300x250,.widget-entry-ads-160,.widgetYahooAds,.widget_ad,.widget_ad_rotator,.widget_island_ad,.widget_sdac_bottom_ad_widget,.widget_sdac_footer_ads_widget,.widget_sdac_skyscraper_ad_widget,.widget_sponsor,.wikia-ad,.wikia_ad_placeholder,.wingadblock,.withAds,.wl-ad,.wnMultiAd,.wp125ad,.wp125ad_2,.wpn_ad_content,.wrap-ads,.wsSponsoredLinksRight,.wsTopSposoredLinks,.x03-adunit,.x04-adunit,.xads-blk2,.xads-ojedn,.y-ads,.y-ads-wide,.y7-advertisement,.yahoo-sponsored,.yahoo-sponsored-links,.yahooAds,.yahoo_ads,.yan-sponsored,.ygrp-ad,.yrail_ad_wrap,.yrail_ads,.ysmsponsor,.ysponsor,.yw-ad,a[href^="http://ad.doubleclick.net/"],a[href^="http://adserving.liveuniversenetwork.com/"],a[href^="http://galleries.pinballpublishernetwork.com/"],a[href^="http://galleries.securewebsiteaccess.com/"],a[href^="http://install.securewebsiteaccess.com/"],a[href^="http://latestdownloads.net/download.php?"],a[href^="http://secure.signup-page.com/"],a[href^="http://secure.signup-way.com/"],a[href^="http://www.FriendlyDuck.com/AF_"],a[href^="http://www.adbrite.com/mb/commerce/purchase_form.php?"],a[href^="http://www.friendlyduck.com/AF_"],a[href^="http://www.google.com/aclk?"],a[href^="http://www.liutilities.com/aff"],a[href^="http://www.liutilities.com/products/campaigns/adv/"],a[href^="http://www.my-dirty-hobby.com/?sub="],a[href^="http://www.ringtonematcher.com/"],div#mclip_container:first-child:last-child,div#tads.c,table.ra[align="left"][width="30%"],table.ra[align="right"][width="30%"],[src*="sixsigmatraffic.com"],embed[flashvars*="AdID"],#Ad1,#AdHeader,#Adbanner,#AdvertiseFrame,#Advertisement,#Advertisements,#Tadspacehead,#TopAd,#ad-container,#ad-header,#ad-top,#ad-wrapper,#ad1,#ad3,#ad728x90,#adBanner,#adComponentWrapper,#adContainer,#adDiv,#adHeader,#adTop,#adWrapper,#ad_area,#ad_container,#ad_leader,#ad_space,#ad_square,#ad_table,#ad_wrapper,#adbody,#adbox,#adposition3,#adsense,#adsense_inline,#adspace,#advert,#advertise,#advertising,#adverts,#adwrapper,#bannerad,#block_advert,#contentAd,#content_ad,#divAd,#featuread,#footer_ad,#footer_ads,#googlead,#head-ad,#header_ad,#mainAd,#printads,#promo-ad,#right_ad,#sidebar-ads,#sidebar_ads,#sponsored,#topAd,#topBannerAd,#top_ad,#topad,#topads,.AdBox,.AdInfo,.AdSense,.AdTitle,.Ads,.Advert,.ad-box,.ad-button,.ad-container,.ad-content,.ad-display,.ad-holder,.ad-sidebar,.ad-text,.ad1,.ad2,.ad468,.adBox,.adContainer,.adDiv,.adElement,.adHolder,.adModule,.adSpace,.adSummary,.adText,.adTitle,.ad_Right,.ad_header,.ad_links,.ad_right,.ad_space,.ad_text,.adbox,.adcol1,.adcol2,.adcont,.addiv,.adframe,.adholder,.adinfo,.adlink,.adlist,.adpic,.adright,.ads-section,.adsense,.adtable,.adtext,.advert-horizontal,.advert_list,.advertise,.advertisement,.advertiser,.advertising,.advertising_block,.advertisment,.adverts,.adwrapper,.affiliate,.banner_728x90,.block_ad,.bottom_ad_block,.contentAd,.detail-ads,.header-ad,.headerAd,.header_ad_center,.horizontal_ad,.module-ad,.mpu,.post-ad,.rightAd,.right_ads_column,.rightad,.sponsored,.sponsoredtextlink_container,.textads,.topAd,.topAds,.top_ads,.topad,.topads,a[href^="http://ad-emea.doubleclick.net/"] { visibility:hidden !important; display:none !important; }</style></html>

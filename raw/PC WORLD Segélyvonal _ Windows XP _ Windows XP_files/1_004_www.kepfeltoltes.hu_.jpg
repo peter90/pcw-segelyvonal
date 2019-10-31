@@ -1,0 +1,306 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<title>Képfeltöltés.hu - korlátlan ingyen tárhely képeidnek, regisztráció nélkül</title>
+    <META name="description" content="Képfeltöltés.hu - korlátlan ingyen tárhely képeidnek, regisztráció nélkül">
+    <META name="keywords" content="képfeltöltés, kepfeltoltes, kép feltöltés, fotófeltöltés, fotofeltoltes, fotó feltöltés, ingyen, ingyenes, kép, fotó, tárhely, ingyen tárhely, ingyenes tárhely">
+    <META name="Author" content="info@tarhelyem.hu">
+    <META HTTP-EQUIV="Content-Language" content="hu">
+    <META name="robots" content="all">
+    <META name="distribution" content="Global">
+    <META name="revisit-after" content="14 days">
+    <META name="rating" content="General">
+    <META name="doc-type" content="Web Page">    
+    <meta name="verify-v1" content="518aVTBpPBWm9nmkgRZVCvoEWorwSP9WJUUtkwHd4+s=" />
+    <style type="text/css">
+     body, td, .td {
+      font-family: Verdana, Arial;
+      font-size: 9px;
+      color: #707070;
+     }
+     
+     a {
+      color: #707070;     
+     }
+     
+     a:hover {
+      color: #404040;
+     }
+     
+     input, select, textarea {
+      background-color: #C7EDBE;
+      font-family: Verdana, Arial;
+      font-size: 9px;
+      color: #000000;      
+      border: 1px solid Black;
+     }
+     
+     ul {
+      margin-top: 0in;
+     }
+     
+     .norep {
+      
+     }
+    </style>
+<script language="JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadimages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadimages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+
+
+// Resize function by -mano [http://crxforum.flix.hu/]
+function m_resize() {
+	maxszelesseg=446;
+	for (i=0 ; i < document.images.length ; i++) {
+		szelesseg = document.images[i].width;
+		magassag = document.images[i].height;
+		if (szelesseg>maxszelesseg){
+			szorzo=maxszelesseg/szelesseg;
+			ujszelesseg=Math.round(szelesseg*szorzo);
+			ujmagassag=Math.round(magassag*szorzo);
+			document.images[i].width=ujszelesseg;
+			document.images[i].height=ujmagassag;
+		}
+	}
+	return true;
+}
+
+function resize_it(w,h)
+ {
+  maxszelesseg=446;
+  szelesseg = document.images['the_photo'].width;
+  magassag = document.images['the_photo'].height;
+  if (szelesseg>maxszelesseg){
+			szorzo=maxszelesseg/szelesseg;
+			ujszelesseg=Math.round(szelesseg*szorzo);
+			ujmagassag=Math.round(magassag*szorzo);
+			document.images['the_photo'].width=ujszelesseg;
+			document.images['the_photo'].height=ujmagassag;
+  }
+   else if (w>1 && h>1)
+  {
+   document.images['the_photo'].width=w;
+   document.images['the_photo'].height=h;
+  }
+ }
+
+
+</script>    
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-203288-1";
+urchinTracker();
+</script>
+
+<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'>
+</script>
+<script type='text/javascript'>
+GS_googleAddAdSenseService("ca-pub-1138220457959066");
+GS_googleEnableAllServices();
+</script>
+<script type='text/javascript'>
+GA_googleAddSlot("ca-pub-1138220457959066", "Kepfeltoltes_468x60");
+</script>
+<script type='text/javascript'>
+GA_googleFetchAds();
+</script>
+
+</head>
+
+<body onLoad="resize_it(1,1); MM_preloadimages(
+            'http://static.kepfeltoltes.hu/menu_1a.gif',
+            'http://static.kepfeltoltes.hu/menu_3a.gif'
+           )" bgcolor="#C7EDBE" background="http://static.kepfeltoltes.hu/bg2.gif" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+<map name="top">
+ <area alt="" coords="6,47,212,84" href="index.php">
+</map>
+
+<table width="796" cellpadding="0" cellspacing="0" border="0" align="center">
+ <tr>
+  <td colspan='3' valign='top' width='796' align='center'>
+   <table width="486" cellpadding="0" cellspacing="0" border="0" align="center">
+    <tr>
+     <td background="http://static.kepfeltoltes.hu/top2.gif" width="486" height="99" valign="top" style="background-repeat: no-repeat;"><div style="margin-left: 322px; margin-top: 53px;"><a href="http://www.tarhelyem.hu/tarhely" title="tárhely, hosting, seo" target="_blank"><img src="http://static.kepfeltoltes.hu/title_anim.gif" border="0"></a></div></td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr>
+  <td colspan='3' valign='top' width='796' align='center'>
+<SCRIPT language="JavaScript">
+<!--
+    function _webaudit_cookie() {
+      var now=new Date();
+      var expire = new Date(2020,12,31,23,59,59);
+      var mid=Date.parse(now.toGMTString()) + "A" + Math.floor(Math.random()*1000000) ;
+      var search = "welid=";
+
+      if (document.cookie.length > 0) {
+        offset = document.cookie.indexOf(search);
+        if (offset != -1) {
+          offset += search.length;
+          end = document.cookie.indexOf(";", offset);
+          if (end == -1) end = document.cookie.length;
+          mid=document.cookie.substring(offset, end);
+        }
+      }
+      document.cookie = search + mid + "; expires=" + expire.toGMTString();
+      return mid;
+    }
+
+var same =  Math.floor(Math.random()*1000000);
+var ua = "";
+if(navigator.userAgent) ua="@ua=" + escape(navigator.userAgent);
+same = same + "@welid=" + _webaudit_cookie();
+same = same + ua;
+
+document.write('<!-- Medián WebAudit ecoNET parom.hu aloldalak 1/2 --><img src="http://audit.median.hu/cgi-bin/track.cgi?uc=11422632223533&dc=1&ui='+same+'" width="1" height="1">');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<!-- Medián WebAudit ecoNET parom.hu aloldalak 1/2 -->
+<img src="http://audit.median.hu/cgi-bin/track.cgi?uc=11422632223533&dc=1" width="1" height="1">
+</NOSCRIPT>
+
+<!-- Kepfeltoltes_468x60 -->
+<script type='text/javascript'>
+GA_googleFillSlot("Kepfeltoltes_468x60");
+</script>
+<br><br>
+     
+  </td>
+ </tr>
+
+ <tr>
+  <td valign='top' width='160' align='center'>
+    
+<!--<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="160" height="600" id="startrandi_v1_160x600_parom" align="middle">
+<param name="allowScriptAccess" value="sameDomain" />
+<param name="movie" value="http://ad.parom.hu/parom/startrandi_v1_160x600_parom.swf?ref=54" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" /><embed src="http://ad.parom.hu/parom/startrandi_v1_160x600_parom.swf?ref=54" quality="high" bgcolor="#ffffff" width="160" height="600" name="startrandi_v1_160x600_parom" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object>-->
+
+<iframe src="http://www.facebook.com/plugins/likebox.php?id=127307757285430&amp;width=160&amp;connections=2&amp;stream=false&amp;header=false&amp;height=255" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:160px; height:255px; background-color: #ffffff;" allowTransparency="false"></iframe>
+
+
+<br><br>
+  </td>
+  <td valign='top' width='486'>
+<table width="486" cellpadding="0" cellspacing="0" border="0" align="center">
+ 
+ <tr>
+  <td valign="top" align="middle">
+   <table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+     <td colspan="2" background="http://static.kepfeltoltes.hu/mid_u65.gif">
+      <table cellpadding="0" cellspacing="0" border="0" align="left">
+       <tr>
+        <td><a href="/index.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('menu_1','','http://static.kepfeltoltes.hu/menu_1a.gif',1)";><img src="http://static.kepfeltoltes.hu/menu_1.gif" alt="" name="menu_1" border="0"></a></td>
+        <!--<td><a href="http://forum.kepfeltoltes.hu" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('menu_2','','http://static.kepfeltoltes.hu/menu_2a.gif',1)";><img src="http://static.kepfeltoltes.hu/menu_2.gif" alt="" name="menu_2" border="0"></a></td>
+        -->
+	<td><a href="/public.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('menu_3','','http://static.kepfeltoltes.hu/menu_3a.gif',1)";><img src="http://static.kepfeltoltes.hu/menu_3.gif" alt="" name="menu_3" border="0"></a></td>
+       </tr>
+      </table>
+     </td>     
+     <td height="20" width="20"><img src="http://static.kepfeltoltes.hu/mid_ur65.gif" alt=""></td>          
+    </tr>  
+    <tr>
+     <td width="20" background="http://static.kepfeltoltes.hu/mid_l.gif"><img src="http://static.kepfeltoltes.hu/mid_l.gif" alt=""></td>
+     <td valign="top" align="left" bgcolor="#FFFFFF">
+
+            
+      
+ 
+      <div align="center">
+       <iframe src="http://www.facebook.com/plugins/like.php?href=http://www.kepfeltoltes.hu/view/110101/1_004_www.kepfeltoltes.hu_.jpg&amp;layout=standard&amp;show_faces=false&amp;width=300&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:350px; height:25px;"></iframe><br><br>
+
+       A képet szükség szerint lekicsinyítettük, kattints rá az eredeti mérethez!<br /><br />
+       <a href="javascript:;" onClick="resize_it(2272,1704)"><img name="the_photo" id="the_photo" src="/110101/1_004_www.kepfeltoltes.hu_.jpg" style="border: 1px solid black" alt="Kattints a képre a teljes mérethez!" title="Kattints a képre a teljes mérethez!"></a>
+      </div>
+      <br>
+      <br>
+      <a href="/index.php"><< a Képfeltöltés.hu fõoldalára</a><br>
+      <br>
+      <div align="center">
+           </div>
+
+<h2>Hitel? Nem gond!</h2>
+<p align="justify">
+Sokat hallani mostanában a sajtóban, hogy egyre nehezebb hitelhez jutni, ami szerencsére a <a href="http://www.penzszerzo.hu" target="_blank" title="hitel">Pénzszerzõ.hu</a> ügyfeleit <b>nem érinti</b>. A <a href="http://www.penzszerzo.hu" target="_blank" title="hitel">www.penzszerzo.hu</a> oldalon továbbra is a bankok és közvetítõk <b>versenyeznek Önért</b>, hogy a lehetõ <b>legkedvezõbb</b> feltételekkel juthasson hitelhez. Ha esetleg befektetésre, biztosításra van szüksége akkor is jó helyen jár és a verseny a garancia, hogy a legjobb feltételeket kapja, sokszor jobbat mint ha utcáról bemenne a bankba, biztosítóba!
+<br />
+<br />
+<a href="http://www.penzszerzo.hu" target="_blank" title="hitel">Versenyeztessen Ön is! www.penzszerzo.hu</a>
+</p>
+<i>(x)</i><br />
+
+<br /><br /><br />
+<div align="center">
+<iframe src="http://ad.parom.hu/dyna07_330x247_parom/index.php?ref=54" width=330 height=247 scrolling=no frameborder=0 marginwidth=0 noresize marginheight=0 vspace=0 hspace=0></iframe>
+</div>
+<br />
+
+     </td>
+     <td width="20" background="http://static.kepfeltoltes.hu/mid_r.gif"><img src="http://static.kepfeltoltes.hu/mid_r.gif" alt=""></td>          
+    </tr>      
+    <tr>
+     <td height="20" width="20"><img src="http://static.kepfeltoltes.hu/mid_bl.gif" alt=""></td>
+     <td height="20" background="http://static.kepfeltoltes.hu/mid_b.gif"><img src="http://static.kepfeltoltes.hu/mid_b.gif" alt=""></td>
+     <td height="20" width="20"><img src="http://static.kepfeltoltes.hu/mid_br.gif" alt=""></td>          
+    </tr>  
+   </table>   
+  </td>
+ </tr>
+ <tr>
+  <td align="right">Copyright 2011 by Kepfeltoltes.hu&nbsp;&nbsp;<a href="javascript:;" onClick="window.open('rules.php','rules','width=300,height=730,toolbar=0,location=0,directories=0,status=0,menuBar=0,scrollBars=0,resizable=0')">Jogi nyilatkozat</a>&nbsp;&nbsp;<a href="mailto:info@kepfeltoltes.hu">Kapcsolat</a><img src="http://static.kepfeltoltes.hu/pixel.gif" border="0" width="9" height="1"></td>
+ </tr> 
+ <tr>
+  <td align="right">
+   Partnereink: 
+   <a href="http://www.tarhelyem.hu/tarhely" title="tárhely, hosting" target="_blank">Tárhelyem.hu</a>&nbsp;&nbsp;
+   <a href="http://www.parom.hu/tarskereso" title="társkeresés, ismerkedés, randi" target="_blank">Párom.hu</a>&nbsp;&nbsp;
+   <a href="http://www.penzszerzo.hu" title="hitel, befektetés, biztosítás" target="_blank">Pénzszerzõ.hu</a>&nbsp;&nbsp;
+   <a href="http://www.levanehalva.hu" title="le van-e halva. online" target="_blank">Levanehalva.hu</a>&nbsp;&nbsp;
+   <a href="http://www.imeanlife.com" title="help us to find the meaning of life" target="_blank">Meaning Of Life</a>
+    <img src="http://static.kepfeltoltes.hu/pixel.gif" border="0" width="9" height="1">
+  </td>
+ </tr> 
+</table>
+  </td>
+  <td valign='top' width='150' align='center'>
+   <img src="http://static.kepfeltoltes.hu/pixel.gif" height="160" width="150">
+
+<br />
+<br />
+   
+
+  </td>
+ </tr>
+</table>
+<br>
+<br>
+<script type="text/javascript" src="http://widgets.amung.us/tab.js"></script><script type="text/javascript">WAU_tab('ln8p9m1x9nrl', 'right-upper')</script>
+</body>
+</html>
